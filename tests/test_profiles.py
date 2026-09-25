@@ -32,6 +32,17 @@ class ProfileTests(unittest.TestCase):
                 io=ProfileFake(model);result=Driver(io,model,'TEST').apply(params,limits)
                 self.assertTrue(result['state']['enable'])
                 self.assertGreater(len(io.writes), 3)
+    def test_multicomp_textual_modulation_state(self):
+        class TextMode(ProfileFake):
+            def query(self, command):
+                if command.endswith(':MOD:STAT?'):return 'OFF'
+                return super().query(command)
+        io=TextMode('mp750288')
+        params={'channel':1,'enable':True,'frequency':1000,'vpp':.1,'offset':0}
+        limits={'allow_output':True,'frequency_min':1,'frequency_max':1e6,'vpp_min':.01,'vpp_max':1,'voltage_peak_max':2,'current_max':.04,'power_max':.1}
+        result=Driver(io,'mp750288','TEST').apply(params,limits)
+        self.assertTrue(result['state']['enable'])
+
     def test_smu_fetch_no_trigger(self):
         io=ProfileFake('b2910bl');io.values['FETC:VOLT']='1'
         self.assertEqual(Driver(io,'b2910bl','TEST').read('voltage'),'1')

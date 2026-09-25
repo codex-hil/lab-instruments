@@ -5,9 +5,10 @@ USBTMC dla Raspberry Pi. Repozytorium samowystarczalne: Python **3.11+**, biblio
 standardowa, bez pip i zewnętrznych zależności. Linux x86-64 / ARMv7 / ARM64 dla serwera;
 USB wymaga linuksowego sterownika `usbtmc`. Windows nie jest obecnie wspierany.
 
-**Wersja 0.1: działający fundament, nie certyfikowany system bezpieczeństwa.**
-Identyfikacja wielu rzeczywistych przyrządów jest sprawdzona; aktywne profile wymagają
-commissioningu na obciążeniu testowym. Przykłady blokują włączanie wyjść.
+**Wersja 0.1.1: działający fundament, nie certyfikowany system bezpieczeństwa.**
+Identyfikacja i małosygnałowe próby aktywnych profili zostały sprawdzone na stanowisku;
+[raport HIL](reports/hil-2026-09-25/README.md) rozróżnia PASS, próby częściowe i braki.
+Pełny commissioning pod obciążeniem pozostaje wymagany. Przykłady blokują włączanie wyjść.
 Nie wdrożono tych usług na bieżącym stanowisku ani nie zmieniono jego sieci.
 
 ## Nowa maszyna — budowanie offline

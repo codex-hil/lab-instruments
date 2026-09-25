@@ -16,3 +16,10 @@ Nie wykonano na sprzęcie: nowego API `apply`, wygaśnięcia lease przy aktywnym
 awarii podczas źródłowania, transferu dużego przebiegu, czterech USB naraz, instalacji
 root, zmian firewalla ani PoE/RPi. To punkty odbioru przed `commissioned=true`.
 Nie wgrywano firmware'u, nie zmieniano limitów rzeczywistych zasilaczy.
+
+## Aktualizacja po próbach rzeczywistych sterowników
+
+Patrz [raport HIL 2026-09-25](../reports/hil-2026-09-25/README.md): wykonano małosygnałowe
+apply/ON/OFF, rzeczywistą dzierżawę HTTPS→USB, bramkę HTTPS→USB i binarny przebieg
+MSO4104. Poprawiono dwa błędy wykryte dopiero na sprzęcie. Powyższa lista dotyczy pierwotnego
+v0.1.0; raport zawiera aktualną macierz oraz jawnie niezaliczone próby.

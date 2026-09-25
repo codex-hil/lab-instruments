@@ -43,7 +43,7 @@ def select_usb(config):
 
 class Transport:
     def __init__(self, config):
-        self.config = config
+        self.config = dict(config)
         self.timeout = float(config.get('timeout', 4))
         self.delay = float(config.get('delay', 0.05))
         self.maximum = int(config.get('max_message', MAX_MESSAGE))
@@ -137,6 +137,12 @@ class Transport:
                     raise OSError('TCP EOF before complete response')
                 self.buffer += part
         fill(1)
+        # Some Tektronix port-4000 firmware sends LF followed by CR. The CR belongs
+        # between messages, never inside a length-delimited binary payload.
+        padding = self.config.get('read_padding', '').encode('ascii')
+        while self.buffer[:1] in padding:
+            self.buffer = self.buffer[1:]
+            fill(1)
         # Definite IEEE 488.2 block, optionally preceded by an ASCII header (Tek HEADER ON).
         # Drivers explicitly disable headers for binary reads. #0 requires device-specific framing.
         if self.buffer.startswith(b'#'):

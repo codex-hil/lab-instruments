@@ -88,6 +88,8 @@ class Driver:
             raise ValueError('unknown model')
         self.io, self.model, self.serial = transport, model, serial
         self.category = PROFILES[model][1]
+        if model == 'mso4104' and getattr(transport, 'config', {}).get('kind') == 'tcp':
+            transport.config.setdefault('read_padding', '\r')
 
     def identify(self):
         text = self.io.query('*IDN?')
@@ -173,7 +175,9 @@ class Driver:
                 if not math.isfinite(got) or not math.isclose(got, val, rel_tol=1e-6, abs_tol=1e-9):
                     raise OSError(f'setpoint readback mismatch: {cmd}')
             for cmd, val in checks.items():
-                if q(cmd).strip('"').upper() != val:
+                actual_mode = q(cmd).strip('"').upper()
+                allowed = {'0', 'OFF'} if val == '0' else {'1', 'ON'} if val == '1' else {val}
+                if actual_mode not in allowed:
                     raise OSError(f'mode readback mismatch: {cmd}')
             # Readback rounding must also satisfy the policy exactly.
             readback = dict(p)

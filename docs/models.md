@@ -34,3 +34,7 @@ bieżącym Linuxie); stary kernel bez niego musi zostać zaktualizowany.
 Nowy profil powinien mieć: dokładne ID, operacje typed, jednostki, terminatory, timeouty,
 tryby/warunki OFF, sprzętowe zakresy, kontrolę odpowiedzi oraz test z fałszywym transportem
 przed testem rzeczywistego urządzenia. Nie zakładamy, że rebrand ma identyczny firmware.
+
+Aktualny status prób sprzętowych: [macierz HIL](../reports/hil-2026-09-25/README.md).
+Profil MSO4104 automatycznie uwzględnia padding CR pomiędzy odpowiedziami TCP portu 4000;
+przy użyciu samego Transport bez Driver ustaw `read_padding: "\r"`.

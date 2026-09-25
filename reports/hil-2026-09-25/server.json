@@ -1,0 +1,57 @@
+{
+  "identity": {
+    "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1"
+  },
+  "apply": {
+    "state": {
+      "channel": 1,
+      "enable": true,
+      "frequency": 1000.0,
+      "vpp": 0.2,
+      "offset": 0.0
+    },
+    "readback": {
+      "SOUR1:VOLT?": 0.2,
+      "SOUR1:VOLT:OFFS?": 0.0,
+      "SOUR1:FREQ?": 1000.0
+    },
+    "lease_seconds": 2.0
+  },
+  "output_after_enable": "1",
+  "output_after_expiry": "0",
+  "rejected": [
+    {
+      "request": {
+        "vpp": 100
+      },
+      "status": 400,
+      "body": "{\"error\": \"outside policy: vpp_min..vpp_max\"}"
+    },
+    {
+      "request": {
+        "frequency": 1000000000.0
+      },
+      "status": 400,
+      "body": "{\"error\": \"outside policy: frequency_min..frequency_max\"}"
+    },
+    {
+      "request": {
+        "offset": 50
+      },
+      "status": 400,
+      "body": "{\"error\": \"AWG peak voltage/current envelope exceeds policy\"}"
+    },
+    {
+      "request": {
+        "channel": 3
+      },
+      "status": 400,
+      "body": "{\"error\": \"invalid channel\"}"
+    }
+  ],
+  "rejection_state_unchanged": true,
+  "success": true,
+  "final_off": {
+    "off_confirmed": true
+  }
+}

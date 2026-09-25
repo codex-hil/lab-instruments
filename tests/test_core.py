@@ -110,6 +110,16 @@ class FramingTests(unittest.TestCase):
     def test_fragmented_binary_embedded_newline(self):
         payload=b'\x00\n\xff12345';packet=b'#18'+payload+b'\n'
         self.assertEqual(self.exercise([packet[:1],packet[1:4],packet[4:7],packet[7:]]),packet)
+    def test_tektronix_lf_cr_between_messages(self):
+        a,b=socket.socketpair()
+        io=Transport({'kind':'tcp','read_padding':'\r'});io.handle=a
+        # Embedded LF must remain in the binary payload, even with a residual CR prefix.
+        b.sendall(b'identity\n\r#13A\nB\n\r')
+        try:
+            self.assertEqual(io._tcp_message(),b'identity\n')
+            self.assertEqual(io._tcp_message(),b'#13A\nB\n')
+        finally:a.close();b.close()
+
     def test_cr_keithley(self):self.assertEqual(self.exercise([b'KEITH',b'LEY\r'],'\r'),b'KEITHLEY\r')
     def test_truncated_block(self):
         with self.assertRaises(OSError):self.exercise([b'#210tiny'])

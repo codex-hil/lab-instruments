@@ -1,0 +1,34 @@
+{
+  "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+  "snapshot": {
+    "usb": [
+      {
+        "path": "/dev/usbtmc0",
+        "topology": "1-6",
+        "serial": "1544477",
+        "vendor": "0699",
+        "product_id": "0353",
+        "model": "AFG1062"
+      }
+    ],
+    "slots": {
+      "usb1": {
+        "connected": true,
+        "matches": [
+          {
+            "path": "/dev/usbtmc0",
+            "topology": "1-6",
+            "serial": "1544477",
+            "vendor": "0699",
+            "product_id": "0353",
+            "model": "AFG1062"
+          }
+        ],
+        "status": {
+          "last_ok": 1790341230.2833638,
+          "error": null
+        }
+      }
+    }
+  }
+}

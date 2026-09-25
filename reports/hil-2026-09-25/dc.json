@@ -1,0 +1,164 @@
+[
+  {
+    "device": "psw",
+    "voltage": 0.5,
+    "apply": {
+      "state": {
+        "channel": 1,
+        "enable": true,
+        "voltage": 0.5,
+        "current": 0.01
+      },
+      "readback": {
+        "SOUR:CURR?": 0.01,
+        "SOUR:VOLT?": 0.5
+      }
+    },
+    "voltage_measured": "+0.520",
+    "current_measured": "+0.000",
+    "off": {
+      "off_confirmed": true
+    },
+    "success": true,
+    "error_queue": "+0,\"No error\""
+  },
+  {
+    "device": "psw",
+    "voltage": 1.0,
+    "apply": {
+      "state": {
+        "channel": 1,
+        "enable": true,
+        "voltage": 1.0,
+        "current": 0.01
+      },
+      "readback": {
+        "SOUR:CURR?": 0.01,
+        "SOUR:VOLT?": 1.0
+      }
+    },
+    "voltage_measured": "+0.998",
+    "current_measured": "+0.000",
+    "off": {
+      "off_confirmed": true
+    },
+    "success": true,
+    "error_queue": "+0,\"No error\""
+  },
+  {
+    "device": "ngp",
+    "channel": 1,
+    "apply": {
+      "state": {
+        "channel": 1,
+        "enable": true,
+        "voltage": 0.5,
+        "current": 0.01
+      },
+      "readback": {
+        "CURR?": 0.01,
+        "VOLT?": 0.5
+      }
+    },
+    "voltage_measured": "4.980000E-01",
+    "current_measured": "0.000000E+00",
+    "dmm_voltage": "4.997270E-01",
+    "off": {
+      "off_confirmed": true
+    },
+    "error_queue": "0,\"No error\"",
+    "success": true
+  },
+  {
+    "device": "ngp",
+    "channel": 2,
+    "apply": {
+      "state": {
+        "channel": 2,
+        "enable": true,
+        "voltage": 0.5,
+        "current": 0.01
+      },
+      "readback": {
+        "CURR?": 0.01,
+        "VOLT?": 0.5
+      }
+    },
+    "voltage_measured": "5.000000E-01",
+    "current_measured": "0.000000E+00",
+    "off": {
+      "off_confirmed": true
+    },
+    "error_queue": "0,\"No error\"",
+    "success": true
+  },
+  {
+    "device": "ngp",
+    "channel": 3,
+    "apply": {
+      "state": {
+        "channel": 3,
+        "enable": true,
+        "voltage": 0.5,
+        "current": 0.01
+      },
+      "readback": {
+        "CURR?": 0.01,
+        "VOLT?": 0.5
+      }
+    },
+    "voltage_measured": "4.990000E-01",
+    "current_measured": "0.000000E+00",
+    "off": {
+      "off_confirmed": true
+    },
+    "error_queue": "0,\"No error\"",
+    "success": true
+  },
+  {
+    "device": "ngp",
+    "channel": 4,
+    "apply": {
+      "state": {
+        "channel": 4,
+        "enable": true,
+        "voltage": 0.5,
+        "current": 0.01
+      },
+      "readback": {
+        "CURR?": 0.01,
+        "VOLT?": 0.5
+      }
+    },
+    "voltage_measured": "4.980000E-01",
+    "current_measured": "0.000000E+00",
+    "off": {
+      "off_confirmed": true
+    },
+    "error_queue": "0,\"No error\"",
+    "success": true
+  },
+  {
+    "device": "smu",
+    "test": "configure with output disabled",
+    "apply": {
+      "state": {
+        "channel": 1,
+        "enable": false,
+        "voltage": 0.1,
+        "current": 0.001
+      },
+      "readback": {
+        "SENS:CURR:PROT?": 0.001,
+        "SOUR:VOLT?": 0.1
+      }
+    },
+    "fetch_voltage": "+1.000316E+01",
+    "fetch_current": "+2.374000E-09",
+    "error_queue": "+0,\"No error\"",
+    "success": true,
+    "final_off": {
+      "off_confirmed": true
+    }
+  }
+]

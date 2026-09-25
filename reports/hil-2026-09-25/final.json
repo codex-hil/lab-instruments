@@ -1,0 +1,107 @@
+{
+  "psw": {
+    "identity": "GW-INSTEK,PSW800-1.44,GEZ130136,03.29.20240715",
+    "state": {
+      "OUTP": "0",
+      "SOUR:VOLT": "+10.000",
+      "SOUR:CURR": "+0.600"
+    }
+  },
+  "ngp": {
+    "identity": "Rohde&Schwarz,NGP814,5601.4007k04/100847,02.015 00055E66A5",
+    "state": {
+      "OUTP:GEN": "0",
+      "INST:NSEL": "1"
+    }
+  },
+  "smu": {
+    "identity": "Keysight Technologies,B2910BL,MY63320305,5.0.2429.8966",
+    "state": {
+      "OUTP": "0",
+      "OUTP:OFF:MODE": "HIZ",
+      "SOUR:FUNC:MODE": "VOLT",
+      "SOUR:VOLT:MODE": "FIX",
+      "SOUR:VOLT": "+0.00000000E+000",
+      "SOUR:CURR": "+0.00000000E+000",
+      "SENS:CURR:PROT": "+1.00000000E-004",
+      "SENS:VOLT:PROT": "+2.00000000E+000",
+      "SENS:REM": "0",
+      "OUTP:ON:AUTO": "1"
+    }
+  },
+  "rf1": {
+    "identity": "Rohde&Schwarz,SMB100A,1406.6000k02/102842,3.1.19.15-3.20.390.24",
+    "state": {
+      "OUTP": "0",
+      "FREQ": "1000000000",
+      "POW": "-30",
+      "UNIT:POW": "DBM",
+      "AM:STAT": "0",
+      "FM:STAT": "0",
+      "PM:STAT": "0",
+      "PULM:STAT": "0",
+      "FREQ:MODE": "CW",
+      "POW:MODE": "CW"
+    }
+  },
+  "rf2": {
+    "identity": "Rohde&Schwarz,SMB100A,1406.6000k03/181769,4.20.028.58",
+    "state": {
+      "OUTP": "0",
+      "FREQ": "100000000",
+      "POW": "-30",
+      "UNIT:POW": "DBM",
+      "AM:STAT": "0",
+      "FM:STAT": "0",
+      "PM:STAT": "0",
+      "PULM:STAT": "0",
+      "FREQ:MODE": "CW",
+      "POW:MODE": "CW"
+    }
+  },
+  "multicomp": {
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  "scope": {
+    "identity": "TEKTRONIX,MSO4104,C020817,CF:91.1CT FV:v2.68 DPO4AUTO:V1.00 DPO4COMP:V1.00 DPO4USB:V1.00"
+  },
+  "dmm": {
+    "identity": "KEITHLEY INSTRUMENTS,MODEL DMM7510,04679690,1.7.16a"
+  },
+  "fieldfox": {
+    "identity": "Keysight Technologies,N9918B,MY61262871,A.12.38"
+  },
+  "tek_awg": {
+    "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+    "state": {
+      "OUTP1": "0",
+      "OUTP2": "0",
+      "SOUR1:FUNC": "SIN",
+      "SOUR1:FREQ": "4.500000e+07",
+      "SOUR1:VOLT": "2.800000e-02",
+      "SOUR1:VOLT:OFFS": "0.000000e+00",
+      "SOUR1:FREQ:MODE": "CW",
+      "SOUR1:AM:STAT": "0",
+      "SOUR1:FM:STAT": "0",
+      "SOUR1:PM:STAT": "0",
+      "SOUR1:FSK:STAT": "0",
+      "SOUR1:PSK:STAT": "0",
+      "SOUR1:ASK:STAT": "0",
+      "SOUR1:PWM:STAT": "0",
+      "SOUR1:BURS:STAT": "0",
+      "SOUR2:FUNC": "SIN",
+      "SOUR2:FREQ": "1.000000e+07",
+      "SOUR2:VOLT": "2.000000e+00",
+      "SOUR2:VOLT:OFFS": "0.000000e+00",
+      "SOUR2:FREQ:MODE": "CW",
+      "SOUR2:AM:STAT": "0",
+      "SOUR2:FM:STAT": "0",
+      "SOUR2:PM:STAT": "0",
+      "SOUR2:FSK:STAT": "0",
+      "SOUR2:PSK:STAT": "0",
+      "SOUR2:ASK:STAT": "0",
+      "SOUR2:PWM:STAT": "0",
+      "SOUR2:BURS:STAT": "0"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "payload_bytes": 10000,
+  "embedded_LF": 50,
+  "embedded_CR": 62,
+  "sha256": "d81c4d84d8e4e400bd6fa12143fe89b386ea58c92fbd9f33ace27ef157d0b901",
+  "frequency": "1.0013E+3",
+  "vpp": "424.0000E-3",
+  "success": true,
+  "final_off": {
+    "off_confirmed": true
+  }
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "device": "tek_awg",
+    "channel": 1,
+    "apply": {
+      "state": {
+        "channel": 1,
+        "frequency": 1000.0,
+        "vpp": 0.2,
+        "offset": 0.0,
+        "enable": true
+      },
+      "readback": {
+        "SOUR1:VOLT?": 0.2,
+        "SOUR1:VOLT:OFFS?": 0.0,
+        "SOUR1:FREQ?": 1000.0
+      }
+    },
+    "scope": {
+      "1": {
+        "frequency": "909.0909",
+        "vpp": "68.0000E-3"
+      },
+      "2": {
+        "frequency": "363.6364E+3",
+        "vpp": "32.0000E-3"
+      },
+      "3": {
+        "frequency": "997.5062",
+        "vpp": "424.0000E-3"
+      },
+      "4": {
+        "frequency": "200.0000E+3",
+        "vpp": "24.0000E-3"
+      }
+    },
+    "off": {
+      "off_confirmed": true
+    },
+    "success": true
+  },
+  {
+    "device": "tek_awg",
+    "channel": 2,
+    "apply": {
+      "state": {
+        "channel": 2,
+        "frequency": 2300.0,
+        "vpp": 0.2,
+        "offset": 0.0,
+        "enable": true
+      },
+      "readback": {
+        "SOUR2:VOLT?": 0.2,
+        "SOUR2:VOLT:OFFS?": 0.0,
+        "SOUR2:FREQ?": 2300.0
+      }
+    },
+    "scope": {
+      "1": {
+        "frequency": "1.3957E+3",
+        "vpp": "64.0000E-3"
+      },
+      "2": {
+        "frequency": "148.1481E+3",
+        "vpp": "32.0000E-3"
+      },
+      "3": {
+        "frequency": "93.7500E+3",
+        "vpp": "28.0000E-3"
+      },
+      "4": {
+        "frequency": "500.0000E+3",
+        "vpp": "24.0000E-3"
+      }
+    },
+    "off": {
+      "off_confirmed": true
+    },
+    "success": true
+  },
+  {
+    "device": "multicomp",
+    "channel": 1,
+    "error": "mode readback mismatch: SOUR1:MOD:STAT?",
+    "traceback": "Traceback (most recent call last):\n  File \"/tmp/hil_active.py\", line 36, in awg\n    row['apply']=d.apply({'channel':channel,'frequency':freq,'vpp':.2,'offset':0,'enable':True},limits)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/codex-hil/workspaces/lab-instruments/labinstruments/drivers.py\", line 177, in apply\n    raise OSError(f'mode readback mismatch: {cmd}')\nOSError: mode readback mismatch: SOUR1:MOD:STAT?\n",
+    "success": false
+  },
+  {
+    "device": "multicomp",
+    "channel": 2,
+    "error": "mode readback mismatch: SOUR2:MOD:STAT?",
+    "traceback": "Traceback (most recent call last):\n  File \"/tmp/hil_active.py\", line 36, in awg\n    row['apply']=d.apply({'channel':channel,'frequency':freq,'vpp':.2,'offset':0,'enable':True},limits)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/codex-hil/workspaces/lab-instruments/labinstruments/drivers.py\", line 177, in apply\n    raise OSError(f'mode readback mismatch: {cmd}')\nOSError: mode readback mismatch: SOUR2:MOD:STAT?\n",
+    "success": false
+  }
+]

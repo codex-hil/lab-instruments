@@ -1,0 +1,54 @@
+[
+  {
+    "device": "rf1",
+    "baseline_dbm": "-9.642252E+01",
+    "apply": {
+      "state": {
+        "channel": 1,
+        "enable": true,
+        "frequency": 1000000000.0,
+        "dbm": -40.0
+      },
+      "readback": {
+        "POW?": -40.0,
+        "FREQ?": 1000000000.0
+      }
+    },
+    "marker_dbm": "-6.334286E+01",
+    "marker_hz": "9.999980000E+08",
+    "off": {
+      "off_confirmed": true
+    },
+    "errors": "0,\"No error\"",
+    "success": true,
+    "final_off": {
+      "off_confirmed": true
+    }
+  },
+  {
+    "device": "rf2",
+    "baseline_dbm": "-1.011797E+02",
+    "apply": {
+      "state": {
+        "channel": 1,
+        "enable": true,
+        "frequency": 1000000000.0,
+        "dbm": -40.0
+      },
+      "readback": {
+        "POW?": -40.0,
+        "FREQ?": 1000000000.0
+      }
+    },
+    "marker_dbm": "-9.236046E+01",
+    "marker_hz": "1.000040000E+09",
+    "off": {
+      "off_confirmed": true
+    },
+    "errors": "0,\"No error\"",
+    "success": true,
+    "final_off": {
+      "off_confirmed": true
+    }
+  }
+]

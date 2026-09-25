@@ -1,0 +1,5 @@
+{
+  "success": false,
+  "error": "invalid literal for int() with base 10: b'#'",
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/hil_binary.py\", line 9, in <module>\n    block=io.transaction(b'CURVE?\\n');digits=int(block[1:2]);count=int(block[2:2+digits]);payload=block[2+digits:2+digits+count]\n                                             ^^^^^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: b'#'\n"
+}
