@@ -11,6 +11,30 @@ Identyfikacja i małosygnałowe próby aktywnych profili zostały sprawdzone na 
 Pełny commissioning pod obciążeniem pozostaje wymagany. Przykłady blokują włączanie wyjść.
 Nie wdrożono tych usług na bieżącym stanowisku ani nie zmieniono jego sieci.
 
+## Zakres repozytorium i obecny sposób pracy
+
+Obecnie skrypty pomiarowe korzystają **bezpośrednio z driverów**. LAN przyrządu,
+Raspberry Pi z USBTMC i Waveshare z RS-232 są drogami transportu. Rozbudowę warstwy
+rezerwacji i wirtualnych przyrządów odkładamy. Istniejący tryb `control` jest opcjonalnym
+prototypem; nie jest wymagany do bezpośredniego użycia biblioteki.
+Jeden skrypt steruje danym przyrządem naraz.
+
+Wszystkie poniższe komponenty są w **tym jednym repozytorium**, nie w osobnych repo:
+
+| Komponent | README / dokumentacja | Zawartość |
+|---|---|---|
+| Drivery Python | [README driverów](labinstruments/README.md) | modele, metody, jednostki, przykład bez serwera |
+| Raspberry Pi i Waveshare | [README wdrożenia](deploy/README.md) | USBTMC, hotplug, TCP–RS-232, konfiguracja i ograniczenia |
+| Profile urządzeń | [modele](docs/models.md) | zakres każdego drivera i protokoły przyrządów |
+| Protokół bramki i serwera | [API](docs/protocol.md) | HTTPS, JSON, base64, autoryzacja |
+| Budowanie i instalacja | [instrukcja](docs/deployment.md) | bootstrap, zipapp, systemd, udev |
+| Próby sprzętowe | [raport HIL](reports/hil-2026-09-25/README.md) | wyniki, błędy, brakujące testy |
+
+Kod driverów, transportów, usługi RPi, skrypty budowania, szablony konfiguracji i raport
+HIL są wersjonowane. Lokalne jednorazowe skrypty eksperymentów i kopie panelu Waveshare
+nie są częścią repo; nie ma jeszcze uniwersalnego skryptu automatycznej konfiguracji
+Waveshare. Konfiguracja konkretnej bramki jest opisana w README wdrożenia.
+
 ## Nowa maszyna — budowanie offline
 
 Na Debianie / Raspberry Pi OS Bookworm lub nowszym administrator instaluje raz:
@@ -103,7 +127,8 @@ python3 scripts/hil-identify.py examples/lab.json
 
 Druga komenda dotyka sprzętu, ale wysyła tylko `*IDN?`. Nie resetuje urządzeń ani nie
 włącza źródeł. Raport rzeczywistego testu: [HIL](docs/hil-identification.json).
-Testy aktywnego sterowania i awarii pracują na emulatorach.
+Testy automatyczne sterowania i awarii pracują na emulatorach; wykonane dodatkowo
+próby aktywne na urządzeniach opisuje [raport HIL](reports/hil-2026-09-25/README.md).
 
 Przykład skryptu klienta: [power_test.py](examples/power_test.py) (uruchamia źródło,
 wyłącznie po commissioningu). Import biblioteki z repo: `from labinstruments.client import Client`.
