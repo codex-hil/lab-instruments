@@ -1,0 +1,209 @@
+{
+  "mode": "control",
+  "listen": [
+    "127.0.0.1",
+    8840
+  ],
+  "token_file": "/etc/labinst/access.token",
+  "devices": {
+    "psw": {
+      "model": "psw800-1.44",
+      "serial": "GEZ130136",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.12",
+        "port": 2268,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "voltage_min": 0,
+        "voltage_max": 10,
+        "current_min": 0.001,
+        "current_max": 0.5,
+        "power_max": 5
+      },
+      "lease_seconds": 10
+    },
+    "ngp": {
+      "model": "ngp814",
+      "serial": "5601.4007k04/100847",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.11",
+        "port": 5025,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "voltage_min": 0,
+        "voltage_max": 10,
+        "current_min": 0.001,
+        "current_max": 0.5,
+        "power_max": 5
+      },
+      "lease_seconds": 10
+    },
+    "smu": {
+      "model": "b2910bl",
+      "serial": "MY63320305",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.13",
+        "port": 5025,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "voltage_min": 0,
+        "voltage_max": 10,
+        "current_min": 0.001,
+        "current_max": 0.5,
+        "power_max": 5
+      },
+      "lease_seconds": 10
+    },
+    "rf1": {
+      "model": "smb100a",
+      "serial": "1406.6000k02/102842",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.7",
+        "port": 5025,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "frequency_min": 1000000.0,
+        "frequency_max": 1000000000.0,
+        "dbm_min": -120,
+        "dbm_max": -10,
+        "power_max": 0.0001
+      },
+      "lease_seconds": 10
+    },
+    "rf2": {
+      "model": "smb100a",
+      "serial": "1406.6000k03/181769",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.8",
+        "port": 5025,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "frequency_min": 1000000.0,
+        "frequency_max": 1000000000.0,
+        "dbm_min": -120,
+        "dbm_max": -10,
+        "power_max": 0.0001
+      },
+      "lease_seconds": 10
+    },
+    "multicomp": {
+      "model": "mp750288",
+      "serial": "1944201",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.200",
+        "port": 3000,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "frequency_min": 1,
+        "frequency_max": 1000000.0,
+        "vpp_min": 0.01,
+        "vpp_max": 1,
+        "voltage_peak_max": 2,
+        "current_max": 0.04,
+        "power_max": 0.08
+      },
+      "lease_seconds": 10
+    },
+    "scope": {
+      "model": "mso4104",
+      "serial": "C020817",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.9",
+        "port": 4000,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false
+    },
+    "dmm": {
+      "model": "dmm7510",
+      "serial": "04679690",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.10",
+        "port": 5025,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false
+    },
+    "fieldfox": {
+      "model": "n9918b",
+      "serial": "MY61262871",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.6",
+        "port": 5025,
+        "delay": 0.1,
+        "timeout": 4
+      },
+      "commissioned": false
+    },
+    "pico": {
+      "model": "6487",
+      "serial": "4563048",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.201",
+        "port": 4001,
+        "delay": 0.1,
+        "timeout": 4,
+        "read_termination": "\r"
+      },
+      "commissioned": false
+    },
+    "tek_awg": {
+      "model": "afg1062",
+      "serial": "1544477",
+      "commissioned": false,
+      "lease_seconds": 10,
+      "limits": {
+        "allow_output": false,
+        "frequency_min": 1,
+        "frequency_max": 1000000.0,
+        "vpp_min": 0.01,
+        "vpp_max": 1,
+        "voltage_peak_max": 2,
+        "current_max": 0.04,
+        "power_max": 0.08
+      },
+      "transport": {
+        "kind": "usb",
+        "serial": "1544477",
+        "vendor": "0699",
+        "product_id": "0353"
+      }
+    }
+  }
+}

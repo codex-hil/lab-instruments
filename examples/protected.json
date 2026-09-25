@@ -1,0 +1,36 @@
+{
+  "mode": "control",
+  "listen": [
+    "192.168.10.20",
+    8840
+  ],
+  "token_file": "/etc/labinst/access.token",
+  "tls": {
+    "cert": "/etc/labinst/server.crt",
+    "key": "/etc/labinst/server.key"
+  },
+  "devices": {
+    "supply": {
+      "model": "psw800-1.44",
+      "serial": "GEZ130136",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.50.12",
+        "port": 2268,
+        "source_ip": "192.168.50.1",
+        "timeout": 3,
+        "delay": 0.1
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "voltage_min": 0,
+        "voltage_max": 10,
+        "current_min": 0.001,
+        "current_max": 0.5,
+        "power_max": 5
+      },
+      "lease_seconds": 10
+    }
+  }
+}

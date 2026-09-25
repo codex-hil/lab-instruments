@@ -1,0 +1,27 @@
+#!/usr/sbin/nft -f
+# EDIT interface names, service UID and networks. Load alongside, not instead of, existing rules.
+# A gateway appliance is NOT a router. Clients must have no separate path into the lab LAN.
+define lab_if = "enxLAB"
+define client_if = "eth0"
+define service_uid = 999
+
+table inet labinst_guard {
+    chain forward_guard {
+        type filter hook forward priority -10; policy accept;
+        iifname $lab_if drop
+        oifname $lab_if drop
+    }
+    chain input_guard {
+        type filter hook input priority -10; policy accept;
+        iifname $lab_if ct state established,related accept
+        iifname $lab_if drop
+        tcp dport 8840 iifname != $client_if drop
+        tcp dport 8840 ip saddr != 192.168.10.0/24 drop
+    }
+    chain output_guard {
+        type filter hook output priority -10; policy accept;
+        oifname $lab_if meta skuid $service_uid accept
+        oifname $lab_if meta skuid 0 accept
+        oifname $lab_if drop
+    }
+}

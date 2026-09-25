@@ -1,0 +1,15 @@
+{
+  "mode": "control",
+  "devices": {
+    "scope": {
+      "model": "mso2002b",
+      "transport": {
+        "kind": "gateway",
+        "url": "https://192.168.50.2:8840",
+        "slot": "usb1",
+        "token_file": "/etc/labinst/gateway.token",
+        "ca_file": "/etc/labinst/gateway-ca.crt"
+      }
+    }
+  }
+}

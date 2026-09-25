@@ -1,0 +1,24 @@
+{
+  "mode": "control",
+  "devices": {
+    "load": {
+      "model": "8550",
+      "serial": "660F25139",
+      "commissioned": false,
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.201",
+        "port": 4001,
+        "timeout": 4,
+        "delay": 0.1
+      },
+      "limits": {
+        "allow_output": false,
+        "current_min": 0.001,
+        "current_max": 0.5,
+        "external_voltage_max": 10,
+        "power_max": 5
+      }
+    }
+  }
+}

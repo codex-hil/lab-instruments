@@ -1,0 +1,3 @@
+# Copy to /etc/udev/rules.d/70-labinst-usb.rules after reviewing actual usb-list output.
+# No blanket USB permissions. Add one rule per authorized physical device.
+SUBSYSTEM=="usbmisc", KERNEL=="usbtmc*", ATTRS{idVendor}=="0699", ATTRS{idProduct}=="0353", ATTRS{serial}=="1544477", GROUP="labinst", MODE="0660"

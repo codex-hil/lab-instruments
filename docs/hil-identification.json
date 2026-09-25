@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-25",
+  "test": "read-only *IDN?; no output changes",
+  "results": [
+    {
+      "name": "psw",
+      "identity": "GW-INSTEK,PSW800-1.44,GEZ130136,03.29.20240715",
+      "seconds": 0.103
+    },
+    {
+      "name": "smu",
+      "identity": "Keysight Technologies,B2910BL,MY63320305,5.0.2429.8966",
+      "seconds": 0.102
+    },
+    {
+      "name": "rf1",
+      "identity": "Rohde&Schwarz,SMB100A,1406.6000k02/102842,3.1.19.15-3.20.390.24",
+      "seconds": 0.102
+    },
+    {
+      "name": "rf2",
+      "identity": "Rohde&Schwarz,SMB100A,1406.6000k03/181769,4.20.028.58",
+      "seconds": 0.103
+    },
+    {
+      "name": "multicomp",
+      "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1",
+      "seconds": 0.11
+    },
+    {
+      "name": "scope",
+      "identity": "TEKTRONIX,MSO4104,C020817,CF:91.1CT FV:v2.68 DPO4AUTO:V1.00 DPO4COMP:V1.00 DPO4USB:V1.00",
+      "seconds": 0.103
+    },
+    {
+      "name": "fieldfox",
+      "identity": "Keysight Technologies,N9918B,MY61262871,A.12.38",
+      "seconds": 0.103
+    },
+    {
+      "name": "pico",
+      "error": "timed out",
+      "seconds": 4.005
+    },
+    {
+      "name": "tek_awg",
+      "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+      "seconds": 0.061
+    },
+    {
+      "name": "ngp",
+      "identity": "Rohde&Schwarz,NGP814,5601.4007k04/100847,02.015 00055E66A5",
+      "seconds": 0.103
+    },
+    {
+      "name": "dmm",
+      "identity": "KEITHLEY INSTRUMENTS,MODEL DMM7510,04679690,1.7.16a",
+      "seconds": 0.101
+    }
+  ],
+  "notes": [
+    "10 devices identified; 6487 through the serial gateway timed out. B&K8550 is not simultaneously connected to that serial port.",
+    "Source output operations were not executed; previous lab experiments do not substitute for commissioning these new drivers."
+  ]
+}
