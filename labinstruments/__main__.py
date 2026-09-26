@@ -11,9 +11,14 @@ from .transport import Transport, usb_devices
 
 
 def main():
+    import sys
+    if len(sys.argv)>1 and sys.argv[1]=="fra":
+        from .fra_cli import main as fra_main
+        raise SystemExit(fra_main(sys.argv[2:]))
     parser=argparse.ArgumentParser(prog='labinst')
     sub=parser.add_subparsers(dest='command',required=True)
     sub.add_parser('models');sub.add_parser('usb-list')
+    sub.add_parser('fra', help='Frequency Response Analyzer: sweep, measure, gui, export')
     for verb in ['identify','read']:
         p=sub.add_parser(verb);p.add_argument('--model',choices=PROFILES)
         p.add_argument('--host');p.add_argument('--port',type=int);p.add_argument('--usb-serial')

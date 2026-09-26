@@ -1,0 +1,2968 @@
+{
+  "software": {
+    "package": "labinstruments",
+    "version": "0.2.0.dev1",
+    "python": "3.12.3",
+    "source_sha256": "e17e8000ab6734a87677414944e84aaba48016266835126f6a65887b73440aaf"
+  },
+  "schema": "labinst.fra.v1",
+  "id": "d47215bc-d37b-40a5-af23-49b1e1794776",
+  "timestamp": "2026-09-26T08:03:21.971845+00:00",
+  "trust_state": "UNTRUSTED",
+  "config": {
+    "source": "tek_awg:ch1",
+    "input": "scope:ch1",
+    "output": "scope:ch2",
+    "start_frequency": 100,
+    "stop_frequency": 100000,
+    "points": 21,
+    "points_per_decade": 20.0,
+    "spacing": "log",
+    "amplitude": 0.1,
+    "averages": 4,
+    "cycles_per_record": 16.0,
+    "settling_cycles": 0,
+    "minimum_settling_s": 0,
+    "sample_rate": "auto",
+    "samples_per_cycle": 50.0,
+    "minimum_input_rms": 1e-05,
+    "volts_per_div": 0.05,
+    "acquisition_timeout_s": 10.0
+  },
+  "identities": {
+    "source": "SIMULATED RC fixture; no physical instrument",
+    "scope": "SIMULATED RC fixture; no physical instrument"
+  },
+  "points": [
+    {
+      "frequency_hz": 100,
+      "timestamp": "2026-09-26T08:03:21.971880+00:00",
+      "gain_db": -0.0002350899823991393,
+      "phase_deg": -0.00039719980111385667,
+      "vin_rms": 0.03535572557931598,
+      "vout_rms": 0.035354768559858966,
+      "sample_rate_hz": 5150.0,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.000033645826635,
+          "h_imag": 0.00010726613686412268,
+          "vin_rms": 0.03535506121035709,
+          "vout_rms": 0.03535625096400849,
+          "xin_real": 0.04999960692788127,
+          "xin_imag": -3.665182285288898e-06,
+          "xout_real": 0.05000128959913772,
+          "xout_imag": 1.6979590765017943e-06
+        },
+        {
+          "h_real": 0.9999064992952581,
+          "h_imag": -7.604184694843891e-05,
+          "vin_rms": 0.03535728261381866,
+          "vout_rms": 0.035353976785210385,
+          "xin_real": 0.05000274853272286,
+          "xin_imag": -2.6153717316513455e-06,
+          "xout_real": 0.049998073041618324,
+          "xout_imag": -6.417428543477864e-06
+        },
+        {
+          "h_real": 0.9998469600652403,
+          "h_imag": -3.672820731023201e-05,
+          "vin_rms": 0.035357620917709394,
+          "vout_rms": 0.035352209813562574,
+          "xin_real": 0.05000322702521365,
+          "xin_imag": 9.928875603239806e-07,
+          "xout_real": 0.04999557457107892,
+          "xout_imag": -8.437932794861179e-07
+        },
+        {
+          "h_real": 1.000104633244049,
+          "h_imag": -2.2225109359496168e-05,
+          "vin_rms": 0.03535293757537877,
+          "vout_rms": 0.035356636676654424,
+          "xin_real": 0.049996603769053516,
+          "xin_imag": -1.4062434756872728e-06,
+          "xout_real": 0.050001835044643395,
+          "xout_imag": -2.5175706018746697e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000137,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000137,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000274,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000274,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000411,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000411,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000548,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.0001941747572815534,
+            "t0_s": 0.000548,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.16,
+        "sample_rate_hz": 5000.0,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 100,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 100,
+      "actual_acquisition": {
+        "sample_rate_hz": 5150.0,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0010193234690361215,
+      "phase_std_deg": 0.00455246138564231,
+      "h_real": 0.9999729346077957,
+      "h_imag": -6.9322566885111015e-06
+    },
+    {
+      "frequency_hz": 141.25375446227542,
+      "timestamp": "2026-09-26T08:03:21.979709+00:00",
+      "gain_db": -0.00042992076498083647,
+      "phase_deg": 0.001898854113193238,
+      "vin_rms": 0.03535563346207256,
+      "vout_rms": 0.03535388352606185,
+      "sample_rate_hz": 7274.568354807185,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999847154585666,
+          "h_imag": 8.33599003779772e-05,
+          "vin_rms": 0.03535323647670887,
+          "vout_rms": 0.03535269624153559,
+          "xin_real": 0.04999702642697073,
+          "xin_imag": -2.6864453713845485e-06,
+          "xout_real": 0.04999626246929058,
+          "xout_imag": 1.4813428318484127e-06
+        },
+        {
+          "h_real": 0.999929202649299,
+          "h_imag": 1.8671380590038778e-05,
+          "vin_rms": 0.03535581513836365,
+          "vout_rms": 0.035353312046483294,
+          "xin_real": 0.05000067320937353,
+          "xin_imag": -2.6087785551040454e-06,
+          "xout_real": 0.04999713334288653,
+          "xout_imag": -1.6750122612434097e-06
+        },
+        {
+          "h_real": 0.9999302572075973,
+          "h_imag": -2.4928173585602986e-05,
+          "vin_rms": 0.03535744421500017,
+          "vout_rms": 0.035354978299094966,
+          "xin_real": 0.0500029770874025,
+          "xin_imag": -2.2870066922154356e-06,
+          "xout_real": 0.04999948968314108,
+          "xout_imag": -3.5333300826141757e-06
+        },
+        {
+          "h_real": 0.999957841558755,
+          "h_imag": 5.5455356416678496e-05,
+          "vin_rms": 0.035356038018217545,
+          "vout_rms": 0.03535454751713354,
+          "xin_real": 0.05000098846745011,
+          "xin_imag": -9.844845347650773e-07,
+          "xout_real": 0.04999888055831055,
+          "xout_imag": 1.788379606217015e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.000685,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.000685,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.000822,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.000822,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.000959,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.000959,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.001096,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 0.00013746520085128891,
+            "t0_s": 0.001096,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.11327132550146207,
+        "sample_rate_hz": 7062.687723113771,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 141.25375446227542,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 141.25375446227542,
+      "actual_acquisition": {
+        "sample_rate_hz": 7274.568354807185,
+        "record_length": 824
+      },
+      "gain_std_db": 0.00022916971841050748,
+      "phase_std_deg": 0.0026877488718471828,
+      "h_real": 0.9999505042185545,
+      "h_imag": 3.313961594977287e-05
+    },
+    {
+      "frequency_hz": 199.526231496888,
+      "timestamp": "2026-09-26T08:03:21.987079+00:00",
+      "gain_db": 8.285811506166157e-05,
+      "phase_deg": -0.0018632050378073473,
+      "vin_rms": 0.035355196487758124,
+      "vout_rms": 0.03535553373621977,
+      "sample_rate_hz": 10275.600922089732,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.000052388663338,
+          "h_imag": -6.874423145301389e-05,
+          "vin_rms": 0.035353088913181945,
+          "vout_rms": 0.03535494109778586,
+          "xin_real": 0.04999681780391339,
+          "xin_imag": 9.428598814138631e-07,
+          "xout_real": 0.04999943713518546,
+          "xout_imag": -2.4940835384436223e-06
+        },
+        {
+          "h_real": 0.9999769309576457,
+          "h_imag": -4.698478178167258e-05,
+          "vin_rms": 0.03535573109463288,
+          "vout_rms": 0.03535491551080081,
+          "xin_real": 0.050000554417522186,
+          "xin_imag": 6.421708308958635e-07,
+          "xout_real": 0.04999940098278685,
+          "xout_imag": -1.7071091216401577e-06
+        },
+        {
+          "h_real": 0.9999615796676529,
+          "h_imag": -2.562895660539841e-05,
+          "vin_rms": 0.035356296867366306,
+          "vout_rms": 0.035354938478302324,
+          "xin_real": 0.05000135451076158,
+          "xin_imag": -1.853595592811019e-06,
+          "xout_real": 0.049999433394597746,
+          "xout_imag": -3.1350069220197566e-06
+        },
+        {
+          "h_real": 1.0000472563504805,
+          "h_imag": 1.128047880969974e-05,
+          "vin_rms": 0.035355669075851366,
+          "vout_rms": 0.03535733985799008,
+          "xin_real": 0.050000466713247885,
+          "xin_imag": 2.441639045758773e-07,
+          "xout_real": 0.0500028295500728,
+          "xout_imag": 8.082046481048166e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.001233,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.001233,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.00137,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.00137,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.0015069999999999999,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.0015069999999999999,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.001644,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 9.731790944218877e-05,
+            "t0_s": 0.001644,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.08018995738036355,
+        "sample_rate_hz": 9976.3115748444,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 199.526231496888,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 199.526231496888,
+      "actual_acquisition": {
+        "sample_rate_hz": 10275.600922089732,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0004080847591258302,
+      "phase_std_deg": 0.0019534145671356497,
+      "h_real": 1.0000095389097792,
+      "h_imag": -3.2519372757596286e-05
+    },
+    {
+      "frequency_hz": 281.83829312644536,
+      "timestamp": "2026-09-26T08:03:21.994501+00:00",
+      "gain_db": -0.0002752385889554894,
+      "phase_deg": -0.002445066844018129,
+      "vin_rms": 0.03535540887207639,
+      "vout_rms": 0.035354288558229315,
+      "sample_rate_hz": 14514.672096011936,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999674052979712,
+          "h_imag": -6.925634484941559e-05,
+          "vin_rms": 0.03535585785464953,
+          "vout_rms": 0.0353547055257917,
+          "xin_real": 0.05000073339568306,
+          "xin_imag": 5.400943519388843e-06,
+          "xout_real": 0.049999104010726415,
+          "xout_imag": 1.937899442469037e-06
+        },
+        {
+          "h_real": 0.9998708987333456,
+          "h_imag": -9.446799868719078e-05,
+          "vin_rms": 0.03535646792265255,
+          "vout_rms": 0.035351903515643816,
+          "xin_real": 0.05000159641846341,
+          "xin_imag": 1.8804851046479664e-06,
+          "xout_real": 0.049995141326676706,
+          "xout_imag": -2.8433084131778137e-06
+        },
+        {
+          "h_real": 1.0000662334240702,
+          "h_imag": -3.180302325364127e-05,
+          "vin_rms": 0.035355469339599446,
+          "vout_rms": 0.03535781107127207,
+          "xin_real": 0.05000018402116346,
+          "xin_imag": 4.721917333275021e-06,
+          "xout_real": 0.050003495854726576,
+          "xout_imag": 3.1320730669167763e-06
+        },
+        {
+          "h_real": 0.9999687088563586,
+          "h_imag": 2.4834908394396484e-05,
+          "vin_rms": 0.03535384037140404,
+          "vout_rms": 0.03535273412020968,
+          "xin_real": 0.04999788048570302,
+          "xin_imag": -2.2250378543990903e-06,
+          "xout_real": 0.04999631605010159,
+          "xout_imag": -9.832754486435624e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.001781,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.001781,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.001918,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.001918,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.002055,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.002055,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.002192,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.889580373467485e-05,
+            "t0_s": 0.002192,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.05677014227737208,
+        "sample_rate_hz": 14091.914656322268,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 281.83829312644536,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 281.83829312644536,
+      "actual_acquisition": {
+        "sample_rate_hz": 14514.672096011936,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0006926844878685753,
+      "phase_std_deg": 0.002970995576059934,
+      "h_real": 0.9999683115779363,
+      "h_imag": -4.267311459896278e-05
+    },
+    {
+      "frequency_hz": 398.10717055349727,
+      "timestamp": "2026-09-26T08:03:22.001821+00:00",
+      "gain_db": 0.0003856815210795966,
+      "phase_deg": -0.00044246996066021893,
+      "vin_rms": 0.03535486898490757,
+      "vout_rms": 0.035356438884004686,
+      "sample_rate_hz": 20502.51928350511,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.00002716458826,
+          "h_imag": 5.744392276078059e-05,
+          "vin_rms": 0.035354547122290796,
+          "vout_rms": 0.03535550757233645,
+          "xin_real": 0.049998879996912604,
+          "xin_imag": -1.870533029691921e-06,
+          "xout_real": 0.050000238303351936,
+          "xout_imag": 1.0015479587166862e-06
+        },
+        {
+          "h_real": 0.9999998528984835,
+          "h_imag": 4.3291483029825505e-06,
+          "vin_rms": 0.03535633461297144,
+          "vout_rms": 0.03535632941233231,
+          "xin_real": 0.05000140789161701,
+          "xin_imag": -1.839822082608564e-06,
+          "xout_real": 0.05000140054429894,
+          "xout_imag": -1.6233583018472132e-06
+        },
+        {
+          "h_real": 1.0000013051978034,
+          "h_imag": -8.981218105323871e-05,
+          "vin_rms": 0.035355149070932575,
+          "vout_rms": 0.03535519535898664,
+          "xin_real": 0.04999973130435405,
+          "xin_imag": 1.0715069843146862e-06,
+          "xout_real": 0.04999979666012789,
+          "xout_imag": -3.4190765376766852e-06
+        },
+        {
+          "h_real": 1.000149294043739,
+          "h_imag": -2.8524922858919008e-06,
+          "vin_rms": 0.03535344513343546,
+          "vout_rms": 0.03535872319236334,
+          "xin_real": 0.04999732158138528,
+          "xin_imag": 5.41487971021864e-07,
+          "xout_real": 0.050004785885244867,
+          "xout_imag": 3.9895183782453565e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.002329,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.002329,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.002466,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.002466,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.002603,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.002603,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.00274,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.877449381572e-05,
+            "t0_s": 0.00274,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.04019018290415328,
+        "sample_rate_hz": 19905.358527674864,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 398.10717055349727,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 398.10717055349727,
+      "actual_acquisition": {
+        "sample_rate_hz": 20502.51928350511,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0006170181294229877,
+      "phase_std_deg": 0.0034936520044049663,
+      "h_real": 1.0000444041820715,
+      "h_imag": -7.722900568841867e-06
+    },
+    {
+      "frequency_hz": 562.3413251903492,
+      "timestamp": "2026-09-26T08:03:22.009175+00:00",
+      "gain_db": 0.00029563314749835295,
+      "phase_deg": 0.0034496410953863688,
+      "vin_rms": 0.035354621414404486,
+      "vout_rms": 0.035355824709394724,
+      "sample_rate_hz": 28960.57824730298,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999221161031163,
+          "h_imag": 2.6865099095702277e-05,
+          "vin_rms": 0.03535584755980126,
+          "vout_rms": 0.035353093921375416,
+          "xin_real": 0.05000071912673923,
+          "xin_imag": -3.908233644070497e-07,
+          "xout_real": 0.04999682488638616,
+          "xout_imag": 9.524813486357893e-07
+        },
+        {
+          "h_real": 1.0000720274947732,
+          "h_imag": 4.895539354056587e-05,
+          "vin_rms": 0.03535432894240874,
+          "vout_rms": 0.035356875468514425,
+          "xin_real": 0.049998571435982325,
+          "xin_imag": -2.0729334342691223e-06,
+          "xout_real": 0.05000217280930637,
+          "xout_imag": 3.7461699864338597e-07
+        },
+        {
+          "h_real": 1.00012267367273,
+          "h_imag": 7.414118342279115e-05,
+          "vin_rms": 0.0353533418020881,
+          "vout_rms": 0.03535767882352549,
+          "xin_real": 0.049997175371500155,
+          "xin_imag": -2.832313271244642e-06,
+          "xout_real": 0.05000330891862017,
+          "xout_imag": 8.74189028323901e-07
+        },
+        {
+          "h_real": 1.0000193218918372,
+          "h_imag": 9.087690135060822e-05,
+          "vin_rms": 0.03535496735331983,
+          "vout_rms": 0.03535565062416358,
+          "xin_real": 0.04999947430184704,
+          "xin_imag": 1.627132455941677e-06,
+          "xout_real": 0.05000044023841266,
+          "xout_imag": 6.17096118893022e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.002877,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.002877,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.0030139999999999998,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.0030139999999999998,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.0031509999999999997,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.0031509999999999997,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.003288,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.452969728230918e-05,
+            "t0_s": 0.003288,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.02845247056062276,
+        "sample_rate_hz": 28117.066259517458,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 562.3413251903492,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 562.3413251903492,
+      "actual_acquisition": {
+        "sample_rate_hz": 28960.578247302983,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0007445263105587845,
+      "phase_std_deg": 0.0016113138192134257,
+      "h_real": 1.0000340347906143,
+      "h_imag": 6.020964435241689e-05
+    },
+    {
+      "frequency_hz": 794.3282347242814,
+      "timestamp": "2026-09-26T08:03:22.016471+00:00",
+      "gain_db": -5.120453936249531e-06,
+      "phase_deg": -0.0030498282195310367,
+      "vin_rms": 0.03535424582652602,
+      "vout_rms": 0.035354225041828,
+      "sample_rate_hz": 40907.90408830049,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0000958250906318,
+          "h_imag": -0.00014202485617060211,
+          "vin_rms": 0.035354416675434715,
+          "vout_rms": 0.03535780487215073,
+          "xin_real": 0.04999869529562217,
+          "xin_imag": 5.065179464847619e-06,
+          "xout_real": 0.05000348714451173,
+          "xout_imag": -2.0353926719495936e-06
+        },
+        {
+          "h_real": 0.9999513644400642,
+          "h_imag": 4.4829900684862746e-05,
+          "vin_rms": 0.03535427810716748,
+          "vout_rms": 0.03535255866758344,
+          "xin_real": 0.04999849952498947,
+          "xin_imag": -2.4914877267119557e-06,
+          "xout_real": 0.04999606793166227,
+          "xout_imag": -2.4993878371385873e-07
+        },
+        {
+          "h_real": 1.0000568107443955,
+          "h_imag": -1.600257322986577e-05,
+          "vin_rms": 0.03535314285156619,
+          "vout_rms": 0.03535515129445471,
+          "xin_real": 0.04999689407383189,
+          "xin_imag": 1.3915908905283613e-06,
+          "xout_real": 0.049999734456870726,
+          "xout_imag": 5.915909891604095e-07
+        },
+        {
+          "h_real": 0.9998936360026579,
+          "h_imag": -9.972052186938237e-05,
+          "vin_rms": 0.035355145671935706,
+          "vout_rms": 0.03535138533312314,
+          "xin_real": 0.04999972650662533,
+          "xin_imag": 4.798512396685686e-07,
+          "xout_real": 0.0499944083836991,
+          "xout_imag": -4.506198619794481e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003425,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003425,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003562,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003562,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003699,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003699,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003836,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.4445153627071212e-05,
+            "t0_s": 0.003836,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.020142806588706676,
+        "sample_rate_hz": 39716.41173621407,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 794.3282347242814,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 794.3282347242814,
+      "actual_acquisition": {
+        "sample_rate_hz": 40907.90408830049,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0008099839293102018,
+      "phase_std_deg": 0.004799022981766022,
+      "h_real": 0.9999994090694373,
+      "h_imag": -5.322951264624688e-05
+    },
+    {
+      "frequency_hz": 1122.0184543019632,
+      "timestamp": "2026-09-26T08:03:22.023872+00:00",
+      "gain_db": 5.958359766851651e-05,
+      "phase_deg": 0.002916281051795977,
+      "vin_rms": 0.03535461949465221,
+      "vout_rms": 0.0353548616888836,
+      "sample_rate_hz": 57783.95039655111,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0001733268263153,
+          "h_imag": 5.480026793690748e-05,
+          "vin_rms": 0.03535024308391671,
+          "vout_rms": 0.035356370282430334,
+          "xin_real": 0.04999279319048893,
+          "xin_imag": -1.0940777018898246e-06,
+          "xout_real": 0.05000145834262703,
+          "xout_imag": 1.6453511268475614e-06
+        },
+        {
+          "h_real": 1.0000454510438896,
+          "h_imag": 1.7052918847762964e-05,
+          "vin_rms": 0.03535319865178258,
+          "vout_rms": 0.0353548054967063,
+          "xin_real": 0.04999697297754214,
+          "xin_imag": 1.7052052671364677e-06,
+          "xout_real": 0.04999924536307656,
+          "xout_imag": 2.557877093315729e-06
+        },
+        {
+          "h_real": 0.9999066827672659,
+          "h_imag": 4.384565944515362e-05,
+          "vin_rms": 0.03535775705616986,
+          "vout_rms": 0.03535445760211548,
+          "xin_real": 0.05000341954613873,
+          "xin_imag": -1.3338255261094471e-06,
+          "xout_real": 0.04999875342388191,
+          "xout_imag": 8.58731847310736e-07
+        },
+        {
+          "h_real": 0.999901973536007,
+          "h_imag": 8.789737537880191e-05,
+          "vin_rms": 0.035357279186739705,
+          "vout_rms": 0.03535381337428227,
+          "xin_real": 0.05000274372636801,
+          "xin_imag": -1.6772830004556607e-06,
+          "xout_real": 0.049997842281639344,
+          "xout_imag": 2.7179913529525907e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.003973,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.003973,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.00411,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.00411,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.004247,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.004247,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.004384,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.7305843458907682e-05,
+            "t0_s": 0.004384,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.014260015010139931,
+        "sample_rate_hz": 56100.92271509816,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 1122.0184543019632,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 1122.0184543019632,
+      "actual_acquisition": {
+        "sample_rate_hz": 57783.95039655111,
+        "record_length": 824
+      },
+      "gain_std_db": 0.001123958026640526,
+      "phase_std_deg": 0.0016802306668836108,
+      "h_real": 1.0000068585433695,
+      "h_imag": 5.08990554021565e-05
+    },
+    {
+      "frequency_hz": 1584.8931924611136,
+      "timestamp": "2026-09-26T08:03:22.031225+00:00",
+      "gain_db": 0.00020570582080935685,
+      "phase_deg": -0.0018336023053677764,
+      "vin_rms": 0.03535511883279268,
+      "vout_rms": 0.03535595616487555,
+      "sample_rate_hz": 81621.99941174735,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0000755304083448,
+          "h_imag": 5.031725188830034e-05,
+          "vin_rms": 0.03535422816089959,
+          "vout_rms": 0.03535689852494129,
+          "xin_real": 0.04999842893207548,
+          "xin_imag": -1.4248117649649683e-06,
+          "xout_real": 0.05000220540552193,
+          "xout_imag": 1.0908641610151345e-06
+        },
+        {
+          "h_real": 1.0000300548997165,
+          "h_imag": -7.679389671856746e-05,
+          "vin_rms": 0.03535574528080452,
+          "vout_rms": 0.03535680799843197,
+          "xin_real": 0.050000574376364966,
+          "xin_imag": 3.2796125081545458e-06,
+          "xout_real": 0.050002077390467844,
+          "xout_imag": -5.600278679480343e-07
+        },
+        {
+          "h_real": 0.9999484329206171,
+          "h_imag": 1.5139328946767522e-05,
+          "vin_rms": 0.035357522033671776,
+          "vout_rms": 0.03535569875357845,
+          "xin_real": 0.05000308718310645,
+          "xin_imag": -9.390560151963625e-07,
+          "xout_real": 0.05000050868415696,
+          "xout_imag": -1.8199440560133822e-07
+        },
+        {
+          "h_real": 1.000040711876029,
+          "h_imag": -0.00011667530535326342,
+          "vin_rms": 0.035352979855794844,
+          "vout_rms": 0.0353544193825505,
+          "xin_real": 0.04999666352861514,
+          "xin_imag": 2.3183868385885257e-06,
+          "xout_real": 0.04999869925708108,
+          "xout_imag": -3.5148947593794544e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004521,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004521,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004658,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004658,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004795,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004795,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004932,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.22515989219455e-05,
+            "t0_s": 0.004932,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.010095317511683091,
+        "sample_rate_hz": 79244.65962305568,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 1584.8931924611136,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 1584.8931924611136,
+      "actual_acquisition": {
+        "sample_rate_hz": 81621.99941174735,
+        "record_length": 824
+      },
+      "gain_std_db": 0.00046725365555053995,
+      "phase_std_deg": 0.004459398838738018,
+      "h_real": 1.0000236825261768,
+      "h_imag": -3.200315530919076e-05
+    },
+    {
+      "frequency_hz": 2238.7211385683395,
+      "timestamp": "2026-09-26T08:03:22.038525+00:00",
+      "gain_db": -0.0004425293147908814,
+      "phase_deg": -0.0001891089335686047,
+      "vin_rms": 0.03535708705562251,
+      "vout_rms": 0.035355285651950716,
+      "sample_rate_hz": 115294.13863626949,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999569154557857,
+          "h_imag": -2.3287982497486237e-05,
+          "vin_rms": 0.03535724085665894,
+          "vout_rms": 0.03535571751564002,
+          "xin_real": 0.05000268946389148,
+          "xin_imag": 2.892960584256092e-06,
+          "xout_real": 0.05000053518817765,
+          "xout_imag": 1.7283741853055454e-06
+        },
+        {
+          "h_real": 0.9998939715433501,
+          "h_imag": 2.7715117524935982e-05,
+          "vin_rms": 0.03535717812542201,
+          "vout_rms": 0.03535342927197473,
+          "xin_real": 0.0500026008055789,
+          "xin_imag": -1.6320420262696442e-06,
+          "xout_real": 0.049997299152219246,
+          "xout_imag": -2.460410254933333e-07
+        },
+        {
+          "h_real": 0.9998825766195524,
+          "h_imag": 1.2257970180216129e-05,
+          "vin_rms": 0.03535878555971998,
+          "vout_rms": 0.03535463361424781,
+          "xin_real": 0.05000487408558244,
+          "xin_imag": 4.4896582521260625e-07,
+          "xout_real": 0.04999900233872504,
+          "xout_imag": 1.061871361534236e-06
+        },
+        {
+          "h_real": 1.0000627492701584,
+          "h_imag": -2.98867267363196e-05,
+          "vin_rms": 0.035355143680689094,
+          "vout_rms": 0.0353573622059403,
+          "xin_real": 0.04999972362939878,
+          "xin_imag": 2.519539934664021e-06,
+          "xout_real": 0.05000286115086544,
+          "xout_imag": 1.0253699569527124e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.005069,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.005069,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.005206,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.005206,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.005343,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.005343,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.00548,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 8.673467808756566e-06,
+            "t0_s": 0.00548,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0071469374744154105,
+        "sample_rate_hz": 111936.05692841698,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 2238.7211385683395,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 2238.7211385683395,
+      "actual_acquisition": {
+        "sample_rate_hz": 115294.13863626949,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0007170088923770385,
+      "phase_std_deg": 0.0015900753718575892,
+      "h_real": 0.9999490532222117,
+      "h_imag": -3.300405382163431e-06
+    },
+    {
+      "frequency_hz": 3162.277660168379,
+      "timestamp": "2026-09-26T08:03:22.045873+00:00",
+      "gain_db": 0.0009772433232892196,
+      "phase_deg": -0.0014134388426043643,
+      "vin_rms": 0.03535363788725671,
+      "vout_rms": 0.03535761563659566,
+      "sample_rate_hz": 162857.29949867152,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0001915220836652,
+          "h_imag": -4.122949545612367e-05,
+          "vin_rms": 0.03535231534802319,
+          "vout_rms": 0.03535908612716246,
+          "xin_real": 0.04999572373568836,
+          "xin_imag": 3.012785927665328e-06,
+          "xout_real": 0.05000529914508821,
+          "xout_imag": 9.520644781176531e-07
+        },
+        {
+          "h_real": 1.0000088088732149,
+          "h_imag": 3.25381927847153e-05,
+          "vin_rms": 0.03535639752133975,
+          "vout_rms": 0.0353567089900792,
+          "xin_real": 0.050001496772024805,
+          "xin_imag": -3.4541558519391274e-06,
+          "xout_real": 0.05000193734126242,
+          "xout_imag": -1.8272279376676291e-06
+        },
+        {
+          "h_real": 1.0001109711607246,
+          "h_imag": -4.469685891358688e-05,
+          "vin_rms": 0.0353535722673305,
+          "vout_rms": 0.03535749552959169,
+          "xin_real": 0.04999750135122094,
+          "xin_imag": 1.6605363287012534e-06,
+          "xout_real": 0.050003049706199974,
+          "xout_imag": -5.740106635823175e-07
+        },
+        {
+          "h_real": 1.0001387591644428,
+          "h_imag": -4.5299587384879784e-05,
+          "vin_rms": 0.035352266412333425,
+          "vout_rms": 0.03535717189954928,
+          "xin_real": 0.049995654619745346,
+          "xin_imag": 3.468891732115711e-07,
+          "xout_real": 0.05000259199072009,
+          "xout_imag": -1.9178452180480225e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.005617,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.005617,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.005754,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.005754,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.0058909999999999995,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.0058909999999999995,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.0060279999999999995,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 6.1403449712007376e-06,
+            "t0_s": 0.0060279999999999995,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.005059644256269407,
+        "sample_rate_hz": 158113.88300841895,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 3162.277660168379,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 3162.277660168379,
+      "actual_acquisition": {
+        "sample_rate_hz": 162857.29949867152,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0006668915564542306,
+      "phase_std_deg": 0.002187492793325765,
+      "h_real": 1.000112515320512,
+      "h_imag": -2.467193724246876e-05
+    },
+    {
+      "frequency_hz": 4466.8359215096325,
+      "timestamp": "2026-09-26T08:03:22.053232+00:00",
+      "gain_db": 0.00021678807141430837,
+      "phase_deg": 0.001869346808064165,
+      "vin_rms": 0.035355313306669175,
+      "vout_rms": 0.03535619550285887,
+      "sample_rate_hz": 230042.04995774612,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0000993575602788,
+          "h_imag": 0.00011561109124670145,
+          "vin_rms": 0.035353314311025,
+          "vout_rms": 0.0353568271663241,
+          "xin_real": 0.0499971363204624,
+          "xin_imag": -5.030044754459745e-06,
+          "xout_real": 0.05000210449547709,
+          "xout_imag": 7.49678961784108e-07
+        },
+        {
+          "h_real": 1.0000403493587793,
+          "h_imag": 7.004009854659826e-05,
+          "vin_rms": 0.035354276289891844,
+          "vout_rms": 0.03535570289898398,
+          "xin_real": 0.049998497016314494,
+          "xin_imag": 2.7130670821051753e-07,
+          "xout_real": 0.05000051440460668,
+          "xout_imag": 3.7732173134666924e-06
+        },
+        {
+          "h_real": 1.0001032783171913,
+          "h_imag": -1.879707234055801e-05,
+          "vin_rms": 0.035353101962507356,
+          "vout_rms": 0.035356753177630554,
+          "xin_real": 0.04999683623571581,
+          "xin_imag": 1.778172711741494e-06,
+          "xout_real": 0.05000199985825157,
+          "xout_imag": 8.385622109050562e-07
+        },
+        {
+          "h_real": 0.9998568484769463,
+          "h_imag": -3.634583355738938e-05,
+          "vin_rms": 0.0353605606632525,
+          "vout_rms": 0.03535549876849687,
+          "xin_real": 0.050007384441524944,
+          "xin_imag": 1.4685537440569462e-06,
+          "xout_real": 0.05000022586165402,
+          "xout_imag": -3.4921655320025075e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.0061649999999999995,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.0061649999999999995,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.0063019999999999994,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.0063019999999999994,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.006438999999999999,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.006438999999999999,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.006576,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 4.3470313370259e-06,
+            "t0_s": 0.006576,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.003581953821709342,
+        "sample_rate_hz": 223341.79607548163,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 4466.8359215096325,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 4466.8359215096325,
+      "actual_acquisition": {
+        "sample_rate_hz": 230042.0499577461,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0010050866494284755,
+      "phase_std_deg": 0.004143054977151087,
+      "h_real": 1.000024958428299,
+      "h_imag": 3.262707097383809e-05
+    },
+    {
+      "frequency_hz": 6309.573444801931,
+      "timestamp": "2026-09-26T08:03:22.060596+00:00",
+      "gain_db": 0.00023923463277936475,
+      "phase_deg": -0.0006515724252267319,
+      "vin_rms": 0.0353548763500291,
+      "vout_rms": 0.03535585014976349,
+      "sample_rate_hz": 324943.03240729944,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0000717417225817,
+          "h_imag": -0.00013950399932352494,
+          "vin_rms": 0.03535243066736003,
+          "vout_rms": 0.03535496725561217,
+          "xin_real": 0.04999588681062926,
+          "xin_imag": 3.1937037669181163e-06,
+          "xout_real": 0.049999474047205505,
+          "xout_imag": -3.7806932710812825e-06
+        },
+        {
+          "h_real": 0.9998849800716634,
+          "h_imag": -3.535030712352773e-05,
+          "vin_rms": 0.03535756769623026,
+          "vout_rms": 0.03535350089342242,
+          "xin_real": 0.05000315176818648,
+          "xin_imag": 1.8633569454744008e-07,
+          "xout_real": 0.049997400415840526,
+          "xout_imag": -1.581312509920554e-06
+        },
+        {
+          "h_real": 1.0001185616671908,
+          "h_imag": 6.83669399623731e-05,
+          "vin_rms": 0.03535522977799099,
+          "vout_rms": 0.035359421635593434,
+          "xin_real": 0.049999845451998974,
+          "xin_imag": 2.9206157908538007e-07,
+          "xout_real": 0.05000577349706768,
+          "xout_imag": 3.7104326385378665e-06
+        },
+        {
+          "h_real": 1.0000348894169786,
+          "h_imag": 6.099777704618789e-05,
+          "vin_rms": 0.03535427725853512,
+          "vout_rms": 0.035355510814425915,
+          "xin_real": 0.04999849838691682,
+          "xin_imag": 1.495286666488143e-08,
+          "xout_real": 0.05000024280446325,
+          "xout_imag": 3.0647506456110185e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.006713,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.006713,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.00685,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.00685,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.006987,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.006987,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.007124,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 3.077462509633231e-06,
+            "t0_s": 0.007124,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0025358291079377823,
+        "sample_rate_hz": 315478.67224009655,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 6309.573444801931,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 6309.573444801931,
+      "actual_acquisition": {
+        "sample_rate_hz": 324943.03240729944,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0008774839246902702,
+      "phase_std_deg": 0.005592772634411789,
+      "h_real": 1.0000275432196037,
+      "h_imag": -1.1372397359622923e-05
+    },
+    {
+      "frequency_hz": 8912.509381337457,
+      "timestamp": "2026-09-26T08:03:22.068068+00:00",
+      "gain_db": 0.00021853022413860737,
+      "phase_deg": -0.0014521784414966987,
+      "vin_rms": 0.035355708987130974,
+      "vout_rms": 0.03535659856043225,
+      "sample_rate_hz": 458994.23313887906,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.000071676626899,
+          "h_imag": -2.848943353633953e-05,
+          "vin_rms": 0.0353559800593345,
+          "vout_rms": 0.035358514271073144,
+          "xin_real": 0.05000090649538714,
+          "xin_imag": -1.2456605877410825e-06,
+          "xout_real": 0.05000449035621846,
+          "xout_imag": -2.6702473748473323e-06
+        },
+        {
+          "h_real": 1.0000063782723947,
+          "h_imag": -3.245545754083728e-05,
+          "vin_rms": 0.035355753281403265,
+          "vout_rms": 0.03535597880864941,
+          "xin_real": 0.050000585785338426,
+          "xin_imag": -1.1462674598775608e-06,
+          "xout_real": 0.05000090466549183,
+          "xout_imag": -2.7690666600567005e-06
+        },
+        {
+          "h_real": 1.0000504053709511,
+          "h_imag": 4.607906623537979e-05,
+          "vin_rms": 0.0353553773128971,
+          "vout_rms": 0.035357159451338466,
+          "xin_real": 0.05000005409733129,
+          "xin_imag": -3.722661752648702e-07,
+          "xout_real": 0.050002574385759314,
+          "xout_imag": 1.931670865043974e-06
+        },
+        {
+          "h_real": 0.9999721765982315,
+          "h_imag": -8.651790637385588e-05,
+          "vin_rms": 0.03535572529488905,
+          "vout_rms": 0.035354741710667985,
+          "xin_real": 0.05000054587308003,
+          "xin_imag": 5.886368497724819e-06,
+          "xout_real": 0.04999915519707984,
+          "xout_imag": 1.5602621724403251e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007261,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007261,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007398,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007398,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007535,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007535,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007672,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.178676610295074e-06,
+            "t0_s": 0.007672,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0017952295268831412,
+        "sample_rate_hz": 445625.46906687284,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 8912.509381337457,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 8912.509381337457,
+      "actual_acquisition": {
+        "sample_rate_hz": 458994.23313887906,
+        "record_length": 824
+      },
+      "gain_std_db": 0.00038716512697084467,
+      "phase_std_deg": 0.003121422101051795,
+      "h_real": 1.0000251592171192,
+      "h_imag": -2.5345932803913226e-05
+    },
+    {
+      "frequency_hz": 12589.254117941668,
+      "timestamp": "2026-09-26T08:03:22.075895+00:00",
+      "gain_db": -0.0005785974334739979,
+      "phase_deg": -0.0026609271766062648,
+      "vin_rms": 0.0353571448327748,
+      "vout_rms": 0.03535478965342989,
+      "sample_rate_hz": 648346.587073996,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999315392386767,
+          "h_imag": -4.6367591535481146e-05,
+          "vin_rms": 0.035356928269818275,
+          "vout_rms": 0.035354507745601345,
+          "xin_real": 0.05000224747756516,
+          "xin_imag": -7.392419020776316e-07,
+          "xout_real": 0.0499988242513581,
+          "xout_imag": -3.057675079909997e-06
+        },
+        {
+          "h_real": 0.9999675111394447,
+          "h_imag": -6.58787632248912e-05,
+          "vin_rms": 0.03535757306463166,
+          "vout_rms": 0.03535642441409942,
+          "xin_real": 0.05000315921516531,
+          "xin_imag": 3.8137071051906966e-06,
+          "xout_real": 0.05000153492074055,
+          "xout_imag": 5.194369157599459e-07
+        },
+        {
+          "h_real": 0.9998725058092018,
+          "h_imag": -7.592437316023389e-05,
+          "vin_rms": 0.0353577363855974,
+          "vout_rms": 0.035353228581531476,
+          "xin_real": 0.05000339030336644,
+          "xin_imag": 1.6721232424387176e-06,
+          "xout_real": 0.04999701528853746,
+          "xout_imag": -2.124566008230606e-06
+        },
+        {
+          "h_real": 0.9999619944087413,
+          "h_imag": 2.415340663156239e-06,
+          "vin_rms": 0.03535634161105187,
+          "vout_rms": 0.03535499787248734,
+          "xin_real": 0.050001417809880655,
+          "xin_imag": 1.1120010296783577e-06,
+          "xout_real": 0.04999951747374716,
+          "xout_imag": 1.232729225073414e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.007809,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.007809,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.007946,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.007946,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.008083,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.008083,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.00822,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.5423849217947218e-06,
+            "t0_s": 0.00822,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0012709251755588509,
+        "sample_rate_hz": 629462.7058970834,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 12589.254117941668,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 12589.254117941668,
+      "actual_acquisition": {
+        "sample_rate_hz": 648346.587073996,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0003783928392209902,
+      "phase_std_deg": 0.001994328288479681,
+      "h_real": 0.9999333876490162,
+      "h_imag": -4.64388468143625e-05
+    },
+    {
+      "frequency_hz": 17782.794100389227,
+      "timestamp": "2026-09-26T08:03:22.083610+00:00",
+      "gain_db": 0.0001237269780501122,
+      "phase_deg": 0.002861286609970648,
+      "vin_rms": 0.035355541123113635,
+      "vout_rms": 0.03535604474506726,
+      "sample_rate_hz": 915813.8961700452,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0000099174932005,
+          "h_imag": 0.00012860336859346342,
+          "vin_rms": 0.03535591505851262,
+          "vout_rms": 0.03535626599292958,
+          "xin_real": 0.05000081437163394,
+          "xin_imag": -4.628490465783604e-06,
+          "xout_real": 0.05000131084960995,
+          "xout_imag": 1.8017367918022584e-06
+        },
+        {
+          "h_real": 1.0000665037313878,
+          "h_imag": 6.752585012115517e-05,
+          "vin_rms": 0.03535384860566022,
+          "vout_rms": 0.03535619984910824,
+          "xin_real": 0.04999789217782183,
+          "xin_imag": 4.886604267354602e-07,
+          "xout_real": 0.05000121719121597,
+          "xout_imag": 3.864843098050493e-06
+        },
+        {
+          "h_real": 1.0000181978577867,
+          "h_imag": 1.1023364326247466e-05,
+          "vin_rms": 0.03535430191077989,
+          "vout_rms": 0.035354945285486196,
+          "xin_real": 0.049998532971434854,
+          "xin_imag": 5.2821861326017365e-06,
+          "xout_real": 0.04999944277939995,
+          "xout_imag": 5.833434301795803e-06
+        },
+        {
+          "h_real": 0.9999623547146425,
+          "h_imag": -7.3942489187179715e-06,
+          "vin_rms": 0.03535809891750183,
+          "vout_rms": 0.03535676785274502,
+          "xin_real": 0.0500039030285906,
+          "xin_imag": -1.6430568086122612e-07,
+          "xout_real": 0.05000202061617718,
+          "xout_imag": -5.340408014278185e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008357,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008357,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008494,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008494,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008631,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008631,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008768,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 1.0919249032822313e-06,
+            "t0_s": 0.008768,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0008997461203045586,
+        "sample_rate_hz": 889139.7050194613,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 17782.794100389227,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 17782.794100389227,
+      "actual_acquisition": {
+        "sample_rate_hz": 915813.8961700452,
+        "record_length": 824
+      },
+      "gain_std_db": 0.00037048263886104197,
+      "phase_std_deg": 0.003516205647160044,
+      "h_real": 1.0000142434492545,
+      "h_imag": 4.993958353053702e-05
+    },
+    {
+      "frequency_hz": 25118.86431509581,
+      "timestamp": "2026-09-26T08:03:22.091006+00:00",
+      "gain_db": -0.00021810646209693117,
+      "phase_deg": -0.000471080393452894,
+      "vin_rms": 0.03535614879585882,
+      "vout_rms": 0.03535526103674946,
+      "sample_rate_hz": 1293621.5122274342,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0000555702964145,
+          "h_imag": 1.3209392406012339e-05,
+          "vin_rms": 0.03535689585107624,
+          "vout_rms": 0.03535886064734349,
+          "xin_real": 0.05000220158387082,
+          "xin_imag": -2.2833420618657746e-06,
+          "xout_real": 0.05000498025119578,
+          "xout_imag": -1.6229702459750869e-06
+        },
+        {
+          "h_real": 0.9999458216547276,
+          "h_imag": -3.382428089174394e-06,
+          "vin_rms": 0.03535558913328102,
+          "vout_rms": 0.035353673626167904,
+          "xin_real": 0.05000035365537464,
+          "xin_imag": -5.101189615938074e-07,
+          "xout_real": 0.04999764471722512,
+          "xout_imag": -6.79213924865169e-07
+        },
+        {
+          "h_real": 0.9998896075722807,
+          "h_imag": -9.3103067132999e-05,
+          "vin_rms": 0.03535711457801333,
+          "vout_rms": 0.035353211573555775,
+          "xin_real": 0.050002510855233016,
+          "xin_imag": 3.276862883953317e-06,
+          "xout_real": 0.04999699126175364,
+          "xout_imag": -1.3788859818690161e-06
+        },
+        {
+          "h_real": 1.0000085598647765,
+          "h_imag": 5.0389312998888575e-05,
+          "vin_rms": 0.03535499562106471,
+          "vout_rms": 0.03535529829993065,
+          "xin_real": 0.0499995142765434,
+          "xin_imag": -1.6854500546388463e-06,
+          "xout_real": 0.049999942350553175,
+          "xout_imag": 8.339766928097418e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.008905,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.008905,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.009042,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.009042,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.009179,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.009179,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.009316,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 7.730236321427129e-07,
+            "t0_s": 0.009316,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0006369714728855954,
+        "sample_rate_hz": 1255943.2157547905,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 25118.86431509581,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 25118.86431509581,
+      "actual_acquisition": {
+        "sample_rate_hz": 1293621.5122274342,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0006295775062915063,
+      "phase_std_deg": 0.003489005440795538,
+      "h_real": 0.9999748898470499,
+      "h_imag": -8.22169745431812e-06
+    },
+    {
+      "frequency_hz": 35481.338923357536,
+      "timestamp": "2026-09-26T08:03:22.098754+00:00",
+      "gain_db": 1.729568166880833e-05,
+      "phase_deg": -6.347014632979153e-05,
+      "vin_rms": 0.03535437858183712,
+      "vout_rms": 0.035354448967021876,
+      "sample_rate_hz": 1827288.954552913,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999708345984579,
+          "h_imag": 2.28938432161873e-05,
+          "vin_rms": 0.035354172734957036,
+          "vout_rms": 0.03535314162557836,
+          "xin_real": 0.049998350498483744,
+          "xin_imag": -2.6414256187294108e-06,
+          "xout_real": 0.0499968923369874,
+          "xout_imag": -1.49669418311033e-06
+        },
+        {
+          "h_real": 0.9999719508589454,
+          "h_imag": -1.6630339341071398e-05,
+          "vin_rms": 0.03535588751257721,
+          "vout_rms": 0.03535489581519055,
+          "xin_real": 0.0500007756244366,
+          "xin_imag": 7.475114641010196e-07,
+          "xout_real": 0.04999937315805964,
+          "xout_imag": -8.403936890462857e-08
+        },
+        {
+          "h_real": 1.0000331306285937,
+          "h_imag": -2.0685887803315953e-05,
+          "vin_rms": 0.0353535320719457,
+          "vout_rms": 0.03535470336424999,
+          "xin_real": 0.049997444526239755,
+          "xin_imag": 8.773625489654829e-07,
+          "xout_real": 0.049999100991154004,
+          "xout_imag": -1.5684991138407433e-07
+        },
+        {
+          "h_real": 1.000032048875235,
+          "h_imag": 9.991322983304262e-06,
+          "vin_rms": 0.03535392200786852,
+          "vout_rms": 0.03535505506306859,
+          "xin_real": 0.04999799598639776,
+          "xin_imag": -1.450991954934641e-07,
+          "xout_real": 0.049999598367382866,
+          "xout_imag": 3.5444228065857294e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.009453,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.009453,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.00959,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.00959,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.009727,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.009727,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.009864,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 5.472588216047484e-07,
+            "t0_s": 0.009864,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0004509412690023127,
+        "sample_rate_hz": 1774066.9461678767,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 35481.338923357536,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 35481.338923357536,
+      "actual_acquisition": {
+        "sample_rate_hz": 1827288.954552913,
+        "record_length": 824
+      },
+      "gain_std_db": 0.0003069394200673869,
+      "phase_std_deg": 0.0012034536025554204,
+      "h_real": 1.0000019912403082,
+      "h_imag": -1.1077652362239474e-06
+    },
+    {
+      "frequency_hz": 50118.723362727236,
+      "timestamp": "2026-09-26T08:03:22.106324+00:00",
+      "gain_db": 0.0006233849834997806,
+      "phase_deg": -9.78884052074136e-05,
+      "vin_rms": 0.03535393937162061,
+      "vout_rms": 0.03535647671221216,
+      "sample_rate_hz": 2581114.253180453,
+      "record_length": 826,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 1.0002123949248432,
+          "h_imag": 3.4606336738201275e-05,
+          "vin_rms": 0.03535386586119626,
+          "vout_rms": 0.03536137486404413,
+          "xin_real": 0.049997916538395124,
+          "xin_imag": 2.1172131732752146e-06,
+          "xout_real": 0.050008535768851614,
+          "xout_imag": 3.847907594544213e-06
+        },
+        {
+          "h_real": 1.0001292957632628,
+          "h_imag": -2.5007797787292035e-05,
+          "vin_rms": 0.03535119960637412,
+          "vout_rms": 0.03535577037776219,
+          "xin_real": 0.049994145923948095,
+          "xin_imag": 7.44577192111832e-07,
+          "xout_real": 0.050000609973824245,
+          "xout_imag": -5.055700290262702e-07
+        },
+        {
+          "h_real": 0.9999616209915445,
+          "h_imag": -1.6153966588062705e-05,
+          "vin_rms": 0.0353544123681155,
+          "vout_rms": 0.03535305550543733,
+          "xin_real": 0.049998689460650246,
+          "xin_imag": 8.353393733909223e-08,
+          "xout_real": 0.04999677056187407,
+          "xout_imag": -7.241464276048621e-07
+        },
+        {
+          "h_real": 0.999983778010621,
+          "h_imag": -2.7896272906359916e-07,
+          "vin_rms": 0.03535627965079658,
+          "vout_rms": 0.03535570610160498,
+          "xin_real": 0.05000133014345001,
+          "xin_imag": 2.318702597220615e-06,
+          "xout_real": 0.050000519023050326,
+          "xout_imag": 2.304716475738083e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010001,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010001,
+            "clipped": false,
+            "record_length": 826
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010138,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010138,
+            "clipped": false,
+            "record_length": 826
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010275,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010275,
+            "clipped": false,
+            "record_length": 826
+          }
+        },
+        {
+          "1": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010412,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 3.8742957572211244e-07,
+            "t0_s": 0.010412,
+            "clipped": false,
+            "record_length": 826
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.0003192419703950207,
+        "sample_rate_hz": 2505936.168136362,
+        "record_length": 801,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 50118.723362727236,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 50118.723362727236,
+      "actual_acquisition": {
+        "sample_rate_hz": 2581114.253180453,
+        "record_length": 826
+      },
+      "gain_std_db": 0.0010393231545299505,
+      "phase_std_deg": 0.0015056451845465314,
+      "h_real": 1.0000717724225678,
+      "h_imag": -1.7085975915542663e-06
+    },
+    {
+      "frequency_hz": 70794.57843841377,
+      "timestamp": "2026-09-26T08:03:22.114261+00:00",
+      "gain_db": 6.031834634904907e-06,
+      "phase_deg": 0.0015002517681352856,
+      "vin_rms": 0.03535512193061678,
+      "vout_rms": 0.03535514651276586,
+      "sample_rate_hz": 3645920.7895783093,
+      "record_length": 824,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999818275860448,
+          "h_imag": 4.242724496318076e-05,
+          "vin_rms": 0.03535361155032334,
+          "vout_rms": 0.035352969121679526,
+          "xin_real": 0.0499975568989892,
+          "xin_imag": -1.8532808824984312e-06,
+          "xout_real": 0.04999664840131808,
+          "xout_imag": 2.6801139020292383e-07
+        },
+        {
+          "h_real": 1.000020874942778,
+          "h_imag": -3.355024166449213e-05,
+          "vin_rms": 0.03535397046679062,
+          "vout_rms": 0.03535470849879822,
+          "xin_real": 0.049998064490900385,
+          "xin_imag": -1.6423073015075663e-06,
+          "xout_real": 0.04999910814253583,
+          "xout_imag": -3.31978873100508e-06
+        },
+        {
+          "h_real": 1.0000124597278643,
+          "h_imag": 8.762799202290674e-05,
+          "vin_rms": 0.03535551693148353,
+          "vout_rms": 0.035355957587342904,
+          "xin_real": 0.050000251507458446,
+          "xin_imag": -2.0434622238744716e-06,
+          "xout_real": 0.05000087467604987,
+          "xout_imag": 2.3379339553812175e-06
+        },
+        {
+          "h_real": 0.9999876141355408,
+          "h_imag": 8.232409252574673e-06,
+          "vin_rms": 0.035357388773869625,
+          "vout_rms": 0.03535695084324279,
+          "xin_real": 0.05000289872849268,
+          "xin_imag": 7.491525205212616e-07,
+          "xout_real": 0.05000227939319913,
+          "xout_imag": 1.1607875677676806e-06
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.010549,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.010549,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.010686,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.010686,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.010823,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.010823,
+            "clipped": false,
+            "record_length": 824
+          }
+        },
+        {
+          "1": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.01096,
+            "clipped": false,
+            "record_length": 824
+          },
+          "2": {
+            "dt_s": 2.742791348782048e-07,
+            "t0_s": 0.01096,
+            "clipped": false,
+            "record_length": 824
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.00022600600713964077,
+        "sample_rate_hz": 3539728.9219206884,
+        "record_length": 800,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 70794.57843841377,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 70794.57843841377,
+      "actual_acquisition": {
+        "sample_rate_hz": 3645920.7895783093,
+        "record_length": 824
+      },
+      "gain_std_db": 0.00016425314084526143,
+      "phase_std_deg": 0.00294566622614981,
+      "h_real": 1.000000694098057,
+      "h_imag": 2.6184351143542512e-05
+    },
+    {
+      "frequency_hz": 100000,
+      "timestamp": "2026-09-26T08:03:22.121885+00:00",
+      "gain_db": -0.00029741328697509425,
+      "phase_deg": 0.0001525098891761445,
+      "vin_rms": 0.035355553202410316,
+      "vout_rms": 0.03535434254811091,
+      "sample_rate_hz": 5150000.0,
+      "record_length": 826,
+      "averages": 4,
+      "requested_averages": 4,
+      "status": "ok",
+      "warnings": [],
+      "estimates": [
+        {
+          "h_real": 0.9999697771330434,
+          "h_imag": -2.1755889418026277e-05,
+          "vin_rms": 0.03535457162391156,
+          "vout_rms": 0.03535350311576431,
+          "xin_real": 0.04999891467330605,
+          "xin_imag": 9.550115235369784e-07,
+          "xout_real": 0.04999740358353703,
+          "xout_imag": -1.3278819830301737e-07
+        },
+        {
+          "h_real": 0.9998919929646236,
+          "h_imag": 9.686897580247229e-06,
+          "vin_rms": 0.03535900491474555,
+          "vout_rms": 0.03535518589511,
+          "xin_real": 0.05000518430055517,
+          "xin_imag": 4.353283283026741e-07,
+          "xout_real": 0.04999978338462844,
+          "xout_imag": 9.196764085813834e-07
+        },
+        {
+          "h_real": 1.0000182403331321,
+          "h_imag": 5.6212937986147226e-05,
+          "vin_rms": 0.0353541234426615,
+          "vout_rms": 0.035354768369507315,
+          "xin_real": 0.049998280857344375,
+          "xin_imag": 3.286426133544667e-07,
+          "xout_real": 0.04999919282416928,
+          "xout_imag": 3.139198869153087e-06
+        },
+        {
+          "h_real": 0.9999830280196824,
+          "h_imag": -3.3497111880930784e-05,
+          "vin_rms": 0.035354512828322644,
+          "vout_rms": 0.03535391281206201,
+          "xin_real": 0.04999883151982465,
+          "xin_imag": 1.1437877108879718e-06,
+          "xout_real": 0.04999798297895378,
+          "xout_imag": -5.310481547899197e-07
+        }
+      ],
+      "acquisitions": [
+        {
+          "1": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011097,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011097,
+            "clipped": false,
+            "record_length": 826
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011234,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011234,
+            "clipped": false,
+            "record_length": 826
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011371,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011371,
+            "clipped": false,
+            "record_length": 826
+          }
+        },
+        {
+          "1": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011508,
+            "clipped": false,
+            "record_length": 826
+          },
+          "2": {
+            "dt_s": 1.941747572815534e-07,
+            "t0_s": 0.011508,
+            "clipped": false,
+            "record_length": 826
+          }
+        }
+      ],
+      "requested_acquisition": {
+        "duration_s": 0.00016,
+        "sample_rate_hz": 5000000.0,
+        "record_length": 801,
+        "manual_sample_rate": false
+      },
+      "source_settings": {
+        "state": {
+          "channel": 1,
+          "frequency": 100000,
+          "vpp": 0.1,
+          "offset": 0,
+          "enable": true
+        },
+        "readback": {}
+      },
+      "excitation_frequency_hz": 100000,
+      "actual_acquisition": {
+        "sample_rate_hz": 5150000.0,
+        "record_length": 826
+      },
+      "gain_std_db": 0.0004626434956006063,
+      "phase_std_deg": 0.002296778332649844,
+      "h_real": 0.9999657596126205,
+      "h_imag": 2.661708566859348e-06
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "completed",
+  "cleanup": {
+    "source_off": {
+      "off_confirmed": true
+    },
+    "scope_stopped": true
+  },
+  "simulation": true,
+  "finished_at": "2026-09-26T08:03:22.130008+00:00"
+}
