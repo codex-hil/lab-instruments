@@ -98,3 +98,16 @@ python3 scripts/fra-browser-smoke.py
 The script refuses a hardware-mode GUI, checks browser behavior and saves a local
 screenshot before closing that dedicated browser session. Firefox installation is
 optional for this smoke; automated unittest and FRA runtime require only Python.
+
+## Follow-up: small-signal amplitude controls
+
+GUI amplitude is displayed in mVpp, with 10/20/50 mVpp and ×2/÷2 buttons; preset/API
+values remain SI volts. Measured Vin/Vout are displayed in mVrms, separately from
+source setpoint/readback. Changes apply to the next measurement and are locked
+while running. `feedback-small-signal.json` starts at 10 mVpp and 5 mV/div.
+
+63 regression tests PASS. Synthetic 100/10/1 mVpp checks recover proportional Vin
+and unchanged H; browser conversion, preset round-trip and running-state lock PASS.
+See `amplitude-update.json`. No physical small-signal test, automatic leveling or
+inventory-limit change was performed. This adds manual convenience, not a new
+claim of hardware minimum amplitude or feedback-loop commissioning.

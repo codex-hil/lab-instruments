@@ -97,3 +97,24 @@ class EngineTests(unittest.TestCase):
         c=FRAConfig(start_frequency=1000,stop_frequency=1000,points=1,averages=1,sample_rate=51000,settling_cycles=0,minimum_settling_s=0)
         r=self.run_fixture(config=c)
         self.assertEqual(r['status'],'completed');self.assertAlmostEqual(r['points'][0]['sample_rate_hz'],52530)
+    def test_small_signal_amplitude_and_gain_invariance(self):
+        results=[]
+        for amplitude in [.1,.01,.001]:
+            c=FRAConfig(start_frequency=1000,stop_frequency=1000,points=1,amplitude=amplitude,averages=4,settling_cycles=0,minimum_settling_s=0)
+            result=self.run_fixture(config=c)
+            self.assertEqual(result['status'],'completed')
+            point=result['points'][0]
+            self.assertEqual(point['source_settings']['state']['vpp'],amplitude)
+            self.assertAlmostEqual(point['vin_rms'],amplitude/(2*math.sqrt(2)),delta=amplitude*1e-4)
+            results.append(point)
+        for point in results[1:]:
+            self.assertAlmostEqual(point['gain_db'],results[0]['gain_db'],places=9)
+            self.assertAlmostEqual(point['phase_deg'],results[0]['phase_deg'],places=9)
+    def test_small_signal_cli_units_and_preset(self):
+        from pathlib import Path
+        from labinstruments.fra_cli import quantity
+        self.assertEqual(quantity('10mV'),.01)
+        self.assertEqual(quantity('10mVpp'),.01)
+        self.assertEqual(quantity('2mV'),.002)
+        c=FRAConfig.from_dict(json.loads((Path(__file__).parents[1]/'examples/fra/feedback-small-signal.json').read_text()))
+        self.assertEqual(c.amplitude,.01);self.assertEqual(c.volts_per_div,.005)

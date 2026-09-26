@@ -51,22 +51,36 @@ try:
     # A fresh server has no result; obtain explicit mode from a read-only metadata endpoint.
     with urllib.request.urlopen(a.url+'/api/mode') as response:mode=json.load(response)
     assert mode['simulation'], 'browser smoke requires --simulate'
+    assert js('return Number(document.getElementById("c_amplitude").value)')==100
+    js('Array.from(document.querySelectorAll("[data-amplitude-mv]")).find(b=>b.dataset.amplitudeMv==="10").click();return true')
+    assert js('return readConfig().amplitude')==.01
+    js('Array.from(document.querySelectorAll("[data-amplitude-factor]")).find(b=>b.dataset.amplitudeFactor==="0.5").click();return true')
+    assert js('return readConfig().amplitude')==.005
+    js('Array.from(document.querySelectorAll("[data-amplitude-factor]")).find(b=>b.dataset.amplitudeFactor==="2").click();return true')
+    assert js('return readConfig().amplitude')==.01
+    js('populate(readConfig());return true')
+    assert js('return Number(document.getElementById("c_amplitude").value)')==10
     js('document.getElementById("c_start_frequency").value=100;document.getElementById("c_stop_frequency").value=10000;document.getElementById("c_points").value=5;document.getElementById("start").click();return true')
     wait('return document.getElementById("state").textContent==="completed"')
     assert js('return document.getElementById("trust").textContent.includes("SIMULATION")')
     assert js('return document.getElementById("warnings").textContent')==''
+    assert js('return document.getElementById("stats").textContent.includes("mVpp")')
+    with urllib.request.urlopen(a.url+'/api/status') as response:completed=json.load(response)
+    assert completed['result']['config']['amplitude']==.01
+    assert completed['result']['points'][0]['source_settings']['state']['vpp']==.01
     wait('return document.getElementById("plot").naturalWidth>0')
     shot=call('WebDriver:TakeScreenshot',{'id':None,'full':True,'scroll':True})
     if isinstance(shot,dict):shot=shot['value']
     path=Path(a.screenshot);path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(base64.b64decode(shot))
     js('document.getElementById("c_points").value=200;document.getElementById("start").click();return true')
     wait('return document.getElementById("state").textContent.startsWith("Measuring")')
+    assert js('return [...document.querySelectorAll(".amplitude-buttons button")].every(b=>b.disabled)')
     js('document.getElementById("stop").click();return true')
     wait('return document.getElementById("state").textContent==="cancelled"')
     assert js('return document.getElementById("details").textContent.includes("off_confirmed")')
     js('document.getElementById("single").click();return true')
     wait('return document.getElementById("state").textContent==="completed"')
     assert js('return document.getElementById("progress").max')==1
-    print(json.dumps({'browser_smoke':'PASS','controls':18,'sweep':'PASS','single':'PASS','stop':'PASS','plot':'PASS','screenshot':str(path)}))
+    print(json.dumps({'browser_smoke':'PASS','controls':18,'amplitude_mV_conversion_and_lock':'PASS','sweep':'PASS','single':'PASS','stop':'PASS','plot':'PASS','screenshot':str(path)}))
 finally:
     call('Marionette:Quit',{'flags':['eForceQuit']});s.close()

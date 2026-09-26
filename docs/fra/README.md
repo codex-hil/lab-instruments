@@ -208,3 +208,32 @@ python3 -m unittest discover -s tests -v
 component values, loading assumptions, failures and reproduction. `compare` produces
 numerical errors and an interpolated -3.0103 dB cutoff for RC. Its PASS is only a
 comparison result, never automatic TRUSTED promotion. Simulations remain labeled.
+
+## Small-signal amplitude adjustment
+
+The GUI displays AWG amplitude in **mVpp**, vertical scale in **mV/div**, and minimum
+input threshold / measured Vin/Vout in **mVrms**. Quick amplitude buttons provide
+10/20/50 mVpp and ×2/÷2. These edit the next measurement's preset only; all controls
+are locked while running. STOP, adjust, then SINGLE POINT or START to apply the new
+value. The GUI shows programmed amplitude and driver readback separately from
+measured Vin; neither source value substitutes for acquired Vin in H.
+
+The shared API/preset stays in SI units: `amplitude: 0.01` means 10 mVpp, not 10 Vpp.
+CLI already accepts `--amplitude 10mV` or `10mVpp`. The same inventory limits and
+strict readback validation apply; no automatic clamp, lower-limit override or
+silent change of amplitude is introduced. Bench example inventories currently have
+`vpp_min: 0.01`; this is policy, not a claim about hardware minimum or resolution.
+Readback mismatch due to hardware rounding is still a rejected measurement.
+
+```sh
+./dist/labinst.pyz fra measure --simulate --frequency 1kHz \
+  --amplitude 10mV --volts-per-div 2mV --output local/small-signal.json
+./dist/labinst.pyz fra gui --simulate --preset examples/fra/feedback-small-signal.json
+```
+
+`feedback-small-signal.json` is a 10 mVpp / 5 mV-per-division starting preset, not a
+validated feedback-loop fixture. Required injected amplitude depends on the DUT,
+injection network and loading; confirm actual Vin. Smaller amplitudes may require
+an appropriate attenuator/injection network and sufficient measurement sensitivity.
+Automatic Vin leveling is not implemented; it would need an explicit upper bound
+and separate validation, particularly if the measured input disappears.
