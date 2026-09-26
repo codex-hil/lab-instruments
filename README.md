@@ -5,11 +5,28 @@ USBTMC dla Raspberry Pi. Repozytorium samowystarczalne: Python **3.11+**, biblio
 standardowa, bez pip i zewnętrznych zależności. Linux x86-64 / ARMv7 / ARM64 dla serwera;
 USB wymaga linuksowego sterownika `usbtmc`. Windows nie jest obecnie wspierany.
 
-**Wersja 0.1.1: działający fundament, nie certyfikowany system bezpieczeństwa.**
+**Wersja rozwojowa 0.2.0.dev1 z FRA; ostatnie stabilne wydanie 0.1.1.**
+To działający fundament, nie certyfikowany system bezpieczeństwa.
 Identyfikacja i małosygnałowe próby aktywnych profili zostały sprawdzone na stanowisku;
 [raport HIL](reports/hil-2026-09-25/README.md) rozróżnia PASS, próby częściowe i braki.
 Pełny commissioning pod obciążeniem pozostaje wymagany. Przykłady blokują włączanie wyjść.
 Nie wdrożono tych usług na bieżącym stanowisku ani nie zmieniono jego sieci.
+
+## FRA / Bode Plot — nowa capability (UNTRUSTED)
+
+FRA korzysta z istniejących driverów AWG i rozszerzenia akwizycji MSO4104.
+CLI, lokalna Web GUI i API współdzielą silnik pomiarowy. Wyniki: JSON, CSV, PNG, SVG;
+przesunięcie fazy i wzmocnienie liczone z dwóch przebiegów, bez używania nominalnego Vpp.
+
+```sh
+./scripts/bootstrap.sh
+./dist/labinst.pyz fra sweep --simulate --preset examples/fra/rc.json --output local/demo.json
+./dist/labinst.pyz fra gui --simulate
+```
+
+[Instrukcja i API FRA](docs/fra/README.md) · [luka/rozszerzenie drivera](docs/fra/driver-gap.md)
+· [procedura commissioning](docs/fra/commissioning.md) · [raport](reports/fra-2026-09-26/README.md).
+Sprzętowe loopback i RC pozostają OPEN ITEM do potwierdzenia okablowania.
 
 ## Zakres repozytorium i obecny sposób pracy
 

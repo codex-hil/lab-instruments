@@ -25,8 +25,9 @@ trybie; nie oznacza automatycznie pomiaru napięcia. Picoamperomierz może mieć
 zero-check. FETCh SMU nie inicjuje nowego pomiaru, może zwrócić stary wynik/brak danych.
 
 Transport obsługuje binarne wiadomości USBTMC oraz definite-length IEEE 488.2 na TCP
-z terminatorem po bloku. Sterowniki nie mają jeszcze wygodnego eksportu i skalowania
-waveformów ani screenshotów. Własny skrypt zaufany może użyć `Transport.transaction`.
+z terminatorem po bloku. MSO4104 ma teraz semantyczną akwizycję skalowanych waveformów w rozszerzeniu
+[FRA](fra/driver-gap.md), nadal bez fizycznego commissioningu tego rozszerzenia.
+Pozostałe profile nie mają tego API; eksport screenshotów nie jest zaimplementowany. Własny skrypt zaufany może użyć `Transport.transaction`.
 Bloki TCP `#0` są jawnie odrzucane; dla nich potrzebny jest profil framingu danego modelu.
 Limit odpowiedzi to 16 MiB. Usługa USB wymaga kernel ioctl MSG_IN_ATTR (sprawdzono na
 bieżącym Linuxie); stary kernel bez niego musi zostać zaktualizowany.

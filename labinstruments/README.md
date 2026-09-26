@@ -66,8 +66,9 @@ z terminatorem po danych. Bloki `#0` są odrzucane. Limit wiadomości: 16 MiB.
 `Transport.transaction(data, expect_reply)` przekazuje bajty; `query`/`write` są
 metodami tekstowymi. Nie ma automatycznego powtarzania zapisów ani przełączania LAN/USB.
 
-Przesył binarny MSO4104 sprawdzono na 10 000 próbek. Gotowe API zwracające tablice czasu
-i napięcia nie jest jeszcze zaimplementowane; podobnie eksport screenshotów.
+Przesył binarny MSO4104 sprawdzono na 10 000 próbek. Nowe API akwizycji MSO4104 zwraca wartości napięcia oraz t0/dt;
+[jego zakres i brakujące testy](../docs/fra/driver-gap.md) są opisane oddzielnie.
+Eksport screenshotów nie jest zaimplementowany.
 Nie należy utożsamiać możliwości transportu z gotową metodą drivera.
 
 ## Pliki

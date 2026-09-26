@@ -1,0 +1,15 @@
+{
+  "python": "3.12.3",
+  "tests": 61,
+  "test_status": "PASS",
+  "commands": [
+    "./scripts/bootstrap.sh",
+    "python3 scripts/fra-browser-smoke.py",
+    "./dist/labinst.pyz fra sweep --simulate --preset examples/fra/rc.json --output local/rc-result.json --csv local/rc.csv --png local/rc.png --svg local/rc.svg",
+    "./dist/labinst.pyz fra measure --simulate --frequency 1kHz --output local/single-result.json"
+  ],
+  "zipapp_sha256": "780c8ee7cb3e12aad3b7c047a873408228b5c919e0c4bc16a06389c3f3f17404",
+  "hardware_loopback": "OPEN ITEM",
+  "hardware_rc": "OPEN ITEM",
+  "trust_state": "UNTRUSTED"
+}

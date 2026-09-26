@@ -217,3 +217,17 @@ class Driver:
             return self.io.query('MEASU:IMMED:VALUE?')
         if self.category=='analyzer' and operation=='marker': return self.io.query('CALC:MARK1:Y?')
         raise ValueError('unsupported operation; no raw SCPI in protected API')
+
+    def configure_acquisition(self, channels, plan, volts_per_div):
+        """Configure simultaneous DC voltage acquisition and return actual settings."""
+        from .scope_acquisition import configure
+        return configure(self, channels, plan, volts_per_div)
+
+    def acquire_waveforms(self, timeout=10, cancel=None):
+        """Return channels from ONE stopped acquisition, scaled to volts and seconds."""
+        from .scope_acquisition import acquire
+        return acquire(self, timeout, cancel)
+
+    def stop_acquisition(self):
+        if self.model != 'mso4104': raise ValueError('unsupported acquisition capability')
+        self.io.write('ACQ:STATE STOP')
