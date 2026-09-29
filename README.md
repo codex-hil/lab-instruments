@@ -1,5 +1,8 @@
 # Lab instruments
 
+Analizator logiczny Cypress FX2: [uruchomienie, reguły USB i kopia EEPROM-u](tools/fx2/README.md)
+oraz [raport prób sprzętowych](reports/fx2-2026-09-29/README.md).
+
 Sterowniki Python, klient CLI, serwer sterowania z limitami administratora oraz bramka
 USBTMC dla Raspberry Pi. Repozytorium samowystarczalne: Python **3.11+**, biblioteka
 standardowa, bez pip i zewnętrznych zależności. Linux x86-64 / ARMv7 / ARM64 dla serwera;
