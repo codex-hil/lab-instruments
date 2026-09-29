@@ -1,0 +1,23 @@
+diff --git a/firmware/boot-cypress/main.c b/firmware/boot-cypress/main.c
+index 9194e16..3ef92e2 100644
+--- a/firmware/boot-cypress/main.c
++++ b/firmware/boot-cypress/main.c
+@@ -131,11 +131,17 @@ void handle_pending_usb_setup(void) {
+       req->bRequest == USB_REQ_CYPRESS_EEPROM_DB)) {
+     bool     arg_read  = (req->bmRequestType & USB_DIR_IN);
+     bool     arg_dbyte = (req->bRequest == USB_REQ_CYPRESS_EEPROM_DB);
+-    uint8_t  arg_chip  = arg_dbyte ? 0x51 : 0x50;
++    uint8_t  arg_chip  = req->wIndex;
+     uint16_t arg_addr  = req->wValue;
+     uint16_t arg_len   = req->wLength;
+     pending_setup = false;
+ 
++    // Read-only diagnostic firmware: reject EEPROM writes and invalid addresses.
++    if(!arg_read || !arg_dbyte || arg_chip < 0x50 || arg_chip > 0x57) {
++      STALL_EP0();
++      return;
++    }
++
+     while(arg_len > 0) {
+       uint8_t len = arg_len < 64 ? arg_len : 64;
+ 
