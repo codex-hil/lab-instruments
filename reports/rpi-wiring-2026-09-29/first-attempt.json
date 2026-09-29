@@ -1,0 +1,127 @@
+{
+  "method": "one output at a time, two distinct frequencies, programmed amplitude 0.1, zero offset",
+  "trials": [
+    {
+      "source": "afg1062",
+      "channel": 1,
+      "frequency_hz": 1100,
+      "measurements": {},
+      "output_off": {
+        "off_confirmed": true
+      }
+    }
+  ],
+  "cleanup": {
+    "afg1062_off": {
+      "off_confirmed": true
+    },
+    "mp750288_off": {
+      "off_confirmed": true
+    },
+    "afg1062_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "OUTP1": "0",
+        "SOUR1:FUNC": "SIN",
+        "SOUR1:FREQ": "4.500000e+07",
+        "SOUR1:VOLT": "2.800000e-02",
+        "SOUR1:VOLT:OFFS": "0.000000e+00",
+        "SOUR1:AM:STAT": "0",
+        "SOUR1:FM:STAT": "0",
+        "SOUR1:PM:STAT": "0",
+        "SOUR1:FSK:STAT": "0",
+        "SOUR1:PSK:STAT": "0",
+        "SOUR1:ASK:STAT": "0",
+        "SOUR1:PWM:STAT": "0",
+        "SOUR1:BURS:STAT": "0",
+        "SOUR1:FREQ:MODE": "CW",
+        "OUTP2": "0",
+        "SOUR2:FUNC": "SIN",
+        "SOUR2:FREQ": "1.000000e+07",
+        "SOUR2:VOLT": "2.000000e+00",
+        "SOUR2:VOLT:OFFS": "0.000000e+00",
+        "SOUR2:AM:STAT": "0",
+        "SOUR2:FM:STAT": "0",
+        "SOUR2:PM:STAT": "0",
+        "SOUR2:FSK:STAT": "0",
+        "SOUR2:PSK:STAT": "0",
+        "SOUR2:ASK:STAT": "0",
+        "SOUR2:PWM:STAT": "0",
+        "SOUR2:BURS:STAT": "0",
+        "SOUR2:FREQ:MODE": "CW"
+      }
+    },
+    "mp750288_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "OUTP1": "0",
+        "SOUR1:FUNC": "SIN",
+        "SOUR1:FREQ": "1.000000e+03",
+        "SOUR1:VOLT": "2.000000e-01",
+        "SOUR1:VOLT:OFFS": "0.000000e+00",
+        "SOUR1:MOD:STAT": "OFF",
+        "SOUR1:SWE:STAT": "0",
+        "SOUR1:BURS:STAT": "0",
+        "OUTP2": "0",
+        "SOUR2:FUNC": "SIN",
+        "SOUR2:FREQ": "2.300000e+03",
+        "SOUR2:VOLT": "2.000000e-01",
+        "SOUR2:VOLT:OFFS": "0.000000e+00",
+        "SOUR2:MOD:STAT": "OFF",
+        "SOUR2:SWE:STAT": "0",
+        "SOUR2:BURS:STAT": "0"
+      }
+    },
+    "mso2002b_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "HEADER": "0",
+        "ACQ:STATE": "1",
+        "ACQ:MODE": "SAM",
+        "ACQ:STOPAFTER": "RUNST",
+        "HOR:SCALE": "2.0000E-6",
+        "MEASU:IMMED:SOURCE1": "CH1",
+        "MEASU:IMMED:TYPE": "PERI",
+        "TRIG:A:MOD": "AUTO",
+        "SEL:CH1": "1",
+        "CH1:SCALE": "2.0000",
+        "CH1:POSITION": "-80.0000E-3",
+        "CH1:COUPLING": "AC",
+        "CH1:OFFSET": "0.0E+0",
+        "SEL:CH2": "1",
+        "CH2:SCALE": "100.0000E-3",
+        "CH2:POSITION": "180.0000E-3",
+        "CH2:COUPLING": "DC",
+        "CH2:OFFSET": "0.0E+0"
+      }
+    },
+    "tbs1022_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "HEADER": "0",
+        "ACQ:STATE": "1",
+        "ACQ:MODE": "PEAKDETECT",
+        "ACQ:STOPAFTER": "RUNSTOP",
+        "HOR:SCALE": "5.0E-1",
+        "MEASU:IMMED:SOURCE1": "CH1",
+        "MEASU:IMMED:TYPE": "PERIOD",
+        "TRIG:MAIN:MODE": "NORMAL",
+        "SEL:CH1": "1",
+        "CH1:SCALE": "2.0E0",
+        "CH1:POSITION": "0.0E0",
+        "CH1:COUPLING": "DC",
+        "SEL:CH2": "0",
+        "CH2:SCALE": "1.0E1",
+        "CH2:POSITION": "-7.2E-1",
+        "CH2:COUPLING": "DC"
+      }
+    }
+  },
+  "errors": [
+    "OSError: setpoint readback mismatch: SOUR1:VOLT?"
+  ]
+}

@@ -1,16 +1,19 @@
 """Two deliberately separate modes: protected typed control and trusted USB bridge."""
 import base64
+from collections import deque
 import hmac
 import json
 import logging
 import os
+import socket
 from pathlib import Path
 import ssl
 import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from .drivers import Driver, PROFILES, ACTIVE, validate
-from .transport import Transport, usb_devices
+from .gateway_dashboard import PAGE
+from .transport import MAX_MESSAGE, Transport, usb_devices, usb_selectors
 
 
 def load_config(path, strict=False):
@@ -117,37 +120,101 @@ class Controller:
 
 class Gateway:
     def __init__(self, config, factory=Transport):
-        self.cfg=config;self.factory=factory;self.slots=config.get('slots',{})
-        self.lock=threading.Lock();self.status={}
-        # A single gateway-wide lock also protects against aliases selecting the same USB device.
+        self.cfg = config
+        self.factory = factory
+        self.slots = config.get('slots', {})
+        # Serialize commands even when two slots select the same physical device.
+        self.lock = threading.Lock()
+        self.state_lock = threading.Lock()
+        self.status = {}
+        self.events = deque(maxlen=40)
+        self.active = None
+        self.started = time.monotonic()
+        for spec in self.slots.values():
+            usb_selectors(spec)
+            Transport(dict(spec, kind='usb'))
+
     def snapshot(self):
-        devices=usb_devices(); slots={}
+        devices = usb_devices()
+        with self.state_lock:
+            statuses = {name: dict(state) for name, state in self.status.items()}
+            events = list(self.events)
+            active = self.active
+        slots = {}
         for name, spec in self.slots.items():
-            selectors={k:spec[k] for k in ('serial','topology','vendor','product_id') if k in spec}
-            matches=[d for d in devices if selectors and all(d[k]==v for k,v in selectors.items())]
-            slots[name]={'connected':len(matches)==1,'matches':matches,'status':self.status.get(name,{})}
-        return {'usb':devices,'slots':slots}
+            selectors = usb_selectors(spec)
+            matches = [d for d in devices if all(d[k] == v for k, v in selectors.items())]
+            slots[name] = {
+                'label': spec.get('label', name),
+                'connected': len(matches) == 1,
+                'state': 'connected' if len(matches) == 1 else 'ambiguous' if matches else 'disconnected',
+                'accessible': len(matches) == 1 and os.access(matches[0]['path'], os.R_OK | os.W_OK),
+                'selectors': selectors, 'matches': matches,
+                'status': statuses.get(name, {}),
+            }
+        return {'usb': devices, 'slots': slots, 'events': events,
+                'gateway': {'hostname': socket.gethostname(), 'uptime_seconds': round(time.monotonic() - self.started),
+                            'active_slot': active, 'serialization': 'global', 'mode': 'usb-gateway'}}
+
+    def identify(self, body):
+        if not isinstance(body, dict) or set(body) != {'slot'} or not isinstance(body['slot'], str):
+            raise ValueError('identify requires a slot string')
+        slot = body['slot']
+        if slot not in self.slots:
+            raise ValueError('unknown slot')
+        # An explicit diagnostic, never a background poll or a driver initialization.
+        data = b'*IDN?' + self.slots[slot].get('write_termination', '\n').encode('ascii')
+        reply = self._transaction(slot, data, True, 'identify')
+        return {'identity': reply.decode('ascii', errors='replace').strip()}
+
     def transaction(self, body):
-        if set(body)!={'slot','data','reply'} or type(body['reply']) is not bool:raise ValueError('invalid transaction')
-        slot=body['slot']
-        if slot not in self.slots:raise ValueError('unknown slot')
-        data=base64.b64decode(body['data'],validate=True)
-        with self.lock:
-            try:
-                with self.factory(dict(self.slots[slot],kind='usb')) as io:
-                    reply=io.transaction(data,body['reply'])
-                self.status[slot]={'last_ok':time.time(),'error':None}
-                return {'data':base64.b64encode(reply).decode()}
-            except Exception as error:
-                self.status[slot]={'last_error':time.time(),'error':str(error)}
-                raise
+        if not isinstance(body, dict) or set(body) != {'slot', 'data', 'reply'} or type(body['reply']) is not bool:
+            raise ValueError('invalid transaction')
+        slot = body['slot']
+        if not isinstance(slot, str) or not isinstance(body['data'], str):
+            raise ValueError('slot and data must be strings')
+        if slot not in self.slots:
+            raise ValueError('unknown slot')
+        data = base64.b64decode(body['data'], validate=True)
+        reply = self._transaction(slot, data, body['reply'], 'transaction')
+        return {'data': base64.b64encode(reply).decode()}
 
-
-PAGE = b'''<!doctype html><html lang="en"><meta charset="utf-8"><title>Lab instruments</title>
-<style>body{font:16px system-ui;max-width:960px;margin:40px auto;background:#101b2b;color:#e4edf6}input,button{font:inherit;padding:8px}pre{white-space:pre-wrap;background:#192a40;padding:20px}</style>
-<h1>Lab instruments</h1><p>Local dashboard. Token stays in this page's memory.</p>
-<input id="token" type="password" placeholder="Access token"><button id="connect">Refresh status</button><pre id="status">Not connected</pre>
-<script>async function refresh(){try{let r=await fetch('/v1/status',{headers:{Authorization:'Bearer '+document.getElementById('token').value}});document.getElementById('status').textContent=JSON.stringify(await r.json(),null,2)}catch(e){document.getElementById('status').textContent=String(e)}}document.getElementById('connect').onclick=refresh;setInterval(()=>{if(document.getElementById('token').value)refresh()},5000)</script></html>'''
+    def _transaction(self, slot, data, expect_reply, operation):
+        if not 0 < len(data) <= int(self.slots[slot].get('max_message', MAX_MESSAGE)):
+            raise ValueError('invalid message length')
+        # Reject a busy gateway before writing, instead of building an unbounded queue.
+        if not self.lock.acquire(blocking=False):
+            raise OSError('gateway busy; no command sent')
+        started = time.monotonic()
+        with self.state_lock:
+            self.active = slot
+        reply = b''
+        error = None
+        try:
+            with self.factory(dict(self.slots[slot], kind='usb')) as io:
+                reply = io.transaction(data, expect_reply)
+            return reply
+        except Exception as exc:
+            error = str(exc)
+            raise
+        finally:
+            elapsed = round((time.monotonic() - started) * 1000, 1)
+            now = time.time()
+            with self.state_lock:
+                previous = self.status.get(slot, {})
+                state = dict(previous, duration_ms=elapsed, error=error,
+                             transactions=previous.get('transactions', 0) + 1,
+                             failures=previous.get('failures', 0) + int(error is not None))
+                state['last_error' if error is not None else 'last_ok'] = now
+                if operation == 'identify' and error is None:
+                    state['identity'] = reply[:4096].decode('ascii', errors='replace').strip()
+                    state['identified_at'] = now
+                self.status[slot] = state
+                self.events.appendleft({'time': now, 'slot': slot, 'operation': operation,
+                                        'ok': error is None, 'duration_ms': elapsed,
+                                        'tx_bytes': len(data), 'rx_bytes': len(reply), 'error': error})
+                self.active = None
+            self.lock.release()
 
 
 def make_server(cfg, app, development=False):
@@ -189,6 +256,8 @@ def make_server(cfg, app, development=False):
                 if not isinstance(body,dict):raise ValueError('object required')
                 if cfg['mode']=='usb-gateway' and self.path=='/v1/transaction':
                     result=app.transaction(body)
+                elif cfg['mode']=='usb-gateway' and self.path=='/v1/identify':
+                    result=app.identify(body)
                 elif cfg['mode']=='control' and self.path=='/v1/control':
                     if set(body)!={'device','action','args'} or not isinstance(body['args'],dict):raise ValueError('invalid request')
                     result=app.call(body['device'],body['action'],body['args'])

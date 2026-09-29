@@ -10,7 +10,20 @@ To działający fundament, nie certyfikowany system bezpieczeństwa.
 Identyfikacja i małosygnałowe próby aktywnych profili zostały sprawdzone na stanowisku;
 [raport HIL](reports/hil-2026-09-25/README.md) rozróżnia PASS, próby częściowe i braki.
 Pełny commissioning pod obciążeniem pozostaje wymagany. Przykłady blokują włączanie wyjść.
-Nie wdrożono tych usług na bieżącym stanowisku ani nie zmieniono jego sieci.
+Bramkę `usb-gateway` wdrożono na RPi 3 B+ (`RPI-USBTMC`); cztery przyrządy
+sprawdzono przez HTTPS. Tryb chronionego sterowania `control` pozostaje oddzielnym wariantem.
+
+## Konwerter Raspberry Pi USBTMC → LAN
+
+**[README konwertera i protokołów](docs/gateway/README.md)** — architektura, instalacja,
+HTTPS API v1, autoryzacja, JSON/base64, framing USBTMC, hotplug, limity i błędy,
+przykłady curl/Python oraz potwierdzone połączenia generatorów z oscyloskopami.
+
+Panel WWW: cztery karty przyrządów, status USB, prawa dostępu, jawny test `*IDN?`,
+czasy odpowiedzi, historia transakcji i raport JSON. Kod działa offline, bez CDN.
+Konfiguracja stanowiska: [rpi-usbtmc.json](examples/rpi-usbtmc.json).
+[Wdrożenie i testy na Pi](reports/rpi-gateway-2026-09-29/README.md) ·
+[mapa kabli potwierdzona pomiarami](reports/rpi-wiring-2026-09-29/README.md).
 
 ## FRA / Bode Plot — nowa capability (UNTRUSTED)
 
@@ -43,7 +56,7 @@ Wszystkie poniższe komponenty są w **tym jednym repozytorium**, nie w osobnych
 | Drivery Python | [README driverów](labinstruments/README.md) | modele, metody, jednostki, przykład bez serwera |
 | Raspberry Pi i Waveshare | [README wdrożenia](deploy/README.md) | USBTMC, hotplug, TCP–RS-232, konfiguracja i ograniczenia |
 | Profile urządzeń | [modele](docs/models.md) | zakres każdego drivera i protokoły przyrządów |
-| Protokół bramki i serwera | [API](docs/protocol.md) | HTTPS, JSON, base64, autoryzacja |
+| Protokół bramki i serwera | [README protokołów bramki](docs/gateway/README.md), [API control](docs/protocol.md) | HTTPS, JSON, base64, USBTMC, autoryzacja |
 | Budowanie i instalacja | [instrukcja](docs/deployment.md) | bootstrap, zipapp, systemd, udev |
 | Próby sprzętowe | [raport HIL](reports/hil-2026-09-25/README.md) | wyniki, błędy, brakujące testy |
 
@@ -130,7 +143,8 @@ zakres sterowania. Alternatywnie uruchom na RPi bezpośrednio tryb `control` z t
 USB — wtedy limity egzekwowane są przy urządzeniu.
 
 Zamiast czterech niejednoznacznych strumieni TCP używamy jednego HTTPS i jawnych slotów
-`usb1`..`usb4`. Operacja podaje osobno bajty i informację, czy oczekuje odpowiedzi.
+`usb1`..`usb4` w szablonie, a w inwentarzu stanowiska `afg1062`, `mp750288`,
+`mso2002b`, `tbs1022`. Operacja podaje osobno bajty i informację, czy oczekuje odpowiedzi.
 To umożliwia przekazywanie binarnych bloków bez heurystyki „komenda zawiera znak ?”.
 Adapter Python `Transport(kind='gateway')` ukrywa ten szczegół. **To nie USB/IP, VXI-11,
 HiSLIP ani gotowy VISA socket**; aplikacja producenta nie zobaczy automatycznie zdalnego USB.

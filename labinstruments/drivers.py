@@ -11,6 +11,7 @@ PROFILES = {
  'mp750288': ('MP750288', 'awg', 2, 3000),
  'mso4104': ('MSO4104', 'scope', 4, 4000),
  'mso2002b': ('MSO2002B', 'scope', 2, None),
+ 'tbs1022': ('TBS 1022', 'scope', 2, None),
  'dmm7510': ('MODEL DMM7510', 'meter', 1, 5025),
  '6487': ('MODEL 6487', 'picoammeter', 1, 4001),
  '8550': ('8550', 'load', 1, 4001),

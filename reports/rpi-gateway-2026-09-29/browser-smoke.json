@@ -1,0 +1,1 @@
+{"browser": "Firefox", "four_cards": "PASS", "identify_all": "PASS", "mobile_no_overflow": "PASS", "untrusted_text": "PASS", "invalid_token_clears_status": "PASS", "logout": "PASS", "screenshots": "local/gateway-browser"}

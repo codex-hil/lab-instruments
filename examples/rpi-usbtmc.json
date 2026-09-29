@@ -1,0 +1,46 @@
+{
+  "mode": "usb-gateway",
+  "listen": [
+    "192.168.2.16",
+    8840
+  ],
+  "token_file": "/etc/labinst/access.token",
+  "tls": {
+    "cert": "/etc/labinst/server.crt",
+    "key": "/etc/labinst/server.key"
+  },
+  "slots": {
+    "afg1062": {
+      "label": "Tektronix AFG1062",
+      "serial": "1544477",
+      "vendor": "0699",
+      "product_id": "0353",
+      "timeout": 4,
+      "delay": 0.05
+    },
+    "mp750288": {
+      "label": "AWG MP750288",
+      "serial": "1944201",
+      "vendor": "5345",
+      "product_id": "1235",
+      "timeout": 4,
+      "delay": 0.05
+    },
+    "mso2002b": {
+      "label": "Tektronix MSO2002B",
+      "serial": "C010257",
+      "vendor": "0699",
+      "product_id": "039a",
+      "timeout": 4,
+      "delay": 0.05
+    },
+    "tbs1022": {
+      "label": "Tektronix TBS1022",
+      "serial": "C012657",
+      "vendor": "0699",
+      "product_id": "03ae",
+      "timeout": 4,
+      "delay": 0.05
+    }
+  }
+}

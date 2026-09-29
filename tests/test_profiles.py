@@ -20,6 +20,18 @@ class ProfileFake(Fake):
         return super().query(c)
 
 class ProfileTests(unittest.TestCase):
+    def test_tbs1022_uses_shared_scope_measurements(self):
+        io = ProfileFake('tbs1022')
+        io.values['MEASU:IMMED:VALUE'] = '1.234E3'
+        driver = Driver(io, 'tbs1022', 'TEST')
+        self.assertEqual(driver.read('frequency', 2), '1.234E3')
+        self.assertEqual(io.writes, ['HEADER OFF', 'MEASU:IMMED:SOURCE1 CH2',
+                                     'MEASU:IMMED:TYPE FREQ'])
+        with self.assertRaises(ValueError):
+            driver.read('frequency', 3)
+        with self.assertRaises(ValueError):
+            Driver(io, 'tbs1022', 'WRONG').identify()
+
     def test_active_profiles_complete_apply(self):
         awg={'channel':2,'enable':True,'frequency':1000,'vpp':.1,'offset':0}
         awgl={'allow_output':True,'frequency_min':1,'frequency_max':1e6,'vpp_min':.01,'vpp_max':1,'voltage_peak_max':2,'current_max':.04,'power_max':.1}

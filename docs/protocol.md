@@ -1,4 +1,8 @@
-# API v1
+# API v1: sterowanie i bramka
+
+Pełny **[README protokołów konwertera USBTMC → LAN](gateway/README.md)** zawiera
+format statusu, identyfikację, surowe transakcje, framing binarny, limity, kody błędów
+i przykłady curl/Python. Poniżej opis trybu `control` i skrót wspólnych endpointów.
 
 HTTPS, `Authorization: Bearer <token>`, JSON. Brak domyślnych haseł. Token operatora
 nie ma uprawnienia zmiany konfiguracji. Wszystkie odpowiedzi mają `Cache-Control: no-store`.
@@ -7,6 +11,7 @@ nie ma uprawnienia zmiany konfiguracji. Wszystkie odpowiedzi mają `Cache-Contro
 - `GET /v1/status`: status, po autoryzacji. W trybie control wynik ostatniej operacji,
   **nie gwarancja bieżącego stanu fizycznego**. Gateway pokazuje bieżącą enumerację USB.
 - `POST /v1/control`: tylko w roli control, pola `device`, `action`, `args`.
+- `POST /v1/identify`: tylko w roli usb-gateway, pole `slot`, jawne `*IDN?`.
 - `POST /v1/transaction`: tylko w roli usb-gateway, pola `slot`, `data`, `reply`.
 
 ## Operacje typed
@@ -33,11 +38,14 @@ z tokenem mają tę samą rolę operatora — nie ma jeszcze odrębnych kont ani
 
 `data` to base64 bajtów `*IDN?\n`. Odpowiedź `{"data":"...base64..."}` obejmuje pełne
 bajty do USB EOM. Dla zapisu `reply:false`, odpowiedź zawiera pusty string base64.
-Bramka niczego nie dopisuje do komendy. Pojedyncza transakcja jest atomowa; wiele transakcji
+Bramka niczego nie dopisuje do komendy. Wspólna blokada obejmuje zapis i odczyt; zajęta bramka zwraca HTTP 503 przed zapisem.
+Pojedyncza transakcja jest serializowana; wiele transakcji
 nie tworzy sesji wyłącznej. Nie wolno równolegle uruchamiać dwóch skryptów konfiguracyjnych
 tego samego przyrządu. Złożone źródła z limitami należy obsługiwać przez tryb control.
 
 API nie oferuje arbitralnego hosta, nazwy pliku, komendy systemowej ani ścieżki `/dev`.
 Konfigurację slotów ustala root. Po odpięciu klient dostaje 503; ponowna transakcja rozwiązuje
 serial/topologię ponownie. Nie ma automatycznego retry zapisów. Odpowiedź utracona po ON
-oznacza nieznany stan: użyj typed OFF i poczekaj na potwierdzenie albo sprawdź sprzęt.
+oznacza nieznany stan: zaufany klient bramki może wykonać `Driver.off()` przez ten sam
+transport i sprawdzić readback. Typed OFF przez `/v1/control` jest dostępny wyłącznie
+w odrębnej roli `control`.

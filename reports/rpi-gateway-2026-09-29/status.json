@@ -1,0 +1,247 @@
+{
+  "usb": [
+    {
+      "path": "/dev/usbtmc0",
+      "topology": "1-1.2",
+      "serial": "1544477",
+      "vendor": "0699",
+      "product_id": "0353",
+      "model": "AFG1062"
+    },
+    {
+      "path": "/dev/usbtmc1",
+      "topology": "1-1.3",
+      "serial": "1944201",
+      "vendor": "5345",
+      "product_id": "1235",
+      "model": "MP750288"
+    },
+    {
+      "path": "/dev/usbtmc2",
+      "topology": "1-1.1.2",
+      "serial": "C010257",
+      "vendor": "0699",
+      "product_id": "039a",
+      "model": "MSO2002B"
+    },
+    {
+      "path": "/dev/usbtmc3",
+      "topology": "1-1.1.3",
+      "serial": "C012657",
+      "vendor": "0699",
+      "product_id": "03ae",
+      "model": "Tektronix TBS1022"
+    }
+  ],
+  "slots": {
+    "afg1062": {
+      "label": "Tektronix AFG1062",
+      "connected": true,
+      "state": "connected",
+      "accessible": true,
+      "selectors": {
+        "serial": "1544477",
+        "vendor": "0699",
+        "product_id": "0353"
+      },
+      "matches": [
+        {
+          "path": "/dev/usbtmc0",
+          "topology": "1-1.2",
+          "serial": "1544477",
+          "vendor": "0699",
+          "product_id": "0353",
+          "model": "AFG1062"
+        }
+      ],
+      "status": {
+        "duration_ms": 73.6,
+        "error": null,
+        "transactions": 2,
+        "failures": 0,
+        "last_ok": 1790694650.3093066,
+        "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+        "identified_at": 1790694650.1963098
+      }
+    },
+    "mp750288": {
+      "label": "AWG MP750288",
+      "connected": true,
+      "state": "connected",
+      "accessible": true,
+      "selectors": {
+        "serial": "1944201",
+        "vendor": "5345",
+        "product_id": "1235"
+      },
+      "matches": [
+        {
+          "path": "/dev/usbtmc1",
+          "topology": "1-1.3",
+          "serial": "1944201",
+          "vendor": "5345",
+          "product_id": "1235",
+          "model": "MP750288"
+        }
+      ],
+      "status": {
+        "duration_ms": 61.6,
+        "error": null,
+        "transactions": 2,
+        "failures": 0,
+        "last_ok": 1790694650.5505323,
+        "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1",
+        "identified_at": 1790694650.450019
+      }
+    },
+    "mso2002b": {
+      "label": "Tektronix MSO2002B",
+      "connected": true,
+      "state": "connected",
+      "accessible": true,
+      "selectors": {
+        "serial": "C010257",
+        "vendor": "0699",
+        "product_id": "039a"
+      },
+      "matches": [
+        {
+          "path": "/dev/usbtmc2",
+          "topology": "1-1.1.2",
+          "serial": "C010257",
+          "vendor": "0699",
+          "product_id": "039a",
+          "model": "MSO2002B"
+        }
+      ],
+      "status": {
+        "duration_ms": 62.8,
+        "error": null,
+        "transactions": 2,
+        "failures": 0,
+        "last_ok": 1790694650.7520118,
+        "identity": "TEKTRONIX,MSO2002B,C010257,CF:91.1CT FV:v1.52",
+        "identified_at": 1790694650.6495945
+      }
+    },
+    "tbs1022": {
+      "label": "Tektronix TBS1022",
+      "connected": true,
+      "state": "connected",
+      "accessible": true,
+      "selectors": {
+        "serial": "C012657",
+        "vendor": "0699",
+        "product_id": "03ae"
+      },
+      "matches": [
+        {
+          "path": "/dev/usbtmc3",
+          "topology": "1-1.1.3",
+          "serial": "C012657",
+          "vendor": "0699",
+          "product_id": "03ae",
+          "model": "Tektronix TBS1022"
+        }
+      ],
+      "status": {
+        "duration_ms": 72.3,
+        "error": null,
+        "transactions": 2,
+        "failures": 0,
+        "last_ok": 1790694650.9706502,
+        "identity": "TEKTRONIX,TBS 1022,C012657,CF:91.1CT FV:v26.01",
+        "identified_at": 1790694650.8587716
+      }
+    }
+  },
+  "events": [
+    {
+      "time": 1790694650.9706502,
+      "slot": "tbs1022",
+      "operation": "transaction",
+      "ok": true,
+      "duration_ms": 72.3,
+      "tx_bytes": 6,
+      "rx_bytes": 47,
+      "error": null
+    },
+    {
+      "time": 1790694650.8587716,
+      "slot": "tbs1022",
+      "operation": "identify",
+      "ok": true,
+      "duration_ms": 71.0,
+      "tx_bytes": 6,
+      "rx_bytes": 47,
+      "error": null
+    },
+    {
+      "time": 1790694650.7520118,
+      "slot": "mso2002b",
+      "operation": "transaction",
+      "ok": true,
+      "duration_ms": 62.8,
+      "tx_bytes": 6,
+      "rx_bytes": 47,
+      "error": null
+    },
+    {
+      "time": 1790694650.6495945,
+      "slot": "mso2002b",
+      "operation": "identify",
+      "ok": true,
+      "duration_ms": 63.0,
+      "tx_bytes": 6,
+      "rx_bytes": 47,
+      "error": null
+    },
+    {
+      "time": 1790694650.5505323,
+      "slot": "mp750288",
+      "operation": "transaction",
+      "ok": true,
+      "duration_ms": 61.6,
+      "tx_bytes": 6,
+      "rx_bytes": 45,
+      "error": null
+    },
+    {
+      "time": 1790694650.450019,
+      "slot": "mp750288",
+      "operation": "identify",
+      "ok": true,
+      "duration_ms": 104.9,
+      "tx_bytes": 6,
+      "rx_bytes": 45,
+      "error": null
+    },
+    {
+      "time": 1790694650.3093066,
+      "slot": "afg1062",
+      "operation": "transaction",
+      "ok": true,
+      "duration_ms": 73.6,
+      "tx_bytes": 6,
+      "rx_bytes": 46,
+      "error": null
+    },
+    {
+      "time": 1790694650.1963098,
+      "slot": "afg1062",
+      "operation": "identify",
+      "ok": true,
+      "duration_ms": 63.1,
+      "tx_bytes": 6,
+      "rx_bytes": 46,
+      "error": null
+    }
+  ],
+  "gateway": {
+    "hostname": "RPI-USBTMC",
+    "uptime_seconds": 23,
+    "active_slot": null,
+    "serialization": "global",
+    "mode": "usb-gateway"
+  }
+}
