@@ -1,0 +1,500 @@
+{
+  "method": "one output at a time, two distinct frequencies, programmed amplitude AFG=0.098 / MP=0.1, zero offset",
+  "trials": [
+    {
+      "source": "afg1062",
+      "channel": 1,
+      "frequency_hz": 1100,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 390625.0,
+          "vpp": 0.06,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "mso2002b:ch2": {
+          "frequency": 312500.0,
+          "vpp": 0.006,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "tbs1022:ch1": {
+          "frequency": 1101.3216552734,
+          "vpp": 2.0399999619,
+          "vpp_at_bnc_assuming_direct_cable": 0.20399999619,
+          "matches_test": true
+        },
+        "tbs1022:ch2": {
+          "frequency": 250000.0,
+          "vpp": 0.1800000072,
+          "vpp_at_bnc_assuming_direct_cable": 0.01800000072,
+          "matches_test": false
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 1,
+          "enable": true,
+          "frequency": 1100.0,
+          "vpp": 0.098,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR1:VOLT?": 0.098,
+          "SOUR1:VOLT:OFFS?": 0.0,
+          "SOUR1:FREQ?": 1100.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "afg1062",
+      "channel": 1,
+      "frequency_hz": 1700,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 781250.0,
+          "vpp": 0.06,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "mso2002b:ch2": {
+          "frequency": 520833.3,
+          "vpp": 0.006,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "tbs1022:ch1": {
+          "frequency": 1700.6802978516,
+          "vpp": 2.0399999619,
+          "vpp_at_bnc_assuming_direct_cable": 0.20399999619,
+          "matches_test": true
+        },
+        "tbs1022:ch2": {
+          "frequency": 18292.68359375,
+          "vpp": 0.2199999988,
+          "vpp_at_bnc_assuming_direct_cable": 0.021999999880000003,
+          "matches_test": false
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 1,
+          "enable": true,
+          "frequency": 1700.0,
+          "vpp": 0.098,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR1:VOLT?": 0.098,
+          "SOUR1:VOLT:OFFS?": 0.0,
+          "SOUR1:FREQ?": 1700.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "afg1062",
+      "channel": 2,
+      "frequency_hz": 2300,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 2304.6,
+          "vpp": 2.02,
+          "vpp_at_bnc_assuming_direct_cable": 0.202,
+          "matches_test": true
+        },
+        "mso2002b:ch2": {
+          "frequency": 312500.0,
+          "vpp": 0.006,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "tbs1022:ch1": {
+          "frequency": 62500.0,
+          "vpp": 0.0399999991,
+          "vpp_at_bnc_assuming_direct_cable": 0.0039999999100000004,
+          "matches_test": false
+        },
+        "tbs1022:ch2": {
+          "frequency": 9.9e+37,
+          "vpp": 0.200000003,
+          "vpp_at_bnc_assuming_direct_cable": 0.0200000003,
+          "matches_test": false
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 2,
+          "enable": true,
+          "frequency": 2300.0,
+          "vpp": 0.098,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR2:VOLT?": 0.098,
+          "SOUR2:VOLT:OFFS?": 0.0,
+          "SOUR2:FREQ?": 2300.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "afg1062",
+      "channel": 2,
+      "frequency_hz": 3100,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 3106.4,
+          "vpp": 2.0,
+          "vpp_at_bnc_assuming_direct_cable": 0.2,
+          "matches_test": true
+        },
+        "mso2002b:ch2": {
+          "frequency": 520833.3,
+          "vpp": 0.006,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "tbs1022:ch1": {
+          "frequency": 4807.6923828125,
+          "vpp": 0.0399999991,
+          "vpp_at_bnc_assuming_direct_cable": 0.0039999999100000004,
+          "matches_test": false
+        },
+        "tbs1022:ch2": {
+          "frequency": 9.9e+37,
+          "vpp": 0.2199999988,
+          "vpp_at_bnc_assuming_direct_cable": 0.021999999880000003,
+          "matches_test": false
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 2,
+          "enable": true,
+          "frequency": 3100.0,
+          "vpp": 0.098,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR2:VOLT?": 0.098,
+          "SOUR2:VOLT:OFFS?": 0.0,
+          "SOUR2:FREQ?": 3100.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "mp750288",
+      "channel": 1,
+      "frequency_hz": 4300,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 260416.7,
+          "vpp": 0.06,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "mso2002b:ch2": {
+          "frequency": 94697.0,
+          "vpp": 0.006,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "tbs1022:ch1": {
+          "frequency": 1618.123046875,
+          "vpp": 0.0399999991,
+          "vpp_at_bnc_assuming_direct_cable": 0.0039999999100000004,
+          "matches_test": false
+        },
+        "tbs1022:ch2": {
+          "frequency": 4347.826171875,
+          "vpp": 2.4400000572,
+          "vpp_at_bnc_assuming_direct_cable": 0.24400000571999997,
+          "matches_test": true
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 1,
+          "enable": true,
+          "frequency": 4300.0,
+          "vpp": 0.1,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR1:VOLT?": 0.1,
+          "SOUR1:VOLT:OFFS?": 0.0,
+          "SOUR1:FREQ?": 4300.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "mp750288",
+      "channel": 1,
+      "frequency_hz": 5300,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 104166.7,
+          "vpp": 0.06,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "mso2002b:ch2": {
+          "frequency": 312500.0,
+          "vpp": 0.006,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "tbs1022:ch1": {
+          "frequency": 3999.9997558594,
+          "vpp": 0.0399999991,
+          "vpp_at_bnc_assuming_direct_cable": 0.0039999999100000004,
+          "matches_test": false
+        },
+        "tbs1022:ch2": {
+          "frequency": 5317.263671875,
+          "vpp": 2.3800001144,
+          "vpp_at_bnc_assuming_direct_cable": 0.23800001144,
+          "matches_test": true
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 1,
+          "enable": true,
+          "frequency": 5300.0,
+          "vpp": 0.1,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR1:VOLT?": 0.1,
+          "SOUR1:VOLT:OFFS?": 0.0,
+          "SOUR1:FREQ?": 5300.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "mp750288",
+      "channel": 2,
+      "frequency_hz": 6700,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 520833.3,
+          "vpp": 0.06,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "mso2002b:ch2": {
+          "frequency": 6684.5,
+          "vpp": 0.106,
+          "vpp_at_bnc_assuming_direct_cable": 0.106,
+          "matches_test": true
+        },
+        "tbs1022:ch1": {
+          "frequency": 1445.0867919922,
+          "vpp": 0.0399999991,
+          "vpp_at_bnc_assuming_direct_cable": 0.0039999999100000004,
+          "matches_test": false
+        },
+        "tbs1022:ch2": {
+          "frequency": 8771.9296875,
+          "vpp": 0.200000003,
+          "vpp_at_bnc_assuming_direct_cable": 0.0200000003,
+          "matches_test": false
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 2,
+          "enable": true,
+          "frequency": 6700.0,
+          "vpp": 0.1,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR2:VOLT?": 0.1,
+          "SOUR2:VOLT:OFFS?": 0.0,
+          "SOUR2:FREQ?": 6700.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    },
+    {
+      "source": "mp750288",
+      "channel": 2,
+      "frequency_hz": 7900,
+      "measurements": {
+        "mso2002b:ch1": {
+          "frequency": 390625.0,
+          "vpp": 0.06,
+          "vpp_at_bnc_assuming_direct_cable": 0.006,
+          "matches_test": false
+        },
+        "mso2002b:ch2": {
+          "frequency": 7851.8,
+          "vpp": 0.106,
+          "vpp_at_bnc_assuming_direct_cable": 0.106,
+          "matches_test": true
+        },
+        "tbs1022:ch1": {
+          "frequency": 1700.6802978516,
+          "vpp": 0.0399999991,
+          "vpp_at_bnc_assuming_direct_cable": 0.0039999999100000004,
+          "matches_test": false
+        },
+        "tbs1022:ch2": {
+          "frequency": 9.9e+37,
+          "vpp": 0.2400000095,
+          "vpp_at_bnc_assuming_direct_cable": 0.02400000095,
+          "matches_test": false
+        }
+      },
+      "applied": {
+        "state": {
+          "channel": 2,
+          "enable": true,
+          "frequency": 7900.0,
+          "vpp": 0.1,
+          "offset": 0.0
+        },
+        "readback": {
+          "SOUR2:VOLT?": 0.1,
+          "SOUR2:VOLT:OFFS?": 0.0,
+          "SOUR2:FREQ?": 7900.0
+        }
+      },
+      "output_off": {
+        "off_confirmed": true
+      }
+    }
+  ],
+  "cleanup": {
+    "afg1062_off": {
+      "off_confirmed": true
+    },
+    "mp750288_off": {
+      "off_confirmed": true
+    },
+    "afg1062_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "OUTP1": "0",
+        "SOUR1:FUNC": "SIN",
+        "SOUR1:FREQ": "4.500000e+07",
+        "SOUR1:VOLT": "2.800000e-02",
+        "SOUR1:VOLT:OFFS": "0.000000e+00",
+        "SOUR1:AM:STAT": "0",
+        "SOUR1:FM:STAT": "0",
+        "SOUR1:PM:STAT": "0",
+        "SOUR1:FSK:STAT": "0",
+        "SOUR1:PSK:STAT": "0",
+        "SOUR1:ASK:STAT": "0",
+        "SOUR1:PWM:STAT": "0",
+        "SOUR1:BURS:STAT": "0",
+        "SOUR1:FREQ:MODE": "CW",
+        "OUTP2": "0",
+        "SOUR2:FUNC": "SIN",
+        "SOUR2:FREQ": "1.000000e+07",
+        "SOUR2:VOLT": "2.000000e+00",
+        "SOUR2:VOLT:OFFS": "0.000000e+00",
+        "SOUR2:AM:STAT": "0",
+        "SOUR2:FM:STAT": "0",
+        "SOUR2:PM:STAT": "0",
+        "SOUR2:FSK:STAT": "0",
+        "SOUR2:PSK:STAT": "0",
+        "SOUR2:ASK:STAT": "0",
+        "SOUR2:PWM:STAT": "0",
+        "SOUR2:BURS:STAT": "0",
+        "SOUR2:FREQ:MODE": "CW"
+      }
+    },
+    "mp750288_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "OUTP1": "0",
+        "SOUR1:FUNC": "SIN",
+        "SOUR1:FREQ": "1.000000e+03",
+        "SOUR1:VOLT": "2.000000e-01",
+        "SOUR1:VOLT:OFFS": "0.000000e+00",
+        "SOUR1:MOD:STAT": "OFF",
+        "SOUR1:SWE:STAT": "0",
+        "SOUR1:BURS:STAT": "0",
+        "OUTP2": "0",
+        "SOUR2:FUNC": "SIN",
+        "SOUR2:FREQ": "2.300000e+03",
+        "SOUR2:VOLT": "2.000000e-01",
+        "SOUR2:VOLT:OFFS": "0.000000e+00",
+        "SOUR2:MOD:STAT": "OFF",
+        "SOUR2:SWE:STAT": "0",
+        "SOUR2:BURS:STAT": "0"
+      }
+    },
+    "mso2002b_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "HEADER": "0",
+        "ACQ:STATE": "1",
+        "ACQ:MODE": "SAM",
+        "ACQ:STOPAFTER": "RUNST",
+        "HOR:SCALE": "2.0000E-6",
+        "MEASU:IMMED:SOURCE1": "CH1",
+        "MEASU:IMMED:TYPE": "PERI",
+        "TRIG:A:MOD": "AUTO",
+        "SEL:CH1": "1",
+        "CH1:SCALE": "2.0000",
+        "CH1:POSITION": "-80.0000E-3",
+        "CH1:COUPLING": "AC",
+        "CH1:OFFSET": "0.0E+0",
+        "SEL:CH2": "1",
+        "CH2:SCALE": "100.0000E-3",
+        "CH2:POSITION": "180.0000E-3",
+        "CH2:COUPLING": "DC",
+        "CH2:OFFSET": "0.0E+0"
+      }
+    },
+    "tbs1022_restoration": {
+      "verified": true,
+      "errors": [],
+      "actual": {
+        "HEADER": "0",
+        "ACQ:STATE": "1",
+        "ACQ:MODE": "PEAKDETECT",
+        "ACQ:STOPAFTER": "RUNSTOP",
+        "HOR:SCALE": "5.0E-1",
+        "MEASU:IMMED:SOURCE1": "CH1",
+        "MEASU:IMMED:TYPE": "PERIOD",
+        "TRIG:MAIN:MODE": "NORMAL",
+        "SEL:CH1": "1",
+        "CH1:SCALE": "2.0E0",
+        "CH1:POSITION": "0.0E0",
+        "CH1:COUPLING": "DC",
+        "SEL:CH2": "0",
+        "CH2:SCALE": "1.0E1",
+        "CH2:POSITION": "-7.2E-1",
+        "CH2:COUPLING": "DC"
+      }
+    }
+  },
+  "errors": []
+}

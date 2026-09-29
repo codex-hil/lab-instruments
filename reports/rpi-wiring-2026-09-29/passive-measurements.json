@@ -1,0 +1,32 @@
+{
+  "mso2002b": {
+    "saved_measurement": {
+      "MEASU:IMMED:SOURCE1": "CH1",
+      "MEASU:IMMED:TYPE": "PERI",
+      "HEADER": "0"
+    },
+    "measurements": {
+      "1": {
+        "frequency": "15.6250E+6",
+        "vpp": "80.0000E-3"
+      },
+      "2": {
+        "frequency": "125.0000E+6",
+        "vpp": "4.0000E-3"
+      }
+    }
+  },
+  "tbs1022": {
+    "saved_measurement": {
+      "MEASU:IMMED:SOURCE1": "CH1",
+      "MEASU:IMMED:TYPE": "PERIOD",
+      "HEADER": "0"
+    },
+    "measurements": {
+      "1": {
+        "frequency": "1.16279072265625E4",
+        "vpp": "7.99999982E-2"
+      }
+    }
+  }
+}

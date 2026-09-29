@@ -31,10 +31,17 @@ def usb_devices():
     return result
 
 
-def select_usb(config):
+def usb_selectors(config):
     selectors = {k: config[k] for k in ('serial', 'topology', 'vendor', 'product_id') if k in config}
     if not selectors or not any(k in selectors for k in ('serial', 'topology')):
         raise ValueError('USB requires serial or topology, never an unstable /dev/usbtmcN')
+    if any(not isinstance(v, str) or not v.strip() for v in selectors.values()):
+        raise ValueError('USB selectors must be nonempty strings')
+    return selectors
+
+
+def select_usb(config):
+    selectors = usb_selectors(config)
     matches = [d for d in usb_devices() if all(d[k] == v for k, v in selectors.items())]
     if len(matches) != 1:
         raise OSError(f'USB selector matches {len(matches)} devices')

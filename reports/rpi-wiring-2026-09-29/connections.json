@@ -1,0 +1,71 @@
+{
+  "confirmed": true,
+  "connections": [
+    {
+      "source": "afg1062",
+      "source_serial": "1544477",
+      "source_channel": 1,
+      "scope": "tbs1022",
+      "scope_serial": "C012657",
+      "scope_channel": 1,
+      "test_frequencies_hz": [
+        1100,
+        1700
+      ],
+      "measured_frequencies_hz": [
+        1101.3216552734,
+        1700.6802978516
+      ]
+    },
+    {
+      "source": "afg1062",
+      "source_serial": "1544477",
+      "source_channel": 2,
+      "scope": "mso2002b",
+      "scope_serial": "C010257",
+      "scope_channel": 1,
+      "test_frequencies_hz": [
+        2300,
+        3100
+      ],
+      "measured_frequencies_hz": [
+        2304.6,
+        3106.4
+      ]
+    },
+    {
+      "source": "mp750288",
+      "source_serial": "1944201",
+      "source_channel": 1,
+      "scope": "tbs1022",
+      "scope_serial": "C012657",
+      "scope_channel": 2,
+      "test_frequencies_hz": [
+        4300,
+        5300
+      ],
+      "measured_frequencies_hz": [
+        4347.826171875,
+        5317.263671875
+      ]
+    },
+    {
+      "source": "mp750288",
+      "source_serial": "1944201",
+      "source_channel": 2,
+      "scope": "mso2002b",
+      "scope_serial": "C010257",
+      "scope_channel": 2,
+      "test_frequencies_hz": [
+        6700,
+        7900
+      ],
+      "measured_frequencies_hz": [
+        6684.5,
+        7851.8
+      ]
+    }
+  ],
+  "settings_restored": true,
+  "outputs_off_confirmed": true
+}

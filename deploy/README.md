@@ -24,7 +24,7 @@ Python 3.11+, Linux z `usbtmc`; [pełna instalacja](../docs/deployment.md).
 
 Bramka udostępnia panel WWW i `GET /v1/status`. Transakcje idą przez
 `POST /v1/transaction`: JSON `{slot, data, reply}`, bajty `data` kodowane base64.
-Token Bearer i weryfikacja TLS są wymagane. [Specyfikacja protokołu](../docs/protocol.md).
+Token Bearer i weryfikacja TLS są wymagane. [README protokołów bramki](../docs/gateway/README.md).
 Bramka przekazuje bajty; nie narzuca SCPI ani limitów napięcia/prądu.
 Nie implementuje USB/IP, VXI-11, HiSLIP ani surowego gniazda VISA.
 
@@ -41,10 +41,12 @@ Nie powtarzamy przerwanej komendy, nie odtwarzamy nastaw i nie wysyłamy automat
 Fizyczny stan wyjścia po utracie łączności wymaga sprawdzenia. Przy bezpośrednim lokalnym
 `Transport(kind="usb")` po odłączeniu należy zamknąć uszkodzony kontekst i otworzyć nowy.
 
-Jedna transakcja zajmuje bramkę; długi transfer blokuje pozostałe sloty. Nie ma rezerwacji
-całego eksperymentu: jeden skrypt steruje danym urządzeniem. Cztery sloty są przewidziane
-w konfiguracji, ale test czterech fizycznych urządzeń i hotplug na RPi pozostaje do zrobienia.
-Sprawdzono HTTPS → USBTMC z AFG1062 na komputerze Linux, nie na docelowym Raspberry.
+Jedna transakcja zajmuje bramkę; równoczesne żądanie dostaje HTTP 503 przed zapisem
+komendy. Nie ma rezerwacji całego eksperymentu: jeden skrypt steruje danym urządzeniem.
+Cztery fizyczne urządzenia sprawdzono na RPi 3 B+ przez HTTPS: identyfikacja, sterowanie
+generatorami i odczyty częstotliwości/Vpp. Fizyczny hotplug w czasie pracy usługi
+pozostaje do zrobienia. [Raport RPi](../reports/rpi-gateway-2026-09-29/README.md) ·
+[mapa kabli](../reports/rpi-wiring-2026-09-29/README.md).
 
 ## Waveshare → RS-232
 

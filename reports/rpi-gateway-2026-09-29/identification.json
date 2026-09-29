@@ -1,0 +1,14 @@
+{
+  "afg1062": {
+    "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1"
+  },
+  "mp750288": {
+    "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1"
+  },
+  "mso2002b": {
+    "identity": "TEKTRONIX,MSO2002B,C010257,CF:91.1CT FV:v1.52"
+  },
+  "tbs1022": {
+    "identity": "TEKTRONIX,TBS 1022,C012657,CF:91.1CT FV:v26.01"
+  }
+}

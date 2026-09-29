@@ -11,12 +11,12 @@
   },
   "slots": {
     "usb1": {
-      "topology": "REPLACE_WITH_USB_TOPOLOGY_1",
+      "serial": "REPLACE_WITH_USB_SERIAL_1",
       "timeout": 4,
       "delay": 0.05
     },
     "usb2": {
-      "topology": "REPLACE_WITH_USB_TOPOLOGY_2",
+      "serial": "REPLACE_WITH_USB_SERIAL_2",
       "timeout": 4,
       "delay": 0.05
     },

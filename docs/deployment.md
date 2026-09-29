@@ -5,7 +5,9 @@
 Raspberry Pi OS Lite Bookworm lub nowszy, Python 3.11+, Ethernet, USBTMC kernel module.
 Stare Pi z 1–2 GB wystarczą do niewielkich transferów SCPI. Model Pi wyznacza zgodność
 PoE HAT oraz współdzielenie przepustowości Ethernet/USB; należy ją sprawdzić osobno.
-Nie wykonano jeszcze testu na fizycznym RPi. Nie ma wymogu 64-bitowego OS: używamy
+Na RPi 3 B+ potwierdzono identyfikację czterech przyrządów przez HTTPS (raport:
+`reports/rpi-gateway-2026-09-29/README.md`). Testy fizycznego hotplugu podczas pracy
+usługi i transferów binarnych pozostają otwarte. Nie ma wymogu 64-bitowego OS: używamy
 standardowych ioctl z typami u32/u8, takich samych dla ARMv7 i ARM64.
 
 ## Budowanie
@@ -53,6 +55,8 @@ hot-reloadu podczas aktywnego wyjścia.
 ```sh
 ./dist/labinst.pyz usb-list
 python3 scripts/udev-rule.py --vendor 0699 --product 0353 --serial 1544477
+# Alternatywnie dla urządzenia bez unikalnego serialu:
+python3 scripts/udev-rule.py --vendor 0699 --product 0353 --topology 1-1.2
 ```
 
 Administrator zapisuje **sprawdzone** reguły do `/etc/udev/rules.d/70-labinst-usb.rules`,
@@ -63,18 +67,95 @@ Nie nadajemy praw do całego USB ani nie dodajemy użytkownika do szerokich grup
 serialu SCPI! W konfiguracji `serial` przy profilu oznacza SCPI; `transport.serial`
 lub `slots.usb1.serial` oznacza serial USB. Można dodać vendor/product_id do selektora.
 
-Dla role `usb-gateway` wpisz cztery faktyczne topologie z danej płytki zamiast placeholderów.
+Dla roli `usb-gateway` zastąp wszystkie placeholdery w `examples/rpi-gateway.json`.
+Przykład przypisuje usb1/usb2 po serialu USB (urządzenie może zmienić port), a usb3/usb4
+po topologii (slot podąża za fizycznym portem). Każdy slot może używać dowolnego z tych
+selektorów. Jeśli podasz oba, muszą pasować jednocześnie. Puste selektory i selektory
+wyłącznie vendor/product_id są odrzucane przy uruchomieniu.
 Podłączenie czterech urządzeń naraz daje cztery wpisy; panel odświeża je co 5 sekund.
 Każda transakcja na nowo rozwiązuje selektor: nie polega na numerze `/dev/usbtmcN`.
 Odłączenie w trakcie transakcji daje błąd, bez automatycznego ponowienia. Kolejna próba
 po powrocie urządzenia otwiera je na nowo. Duplikaty serialu są odrzucane, nie wybieramy
 pierwszego pasującego urządzenia. Topologia może zmienić się po zmianie huba/OS — zweryfikuj.
 
+Panel pokazuje karty slotów: `connected`, `disconnected` lub `ambiguous`, selektor,
+deskryptory i bieżący węzeł USB oraz wynik ostatniej transakcji. Obecność w sysfs nie
+potwierdza praw dostępu ani odpowiedzi SCPI. Ostatni błąd transakcji pozostaje widoczny
+do udanej transakcji, także po ponownym podłączeniu. Brak dostępu do API usuwa stare
+karty z panelu. Szczegóły JSON i pełna lista USB są dostępne pod „Inwentarz USB i pełny status”.
+Panel pokazuje uprawnienia procesu do węzła (nie testuje otwarcia), czas ostatniej transakcji,
+liczniki transakcji/błędów oraz ostatnie 40 transakcji. Historia nie zawiera komend ani
+danych pomiarowych i jest zerowana przy restarcie usługi. Raport JSON nie zawiera tokenu.
+
 Bramka serializuje wszystkie transakcje (prostsza ochrona także przed aliasami USB), więc
-cztery urządzenia są obsługiwane, ale długie transfery blokują pozostałe. Jest to świadomy
-kompromis v0.1; dla większej przepustowości można później wprowadzić kolejki per tożsamość.
+cztery urządzenia są obsługiwane kolejno. W trakcie transakcji nowe żądanie otrzymuje
+HTTP 503 „gateway busy; no command sent”, zanim zostanie wysłana jakakolwiek komenda.
+Status WWW pozostaje dostępny. Klient decyduje o kolejnej próbie; transport nie ponawia jej
+automatycznie. Dla większej przepustowości można później wprowadzić blokady per tożsamość.
 Nie odpytuje automatycznie `*IDN?` w tle — nie wtrąca komend w cudzy protokół. Model i serial
-w panelu pochodzą z deskryptorów USB; aktywną identyfikację wykonuje klient jawnie.
+w panelu pochodzą z deskryptorów USB; aktywną identyfikację wykonuje klient jawnie
+przyciskiem „Sprawdź *IDN?” lub „Sprawdź wszystkie”. Drugi przycisk odpytuje sloty kolejno.
+Odpowiedź SCPI jest oznaczona datą ostatniego testu; nie jest dowodem bieżącej komunikacji.
+
+### Test odbiorczy bramki na Raspberry Pi — częściowo wykonany
+
+Testy automatyczne (`python3 -m unittest discover -s tests -v`) symulują enumerację USB,
+odłączenie podczas odczytu i ponowne podłączenie pod innym numerem węzła. Nie zastępują
+testów kernela, udev, zasilania USB ani czterech fizycznych przyrządów.
+
+1. Zainstaluj usługę z `examples/rpi-gateway.json`, skonfiguruj TLS, token, selektory
+   i reguły udev. Uruchom jako użytkownik `labinst`, zapisz PID usługi.
+2. Podłącz cztery przyrządy. Sprawdź cztery karty oraz zgodność seriali/topologii z `usb-list`.
+3. Przez istniejący transport `gateway` wykonaj jawne zapytanie identyfikacyjne każdego
+   przyrządu i sprawdź odpowiedź. Sprawdź też odczyt binarny, jeśli przyrząd go obsługuje.
+4. Odłącz jeden przyrząd w spoczynku i podczas odczytu. Panel ma wykryć brak urządzenia;
+   przerwana transakcja ma zakończyć się błędem bez automatycznego ponowienia.
+5. Podłącz ponownie, wymuszając zmianę numeracji `/dev/usbtmcN`. Powtórz zapytanie bez
+   restartu Pi/usługi; potwierdź niezmieniony PID oraz działanie pozostałych trzech slotów.
+6. Przenieś przyrząd wybrany po serialu do innego portu, a wybrany po topologii odłącz
+   i podłącz do tego samego portu. Potwierdź oczekiwane przypisania i uprawnienia udev.
+7. Zanotuj model Pi, OS/kernel, hub/zasilanie, deskryptory czterech przyrządów, commit,
+   wyniki i czasy błędów. Do tego momentu zgodność sprzętowa pozostaje niepotwierdzona.
+
+
+## Panel na RPI-USBTMC
+
+Uruchomione stanowisko: `https://192.168.2.16:8840/`, usługa `labinst` (autostart systemd).
+Konfiguracja stanowiska bez sekretów: `examples/rpi-usbtmc.json`. Sloty: `afg1062`,
+`mp750288`, `mso2002b`, `tbs1022`; każdy używa serialu USB oraz VID:PID.
+
+Certyfikat self-signed skopiuj z Pi przez uwierzytelnione SSH i dodaj do zaufanych
+certyfikatów przeglądarki/systemu. Publiczna kopia do pobrania jest w
+`/home/usbtmc/labinst-stage/server.crt`; klucz prywatny pozostaje w `/etc/labinst/`.
+Token odczytaj przez SSH, a następnie wklej w panelu:
+
+```sh
+scp usbtmc@192.168.2.16:labinst-stage/server.crt ./rpi-usbtmc.crt
+ssh -t usbtmc@192.168.2.16 'sudo cat /etc/labinst/access.token'
+```
+
+Token daje także dostęp do surowego transportu. Panel przechowuje go wyłącznie w pamięci
+strony, nie w URL ani localStorage. Przycisk „Wyczyść token” usuwa go z formularza.
+
+Jawna diagnostyka API: `POST /v1/identify`, body `{"slot":"tbs1022"}`, nagłówek
+`Authorization: Bearer <token>`. Odpowiedź: `{"identity":"TEKTRONIX,..."}`.
+Endpoint istnieje tylko w trybie `usb-gateway` i używa tego samego transportu/blokady
+co `POST /v1/transaction`. Nie wykonuje resetów ani inicjalizacji drivera.
+
+Przykład użycia istniejącego klienta Python (CA i token w lokalnych plikach):
+
+```python
+from labinstruments.transport import Transport
+
+with Transport({"kind": "gateway", "url": "https://192.168.2.16:8840",
+                "slot": "tbs1022", "token_file": "access.token",
+                "ca_file": "rpi-usbtmc.crt"}) as io:
+    print(io.query("*IDN?"))
+```
+
+Test przeglądarkowy: `scripts/gateway-browser-smoke.py --token-file <plik>` wymaga
+osobnej instancji Firefox z Marionette na porcie 2832; domyślnie używa lokalnego fixture
+na porcie 8841. Test wykonuje jawne identyfikacje — rzeczywista bramka musi być wolna.
 
 ## Dwa NIC i firewall
 

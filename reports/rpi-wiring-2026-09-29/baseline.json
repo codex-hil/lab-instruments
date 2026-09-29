@@ -1,0 +1,52 @@
+{
+  "afg1062": {
+    "identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+    "ch1_output": "0",
+    "ch1_frequency": "4.500000e+07",
+    "ch1_shape": "SIN",
+    "ch1_amplitude": "2.800000e-02",
+    "ch1_offset": "0.000000e+00",
+    "ch2_output": "0",
+    "ch2_frequency": "1.000000e+07",
+    "ch2_shape": "SIN",
+    "ch2_amplitude": "2.000000e+00",
+    "ch2_offset": "0.000000e+00"
+  },
+  "mp750288": {
+    "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1",
+    "ch1_output": "0",
+    "ch1_frequency": "1.000000e+03",
+    "ch1_shape": "SIN",
+    "ch1_amplitude": "2.000000e-01",
+    "ch1_offset": "0.000000e+00",
+    "ch2_output": "0",
+    "ch2_frequency": "2.300000e+03",
+    "ch2_shape": "SIN",
+    "ch2_amplitude": "2.000000e-01",
+    "ch2_offset": "0.000000e+00"
+  },
+  "mso2002b": {
+    "identity": "TEKTRONIX,MSO2002B,C010257,CF:91.1CT FV:v1.52",
+    "HEADER?": "0",
+    "ACQ:STATE?": "1",
+    "HOR:SCALE?": "2.0000E-6",
+    "SEL:CH1?": "1",
+    "SEL:CH2?": "1",
+    "CH1:SCALE?": "2.0000",
+    "CH2:SCALE?": "100.0000E-3",
+    "CH1:PROBE?": "\"No Probe Detected\";\"\";100.0000E-3;\"V\";0.0E+0",
+    "CH2:PROBE?": "\"No Probe Detected\";\"\";1.0000;\"V\";0.0E+0"
+  },
+  "tbs1022": {
+    "identity": "TEKTRONIX,TBS 1022,C012657,CF:91.1CT FV:v26.01",
+    "HEADER?": "0",
+    "ACQ:STATE?": "1",
+    "HOR:SCALE?": "5.0E-1",
+    "SEL:CH1?": "1",
+    "SEL:CH2?": "0",
+    "CH1:SCALE?": "2.0E0",
+    "CH2:SCALE?": "1.0E1",
+    "CH1:PROBE?": "1.0E1",
+    "CH2:PROBE?": "1.0E1"
+  }
+}

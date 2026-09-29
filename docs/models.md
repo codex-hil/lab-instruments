@@ -9,7 +9,8 @@
 | afg1062 | USBTMC | ID, sinus frequency/Vpp/offset, OFF CH1/CH2 |
 | mp750288 | TCP 3000 / USBTMC | ID, sinus frequency/Vpp/offset, OFF CH1/CH2 |
 | mso4104 | TCP 4000 | ID, immediate frequency/Vpp wybranego kanału |
-| mso2002b | USBTMC | ten sam podstawowy profil pomiarowy; oczekuje na HIL |
+| mso2002b | USBTMC | wspólny profil immediate frequency/Vpp; odczyty sprawdzone przez gateway |
+| tbs1022 | USBTMC (tryb Computer) | wspólny profil immediate frequency/Vpp; dokładne ID `TBS 1022` |
 | dmm7510 | TCP 5025 | ID, READ? w zastanej funkcji pomiarowej |
 | 6487 | TCP 4001 przez RS232 9600 8N1 | ID, READ?, wyłączenie źródła; bez zdalnego włączania źródła |
 | 8550 | TCP 4001 przez RS232 9600 8N1 | ID, pomiar V/I, CC w zakresie 3 A, input OFF |
@@ -39,3 +40,8 @@ przed testem rzeczywistego urządzenia. Nie zakładamy, że rebrand ma identyczn
 Aktualny status prób sprzętowych: [macierz HIL](../reports/hil-2026-09-25/README.md).
 Profil MSO4104 automatycznie uwzględnia padding CR pomiędzy odpowiedziami TCP portu 4000;
 przy użyciu samego Transport bez Driver ustaw `read_padding: "\r"`.
+
+TBS1022 korzysta ze wspólnych metod oscyloskopu, zgodnie z [instrukcją programowania
+Tektronix 077044403 Rev B](https://www.tek.com/en/oscilloscope/tds1000-manual).
+Kanał pomiarowy musi być wyświetlany; `9.9E37` oznacza nieważny pomiar, nie częstotliwość.
+Profil nie dodaje obsługi akwizycji waveformów dla tego modelu.

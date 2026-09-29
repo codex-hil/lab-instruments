@@ -14,7 +14,8 @@ nie wymaga uruchamiania serwera sterowania. [Budowanie](../README.md#nowa-maszyn
 | `afg1062` | Tektronix AFG1062 | SCPI / USBTMC | sinus, częstotliwość, Vpp, offset, kanały 1–2 |
 | `mp750288` | Multicomp Pro MP750288 | SCPI / TCP 3000 lub USBTMC | sinus, częstotliwość, Vpp, offset, kanały 1–2 |
 | `mso4104` | Tektronix MSO4104 | SCPI / TCP 4000 | immediate frequency/Vpp, kanały 1–4 |
-| `mso2002b` | Tektronix MSO2002B | SCPI / USBTMC | podstawowy profil frequency/Vpp, oczekuje na test sprzętowy |
+| `mso2002b` | Tektronix MSO2002B | SCPI / USBTMC | frequency/Vpp sprawdzone przez bramkę na Pi |
+| `tbs1022` | Tektronix TBS1022 | SCPI / USBTMC (Computer) | wspólne frequency/Vpp, dokładne SCPI ID `TBS 1022` |
 | `dmm7510` | Keithley DMM7510 | SCPI / TCP 5025 | READ? w aktualnie ustawionej funkcji |
 | `6487` | Keithley 6487 | SCPI / RS-232 przez TCP 4001 | READ?, wyłączenie źródła napięcia |
 | `8550` | B&K Precision 8550 | SCPI / RS-232 przez TCP 4001 | CC w zakresie 3 A, pomiar V/I, input ON/OFF |
@@ -22,8 +23,10 @@ nie wymaga uruchamiania serwera sterowania. [Budowanie](../README.md#nowa-maszyn
 
 Porty TCP to ustawienia profili/stanowiska, można je zmienić. Samo istnienie profilu
 nie oznacza pełnej weryfikacji: [macierz HIL i ograniczenia](../reports/hil-2026-09-25/README.md).
-MP750288 wymaga retestu po naprawie OFF/0; SMU przetestowano częściowo; 6487 był
-nieosiągalny przez bramkę, B&K odłączony, MSO2002B niepodłączony.
+AFG1062, MP750288, MSO2002B i TBS1022 sprawdzono wspólnie przez bramkę RPi:
+[raport mapowania sygnałów i przywrócenia nastaw](../reports/rpi-wiring-2026-09-29/README.md).
+Pozostałe ograniczenia historycznych prób: SMU przetestowano częściowo; 6487 był
+nieosiągalny przez bramkę, B&K odłączony.
 
 ## Użycie bez serwera
 
@@ -59,7 +62,7 @@ nie granicą uprawnień roota. Nie ma rezerwacji przyrządu pomiędzy niezależn
 - `usb`: Linux `/dev/usbtmcN`, wybór przez serial lub topologię, opcjonalnie VID/PID.
   Koniec wiadomości jest ustalany przez USBTMC EOM, również dla danych binarnych.
 - `gateway`: HTTPS do Raspberry Pi; slot, bajty base64 i jawna flaga oczekiwania na
-  odpowiedź. [Dokładny protokół](../docs/protocol.md). Nie jest to USB/IP ani VISA.
+  odpowiedź. [Dokładny protokół](../docs/gateway/README.md). Nie jest to USB/IP ani VISA.
 
 TCP obsługuje bloki binarne IEEE 488.2 o jawnej długości (`#<liczba cyfr><długość>...`)
 z terminatorem po danych. Bloki `#0` są odrzucane. Limit wiadomości: 16 MiB.
