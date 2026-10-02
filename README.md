@@ -171,3 +171,9 @@ Bibliotekę można importować również bez instalacji pakietu, prosto z artefa
 ```sh
 PYTHONPATH=dist/labinst.pyz python3 examples/power_test.py --help
 ```
+
+### Keithley 6487 — źródło napięcia
+
+Driver obsługuje nastawy DC do ±500 V, skokowe limity prądu, interlock i odczyt nastaw.
+Rozszerzenie HV jest **UNTRUSTED**, przetestowane wyłącznie programowo.
+[API, konfiguracja i plan testów sprzętowych](docs/keithley-6487.md).

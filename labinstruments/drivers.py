@@ -17,7 +17,7 @@ PROFILES = {
  '8550': ('8550', 'load', 1, 4001),
  'n9918b': ('N9918B', 'analyzer', 1, 5025),
 }
-ACTIVE = {'supply', 'smu', 'rf', 'awg', 'load'}
+ACTIVE = {'supply', 'smu', 'rf', 'awg', 'load', 'picoammeter'}
 
 
 def numeric(value):
@@ -32,6 +32,7 @@ def validate(model, params, limits):
     fields = {
         'supply': {'voltage', 'current'},
         'smu': {'voltage', 'current'},
+        'picoammeter': {'voltage', 'current'},
         'rf': {'frequency', 'dbm'},
         'awg': {'frequency', 'vpp', 'offset'},
         'load': {'current'},
@@ -52,11 +53,18 @@ def validate(model, params, limits):
         low, high = numeric(limits[lo]), numeric(limits[hi])
         if not low <= value <= high:
             raise ValueError(f'outside policy: {lo}..{hi}')
-    if category in {'supply', 'smu'}:
+    if category in {'supply', 'smu', 'picoammeter'}:
         check(params['voltage'], 'voltage_min', 'voltage_max')
         check(params['current'], 'current_min', 'current_max')
         if params['current'] <= 0 or (category == 'supply' and params['voltage'] < 0):
             raise ValueError('invalid source setpoint')
+        if category == 'picoammeter':
+            if abs(params['voltage']) > 500:
+                raise ValueError('6487 voltage must be within -500..500 V')
+            if params['current'] not in (25e-6, 250e-6, 2.5e-3, 25e-3):
+                raise ValueError('6487 current limit must be 25uA, 250uA, 2.5mA or 25mA')
+            if abs(params['voltage']) > 10 and params['current'] > 2.5e-3:
+                raise ValueError('6487 50/500 V ranges allow at most 2.5mA')
         power = abs(params['voltage']) * params['current']
     elif category == 'rf':
         check(params['frequency'], 'frequency_min', 'frequency_max')
@@ -106,7 +114,7 @@ class Driver:
             'supply': ['OUTP:GEN 0'] if self.model == 'ngp814' else ['OUTP OFF'],
             'smu': ['OUTP:OFF:MODE HIZ', 'OUTP OFF'], 'rf': ['OUTP OFF'],
             'awg': ['OUTP1 OFF', 'OUTP2 OFF'], 'load': ['INP OFF'],
-            'picoammeter': ['SOUR:VOLT:STAT OFF'],
+            'picoammeter': ['SOUR:VOLT:SWE:ABOR', 'SOUR:VOLT:STAT OFF'],
         }.get(self.category, [])
         for command in commands:
             self.io.write(command)
@@ -148,6 +156,15 @@ class Driver:
                 checks.update({'OUTP:ON:AUTO?':'0','OUTP:OFF:MODE?':'HIZ','SOUR:FUNC:MODE?': 'VOLT', 'SOUR:VOLT:MODE?': 'FIX', 'SENS:REM?': '0'})
                 setting('SENS:CURR:PROT', p['current']); setting('SOUR:VOLT', p['voltage'])
                 enable, output_query = ['OUTP ON'], 'OUTP?'
+            elif self.category == 'picoammeter':
+                # Set a conservative limit before changing range; never bypass interlock.
+                setting('SOUR:VOLT:ILIM', 25e-6)
+                voltage_range = 10 if abs(p['voltage']) <= 10 else 50 if abs(p['voltage']) <= 50 else 500
+                setting('SOUR:VOLT:RANG', voltage_range)
+                setting('SOUR:VOLT:ILIM', p['current'])
+                setting('SOUR:VOLT', p['voltage'])
+                checks['SOUR:VOLT:SWE:STAT?'] = '0'
+                enable, output_query = ['SOUR:VOLT:STAT ON'], 'SOUR:VOLT:STAT?'
             elif self.category == 'rf':
                 w('UNIT:POW DBM'); checks['UNIT:POW?']='DBM'
                 for c in ['AM:STAT OFF','FM:STAT OFF','PM:STAT OFF','PULM:STAT OFF','FREQ:MODE CW','POW:MODE CW']:
@@ -187,10 +204,13 @@ class Driver:
                 'smu': {'voltage':'SOUR:VOLT?','current':'SENS:CURR:PROT?'},
                 'rf': {'dbm':'POW?','frequency':'FREQ?'},
                 'awg': {k:f'SOUR{ch}:{c}?' for k,c in [('vpp','VOLT'),('offset','VOLT:OFFS'),('frequency','FREQ')]},
+                'picoammeter': {'voltage':'SOUR:VOLT?', 'current':'SOUR:VOLT:ILIM?'},
                 'load': {'current':'CURR?'}
             }[self.category].items(): readback[key] = actual[cmd]
             validate(self.model, readback, limits)
             if p['enable']:
+                if self.category == 'picoammeter' and q('SOUR:VOLT:INT:FAIL?').strip().upper() not in {'0', 'OFF'}:
+                    raise OSError('6487 interlock open or status unknown; output enable refused')
                 for cmd in enable:w(cmd)
                 if q(output_query).upper() not in {'1','ON'}:
                     raise OSError('output ON not confirmed')
@@ -211,7 +231,16 @@ class Driver:
             prefix = 'FETC' if self.category=='smu' else 'MEAS'
             return self.io.query(prefix + (':VOLT?' if operation=='voltage' else ':CURR?'))
         if self.category == 'meter' and operation == 'reading': return self.io.query('READ?')
-        if self.category == 'picoammeter' and operation == 'reading': return self.io.query('READ?')
+        if self.category == 'picoammeter':
+            if operation == 'reading': return self.io.query('READ?')
+            if operation == 'source_state':
+                # These are source SETTINGS, not a measurement of terminal voltage.
+                return {key: self.io.query(cmd) for key, cmd in {
+                    'voltage_setpoint_v': 'SOUR:VOLT?', 'current_limit_a': 'SOUR:VOLT:ILIM?',
+                    'voltage_range_v': 'SOUR:VOLT:RANG?', 'enabled': 'SOUR:VOLT:STAT?',
+                    'interlock_asserted': 'SOUR:VOLT:INT:FAIL?',
+                    'sweep_running': 'SOUR:VOLT:SWE:STAT?',
+                }.items()}
         if self.category == 'scope' and operation in {'frequency','vpp'}:
             self.io.write('HEADER OFF'); self.io.write(f'MEASU:IMMED:SOURCE1 CH{channel}')
             self.io.write('MEASU:IMMED:TYPE '+('FREQ' if operation=='frequency' else 'PK2PK'))
