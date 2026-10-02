@@ -12,7 +12,7 @@
 | mso2002b | USBTMC | wspólny profil immediate frequency/Vpp; odczyty sprawdzone przez gateway |
 | tbs1022 | USBTMC (tryb Computer) | wspólny profil immediate frequency/Vpp; dokładne ID `TBS 1022` |
 | dmm7510 | TCP 5025 | ID, READ? w zastanej funkcji pomiarowej |
-| 6487 | TCP 4001 przez RS232 9600 8N1 | ID, READ?, wyłączenie źródła; bez zdalnego włączania źródła |
+| 6487 | TCP 4001 przez RS232 9600 8N1 | ID, READ?, source_state, źródło DC ±500 V z limitem I, OFF; rozszerzenie HV bez testu sprzętowego |
 | 8550 | TCP 4001 przez RS232 9600 8N1 | ID, pomiar V/I, CC w zakresie 3 A, input OFF |
 | n9918b | TCP 5025 | ID, odczyt istniejącego markera 1, bez zmiany trybu |
 
@@ -45,3 +45,5 @@ TBS1022 korzysta ze wspólnych metod oscyloskopu, zgodnie z [instrukcją program
 Tektronix 077044403 Rev B](https://www.tek.com/en/oscilloscope/tds1000-manual).
 Kanał pomiarowy musi być wyświetlany; `9.9E37` oznacza nieważny pomiar, nie częstotliwość.
 Profil nie dodaje obsługi akwizycji waveformów dla tego modelu.
+
+Szczegóły źródła 6487 i procedura odbioru: [Keithley 6487 HV](keithley-6487.md).

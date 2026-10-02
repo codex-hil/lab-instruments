@@ -181,7 +181,16 @@
         "timeout": 4,
         "read_termination": "\r"
       },
-      "commissioned": false
+      "commissioned": false,
+      "lease_seconds": 10,
+      "limits": {
+        "allow_output": false,
+        "voltage_min": -500,
+        "voltage_max": 500,
+        "current_min": 2.5e-05,
+        "current_max": 0.0025,
+        "power_max": 1.25
+      }
     },
     "tek_awg": {
       "model": "afg1062",
