@@ -23,6 +23,7 @@ Wszystkie poniższe komponenty są w **tym jednym repozytorium**, nie w osobnych
 
 | Komponent | README / dokumentacja | Zawartość |
 |---|---|---|
+| MR8875 | [panel i driver](tools/mr8875/README.md) | MR8902 + MR8904, panel WWW, sesje CSV, dokumentacja komend i próby bez sygnałów |
 | Drivery Python | [README driverów](labinstruments/README.md) | modele, metody, jednostki, przykład bez serwera |
 | Raspberry Pi i Waveshare | [README wdrożenia](deploy/README.md) | USBTMC, hotplug, TCP–RS-232, konfiguracja i ograniczenia |
 | Profile urządzeń | [modele](docs/models.md) | zakres każdego drivera i protokoły przyrządów |

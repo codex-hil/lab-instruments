@@ -1,0 +1,254 @@
+{
+  "id": "20261007-143745-17d914",
+  "title": "Próba sprzętowa bez sygnałów · MR8902",
+  "kind": "instrument_waveform",
+  "complete": true,
+  "rows": 501,
+  "no_inputs": true,
+  "captured": 1791380265.3502233,
+  "config": {
+    "identity": "HIOKI,MR8875,240919912,V2.20",
+    "host": "192.168.2.13",
+    "port": 8802,
+    "modules": [
+      {
+        "slot": 1,
+        "model": "MR8904"
+      },
+      {
+        "slot": 2,
+        "model": "MR8902"
+      },
+      {
+        "slot": 3,
+        "model": "empty"
+      },
+      {
+        "slot": 4,
+        "model": "empty"
+      }
+    ],
+    "status": 0,
+    "sample_seconds": 0.01,
+    "divisions": 5,
+    "channels": [
+      {
+        "id": "CH1_1",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_2",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_3",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_4",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_5",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_6",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_7",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_8",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_9",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_10",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_11",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_12",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_13",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_14",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH1_15",
+        "mode": "CAN",
+        "enabled": true,
+        "range": 0.0,
+        "unit": "CAN"
+      },
+      {
+        "id": "CH2_1",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_2",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_3",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_4",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_5",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_6",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_7",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_8",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_9",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_10",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_11",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_12",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_13",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_14",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      },
+      {
+        "id": "CH2_15",
+        "mode": "VOLT",
+        "enabled": true,
+        "range": 0.0005,
+        "unit": "V"
+      }
+    ]
+  },
+  "channels": [
+    "CH2_1",
+    "CH2_2",
+    "CH2_3",
+    "CH2_4"
+  ],
+  "time_reference": "seconds_from_first_stored_sample"
+}

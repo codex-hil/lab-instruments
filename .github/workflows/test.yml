@@ -15,3 +15,6 @@ jobs:
           python-version: '${{ matrix.python }}'
       - run: ./scripts/bootstrap.sh
       - run: ./dist/labinst.pyz models
+      - name: MR8875 driver tests
+        working-directory: tools/mr8875
+        run: python3 -m unittest discover -s tests -v

@@ -1,0 +1,3491 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+
+	<style>
+		<!--
+			.m_td_com01{
+				border:solid windowtext .5pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com02{
+				border:solid windowtext .5pt;
+				border-left:none;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com03{
+				border:solid windowtext .5pt;
+				border-top:none;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com04{
+				border-top:none;
+				border-left:none;
+				border-bottom:solid windowtext .5pt;
+				border-right:solid windowtext .5pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_p_com01{
+				margin:0mm;
+				font-size:11.0pt;
+				font-family:"Verdana";
+				text-align:center;
+			}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					CALCulate Commands (Set and Query Calculations)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=:ACCOUNT">
+						<font color="white">
+							<b>Set or query an arithmetic operator</b>
+						</font>
+					</a><a name=":ACCOUNT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal"><br>(Command)<br>(Query)</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>:CALCulate:ACCOunt A,B,C$,D
+							<br>:CALCulate:ACCOunt? A
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B&lt;NR1&gt;,C$,D&lt;NR1&gt;<br>
+						</font>
+					</b>
+					A = 1 to 8 (calculation number)<br>
+					B = 1 to 8 (calculation number 1 used for making the four arithmetic operations)<br>
+					C$ = PLUS, MINUs, MULT, DIV<br>
+					D = 1 to 8 (calculation number 2 used for making the four arithmetic operations)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies an arithmetic operator for numerical calculation.<br>
+					Returns the currently specified arithmetic operator.<br>
+					<br>
+					<b>PLUS</b>&nbsp;&nbsp;addition (+)<br>
+					<b>MINUs</b>&nbsp;&nbsp;subtraction (-)<br>
+					<b>MULT</b>&nbsp;&nbsp;multiplication (*)<br>
+					<b>DIV</b>&nbsp;&nbsp;division (/)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<span style="color:#008040">
+						<b>
+							:CALCulate:ACCOunt 3,1,PLUS,2<br>
+							:CALCulate:ACCOunt? 3<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:ACCOUNT 3,1,PLUS,2</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					CALC when the state of the numerical calculation is set to basic arithmetic.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ANSWER?">
+						<font color="white"><b>Queries a calculation result</b></font>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal"><br>(Query)</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red"><br><b>:CALCulate:ANSWer? A,CH$</b></span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A,CH$,B$,C&lt;NR3&gt;<br>
+						</font>
+					</b>
+					NO$ = NO1 to NO16<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, XY, OPE, LAT, LON, ALT, DIR, SPD, DST<br>
+					B$ = OFF, AVE, RMS, PP, MAX, MAXT, MIN, MINT, PERI, FREQ, RISE, FALL, STD, AREA, XYARea, LEVEl, TIME, PWIDth, DUTY, PCOUnt, CALC, DIFF, PHASe, HI, LOW<br>
+					C = Calculation result (unless A$ = OFF), NONE (when no calculation result can be obtained)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the calculation operator and result of specified numerical calculation A.<br>
+					<br>
+					[CH$]<br>
+					<b>CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8</b>&nbsp;&nbsp;(channel)<br>
+					<b>XY</b>&nbsp;&nbsp;(X-Y area value)<br>
+					<b>OPE</b>&nbsp;&nbsp;(Basic arithmetic)<br>
+					<b>LAT</b>&nbsp;&nbsp;(Latitude)<br>
+					<b>LON</b>&nbsp;&nbsp;(Longitude)<br>
+					<b>ALT</b>&nbsp;&nbsp;(Altitude)<br>
+					<b>DIR</b>&nbsp;&nbsp;(Direction)<br>
+					<b>SPD</b>&nbsp;&nbsp;(Speed)<br>
+					<b>DST</b>&nbsp;&nbsp;(Distance)<br>
+					<br>
+					[B$]<br>
+					<b>OFF</b><tt>&nbsp;&nbsp;</tt>(No calculation performed)<br>
+					<b>AVE</b><tt>&nbsp;&nbsp;</tt>(Average value)<br>
+					<b>RMS</b><tt>&nbsp;&nbsp;</tt>(RMS value)<br>
+					<b>PP</b><tt>&nbsp;&nbsp;</tt>(Peak value)<br>
+					<b>MAX</b><tt>&nbsp;&nbsp;</tt>(Maximum value)<br>
+					<b>MAXT</b><tt>&nbsp;&nbsp;</tt>(Time to maximum value)<br>
+					<b>MIN</b><tt>&nbsp;&nbsp;</tt>(Minimum value)<br>
+					<b>MINT</b><tt>&nbsp;&nbsp;</tt>(Time to minimum value)<br>
+					<b>PERI</b><tt>&nbsp;&nbsp;</tt>(Period)<br>
+					<b>FREQ</b><tt>&nbsp;&nbsp;</tt>(Frequency)<br>
+					<b>RISE</b><tt>&nbsp;&nbsp;</tt>(Rise time)<br>
+					<b>FALL</b><tt>&nbsp;&nbsp;</tt>(Fall time)<br>
+					<b>STD</b><tt>&nbsp;&nbsp;</tt>(Standard deviation)<br>
+					<b>AREA</b><tt>&nbsp;&nbsp;</tt>(Area value)<br>
+					<b>XYARea</b><tt>&nbsp;&nbsp;</tt>(X-Y area value)<br>
+					<b>LEVEl</b><tt>&nbsp;&nbsp;</tt>(Time to specified level)<br>
+					<b>TIME</b><tt>&nbsp;&nbsp;</tt>(Level to specified time)<br>
+					<b>PWIDth</b><tt>&nbsp;&nbsp;</tt>(Pulse width)<br>
+					<b>DUTY</b><tt>&nbsp;&nbsp;</tt>(Duty ratio)<br>
+					<b>PCOUnt</b><tt>&nbsp;&nbsp;</tt>(Pulse count)<br>
+					<b>CALC</b><tt>&nbsp;&nbsp;</tt>(Basic arithmetic)<br>
+					<b>DIFF</b>&nbsp;&nbsp;</tt>(Time difference)<br>
+					<b>PHASe</b>&nbsp;&nbsp;</tt>(Phase difference)<br>
+					<b>HI</b>&nbsp;&nbsp;</tt>(High level)<br>
+					<b>LOW</b>&nbsp;&nbsp;</tt>(Low level)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br><b>:CALCulate:ANSWer? 1,CH1_1<br></b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:ANSWER 1,CH1_1,AVE,+1.23456E-03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					If calculation results could not be obtained, C = &quot;NONE&quot;.<br>
+					For XY area value and the four arithmetic operations, calculations other than XY or OPE for CH$ cannot be specified.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CH">
+						<span class = "g_HeadTitle">
+							<b>Obtain and set the channels to make numerical calculations</b>
+						</span>
+					</a><a name = ":CH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:CH A,B$,CH$<br>
+							:CALCulate:CH? A,B$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$,CH$<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					CH$ = AALL, LALL, CALL, PALL, WALL, ZALL, GALL, CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the channels used for numerical calculations.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>OBJect</b> (channel(s) used for making numerical calculations)<br>
+					<b>BASE</b> (standard channel used when the numerical calculation is for determining the phase or time difference)<br>
+					<br>
+					<b>AALL</b> (ALL analog channels)<br>
+					<b>LALL</b> (ALL internal logic channels)<br>
+					<b>CALL</b> (ALL CAN logic channels)<br>
+					<b>PALL</b> (ALL pulse channels)<br>
+					<b>WALL</b> (ALL channel calculation channels)<br>
+					<b>ZALL</b> (ALL waveform calculation channels)<br>
+					<b>GALL</b> (ALL GPS channels)<br>
+					<b>CH1_1 to CH4_15</b> (Analog channel)<br>
+					<b>P1 to P2</b> (Pulse channel)<br>
+					<b>LA1 to LB4</b> (Internal logic channel)<br>
+					<b>L1_1 to L4_16</b> (CAN logic channel)<br>
+					<b>W1_1 to W4_2</b> (Channel calculation channel)<br>
+					<b>Z1 to Z8</b> (Waveform calculation channel)<br>
+					<b>LAT, LON, ALT, DIR, SPD, DST</b> (GPS channel)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+							<b>
+								:CALCulate:CH 3,BASE,CH1_1<br>
+								:CALCulate:CH? 3,BASE<br>
+							</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:CH 3,BASE,CH1_1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					GALL, LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":COMP">
+						<span class = "g_HeadTitle">
+							<b>Set or query a calculation comparator state</b>
+						</span>
+					</a><a name=":COMP?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:COMP A,B$<br>
+							:CALCulate:COMP? A
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables or disables the calculation comparator (for judgment).<br>
+					Returns the current on/off state of the calculation comparator as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:CALCulate:COMP 1,ON</b><br>
+						(Sets the calculation comparator state of NO1 to ON.)<br>
+						<br>
+						<b>:CALCulate:COMP? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:COMP 1,ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":COMPAREA">
+						<span class = "g_HeadTitle">
+							<b>Set or query comparator thresholds for a numerical calculation</b>
+						</span>
+					</a><a name=":COMPAREA?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:COMPArea A,B,C<br>
+							:CALCulate:COMPArea? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B&lt;NR3&gt;,C&lt;NR3&gt;<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B = -9.99999E+29 to +9.99999E+29<br>
+					C = -9.99999E+29 to +9.99999E+29<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets upper and lower comparator judgment thresholds for numerical calculation A.<br>
+					Returns the current values of the upper and lower thresholds for numerical calculation A as NR3 numerical values.<br>
+					<br>
+					&quot;B&quot; is the upper threshold and &quot;C&quot; is the lower threshold.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:CALCulate:COMPArea 1,+1.00000E+00,-1.00000E+00</b><br>
+						(Sets the comparison range for numerical calculation NO1 to -1.00000E+00 to +1.00000E+00.)<br>
+						<br>
+						<b>:CALCulate:COMPArea? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:COMPAREA 1,+1.00000E+00,-1.00000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":COMPJUDGE?">
+						<span class = "g_HeadTitle">
+							<b>Query the comparison result of a numerical calculation</b>
+						</span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal"><br>(Query)</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b><br>:CALCulate:COMPJudge? A(,CH$)</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,CH$,B$,C$ (except A = 0)<br>
+							A&lt;NR1&gt;,C$ (A = 0)<br>
+						</font>
+					</b>
+					A = 0 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, XY, OPE, LAT, LON, ALT, DIR, SPD, DST (except A = 0)<br>
+					B$ = OFF, AVE, RMS, PP, MAX, MAXT, MIN, MINT, PREI, FREQ, RISE, FALL, STD, AREA, XYARea, LEVEl, TIME, PWIDth, DUTY, PCOUnt, CALC, DIFF, PHASe, HI, LOW (except A = 0)<br>
+					C$ = GO, NG, *<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the comparator judgment result of numerical calculation A.<br>
+					When A = 0, the returned result is the combined judgment of all calculation results.<br>
+					If C$ = &quot;*&quot;, no judgment is available for the specified numerical calculation.<br>
+					<br>
+					<b>OFF</b><tt>&nbsp;&nbsp;</tt>(No calculation performed)<br>
+					<b>AVE</b><tt>&nbsp;&nbsp;</tt>(Average value)<br>
+					<b>RMS</b><tt>&nbsp;&nbsp;</tt>(RMS value)<br>
+					<b>PP</b><tt>&nbsp;&nbsp;</tt>(Peak value)<br>
+					<b>MAX</b><tt>&nbsp;&nbsp;</tt>(Maximum value)<br>
+					<b>MAXT</b><tt>&nbsp;&nbsp;</tt>(Time to maximum value)<br>
+					<b>MIN</b><tt>&nbsp;&nbsp;</tt>(Minimum value)<br>
+					<b>MINT</b><tt>&nbsp;&nbsp;</tt>(Time to minimum value)<br>
+					<b>PERI</b><tt>&nbsp;&nbsp;</tt>(Period)<br>
+					<b>FREQ</b><tt>&nbsp;&nbsp;</tt>(Frequency)<br>
+					<b>RISE</b><tt>&nbsp;&nbsp;</tt>(Rise time)<br>
+					<b>FALL</b><tt>&nbsp;&nbsp;</tt>(Fall time)<br>
+					<b>STD</b><tt>&nbsp;&nbsp;</tt>(Standard deviation)<br>
+					<b>AREA</b><tt>&nbsp;&nbsp;</tt>(Area value)<br>
+					<b>XYARea</b><tt>&nbsp;&nbsp;</tt>(X-Y area value)<br>
+					<b>LEVEl</b><tt>&nbsp;&nbsp;</tt>(Time to specified level)<br>
+					<b>TIME</b><tt>&nbsp;&nbsp;</tt>(Level to specified time)<br>
+					<b>PWIDth</b><tt>&nbsp;&nbsp;</tt>(Pulse width)<br>
+					<b>DUTY</b><tt>&nbsp;&nbsp;</tt>(Duty ratio)<br>
+					<b>PCOUnt</b><tt>&nbsp;&nbsp;</tt>(Pulse count)<br>
+					<b>CALC</b><tt>&nbsp;&nbsp;</tt>(Basic arithmetic)<br>
+					<b>DIFF</b>&nbsp;&nbsp;</tt>(Time difference)<br>
+					<b>PHASe</b>&nbsp;&nbsp;</tt>(Phase difference)<br>
+					<b>HI</b>&nbsp;&nbsp;</tt>(High level)<br>
+					<b>LOW</b>&nbsp;&nbsp;</tt>(Low level)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b><br>:CALCulate:COMPJudge? 0<br></b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:COMPJUDGE 0,NG</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<span style="color:#008040">
+						<b><br>:CALCulate:COMPJudge? 1,CH1_1<br></b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:COMPJUDGE 1,CH1_1,AVE,GO</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":COMPSTOP">
+						<span class = "g_HeadTitle">
+							<b>Set or query calculation comparator judgment to stop measurement</b>
+						</span>
+					</a><a name=":COMPSTOP?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:COMPStop A$<br>
+							:CALCulate:COMPStop?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A$<br>
+						</font>
+					</b>
+					A$ = GO, NG, G_N<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the numerical calculation judgment criterion that will stop measurement.<br>
+					Queries the judgment criterion currently specified to stop measurement.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<span style="color:#008040">
+						<b>:CALCulate:COMPStop NG</b><br>
+						(Measurement storage stops when the result of comparison of a numerical calculation is NG.)<br>
+						<br>
+						<b>:CALCulate:COMPStop?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:COMPSTOP NG</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FACTOR">
+						<span class = "g_HeadTitle">
+							<b>Set or query waveform calculation factor (constant) A to P</b>
+						</span>
+					</a><a name = ":FACTOR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:FACTor A$,B<br>
+							:CALCulate:FACTor? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					A$ = A to P<br>
+					B = -9.9999E+29 to +9.9999E+29<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Assigns a value to waveform calculation constant A to P.<br>
+					Returns the value currently assigned to constant A to P.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:FACTor A,1000<br>
+							:CALCulate:FACTor? A<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:FACTOR A,+1.0000E+03</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MEASAREA">
+						<span class = "g_HeadTitle">
+							<b>Select or query area (interval) setting for numerical calculations</b>
+						</span>
+					</a><a name=":MEASAREA?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:MEASArea A,B$<br>
+							:CALCulate:MEASArea? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B$ = WHOLe, A_B, C_D<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects whether numerical calculations apply to the whole waveform, or just to a specified portion (area).<br>
+					Returns a text string indicating whether numerical calculations apply to the whole waveform or a specified portion (area).<br>
+					<br>
+					<b>WHOLe</b><br>
+					<b>A_B</b>&nbsp;&nbsp;(between A/B cursors)<br>
+					<b>C_D</b>&nbsp;&nbsp;(between C/D cursors)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:MEASArea 1,WHOLe<br>
+							:CALCulate:MEASArea? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MEASAREA 1,WHOLE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MEASSET">
+						<span class = "g_HeadTitle">
+							<b>Specify or query the function and channel(s) for a numerical calculation</b>
+						</span>
+					</a><a name=":MEASSET?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b><br>:CALCulate:MEASSet A,B$</b>
+						<b><br>:CALCulate:MEASSet? A</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>A&lt;NR1&gt;,B$</b>
+					</font>
+					<br>
+					A = 1 to 8<br>
+					B$ = OFF, AVE, RMS, PP, MAX, MAXT, MIN, MINT, PERI, FREQ, RISE, FALL, STD, AREA, XYARea, LEVEl, TIME, PWIDth, DUTY, PCOUnt, CALC, DIFF, PHASe, HI, LOW<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Defines numerical calculation A by specifying a calculation function (B$).<br>
+					Returns the calculation function specified for A.<br>
+					<br>
+					<b>OFF</b><tt>&nbsp;&nbsp;</tt>No calculation performed<br>
+					<b>AVE</b><tt>&nbsp;&nbsp;</tt>Average value<br>
+					<b>RMS</b><tt>&nbsp;&nbsp;</tt>RMS value<br>
+					<b>PP</b><tt>&nbsp;&nbsp;</tt>Peak value<br>
+					<b>MAX</b><tt>&nbsp;&nbsp;</tt>Maximum value<br>
+					<b>MAXT</b><tt>&nbsp;&nbsp;</tt>Time to maximum value<br>
+					<b>MIN</b><tt>&nbsp;&nbsp;</tt>Minimum value<br>
+					<b>MINT</b><tt>&nbsp;&nbsp;</tt>Time to minimum value<br>
+					<b>PERI</b><tt>&nbsp;&nbsp;</tt>Period<br>
+					<b>FREQ</b><tt>&nbsp;&nbsp;</tt>Frequency<br>
+					<b>RISE</b><tt>&nbsp;&nbsp;</tt>Rise time<br>
+					<b>FALL</b><tt>&nbsp;&nbsp;</tt>Fall time<br>
+					<b>STD</b><tt>&nbsp;&nbsp;</tt>Standard deviation<br>
+					<b>AREA</b><tt>&nbsp;&nbsp;</tt>Area value<br>
+					<b>XYARea</b><tt>&nbsp;&nbsp;</tt>X-Y area value<br>
+					<b>LEVEl</b><tt>&nbsp;&nbsp;</tt>Time to specified level<br>
+					<b>TIME</b><tt>&nbsp;&nbsp;</tt>(Level to specified time)<br>
+					<b>PWIDth</b><tt>&nbsp;&nbsp;</tt>Pulse width<br>
+					<b>DUTY</b><tt>&nbsp;&nbsp;</tt>Duty ratio<br>
+					<b>PCOUnt</b><tt>&nbsp;&nbsp;</tt>Pulse count<br>
+					<b>CALC</b><tt>&nbsp;&nbsp;</tt>Basic arithmetic<br>
+					<b>DIFF</b>&nbsp;&nbsp;</tt>Time difference<br>
+					<b>PHASe</b>&nbsp;&nbsp;</tt>Phase difference<br>
+					<b>HI</b>&nbsp;&nbsp;</tt>High level<br>
+					<b>LOW</b>&nbsp;&nbsp;</tt>Low level<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:CALCulate:MEASSet 1,MAX<br></b>
+						(Defines calculation NO1 to be the maximum value on channel 1-1.)<br>
+						<br>
+						<b>:CALCulate:MEASSet? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MEASSET 1,MAX</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MEASURE">
+						<span class = "g_HeadTitle">
+							<b>Set or query execution of numerical calculations</b>
+						</span>
+					</a><a name=":MEASURE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>:CALCulate:MEASure A$
+							<br>:CALCulate:MEASure?
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A$<br>
+						</font>
+					</b>
+					A$ = OFF, ON, EXEC<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the numerical calculation execution state.<br>
+					Returns a text indicator of the current numerical calculation execution state.<br>
+					Calculation is performed when A$ = &quot;EXEC&quot;.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>:CALCulate:MEASure ON
+							<br>:CALCulate:MEASure EXEC
+							<br>:CALCulate:MEASure?
+							<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MEASURE ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					An error will occur if a command is sent during calculation.<br>
+					After sending :CALCulate:MEASure EXEC, send the *OPC? command, and check that calculations are completed before sending the next command.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MFILTER">
+						<span class = "g_HeadTitle">
+							<b>Set or query filtering for a numerical calculation</b>
+						</span>
+					</a><a name=":MFILTER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:MFILter A,B$,C<br>
+							:CALCulate:MFILter? A,B$
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$,C&lt;NR1&gt;<br>
+						</font>
+					</b>
+					A  = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					C  = 0, 10, 20, 50, 100, 150, 200, 250, 500, 1000<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets filtering for numerical calculationA.<br>
+					Queries the current filter setting for numerical calculation A.<br>
+					<br>
+					When &quot;B&quot; = 0, the filter setting is OFF.<br>
+					<br>
+					<b>OBJect</b> (channel(s) used for making numerical calculations)<br>
+					<b>BASE</b> (standard channel used when the numerical calculation is for determining the phase or time difference)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:CALCulate:MFILter 1,OBJect,500</b><br>
+						(Sets the filter for numerical calculation NO1 to be 500 samples.)<br>
+						<br>
+						<b>:CALCulate:MFILter? 1,OBJect</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MFILTER 1,OBJECT,500</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Applicable calculation modes are the following:<br>
+					<br>
+					<b>PERI</b><tt>&nbsp;&nbsp;</tt>(Period)<br>
+					<b>FREQ</b><tt>&nbsp;&nbsp;</tt>(Frequency)<br>
+					<b>LEVEl</b><tt>&nbsp;&nbsp;</tt>(Time to specified level)<br>
+					<b>PWIDth</b><tt>&nbsp;&nbsp;</tt>(Pulse width)<br>
+					<b>DUTY</b><tt>&nbsp;&nbsp;</tt>(Duty ratio)<br>
+					<b>PCOUnt</b><tt>&nbsp;&nbsp;</tt>(Pulse count)<br>
+					<b>DIFF</b>&nbsp;&nbsp;</tt>(Time difference)<br>
+					<b>PHASe</b>&nbsp;&nbsp;</tt>(Phase difference)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MLEVEL">
+						<span class = "g_HeadTitle">
+							<b>Set or query the level for a numerical calculation</b>
+						</span>
+					</a><a name=":MLEVEL?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>:CALCulate:MLEVel A,B$,C
+							<br>:CALCulate:MLEVel? A,B$
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$,C&lt;NR3&gt;<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					C = level<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the level (amplitude) for numerical calculation A.<br>
+					Queries the currently specified level for numerical calculation A.<br>
+					<br>
+					<b>OBJect</b> (channel(s) used for making numerical calculations)<br>
+					<b>BASE</b> (standard channel used when the numerical calculation is for determining the phase or time difference)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:MLEVel 1,OBJect,1.23456E-06<br>
+							:CALCulate:MLEVel? 1,OBJect<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MLEVEL 1,OBJECT,+1.23456E-06</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					This command is not applicable to logic channels.<br>
+					Applicable calculation modes are the following:<br>
+					<br>
+					<b>PERI</b><tt>&nbsp;&nbsp;</tt>(Period)<br>
+					<b>FREQ</b><tt>&nbsp;&nbsp;</tt>(Frequency)<br>
+					<b>LEVEl</b><tt>&nbsp;&nbsp;</tt>(Time to specified level)<br>
+					<b>PWIDth</b><tt>&nbsp;&nbsp;</tt>(Pulse width><br>
+					<b>DUTY</b><tt>&nbsp;&nbsp;</tt>(Duty ratio)<br>
+					<b>PCOUnt</b><tt>&nbsp;&nbsp;</tt>(Pulse count)<br>
+					<b>DIFF</b>&nbsp;&nbsp;</tt>(Time difference)<br>
+					<b>PHASe</b>&nbsp;&nbsp;</tt>(Phase difference)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MSLOPE">
+						<span class = "g_HeadTitle">
+							<b>Set or query the slope for a numerical calculation</b>
+						</span>
+					</a><a name=":MSLOPE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:MSLOpe A,B$,C$<br>
+							:CALCulate:MSLOpe? A,B$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$,C$<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					C$ = UP, DOWN<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the slope direction for numerical calculation A.<br>
+					Returns the currently specified slope direction for numerical calculation A.<br>
+					<br>
+					<b>OBJect</b> (channel(s) used for making numerical calculations)<br>
+					<b>BASE</b> (standard channel used when the numerical calculation is for determining the phase or time difference)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:MSLOpe 1,OBJect,UP<br>
+							:CALCulate:MSLOpe? 1,OBJect<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MSLOPE 1,OBJECT,UP</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Applicable calculation modes are the following:<br>
+					<br>
+					<b>PERI</b><tt>&nbsp;&nbsp;</tt>(Period)<br>
+					<b>FREQ</b><tt>&nbsp;&nbsp;</tt>(Frequency)<br>
+					<b>LEVEl</b><tt>&nbsp;&nbsp;</tt>(Time to specified level)<br>
+					<b>PWIDth</b><tt>&nbsp;&nbsp;</tt>(Pulse width><br>
+					<b>PCOUnt</b><tt>&nbsp;&nbsp;</tt>(Pulse count)<br>
+					<b>DIFF</b>&nbsp;&nbsp;</tt>(Time difference)<br>
+					<b>PHASe</b>&nbsp;&nbsp;</tt>(Phase difference)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MSTAtis">
+						<span class = "g_HeadTitle">
+							<b>Set or query the stat for a numerical calculation</b>
+						</span>
+					</a><a name=":MSTAtis?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:MSTAtis A,B$<br>
+							:CALCulate:MSTAtis? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B$<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B$ = FIRSt, AVE, MAX, MIN<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Makes settings for the numerical calculation statistics.<br>
+					Query the settings made for the numerical calculation statistics.<br>
+					<br>
+					<b>FIRSt</b><tt>&nbsp;&nbsp;</tt>(first calcuration result)<br>
+					<b>AVE</b><tt>&nbsp;&nbsp;</tt>(average value)<br>
+					<b>MAX</b><tt>&nbsp;&nbsp;</tt>(largest value)<br>
+					<b>MIN</b><tt>&nbsp;&nbsp;</tt>(smallest value)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:CALCulate:MSTAtis 3,AVE</b><br>
+						(Sets the statistics for calculation No.3 to display as the average.)<br>
+						<br>
+						<b>:CALCulate:MSTAtis? 3</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MSTATIS 3,AVE</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When cycle, frequency, rise time, fall time, pulse width, or duty ratio is selected as the type of numerical calculation.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MTIME">
+						<span class = "g_HeadTitle">
+							<b>Set or query the parameters to conduct numerical calculation and the time/calculation number</b>
+						</span>
+					</a><a name = ":MTIME?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<br>
+						<b>:CALCulate:MTIMe A,B$,C</b>&nbsp;(B$ = TIME)<br>
+						<b>:CALCulate:MTIMe A,B$,D</b>&nbsp;(B$ = CALC)<br>
+						<b>:CALCulate:MTIMe? A</b><br>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>A&lt;NR1&gt;,B$,C</b>&nbsp;(B$ = TIME)<br>
+						<b>A&lt;NR1&gt;,B$,D</b>&nbsp;(B$ = CALC)<br>
+					</font>
+					A = 1 to 8<br>
+					B$ = TIME, CALC<br>
+					C = &lt;NR3&gt;(second) (B$ = TIME)<br>
+					D = 1 to 8 (calculation number) (B$ = CALC)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					A query is made for the calculation item specified by A and the time/calculation number.<br>
+					<br>
+					<b>TIME</b> (specified time)<br>
+					<b>CALC</b> (specified calculation)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:MTIMe 1,TIME,1<br>
+							:CALCulate:MTIMe? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:MTIME 1,TIME,+1.00000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The numerical calculation type must be the level to specified time.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PERCENT">
+						<span class = "g_HeadTitle">
+							<b>Set or query the rise or fall time percentage for a numerical calculation</b>
+						</span>
+					</a><a name=":PERCENT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:PERCent A,B<br>
+							:CALCulate:PERCent? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<b>
+						<font color="#0000cc">
+							A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+						</font>
+					</b>
+					A = 1 to 8<br>
+					B = 5 to 30<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the rise or fall time percentage for numerical calculation A.<br>
+					Queries the specified rise or fall time percentage for numerical calculation A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:PERCent 1,10<br>
+							:CALCulate:PERCent? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:PERCENT 1,10</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The available calculation modes are as follows.<br>
+					<br>
+					<b>RISE</b><tt>&nbsp;&nbsp;</tt>(Rise time)<br>
+					<b>FALL</b><tt>&nbsp;&nbsp;</tt>(Fall time)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RCH1">
+						<span class = "g_HeadTitle">
+							<b>Select or query CH 1 for channel calculation</b>
+						</span>
+					</a><a name = ":RCH1?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:RCH1 CH$,A<br>
+							:CALCulate:RCH1? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = W1_1 to W4_2<br>
+					A = 1 to 4&nbsp;(internal module channel)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Settings are made for the CH$ specified by A for channel calculations.<br>
+					Text string will be returned for CH$ specified by A for channel calculations.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:RCH1 W1_1,1<br>
+							:CALCulate:RCH1? W1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:RCH1 W1_1,1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RCH2">
+						<span class = "g_HeadTitle">
+							<b>Select or query CH 2 for channel calculation</b>
+						</span>
+					</a><a name = ":RCH2?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:RCH2 CH$,A<br>
+							:CALCulate:RCH2? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = W1_1 to W4_2<br>
+					A = 1 to 4&nbsp;(internal module channel)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Settings are made for the CH$ specified by A for channel calculations.<br>
+					Text string will be returned for CH$ specified by A for channel calculations.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:RCH2 W1_1,1<br>
+							:CALCulate:RCH2? W1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:RCH2 W1_1,1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ROPERATOR">
+						<span class = "g_HeadTitle">
+							<b>Select or query the arithmetic operator for channel calculation</b>
+						</span>
+					</a><a name = ":ROPERATOR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:ROPErator CH$,A$<br>
+							:CALCulate:ROPErator? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = W1_1 to W4_2<br>
+					A$ = PLUS, MINUs, MULT<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies an arithmetic operator for channel calculation.<br>
+					Returns the currently specified arithmetic operator.<br>
+					<br>
+					<b>PLUS</b>&nbsp;(+)<br>
+					<b>MINUs</b>&nbsp;(-)<br>
+					<b>MULT</b>&nbsp;(*)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:ROPErator W1_1,PLUS<br>
+							:CALCulate:ROPErator? W1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:ROPERATOR W1_1,PLUS</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":WVAREA">
+						<span class = "g_HeadTitle">
+							<b>Select or query area setting for waveform calculation</b>
+						</span>
+					</a><a name = ":WVAREA?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:WVARea A$<br>
+							:CALCulate:WVARea?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = WHOLe, A_B, C_D<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects whether waveform calculations apply to the whole waveform, or just to a specified portion (area).<br>
+					Returns a text string indicating whether waveform calculations apply to the whole waveform or a specified portion (area).<br>
+					<br>
+					<b>WHOLe</b><br>
+					<b>A_B</b>&nbsp;&nbsp;(between A/B cursors)<br>
+					<b>C_D</b>&nbsp;&nbsp;(between C/D cursors)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:WVARea WHOLe<br>
+							:CALCulate:WVARea?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:WVAREA WHOLE</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":WVCALC">
+						<span class = "g_HeadTitle">
+							<b>Set or query execution of waveform calculations</b>
+						</span>
+					</a><a name = ":WVCALC?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:WVCAlc A$<br>
+							:CALCulate:WVCAlc?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON, EXEC<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the waveform calculation execution state.<br>
+					Returns a text string indicating the current waveform calculation execution state.<br>
+					Calculation is performed when A$ = &quot;EXEC&quot;.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:WVCAlc ON<br>
+							:CALCulate:WVCAlc?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:WVCALC ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":WVSCALE">
+						<span class = "g_HeadTitle">
+							<b>Set or query auto/manual scaling for a waveform calculation</b>
+						</span>
+					</a><a name = ":WVSCALE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:WVSCale A,B$<br>
+							:CALCulate:WVSCale? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B$<br>
+						</b>
+					</font>
+					Z$ = 1 to 8<br>
+					A$ = AUTO, MANUal<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects auto or manual scaling for waveform calculation A.<br>
+					Returns a text string indicating the auto/manual scaling setting for waveform calculation A.<br>
+					<br>
+					<b>AUTO</b><br>
+					<b>MANUal</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:WVSCale 1,MANUal<br>
+							:CALCulate:WVSCale? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:WVSCALE 1,MANUAL</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":XCH">
+						<span class = "g_HeadTitle">
+							<b>Set or query Channel X used for numerical calculations</b>
+						</span>
+					</a><a name = ":XCH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:XCH A,CH$<br>
+							:CALCulate:XCH? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,CH$<br>
+						</b>
+					</font>
+					A = 1 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Settings are made for the Channel X specified by A for numerical calculations.<br>
+					Text string will be returned for Channel X specified by A for numerical calculations.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:XCH 1,CH1_1<br>
+							:CALCulate:XCH? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:XCH 1,CH1_1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<a href="#:MEASSET">The numerical calculation type</a> must be the X-Y area value.<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":YCH">
+						<span class = "g_HeadTitle">
+							<b>Set or query Channel Y used for numerical calculations</b>
+						</span>
+					</a><a name = ":YCH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:YCH A,CH$<br>
+							:CALCulate:YCH? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,CH$<br>
+						</b>
+					</font>
+					A = 1 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Settings are made for the Channel Y specified by A for numerical calculations.<br>
+					Text string will be returned for Channel Y specified by A for numerical calculations.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:YCH 1,CH1_1<br>
+							:CALCulate:YCH? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:YCH 1,CH1_1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<a href="#:MEASSET">The numerical calculation type</a> must be the X-Y area value.<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":Z">
+						<span class = "g_HeadTitle">
+							<b>Set or query a waveform calculation formula</b>
+						</span>
+					</a><a name = ":Z?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:Z A,&quot;B&quot;<br>
+							:CALCulate:Z? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,&quot;B$&quot;<br>
+						</b>
+					</font>
+					A = 1 to 8<br>
+					B$ = (formula)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Assigns a formula to waveform calculation A.<br>
+					Returns the formula of waveform calculation A as text string B$.<br>
+					<br>
+					(80 chars max.: variables are lower-case, formula is upper case)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:Z 1,&quot;CH(1,1)*2&quot;<br>
+							:CALCulate:Z? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b:CALCULATE:Z 1,&quot;CH(1,1)*2&quot;</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ZUNIT">
+						<span class = "g_HeadTitle">
+							<b>Set or query the unit name assigned to a waveform calculation</b>
+						</span>
+					</a><a name = ":ZUNIT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:CALCulate:ZUNIt A,&quot;B$&quot;<br>
+							:CALCulate:ZUNIt? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							Z$,&quot;A&quot;<br>
+						</b>
+					</font>
+					A = 1 to 8<br>
+					B$ = Unit name (up to 7 characters)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Assigns unit &quot;B&quot; to be used for waveform calculation A.<br>
+					Returns the name of the unit (module) assigned to waveform calculation A.<br>
+					<br>
+					Special characters can be entered as follows:<br>
+					(Special characters other than the following are replaced by spaces.)<br>
+					<br>
+				</p>
+
+				<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+					<tr style="height:18.0pt">
+						<td class="m_td_com01">
+							<p class="m_p_com01" align="center"><b>PC</b></p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;2</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;3</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;u</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;o</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;e</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;c</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;+</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;,</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;&circ;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;&tilde;</p>
+						</td>
+					</tr>
+					<tr style="height:18.0pt">
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center"><b>MR8875</b></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>2</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>3</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&mu;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&Omega;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&epsilon;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&deg;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&plusmn;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">'</p>
+						</td>
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center">&quot;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&circ;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&tilde;</p>
+						</td>
+					</tr>
+				</table>
+
+				<p class="MsoNormal">
+					<br>
+					Either single (') or double quotation marks (&quot;) can be used in the command argument.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:CALCulate:ZUNIt 1,&quot;VA&quot;<br>
+							:CALCulate:ZUNIt? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:CALCULATE:ZUNIT 1,&quot;VA&quot;</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+</body>
+</html>

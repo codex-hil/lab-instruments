@@ -1,0 +1,2363 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<style></style>
+	<title></title>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					UNIT Commands (Set and query input channel settings)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ADJUST">
+						<span class = "g_HeadTitle"><b>Execute zero adjustment</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:ADJUST<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:ADJUST<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":BALANCE">
+						<span class = "g_HeadTitle">
+							<b>Execute auto-balancing and query results for all Strain module channels</b>
+						</span>
+					</a><a name=":BALANCE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:BALAnce<br>
+							:UNIT:BALAnce?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A<sub>1</sub>&lt;NR1&gt;,A<sub>2</sub>&lt;NR1&gt;,A<sub>3</sub>&lt;NR1&gt;,...<br>
+						</b>
+					</font>
+					A<sub>i</sub> = -1, 0, 1<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Executes auto-balancing of all Strain module channels.<br>
+					Returns the results of auto-balancing as NR1 numerical values.<br>
+					<br>
+					The results are read sequentially beginning with the first module (15 channels / module). <br>
+					<br>
+					A = -1&nbsp;&nbsp;(Unrelated module)<br>
+					A = 0&nbsp;&nbsp;(Success)<br>
+					A = 1&nbsp;&nbsp;(Failure)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:BALAnce<br>
+							:UNIT:BALAnce?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:BALANCE -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the value -1 for modules that are not Strain modules.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":BOUT">
+						<span class = "g_HeadTitle"><b>Enable/disable or query thermocouple burnout mode</b></span>
+					</a><a name=":BOUT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:BOUT A,B$<br>
+							:UNIT:BOUT? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B$<br>
+						</b>
+					</font>
+					A = 1 to 4 (module number)<br>
+					B$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the thermocouple burn-out detection function for channel A.<br>
+					Returns the current setting of the burn-out detection function for channel A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:BOUT 1,ON<br>
+							:UNIT:BOUT? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:BOUT 1,ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When the specified channel belongs to a voltage/temperature module (in Temperature mode).<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CHBALANCE">
+						<span class = "g_HeadTitle">
+							<b>Execute auto-balancing and query the result for the selected channel (Strain module)</b>
+						</span>
+					</a><a name=":CHBALANCE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:CHBAlance CH$<br>
+							:UNIT:CHBAlance? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = -1, 0, 1<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Executes auto-balancing on channel CH$.<br>
+					Returns the result of auto-balancing as an NR1 numerical value.<br>
+					<br>
+					A = -1&nbsp;&nbsp;(Unrelated module)<br>
+					A = 0&nbsp;&nbsp;(Success)<br>
+					A = 1&nbsp;&nbsp;(Failure)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:CHBAlance CH1_1<br>
+							:UNIT:CHBAlance? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:CHBALANCE CH1_1,0</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The specified channel belongs to a Strain module.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":COUPLING">
+						<span class = "g_HeadTitle"><b>Set or query input coupling</b></span>
+					</a><a name=":COUPLING?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:COUPling CH$,A$<br>
+							:UNIT:COUPling? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = DC, ACRMS, GND<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the type of input coupling for channel CH$.<br>
+					Returns the current input coupling setting for channel CH$.<br>
+					<br>
+					<b>DC</b>&nbsp;&nbsp;(DC coupling)&nbsp;&nbsp;(except MR8905(RMS))<br>
+					<b>ACRMS</b>&nbsp;&nbsp;(AC coupling)&nbsp;&nbsp;(only MR8905(RMS))<br>
+					<b>GND</b>&nbsp;&nbsp;(Grounded)&nbsp;&nbsp;<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:COUPling CH1_1,DC<br>
+							:UNIT:COUPling? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:COUPLING CH1_1,DC</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DFILTER">
+						<span class = "g_HeadTitle"><b>Set or query the digital filter in a module</b></span>
+					</a><a name=":DFILTER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:DFILter A,B$<br>
+							:UNIT:DFILter? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					A = 1 to 4 (module number)<br>
+					B$ = OFF, F50HZ, F60HZ<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the digital filter in the module hosting channel A.<br>
+					Returns the current state of the digital filter in the module hosting channel A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:DFILter 1,F60HZ<br>
+							:UNIT:DFILter? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:DFILTER 1,F60HZ</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The specified channel is on either a Voltage/Temperature module (in Temperature mode).<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FILTER">
+						<span class = "g_HeadTitle"><b>Set or query an input filter</b></span>
+					</a><a name=":FILTER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:FILTer CH$,A<br>
+							:UNIT:FILTer? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A = 0 or 5 to 1000000<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the filter for channel CH$.<br>
+					Returns the current filter setting for channel CH$.<br>
+					The filter is OFF when argument A = 0.<br>
+					<br>
+					<li>(Analog module)&nbsp;A = 0, 5, 50, 500, 5000</li>
+					<li>(Strain module)&nbsp;A = 0, 5, 10, 100, 1000</li>
+					<!--<li>(High volatage module)&nbsp;&nbsp;A = 0, 5, 50, 500, 5000</li>-->
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:FILTer CH1_1,500<br>
+							:UNIT:FILTer? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>UNIT:FILTER CH1_1,500.0E+00</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MODE">
+						<span class = "g_HeadTitle"><b>Set or query the module mode</b></span>
+					</a><a name=":MODE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:MODE CH$,A$<br>
+							:UNIT:MODE? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = NONE, VOLT, STRAin, TEMP, CAN, INST, RMS<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the measurement mode of the module hosting channel CH$.<br>
+					Returns the current measurement mode setting of the module hosting channel CH$ as a text string.<br>
+					<br>
+					<b>NONE</b>&nbsp;&nbsp;(not present)<br>
+					<b>VOLT</b>&nbsp;&nbsp;(Voltage)<br>
+					<b>STRAin</b><br>
+					<b>TEMP</b>&nbsp;&nbsp;(Temperature)<br>
+					<b>CAN</b>&nbsp;&nbsp;(CAN)<br>
+					<b>INST</b>&nbsp;&nbsp;(Instant)<br>
+					<b>RMS</b>&nbsp;&nbsp;(RMS)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:MODE CH1_1,VOLT<br>
+							:UNIT:MODE? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:MODE CH1_1,VOLT</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Available modes depend on the module type, as follows:<br>
+					<br>
+					[Voltage]&nbsp;&nbsp;<b>VOLT</b><br>
+					[Strain/Voltage]&nbsp;&nbsp;<b>STRAin, VOLT</b><br>
+					[Voltage/Temperature]&nbsp;&nbsp;<b>VOLT, TEMP</b><br>
+					[CAN]&nbsp;&nbsp;<b>CAN</b><br>
+					[RMS]&nbsp;&nbsp;<b>INST, RMS</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PCOUNT">
+						<span class = "g_HeadTitle"><b>Set or query the dividing ratio for the pulse channel</b></span>
+					</a><a name=":PCOUNT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PCOUnt CH$,A<br>
+							:UNIT:PCOUnt? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+					A = 1 to 50000<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes the dividing ratio settings for the pulse channel specified by CH$.<br>
+					The settings will be returned as an NR1 number.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PCOUnt P1,10<br>
+							:UNIT:PCOUnt? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PCOUNT P1,10</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PFILTER">
+						<span class = "g_HeadTitle"><b>Set or query the pulse input filter</b></span>
+					</a><a name=":PFILTER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PFILter CH$,A$<br>
+							:UNIT:PFILter? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the input filter of the pulse channel specified by CH$.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>OFF</b>&nbsp;(Filter OFF)<br>
+					<b>ON</b>&nbsp;(Filter ON)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PFILter P1,ON<br>
+							:UNIT:PFILter? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PFILTER P1,ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PMODE">
+						<span class = "g_HeadTitle"><b>Set or query the measurement mode settings of the pulse channel</b></span>
+					</a><a name=":PMODE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PMODe CH$,A$<br>
+							:UNIT:PMODe? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+				    A$ = ADD, INST, REVOlve<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the measurement mode of the pulse channel specified by CH$.<br>
+					The settings will be returned as a text string.<br>
+				    <br>
+				    <b>ADD</b>&nbsp;&nbsp;[Integration (add)]<br>
+				    <b>INST</b>&nbsp;&nbsp;[Integration (instantaneous)]<br>
+				    <b>REVOlve</b>&nbsp;&nbsp;[Revolution number]<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PMODe P1,ADD<br>
+							:UNIT:PMODe? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PMODE P1,ADD</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":POVER">
+						<span class = "g_HeadTitle"><b>Set or query the integration over processing settings</b></span>
+					</a><a name=":POVER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:POVEr CH$,A$<br>
+							:UNIT:POVEr? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+					A$ = KEEP, RESEt<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for integration over processing of the pulse channel specified by CH$.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>KEEP</b>&nbsp;(maintain)<br>
+					<b>RESEt</b>&nbsp;(reset)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:POVEr P1,KEEP<br>
+							:UNIT:POVEr? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:POVER P1,KEEP</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PROBE">
+						<span class = "g_HeadTitle"><b>Set or query probe ratio</b></span>
+					</a><a name=":PROBE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PROBe CH$,A$<br>
+							:UNIT:PROBe? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = X1, X10, X100, X1000<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the probe ratio for input channel CH$.<br>
+					Returns the current probe ratio setting for channel CH$ as a text string.<br>
+					<br>
+					<b>X1</b>&nbsp;&nbsp;(1:1)<br>
+					<b>X10</b>&nbsp;&nbsp;(10:1)<br>
+					<b>X100</b>&nbsp;&nbsp;(100:1)<br>
+					<b>X1000</b>&nbsp;&nbsp;(1000:1)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PROBe CH1_1,X100<br>
+							:UNIT:PROBe? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PROBE CH1_1,X100</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PSLOPE">
+						<span class = "g_HeadTitle"><b>Set or query the pulse channel slope settings</b></span>
+					</a><a name=":PSLOPE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PSLOpe CH$,A$<br>
+							:UNIT:PSLOpe? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+					A$ = UP, DOWN<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the slope of the pulse channel specified by CH$.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>UP</b>&nbsp;(rising)<br>
+					<b>DOWN</b>&nbsp;(falling)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PSLOpe P1,UP<br>
+							:UNIT:PSLOpe? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PSLOPE P1,UP</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PTHRE">
+						<span class = "g_HeadTitle"><b>Set or query the pulse input threshold settings</b></span>
+					</a><a name=":PTHRE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PTHRe CH$<br>
+							:UNIT:PTHRe? CH$,A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+					A = 1, 4<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the threshold of the pulse channel specified by CH$.<br>
+					The settings will be returned as an NR1 number.<br>
+					<br>
+					<b>A = 1</b>&nbsp;(1V)<br>
+					<b>A = 4</b>&nbsp;(4V)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PTHRe P1,1<br>
+							:UNIT:PTHRe? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PTHRE P1,1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PTIMING">
+						<span class = "g_HeadTitle"><b>Set or query the pulse integration timing settings</b></span>
+					</a><a name=":PTIMING?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:PTIMing CH$,A$<br>
+							:UNIT:PTIMing? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+				    A$ = STARt, TRIGger<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the integration timing of the pulse channel specified by CH$.<br>
+					The settings will be returned as a text string.<br>
+				    <br>
+				    <b>STARt</b>&nbsp;(at start)<br>
+				    <b>TRIGger</b>&nbsp;(at trigger)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:PTIMing P1,STARt<br>
+							:UNIT:PTIMing? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:PTIMING P1,START</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RANGE">
+						<span class = "g_HeadTitle"><b>Set or query measurement range</b></span>
+					</a><a name=":RANGE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:RANGe CH$,A<br>
+							:UNIT:RANGe? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2<br>
+					A = Range.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the measurement range for channel CH$.<br>
+					Returns the current measurement range for channel CH$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:RANGe CH1_1,5E-3<br>
+							:UNIT:RANGe? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:RANGE CH1_1,+5E-03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Available ranges depend on the module model and <a href="#:MODE" target="_self">measurement mode</a>.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RENEW">
+						<span class = "g_HeadTitle"><b>Set or query the data refresh settings</b></span>
+					</a><a name=":RENEW?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:RENEw A,B$<br>
+							:UNIT:RENEw? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B$<br>
+						</b>
+					</font>
+					A  = 1 to 4 (module number)<br>
+					B$ = FAST, NORMal<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings to refresh the data of the unit specified by A.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>FAST</b>&nbsp;(fast refresh rate)<br>
+					<b>NORMal</b>&nbsp;(normal refresh rate)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:RENEw 1,FAST<br>
+							:UNIT:RENEw? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:RENEW 1,FAST</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The specified channel must originate from a voltage/temperature input unit (in thermocouple mode), with the <a href="#:DFILTER">digital filter</a> settings NOT off.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RJC">
+						<span class = "g_HeadTitle"><b>Set or query reference junction compensation</b></span>
+					</a><a name=":RJC?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:RJC CH$,A$<br>
+							:UNIT:RJC? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = INT, EXT<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the type of reference junction compensation (RJC) for channel CH$.<br>
+					Returns the current reference junction compensation selection for channel CH$.<br>
+					<br>
+					<b>INT</b>&nbsp;&nbsp;(Internal)<br>
+					<b>EXT</b>&nbsp;&nbsp;(External)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:RJC CH1_1,INT<br>
+							:UNIT:RJC? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:RJC CH1_1,INT</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The specified channel is on a Voltage/Temperature module (Temperature mode).<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SENSOR">
+						<span class = "g_HeadTitle"><b>Set or query the sensor type for Voltage/Temperature module</b></span>
+					</a><a name=":SENSOR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:UNIT:SENSor CH$,A$<br>
+							:UNIT:SENSor? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = K, J, E, T, N, R, S, B, W<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the type of thermocouple or sensor for channel CH$.<br>
+					Returns the type of thermocouple or sensor on channel CH$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:UNIT:SENSor CH1_1,K<br>
+							:UNIT:SENSor? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:UNIT:SENSOR CH1_1,K</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The specified channel is on a Voltage/Temperature (in Temperature mode).<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+</body>
+</html>

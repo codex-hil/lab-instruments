@@ -1,0 +1,1810 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+	<style>
+		<!--
+			.m_td_com01{
+				border:solid windowtext .5pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com02{
+				border:solid windowtext .5pt;
+				border-left:none;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com03{
+				border:solid windowtext .5pt;
+				border-top:none;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com04{
+				border-top:none;
+				border-left:none;
+				border-bottom:solid windowtext .5pt;
+				border-right:solid windowtext .5pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_p_com01{
+				margin:0mm;
+				font-size:11.0pt;
+				font-family:"Verdana";
+				text-align:center;
+			}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					SCALing Commands (Set and query scaling)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CMODEL">
+						<span class = "g_HeadTitle"><b>Set or query the scaling based on the clamp sensor model</b></span>
+					</a><a name=":CMODEL?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:CMODel CH$,A$<br>
+							:SCALing:CMODel? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+				    A$ = C3283, C3284, C3285, C9010_50, C9018_50, C9132_50, C9322, C9657_10, C9675<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes scaling settings based on clamp model.<br>
+					When the clamp model is set and scaling is selected, the settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:CMODel CH1_1,C3283<br>
+							:SCALing:CMODel? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:CMODEL CH1_1,C3283</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CRANGE">
+						<span class = "g_HeadTitle"><b>Set or query the scaling range of the clamp sensor</b></span>
+					</a><a name=":CRANGE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:CRANge CH$,A<br>
+							:SCALing:CRANge? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A = 1.0E-03 to 5.0E+03<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes range settings when using scaling and specifying the user of a particular clamp sensor.<br>
+					The settings will be returned as NR3 numbers<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:CRANge CH1_1,+10E-03<br>
+							:SCALing:CRANge? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:CRANGE CH1_1,+10E-03</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Depending on the <a href="#:CMODEL">clamp sensor model,</a> the settable range may vary.<br>
+					<br>
+					<b>3283</b>&nbsp;(10E-3, 100E-3, 1, 10, 200)<br>
+					<b>3284</b>&nbsp;(20, 200)<br>
+					<b>3285</b>&nbsp;(200, 2000)<br>
+					<b>9010-50</b>&nbsp;(10, 20, 50, 100, 200, 500)<br>
+					<b>9018-50</b>&nbsp;(10, 20, 50, 100, 200, 500)<br>
+					<b>9132-50</b>&nbsp;(20, 50, 100, 200, 500, 1000)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When the <a href="#:KIND">scaling setting</a> is set to &quot;sensor&quot;.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CRATE">
+						<span class = "g_HeadTitle"><b>Set or query the output rate setting for clamp scaling</b></span>
+					</a><a name=":CRATE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:CRATe CH$,A$<br>
+							:SCALing:CRATe? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = R10MA, R100MA, R1A, R10A, R20A, R50A, R100A, R200A, R250A, R500A, R1KA, R2KA, R2_5KA, R5KA, R1KV<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the output rate when using scaling and a clamp sensor.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>R10MA</b>&nbsp;(1V &rarr; 10mA)<br>
+					<b>R100MA</b>&nbsp;(1V &rarr; 100mA)<br>
+					<b>R1A</b>&nbsp;(1V &rarr; 1A)<br>
+					<b>R10A</b>&nbsp;(1V &rarr; 10A)<br>
+					<b>R20A</b>&nbsp;(1V &rarr; 20A)<br>
+					<b>R50A</b>&nbsp;(1V &rarr; 50A)<br>
+					<b>R100A</b>&nbsp;(1V &rarr; 100A)<br>
+					<b>R200A</b>&nbsp;(1V &rarr; 200A)<br>
+					<b>R250A</b>&nbsp;(1V &rarr; 250A)<br>
+					<b>R500A</b>&nbsp;(1V &rarr; 500A)<br>
+					<b>R1KA</b>&nbsp;(1V &rarr; 1000A)<br>
+					<b>R2KA</b>&nbsp;(1V &rarr; 2000A)<br>
+					<b>R2_5KA</b>&nbsp;(1V &rarr; 2500A)<br>
+					<b>R5KA</b>&nbsp;(1V &rarr; 5000A)<br>
+					<b>R1KV</b>&nbsp;(1V &rarr; 1000V)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:CRATe CH1_1,R10MA<br>
+							:SCALing:CRATe? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:CRATE CH1_1,R10MA</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DB">
+						<span class = "g_HeadTitle"><b>Set or query scaling settings based on decibel (dB)</b></span>
+					</a><a name=":DB?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:DB CH$,A,B<br>
+							:SCALing:DB? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, W1_1 to W4_2<br>
+					A = -200  to  +200 (input value)<br>
+					B = -200  to  +200 (physical quantity)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes scaling settings based on decibel (dB).<br>
+					Settings will be returned as NR3 numbers.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:DB CH1_1,0,20<br>
+							:SCALing:DB? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:DB CH1_1,0.00000E+00,+20.0000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":INVERT">
+						<span class = "g_HeadTitle"><b>Set or query pulse number settings equivalent to one count of pulse scaling</b></span>
+					</a><a name=":INVERT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:INVErt CH$,A<br>
+							:SCALing:INVErt? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = P1 to P2<br>
+					A = -9.9999E+09 to +9.9999E+09<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes pulse number settings per 1 count of pulse scaling.<br>
+					The settings will be returned as NR3 numbers.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:INVErt P1,10<br>
+							:SCALing:INVErt? P1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:INVERT P1,+10.0000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					0 cannot be specified for A.<br>
+					When setting the number of counts per 1 pulse, use <a href="#:VOLT">:SCALing:VOLT</a>.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":KIND">
+						<span class = "g_HeadTitle"><b>Select or query the scaling method</b></span>
+					</a><a name=":KIND?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:KIND CH$,A$<br>
+							:SCALing:KIND? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = RATIo, POINt, SENSor, RATE, DB, RATING, RPM<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the scaling method.<br>
+					Returns the current scaling method as a text string.<br>
+					<br>
+					<b>RATIo</b>&nbsp;&nbsp;(Scale by specifying a conversion ratio.)<br>
+					<b>POINt</b>&nbsp;&nbsp;(Scale by specifying two data points.)<br>
+					<b>SENSor</b>&nbsp;&nbsp;(Scale by specifying the sensor (clamp). (model MR8091 only))<br>
+					<b>RATE</b>&nbsp;&nbsp;(Scale by specifying the output rate (clamp). (model MR8091 only))<br>
+					<b>DB</b>&nbsp;&nbsp;(Scale in terms of dB units. (except GPS)) <br>
+					<b>RATING</b>&nbsp;&nbsp;(Scale in terms of rated output. (model MR8903 only))<br>
+					<b>RPM</b>&nbsp;&nbsp;(Scale so that r/s becomes r/m. (Pulse rotation number channels only))<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:KIND CH1_1,POINt<br>
+							:SCALing:KIND? CH1_<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:KIND CH1_1,POINT</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":OFFSET">
+						<span class = "g_HeadTitle"><b>Set or query scaling offset (RATIO)</b></span>
+					</a><a name=":OFFSET?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:OFFSet CH$,A<br>
+							:SCALing:OFFSet? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = -9.9999E+19 to +9.9999E+19<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies scaling offset for channel CH$.<br>
+					Returns the current scaling offset for channel CH$ as an NR3 numerical value.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:OFFSet CH1_1,1.00000E+00<br>
+							:SCALing:OFFSet? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:OFFSET CH1_1,1.00000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RTDCAPA">
+						<span class = "g_HeadTitle"><b>Set or query the scaling value for the rated capacity of a strain channel</b></span>
+					</a><a name=":RTDCAPA?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:RTDCapa CH$,A<br>
+							:SCALing:RTDCapa? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A = +1.0000E-09 to +9.9999E+09<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the scaling value for the rated capacity of channel CH$.<br>
+					Returns the scaling value for the rated capacity of channel CH$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:RTDCapa CH1_1,2<br>
+							:SCALing:RTDCapa? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:RTDCAPA CH1_1,+2.00000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					This command is valid only for strain modules.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RTDOUT">
+						<span class = "g_HeadTitle"><b>Set or query the scaling value for the rated output of a strain channel</b></span>
+					</a><a name=":RTDOUT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:RTDOut CH$,A<br>
+							:SCALing:RTDOut? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH<i>m_n</i><br>
+					A =  +1.0000E-09 to +9.9999E+09<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the scaling value for the rated output of channel CH$.<br>
+					Returns the scaling value for the rated output of channel CH$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:RTDOut CH1_1,1.00000E+00<br>
+							:SCALing:RTDOut? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:RTDOUT CH1_1,1.00000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					This commands is valid only for strain modules.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SCUPLOW">
+						<span class = "g_HeadTitle"><b>Set or query two-point scaling values (POINT)</b></span>
+					</a><a name=":SCUPLOW?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:SCUPlow CH$,A,B<br>
+							:SCALing:SCUPlow? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A, B = -9.9999E+29 to +9.9999E+29<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the two-point scaling values for channel CH$.<br>
+					Returns the current two-point scaling values for channel CH$ as NR3 numerical values.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:SCUPlow CH1_1,-500E-03,500E+03<br>
+							:SCALing:SCUPlow? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:SCUPLOW CH1_1,-500.000E-03,+500.000E+03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SET">
+						<span class = "g_HeadTitle"><b>Enable/disable or query scaling methods</b></span>
+					</a><a name=":SET?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:SET CH$,A$<br>
+							:SCALing:SET? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = OFF, SCI, NUM<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables the scaling function for channel CH$.<br>
+					Returns the current state of the scaling function for channel CH$ as a text string.<br>
+					<br>
+					<b>OFF</b>&nbsp;&nbsp;(Scaling is disabled.)<br>
+					<b>SCI</b>&nbsp;&nbsp;(Exponential: Scaling is enabled and values are displayed using scientific notation.)<br>
+					<b>NUM</b>&nbsp;&nbsp;(Decimal: Scaling is enabled and values are displayed using engineering notation.)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:SET CH1_1,NUM<br>
+							:SCALing:SET? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:SET CH1_1,NUM</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":UNIT">
+						<span class = "g_HeadTitle"><b>Specify or query the scaling unit name</b></span>
+					</a><a name=":UNIT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:UNIT CH$,&quot;A$&quot;<br>
+							:SCALing:UNIT? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,&quot;A$&quot;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = Scaling units. (up to 7 characters)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the name (up to 7 characters) of the scaling units for channel CH$.<br>
+					Returns the current name of the scaling units for channel CH$ as text data.<br>
+					Special characters can be entered as follows:<br>
+					(Special characters other than the following are replaced by spaces.)<br>
+					<br>
+				</p>
+
+				<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+					<tr style="height:18.0pt">
+						<td class="m_td_com01">
+							<p class="m_p_com01" align="center"><b>PC</b></p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;2</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;3</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;u</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;o</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;e</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;c</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;+</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;,</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;&circ;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;&tilde;</p>
+						</td>
+					</tr>
+					<tr style="height:18.0pt">
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center"><b>MR8875</b></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>2</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>3</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&mu;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&Omega;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&epsilon;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&deg;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&plusmn;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">'</p>
+						</td>
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center">&quot;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&circ;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&tilde;</p>
+						</td>
+					</tr>
+				</table>
+
+				<p class="MsoNormal">
+					<br>
+					Either single (') or double quotation marks (&quot;) can be used in the command argument.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:UNIT CH1_1,&quot;mA&quot;<br>
+							:SCALing:UNIT? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALing:UNIT CH1_1,&quot;mA&quot;</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VOLT">
+						<span class = "g_HeadTitle"><b>Set or query the scaling conversion ratio (RATIO)</b></span>
+					</a><a name=":VOLT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:VOLT CH$,A<br>
+							:SCALing:VOLT? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = -9.9999E+09 to +9.9999E+09<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the scaling conversion ratio for channel CH$.<br>
+					Returns the current scaling conversion ratio setting for channel CH$ as an NR3 numerical value.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:VOLT CH1_1,1.00000E+00<br>
+							:SCALing:VOLT? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:VOLT CH1_1,1.00000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					0 cannot be specified for A.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VOUPLOW">
+						<span class = "g_HeadTitle"><b>Set or query the two-point scaling values (POINT)</b></span>
+					</a><a name=":VOUPLOW?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SCALing:VOUPlow CH$,A,B<br>
+							:SCALing:VOUPlow? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = -9.9999E+29 to +9.9999E+29<br>
+					B = -9.9999E+29 to +9.9999E+29<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the two-point scaling values for channel CH$.<br>
+					Returns the two-point scaling values for channel CH$ as NR3 numerical values.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SCALing:VOUPlow CH1_1,50.0000E-03,-50.0000E-03<br>
+							:SCALing:VOUPlow? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SCALING:VOUPLOW CH1_1,50.0000E-03,-50.0000E-03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+</body>
+</html>

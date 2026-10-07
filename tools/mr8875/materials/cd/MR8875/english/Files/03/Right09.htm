@@ -1,0 +1,1703 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<style></style>
+	<title></title>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					FDISK Commands (Set and query file operations)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CHDIR">
+						<span class = "g_HeadTitle"><b>Change the current directory</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:CHDIr A<br>
+							:FDISK:CHDIr &quot;A$&quot;<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					A = Directory number.<br>
+					A$ = Directory name.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Changes the current directory to directory number <i>A</i> (or to the directory specified by A$) on the current storage media.<br>
+					Specify <b>&quot;..&quot;</b> for A$ to change to the parent directory.<br>
+					Specify <b>&quot;/&quot;</b> for A$ to change to the root directory.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:FDISK:CHDIr 3</b><br>
+						(Changes the current directory to directory number 3.)<br>
+						<br>
+						<b>:FDISK:CHDIr &quot;/ABCDEFG&quot;</b><br>
+						(Changes the current directory to the directory named ABCDEFG in the root directory.)<br>
+						<br>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DELETE">
+						<span class = "g_HeadTitle"><b>Delete a file or directory</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:DELEte A<br>
+							:FDISK:DELEte &quot;A$&quot;<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					A = File or directory number<br>
+					A$ = File or directory name<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Deletes file or directory number <i>A</i>, or the file or directory specified by A$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:FDISK:DELEte 1</b><br>
+						(Deletes file (or directory) number 1.)<br>
+						<br>
+						<b>:FDISK:DELEte &quot;ABCDEFG&quot;</b><br>
+						(Deletes the file (or directory) named ABCDEFG.)<br>
+						<br>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DIR?">
+						<span class = "g_HeadTitle"><b>Query the current directory</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:DIR?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = Directory name (including directory path)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the name of the current directory (including its path) on the storage media as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:DIR?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:DIR &quot;/ABCDEFG/123456&quot;</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FILE?">
+						<span class = "g_HeadTitle"><b>Query the number of files and directories</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:FILE?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = Number of files (including directories)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the total number of files (including directories) within the current directory as an NR1 numerical value.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:FILE?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:FILE 100</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FORMAT">
+						<span class = "g_HeadTitle"><b>Format storage media</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:FORMat A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					A$ = USB, SD<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Formats the storage media specified by A$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:FDISK:FORMat USB</b><br>
+						<br>
+					</span>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":INFOR?">
+						<span class = "g_HeadTitle"><b>Query information about a file or a directory</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td width="12%" valign="top" style="background:white;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:INFOr? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A,&quot;B$&quot;,&quot;C$&quot;,&quot;D$&quot;,E,F,G,&quot;H$&quot;,&quot;I$&quot;<br>
+						</b>
+					</font>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td width="88%" colspan="3" valign="top" style="border:none;border-bottom:solid silver 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">
+					<br>
+					Returns information about file number A.<br>
+					<br>
+					<b>A</b>&nbsp;&nbsp;&nbsp;(File or directory number)<br>
+					<b>B$</b>&nbsp;&nbsp;&nbsp;(File or directory name)<br>
+					<b>C$</b>&nbsp;&nbsp;&nbsp;(Date of saving)<br>
+					<b>D$</b>&nbsp;&nbsp;&nbsp;(Time of saving)<br>
+					<b>E</b>&nbsp;&nbsp;&nbsp;(File size [bytes])<br>
+					<b>F</b>&nbsp;&nbsp;&nbsp;WAVE, SET, DIR, OTHER (Measurement contents)<br>
+					<b>G</b>&nbsp;&nbsp;&nbsp;(Recording length)<br>
+					<b>H$</b>&nbsp;&nbsp;&nbsp;(Year/Month/Day of trigger)<br>
+					<b>I$</b>&nbsp;&nbsp;&nbsp;(Time of trigger)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td width="88%" colspan="3" valign="top" style="border:none;border-bottom:solid silver 1.0pt;background:white;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:INFOr? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;
+					<b>:FDISK:INFOR 1,&quot;WAVE.MEM&quot;,&quot;2000/01/01&quot;,&quot;00:00:00&quot;,551150,WAVE,2501,&quot;2000/01/01&quot;,&quot;00:00:00</b>&quot;&nbsp;
+					(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td width="88%" colspan="3" valign="top" style="border:none;border-bottom:solid silver 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td width="88%" colspan="3" valign="top" style="border:none;border-bottom:solid silver 1.0pt;background:white;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":LDNAME?">
+						<span class = "g_HeadTitle"><b>Query the loaded file.</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:LDNAme?
+							<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							&quot;A$&quot;<br>
+						</b>
+					</font>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					The file name will be returned.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:LDNAme?
+							<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:LDNAME &quot;File Name&quot;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The file must have been read by the main device.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":LOAD">
+						<span class = "g_HeadTitle"><b>Load a file</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:LOAD A(,B,C)<br>
+							:FDISK:LOAD &quot;A$&quot;(,B,C)<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					A = File Number<br>
+					A$ = File Name<br>
+					B = Position to start reading binary file<br>
+					C = Length of binary file to read<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Loads the data from the file numbered <i>A</i> or specified by A$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:LOAD 5<br>
+							:FDISK:LOAD &quot;TEST&quot;<br>
+							<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					B and C can only be specified when the file is a binary waveform file (real-time).<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MEDIA">
+						<span class = "g_HeadTitle"><b>Select or query the storage media type</b></span>
+					</a><a name=":MEDIA?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:MEDIa A$<br>
+							:FDISK:MEDIa?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = SD, USB, NONE<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the storage media type.<br>
+					Returns the current storage media type as a text string.<br>
+					<br>
+					<b>SD</b>&nbsp;&nbsp;(SD card)<br>
+					<b>USB</b>&nbsp;&nbsp;(Storage device connected to USB port)<br>
+					<b>NONE</b>&nbsp;&nbsp;(No storage media is selected)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:MEDIa USB<br>
+							:FDISK:MEDIa?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:MEDIA USB</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Argument A$ cannot be set to NONE.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":NINFOR?">
+						<span class = "g_HeadTitle"><b>Query a file or directory name</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:NINFor? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,&quot;B$&quot;,C$<br>
+						</b>
+					</font>
+					A = File or directory number<br>
+					&quot;B$&quot; = File or directory name<br>
+					C$ = FILE, DIR, NONE<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the name of file or directory number <i>NO</i> as a text string.<br>
+					<br>
+					<b>FILE</b>&nbsp;&nbsp;(File)<br>
+					<b>DIR</b>&nbsp;&nbsp;(Directory)<br>
+					<b>NONE</b>&nbsp;&nbsp;(Unkown)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:NINFor? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:NINFOR 2,&quot;TEST.MEM&quot;,FILE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RENAME">
+						<span class = "g_HeadTitle"><b>Rename a file or directory</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:RENAme A,&quot;A2$&quot;<br>
+							:FDISK:RENAme &quot;A1$&quot;,&quot;A2$&quot;<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					A = File number<br>
+					A1$ = Original name<br>
+					A2$ = New name<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Renames the file or directory specified by A or A1$ to A2$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:FDISK:RENAme 1,&quot;ABC.MEM&quot;</b><br>
+						(Changes the name of file or directory number 1 to &quot;ABC.MEM&quot;.)<br>
+						<br>
+						<b>:FDISK:RENAme &quot;TEST.REC&quot;,&quot;ABC.REC&quot;</b><br>
+						(Changes the name of file or directory &quot;TEST.REC&quot; to&quot; ABC.REC&quot;.)<br>
+						<br>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVE">
+						<span class = "g_HeadTitle"><b>Save data</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:SAVE<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Saves data to storage media <u>according to settings on the &quot;SAVE&quot; screen.</u><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:FDISK:SAVE<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Saves data according to the settings on the &quot;SAVE&quot; screen.<br>
+					This command is not affected by <a href="Right13.htm#:SSELECT", target="_self">the SAVE key behavior setting.</a><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SDIRECTION">
+						<span class = "g_HeadTitle"><b>Set or query the sort order of the file list</b></span>
+					</a><a name=":SDIRECTION?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:SDIRection A$<br>
+							:FDISK:SDIRection?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = UP, DOWN<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the file list sort order (direction).<br>
+					Returns the current file list sort order as a text string.<br>
+					<br>
+					<b>UP</b>&nbsp;&nbsp;(Ascending order)<br>
+					<b>DOWN</b>&nbsp;&nbsp;(Decending order)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:FDISK:SDIRection UP</b><br>
+						(Sorts the file list in ascending order.)<br>
+						<br>
+						<b>:FDISK:SDIRection?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:SDIRECTION UP</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":STYPE">
+						<span class = "g_HeadTitle"><b>Select or query the sort key for the file list</b></span>
+					</a><a name=":STYPE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:STYPe A$<br>
+							:FDISK:STYPe?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = NAME, TYPE, SIZE, DATE<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the file list sort key (sort type).<br>
+					Returns the file list sort key as a text string.<br>
+					<br>
+					<b>NAME</b>&nbsp;&nbsp;(File or directory name)<br>
+					<b>TYPE</b>&nbsp;&nbsp;(File type)<br>
+					<b>SIZE</b>&nbsp;&nbsp;(Size of file)<br>
+					<b>DATE</b>&nbsp;&nbsp;(Date of save)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:FDISK:STYPe SIZE</b><br>
+						(Selects file list sorting according to size.)<br>
+						<br>
+						<b>:FDISK:STYPe?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:STYPE SIZE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When not measuring<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VOLUme?">
+						<span class = "g_HeadTitle"><b>Query the available and total space in the storage media</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:FDISK:VOLUme?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = &lt;Available space&gt;<br>
+					B = &lt;Total space&gt;<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Available and total space will be returned as NR1 numbers.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<span style="color:#008040">
+						<b>:FDISK:MEDIA SD</b><br>
+						(Switch to the SD card as the recording media.)<br>
+					</span>
+					<br>
+					<span style="color:#008040"><b>:FDISK:VOLUme?</b><br></span>
+					(Response)&nbsp;&nbsp;<b>:FDISK:VOLUME 13385728,14860288</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When the <a href="#:MEDIA">:FDISK:MEDIA</a> command is used to select the recording media.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+</body>
+</html>

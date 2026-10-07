@@ -1,0 +1,1078 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+</head>
+
+<body bgcolor="#E4E7FC">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#441CDB">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="color:white">CALCulate Commands (Set and Query Calculations)</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:42pt">
+			<td class = "g_p0001">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Command</span>
+				</p>
+			</td>
+			<td class = "g_p0002">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Data<br>(for a query, response data)</span>
+				</p>
+			</td>
+			<td class = "g_p0008">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Explanation</span>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ACCOUNT" target="_self">
+						<b>:ACCOunt A,B,C$,D</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B = 1 to 8<br>
+					C$ = PLUS, MINUs, MULT, DIV<br>
+					D = 1 to 8<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set an arithmetic operator
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ACCOUNT?" target="_self">
+						<b>:ACCOunt? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR1&gt;,C$,D&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query an arithmetic operator
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ANSWER?" target="_self">
+						<b>:ANSWer? A,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH$,B$,C&lt;NR3&gt;<br>
+					A = 1 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, XY, OPE, LAT, LON, ALT, DIR, SPD, DST<br>
+					B$ = OFF, AVE, RMS, PP, MAX, MAXT, MIN, MINT, PERI, FREQ, RISE, FALL, STD, AREA, XYARea, LEVEl, TIME, PWIDth, DUTY, PCOUnt, CALC, DIFF, PHASe, HI, LOW<br>
+					C = &lt;NR3&gt; (calculation result)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query a calculation result
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:CH" target="_self">
+						<b>:CH A,B$,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					CH$ = AALL, LALL, CALL, PALL, WALL, ZALL, GALL, CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the channels for conducting numerical calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:CH?" target="_self">
+						<b>:CH? A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query for the channels that will be used for conducting numerical calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMP" target="_self">
+						<b>:COMP A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = OFF, ON
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set a calculation comparator state
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMP?" target="_self">
+						<b>:COMP? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query a calculation comparator state
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMPAREA" target="_self">
+						<b>:COMPArea A,B,C</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B = -9.9999E+29 to +9.9999E+29<br>
+					C = -9.9999E+29 to +9.9999E+29
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set comparator thresholds for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMPAREA?" target="_self">
+						<b>:COMPArea? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR3&gt;,C&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query comparator thresholds for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMPJUDGE?" target="_self">
+						<b>:COMPJudge? A(,CH$)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A,CH$,B$,C$ (except A = 0)<br>
+					A,C$ (A = 0)<br>
+					A = 0 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, XY, OPE, LAT, LON, ALT, DIR, SPD, DST (except A = 0)<br>
+					B$ = OFF, AVE, RMS, PP, MAX, MAXT, MIN, MINT, PERI, FREQ, RISE, FALL, STD, AREA, XYARea, LEVEl, PWIDth, DUTY, PCOUnt, CALC, DIFF, PHASe, HI, LOW (except A = 0)<br>
+					C$ = GO, NG, *<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the comparison result of a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMPSTOP" target="_self">
+						<b>:COMPStop A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = GO, NG, G_N<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set calculation comparator judgment to stop measurement
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:COMPSTOP?" target="_self">
+						<b>:COMPStop?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query calculation comparator judgment to stop measurement
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:FACTOR" target="_self">
+						<b>:FACTor A$,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = A to P<br>
+					B = -9.9999E+29 to +9.9999E+29<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set waveform calculation factor (constant) A to P</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:FACTOR?" target="_self">
+						<b>:FACTor? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query waveform calculation factor (constant) A to P</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MEASAREA" target="_self">
+						<b>:MEASArea A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = WHOLe, A_B, C_D<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select area (interval) setting for numerical calculations
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MEASAREA?" target="_self">
+						<b>:MEASArea?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query area (interval) setting for numerical calculations
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MEASSET" target="_self">
+						<b>
+							:MEASSet A,B$<br>
+						</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = OFF, AVE, RMS, PP, MAX, MAXT, MIN, MINT, PERI, FREQ, RISE, FALL, STD, AREA, XYARea, LEVEl, TIME, PWIDth, DUTY, PCOUnt, CALC, DIFF, PHASe, HI, LOW<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Specify the function for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MEASSET?" target="_self">
+						<b>:MEASSet? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the function for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MEASURE" target="_self">
+						<b>:MEASure A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = ON, OFF, EXEC<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set execution of numerical calculations
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MEASURE?" target="_self">
+						<b>:MEASure?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query execution of numerical calculations
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MFILTER" target="_self">
+						<b>:MFILter A,B$,C</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A  = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					C  = 0 to 1000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set filtering for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MFILTER?" target="_self">
+						<b>:MFILter? A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$,C&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query filtering for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MLEVEL" target="_self">
+						<b>:MLEVel A,B$,C</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A  = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					C  = &lt;level&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the level for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MLEVEL?" target="_self">
+						<b>:MLEVel? A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$,C&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the level for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MSLOPE" target="_self">
+						<b>:MSLOpe A,B$,C$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A  = 1 to 8<br>
+					B$ = OBJect, BASE<br>
+					C$ = UP, DOWN<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the slope for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MSLOPE?" target="_self">
+						<b>:MSLOpe? A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$,C$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the slope for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MSTAtis" target="_self">
+						<b>:MSTAtis A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = FIRSt, AVE, MAX, MIN
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the stat for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MSTAtis?" target="_self">
+						<b>:MSTAtis? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the stat for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MTIME" target="_self">
+						<b>:MTIMe A,B$,C</b> (B$ = TIME)<br>
+						<b>:MTIMe A,B$,D</b> (B$ = CALC)<br>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = TIME, CALC<br>
+					C = &lt;NR3&gt;(second) (B$ = TIME)<br>
+					D = 1 to 8 (Calculation Number) (B$ = CALC)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the parameters to conduct numerical calculation and the time/calculation number</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:MTIME?" target="_self">
+						<b>:MTIMe? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$,C (B$ = TIME)<br>
+					A&lt;NR1&gt;,B$,D (B$ = CALC)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query for the parameters to conduct numerical calculation and the time/calculation number</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:PERCENT" target="_self">
+						<b>:PERCent A,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B = 5 to 30
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the rise or fall time percentage for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:PERCENT?" target="_self">
+						<b>:PERCent? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the rise or fall time percentage for a numerical calculation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:RCH1" target="_self">
+						<b>:RCH1 CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = W1_1 to W4_2<br>
+					A = 1 to 4 (internal module channel)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Select CH 1 for channel calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:RCH1?" target="_self">
+						<b>:RCH1? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query CH 1 for channel calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:RCH2" target="_self">
+						<b>:RCH2 CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = W1_1 to W4_2<br>
+					A = 1 to 4 (internal module channel)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Select CH 2 for channel calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:RCH2?" target="_self">
+						<b>:RCH2? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query CH 2 for channel calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ROPERATOR" target="_self">
+						<b>:ROPErator CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = W1_1 to W4_2<br>
+					A$ = PLUS, MINUs, MULT<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Select the arithmetic operator for channel calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ROPERATOR?" target="_self">
+						<b>:ROPErator? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the arithmetic operator for channel calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:WVAREA" target="_self">
+						<b>:WVARea A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = WHOLe, A_B, C_D<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Select area setting for waveform calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:WVAREA?" target="_self">
+						<b>:WVARea?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query area setting for waveform calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:WVCALC" target="_self">
+						<b>:WVCALc A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON, EXEC<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set execution of waveform calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:WVCALC?" target="_self">
+						<b>:WVCALc?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query execution of waveform calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:WVSCALE" target="_self">
+						<b>:WVSCale A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A  = 1 to 8<br>
+					B$ = AUTO, MANUal<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set auto/manual scaling for a waveform calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:WVSCALE?" target="_self">
+						<b>:WVSCale? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query auto/manual scaling for a waveform calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:XCH" target="_self">
+						<b>:XCH A,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set Channel X for numerical calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:XCH?" target="_self">
+						<b>:XCH? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query Channel X for numerical calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:YCH" target="_self">
+						<b>:YCH A,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set Channel Y for numerical calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:YCH?" target="_self">
+						<b>:YCH? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query Channel Y for numerical calculations</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:Z" target="_self">
+						<b>:Z A,&quot;B$&quot;</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A  = 1 to 8<br>
+					B$ = (formula)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set a waveform calculation formula</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:Z?" target="_self">
+						<b>:Z? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,&quot;B$&quot;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query a waveform calculation formula</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ZUNIT" target="_self">
+						<b>:ZUNIt A,&quot;B$&quot;</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					B$ = Unit name (up to 7 characters)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the unit name assigned to a waveform calculation</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right04.htm#:ZUNIT?" target="_self">
+						<b>:ZUNIt? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] A&lt;NR1&gt;,&quot;B$&quot;<br>
+					A = 1 to 8<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the unit name assigned to a waveform calculation</p>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

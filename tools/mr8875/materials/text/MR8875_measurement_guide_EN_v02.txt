@@ -1,0 +1,1137 @@
+                         Measurement Guide
+
+
+
+
+                        MR8875
+
+MEMORY HiCORDER
+
+
+
+
+  March 2014 Revised edition 2 MR8875A983-02 14-03H
+                                                                                                            1
+                                                                                             Introduction
+
+
+
+  Introduction
+Thank you for purchasing the HIOKI Model MR8875 Memory HiCorder. This Measurement Guide includes
+basic examples of how the instrument is used. Please read it carefully before using the instrument.
+
+                                     The Waveform screen allows you to view measurement data, while the
+   Screen Organization               Settings screen allows you to configure various instrument settings.
+                                     Basic settings can also be configured on the Waveform screen’s
+   and Operational
+                                     settings windows. (This manual covers the settings that can be
+   Overview (p.2)                    configured on the Waveform screen in its description of how to op-
+                                     erate the Waveform screen.)
+
+
+
+                                    Be sure to read the "Operating
+                                    Precautions" and "3.3 Pre-Mea-
+                                    surement Inspection" sections of
+   Measurement                      the instruction manual before us-
+   Preparations (p.5)               ing the in-
+                                    strument.
+
+
+
+
+                                     Configure measurement conditions.
+                                     
+                                     Configure input channels.
+                                     
+   Configuring Settings              Configure triggers (identification conditions).
+   before Measurement                
+                                     Configure data saving, calculations, and other settings as neces-
+   (p.7)                             sary.
+                                     If you wish to save data or perform calculations automatically after
+                                     starting measurement, these settings must be configured before
+                                     measurement. Data can be saved in a variety of formats, and cal-
+                                     culations can be performed after measurement.
+
+
+
+   Performing                                                                 Alternately, recording
+                                                                              stops when the set condi-
+   Measurement (p.11)                                                         tions are satisfied.
+
+
+
+                                     This section describes operations and analytical methods that are
+                                     frequently used on the Waveform screen.
+   Analyzing
+   Measurement Results
+   (p.12)                                      A   B
+
+
+
+
+Convenient functions (p.18), measurement examples (p.19), and reference information (p.21)
+2
+Screen Organization and Operational Overview
+
+
+
+ Screen Organization and Operational Overview
+Part names
+
+                                           UNIT 3          UNIT 4             Analog input terminals
+               Input modules                                                  (BNC terminals)
+    (up to 4 can be installed)                                                Connect optional connection
+                                                                              cords, clamps, and other input
+                                           UNIT 1          UNIT 2             sources here.
+                                 CH1-1          CH1-4
+                                                    Top
+                                                                               POWER (LED)
+                                                                               Turns green when the power is on.
+                                                                               CHARGE (LED)
+                                                                               Turns orange when the instru-
+                                                                               ment is charging.
+                                                                               HELP key
+                                                                               Displays an explanation of the
+                                                                               screen display.
+
+                                                                                 T (forced trigger) key
+                                                                               Applies a user-specified trigger.
+                                                                               SAVE key
+                                                                               Saves data manually.
+                Back                           Front
+                                                                               START key
+    Battery compartment cover                                                  Starts measurement. The key
+                                                                               turns green while measure-
+    Install the Z1003 Battery Pack here.
+                                                                               ment is in progress.
+                                                                               STOP key
+                                                                               Stops measurement.
+                                  Left side         Right side
+                                                                    USB cable slot
+                                                                    Connect the included USB cable when con-
+                                                                    necting the instrument to a PC.
+
+Ventilation holes                                                   USB flash drive slot
+(Do not block.)
+                                                                    Connect a USB flash drive here.
+KEYLOCK switch
+External power supply                                               100BASE-TX connector
+terminals                                                           Connect a LAN cable here.
+POWER switch
+                                                                    LOGIC terminals
+AC adapter socket                                                   Connect optional logic probes.
+
+                                                                    SD memory card slot
+                                                                    Insert an SD memory card.
+
+                                     External control terminals
+                                                                                                          3
+                                                    Screen Organization and Operational Overview
+
+
+Screen organization
+
+                                         Waveform screen
+                                                       You can change various settings on the Wave-
+                                                       form screen’s settings windows.
+
+
+
+
+                     Switches between the Waveform screen and the Settings screen.
+
+
+               [Status] screen                                     [Channel] screen
+
+
+
+
+  Configures the measurement method. You can            Configures input channels. You can also config-
+  also configure the waveform display, auto save,       ure the channel display and other functions.
+  and other settings.
+              [Trigger] screen                                   [Calculation] screen
+
+
+
+
+  Configure when you want to start and stop re-         Configures settings related to waveform value
+  cording based on a specific signal.                   calculations.
+4
+Screen Organization and Operational Overview
+
+
+                [System] screen                                               [File] screen
+
+
+
+
+    Configures the system environment, external             Displays files on media and configures settings
+    I/O, and communications.                                such as the method used to save data.
+
+
+Screen operation
+
+                         Tap                                                   Touch
+                         Touch the screen with your fin-                       Touch the screen with your finger
+                         ger and then remove your finger.                      for a longer amount of time.
+
+                         Drag
+
+                         Move your finger while touching
+                         the screen.
+
+
+
+
+     Switching screens                                      Changing settings
+
+                                                                                          The setting will change
+                                                                                          each time you tap the
+              A more detailed tab will be dis-                                            screen.
+              played. Tap the screen button again
+              to return to the previous display.
+
+                                                                                            Select from a list
+
+                        You can switch between the
+                        Waveform screen and the Set-
+                        tings screen.
+                                                            You can change the value
+                                                            from the value input panel.
+                        You can display various settings
+                        windows on the Waveform
+                                                            Example:
+                        screen and use instrument func-
+                        tions. You can also switch pages.         Increases or decreas-
+                                                                  es the value by 1.
+                                                                  Increases or de-
+                                                                  creases the value.
+                                                                                                              5
+                                                     Screen Organization and Operational Overview
+
+
+
+1. Measurement Preparations
+  Connecting the instrument
+
+Before using the instrument, be sure to read the “Operating Precautions” and “Pre-Measurement
+Inspection” sections of the instruction manual.
+
+                                                                  1                      (Example: Connect the
+                         2                                                               MR8901 Analog Unit
+                                                                                         connection cord.)
+
+
+
+                                                                    Connect the measurement cables to
+ Connect the AC adapter.                                            the input module.
+ If using the optional battery
+
+                                                                  3
+ pack, see the instruction
+ manual.
+
+
+
+                         4           5                             Insert media
+                                                                   (SD memory card or USB flash drive).
+ Turn on the instrument.            Connect to the
+                                    measurement target.            Only an SD memory card can be used when
+                                                                   saving data in real-time.
+
+
+  Setting the clock
+
+The time is displayed on the bottom right of the screen. Change the time if it is not correct.
+
+
+                                                 1 Open  the screen.
+                                                   [Setting Display]  [System]  [Initialize]
+                        1
+
+
+                                                 2 Tap [Time Setting].
+                                                   The Settings window will open.
+
+                                                     Tap the field you wish to change and set the
+                                                     desired value.
+                    2
+
+
+
+
+                                                      Tap [Apply] to accept the settings.
+
+                                                      To return to the previous screen without changing the
+                                                      time, tap [Close].
+6
+Screen Organization and Operational Overview
+
+
+    Performing zero adjustment
+
+ This procedure compensates for input module differences and sets the instrument’s reference potential to
+ 0 V. (MR8901, MR8902 and MR8905 only) Zero adjustment can be performed for all input modules at
+ once.
+
+ For more precise measurement, allow a warm-up period of about 30 minutes to elapse after turn-
+                   1
+                                                 1 Open the screen.
+                                                    [Waveform Display] / [Setting Display] 
+                                                    [Channel]  [Analog]
+
+                       2
+
+                                                 2 Set the display to [Detail].
+               3
+
+
+
+ When using the MR8903 Strain Unit
+
+
+                                                 3 [Zero
+ Zero adjustment cannot be performed for the
+ MR8903. Instead, perform [Auto Balance]. For             Adjust]  [Yes]
+ more information, see the instruction manual.     Perform zero adjustment.
+                                                                                                                         7
+                                                             Screen Organization and Operational Overview
+
+
+
+  2. Configuring Settings before Measurement
+Before starting measurement, it is necessary to configure measurement conditions, input channels,
+triggers, and other settings. To save data automatically after starting measurement, it is necessary to
+configure data save settings before measurement.
+
+
+Measurement and save methods
+
+There are two methods for saving data, as explained below: you can save data automatically after
+starting measurement, or you can save data manually (with the SAVE key) after measurement is com-
+plete. This manual describes how to save waveforms automatically while performing measurement
+using the MR8901 Analog Unit. For other more detailed information, see the instruction manual.
+
+
+                   Performing measurement while saving data automatically
+
+                   Real-time save                                                   Auto save
+   • The recording interval, recording time, and other          • The sampling speed (or time axis), recording
+      recording conditions are set before starting mea-            length, and other recording conditions are set
+      surement. (Unlike when using auto save, you will             before starting measurement. Measurement can
+      not be able to select high-speed sampling.)                  be performed using high-speed sampling.
+   • Data is recorded directly to the SD memory card            • Data equivalent to the set recording length is
+      while measurement is performed.                              acquired in the instrument’s internal memory and
+   • Since data is recorded directly to the SD memory              then saved to the storage destination. Data can
+      card, it is possible to record data in excess of the         be saved to an SD memory card or USB flash
+      internal memory capacity.                                    drive or sent by e-mail or FTP.
+                                                                • Since data is saved to the instrument’s internal
+                                                                   memory, it is not possible to record data in excess
+                                                                   of the internal memory capacity.
+                                                                Dead time: Data is not recorded if the trigger is ap-
+                                                                            plied during this interval.
+                                                                  Recording length
+                      Recording time
+                                                                      (division)
+
+                                                   End
+
+    Data is recorded directly to the SD memory card.                  Data is saved after being acquired to the
+                                                                                  internal memory.
+
+
+
+
+          Saving data by pressing the SAVE key at any time after measurement
+
+                        Quick save                                               Selection save
+
+    The data to be saved is set in advance. Then you can        The data to be saved is set after you press the SAVE
+    save that data immediately at any time by pressing          key. Then the data is saved.
+    the SAVE key.
+
+     Set data to be                       Save data.                                Set the data to be saved and save
+     saved.                                                                         the data.
+8
+Screen Organization and Operational Overview
+
+
+     Setting measurement conditions
+
+Settings can be configured on setting windows on the Waveform screen or on the Settings screen.
+
+
+  Waveform screen ([Status] window)
+                                                 1 Open the screen.
+                                                   [Waveform Display]  [Status]  [Basic]
+                                                      or [Setting Display]  [Status]
+                                 1
+
+                     2                           2 Select the desired set-
+                                                   ting from the [Time-
+                     3                                base] list.
+                                                      Set the time per division on
+                                                      the horizontal axis. Sampling
+                                                      is fixed to 100 samples per
+                                                      division. If you do not wish to
+                                                      change the setting, tap the
+                                                      current setting to re-select it.
+                                                      To keep the current setting,
+                                                      tap the setting again.
+
+
+
+
+                                                 3 Select the desired set-
+                                                   ting from the [Shot]
+                                                      list.
+                                                      Set the length (number of di-
+                                                      visions) to record each time
+                                                      data is acquired. If you do not
+                                                      wish to change the setting,
+                                                      tap the current setting to re-
+                                                      select it.
+
+
+                                                 "Configuring input channels" (p.9)
+
+
+
+
+     Arranging measurement results
+
+    The method used to display measurement data on the
+    Waveform screen can be changed to allow a maximum of
+    four sheets, with up to four segments per screen.
+    Related settings are configured on the [Display] window.
+                                                                                                           9
+                                                           Screen Organization and Operational Overview
+
+
+   Configuring input channels
+
+This explanation applies when using the MR8901 Analog Unit.
+
+
+                                                      1 Open
+ Waveform screen ([Channel] window)
+                                                             the screen.
+                            1                           [Waveform Display] / [Setting Display] 
+                                                           [Channel]
+                   2
+                                 3                    2 [Analog]  Select the channel to configure.
+                                4
+
+
+
+                                                      3 Set the [Range(/div)].
+                                                        (Configure other settings as necessary.)
+
+ Setting to [Display] allows the Waveform screen
+ display to be changed. The screen can also be
+ changed after measurement.
+
+
+
+
+  Configure these settings as necessary:
+
+  [Filter]
+  You can set the frequency band to cut (filter
+                                                      4 Display  [Detail] and configure input module-
+                                                        specific settings as necessary.
+  band) if you wish to cut excessive high-fre-
+  quency components, for example when input
+  signal noise is a concern.
+
+  [Coupling]
+  The instrument is normally used in DC cou-
+  pling mode. The zero position can be
+  checked by setting the instrument to GND
+  mode.                                             "Configuring triggers (to assign specific conditions for
+                                                    recording)" (p.10)
+
+
+   To calculate and display input values
+     Set the display to [Scaling] and set the calculation method.
+     This functionality allows you to check converted measured
+     values. It can also be changed after measurement.
+
+
+   To change the waveform color or screen
+    display
+     Set the display to [Display] to change the waveform color,
+     display position, graph settings, display magnification, or
+     other settings. These settings can also be changed after
+     measurement.
+10
+Screen Organization and Operational Overview
+
+
+   Configuring triggers (to assign specific conditions for recording)
+
+
+ Waveform screen ([Trigger] window)              1 Open the screen
+                                                   [Waveform Display] / [Setting Display] 
+                            1                        [Trigger]
+
+
+
+            2                                    2 [General]   Set [Trigger] to [On] and set the
+                                                   trigger conditions.
+
+
+
+
+  [Trigger Mode]
+  • Single
+    Data is recorded once when the trigger
+
+                                                 3 Select
+    conditions are satisfied.
+                                                           [Analog] and set the trigger condi-
+  • Repeat
+                                                   tions for each channel.
+    Data is recorded repeatedly when the trig-
+    ger conditions are satisfied.
+
+  Trigger types
+        Level          In           Out
+                            T        T
+        T       T
+
+                                T         T
+                                                 Channel   Trigger type   Level value at which to apply
+       Slope                                                              trigger
+                                                                                                                11
+                                                        Screen Organization and Operational Overview
+
+
+   Configuring auto save
+
+
+ Waveform screen ([Status] window)
+                                                    1 [Waveform Display]  [Status]  [Auto
+                                                          Open the screen
+
+                                                          Save] Or [Setting Display]  [Status] 
+                                  1                       [Auto Save Settings]
+
+                      2
+
+                      3                             2 [On]
+                                                      Set [Auto Save] to
+                                                           and set the media
+                                                          and filename.
+
+
+
+
+                                                    3 Set [Waveform] to
+                                                      [On].
+                                                          Tapping the setting toggles it
+                                                          on and off.
+
+
+
+
+   Configure settings as necessary. For more information, see the instruction manual.
+
+  [Type]                                               [Method]
+  • Binary                                             • Normal
+     Saves waveform data in a binary format.             Stops auto save operation when the media becomes full.
+  • Text                                                 Save operation will stop, but measurement will continue.
+     Saves waveform data in a text format.             • Delete
+                                                         Old files are deleted so that data can continue to be
+                                                         saved when the media becomes full.
+
+
+
+
+ 3. Starting and Stopping Measurement
+(Auto save)
+                                Data equivalent to the recording length is recorded once and saved to media.
+    Trigger mode: [Single]
+                                                                                       Stop measurement
+              (Trigger wait)
+                                Trigger conditions satisfied
+                                                                                       Stop measurement
+   Trigger mode: [Repeat]
+                                                                                       (STOP key is pressed or the
+                               Data equivalent to the recording length is recorded     set trigger conditions cause
+                               repeatedly and saved to media.                          measurement to stop.)
+12
+Screen Organization and Operational Overview
+
+
+
+  4. Analyzing Measurement Results
+This section provides a basic example of how measurement results are analyzed. For more information, see
+the instrument’s instruction manual.
+
+
+    Scrolling waveforms
+
+ Waveforms can be scrolled by either using the Arrow window or tapping the scroll bar.
+
+
+                                                  Scrolling with the Arrow window
+
+                                                      Scroll toward older data   Scroll toward newer data
+
+                                                     Scroll quickly toward                     Scroll quickly toward
+                                                     the oldest data                           the newest data
+
+
+
+
+                                                      The waveform is scrolled each time you tap the window. Tap-
+                                                      ping harder* causes the waveform to scroll faster. Tapping con-
+                                                      tinuously causes the waveform to scroll continuously.
+     Scroll bar          Arrow window                 *Hard taps made with a touch pen cannot be detected.
+
+                                                  Displaying the desired location with the scroll
+                        Scope and position of     bar
+                        the waveform being dis-
+                        played on the screen
+                       Scroll bar
+
+                                                       Tap the desired location on the scroll bar.
+    Overall waveform
+
+
+
+    Magnifying and compressing waveforms
+
+
+                                                   Magnifying and compressing the horizontal
+                                                   axis (time axis)
+
+
+
+
+                                                   Selecting from the Waveform screen’s [Mag.] list
+                                                   Waveforms for all channels are magnified and compressed along
+                                                   the horizontal axis using the left edge of the screen as the refer-
+                                                   ence. When cursors are being shown on the screen, waveforms
+                                                   are magnified and compressed using the cursor as the reference.
+                                                                                                          13
+                                                   Screen Organization and Operational Overview
+
+
+Waveform screen ([Channel] window)
+
+                        1                      Magnifying and compressing the vertical axis
+                                               (voltage axis)
+
+
+
+
+                        2
+                                                1 Open the screen
+                                                  [Waveform Display] / [Setting Display] 
+                                                    [Channel]
+
+
+                                                2 [Analog]   [Display]  [Mag.] 
+                                                  Select from the list.
+
+
+
+  Viewing the value at the cursor and selecting a range
+
+
+                                                1 [Waveform Display]  [Cursor]
+                                                    Open the screen.
+
+
+
+                                                2 1 Select the cursor you wish to display.
+                                   1                     A to D: Trace cursor
+                                                         E, F: Horizontal cursor
+
+
+
+
+                                                   2                                 3
+                                                Select the cursor           Move the cursor(s).
+                                                to move.                                 :
+                                                                            Light tap Moves 1 data point at a
+                                                To move at the same time,             time.
+                                                select [Sync].              Hard tap* Moves 5 data points at a
+                                                                                      time.
+                                                                                         :
+                                                                            Light tap Moves 1 division at a
+                                                                                      time.
+                                                                            Hard tap* Moves 5 divisions at a
+                                                                                      time.
+                                                                            Touching continuously causes the
+Tapping toggles between [Show Value] and                                    waveform to scroll continuously.
+[Hide Value].
+Setting to [Show Value] causes the Measured                                 *Hard taps made with a touch pen
+Value window to be displayed.                                               cannot be detected.
+To hide the Measured Value window, tap [Hide
+Value].                                         To specify a range, select A-B or C-D.
+14
+Screen Organization and Operational Overview
+
+
+    If the display is hard to decipher due to overlapping waveforms
+
+You can either change the waveform zoom setting and zero position or assign waveforms to sheets or
+graphs. This section describes how to improve waveform visibility by changing the waveform zoom setting
+and zero position.
+
+      Changing the waveform zoom                       Changing the waveform zero
+      setting (vertical axis)                          position
+                                                       100%
+                                                        50%             0V
+                                                                                  25%             0V
+                                                         0%
+         Zoom setting: x1           x1/2                Zero position: 50%                25%
+
+      Assigning waveforms to graphs                    Assigning waveforms to sheets
+
+                                              Gr1
+                                              Gr2
+                                              Gr3
+                                              Gr4
+              Normal            Display graphs                S1        S2       S3        S4
+
+
+   Waveform screen ([Channel] window)
+
+                            1
+                                                1 Open the screen.
+                                                  [Waveform Display] / [Setting Display] 
+                                                     [Channel]
+                   2
+                                                2 [Analog]  Select the channel to configure.
+
+                                                3 Set  the display to [Display] and change the
+                                                  settings.
+                                                     • Change the zoom: [Mag.]  Select from the list.
+                                                     • Change the zero position: [Position]  Change
+                                                       the value.
+
+
+
+
+                                               • These settings can be changed during measurement.
+                                               • You can also select the logic waveform position.
+                                               • When the waveform includes a DC component, chang-
+                                                 ing the zoom setting has the effect of making the wave-
+   (Example settings)                            form appear to fluctuate significantly. This is due to the
+                                                 fact that the zoom setting also affects the DC compo-
+                                                 nent.
+                                                                                                               15
+                                                   Screen Organization and Operational Overview
+
+
+    Performing calculations
+
+There are 24 types of numerical calculations available, up to 8 of which can be performed at the same
+time. There are two methods for performing calculations:
+• Calculating while measuring (The numerical calculation must be configured before measurement.)
+• Calculating using existing data (Calculations can be performed using data that has already been
+   acquired and data stored on media.)
+This section describes how to perform calculations while measuring.
+
+Setting screen ([Numeric Calculation] window)
+
+                                               1 Open  the screen.
+                                                 [Setting Display]  [Calculation] 
+                                                     [Numeric Calculation]
+                    1
+
+2                                              2 Set [Numeric Calculation] to [On] and con-
+                                                 figure the calculation.
+                                                     You can configure calcula-     You can switch the calcu-
+                                                     tion operation based on        lation configuration list.
+                                                     judgment results.
+
+
+
+
+                                                   You can set the calculation type, calculation range, calcula-
+Waveform screen ([Numeric Calc.] window)           tion target channel, and whether there is a judgment result.
+
+
+
+                                               The calculation will be performed automatically once mea-
+                                               surement starts. To perform a calculation using existing
+                                               data, select [Execute].
+
+
+
+                                               3 Calc.]
+                                                 [Waveform Display]  Open the [Numeric
+                                                        window and view the calculation
+                                                     results.
+
+
+    Available calculations
+
+    •   Average                    •   Area                               (Total of 24 types)
+    •   RMS (Root-Mean-Square)     •   X-Y Area                           • Specified calculation between
+    •   P-P                        •   Time to Level                         cursors
+    •   Maximum                    •   Level at Time                         Waveform calculations can be lim-
+    •   Time to Maximum            •   Pulse Width                           ited to data within the range speci-
+                                                                             fied by A/B cursors and C/D
+    •   Minimum                    •   Duty Ratio
+                                                                             cursors.
+    •   Time to Minimum            •   Pulse Count
+    •   Period                     •   Arithmetic Operation               For more information about cal-
+    •   Frequency                  •   Time Difference                    culation equations and opera-
+    •   Rise Time                  •   Phase Contrast                     tors, see the instruction manual.
+    •   Fall Time                  •   High Level
+    •   Standard Deviation         •   Low Level
+16
+Viewing the Contents of Media
+
+
+
+  Viewing the Contents of Media
+You can check data that has been saved with the instrument using the File screen.
+
+                     1                                   1 Open  the screen.
+                                                           [Setting Display]  [File]  [Operation]
+
+
+
+                                                         2 Tap  the media you wish to view to select it.
+                                                           (The selected media will be displayed in reverse video.)
+
+
+
+
+                                                         3 Tap  the media again.
+                                                           The data stored on the media will be displayed.
+
+
+                                                              Tap here to move up a level.
+
+
+
+
+Data that can be saved and loaded by the instrument
+                                                                                           : Available / −: Not Available
+                                                                                  Saving                     Loading
+                    File type      File format   Icon    File extension
+                                                                          Auto Real-time Manual Instrument             PC
+
+               Settings data*1     Binary                     SET          −        −                                −
+
+                                   Binary                    MEM                                                   − *5
+               Waveform data*2
+                                                              CSV
+                                   Text*3                                          −                   −             
+                                                              TXT
+               Numerical                                      CSV
+                                   Text*3                                          −                   −             
+               calculation results                            TXT
+
+               Display images      BMP*4                      BMP                  −                   −             
+
+*1: You can load settings data automatically when the instrument is turned on (auto setup function).
+*2: Save data you wish to load later using the instrument in binary format. Waveform data will be saved along with some of
+    the settings data that was in effect at the time of measurement. To load data for later viewing on a PC, save it in text
+    format. To save a partial waveform, set the desired range with the A/B and C/D cursors. (p.13)
+*3: When [Separator] is set to a value other than a comma, the file will have the .TXT extension.
+*4: BMP is a standard Windows graphic format that can be opened and processed using many graphic applications.
+*5: This format can be loaded using the Waveform Viewer (Wv).
+
+For more information, see the instrument manual.
+                                                                                                                   17
+                                                                                Viewing the Contents of Media
+
+
+Folder and file structure
+
+When data is saved, the folder “HIOKI_MR8875” will be created on the media, and folders will be saved inside
+that folder.
+
+ HIOKI_MR8875
+
+                   CONFIG                                Settings data
+              Folder for storing settings data
+
+
+                   DATA000 to 999                        Waveform data
+              Folder for storing waveform data
+              (Once the number of files in a folder exceeds 1,000, a new folder will be automatically created with an
+              updated number.)
+
+                   MEASUREMENT                           Numerical calculation results
+              Folder for storing numerical calculation results
+
+
+
+                   PICTURE                               Display images
+              Folder for storing display images
+
+
+
+                   TEMP                                  Waveform data (temporary files)
+              Folder for storing temporary waveform data files when using real-time save operation
+
+                                                         Settings data
+                   INTERNAL_CONFIG                       (setting conditions saved in the instrument’s memory)
+              Folder for storing data describing setting conditions saved in the instrument’s memory
+
+
+
+
+For more information about filenames, see the instruction manual.
+18
+Convenient Functionality
+
+
+
+ Convenient Functionality
+
+   When you don’t know the time axis                     When you wish to record evidence or
+              or range                                    passage of abnormal phenomena
+           “Auto-ranging”                                 “Pre-trigger” and “Post-trigger”
+  Automatically sets the time axis range, voltage axis   Allows you to record the waveform prior to the trig-
+  range, and zero position.                              ger point or conditions after the trigger point. This
+                                                         functionality is useful when you wish to assess
+  [Waveform Display (page2/2)] 
+                                                         trends such as abnormal phenomena.
+  [Auto Range]  [Yes]
+                                                         [Waveform Display] / [Setting Display] 
+                                                         [Trigger]  [General]  [Pre-Trigger] /
+                                                         [Post-Trigger]
+                                                         Display items vary with the trigger timing, percent
+                                                         setting, and division setting.
+                                                         Without pre-trigger        With pre-trigger setting
+                                                         setting
+                                                           T                                  T
+
+
+
+
+   When you wish to convert readings to                   When you wish to monitor waveforms
+    strain, temperature, or other values                         “Numeric monitor” and
+                “Scaling”                                         “Waveform monitor”
+  [Waveform Display] / [Setting Display]                [Waveform Display]  [Numeric Monitor] /
+  [Channel]  [Analog] [Scaling]                        [Waveform Monitor]
+
+  Sets the conversion method.                            Allows you to monitor current waveform and value
+                                                         input.
+        V                       A
+
+
+
+
+  When you wish to change the wave-                       When you wish to assign measure-
+     form position or display range                       ment results to display sheets and
+    [Waveform Display] /[Setting Display]                               graphs
+  [Channel]  [Display]  [Position] /[Variable]         [Waveform Display] /[Setting Display] 
+                  “Position“                             [Channel]  [Analog] [Display]  [Sheet] /
+     (specify the waveform zero position)
+                                                         [Graph]
+
+
+
+
+                   “Variable“
+     (specify with upper and lower limits)                             ALL
+                                50                                                 S1
+       50
+                                                                                              S2
+      -50
+                              -50
+                                                                                                               19
+                                                       Example Measurement: Measuring a Sine Wave
+
+
+
+  Example Measurement: Measuring a Sine Wave
+This section describes how to record a sine wave 1 Vp-p (500 Hz, 0 V offset)
+voltage waveform. It also describes how to save the data after measurement.                               T
+                                                                                          Level
+In this example, measurement is performed using a level trigger. When mea-
+suring a repeating waveform such as a sine wave, the waveform can be made
+easier to observe by using the level trigger’s level as the measurement start
+                                                                                                  Slope
+point.
+
+
+
+ 1 Preparing for measurement
+ You will need:                                                                             Connect to the
+                                     Connect to CH1-1.
+ • MR8875 Memory HiCorder                                                                   measurement target
+ • MR8901 Analog Unit                                                                       (in this example, an
+ • Oscillator                                                                               oscillator).
+                              Connect to a
+ • L9217 Connection Cord
+                              power outlet.
+ • SD memory card                                                                    Insert an SD memory card.
+ "Measurement Preparations" (p.5)
+
+
+
+
+ 2 Setting measurement and trigger conditions
+Set the measurement and trigger conditions as shown below on the Waveform screen:
+Setting measurement conditions                           Configuring input channels ([Channel] window)
+([Status] window)
+
+
+
+
+                                                             Voltage axis range
+        Time axis range                                      Determines the range for each vertical axis
+        Determines the range for each hor-                   division.
+        izontal axis division.                               (When the range is changed during mea-
+                                                             surement, measurement will be restarted.)
+
+
+Setting trigger conditions ([Trigger] window)            Determining the time axis range
+                                                         The time axis range is calculated from the frequency and
+                                                         period.
+                                                         f [Hz] = 1/t [s] (f: frequency; t: period)
+
+                                                         Example: For a measurement frequency of 50 Hz
+                                                         1 period = t = 1/50 [s], or 20 ms
+                                                         Setting the time axis to 20 ms/div causes exactly 1 period
+  Use a level trigger and apply it at the 0 V rising     to be displayed for 1 division (1 frame).
+  edge (slope ↑).
+20
+Example Measurement: Measuring a Sine Wave
+
+
+
+ 3 Setting the save conditions
+[Setting Display]  [File]  Configure the settings as shown below under [SAVE Key].
+This section describes how to configure the instrument when setting SAVE key operation to [Quick].
+
+                                                            When the SAVE key is pressed, data will be
+                                                            saved immediately in accordance with the save
+                                                            conditions.
+
+                                                            Save conditions (example)
+                                                            • Save destination (Save in): SD Card
+                                                            • Data filename (Name): Sine wave
+                                                            • Save type (Type): Waveform(Binary)
+                                                            • Channels to save (Channel): All
+                                                            • Save range (Range): All
+
+
+
+
+  • If you wish to specify the save conditions each time the SAVE key is pressed, set [Save Key Opera-
+    tion] to [Select].
+  • If you wish to view the waveform using the instrument, set the [Type] setting to [Waveform(Binary)].
+    If you wish to view the waveform with spreadsheet software, set to [Waveform(Text)]. Data saved as
+    text cannot be loaded by the MR8875.
+
+
+
+
+ 4 Starting and stopping measurement
+
+                                     T
+                   Trigger level
+                             0V
+
+
+ Press the START key.
+                                    Trigger slope [ ↑ ]
+ When the trigger conditions
+ are satisfied, the trigger will
+ be applied, and a waveform
+ of the set recording length will
+ be recorded.
+
+
+                                                          The instrument will record measurement data until the
+                                                          STOP key is pressed.
+
+
+
+ 5 Save the data
+Pressing the SAVE key causes data to be saved immediately in accordance with the configured save
+conditions. The saved data can be checked with [Setting Display]  [File]  [Operation]. For more
+information about how to analyze data, see "Analyzing Measurement Results" (p.12).
+                                                                                                                               21
+                                                                                                                     Reference
+
+
+
+ Reference
+     Screen
+The MR8875 uses an SVGA (800 x 600) LCD. The waveform dis-
+play area uses 625 horizontal dots and 500 vertical dots of the
+screen.
+                                                                                                            20 div
+The waveform display range is 25 horizontal divisions by 20 ver-
+tical divisions, with each frame (division) taking up 25 horizontal
+dots and 25 vertical dots on the display. Each data frame (divi-
+sion) consists of 100 samples horizontally and 1250LSB vertical-                          25 div
+                                                                                                               1 div
+ly (the exact number varies with the input module). The size of
+each data frame (division) varies with the time axis magnification
+and compression ratios and the voltage axis magnification and
+compression ratios.
+
+     Time and sampling
+The sampling period is 1/100 of the time axis. When the time axis
+                                                                                          Sampling Points
+range is 100 ms/div, the sampling period is 1 ms. When the time
+axis range is set, the sampling period changes accordingly.
+
+                                                               Measurement
+
+                                                                                Sampling Period
+
+     Measurement length setting
+The measurement length sets the length (in divisions) to record during each data acquisition event. A recording length
+of 1 division consists of 100 data points.
+Total data points in recording length = Set recording length (in divisions) 100 data points + 1
+Example: For a set recording length of 50 divisions, 50 div x 100 data points + 1 = 5,001 data points
+
+     Voltage axis and resolution
+The instrument’s resolution varies with the input module. The following table lists the full-scale resolution for each unit.
+The maximum resolution can be calculated from the screen’s full-scale value and the full-scale resolution given in the
+following table.
+
+Example: For measurements made using the MR8901 Analog Unit
+Power supply voltage is measured using a vertical axis of 20 V/div and a vertical zoom of 1x. The maximum resolution
+under these conditions is calculated as follows:
+Screen full-scale: 1 V/div x 20 div = 20 V
+Full-scale resolution for vertical axis of 1x: 25,000
+20 / 25,000 = 0.8 mV
+Full-scale resolution (LSB) for input modules by vertical axis zoom setting
+    Input                                          Magnification/compression ratio
+   module        ×1/10       ×1/5        ×1/2         ×1         ×2        ×5        ×10           ×20    ×50           ×100
+ MR8901        250000      125000      50000      25000      12500       5000      2500       1250       500           250
+ MR8903        (50000)     (50000)
+ MR8905
+ MR8902*       200000      100000      40000      20000      10000       4000      2000       1000       400           200
+               (40000)     (40000)
+
+( ): Indicates the effective data range.
+*: The effective range for the MR8902 Voltage/TEMP Unit varies with the thermocouple. For more information about
+22
+Reference
+
+
+MEMO
+            23
+       Reference
+
+
+MEMO
+24
+Reference
+www.hioki.com/
+
+
+
+
+                 hioki@hioki.eu
+

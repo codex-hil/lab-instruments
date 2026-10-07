@@ -1,0 +1,132 @@
+[
+  {
+    "file": "pdf/MR8875_instruction_manual_EN_v11.pdf",
+    "url": "https://www.hioki.com/download/39699",
+    "final_url": "https://www.hioki.com/download/39699",
+    "content_type": "application/pdf",
+    "bytes": 11987154,
+    "sha256": "b3b7dfaf95e172252f2710ba81dfd5ea5e4b9b7d2f6742f7a6b8219edeb8fc4a",
+    "text_extracted": true,
+    "status": "downloaded",
+    "retrieved_at_utc": "2026-10-07T10:29:01.734758+00:00"
+  },
+  {
+    "file": "pdf/MR8875_measurement_guide_EN_v02.pdf",
+    "url": "https://www.hioki.com/us-en/download/29064",
+    "final_url": "https://www.hioki.com/us-en/download/29064",
+    "content_type": "application/pdf",
+    "bytes": 962717,
+    "sha256": "d610f939ea22cb7bbcd29be60847601d326ee4754e27a4f8d104b24dfb0d8258",
+    "text_extracted": true,
+    "status": "downloaded",
+    "retrieved_at_utc": "2026-10-07T10:28:58.047180+00:00"
+  },
+  {
+    "file": "pdf/MR8904_CAN_instruction_manual_EN_v04.pdf",
+    "url": "https://www.hioki.com/sg-en/download/30038",
+    "final_url": "https://www.hioki.com/sg-en/download/30038",
+    "content_type": "application/pdf",
+    "bytes": 3120642,
+    "sha256": "b516172452d4b1aa6a4df8883c8fb404a74261e1f4c5ee9952f457caac2d9660",
+    "text_extracted": true,
+    "status": "downloaded",
+    "retrieved_at_utc": "2026-10-07T10:28:58.206968+00:00"
+  },
+  {
+    "file": "pdf/MR8901_MR8902_modules_instruction_manual_EN_v03.pdf",
+    "url": "https://www.hioki.com/sg-en/download/30126",
+    "final_url": "https://www.hioki.com/sg-en/download/30126",
+    "content_type": "application/pdf",
+    "bytes": 768318,
+    "sha256": "6081d61542f1d3a7b06c533b0b70e54e87d4fca02f6961a4899fa14acc137042",
+    "text_extracted": true,
+    "status": "downloaded",
+    "retrieved_at_utc": "2026-10-07T10:28:57.632006+00:00"
+  },
+  {
+    "file": "MR8875_brochchure_EN.pdf",
+    "url": "https://www.hioki.com/system/files/catalog/2026-01/MR8875E21-61E.pdf",
+    "status": "error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "software/ApplicationDiskRev46.zip",
+    "url": "https://www.hioki.com/us-en/download_file/11161",
+    "final_url": "https://www.hioki.com/us-en/support/myhioki/login?destination=%2F",
+    "status": "login_required"
+  },
+  {
+    "file": "software/matalb_e.zip",
+    "url": "https://www.hioki.com/us-en/download_file/9950",
+    "final_url": "https://www.hioki.com/us-en/support/myhioki/login?destination=%2F",
+    "status": "login_required"
+  },
+  {
+    "file": "software/LVMR8875V100ENG.zip",
+    "url": "https://www.hioki.com/us-en/download_file/9695",
+    "final_url": "https://www.hioki.com/us-en/support/myhioki/login?destination=%2F",
+    "status": "login_required"
+  },
+  {
+    "file": "pdf/MR8875_brochure_EN.pdf",
+    "url": "https://www.hioki.com/us-en/download/32933",
+    "final_url": "https://www.hioki.com/us-en/download/32933",
+    "status": "downloaded",
+    "bytes": 7823161,
+    "sha256": "d55702f69807398c01e7f9f256b965c246fc219355313bb7bc417d2b9024b76e",
+    "retrieved_at_utc": "2026-10-07T10:30:25.295196+00:00"
+  },
+  {
+    "file": "sources/application_disk_page.html",
+    "url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_n11161",
+    "final_url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_n11161",
+    "status": "downloaded",
+    "bytes": 62275,
+    "sha256": "c6a4c29f0626dca3374da02bda7f7492c85b9a8fdae682c93602163963b10fe3",
+    "retrieved_at_utc": "2026-10-07T10:30:22.575981+00:00"
+  },
+  {
+    "file": "sources/matlab_page.html",
+    "url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_n9950",
+    "final_url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_n9950",
+    "status": "downloaded",
+    "bytes": 52936,
+    "sha256": "f435a24d20d8bee68e8e3455c0e0aa5e66432e18bc15f7df8b8f4e8f4442b2d0",
+    "retrieved_at_utc": "2026-10-07T10:30:22.586476+00:00"
+  },
+  {
+    "file": "sources/labview_page.html",
+    "url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_n9695",
+    "final_url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_n9695",
+    "status": "downloaded",
+    "bytes": 52627,
+    "sha256": "91de83502645cd5c7a1989f21848e5b56d5870d1160bfe3b93159173eb039f8c",
+    "retrieved_at_utc": "2026-10-07T10:30:22.563589+00:00"
+  },
+  {
+    "file": "sources/firmware_release_notes.html",
+    "url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_402",
+    "final_url": "https://www.hioki.com/us-en/support/download/software/versionup/detail/id_402",
+    "status": "downloaded",
+    "bytes": 60267,
+    "sha256": "050ece1f4c1d54f698ed145229a48aa26430dfc77d78e01152af15be3650a02c",
+    "retrieved_at_utc": "2026-10-07T10:30:22.326526+00:00"
+  },
+  {
+    "file": "HIOKI-application-cd.udf",
+    "source": "HIOKI Application CD, /dev/sr0, UDF 1.02, volume HIOKI",
+    "status": "copied_from_cd",
+    "bytes": 286588928,
+    "sha256": "dacfd44714b41b1563bed1fee42ed8ac176621dcdb71cbf36033f04142335910",
+    "files_manifest": "cd-manifest.json",
+    "file_count": 3227,
+    "copied_at_utc": "2026-10-07T12:46:12.585765+00:00"
+  },
+  {
+    "file": "text/MR8875_communication_manual_CD_EN.txt",
+    "source": "cd/MR8875/english/**/*.htm",
+    "status": "extracted_from_cd_html",
+    "bytes": 561168,
+    "sha256": "7a3cf25e87c59b7a6dd7eacfccff72fdd99e69c684a5488e927f99567fc2a89b"
+  }
+]

@@ -1,0 +1,7460 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+
+	<style>
+		<!--
+			pre{
+				margin:0pt;
+				font-size:11.0pt;
+				font-family:"Verdana";
+			}
+
+			.l_td_FKEY_01{
+				width:100pt;
+				border:solid windowtext .5pt;
+				border-right:solid white .5pt;
+				background:black;
+				padding:2pt;
+			}
+
+			.l_td_FKEY_02{
+				width:100pt;
+				border-top:solid windowtext .5pt;
+				border-left:none;
+				border-bottom:solid windowtext .5pt;
+				border-right:solid white .5pt;
+				background:black;
+				padding:2pt;
+			}
+
+			.l_td_FKEY_03{
+				width:100pt;
+				border:solid windowtext .5pt;
+				border-left:none;
+				background:black;
+				padding:2pt;
+			}
+
+			.l_td_FKEY_04{
+				width:100pt;
+				border:solid windowtext .5pt;
+				border-top:none;
+				padding:2pt;
+			}
+
+			.l_td_FKEY_05{
+				width:100pt;
+				border-top:none;
+				border-left:none;
+				border-bottom:solid windowtext .5pt;
+				border-right:solid windowtext .5pt;
+				padding:2pt;
+			}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					SYSTem Commands (Set and query the system)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ANGLE">
+						<span class = "g_HeadTitle"><b>Set or query the orientation settings of the screen</b></span>
+					</a><a name = ":ANGLE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:ANGLe A<br>
+							:SYSTem:ANGLe?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 0, 180<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the screen orientation.<br>
+					The settings will be returned as an NR1 number.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:ANGLe 0<br>
+							:SYSTem:ANGLe?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:ANGLE 0</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ANIMATION">
+						<span class = "g_HeadTitle"><b>Set or query the animation display</b></span>
+					</a><a name = ":ANIMATION?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:ANIMation A$<br>
+							:SYSTem:ANIMation?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the animation of the display dialog.<br>
+					The settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:ANIMation OFF<br>
+							:SYSTem:ANIMation?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:ANIMATION OFF</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ATVARIABLE">
+						<span class = "g_HeadTitle"><b>Enable/disable or query auto variable scaling</b></span>
+					</a><a name=":ATVARIABLE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:ATVAriable A$<br>
+							:SYSTem:ATVAriable?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables the auto variable scaling function.<br>
+					Returns the current on/off state of the auto variable scaling function.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:ATVAriable ON<br>
+							:SYSTem:ATVAriable?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:ATVARIABLE ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":BEEPER">
+						<span class = "g_HeadTitle"><b>Enable/disable or query beep sounds</b></span>
+					</a><a name=":BEEPER?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:BEEPer A$<br>
+							:SYSTem:BEEPer?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON1, ON2<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables the beep sound.<br>
+					Returns the current state of the beep sound as a text string.<br>
+					<br>
+					<b>OFF</b><br>
+					<b>ON1</b>&nbsp;(Alert)<br>
+					<b>ON2</b>&nbsp;(Alert and action)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:BEEPer ON2<br>
+							:SYSTem:BEEPer?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:BEEPER ON2</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":BRIGHTNESS">
+						<span class = "g_HeadTitle"><b>Set or query the settings for the backlight</b></span>
+					</a><a name=":BRIGHTNESS?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:BRIGhtness A<br>
+							:SYSTem:BRIGhtness?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the brightness of the backlight.<br>
+					The brightness settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:BRIGhtness 4<br>
+							:SYSTem:BRIGhtness?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:BRIGHTNESS 4</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":COMMENT">
+						<span class = "g_HeadTitle"><b>Enable/disable or query comment display</b></span>
+					</a><a name=":COMMENT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:COMMent A$<br>
+							:SYSTem:COMMent?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables comment display.<br>
+					Returns the current comment display state.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:COMMent ON<br>
+							:SYSTem:COMMent?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:COMMENT ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DATACLEAR">
+						<span class = "g_HeadTitle"><b>Clear waveform data</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DATAClear<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt"></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Clears waveform data.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTEM:DATAClear<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DATE">
+						<span class = "g_HeadTitle"><b>Set or query the system calendar</b></span>
+					</a><a name=":DATE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DATE A,B,C<br>
+							:SYSTem:DATE?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 2000 to 2080 (year)<br>
+					B = 1 to 12 (month)<br>
+					C = 1 to 31 (day)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the date of the internal calendar.<br>
+					Returns the current date setting.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:SYSTem:DATE 2000,1,1</b><br>
+						(Sets the internal calendar to January 1st, 2000.)<br>
+						<br>
+						<b>:SYSTem:DATE?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DATE 2000,1,1</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DECPOINT">
+						<span class = "g_HeadTitle"><b>Set or query the settings for the decimal symbol</b></span>
+					</a><a name=":DECPOINT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DECPoint A$<br>
+							:SYSTem:DECPoint?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = DOT, COMMa<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the symbol used for the decimal point.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>DOT</b>&nbsp;(period)<br>
+					<b>COMMa</b>&nbsp;(comma)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DECPoint DOT<br>
+							:SYSTem:DECPoint?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DECPOINT DOT</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DFORMAT">
+						<span class = "g_HeadTitle"><b>Set or query the date format</b></span>
+					</a><a name=":DFORMAT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DFORmat A$<br>
+							:SYSTem:DFORmat?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = YYMMDD, MMDDYY, DDMMYY<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the format used for the date.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>YYMMDD</b>&nbsp;(year/month/day)<br>
+					<b>MMDDYY</b>&nbsp;(month/day/year)<br>
+					<b>DDMMYY</b>&nbsp;(day/month/year)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DFORmat YYMMDD<br>
+							:SYSTem:DFORmat?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DFORMAT YYMMDD</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DESEPARATOR">
+						<span class = "g_HeadTitle"><b>Set or query the symbol used to separate the day, month and year</b></span>
+					</a><a name=":DESEPARATOR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DSEParator A$<br>
+							:SYSTem:DSEParator?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = SLASh, HYPHen, DOT<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings used to separate the day, month and year.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>SLASh</b>&nbsp;(slash)<br>
+					<b>HYPHen</b>&nbsp;(hyphen)<br>
+					<b>DOT</b>&nbsp;(period)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DSEParator SLASh<br>
+							:SYSTem:DSEParator?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DSEPARATOR SLASH</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DST">
+						<span class = "g_HeadTitle"><b>夏時間調整ON/OFFの設定と問合せ</b></span>
+					</a><a name=":DST?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DST A$<br>
+							:SYSTem:DST?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					夏時間調整の設定をします。<br>
+					夏時間調整の設定を文字データで返します。<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DST ON<br>
+							:SYSTem:DST?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DST ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DSTDWEEK">
+						<span class = "g_HeadTitle"><b>夏時間の境界となる曜日の設定と問合せ</b></span>
+					</a><a name=":DSTDWEEK?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DSTDWeek A$,B$<br>
+							:SYSTem:DSTDWeek? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B$<br>
+						</b>
+					</font>
+					A$ = STARt, END<br>
+				    B$ = SUN, MON, TUE, WED, THU, FRI, SAT<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					夏時間の境界となる曜日の設定をします。<br>
+					夏時間の境界となる曜日を文字データで返します。<br>
+					<br>
+					<b>STARt</b>&nbsp;(夏時間開始日)<br>
+					<b>END</b>&nbsp;(夏時間終了日)<br>
+					<br>
+				    <b>SUN</b>&nbsp;(日曜日)<br>
+				    <b>MON</b>&nbsp;(月曜日)<br>
+				    <b>TUE</b>&nbsp;(火曜日)<br>
+				    <b>WED</b>&nbsp;(水曜日)<br>
+				    <b>THU</b>&nbsp;(木曜日)<br>
+				    <b>FRI</b>&nbsp;(金曜日)<br>
+				    <b>SAT</b>&nbsp;(土曜日)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DSTDWeek STARt,SUN<br>
+							:SYSTem:DSTDWeek? STARt<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DSTDWEEK START,SUN</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DSTHOUR">
+						<span class = "g_HeadTitle"><b>夏時間の境界となる時間の設定と問合せ</b></span>
+					</a><a name=":DSTHOUR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DSTHOur A$,B<br>
+							:SYSTem:DSTHOur? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A$ = STARt, END<br>
+				    B  = 0 to 23<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					夏時間の境界となる時間を設定します。<br>
+					夏時間の境界となる時間をNR1数値で返します。<br>
+					<br>
+					<b>STARt</b>&nbsp;(夏時間開始日)<br>
+					<b>END</b>&nbsp;(夏時間終了日)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DSTHOur STARt,0<br>
+							:SYSTem:DSTHOur? STARt<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DSTHOUR START,0</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DSTMINUTE">
+						<span class = "g_HeadTitle"><b>夏時間の境界とな時間(分)の設定と問合せ</b></span>
+					</a><a name=":DSTMINUTE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DSTMInute A$,B<br>
+							:SYSTem:DSTMInute? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A$ = STARt, END<br>
+				    B  = 0 to 59<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					夏時間の境界となる時間(分)を設定します。<br>
+					夏時間の境界となる時間(分)をNR1数値で返します。<br>
+					<br>
+					<b>STARt</b>&nbsp;(夏時間開始日)<br>
+					<b>END</b>&nbsp;(夏時間終了日)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DSTMInute STARt,0<br>
+							:SYSTem:DSTMInute? STARt<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DSTMINUTE START,0</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DSTMONTH">
+						<span class = "g_HeadTitle"><b>夏時間の境界となる月の設定と問合せ</b></span>
+					</a><a name=":DSTMONTH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DSTMOnth A$,B<br>
+							:SYSTem:DSTMOnth? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A$ = STARt, END<br>
+				    B  = 1 to 12<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					夏時間の境界となる月を設定します。<br>
+					夏時間の境界となる月をNR1数値で返します。<br>
+					<br>
+					<b>STARt</b>&nbsp;(夏時間開始日)<br>
+					<b>END</b>&nbsp;(夏時間終了日)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DSTMOnth STARt,1<br>
+							:SYSTem:DSTMOnth? STARt<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DSTMONTH START,1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DSTWEEK">
+						<span class = "g_HeadTitle"><b>夏時間の境界となる週の設定と問合せ</b></span>
+					</a><a name=":DSTWEEK?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:DSTWEek A$,B<br>
+							:SYSTem:DSTWEek? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A$ = STARt, END<br>
+				    B  = 1 to 6<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					夏時間の基準となる週を設定します。<br>
+					夏時間の基準となる週をNR1数値で返します。<br>
+					<br>
+					<b>STARt</b>&nbsp;(夏時間開始日)<br>
+					<b>END</b>&nbsp;(夏時間終了日)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:DSTWEek STARt,1<br>
+							:SYSTem:DSTWEek? STARt<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:DSTWEEK START,1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":EXT1MODE">
+						<span class = "g_HeadTitle"><b>Select or query the function of external I/O terminal 1</b></span>
+					</a><a name=":EXT1MODE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:EXT1mode A$<br>
+							:SYSTem:EXT1mode?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = STARt, STOP, S_S, ABORt, SAVE, EVENt<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the input function of External I/O terminal 1.<br>
+					Returns the current input function setting of External I/O terminal 1.<br>
+					<br>
+					<b>STARt</b><br>
+					<b>STOP</b><br>
+					<b>S_S</b>&nbsp;&nbsp;(Start &amp; Stop)<br>
+					<b>ABORt</b>&nbsp;&nbsp;(Abort)<br>
+					<b>SAVE</b><br>
+					<b>EVENt</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:EXT1mode STOP<br>
+							:SYSTem:EXT1mode?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:EXT1MODE STOP</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":EXT2MODE">
+						<span class = "g_HeadTitle"><b>Select or query the function of external I/O terminal 2</b></span>
+					</a><a name=":EXT2MODE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:EXT2mode A$<br>
+							:SYSTem:EXT2mode?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = STARt, STOP, S_S, ABORt, SAVE, EVENt<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the input function of External I/O terminal 2.<br>
+					Returns the current input function setting of External I/O terminal 2.<br>
+					<br>
+					<b>STARt</b><br>
+					<b>STOP</b><br>
+					<b>S_S</b>&nbsp;&nbsp;(Start &amp; Stop)<br>
+					<b>ABORt</b>&nbsp;&nbsp;(Abort)<br>
+					<b>SAVE</b><br>
+					<b>EVENt</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:EXT2mode STOP<br>
+							:SYSTem:EXT2mode?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:EXT2MODE STOP</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":EXT3MODE">
+						<span class = "g_HeadTitle"><b>Select or query the function of external I/O terminal 3</b></span>
+					</a><a name=":EXT3MODE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:EXT3mode A$<br>
+							:SYSTem:EXT3mode?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = STARt, STOP, S_S, ABORt, SAVE, EVENt<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the input function of External I/O terminal 3.<br>
+					Returns the current input function setting of External I/O terminal 3.<br>
+					<br>
+					<b>STARt</b><br>
+					<b>STOP</b><br>
+					<b>S_S</b>&nbsp;&nbsp;(Start &amp; Stop)<br>
+					<b>ABORt</b>&nbsp;&nbsp;(Abort)<br>
+					<b>SAVE</b><br>
+					<b>EVENt</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:EXT3mode STOP<br>
+							:SYSTem:EXT3mode?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:EXT3MODE STOP</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":EXTGO">
+						<span class = "g_HeadTitle"><b>Select or query the function of the GO external I/O terminal</b></span>
+					</a><a name=":EXTGO?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:EXTGo A$<br>
+							:SYSTem:EXTGo?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = MEAS, ERR, BUSY, TRIG<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the output function of the GO/EXT.<br>
+					OUT1 External I/O terminal.<br>
+					<br>
+					Returns the current output function setting of the GO/EXT.OUT1 External I/O terminal.<br>
+					<br>
+					<b>MEAS</b>&nbsp;&nbsp;(Num Calc)<br>
+					<b>ERR</b>&nbsp;&nbsp;(Error)<br>
+					<b>BUSY</b><br>
+					<b>TRIG</b>&nbsp;&nbsp;(Trigger)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:EXTGo TRIG<br>
+							:SYSTem:EXTGo?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:EXTGO TRIG</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":EXTNG">
+						<span class = "g_HeadTitle"><b>Select or query the function of the NG external I/O terminal</b></span>
+					</a><a name=":EXTNG?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:EXTNg A$<br>
+							:SYSTem:EXTNg?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = MEAS, ERR, BUSY, TRIG<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the output function of the NG/EXT.OUT2 External I/O terminal.<br>
+					Returns the current output function setting of the NG/EXT.OUT2 External I/O terminal.<br>
+					<br>
+					<b>MEAS</b>&nbsp;&nbsp;(Num Calc)<br>
+					<b>ERR</b>&nbsp;&nbsp;(Error)<br>
+					<b>BUSY</b><br>
+					<b>TRIG</b>&nbsp;&nbsp;(Trigger)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:EXTNg ERR<br>
+							:SYSTem:EXTNg?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:EXTNG ERR</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":EXTPOWER">
+						<span class = "g_HeadTitle"><b>Set or query the external output power settings</b></span>
+					</a><a name=":EXTPOWER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:EXTPower A$<br>
+							:SYSTem:EXTPower?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the external output power supply.<br>
+					The settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:EXTPower ON<br>
+							:SYSTem:EXTPower?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:EXTPOWER ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FACTION">
+						<span class = "g_HeadTitle"><b>ファンクションキー割り当ての設定と問合せ</b></span>
+					</a><a name=":FACTION?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:FACTion A$<br>
+							:SYSTem:FACTion?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = AUTO, MANU<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					ファンクションキー割り当ての設定をします。<br>
+					ファンクションキー割り当ての設定を文字データで返します。<br>
+					<br>
+					<b>AUTO</b>&nbsp;(自動)<br>
+					<b>MANU</b>&nbsp;(マニュアル)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:FACTion AUTO<br>
+							:SYSTem:FACTion?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:FACTION MANU</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FILEPROT">
+						<span class = "g_HeadTitle"><b>Set or query the file protection strength</b></span>
+					</a><a name=":FILEPROT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:FILEProt A$<br>
+							:SYSTem:FILEProt?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = NORMal, STROng<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the file protection strength.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>NORMal</b>&nbsp;(weak [standard])<br>
+					<b>STROng</b>&nbsp;(strong)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:FILEProt NORMal<br>
+							:SYSTem:FILEProt?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:FILEPROT NORMAL</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FKEY">
+						<span class = "g_HeadTitle"><b>ファンクションキー割り当ての設定と問合せ</b></span>
+					</a><a name=":FKEY?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:FKEY A$,B$,C$<br>
+							:SYSTem:FKEY? A$,B$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B$,C$<br>
+						</b>
+					</font>
+					A$ = TY, XY, FFT, RUNning<br>
+					B$ = F1 to F8<br>
+					C$ = NONE, STATus, CHANnel, TRIGger, GAUGe, CURSor, NUMCalc, NUMMoni, WAVEmoni, SEARch, JUMP, SHEEt, AUTO, ZOOM, CANSend, PEAK, MONItor<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					ファンクションキー割り当ての設定をします。<br>
+					ファンクションキー割り当ての設定を文字データで返します。<br>
+					<br>
+
+					<b>【A$】</b><br><br>
+					<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+						<tr>
+							<td class = l_td_FKEY_01>
+							<pre style="text-align:center"><span style='color:white'>TY</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+							<pre style="text-align:center"><span style='color:white'>XY</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+							<pre style="text-align:center"><span style='color:white'>FFT</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+							<pre style="text-align:center"><span style='color:white'>RUNning</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+							<pre style="text-align:center">T-Y波形表示</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+							<pre style="text-align:center">X-Y波形表示</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+							<pre style="text-align:center">FFT波形表示</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+							<pre style="text-align:center">ランニング<br>スペクトル<br>表示</pre>
+							</td>
+						</tr>
+					</table>
+
+					<br><br><br>
+
+					<b>【C$】</b><br><br>
+					<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+						<tr>
+							<td class = l_td_FKEY_01>
+								<pre style="text-align:center"><span style='color:white'>NONE</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>STATus</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>CHANnel</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>TRIGger</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+								<pre style="text-align:center"><span style='color:white'>AUTO</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+								<pre style="text-align:center">なし</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">測定設定</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">チャネル設定</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">トリガ設定</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">オートレンジ</pre>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5" style="border-top:none">
+								<pre style="text-align:center">&nbsp;</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_01>
+								<pre style="text-align:center"><span style='color:white'>CURSor</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>NUMCalc</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>MONItor</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>SEARch</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+								<pre style="text-align:center"><span style='color:white'>JUMP</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+								<pre style="text-align:center">カーソル</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">数値演算</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">数値モニタ</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">波形検索</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">ジャンプ</pre>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" style="border-top:none">
+								<pre style="text-align:center">&nbsp;</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_01>
+								<pre style="text-align:center"><span style='color:white'>SHEEt</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>GAUGe</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+								<pre style="text-align:center"><span style='color:white'>CANSend</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+								<pre style="text-align:center">シート・履歴</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">ゲージ</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">CAN送信</pre>
+							</td>
+						</tr>
+					</table>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:FKEY TY,F1,STATus<br>
+							:SYSTem:FKEY? TY,F1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:FKEY TY,F1,STATUS</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FSEEN">
+						<span class = "g_HeadTitle"><b>ファンクションキーを割り当てる表示画面の設定と問合せ</b></span>
+					</a><a name=":FSEEN?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:FSEEn A$<br>
+							:SYSTem:FSEEn?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = TY, XY, FFT, RUNning<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					ファンクションキーを割り当てる表示画面の設定をします。<br>
+					ファンクションキーを割り当てる表示画面の設定を文字データで返します。<br>
+					<br>
+					<b>TY</b>&nbsp;(T-Y波形表示)<br>
+					<b>XY</b>&nbsp;(X-Y波形表示)<br>
+					<b>FFT</b>&nbsp;(FFT波形表示)<br>
+					<b>RUNning</b>&nbsp;(ランニングスペクトル表示)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:FSEEn TY<br>
+							:SYSTem:FSEEn?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:FSEEN TY</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FUNCTION">
+						<span class = "g_HeadTitle"><b>ファンクション機能マスクの設定と問合せ</b></span>
+					</a><a name=":FUNCTION?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:FUNCtion A$,B$<br>
+							:SYSTem:FUNCtion? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B$<br>
+						</b>
+					</font>
+					A$ = PCALc, WCALc, RCALc, PULSe, FFT, XY, SET<br>
+				    B$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					ファンクション機能マスクの設定をします。<br>
+					ファンクション機能マスクの設定を文字データで返します。<br>
+					<br>
+					<b>PCALc</b>&nbsp;(数値演算)<br>
+					<b>PULSe</b>&nbsp;(パルス)<br>
+					<b>XY</b>&nbsp;(XY合成)<br>
+					<b>SET</b>&nbsp;(設定変更)<br>
+					<b>WCALc</b>&nbsp;(波形演算)<br>
+					<b>RCALc</b>&nbsp;(CH間演算)<br>
+					<b>FFT</b>&nbsp;(FFT演算)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:FUNCtion PCALc,ON<br>
+							:SYSTem:FUNCtion? PCALc<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:FUNCTION PCALC,ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":GRID">
+						<span class = "g_HeadTitle"><b>Set or query grid display</b></span>
+					</a><a name=":GRID?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:GRID A$<br>
+							:SYSTem:GRID?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, STD, DARK<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the grid (graticule) display.<br>
+					Returns the current grid display setting as a text string.<br>
+					<br>
+					<b>OFF</b>&nbsp;&nbsp;(No grid)<br>
+					<b>STD</b>&nbsp;&nbsp;(Dotted lines)<br>
+					<b>DARK</b>&nbsp;&nbsp;(Solid lines)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>
+							:SYSTem:GRID DARK<br>
+							:SYSTem:GRID?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:GRID DARK</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":KEYBORD">
+						<span class = "g_HeadTitle">
+							<b>Select or query external keyboard layout</b>
+						</span>
+					</a><a name = ":KEYBORD?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:KEYBord A$<br>
+							:SYSTem:KEYBord?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = ENGLish, JAPAnese<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the external keyboard layout.<br>
+					Returns the current external keyboard layout as a text string.<br>
+					<br>
+					<b>ENGLish</b><br>
+					<b>JAPAnese</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:KEYBord ENGLish<br>
+							:SYSTem:KEYBord?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:KEYBORD ENGLISH</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":KEYSOUND">
+						<span class = "g_HeadTitle"><b>Enable/disable or query key beeps</b></span>
+					</a><a name=":KEYSOUND?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:KEYSOund A$<br>
+							:SYSTem:KEYSOund?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables the key beeper.<br>
+					Returns the current state of the key beeper.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:KEYSOunt ON<br>
+							:SYSTem:KEYSOund?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:KEYSOUND ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":LANGUAGE">
+						<span class = "g_HeadTitle"><b>Set or query the display language</b></span>
+					</a><a name=":LANGUAGE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+						<br>
+							:SYSTem:LANGuage A$<br>
+							:SYSTem:LANGuage?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = JAPAnese, ENGLish<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the display language.<br>
+					Returns the current language setting as a text string.<br>
+					<br>
+					<b>ENGLish</b><br>
+					<b>JAPAnese</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:LANGuage ENGLish<br>
+							:SYSTem:LANGuage?<br>
+						</b>
+					</span>
+					<span style="font-size:11.0pt;">
+						(Response)&nbsp;&nbsp;<b>:SYSTEM:LANGUAGE ENGLISH</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":LCDDISP">
+						<span class = "g_HeadTitle"><b>Set or query the display color scheme</b></span>
+					</a><a name=":LCDDISP?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:LCDDisp A<br>
+							:SYSTem:LCDDisp?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the display color scheme.<br>
+					The settings will be returned as a NR1 number.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:LCDDisp 1<br>
+							:SYSTem:LCDDisp?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:LCDDISP 1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PLACE">
+						<span class = "g_HeadTitle"><b>桁区切り文字の設定と問合せ</b></span>
+					</a><a name=":PLACE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:PLACe A$<br>
+							:SYSTem:PLACe?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = COMMa, DOT, APOS, SPACe<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					桁区切り文字の設定をします。<br>
+					桁区切り文字の設定を文字データで返します。<br>
+					<br>
+					<b>COMMa</b>&nbsp;(カンマ)<br>
+					<b>DOT</b>&nbsp;(ピリオド)<br>
+					<b>APOS</b>&nbsp;(アポストロフィ)<br>
+					<b>SPACe</b>&nbsp;(スペース)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:PLACe COMMa<br>
+							:SYSTem:PLACe?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:PLACE COMMA</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":PONSTART">
+						<span class = "g_HeadTitle"><b>Set or query measurement start after</b></span>
+					</a><a name=":PONSTART?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:PONStart A$<br>
+							:SYSTem:PONStart?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Sets whether or not to start measurement as soon as the power is turned on.<br>
+					The settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:PONStart ON<br>
+							:SYSTem:PONStart?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:PONSTART OFF</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RESTART">
+						<span class = "g_HeadTitle">
+							<b>Enable/disable or query restart permission</b>
+						</span>
+					</a><a name = ":RESTART?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:RESTart A$<br>
+							:SYSTem:RESTart?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables or disables restart permission.<br>
+					Returns the current restart permission setting, as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:RESTart ON<br>
+							:SYSTem:RESTart?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:RESTART ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RKEY">
+						<span class = "g_HeadTitle"><b>外部リモコンのキー割り当ての設定と問合せ</b></span>
+					</a><a name=":RKEY?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:RKEY A$,B$<br>
+							:SYSTem:RKEY? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$,B$<br>
+						</b>
+					</font>
+					A$ = F1 to F2<br>
+				    B$ = NONE, STATus, CHANnel, TRIGger, GAUGe, CURSor, NUMCalc, NUMMoni, WAVEmoni, SEARch, JUMP, SHEEt, AUTO, ZOOM, CANSend, PEAK, MONItor<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					外部リモコンのキー割り当ての設定をします。<br>
+					外部リモコンのキー割り当ての設定を文字データで返します。<br>
+					<br>
+					<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+						<tr>
+							<td class = l_td_FKEY_01>
+								<pre style="text-align:center"><span style='color:white'>NONE</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>STATus</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>CHANnel</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>TRIGger</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+								<pre style="text-align:center"><span style='color:white'>AUTO</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+								<pre style="text-align:center">なし</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">測定設定</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">チャネル設定</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">トリガ設定</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">オートレンジ</pre>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5" style="border-top:none">
+								<pre style="text-align:center">&nbsp;</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_01>
+								<pre style="text-align:center"><span style='color:white'>CURSor</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>NUMCalc</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>MONItor</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>SEARch</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+								<pre style="text-align:center"><span style='color:white'>JUMP</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+								<pre style="text-align:center">カーソル</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">数値演算</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">数値モニタ</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">波形検索</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">ジャンプ</pre>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" style="border-top:none">
+								<pre style="text-align:center">&nbsp;</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_01>
+								<pre style="text-align:center"><span style='color:white'>SHEEt</span></pre>
+							</td>
+							<td class = l_td_FKEY_02>
+								<pre style="text-align:center"><span style='color:white'>GAUGe</span></pre>
+							</td>
+							<td class = l_td_FKEY_03>
+								<pre style="text-align:center"><span style='color:white'>CANSend</span></pre>
+							</td>
+						</tr>
+						<tr>
+							<td class = l_td_FKEY_04>
+								<pre style="text-align:center">シート・履歴</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">ゲージ</pre>
+							</td>
+							<td class = l_td_FKEY_05>
+								<pre style="text-align:center">CAN送信</pre>
+							</td>
+						</tr>
+					</table>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:RKEY F1,STATus<br>
+							:SYSTem:RKEY? F1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:RKEY F1,STATUS</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVE">
+						<span class = "g_HeadTitle"><b>Set or query the SAVE key destination directory</b></span>
+					</a><a name=":SAVE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SAVE A$<br>
+							:SYSTem:SAVE?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$,&quot;B$&quot;<br>
+						</b>
+					</font>
+					A$ = SD, USB, MAIL, FTP<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the storage media for data saved by the SAVE key.<br>
+					Returns the current storage media setting for data saved by the SAVE key.<br>
+					<br>
+					<b>SD</b>&nbsp;&nbsp;(SD card)<br>
+					<b>USB</b>&nbsp;&nbsp;(Storage device connected to USB port)<br>
+					<b>MAIL</b>&nbsp;&nbsp;(Send by mail)<br>
+					<b>FTP</b>&nbsp;&nbsp;(Send by FTP)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SAVE USB<br>
+							:SYSTem:SAVE?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SAVE USB</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVEAREA">
+						<span class = "g_HeadTitle"><b>Set or query the data area selection method for saving data using the SAVE key</b></span>
+					</a><a name=":SAVEAREA?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SAVEArea A$<br>
+							:SYSTem:SAVEArea?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = WHOLe, A_B, C_D<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the data area selection method for saving data using the SAVE key.<br>
+					Returns the data area selection method for saving data using the SAVE key.<br>
+					<br>
+					<b>WHOLe</b><br>
+					<b>A_B</b>&nbsp;&nbsp;(between A/B cursors)<br>
+					<b>C_D</b>&nbsp;&nbsp;(between C/D cursors)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SAVEArea WHOLe<br>
+							:SYSTem:SAVEArea?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SAVEAREA WHOLE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVECH">
+						<span class = "g_HeadTitle"><b>Set or query whether the SAVE key saves all or just displayed channels</b></span>
+					</a><a name=":SAVECH?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SAVECh A$<br>
+							:SYSTem:SAVECh?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = DISPlay, ALL<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets whether to save data from displayed or all channels.<br>
+					Returns the current setting of whether to save data from displayed or all channels.<br>
+					<br>
+					<b>DISPlay</b>&nbsp;&nbsp;(Displayed channels)<br>
+					<b>ALL</b>&nbsp;&nbsp;(All channels)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SAVECh ALL<br>
+							:SYSTem:SAVECh?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SAVECH ALL</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVEKIND">
+						<span class = "g_HeadTitle"><b>Select or query the kind of data saved by the SAVE key</b></span>
+					</a><a name=":SAVEKIND?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SAVEKind A$<br>
+							:SYSTem:SAVEKind?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = BIN, TEXT, MEAS, IMAGe, SET<!--, GPS--><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the kind of data to save with the SAVE key.<br>
+					Returns the current setting of the kind of data to save with the SAVE key.<br>
+					<br>
+					<b>BIN</b>&nbsp;&nbsp;(Binary waveform file)<br>
+					<b>TEXT</b>&nbsp;&nbsp;(Text waveform file)<br>
+					<b>MEAS</b>&nbsp;&nbsp;(Numerical calculation result file)<br>
+					<b>IMAGe</b>&nbsp;&nbsp;(Captured screen image file)<br>
+					<b>SET</b>&nbsp;&nbsp;(Settings file)<br>
+<!--				<b>GPS</b>&nbsp;&nbsp;(GPS data file)<br>-->
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SAVEKind BIN<br>
+							:SYSTem:SAVEKind?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SAVEKIND BIN</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					-<br>
+<!--					GPS is available in V2.00 or later.<br>-->
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVENAME">
+						<span class = "g_HeadTitle"><b>Assign or query the file name for files saved with the SAVE key</b></span>
+					</a><a name=":SAVENAME?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SAVEName &quot;A&quot;<br>
+							:SYSTem:SAVEName?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							&quot;A&quot;<br>
+						</b>
+					</font>
+					A$ = File name (up to 40 characters)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the file name for data saved with the SAVE key.<br>
+					Returns the current file name for data saved with the SAVE key.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SAVEName &quot;ABCDEFG&quot;<br>
+							:SYSTem:SAVEName?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SAVENAME &quot;ABCDEFG&quot;</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SAVETHIN">
+						<span class = "g_HeadTitle"><b>Set or query the thinning rate when saving thinned data using the SAVE key</b></span>
+					</a><a name=":SAVETHIN?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SAVEThin A<br>
+							:SYSTem:SAVEThin?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 1000<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the thinning rate when saving thinned data using the SAVE key.<br>
+					The settings will be returned as an NR1 number.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SAVEThin 5<br>
+							:SYSTem:SAVEThin?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SAVETHIN 5</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SEPARATOR">
+						<span class = "g_HeadTitle"><b>Set or query the delimiter symbol</b></span>
+					</a><a name=":SEPARATOR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SEPArator A$<br>
+							:SYSTem:SEPArator?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = COMMa, DOT, SPACe, TAB, SEMI<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Sets the symbol to use as the delimiter.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>COMMa</b>&nbsp;(comma)<br>
+					<b>DOT</b>&nbsp;(period)<br>
+					<b>SPACe</b>&nbsp;(space)<br>
+					<b>TAB</b>&nbsp;(tab)<br>
+					<b>SEMI</b>&nbsp;(semicolon)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SEPArator COMMa<br>
+							:SYSTem:SEPArator?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SEPARATOR COMMA</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SOPERATION">
+						<span class = "g_HeadTitle"><b>Set or query START/STOP key behavior</b></span>
+					</a><a name=":SOPERATION?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SOPEration A$<br>
+							:SYSTem:SOPEration?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the operating condition of the START/STOP key.<br>
+					Returns the current operating condition of the START/STOP key.<br>
+					<br>
+					<b>OFF</b>&nbsp;&nbsp;(No confirmation message)<br>
+					<b>ON</b>&nbsp;&nbsp;(Display confirmation message)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SOPEration ON<br>
+							:SYSTem:SOPEration?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SOPERATION ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SSAVER">
+						<span class = "g_HeadTitle"><b>Set or query screen saver activation</b></span>
+					</a><a name=":SSAVER?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SSAVEr A<br>
+							:SYSTem:SSAVEr?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 0 to 5<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the idle time (minutes) for screen saver activation.<br>
+					Returns the current setting of the idle time for screen saver activation.<br>
+					<br>
+					If argument A = 0, the screen saver is disabled.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SSAVEr 5<br>
+							:SYSTem:SSAVEr?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SSAVER 5</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SSELECT">
+						<span class = "g_HeadTitle"><b>Set or query SAVE key behavior</b></span>
+					</a><a name=":SSELECT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SSELect A$<br>
+							:SYSTem:SSELect?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the function of the SAVE key.<br>
+					Returns the current SAVE key function.<br>
+					<br>
+					<b>OFF</b>&nbsp;&nbsp;(Quick save: pressing the SAVE key saves data immediately)<br>
+					<b>ON</b>&nbsp;&nbsp;(Selection save: pressing the SAVE key displays a dialog box for selecting the data type to save)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SSELect ON<br>
+							:SYSTem:SSELect?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SSELECT ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":START">
+						<span class = "g_HeadTitle"><b>Enable/disable or query the START key backup function</b></span>
+					</a><a name=":START?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:STARt A$<br>
+							:SYSTem:STARt?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables the START key backup function.<br>
+					Returns the current on/off state of the START key backup function as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:STARt ON<br>
+							:SYSTem:STARt?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:START ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SVEVENT">
+						<span class = "g_HeadTitle"><b>Set or query the settings for saving event data using the SAVE key</b></span>
+					</a><a name=":SVEVENT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SVEVent A$<br>
+							:SYSTem:SVEVent?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON, NMEA<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for saving event data when using the SAVE key to save measurement data.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>OFF</b>&nbsp;(Save ALL data)<br>
+					<b>ON</b>&nbsp;(Save Event data only)<br>
+					<b>NMEA</b>&nbsp;(Save GPS data as NMEA format)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SVEVent ON<br>
+							:SYSTem:SVEVent?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SVEVENT ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					&quot;NMEA&quot; available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SVGPSFILE">
+						<span class = "g_HeadTitle"><b>Set or query GPS file format using the SAVE key</b></span>
+					</a><a name=":SVGPSFILE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SVGPSFile A$<br>
+							:SYSTem:SVGPSFile?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = BIN, TEXT, NMEA<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for GPS file format using the SAVE key.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>BIN</b>&nbsp;(Binary file)<br>
+					<b>TEXT</b>&nbsp;(Text file)<br>
+					<b>NMEA</b>&nbsp;(NMEA file format)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SVGPSFile BIN<br>
+							:SYSTem:SVGPSFile?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SVGPSFILE BIN</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SVITYPE">
+						<span class = "g_HeadTitle"><b>Set or query the file type for saving screen image using the SAVE key</b></span>
+					</a><a name = ":SVITYPE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SVIType A$<br>
+							:SYSTem:SVIType?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = BMP, PNG<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Set the file type for saving screen image using the SAVE key.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>BMP</b>&nbsp;(bitmap format)<br>
+					<b>PNG</b>&nbsp;(PNG format)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SVIType BMP<br>
+							:SYSTem:SVIType?<br>
+						</b>
+					</span>
+					(応答)&nbsp;&nbsp;<b>:SYSTEM:SVITYPE BMP</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>注 記
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SVMEASURE">
+						<span class = "g_HeadTitle"><b>Set or query the file settings for saving numerical calculation results with the SAVE key</b></span>
+					</a><a name=":SVMEASURE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SVMEasure A$<br>
+							:SYSTem:SVMEasure?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = NEW, EXISt<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for the file used to save the numerical calculation results using the SAVE key.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>NEW</b>&nbsp;(new file)<br>
+					<b>EXISt</b>&nbsp;(existing file)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SVMEasure NEW<br>
+							:SYSTem:SVMEasure?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SVMEASURE EXIST</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SVMFILE">
+						<span class = "g_HeadTitle"><b>Set or query the file segmentation settings when saving numerical calculation results using the SAVE key</b></span>
+					</a><a name=":SVMFILE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SVMFile A$<br>
+							:SYSTem:SVMFile?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = SINGle, MULTi<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for file segmentation when saving numerical calculation results using the SAVE key.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>SINGle</b>&nbsp;(OFF)<br>
+					<b>MULTi</b>&nbsp;(multiple files)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SVMFile SINGle<br>
+							:SYSTem:SVMFile?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SVMFILE SINGLE</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SVTEXT">
+						<span class = "g_HeadTitle"><b>Set or query the file segmentation setting when saving text waveforms using the SAVE key</b></span>
+					</a><a name=":SVTEXT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SVTExt A$<br>
+							:SYSTem:SVTExt?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for file segmentation when saving text waveforms using the SAVE key.<br>
+					The settings will be returned as a text string.<br>
+					<br>
+					<b>OFF</b>&nbsp;(OFF)<br>
+					<b>ON</b>&nbsp;(Segment the file into 60,000 data each)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SVTExt OFF<br>
+							:SYSTem:SVTExt?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:SVTEXT OFF</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SYNC">
+						<span class = "g_HeadTitle"><b>Execute synchronizing time</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:SYNC A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = GPS<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Execute synchronizing time.<br>
+					<br>
+					<b>GPS</b>&nbsp;(GPS module)<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:SYNC GPS<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.10 or lator.<br>
+					Provided that GPS module is in positioning state.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":TIME">
+						<span class = "g_HeadTitle"><b>Set or query the system clock time</b></span>
+					</a><a name=":TIME?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:TIME A,B,C<br>
+							:SYSTem:TIME?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 0 to 23&nbsp;[hour]<br>
+					B = 0 to 59&nbsp;[minute]<br>
+					C = 0 to 59&nbsp;[second]<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the instrument's system clock time.<br>
+					Returns the instrument's current system clock time.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:TIME 12,34,56<br>
+							:SYSTem:TIME?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:TIME 12,34,56</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":TMAXIS">
+						<span class = "g_HeadTitle"><b>Set or query the time-axis units for display</b></span>
+					</a><a name=":TMAXIS?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:TMAXis A$<br>
+							:SYSTem:TMAXis?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = TIME, TIME(60), DATE, SAMPle<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the time-axis display units.<br>
+					Returns the current time axis display units as a text string.<br>
+					<br>
+					<b>TIME</b><br>
+					<b>TIME(60)</b>&nbsp;&nbsp;(Mod 60)<br>
+					<b>DATE</b><br>
+					<b>SAMPle</b>&nbsp;&nbsp;(Samples)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:TMAXis TIME<br>
+							:SYSTem:TMAXis?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:TMAXIS TIME</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":TMSYNC">
+						<span class = "g_HeadTitle"><b>Set or query the time synchronization method</b></span>
+					</a><a name=":TMSYNC?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:TMSYnc A$<br>
+							:SYSTem:TMSYnc?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$,B$,C$<br>
+						</b>
+					</font>
+					A$ = GPS<br>
+					B$ = OFF, ON<br>
+					C$ = OFF, H1, D1<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the time synchronization method.<br>
+					Returns the  time synchronization method as a text string.<br>
+					<br>
+					[B$]<br>
+					<b>OFF</b>&nbsp;&nbsp;(Disable time synchronization)<br>
+					<b>ON</b>&nbsp;&nbsp;(Enable time synchronization)<br>
+					<br>
+					[C$]<br>
+					<b>OFF</b>&nbsp;&nbsp;(Synchronization OFF)<br>
+					<b>H1</b>&nbsp;&nbsp;(Every 1 hour)<br>
+					<b>D1</b>&nbsp;&nbsp;(Every 1 day)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:TMSYnc GPS,ON,D1<br>
+							:SYSTem:TMSYnc? GPS<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:TMSYNC GPS,ON,D1</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.10 or lator.<br>
+					Provided that GPS module is in positioning state.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":TRANS">
+						<span class = "g_HeadTitle"><b>Set or query the display dialog transparency settings</b></span>
+					</a><a name=":TRANS?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:TRANs A<br>
+							:SYSTem:TRANs?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 5<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Sets the transparency level of the display dialog.<br>
+					Settings will be returned as an NR1 number.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:TRANs 3<br>
+							:SYSTem:TRANs?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:TRANS 3</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":TRGOUT">
+						<span class = "g_HeadTitle"><b>Set or query the function of the TRIG.OUT/CAL External I/O terminal</b></span>
+					</a><a name=":TRGOUT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:TRGOut A$<br>
+							:SYSTem:TRGOut?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = PULSe, LEVEl<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the function of the TRIG.OUT External I/O terminal.<br>
+					Returns the current function of the TRIG.OUT External I/O terminal.<br>
+					<br>
+					<b>PULSe</b>&nbsp;&nbsp;(Pulse output)<br>
+					<b>LEVEl</b>&nbsp;&nbsp;(Level output)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:TRGOut LEVEl<br>
+							:SYSTem:TRGOut?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:TRGOUT LEVEL</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ZONE">
+						<span class = "g_HeadTitle"><b>Set or query the time zone setting</b></span>
+					</a><a name=":ZONE?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:ZONE A$<br>
+							:SYSTem:ZONE?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = P1400, P1300, P1245, P1200, P1130, P1100, P1030, P1000, P0930, P0900<br>
+						 P0845, P0800, P0700, P0630, P0600, P0545, P0530, P0500, P0430, P0400<br>
+						 P0330, P0300, P0200, P0100, ZERO, M0100, M0200, M0300, M0330, M0400<br>
+						 M0500, M0600, M0700, M0800, M0900, M0930, M1000, M1100, M1200<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the time zone.<br>
+					Returns the current time zone.<br>
+					<br>
+					<b>P1400</b>&nbsp;(+14:00)<br>
+					<b>P1300</b>&nbsp;(+13:00)<br>
+					<b>P1245</b>&nbsp;(+12:45)<br>
+					<b>P1200</b>&nbsp;(+12:00)<br>
+					<b>P1130</b>&nbsp;(+11:30)<br>
+					<b>P1100</b>&nbsp;(+11:00)<br>
+					<b>P1030</b>&nbsp;(+10:30)<br>
+					<b>P1000</b>&nbsp;(+10:00)<br>
+					<b>P0930</b>&nbsp;(+09:30)<br>
+					<b>P0900</b>&nbsp;(+09:00)<br>
+					<b>P0845</b>&nbsp;(+08:45)<br>
+					<b>P0800</b>&nbsp;(+08:00)<br>
+					<b>P0700</b>&nbsp;(+07:00)<br>
+					<b>P0630</b>&nbsp;(+06:30)<br>
+					<b>P0600</b>&nbsp;(+06:00)<br>
+					<b>P0545</b>&nbsp;(+05:45)<br>
+					<b>P0530</b>&nbsp;(+05:30)<br>
+					<b>P0500</b>&nbsp;(+05:00)<br>
+					<b>P0430</b>&nbsp;(+04:30)<br>
+					<b>P0400</b>&nbsp;(+04:00)<br>
+					<b>P0330</b>&nbsp;(+03:30)<br>
+					<b>P0300</b>&nbsp;(+03:00)<br>
+					<b>P0200</b>&nbsp;(+02:00)<br>
+					<b>P0100</b>&nbsp;(+01:00)<br>
+					<b>ZERO</b>&nbsp;(00:00)<br>
+					<b>M0100</b>&nbsp;(-01:00)<br>
+					<b>M0200</b>&nbsp;(-02:00)<br>
+					<b>M0300</b>&nbsp;(-03:00)<br>
+					<b>M0330</b>&nbsp;(-03:30)<br>
+					<b>M0400</b>&nbsp;(-04:00)<br>
+					<b>M0500</b>&nbsp;(-05:00)<br>
+					<b>M0600</b>&nbsp;(-06:00)<br>
+					<b>M0700</b>&nbsp;(-07:00)<br>
+					<b>M0800</b>&nbsp;(-08:00)<br>
+					<b>M0900</b>&nbsp;(-09:00)<br>
+					<b>M0930</b>&nbsp;(-09:30)<br>
+					<b>M1000</b>&nbsp;(-10:00)<br>
+					<b>M1100</b>&nbsp;(-11:00)<br>
+					<b>M1200</b>&nbsp;(-12:00)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:ZONE P1400<br>
+							:SYSTem:ZONE?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:ZONE P1400</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.10 or lator.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ZPOSITION">
+						<span class = "g_HeadTitle">
+							<b>Enable/disable or query zero-position display</b>
+						</span>
+					</a><a name = ":ZPOSITION?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:SYSTem:ZPOSition A$<br>
+							:SYSTem:ZPOSition?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables display of zero-positions.<br>
+					Returns the current state of zero-position display, as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:SYSTem:ZPOSition ON<br>
+							:SYSTem:ZPOSition?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:SYSTEM:ZPOSITION ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+</body>
+</html>

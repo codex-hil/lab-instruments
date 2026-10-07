@@ -1,0 +1,963 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+</head>
+
+<body bgcolor="#E4E7FC">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#441CDB">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="color:white">DISPlay Commands (Select or query screen mode, waveform display, etc.)</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:42pt">
+			<td class = "g_p0001">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Command</span>
+				</p>
+			</td>
+			<td class = "g_p0002">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Data<br>(for a query, response data)</span>
+				</p>
+			</td>
+			<td class = "g_p0008">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Explanation</span>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:CHANGE" target="_self">
+						<b>:CHANge A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = WAVE, STATus, CHANalog, CHLOgic, CHPUlse, CHCAlc, CHXY, CHGPs, CHLIst, TRGGeneral, TRGAnalog, TRGLogic, TRGPulse, TGGPs, CALNum, CALWave, CALFft, SYSEnv, SYSTerminal, SYSReset, SYSSet, SYSIf, <!--SYSCustom, -->CANList, FOPEration, FKEY<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select the display mode
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:CHANGE?" target="_self">
+						<b>:CHANge?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the display mode
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:DRAWING" target="_self">
+						<b>:DRAWing CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, XY1 to XY8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = OFF, C1 to C24<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set waveform display color
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:DRAWING?" target="_self">
+						<b>:DRAWing? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query waveform display color
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:GAUGE" target="_self">
+						<b>:GAUGe A,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					CH$ = ALL, CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z18, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the gauge of the waveform screen
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:GAUGE?" target="_self">
+						<b>:GAUGe? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the gauge of the waveform screen
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:GRAPH" target="_self">
+						<b>:GRAPh CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, XY1 to XY8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = 1 to 4 (graph number)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the display graph of a waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:GRAPH?" target="_self">
+						<b>:GRAPh? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the display graph of a waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:INVERT" target="_self">
+						<b>:INVErt CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the waveform to invert
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:INVERT?" target="_self">
+						<b>:INVErt? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the invert status of the waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:LOGPOSI" target="_self">
+						<b>:LOGPosi CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = LA to LB, L1 to L4<br>
+					A = 1 to 8<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the display position of a logic waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:LOGPOSI?" target="_self">
+						<b>:LOGPosi? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the display position of a logic waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:POSITION" target="_self">
+						<b>:POSItion CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2<br>
+					A = -10000 to +10000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set input channel zero position
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:POSITION?" target="_self">
+						<b>:POSItion? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query input channel zero position
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:SHEET" target="_self">
+						<b>:SHEET A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = ALL, S1, S2, S3, S4<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select the displayed sheet
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:SHEET?" target="_self">
+						<b>:SHEET? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the displayed sheet
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:STCH" target="_self">
+						<b>:STCH CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, W1_1 to W4_2, Z1 to Z8, XY1 to XY8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = S1, S2, S3, S4<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Make settings for sheet display
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:STCH?" target="_self">
+						<b>:STCH? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query sheet display
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:UPDATE" target="_self">
+						<b>:UPDAte A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = TRUE, FALSE<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enable/disable display updating
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:UPDATE?" target="_self">
+						<b>:UPDAte?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query display updating
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VARIABLE" target="_self">
+						<b>:VARIable CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8<br>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enable/disable the variable gain function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VARIABLE?" target="_self">
+						<b>:VARIable? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the variable gain function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VARIUPLOW" target="_self">
+						<b>:VARIUplow CH$,A,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = &lt;upper limit&gt;<br>
+					B = &lt;lower limit&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the upper and lower limits of the variable function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VARIUPLOW?" target="_self">
+						<b>:VARIUplow? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the upper and lower thresholds of the variable function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VERNIER" target="_self">
+						<b>:VERNier CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15<br>
+					A = 50.0 to 200.0
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the vernier function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VERNIER?" target="_self">
+						<b>:VERNier? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR2&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the vernier function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:VIEW" target="_self">
+						<b>:VIEW A$(,B)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = A, B, C, D, TRIGer, PTRIg, SEARch, TOP, END, POINt<br>
+					B = 0 to storage position (storage number-1) in A$ = POINt<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select the starting point for the waveform trace display<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XAXIS" target="_self">
+						<b>:XAXIs A,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8 (graph number)<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Assign the x-axis channel for an X-Y waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XAXIS" target="_self">
+						<b>:XAXIs? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the x-axis channel for an X-Y waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XMAG" target="_self">
+						<b>:XMAG A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = X1_50000 to X10<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set time axis magnification/compression
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XMAG?" target="_self">
+						<b>:XMAG?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query time axis magnification/compression
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XYAREA" target="_self">
+						<b>:XYARea A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = ALL, S1, S2, S3, S4<br>
+					B$ = WHOLe, A_B, C_D<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select area (interval) setting for X-Y waveforms
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XYAREA?" target="_self">
+						<b>:XYARea? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query area (interval) setting for X-Y waveforms
+				</p>
+			</td>
+		</tr>
+
+<!--		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XYCLR" target="_self">
+						<b>:XYCLr A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					XY合成の画面クリアの設定
+				</p>
+			</td>
+		</tr>-->
+
+<!--		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XYCLR?" target="_self">
+						<b>:XYCLr?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					XY合成の画面クリアの問合せ
+				</p>
+			</td>
+		</tr>-->
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XYGAUGE" target="_self">
+						<b>:XYGAuge A,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 2<br>
+					B = 1 to 8<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the XY waveform gauge<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:XYGAUGE?" target="_self">
+						<b>:XYGAuge? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the XY waveform gauge<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:YAXIS" target="_self">
+						<b>:YAXIs A,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8 (graph number)<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Assign the y-axis channel for an X-Y waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:YAXIS?" target="_self">
+						<b>:YAXIs? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the y-axis channel for an X-Y waveform
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:YMAG" target="_self">
+						<b>:YMAG CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2<br>
+					A$ = X1_10, X1_5, X1_2, X1, X2, X5, X10, X20, X50, X100<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set voltage axis magnification/compression
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:YMAG?" target="_self">
+						<b>:YMAG? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query voltage axis magnification/compression
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:ZOOM" target="_self">
+						<b>:ZOOM A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enable/disable display zooming
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:ZOOM?" target="_self">
+						<b>:ZOOM? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query display zooming
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:ZOOMMAG" target="_self">
+						<b>:ZOOMMag A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = X1_20000～X10<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set zoom magnification
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right08.htm#:ZOOMMAG?" target="_self">
+						<b>:ZOOMMag? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set zoom magnification
+				</p>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

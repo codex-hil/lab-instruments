@@ -1,0 +1,249 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+</head>
+
+<body bgcolor="#E4E7FC">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#441CDB">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="color:white">SETting Commands (Set and read setting configurations)</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:42pt">
+			<td class = "g_p0001">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Command</span>
+				</p>
+			</td>
+			<td class = "g_p0002">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Data<br>(for a query, response data)</span>
+				</p>
+			</td>
+			<td class = "g_p0008">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Explanation</span>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:CLEAR" target="_self">
+						<b>:CLEAr A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0 to 6<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Clear a setting configuration
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:COMMENT" target="_self">
+						<b>:COMMent A,&quot;B$&quot;</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 6<br>
+					B$ = comment string (up to 40 characters)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enter a setting configuration comment
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:COMMENT?" target="_self">
+						<b>:COMMent? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,&quot;B$&quot;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query a setting configuration comment
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:LOAD" target="_self">
+						<b>:LOAD A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 6<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Load a setting configuration
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:PONNO" target="_self">
+						<b>:PONNo A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0 to 6<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the selection number of the settings to load when the power is turned on
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:PONNO?" target="_self">
+						<b>:PONNo?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the selection number of the settings to load when the power is turned on
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:PONSELECT" target="_self">
+						<b>:PONSelect A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enable or disable the loading of selected settings when the power is turned on
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:PONSELECT?" target="_self">
+						<b>:PONSelect?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the ON/OFF status for loading selected settings when the power is turned on
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:SAVE" target="_self">
+						<b>:SAVE A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 6<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Save a setting configuration
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right17.htm#:STATUS?" target="_self">
+						<b>:STATus?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+					A = 1 to 6<br>
+					B = 0, 1<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query a setting configuration status
+				</p>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

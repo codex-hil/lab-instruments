@@ -1,0 +1,1787 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+</head>
+
+<body bgcolor="#E4E7FC">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#441CDB">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="color:white">Configuration Commands (Set and query timebase, recording length, etc.)</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:42pt">
+			<td class = "g_p0001">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Command</span>
+				</p>
+			</td>
+			<td class = "g_p0002">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Data<br>(for a query, response data)</span>
+				</p>
+			</td>
+			<td class = "g_p0008">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Explanation</span>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATCALC" target="_self">
+						<b>:ATCAlc A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the ON/OFF status of automatically numerical calculation saving</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATCALC?" target="_self">
+						<b>:ATCAlc?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the ON/OFF status of automatically numerical calculation saving</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATFILE" target="_self">
+						<b>:ATFIle &quot;A$&quot;</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = file name<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the auto-save file name
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATFILE?" target="_self">
+						<b>:ATFIle?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					&quot;A$&quot;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the auto-save file name
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATIMAGE" target="_self">
+						<b>:ATIMage A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Enable or disable auto display image save</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATIMAGE?" target="_self">
+						<b>:ATIMage?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the ON/OFF status of auto display image save</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATITYPE" target="_self">
+						<b>:ATIType A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = BMP, PNG<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the file type for auto-saving screen images</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATITYPE?" target="_self">
+						<b>:ATIType?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the file type for auto-saving screen images</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATMEASURE" target="_self">
+						<b>:ATMEasure A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = NEW, EXISt<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the save file for auto numerical calculation results</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATMEASURE?" target="_self">
+						<b>:ATMEasure?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the save file for auto numerical calculation results</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATMFILE" target="_self">
+						<b>:ATMFile A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = SINGle, MULTi<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set the save directory of the auto numerical calculation files</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATMFILE?" target="_self">
+						<b>:ATMFile?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the save directory of the auto numerical calculation files</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATSAVE" target="_self">
+						<b>:ATSAve A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+					B$ = SD, USB<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the auto-save function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATSAVE?" target="_self">
+						<b>:ATSAve?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the auto-save function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATTEXT" target="_self">
+						<b>:ATTExt A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set auto segmentation save (text)</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATTEXT?" target="_self">
+						<b>:ATTExt?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the status auto segmentation save (text)</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATWAVE" target="_self">
+						<b>:ATWAve A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set auto waveform save</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:ATWAVE?" target="_self">
+						<b>:ATWAve?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the status of auto waveform save</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:CHENABLE" target="_self">
+						<b>:CHENable CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, W1_1 to W4_2, Z1 to Z8, GPS<br>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set measurement channels ON/OFF</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:CHENABLE?" target="_self">
+						<b>:CHENable? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the ON/OFF status of measurement channels</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:CLOCK" target="_self">
+						<b>:CLOCk A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = INTErnal, EXTErnal<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Set sampling clock</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:CLOCK?" target="_self">
+						<b>:CLOCk?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">Query the status of sampling clock</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:DELSAVE" target="_self">
+						<b>:DELSave A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = NORMal, DELEte<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the delete-save function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:DELSAVE?" target="_self">
+						<b>:DELSave?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the delete-save function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:DOTLINE" target="_self">
+						<b>:DOTLine A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = ALL, S1, S2, S3, S4 <br>
+					B$ = DOT, LINE<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set XY waveform interpolation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:DOTLINE?" target="_self">
+						<b>:DOTLine? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query XY waveform interpolation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:EXTSAMPLE" target="_self">
+						<b>:EXTSample A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 10 to 1000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the number of data points per division for external sampling
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:EXTSAMPLE" target="_self">
+						<b>:EXTSample?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the number of data points per division for external sampling
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:EXTSLOPE" target="_self">
+						<b>:EXTSLope A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = UP, DOWN<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select the slope direction for the external sampling jack
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:EXTSLOPE?" target="_self">
+						<b>:EXTSLope?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the slope direction for the external sampling jack
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFT" target="_self">
+						<b>:FFT A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON, EXEC<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set execution of FFT calculations<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFT?" target="_self">
+						<b>:FFT?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query execution of FFT calculations<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTAVERAGE" target="_self">
+						<b>:FFTAVERage A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 2 to 10000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the averaging number of FFT spectra<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTAVERAGE?" target="_self">
+						<b>:FFTAVERage?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the averaging number of FFT spectra<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTAVKIND" target="_self">
+						<b>:FFTAVKind A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, F_LIN, F_EXP, F_PEAK<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the FFT averaging method<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTAVKIND?" target="_self">
+						<b>:FFTAVKind?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the FFT averaging method<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTCH" target="_self">
+						<b>:FFTCh A,CH1$(,CH2$)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 8<br>
+					CH1$, CH2$ = CH<i>m_n</i>, Z1 to Z8<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the FFT calculation channel<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTCH?" target="_self">
+						<b>:FFTCh? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,CH1$(,CH2$)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the FFT calculation channel<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTFUNC" target="_self">
+						<b>:FFTFunc A,B$(,C)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					B$ = OFF, LIN, RMS, PSP, TRF, XPS, COH, PHA<br>
+					C = 1, 2(B$ = PHA)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the FFT analysis mode<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTFUNC?" target="_self">
+						<b>:FFTFunc? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$(,C)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the FFT analysis mode<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTLOW" target="_self">
+						<b>:FFTLow A,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					B = -9.9999E+29 to +9.9999E+29<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the lower limit of the FFT display scale (vertical axis)<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTLOW?" target="_self">
+						<b>:FFTLow? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the lower limit of the FFT display scale (vertical axis)<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTMODE" target="_self">
+						<b>:FFTMOde A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = SINGle, REPEat<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Sets the FFT repetition mode<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTMODE?" target="_self">
+						<b>:FFTMOde? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Returns the FFT repetition mode as a text string<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTREV" target="_self">
+						<b>:FFTREV A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = NONE, POW, AVE<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the correction method for window function calculation results<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTREV?" target="_self">
+						<b>:FFTREV?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the correction method for window function calculation results<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTSAMPLE" target="_self">
+						<b>:FFTSAmple A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1000, 2000, 5000, 10000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the number of FFT calculation points<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTSAMPLE?" target="_self">
+						<b>:FFTSAmple?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the number of FFT calculation points<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTSCALE" target="_self">
+						<b>:FFTSCale A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					B$ = AUTO, MANUal<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set FFT display scaling<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTSCALE?" target="_self">
+						<b>:FFTSCale? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query FFT display scaling<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTUP" target="_self">
+						<b>:FFTUp A,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					B = -9.9999E+29 to +9.9999E+29<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the upper limit of the FFT display scale (vertical axis)<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTUP?" target="_self">
+						<b>:FFTUp? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR3&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the upper limit of the FFT display scale (vertical axis)<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTWIND" target="_self">
+						<b>:FFTWind A$(,B)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = RECTan, HANNing, EXPOnential, HAMMing, BLACkman, BLHA, FLATtop<br>
+					B = 0.1 to 99.9 (A$ = EXPOnential)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the window function for FFT calculation<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTWIND?" target="_self">
+						<b>:FFTWind?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$(,B&lt;NR2&gt;)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the window function for FFT calculation<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTXAXIS" target="_self">
+						<b>:FFTXaxis A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					B$ = LIN, LOG<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the type of x axis for FFT calculation<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTXAXIS?" target="_self">
+						<b>:FFTXaxis? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the type of x axis for FFT calculation<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTYAXIS" target="_self">
+						<b>:FFTYaxis A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4<br>
+					B$ = LINREal, LINIMag, LINMAg, LOGMAg<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the type of y axis for FFT calculation<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FFTYAXIS?" target="_self">
+						<b>:FFTYaxis? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the type of y axis for FFT calculation<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FORMAT" target="_self">
+						<b>:FORMat A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = ALL, S1, S2, S3, S4<br>
+					B$ = TY1, TY2, TY4, XY1, XY2, TY_XY, FFT1, FFT2, FFT4, TY_FFT1, TY_FFT2, TY_FFT4, RUN, GPS1, GPS2<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the display format
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FORMAT?" target="_self">
+						<b>:FORMat? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the display format
+				</p>
+			</td>
+		</tr>
+
+<!--		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FRAME" target="_self">
+						<b>:FRAMe A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0, 10, 20, 50, 100, 200<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the number of spectrum frames
+				</p>
+			</td>
+		</tr>-->
+
+<!--		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FRAME?" target="_self">
+						<b>:FRAMe?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the number of spectrum frames
+				</p>
+			</td>
+		</tr>-->
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FTYPE" target="_self">
+						<b>:FTYPE A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = BIN, TEXT<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the auto-save file type
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:FTYPE?" target="_self">
+						<b>:FTYPE?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the auto-save file type
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:HIDDEN" target="_self">
+						<b>:HIDDen A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the ON/OFF status of the hidden line removal for the runnning spectrum
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:HIDDEN?" target="_self">
+						<b>:HIDDen?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the ON/OFF status of the hidden line removal for the runnning spectrum
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:LOGWIDTH" target="_self">
+						<b>:LOGWIdth A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = WIDE, STANDard<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the size of logic waveforms
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:LOGWIDTH?" target="_self">
+						<b>:LOGWIdth?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the size of logic waveforms
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:OVERLAY" target="_self">
+						<b>:OVERlay A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, AUTO, MANUal<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set waveform overlay
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:OVERLAY?" target="_self">
+						<b>:OVERlay?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query waveform overlay
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:PEAK" target="_self">
+						<b>:PEAK A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, PEAK, MAX<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set peak value display
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:PEAK?" target="_self">
+						<b>:PEAK?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query peak value display
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:RTIME" target="_self">
+						<b>:RTIMe A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set real-time save ON/OFF<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:RTIME?" target="_self">
+						<b>:RTIMe?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the ON/OFF status of real-time save<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:SAMPLE" target="_self">
+						<b>:SAMPle A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 2E-6 to 3<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the sampling period
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:SAMPLE?" target="_self">
+						<b>:SAMPle?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the sampling period
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:SKIP" target="_self">
+						<b>:SKIP A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0, 100, 200, 500, 1000, 2000, 5000, 10000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the number of skipping data points for FFT calculation.
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:SKIP?" target="_self">
+						<b>:SKIP?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the number of skipping data points for FFT calculation.
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:SHOT" target="_self">
+						<b>:SHOT A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 5 to 80000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the recording length
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:SHOT?" target="_self">
+						<b>:SHOT?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the recording length
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:TDIV" target="_self">
+						<b>:TDIV A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 200E-6 to 300<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the timebase
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:TDIV?" target="_self">
+						<b>:TDIV?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the timebase
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:THINOUT" target="_self">
+						<b>:THINout A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 1000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the degree of thinning before storing
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:THINOUT?" target="_self">
+						<b>:THINout?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the degree of thinning before storing
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:TIME" target="_self">
+						<b>:TIME A,B,C,D</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0 to 999 (day)<br>
+					B = 0 to 23  (hour)<br>
+					C = 0 to 59  (min)<br>
+					D = 0 to 59  (sec)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the length of time to record<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:TIME?" target="_self">
+						<b>:TIME?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;,D&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the length of time to record<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:TRACK" target="_self">
+						<b>:TRACk A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = ALL, S1, S2, S3, S4<br>
+					B$ = OFF, ON
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the display of GPS track data<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right06.htm#:TRACK?" target="_self">
+						<b>:TRACk? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the display of GPS track data<br>
+				</p>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

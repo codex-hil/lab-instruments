@@ -1,0 +1,947 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+</head>
+
+<body bgcolor="#E4E7FC">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#441CDB">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="color:white">TRIGger Commands (Set and query triggering)</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:42pt">
+			<td class = "g_p0001">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Command</span>
+				</p>
+			</td>
+			<td class = "g_p0002">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Data<br>(for a query, response data)</span>
+				</p>
+			</td>
+			<td class = "g_p0008">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Explanation</span>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:CH" target="_self">
+						<b>:CH A,B,C$,CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A  = 1 to 4 (module number)<br>
+					B  = 1 to 4 (trigger number)<br>
+					C$ = STARt, STOP (trigger timing)<br>
+					CH$ = CH1_1 to CH4_15, W1_1 to W4_2<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the channels to trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:CH?" target="_self">
+						<b>:CH? A,B,C$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A,B,C$,CH$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the channels to trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:DETECTDATE?" target="_self">
+						<b>:DETECTDate? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;A$,B&lt;NR1&gt;,C&lt;NR1&gt;,D&lt;NR1&gt;<br>
+					A$ = STARt, STOP<br>
+					B = 2000 to 2080&nbsp;[year]<br>
+					C = 1 to 12&nbsp;[month]<br>
+					D = 1 to 31&nbsp;[day]<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query a trigger detection date
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:DETECTTIME?" target="_self">
+						<b>:DETECTTime? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;A$,B&lt;NR1&gt;,C&lt;NR1&gt;,D&lt;NR2&gt;<br>
+					A$ = STARt, STOP<br>
+					B = 0 to 23&nbsp;[hour]<br>
+					C = 0 to 59&nbsp;[minute]<br>
+					D = 0 to 59.999&nbsp;[second]<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query a trigger detection time
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:ENABLE" target="_self">
+						<b>:ENABle A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the trigger function to ON/OFF
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:ENABLE?" target="_self">
+						<b>:ENABle?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the ON/OFF status of the trigger function
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:EXTERNAL" target="_self">
+						<b>:EXTErnal A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+					B$ = OFF, UP, DOWN<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enable/disable external triggering
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:EXTERNAL?" target="_self">
+						<b>:EXTErnal?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query external triggering
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:EXTFILTER" target="_self">
+						<b>:EXTFilter A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Make settings for the external trigger filter
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:EXTFILTER?" target="_self">
+						<b>:EXTFilter?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query settings for the external trigger filter
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:FILTER" target="_self">
+						<b>:FILTer CH$,A$,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, W1_1 to W4_2<br>
+					A$ = STARt, STOP<br>
+					B  = 0 to 1000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set trigger filtering
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:FILTER?" target="_self">
+						<b>:FILTer? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query trigger filtering
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:KIND" target="_self">
+						<b>:KIND CH$,A,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = STARt, STOP<br>
+					B$ = OFF, LEVEl, IN, OUT<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the type of trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:KIND?" target="_self">
+						<b>:KIND? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the type of trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LEVEL" target="_self">
+						<b>:LEVEl CH$,A$,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = STARt, STOP<br>
+					B = trigger level<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the trigger level (for level triggering)
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LEVEL?" target="_self">
+						<b>:LEVEl? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the trigger level (for level triggering)
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LOGAND" target="_self">
+						<b>:LOGAnd CH$,A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = LA to LB, L1 to L4<br>
+					A$ = STARt, STOP<br>
+					B$ = OFF, OR, AND<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the AND/OR logical operator for the logic trigger pattern
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LOGAND?" target="_self">
+						<b>:LOGAnd? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the AND/OR logical operator for the logic trigger pattern
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LOGPAT" target="_self">
+						<b>:LOGPat CH$,A$,&quot;B$&quot;</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = LA to LB, L1 to L4<br>
+					A$ = STARt, STOP<br>
+					B$ = [trigger pattern (X, 0, 1, 2)]<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the pattern for a logic trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LOGPAT?" target="_self">
+						<b>:LOGPat? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,&quot;B$&quot;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the pattern for a logic trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LOWER" target="_self">
+						<b>:LOWEr CH$,A$,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = STARt, STOP<br>
+					B = lower limit level<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the lower threshold of the window-in/out trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:LOWER?" target="_self">
+						<b>:LOWEr? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the lower threshold of the window-in/out trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:MANU" target="_self">
+						<b>:MANU</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					-
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Manually trigger measurement
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:MODE" target="_self">
+						<b>:MODE A$(,B)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = SINGle, REPEat<br>
+					B = 2 to 10000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select trigger repetition mode
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:MODE?" target="_self">
+						<b>:MODE?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$(,B)
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query trigger repetition mode
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:POSTTRIG" target="_self">
+						<b>:POSTtrig A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0 to 100<br>
+					[When using % to make setting]<br>
+					<br>
+					A = 0 to recording length<br>
+					[when using DIV to make settings]
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Make post-trigger settings
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:POSTTRIG?" target="_self">
+						<b>:POSTtrig?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query post-trigger settings
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:PRETRIG" target="_self">
+						<b>:PRETrig A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0 to 100<br>
+					[When using % to make setting]<br>
+					<br>
+					A = recording length<br>
+					[when using DIV to make settings]<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the pre-trigger interval
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:PRETRIG?" target="_self">
+						<b>:PRETrig?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the pre-trigger interval
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:SLOPE" target="_self">
+						<b>:SLOPe CH$,A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = STARt, STOP<br>
+					B$ = UP, DOWN<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the trigger direction (slope)
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:SLOPE?" target="_self">
+						<b>:SLOPe? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B$
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the trigger direction (slope)
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:SOURCE" target="_self">
+						<b>:SOURce A$,B$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = STARt, STOP<br>
+					B$ = OR, AND<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the trigger source AND/OR logical operator
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:SOURCE?" target="_self">
+						<b>:SOURce? A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$,B$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the trigger source AND/OR logical operator
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TIMER" target="_self">
+						<b>:TIMEr A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Enable/disable the timer trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TIMER?" target="_self">
+						<b>:TIMEr?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the timer trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TIMING" target="_self">
+						<b>:TIMIng A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = STARt, STOP, S_S<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set trigger timing start/stop operation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TIMING?" target="_self">
+						<b>:TIMIng?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query trigger timing start/stop operation
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TMINTVL" target="_self">
+						<b>:TMINTvl A,B,C,D</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 0 to 99 (day)<br>
+					B = 0 to 23 (hour)<br>
+					C = 0 to 59 (min)<br>
+					D = 0 to 59 (sec)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the timer trigger interval
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TMINTVL?" target="_self">
+						<b>:TMINTvl?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;,D&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the timer trigger interval
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TYPE" target="_self">
+						<b>:TYPE</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$ = %, DIV<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Select the pre-trigger setting method
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:TYPE?" target="_self">
+						<b>:TYPE?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A$<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the pre-trigger setting method
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:UPPER" target="_self">
+						<b>:UPPEr CH$,A$,B</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = STARt, STOP<br>
+					B = upper limit level<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the upper threshold of the window-in/-out trigger
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right15.htm#:UPPER?" target="_self">
+						<b>:UPPEr? CH$,A$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A$,B&lt;NR3&gt;<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the upper threshold of the window-in/-out trigger
+				</p>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

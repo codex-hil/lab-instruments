@@ -1,0 +1,2004 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+	<style>
+		<!--
+		-->
+	</style>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					MEMory Commands (Read instrument memory)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ADATA?">
+						<span class = "g_HeadTitle"><b>Write or read ASCII data in memory</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:ADATa? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							X1&lt;NR1&gt;,X2&lt;NR1&gt;,X3&lt;NR1&gt;,...<br>
+						</b>
+					</font>
+					A = 1 to 2000<br>
+					Xi = &lt;storage data&gt; <b>(32bit)</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Reads the specified number (A) of data values from the memory pointer (channel and pointer offset)
+					specified and returned by <a href="#:POINT", target="_self">the :MEMory:POINt</a> command.
+					The read pointer is incremented by the number of data values (words/bytes) read.
+					This command cannot be executed while measuring.<br>
+					Refer to the <a href="#:RATIO?", target="_self">:MEMory:RATIo?</a> command description regarding conversion of waveform data to physical values.<br>
+					<br>
+					<table border="0" cellspacing="0" cellpadding="0" width="340" style="border-collapse:collapse;">
+						<tr style="height:15pt">
+							<td width="340" colspan="5" style="border:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">Logic channel (32bit)</span></p>
+							</td>
+						</tr>
+						<tr style="height:40pt">
+							<td width="180" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										bit4(Internal logic channel)<br>
+										bit16(CAN logic channel)
+									</span>
+								</p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">...</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit3</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit2</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit1</span></p>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<table border="0" cellspacing="0" cellpadding="0" width="340" style="border-collapse:collapse;">
+						<tr style="height:15pt">
+							<td width="340" colspan="5" style="border:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">Waveform calculation channel (32bit)</span></p>
+							</td>
+						</tr>
+						<tr style="height:30pt">
+							<td width="340" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										IEEE 754 floating numbers<br>
+										(This value is not a floating number, but an integer.)
+									</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:MEMory:POINt CH1_1,0</b><br>
+						(Selects channel CH1-1 and sets the pointer offset to 0 for storing data in memory.)<br>
+						<br>
+						<b>:MEMory:ADATa? 10</b><br>
+						(Reads 10 ASCII data values from memory.)<br>
+						<br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMory:ADATA 1,2,3,4,5,6,7,8,9,10</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When recording 1000 divisions of 4 Vpp, 1 kHz sine wave data using the 100 mV range,
+					the time required to send the command &quot;:MEMory:ADATa? 200&quot; 500 times is
+					about 2 seconds using a direct USB connection to the PC
+					(running Microsoft Windows XP on a 2.8 GHz i7 CPU and 4 GB RAM).<br>
+					Please note that these values are for reference only,
+					and depend on the actual data transfer speed of the LAN connection.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Providing that;<br>
+						&nbsp;&nbsp; measurement is not taking place,<br>
+						&nbsp;&nbsp; the memory read pointer is below the address of the stored data,<br>
+						&nbsp;&nbsp; the channel is that specified by <a href="#:POINT",target="_self">:MEMory:POINt</a>.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":BDATA?">
+						<span class = "g_HeadTitle"><b>Read stored data as binary code</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:BDATa? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							#0...(binary data)<br>
+						</b>
+					</font>
+					A = 1 to 8000<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns in binary format the specified number (A) of data words stored beginning at the location returned by
+					the <a href="#:POINT", target="_self">:MEMory:POINt</a> command.<br>
+					The read pointer is incremented by the specified number of data double words/bytes.<br>
+					<br>
+					The read data is structured as follows:<br>
+						&nbsp; (1) Initially: &quot;#0&quot; (Indicates binary format)<br>
+						&nbsp; (2) After &quot;#0&quot;, the number of data double words specified by A is returned.<br>
+					<br>
+					<IMG src="Right11/Fig02.gif"><br>
+					<br>
+					<table border="0" cellspacing="0" cellpadding="0" width="340" style="width:90.0mm; margin-left:.8pt;border-collapse:collapse;">
+						<tr style="height:30pt">
+							<td width="70"  colspan="2" style="border-left:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; background:#FF6600">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">top</span></p>
+							</td>
+							<td width="70" colspan="2" style="border-left:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">BYTE 0</span></p>
+							</td>
+							<td width="70" colspan="2" style="border-top:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">BYTE 1</span></p>
+							</td>
+							<td width="70" colspan="2" style="border-top:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">BYTE 2</span></p>
+							</td>
+							<td width="70" colspan="2" style="border-top:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">BYTE 3</span></p>
+							</td>
+						</tr>
+
+						<tr style="height:30pt">
+							<td width="35" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:none;background:#FFFF99">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										#<br>
+										(23H)<br>
+									</span>
+								</p>
+							</td>
+							<td width="35" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:none;background:#FFFF99">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										0<br>
+										(30H)<br>
+									</span>
+								</p>
+							</td>
+							<td width="35" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:none;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border:none;border-bottom:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border:none;border-bottom:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border:none;border-bottom:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+							<td width="35" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">xxxx</span></p>
+							</td>
+						</tr>
+
+						<tr style="height:50pt">
+							<td colspan="2" style="border:solid windowtext 1.0pt;border-top:none; border-right:none; background:white">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">&nbsp;</span></p>
+							</td>
+							<td colspan="8" style="border:solid windowtext 1.0pt;border-top:none ; background:#3366FF">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt;color:white">
+										<br>
+										Analog channel data<br>
+										CH Calc. data<br>
+										Logic channel data<br>
+										Waveform calculation data<br>
+										GPS data<br>
+										(Big endian 32bit)<br>
+										<br>
+									</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br>
+
+					<table border="0" cellspacing="0" cellpadding="0" width="340" style="border-collapse:collapse;">
+						<tr style="height:15pt">
+							<td width="340" colspan="5" style="border:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">Logic channel (Big endian)</span></p>
+							</td>
+						</tr>
+						<tr style="height:40pt">
+							<td width="180" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										bit4(Internal logic channel)<br>
+										bit16(CAN logic channel)
+									</span>
+								</p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">...</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit3</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit2</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit1</span></p>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<table border="0" cellspacing="0" cellpadding="0" width="340" style="border-collapse:collapse;">
+						<tr style="height:15pt">
+							<td width="340" colspan="5" style="border:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">Waveform calculation channel (Big endian)</span></p>
+							</td>
+						</tr>
+						<tr style="height:30pt">
+							<td width="340" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										IEEE 754 floating numbers<br>
+									</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<span style="font-size:9.0pt">(x means 0 or 1.)<br></span>
+					<br>
+					Refer to the <a href="#:RATIO?",target="_self">:MEMory:RATIo?</a> command description regarding conversion of binary data into physical values.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:MEMory:POINt CH1_1,0</b><br>
+						(Selects channel CH1-1 and sets the pointer offset to 0 for the data stored in memory.)<br>
+						<br>
+						<b>:MEMory:BDATa? 10</b><br>
+						(Reads 10 data words in binary format.)<br>
+						<br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:BDATA #0...(binary format)</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Binary data may include delimiter codes such as 0Ah or 0Dh.<br>
+					If the PC software misinterprets such codes as data terminators, the PC will not handle the data correctly,
+					so the PC software should always read the number of words specified by A.<br>
+					<br>
+					When recording 1000 divisions of 4 Vpp, 1 kHz sine wave data using the 100 mV range,
+					the time required to send the command &quot;:MEMory:BDATa? 1000&quot; 100 times is about 2 seconds
+					using a direct USB connection to the PC (running Microsoft Windows XP on a 2.8 GHz i7 CPU and 4 GB RAM).
+					Please note that these values are for reference only, and depend on the actual data transfer speed of the LAN connection.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Providing that<br>
+					&nbsp;&nbsp; measurement is not taking place,<br>
+					&nbsp;&nbsp; the memory read pointer is below the address of the stored data,<br>
+					&nbsp;&nbsp; and stored data is present.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTDATA?">
+						<span class = "g_HeadTitle"><b>Query FFT data</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTData?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					A = x-axis data<br>
+					B = y-axis data<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns FFT calculation results (x- and y-axis values) from the output point specified
+					by <a href="#:FFTPOINT">:MEMory:FFTPOint</a>, as NR3 numerical values.<br>
+					The output point is automatically incremented every time this command is executed.<br>
+					Continuous data is available by executing this command repeatedly.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTPOint 1,100,1<br>
+							:MEMory:FFTData?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTDATA 500E-06,-0.0813E-03</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTFRAME?">
+						<span class = "g_HeadTitle"><b>Query number of the FFT frame data</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTFRame?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 0 to 200<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the number of the FFT frame data.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTFRame?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTFRAME 4</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTMAXPOINT?">
+						<span class = "g_HeadTitle"><b>Query FFT data quantity</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTMaxpoint? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4 (Calculation No.)<br>
+					B = 0 to 10000 (data points)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the quantity of calculated data (B) for the calculation number specified by A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTMaxpoint? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTMAXPOINT 1,4001</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The value of B depends on the selected <a href="Right06.htm#:FFTFUNC">FFT Analysis Mode</a>
+					and the <a href="Right06.htm#:FFTSAMPLE">FFT Calculation Points</a>.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTOver?">
+						<span class = "g_HeadTitle"><b>Query overall FFT value</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTOver? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4 (Calculation No.)<br>
+					B = (Overall value)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the overall FFT value of the calculation number specified by A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTOver? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTOVER 1,0.0612E-03</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					NONE is returned if there is no overall value.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTPEAK?">
+						<span class = "g_HeadTitle"><b>Query FFT peak value data</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTPEak? A,B,C<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							&nbsp;A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;,D&lt;NR3&gt;,E&lt;NR3&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4 (Calculation No.)<br>
+					B = 1 to 10 (Peak value No.)<br>
+					C = 1 to 200 (Frame value No.)<br>
+					D = x-axis data, NONE (if no peak value has been acquired)<br>
+					E = y-axis data, NONE (if no peak value has been acquired)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the peak value for the calculation number specified by A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTPEak? 1,1,1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTPEAK 1,1,1,57.6E+03,-107.60E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns NONE,NONE (= E,E) if no peak value has been acquired.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTPOINT">
+						<span class = "g_HeadTitle"><b>Set or query FFT data output points</b></span>
+					</a><a name = ":FFTPOINT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTPOint A,B(,C)<br>
+							:MEMory:FFTPOint?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4 (Calculation No.)<br>
+					B = 0 to 4000 (Output point)<br>
+					C = 1 to 200 (Frame value No.)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the FFT data output point to the calculation number specified by A.<br>
+					Returns the numerical value of the current FFT data output point.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTPOint 1,100,1<br>
+							:MEMory:FFTPOint?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTPOINT 1,100,1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The value of B depends on the selected <a href="Right06.htm#:FFTFUNC">FFT Analysis Mode</a>
+					and the <a href="Right06.htm#:FFTSAMPLE">FFT Calculation Points</a>.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":FFTTHD?">
+						<span class = "g_HeadTitle"><b>Query THD value</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:FFTTHd? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					A = 1 to 4 (Calculation No.)<br>
+					B = (THD value)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the THD value of the calculation number specified by A.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:FFTTHd? 1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:FFTTHD 1,+12.1483E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					NONE is returned if there is no THD value.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":GETREAL">
+						<span class = "g_HeadTitle"><b>Capture real-time data</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:GETReal<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Causes the instrument to acquire real-time measurement values on all channels.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:GETReal<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":MAXPOINT?">
+						<span class = "g_HeadTitle"><b>Query the amount of data stored</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:MAXPoint?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 0 (no data stored) to (the number of stored data)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the number of data bytes/words stored in memory as a numerical value in NR1 format.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:MEMory:MAXPoint?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:MAXPOINT 2501</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":POINT">
+						<span class = "g_HeadTitle"><b>Set and query the memory read pointer</b></span>
+					</a><a name=":POINT?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:POINt CH$,A<br>
+							:MEMory:POINt?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = 0 to (number of stored data - 1)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the read pointer in instrument memory.<br>
+					Returns the current memory read pointer location as a channel and pointer offset as an NR1 numerical value.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:POINt CH1_1,100<br>
+							:MEMory:POINt?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:POINT CH1_1,100</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					If there is no stored data, the read pointer cannot be set.<br>
+					Argument A can be set only to a value less than that returned by the <a href="#:MAXPOINT?",target="_self">:MEMory:MAXPoint?</a> command.<br>
+					<br>
+					When measuring with the real-time,
+					valid values for A depend on the current waveform display.<br>
+					A shows always the point from the head of stored data.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":RATIO?">
+						<span class = "g_HeadTitle">
+							<b>Query the ratio and offset coefficients for converting stored data into physical values</b>
+						</span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:RATIo? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = Ratio<br>
+					B = Offset<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns coefficients for converting data read with
+					the <a href="#:ADATA?",target="_self">:MEMory:ADATa?</a> command into physical values.<br>
+					<br>
+					The equation used to convert the data into physical values is:<br>
+					(Physical value) = A * (Data) + B<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:MEMory:RATIo? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:RATIO CH1_1,+4.00000E-06,-131.072E-03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Providing that;<br>
+					&nbsp;&nbsp; Analog, pulse, channel calculation and GPS channel.<br>
+					&nbsp;&nbsp; The stored data is present.<br>
+					&nbsp;&nbsp; After measurement.<br>
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":REAL?">
+						<span class = "g_HeadTitle"><b>Read real-time data (measured values)</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:REAL? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = Physical values.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Returns the physical value measured on channel CH$ after acquiring data with
+					the <a href="#:GETREAL",target="_self">:MEMory:GETReal</a> command.<br>
+					<br>
+					<table border="0" cellspacing="0" cellpadding="0" width="340" style="border-collapse:collapse;">
+						<tr style="height:15pt">
+							<td width="340" colspan="5" style="border:solid windowtext 1.0pt; border-top:solid windowtext 1.0pt; background:green">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt;color:white">Logic channel (32bit)</span></p>
+							</td>
+						</tr>
+						<tr style="height:40pt">
+							<td width="180" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center">
+									<span style="font-size:9.0pt">
+										bit4(Internal logic channel)<br>
+										bit16(CAN logic channel)
+									</span>
+								</p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">...</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit3</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit2</span></p>
+							</td>
+							<td width="40" colspan="1" style="border:solid windowtext 1.0pt;background:#CCFFCC">
+								<p class="MsoNormal" align="center"><span style="font-size:9.0pt">bit1</span></p>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:MEMory:GETReal</b><br>
+						(Causes the instrument to acquire real-time measurement values on all channels.)<br>
+						<br>
+						<b>:MEMory:REAL? CH1_1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:REAL CH1_1,+1.05600E-03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					If the <a href="#:GETREAL", target="_self">:MEMory:GETReal</a> command is not executed before this command, returned values are undetermined.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+	<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VDATA">
+						<span class = "g_HeadTitle"><b>Write and read stored data (measured values)</b></span>
+					</a><a name=":VDATA?">
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:MEMory:VDATa? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							X1&lt;NR3&gt;,X2&lt;NR3&gt;,X3&lt;NR3&gt;,...<br>
+						</b>
+					</font>
+					A = 1 to 2000<br>
+					Xi = Physical values<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Reads the number of data objects specified by A from the memory pointer (channel and pointer offset) specified and returned
+					by the <a href="#:POINT", target="_self">:MEMory:POINt</a> command.<br>
+					The read pointer is incremented by the number of data words read.<br>
+					This command cannot be executed while measuring.<br>
+					<br>
+					Scaled values are written and read when scaling is enabled.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:MEMory:POINt CH1_1,0</b><br>
+						(Selects channel CH1-1 and sets the pointer offset to 0 for the stored data.)<br>
+						<br>
+						<b>:MEMory:VDATa? 2</b><br>
+						(Reads two data words from memory.)<br>
+						<br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:MEMORY:VDATA +5.678E-03,+4.321E-03</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					When recording 1000 divisions of 4 Vpp, 1 kHz sine wave data using the 100 mV range,
+					the time required to send the command &quot;:MEMory:VDATa? 200&quot; 200 times is about 2 seconds
+					using a direct Ethernet connection to the PC
+					(running Microsoft Windows XP on a 2.8 GHz i7 CPU and 4 GB RAM).<br>
+					Please note that these values are for reference only, and depend on the actual data transfer speed of the LAN connection.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Providing that;<br>
+						&nbsp;&nbsp; measurement is not taking place.<br>
+						&nbsp;&nbsp; the memory read pointer is below the address of the stored data,<br>
+						&nbsp;&nbsp; the channel is selected by <a href="#:POINT",target="_self">:MEMory:POINt</a><br>
+						&nbsp;&nbsp; and the stored data is present.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+</body>
+</html>

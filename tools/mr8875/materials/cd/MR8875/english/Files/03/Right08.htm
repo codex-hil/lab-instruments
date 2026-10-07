@@ -1,0 +1,2998 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+
+	<style>
+		<!--
+			.m_p1{
+				margin:0mm;
+				font-size:10pt;
+				text-align:center;
+				font-family:"Verdana";
+			}
+
+			.m_td_c1{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#FF0000;
+			}
+
+			.m_td_c2{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#00FF00;
+			}
+
+			.m_td_c3{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#0000FF;
+			}
+
+			.m_td_c4{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#00FFFF;
+			}
+
+			.m_td_c5{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#FF00FF;
+			}
+
+			.m_td_c6{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#FFFF00;
+			}
+
+			.m_td_c7{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#C80000;
+			}
+
+			.m_td_c8{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#00C800;
+			}
+
+			.m_td_c9{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#0000C8;
+			}
+
+			.m_td_c10{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#00C8C8;
+			}
+
+			.m_td_c11{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#C800C8;
+			}
+
+			.m_td_c12{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#C8C800;
+			}
+
+			.m_td_c13{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#A00000;
+			}
+
+			.m_td_c14{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#00A000;
+			}
+
+			.m_td_c15{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#0000A0;
+			}
+
+			.m_td_c16{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#00A0A0;
+			}
+
+			.m_td_c17{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#A000A0;
+			}
+
+			.m_td_c18{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#A0A000;
+			}
+
+			.m_td_c19{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#780000;
+			}
+
+			.m_td_c20{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#007800;
+			}
+
+			.m_td_c21{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#000078;
+			}
+
+			.m_td_c22{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#FFFFFF;
+			}
+
+			.m_td_c23{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#000000;
+			}
+
+			.m_td_c24{
+				width:64;
+				border:solid windowtext 1.0pt;
+				background:#646464;
+			}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					DISPlay Commands (Select or query screen mode, waveform display, etc.)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CHANGE">
+						<span class = "g_HeadTitle"><b>Select or query the display mode</b></span>
+					</a><a name=":CHANGE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:CHANge A$<br>
+							:DISPlay:CHANge?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = WAVE, STATus, CHANalog, CHLOgic, CHPUlse, CHCAlc, CHXY, CHGPs, CHLIst, TRGGeneral, TRGAnalog, TRGLogic, TRGPulse, TGGPs, CALNum, CALWave, CALFft, SYSEnv, SYSTerminal, SYSReset, SYSSet, SYSIf, <!--SYSCustom, -->CANList, FOPEration, FKEY<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Changes the display mode.<br>
+					Returns the current display mode as a text string.<br>
+					<br>
+
+					<b>WAVE</b>&nbsp;&nbsp;(Waveform)<br>
+					<b>STATus</b>&nbsp;&nbsp;(Status)<br>
+					<b>CHANalog</b>&nbsp;&nbsp;(Channel [Analog])<br>
+					<b>CHLOgic</b>&nbsp;&nbsp;(Channel [Logic])<br>
+					<b>CHPUlse</b>&nbsp;&nbsp;(Channel [Pulse])<br>
+					<b>CHCAlc</b>&nbsp;&nbsp;(Channel [CH Calc.])<br>
+					<b>CHXY</b>&nbsp;&nbsp;(Channel [XY])<br>
+					<b>CHGPs</b>&nbsp;&nbsp;(Channel [GPS])<br>
+					<b>CHLIst</b>&nbsp;&nbsp;(Channel [List])<br>
+					<b>TRGGeneral</b>&nbsp;&nbsp;(Trigger [General])<br>
+					<b>TRGAnalog</b>&nbsp;&nbsp;(Trigger [Analog/CH Calc.])<br>
+					<b>TRGLogic</b>&nbsp;&nbsp;(Trigger [Logic])<br>
+					<b>TRGPulse</b>&nbsp;&nbsp;(Trigger [Pulse])<br>
+					<b>TGGPs</b>&nbsp;&nbsp;(Trigger [GPS])<br>
+					<b>CALNum</b>&nbsp;&nbsp;(Calculation [Numeric Calculation])<br>
+					<b>CALWave</b>&nbsp;&nbsp;(Calculation [Waveform Calculation])<br>
+					<b>CALFft</b>&nbsp;&nbsp;(Calculation [FFT Calculation])<br>
+					<b>SYSEnv</b>&nbsp;&nbsp;(System [Environment])<br>
+					<b>SYSTerminal</b>&nbsp;&nbsp;(System [External Terminal])<br>
+					<b>SYSReset</b>&nbsp;&nbsp;(System [Initialize])<br>
+					<b>SYSSet</b>&nbsp;&nbsp;(System [Setting])<br>
+					<b>SYSIf</b>&nbsp;&nbsp;(System [Comm.])<br>
+<!--					<b>SYSCustom</b>&nbsp;&nbsp;(System [Custom])<br>-->
+					<b>CANList</b>&nbsp;&nbsp;(CAN)<br>
+					<b>FOPEration</b>&nbsp;&nbsp;(File [Operation])<br>
+					<b>FKEY</b>&nbsp;&nbsp;(File [SAVE Key])<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:CHANge WAVE<br>
+							:DISPlay:CHANge?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:CHANGE? WAVE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Argument A$ cannot be set while storing data.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					&quot;CALWave&quot; is available in V2.00 or later.<br>
+					&quot;CHGPs&quot; or &quot;TGGPs&quot; is available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":DRAWING">
+						<span class = "g_HeadTitle"><b>Set or query waveform display color</b></span>
+					</a><a name=":DRAWING?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:DRAWing CH$,A$<br>
+							:DISPlay:DRAWing? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, L1_1 to L4_16, W1_1 to W4_2, Z1 to Z8, XY1 to XY8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = OFF, C1 to C24<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the waveform color for analog channel CH$.<br>
+					Returns the waveform color of analog channel CH$ as a text string.<br>
+					When A$ = OFF, the waveform is invisible.<br>
+					<br>
+				</p>
+
+				<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+					<tr style="height:1.0pt">
+						<td class="m_td_c1" valign="top">
+							<p class="m_p1" align="center"><b>C1</b></p>
+						</td>
+						<td class="m_td_c2" valign="top">
+							<p class="m_p1" align="center"><b>C2</b></p>
+						</td>
+						<td class="m_td_c3" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C3</span></b></p>
+						</td>
+						<td class="m_td_c4" valign="top">
+							<p class="m_p1" align="center"><b>C4</b></p>
+						</td>
+						<td class="m_td_c5" valign="top">
+							<p class="m_p1" align="center"><b>C5</b></p>
+						</td>
+						<td class="m_td_c6" valign="top">
+							<p class="m_p1" align="center"><b>C6</b></p>
+						</td>
+					</tr>
+
+					<tr style="height:1.0pt">
+						<td class="m_td_c7" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C7</span></b></p>
+						</td>
+						<td class="m_td_c8" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C8</span></b></p>
+						</td>
+						<td class="m_td_c9" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C9</span></b></p>
+						</td>
+						<td class="m_td_c10" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C10</span></b></p>
+						</td>
+						<td class="m_td_c11" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C11</span></b></p>
+						</td>
+						<td class="m_td_c12" valign="top">
+							<p class="m_p1" align="center"><b>C12</b></p>
+						</td>
+					</tr>
+
+					<tr style="height:1.0pt">
+						<td class="m_td_c13" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C13</span></b></p>
+						</td>
+						<td class="m_td_c14" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C14</span></b></p>
+						</td>
+						<td class="m_td_c15" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C15</span></b></p>
+						</td>
+						<td class="m_td_c16" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C16</span></b></p>
+						</td>
+						<td class="m_td_c17" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C17</span></b></p>
+						</td>
+						<td class="m_td_c18" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C18</span></b></p>
+						</td>
+					</tr>
+
+					<tr style="height:1.0pt">
+						<td class="m_td_c19" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C19</span></b></p>
+						</td>
+						<td class="m_td_c20" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C20</span></b></p>
+						</td>
+						<td class="m_td_c21" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C21</span></b></p>
+						</td>
+						<td class="m_td_c22" valign="top">
+							<p class="m_p1" align="center"><b>C22</b></p>
+						</td>
+						<td class="m_td_c23" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C23</span></b></p>
+						</td>
+						<td class="m_td_c24" valign="top">
+							<p class="m_p1" align="center"><b><span style="color:white">C24</span></b></p>
+						</td>
+					</tr>
+				</table>
+
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:DRAWing CH1_1,C1<br>
+							:DISPlay:DRAWing? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:DRAWING CH1_1,C1</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					F1 to F4, W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":GAUGE">
+						<span class = "g_HeadTitle"><b>Apply or query gauge display for a channel</b></span>
+					</a><a name=":GAUGE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:GAUGe A,CH$<br>
+							:DISPlay:GAUGe? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,CH$<br>
+						</b>
+					</font>
+					A = 1 to 4 (Graph number)<br>
+					CH$ = ALL, CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the on-screen gauge to indicate graph number A and CH$.<br>
+					Returns the current on-screen gauge setting as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:GAUGe 1,CH1_1</b><br>
+						(Applies the gauge of Graph 1 to CH1-1.)<br>
+						<br>
+						<b>:DISPlay:GAUGe? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:GAUGE 1,CH1_1</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Available channels (argument CH$) depend on
+					<a href="Right06.htm#:FORMAT", target="_self">the display format</a>.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":GRAPH">
+						<span class = "g_HeadTitle"><b>Set or query the display graph of a waveform</b></span>
+					</a><a name=":GRAPH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:GRAPh CH$,A<br>
+							:DISPlay:GRAPh? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, XY1 to XY8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = 1 to 4&nbsp;&nbsp;(Graph number)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the screen region [Graph] (A) in which to display waveform [trace] channnel (CH$).<br>
+					Returns the current screen region [Graph] (B) in which waveform [trace] channnel (CH$) is displayed.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:GRAPh CH1_1,2</b><br>
+						(Displays Waveform ch1-1 on Graph 2.)<br>
+						<br>
+						<b>:DISPlay:GRAPh? CH1_1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:GRAPH CH1_1,2</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Available graphs (argument A) depend on <a href="Right06.htm#:FORMAT", target="_self">the display format.</a><br>
+					<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					F1 to F4, W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":INVERT">
+						<span class = "g_HeadTitle"><b>Set or query waveform inverting</b></span>
+					</a><a name = ":INVERT?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:INVErt CH$,A$<br>
+							:DISPlay:INVErt? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for inverting waveforms.<br>
+					The settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:INVErt CH1_1,OFF<br>
+							:DISPlay:INVErt? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:INVERT CH1_1,OFF</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":LOGPOSI">
+						<span class = "g_HeadTitle"><b>Set or query the display position of a logic waveform</b></span>
+					</a><a name=":LOGPOSI?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:LOGPosi CH$,A<br>
+							:DISPlay:LOGPosi? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = LA to LB, L1 to L4<br>
+					A = 1 to 8<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the display position of logic waveform CH$.<br>
+					Returns the current display position of logic waveform CH$ as a numerical value in NR1 format.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:LOGPosi LA,3<br>
+							:DISPlay:LOGPosi? LA<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:LOGPOSI LA,3</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":POSITION">
+						<span class = "g_HeadTitle"><b>Set or query input channel zero position</b></span>
+					</a><a name=":POSITION?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:POSItion CH$,A<br>
+							:DISPlay:POSItion? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR1&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2<br>
+					A = -10000 to +10000&nbsp;<sup><span style="font-size:10pt">(note)</span></sup><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the (vertical axis) zero position for the channel CH$ waveform on the display.<br>
+					Returns the current zero position for the channel CH$ waveform.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:POSItion CH1_1,50<br>
+							:DISPlay:POSItion? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:POSITION CH1_1,50</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The effect of argument A depends on <a href="Right08.htm#:YMAG", target="_self">the display amplitude magnification factor.</a><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":SHEET">
+						<span class = "g_HeadTitle"><b>Select or query the displayed sheet</b></span>
+					</a><a name=":SHEET?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:SHEEt A$<br>
+							:DISPlay:SHEEt?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = ALL, S1, S2, S3, S4<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the sheet to display.<br>
+					Returns the currently displayed sheet.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:SHEEt S1<br>
+							:DISPlay:SHEEt?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:SHEET S1</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":STCH">
+						<span class = "g_HeadTitle"><b>Set or query sheet display</b></span>
+					</a><a name = ":STCH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:STCH CH$,A$<br>
+							:DISPlay:STCH? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, W1_1 to W4_2, Z1 to Z8, XY1 to XY8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = S1, S2, S3, S4<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes settings for sheet display.<br>
+					The settings will be returned as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:STCH CH1_1,S1<br>
+							:DISPlay:STCH? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:STCH CH1_1,S1</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2, Z1 to Z8 or F1 to F4 are available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":UPDATE">
+						<span class = "g_HeadTitle"><b>Enable/disable or query display updating</b></span>
+					</a><a name=":UPDATE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:UPDAte A$<br>
+							:DISPlay:UPDAte?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = TRUE, FALSE<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables display updating.<br>
+					Returns the current display updating state.<br>
+					<br>
+					When enabled (A$ = TRUE), the display updates every time a command is sent.<br>
+					<br>
+					<b>TRUE</b>&nbsp;&nbsp;(Update the display.)<br>
+					<b>FALSE</b>&nbsp;&nbsp;(Do not update the display.)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:UPDAte FALSE</b><br>
+						(The screen does not update after this command is sent.)<br>
+						<br>
+						<b>:DISPlay:UPDAte?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:UPDATE FALSE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+					</span>
+
+					<span style="color:#008040">
+						<b>
+							:CONFigure:TDIV 1<br>
+							:CONFigure:SHOT 50<br>
+							&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;<br>
+						</b>
+						(Sets some parameters, but changes are not reflected on the screen.)<br>
+						<br>
+						<b>:DISPlay:UPDAte TRUE</b><br>
+						(After receiving this command, all parameters on the screen are updated.)<br>
+						<br>
+						<b>:DISPlay:UPDAte?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:UPDATE TRUE</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					The response speed of the instrument when receiving many commands can be improved by setting A$ to FALSE.
+					However, attention to the instrument settings is still necessary when the display is not being updated,
+					because parameters are changed by some commands.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VARIABLE">
+						<span class = "g_HeadTitle"><b>Enable/disable or query the variable gain function</b></span>
+					</a><a name=":VARIABLE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:VARIable CH$,A$<br>
+							:DISPlay:VARIable? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8<br>
+					A$ = OFF, ON<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Enables and disables the variable gain function for channel CH$.<br>
+					Returns the current on/off state of the variable gain function for channel CH$ as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:VARIable CH1_1,ON<br>
+							:DISPlay:VARIable? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:VARIABLE CH1_1,ON</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VARIUPLOW">
+						<span class = "g_HeadTitle"><b>Set or query the upper and lower limit settings for the variable function</b></span>
+					</a><a name = ":VARIUPLOW?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:VARIUplow CH$,A,B<br>
+							:DISPlay:VARIUplow? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = &lt;Upper limit&gt;<br>
+					B = &lt;Lower Limit&gt;<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Makes the upper and lower limit settings for the variable function for the channel specified by CH$.<br>
+					The upper and lower limits will be returned as an NR3 number.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:VARIUplow CH1_1,100,-100<br>
+							:DISPlay:VARIUplow? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:VARIUPLOW CH1_1,+100.000E+00,-100.000E+00</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VERNIER">
+						<span class = "g_HeadTitle"><b>Set or query the vernier function</b></span>
+					</a><a name=":VERNIER?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:VERNier CH$,A<br>
+							:DISPlay:VERNier? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A&lt;NR2&gt;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15<br>
+					A = 50.0 to 200.0<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies the vernier value [%] for channel CH$.<br>
+					Returns the current setting of the vernier value [%] for channel CH$.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:VERNier CH1_1,100.0<br>
+							:DISPlay:VERNier? CH1_1<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:VERNIER CH1_1,100.0</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":VIEW">
+						<span class = "g_HeadTitle"><b>Select the starting point for the waveform trace display</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:VIEW A$(,B)<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal"></p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+						</b>
+					</font>
+					A$ = A, B, C, D, TRIGer, PTRIg, SEARch, TOP, END, POINt<br>
+					B = 0 to storage position (storage data number - 1) [A$ = POINt]<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects the starting point for the waveform trace display.<br>
+					<br>
+					<b>A</b>&nbsp;&nbsp;(Cursor A position)<br>
+					<b>B</b>&nbsp;&nbsp;(Cursor B position)<br>
+					<b>C</b>&nbsp;&nbsp;(Cursor C position)<br>
+					<b>D</b>&nbsp;&nbsp;(Cursor D position)<br>
+					<b>TRIGer</b>&nbsp;&nbsp;(Start trigger position)<br>
+					<b>PTRIg</b>&nbsp;&nbsp;(Stop trigger position)<br>
+					<b>SEARch</b>&nbsp;&nbsp;(Search position)<br>
+					<b>TOP</b>&nbsp;&nbsp;(Beginning of the waveform)<br>
+					<b>END</b>&nbsp;&nbsp;(End of the waveform)<br>
+					<b>POINt</b>&nbsp;&nbsp;(Stored position)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:VIEW POINt,300<br>
+						</b>
+					</span>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					PTRIg is available in V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":XAXIS">
+						<span class = "g_HeadTitle"><b>Assign or query the x-axis channel for an X-Y waveform</b></span>
+					</a><a name=":XAXIS?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:XAXIs A,CH$<br>
+							:DISPlay:XAXIs? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,CH$<br>
+						</b>
+					</font>
+					A = 1 to 8&nbsp;&nbsp;(Waveform trace number)<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Assigns the x-axis channel for X-Y waveform trace A.<br>
+					Returns the x-axis channel of X-Y waveform trace A as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:XAXIs 1,CH1_2</b><br>
+						(Assigns CH1-2 as the x-axis for waveform trace 1.)<br>
+						<br>
+						<b>:DISPlay:XAXIs? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:XAXIS 1,CH1_2</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":XMAG">
+						<span class = "g_HeadTitle"><b>Set or query time axis magnification/compression</b></span>
+					</a><a name=":XMAG?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:XMAG A$<br>
+							:DISPlay:XMAG?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = X10, X4, X2, X1, X1_2, X1_5, X1_10, X1_20, X1_50, X1_100, X1_200, X1_500, X1_1000, X1_2000, X1_5000, X1_10000, X1_20000, X1_50000<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the time axis magnification according to text string A$.<br>
+					Returns the time axis magnification factor as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:XMAG X1_10</b><br>
+						(Sets the compression ratio of the time axis to 1/10.)<br>
+						<br>
+						<b>:DISPlay:XMAG?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:XMAG X1_10</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":XYAREA">
+						<span class = "g_HeadTitle"><b>Select or query area (interval) setting for X-Y waveforms</b></span>
+					</a><a name=":XYAREA?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:XYARea A$,B$<br>
+							:DISPlay:XYARea? A$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A$,B$<br>
+						</b>
+					</font>
+					A$ = ALL, S1, S2, S3, S4<br>
+					B$ = WHOLe, A_B, C_D<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Selects whether X-Y waveforms are generated from the whole waveform, or from just the portion (area) between the A/B cursors.<br>
+					Returns the current selection of whether X-Y waveforms are generated from the whole waveform or from just the specified portion.<br>
+					<br>
+					<b>WHOLe</b><br>
+					<b>A_B</b>&nbsp;&nbsp;(between A/B cursors)<br>
+					<b>C_D</b>&nbsp;&nbsp;(between C/D cursors)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:XYARea ALL,A_B<br>
+							:DISPlay:XYARea?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:XYAREA ALL,A_B</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+<!--
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":XYCLR">
+						<span class = "g_HeadTitle"><b>XY合成の画面クリアの設定と問合せ</b></span>
+					</a><a name=":XYCLR?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:XYCLr A$<br>
+							:DISPlay:XYCLr?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					XY波形合成の画面クリアのON/OFFの設定をします。<br>
+					XY波形合成の画面クリアのON/OFF設定を文字データで返します。<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:DISPlay:XYCLr OFF<br>
+							:DISPlay:XYCLr?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:XYCLR OFF</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+-->
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":XYGAUGE">
+						<span class = "g_HeadTitle"><b>Set or query the XY waveform gauge</b></span>
+					</a><a name = ":XYGAUGE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:XYGAuge A,B<br>
+							:DISPlay:XYGAuge? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+						</b>
+					</font>
+					A = 1 to 2&nbsp;&nbsp;(Graph No.)<br>
+					B = 1 to 8&nbsp;&nbsp;(XY Waveform No.)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Displays a gauge for specified XY waveform B on the graph specified by A.<br>
+					Returns the XY waveform for which the gauge is currently displayed on the graph specified by A, as an NR1 numerical value.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:XYGAuge 1,3</b><br>
+						(Displays a gauge for XY waveform 3 on Graph No.1.)<br>
+						<br>
+						<b>:DISPlay:XYGAuge? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:XYGAUGE 1,3</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>-
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					when an XY waveform is displayed<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":YAXIS">
+						<span class = "g_HeadTitle"><b>Assign or query the y-axis channel for an X-Y waveform</b></span>
+					</a><a name=":YAXIS?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:YAXIs A,CH$<br>
+							:DISPlay:YAXIs? A<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							A&lt;NR1&gt;,CH$<br>
+						</b>
+					</font>
+					A = 1 to 8&nbsp;&nbsp;(Waveform trace number)<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Assigns the y-axis channel for X-Y waveform trace A.<br>
+					Returns the y-axis channel of X-Y waveform trace A as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:YAXIs 1,CH1_2</b><br>
+						(Assigns CH1-2 as the y-axis for waveform trace 1.)<br>
+						<br>
+						<b>:DISPlay:YAXIs? 1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:YAXIS 1,CH1_2</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":YMAG">
+						<span class = "g_HeadTitle"><b>Set or query voltage axis magnification/compression</b></span>
+					</a><a name=":YMAG?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:YMAG CH$,A$<br>
+							:DISPlay:YMAG? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,A$<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2<br>
+					A$ = X1_10, X1_5, X1_2, X1, X2, X5, X10, X20, X50, X100<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the voltage axis magnification for channel CH$ according to text string A$.<br>
+					Returns the voltage axis magnification factor on channel CH$ as a text string.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<br>
+						<b>:DISPlay:YMAG CH1_1,X2</b><br>
+						Sets the magnification ratio of the voltage axis for channel CH1-1 to 2X.<br>
+						<br>
+						<b>:DISPlay:YMAG? CH1_1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:YMAG CH1_1,X2</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					W1_1 to W4_2 is available in V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ZOOM">
+						<span class = "g_HeadTitle"><b>Enable/disable or query display zooming</b></span>
+					</a><a name = ":ZOOM?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:ZOOM A$<br>
+							:DISPlay:ZOOM?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = OFF, ON<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Enables and disables the zoom function.<br>
+					Returns the current on/off state of the zoom function as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<span style="color:#008040">
+						<b>
+						:DISPlay:ZOOM ON<br>
+						:DISPlay:ZOOM?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:ZOOM ON</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":ZOOMMAG">
+						<span class = "g_HeadTitle"><b>Set or query zoom magnification</b></span>
+					</a><a name = ":ZOOMMAG?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:DISPlay:ZOOMMag A$<br>
+							:DISPlay:ZOOMMag?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<font color="#0000cc">
+						<b>
+							A$<br>
+						</b>
+					</font>
+					A$ = X10, X4, X2, X1, X1_2, X1_5, X1_10, X1_20, X1_50, X1_100, X1_200, X1_500, X1_1000, X1_2000, X1_5000, X1_10000, X1_20000<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal" style="margin-bottom:12pt">
+					<br>
+					Sets the time-axis magnification for the lower screen when the zoom function is enabled.<br>
+					Returns the time-axis magnification for the lower screen when the zoom function is enabled, as a text string.<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<span style="color:#008040">
+						<b>:DISPlay:ZOOM ON</b><br>
+						(Enables the zoom function.)<br>
+						<br>
+						<b>:DISPlay:ZOOMMag X1_100</b><br>
+						(Sets zoom compression of the time axis on the lower screen to 1/100.)<br>
+						<br>
+						<b>:DISPlay:ZOOMMag?</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:DISPLAY:ZOOMMAG X1_100</b>&nbsp;&nbsp;(when headers are enabled)<br><br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					V2.00 or later.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+</body>
+</html>

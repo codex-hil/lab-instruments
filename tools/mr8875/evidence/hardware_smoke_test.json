@@ -1,0 +1,18 @@
+{
+  "timestamp": 1791380265.3510232,
+  "no_inputs": true,
+  "physical_accuracy_validated": false,
+  "waveform_session": "20261007-143745-17d914",
+  "points": 501,
+  "channel_config_roundtrip": true,
+  "acquisition_completed": true,
+  "csv_validated": true,
+  "initial_settings": {
+    ":CONFigure:SAMPle?": "+2E-06",
+    ":CONFigure:SHOT?": "25",
+    ":TRIGger:MODE?": "REPEAT",
+    ":TRIGger:ENABle?": "OFF",
+    ":CONFigure:RTIMe?": "OFF",
+    ":CONFigure:ATSAve?": "OFF,SD"
+  }
+}

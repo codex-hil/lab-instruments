@@ -1,0 +1,3028 @@
+MR8904
+                                                          Instruction Manual
+
+
+CAN UNIT
+
+
+
+
+                                           Check for the latest edition and
+                                           other language versions.
+
+
+
+
+                                                                              EN
+Oct. 2025 Revised edition 4                                           [600369064]
+MR8904A981-04
+
+
+                              HIOKI MR8904A981-04
+HIOKI MR8904A981-04
+                                                                                                                                                        i
+                                                                                                                                         Contents
+
+
+
+                                                           Contents
+Introduction .................................................. 1
+Confirming Package Contents .................... 1                         Chapter 5 Settings                                                      23
+Safety Notes.................................................. 2
+Usage Notes.................................................. 4            5.1     Launching and Exiting the Software
+                                                                                   ............................................................23
+                                                                                   • To connect a Memory HiCorder after
+                                                                                     launching the MR8904 CAN Editor ............... 24
+Chapter 1 Product Overview 7
+                                                                           5.2     Screen Types ....................................25
+1.1      Features .............................................. 7
+                                                                           5.3     Creating a CAN Definition Data File 26
+                                                                                   • How to count the bit position .........................28
+
+                                                                                   • Calculating the start bit (data start position) ..28
+Chapter 2 Names and
+                                                                                   • Byte order ......................................................29
+Functions of Parts                                                   9             • To read a saved CAN definition data file .......29
+
+                                                                                   • To load an existing CANdb file ...................... 30
+
+                                                                                   • To set a password when opening a saved
+                                                                                     CAN definition data file ..................................30
+Chapter 3 Connections                                             11
+                                                                                   • To delete, edit, or duplicate registered
+3.1      Installing and Removing the MR8904                                          CAN definition data .......................................30
+         into and from a Memory HiCorder .. 11                             5.4     Creating Condition Settings Files ...34
+3.2      Connecting the Unit to the Measure-                                      Loading a CAN definition data file ............ 34
+         ment Target ...................................... 12
+                                                                                   • To edit the [CAN Definition Data List] ............35
+3.3      Connecting the Unit to a PC ........... 14                               Registering CAN definitions (creating an
+       Installing the USB driver ...........................14                    MR8904 register list) ................................ 36
+
+                                                                                   • To edit the [MR8904 Register List] ................37
+       Connecting the Memory HiCorder and PC 17
+                                                                                  Setting CAN communications conditions . 38
+       Uninstalling the USB Driver ...................... 19
+                                                                                  Allocating channels (Creating MR8904
+                                                                                   analog/logic assign lists) .......................... 40
+
+                                                                                   • What is an ID trigger?.................................... 41
+Chapter 4 Preparing the
+                                                                                   • Deleting data from an assign list ...................41
+MR8904 CAN Editor                                                 21
+                                                                                  Configuring transmission
+4.1      Operating Environment ................... 21                              (creating an MR8904 Send list) ............... 42
+
+                                                                                   • To edit the [MR8904 Send List] .....................42
+4.2      Installing the MR8904 CAN Editor .. 21
+                                                                                  Saving a list
+4.3      Uninstalling the MR8904 CAN Editor                                        (saving a condition settings file) ............... 44
+          ........................................................... 22
+                                                                                   • To load a previously saved condition
+                                                                                     settings file ....................................................44
+
+
+
+
+ MR8904A981-04                                          HIOKI MR8904A981-04
+ii
+Contents
+
+5.5      Printing a Condition Settings File ...45
+
+5.6      Sending and Receiving Condition                                  Chapter 8 Maintenance and
+         Settings .............................................46
+                                                                          Service                   63
+       Sending condition settings ....................... 46
+                                                                          8.1   Troubleshooting .............................. 63
+       Receiving condition settings .................... 47
+                                                                          8.2   Cleaning ............................................ 64
+5.7      Window Menu Commands ...............48
+       Launch window ........................................ 48
+
+       CAN Definition Data File Settings window 49
+
+       Condition Settings window ....................... 50
+
+
+
+
+Chapter 6 Configuring
+Settings with the Memory
+HiCorder                                                         51
+6.1      Checking and Editing Settings .......51
+
+6.2      Checking Analog Channel Allocation
+         ............................................................52
+
+6.3      Checking Logic Channel Allocation 54
+
+6.4      Setting the Transmission Timing ....55
+
+
+
+
+Chapter 7 Specifications                                         57
+7.1      Model MR8904 Specifications .........57
+
+7.2      Model 9713-01 CAN Cable
+         Specifications (Terminates in Bare
+         Wires on One End) ...........................58
+
+7.3      Model 9713-02 CAN Cable
+         Specifications (for Onboard
+         Vehicle Connectors) .........................59
+
+7.4      MR8904 CAN Editor General
+         Specifications ...................................60
+
+
+
+
+                                                                HIOKI MR8904A981-04
+                                                                                                                  1
+                                                                                                     Introduction
+
+
+
+Introduction
+  Thank you for purchasing the Hioki Model MR8904 CAN Unit. To obtain maximum performance from the
+  MR8904, please read this manual first, and keep it handy for future reference.
+
+
+Information on download site
+For details on the product application, the updatefile for the instrument, and the
+instruction manual, please check Hioki’s website:
+https://cloud.gennect.net/dl
+An ISO file is a CD or DVD image file. When double-clicked, it will be recognized as a
+drive and become available for use.
+
+
+
+Product registration
+Register your product in order to receive important product information.
+https://www.hioki.com/global/support/myhioki/registration/
+
+
+
+
+              Registered trademarks
+              • Windows is trademark of the Microsoft group of companies.
+              • CANdb is a registered trademark of Vector Infomatik in Germany.
+
+
+
+Confirming Package Contents
+  When you receive the MR8904, inspect it carefully to ensure that no damage occurred during shipping. In
+  particular, check the accessories and connectors. If damage is evident, or if it fails to operate according to
+  the specifications, contact your dealer or Hioki representative.
+
+
+  Options
+  The optional equipment listed below is available for the instrument. To purchase anyoptional equipment,
+  please contact your authorized Hioki distributor or reseller. Please note that optionalequipment offerings
+  are subject to change without advance notice. For the latest information, check Hioki’swebsite.
+
+               Model 9713-01 CAN Cable
+
+
+
+
+              (No connector on one end; approx. 2 m)
+
+
+               Model 9713-02 CAN Cable
+
+
+
+
+              (For vehicle equipment connectors; approx. 2 m; made to order; check specifications and availability)
+
+
+
+
+                                         HIOKI MR8904A981-04
+2
+Safety Notes
+
+
+
+ Safety Notes
+    This manual contains information and warnings essential for safe operation of the MR8904 and for main-
+    taining it in safe operating condition. Before using it, be sure to carefully read the following safety precau-
+    tions.
+
+
+                 This MR8904 is designed to comply with IEC 61010 Safety Standards, and has been
+                 thoroughly tested for safety prior to shipment. However, mishandling during use
+                 could result in injury or death, as well as damage to the MR8904. Using the MR8904 in
+                 a way not described in this manual may negate the provided safety features.
+                 Be certain that you understand the instructions and precautions in the manual before
+                 use. We disclaim any responsibility for accidents or injuries not resulting directly
+                 from MR8904 defects.
+
+
+
+                Safety Symbols
+
+                                     In the manual, the       symbol indicates particularly important information that
+                                     the user should read before using the MR8904.
+                                     The      symbol printed on the MR8904 indicates that the user should refer to a
+                                     corresponding topic in the manual (marked with the         symbol) before using
+                                     the relevant function.
+
+
+
+                Hazard Labeling
+                The following symbols in this manual indicate the relative importance of cautions and warn-
+                ings.
+
+
+                                     Indicates that incorrect operation presents an extreme hazard that could result in
+                                     serious injury or death to the user.
+
+
+                                     Indicates that incorrect operation presents a significant hazard that could result
+                                     in serious injury or death to the user.
+
+
+                                     Indicates that incorrect operation presents a possibility of injury to the user or
+                                     damage to the MR8904.
+
+                                     Indicates advisory items related to performance or correct operation of the
+                                     MR8904.
+
+
+
+                Symbols for Various Standards
+
+
+                                     Indicates that the product complies with Korean regulations.
+                                     Declarer: HIOKI KOREA CO., LTD.
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                               3
+                                                                                  Safety Notes
+
+
+
+Notation
+• Unless otherwise specified, “Windows” represents Windows XP, Windows Vista, Windows 7,
+  or Windows 8.
+• Menus, commands, dialogs, buttons in a dialog, and other names on the screen and the
+  keys are indicated in brackets.
+        (p. )      Indicates the location of reference information.
+
+
+                  Indicates quick references for operation and remedies for troubleshooting.
+
+
+
+
+Mouse action terminology
+
+Click            Press and quickly release the left button of the mouse.
+
+Right-click      Press and quickly release the right button of the mouse.
+
+Double click     Quickly click the left button of the mouse twice.
+                 While holding down the left button of the mouse, move the mouse and then
+Drag
+                 release the left button to deposit the chosen item in the desired position.
+Activate         Click on a window on the screen to activate that window.
+
+
+
+
+                       HIOKI MR8904A981-04
+4
+Usage Notes
+
+
+
+ Usage Notes
+    Follow these precautions to ensure safe operation and to obtain the full benefits of the various functions.
+    Use of the instrument should confirm not only to its specifications, but also to the specifications of all
+    accessories, options, and other equipment in use.
+
+
+               Operating temperature and humidity: As per Memory HiCorder specifications
+               Storing temperature and humidity:
+                Temperature: -20°C to 60°C (-4 to 140°F)
+               Humidity    : -20°C to 40°C (-4 to 104°F) 80%RH or less (non-condensating)
+                            40°C to 45°C (104 to 113°F) 60%RH or less (non-condensating)
+                            45°C to 60°C (113 to 140°F) 50%RH or less (non-condensating)
+
+                Avoid the following locations that could cause an accident or damage to
+                the instrument.
+                                   Exposed to direct sun-                  In the presence of cor-
+                                   light                                   rosive or explosive gas-
+                                   Exposed to high tem-                    es
+                                   perature
+                                                                           Exposed to high levels
+                                   Exposed to water, oil,                  of particulate dust
+                                   other chemicals, or
+                                   solvents
+                                   Exposed to high hu-
+                                   midity or condensa-
+                                   tion
+
+
+
+
+                                                HIOKI MR8904A981-04
+                                                                                       5
+                                                                        Usage Notes
+
+
+
+When Installing and Removing the MR8904 into and from the Memory
+HiCorder
+
+• To avoid electric shock accident, before removing or replacing an MR8904, confirm
+  that the instrument is turned off and that the power cord and connection cables are
+  disconnected. The mounting screws must be firmly tightened or the MR8904 and
+  the Memory HiCorder may not perform to specifications, or may even fail.
+• To avoid the danger of electric shock, never operate the Memory HiCorder with an
+  input module removed. To use the Memory HiCorder after removing an input mod-
+  ule, install a blank panel over the opening of the removed module.
+
+
+
+
+                          Blank panel
+
+
+
+
+Measurements made without a blank panel installed may fail to meet specifications
+because of temperature instability within the input modules.
+
+See: "3.1 Installing and Removing the MR8904 into and from a Memory HiCorder" (p.11)
+
+
+
+
+                       HIOKI MR8904A981-04
+6
+Usage Notes
+
+
+
+              When Connecting the MR8904 and the Object under Measurement
+
+              This device is designed to collect messages being transferred on the CAN bus and to
+              send messages to the CAN bus. Do not connect it to anything other than a CAN bus.
+              In addition to damaging the Memory HiCorder, CAN Unit, and measurement target,
+              doing so may cause bodily injury.
+
+
+              Use of the CAN Unit may affect the operation of the CAN bus as well as systems con-
+              nected to the CAN bus. The resulting operation may cause bodily injury or property
+              damage. Verify how CAN Unit use, both proper and inadvertent, may affect associ-
+              ated systems before use.
+
+
+              • When connecting the MR8904 to a CAN bus, exercise care not to connect the power sup-
+                ply and ground lines backwards. Doing so may damage the MR8904 and measurement
+                target.
+              • When measuring low-speed CAN or single-wire CAN buses, the Memory HiCorder
+                ground and measurement cable ground lines are not isolated. Wire the system so that no
+                potential difference occurs between the ground lines. Failure to do so may damage the
+                Memory HiCorder, CAN Unit, and measurement target.
+              • When connecting the CAN unit to a low-speed CAN or single-wire CAN bus, power must
+                be supplied form an external source. Since the Memory HiCorder’s ground and measure-
+                ment cable ground lines are not isolated in this configuration, be sure to provide power
+                from a circuit with the same ground. Failure to do so may damage the Memory HiCorder,
+                CAN Unit, and measurement target.
+
+              See: "3.2 Connecting the Unit to the Measurement Target" (p.12)
+
+              Transport and Handling
+
+              To avoid damage to the MR8904, protect it from physical shock when transporting and han-
+              dling. Be especially careful to avoid physical shock from dropping.
+
+              This device may cause interference if used in residential areas. Such use must be avoided
+              unless the user takes special measures to reduce electromagnetic emissions to prevent inter-
+              ference to the reception of radio and television broadcasts.
+
+
+              Before Use
+              Before using the MR8904 for the first time, verify that it operates normally to ensure that no
+              damage occurred during storage or shipping. If you find any damage, contact your dealer or
+              Hioki representative.
+
+              Before using the MR8904, make sure that the insulation on the cables is undamaged
+              and that no bare conductors are improperly exposed. Using the product in such con-
+              ditions could cause an electric shock, so contact your dealer or Hioki representative
+              for repair.
+
+
+
+
+                                             HIOKI MR8904A981-04
+                                                                                                     7
+                                                                                         1.1 Features
+
+
+
+
+ Product Overview Chapter 1
+ The MR8904 is an input module for Memory HiCorder that captures necessary data from CAN bus sig-
+ naling and transfers analog or logic signals to a Memory HiCorder as waveform data.
+ • When you connect the Memory HiCorder to a PC with a USB cable, you can configure the MR8904
+  from the PC with the MR8904 CAN Editor application The application software can be downloaded
+  from our website.
+   See:"Information on download site" (p.1)
+ • Up to 200 CAN definitions can be registered.
+ The MR8904 is a Memory HiCorder option. It should only be used when installed in a Memory HiCorder.
+ Supported models: MR8875
+
+
+1.1      Features
+
+            Extensive number of output channels
+            The MR8904 provides an extensive number of output channels, including 15 analog channels
+            and a 16-bit logic channel.
+
+
+            Two independent input ports
+            The device’s independent CAN1 and CAN2 ports allow it to be connected to different net-
+            works with different CAN bus types or baud rates.
+
+
+            Support for three types of CAN bus
+            A single MR8904 provides support for three types of CAN bus: high-speed CAN, low-speed
+            CAN, and single-wire CAN.
+
+
+            Automatic baud rate configuration
+            The MR8904 monitors the CAN bus and automatically configures the baud rate accordingly,
+            eliminating the need to make troublesome settings (12 baud rates are supported: 10k, 20k,
+            33.3k, 50k, 62.5k, 83.3k, 100k, 125k, 250k, 500k, 800k, and 1 Mbps). The baud rate can also
+            be set manually.
+
+
+            PC-accessible advanced settings
+            Advanced settings concerning data captured from the CAN bus can be configured with the
+            MR8904 CAN Editor, an application featuring exceptional usability.
+
+
+            Real-time waveform observation
+            The MR8904 converts CAN signals into analog and logic data in real time, allowing signals to
+            be observed as waveforms on the Memory HiCorder.
+
+
+
+                                     HIOKI MR8904A981-04
+8
+1.1 Features
+
+
+
+               Support for mixed recording
+               Used in combination with other Memory HiCorder optional input modules, the MR8904 can be
+               used to implement mixed recording of sensor data and control signals on a CAN bus as well
+               as signals that cannot be acquired on a CAN bus.
+
+
+               Ability to send data to the CAN bus
+               The MR8904 can send ACK responses to CAN messages as well as CAN messages them-
+               selves, allowing it to be used in simple simulations.
+
+
+               Use of CANdb files
+               The MR8904 can use Vector’s CAN communications database files. If you already have a
+               CANdb file, there is no need to create new CAN definitions.
+
+
+
+
+                                               HIOKI MR8904A981-04
+                                                                                                 9
+
+
+Names and
+Functions of PartsChapter 2
+
+                 CAN input port 1 (left) and 2 (right)
+                 CAN signal input terminals. CAN1 and CAN2 are independent and can be
+                 connected to different networks.
+
+
+
+
+CAN LED1                                             CAN LED2
+• Turns green when a CAN message allo-               • Turns green when a CAN message allocated
+  cated to the port 1 output channel is input.         to the port 2 output channel is input.
+• Turns red when port 1 experiences an error.        • Turns red when port 2 experiences an error.
+
+
+
+
+           When an error is encountered, the port in question will enter ACK OFF mode, making it
+           unable to send messages or issue ACK responses.
+           The error state will return to normal after measurement completes.
+           When a port enters an error state, verify that the wiring and CAN communications condi-
+           tions are correct.
+
+
+
+
+                                   HIOKI MR8904A981-04
+10
+
+
+
+
+     HIOKI MR8904A981-04
+                                                                                                11
+                 3.1 Installing and Removing the MR8904 into and from a Memory HiCorder
+
+
+
+
+ Connections                                               Chapter 3
+3.1      Installing and Removing the MR8904 into
+         and from a Memory HiCorder
+ Before connecting the device, be sure to read "When Installing and Removing the MR8904 into and from
+ the Memory HiCorder" (p.5), which describes how to install a newly purchased MR8904 into a Memory
+ HiCorder and how to switch between it and other input modules.
+
+
+ (Example: MR8875)
+ Required items: Phillips head screwdriver (No.1)
+
+
+
+                                                1 Turn the Memory HiCorder POWER switch
+                              MR8904
+                                                    off and unplug the AC adapter and any
+                                                    measurement cords.
+                                 Grip
+                                                2 With attention to the orientation of the
+                                                    MR8904, insert it firmly all the way in.
+
+      Grip
+                        Mounting
+                                                3 Using the Phillips screwdriver, tighten the
+                        screws
+                                                    two MR8904 mounting screws.
+
+                                                    To remove the MR8904, turn off the Memory
+                                                    HiCorder, disconnect any cords that are connected
+                                                    to the MR8904, and remove the device by revers-
+                                                    ing the procedure described above.
+
+
+
+
+                                    HIOKI MR8904A981-04
+12
+3.2 Connecting the Unit to the Measurement Target
+
+
+
+ 3.2         Connecting the Unit to the Measurement
+             Target
+   Before connecting the unit, be sure to read "When Connecting the MR8904 and the Object under Mea-
+   surement" (p.6). Then connect the MR8904 to the measurement target with a CAN cable.
+
+
+                   Example: Connecting the unit with the 9713-01
+   Required items: Model 9713-01 CAN Cable, Phillips head screwdriver (No.1)
+
+
+
+                                                         1 Connect the CAN cable to one of
+       Top
+
+                                                              the MR8904 CAN Unit’s ports.
+                                                              Take care to orient the connector
+
+            1
+                                                              properly. Tighten the fixing screw
+                   Connector
+                                                              with a Phillips head screwdriver to
+                   D-Sub 17LE23090-27
+                   (Manufactured by DDK Ltd.)
+                                                              secure the connector to the unit.
+
+    Screw                     5 4 3 2 1                  2 Attach to the measurement object.
+
+                               9 8 7 6
+
+                    Wire                    Receive
+                             Pin no.
+                    color                 signal name
+                      -         1             NC
+                    Green      2            CAN_L
+                    Black      3          CAN_GND
+            2         -        4              NC
+                      -        5              NC
+                      -        6              NC
+                     Red       7            CAN_H
+                      -        8              NC
+                    White      9           CAN_V+
+                      -      Shield          GND
+
+
+
+
+                                               HIOKI MR8904A981-04
+                                                                           13
+                               3.2 Connecting the Unit to the Measurement Target
+
+
+
+Connection diagram when using Model 9713-01
+
+
+                            High-Speed CAN
+
+
+                                             CAN bus
+Memory HiCorder                                              CAN-High
+                                    Red
+                   Model
+                  9713-01
+                                                             CAN-Low
+        Model                       Green
+       MR8904
+                                                             Battery
+
+                                                             GND
+                                    Black
+
+
+
+
+                            Low-Speed CAN
+
+                                             CAN bus
+Memory HiCorder                                              CAN-High
+                                    Red
+                   Model
+                  9713-01                                    CAN-Low
+        Model                       Green
+       MR8904
+                                                             Battery
+                                    White
+
+                                                             GND
+                                    Black
+
+
+
+
+                            Single-Wire CAN
+
+
+Memory HiCorder                              CAN bus
+                   Model                                     CAN
+                                    Red
+                  9713-01
+        Model                                                Battery
+       MR8904                       White
+
+                                                             GND
+                                    Black
+
+
+
+
+                       HIOKI MR8904A981-04
+14
+3.3 Connecting the Unit to a PC
+
+
+
+ 3.3         Connecting the Unit to a PC
+    The MR8904 can be configured from a PC via the Memory HiCorder. Before starting the configuration
+    process, install the USB driver and connect the PC and Memory HiCorder.
+
+
+ Installing the USB driver
+    Install the USB driver before you use the Memory HiCorder with a USB connection. The USB driver can
+    be downloaded from our website. (p.1)
+
+
+                 Do not plug in or unplug the USB cable while the Memory HiCorder is operating.
+
+
+
+                 Use a user account with administrator privileges to perform the installation.
+
+
+
+
+ 1 Execute   the [HiokiUsbCdcDriver.msi] .
+   (“X” indicates the CD-ROM drive. The letter varies with the PC.)
+
+                Depending on the environment, the dialog box may take some time to appear so please
+                wait till it does so.
+
+
+ 2 Click [Next].
+
+
+
+
+                                                                                                 Click
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                            15
+                                                                  3.3 Connecting the Unit to a PC
+
+
+
+3 Click [Next].
+
+    When you want to change the
+    installation destination
+
+    Click [Browse...] to change the folder to
+    install into. Normally, there is no need to
+    change.
+
+
+
+
+                                                                                   Click
+
+
+
+
+4 Click [Next] to start installing.
+
+
+
+
+                                                                                   Click
+
+
+
+
+    The installation of the software will begin.
+
+
+
+
+                                            HIOKI MR8904A981-04
+16
+3.3 Connecting the Unit to a PC
+
+
+
+     For Windows XP
+
+     During the installation, a message saying
+     that the software has not passed Windows
+     Logo testing will appear a few times, click
+     [Continue Anyway] to continue installing.
+
+
+
+
+                                                                         Click
+
+
+
+     For Windows Vista/7/8
+
+     When a dialog box requesting your per-
+     mission to continue the program appears,
+     click [Yes].
+
+                                                                         Click
+
+
+
+
+     Sometimes another dialog box requesting
+     your permission to install the software may
+     appear. When it does, check [Always
+     trust software from "HIOKI E.E. COR-
+     PORATION"] and click [Install] to contin-
+     ue.                                                 1 Check                 2 Click
+
+
+
+
+ 5 When installation is completed
+     and the dialog box appears,
+     click [Close] to exit.
+
+     This completes the driver installation.
+
+
+
+
+                                                                                 Click
+
+
+
+
+                                                   HIOKI MR8904A981-04
+                                                                                                  17
+                                                                  3.3 Connecting the Unit to a PC
+
+
+
+Connecting the Memory HiCorder and PC
+  PC Requirements: A personal computer running Windows XP, Vista, 7 or 8.
+
+              • To prevent a malfunction, do not disconnect the USB cable during communication.
+              • The Memory HiCorder and PC should be connected to the same earth ground. If
+                grounded separately, potential difference between the ground points can cause malfunc-
+                tions or damage when connecting the USB cable.
+
+
+
+1 Connect one end of the USB cable to the
+    USB cable slot on the Memory HiCorder                              USB cable
+                                                       MR8875
+    while making sure the plug is oriented
+    correctly.
+
+2 Connect the other end of the cable to a
+    USB port on the PC.
+
+
+  The first time you connect the Memory HiCorder and PC, perform the following procedure to enable the
+  PC to recognize the Memory HiCorder.
+
+
+  For Windows Vista/7/8
+
+  The Memory HiCorder is recognized automatically, and the preparation to use the device completes.
+
+
+  For Windows XP
+
+   A [Found New Hardware Wizard] dialog
+   box will appear and the new hardware de-
+   tection wizard will begin.
+
+
+1 Check [No, not this time] and
+   click [Next].
+
+
+                                                             1 Check
+
+
+
+                                                                                          2 Click
+
+
+
+
+                                       HIOKI MR8904A981-04
+18
+3.3 Connecting the Unit to a PC
+
+
+
+
+ 2 Check [Install the software
+     automatically (Recommended)]
+     and click [Next].
+
+
+
+
+                                                               1 Check
+
+
+
+                                                                                 2 Click
+
+
+
+     Please wait while the driver is being in-
+     stalled.
+
+
+
+
+ 3 Click [Continue Anyway].
+     A message saying that the software has
+     not passed Windows Logo testing will ap-
+     pear a few times, click [Continue Any-
+     way] to continue installing.
+
+
+
+
+                                                                         Click
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                                           19
+                                                                         3.3 Connecting the Unit to a PC
+
+
+
+
+4 When installation is completed
+    and the dialog box appears,
+    click [Finish] to exit.
+
+    This completes the driver installation.
+
+
+
+
+                                                                                                  Click
+
+
+
+
+Uninstalling the USB Driver
+  When the USB driver is no longer needed, uninstall it with the following procedure.
+
+
+1 From the Windows Start menu, select the [Control Panel], and double click [Add or
+    Remove Programs].
+
+                                                2 Click
+
+
+                                                                                   3Click
+
+
+
+
+                                                            The [Add or Remove Programs] screen appears.
+               1 Click
+
+
+
+
+2 From   the list of installed programs, select [HIOKI USB CDC Driver], and remove it.
+  You are returned to the [Add or Remove Programs] screen.
+
+
+
+
+                                              HIOKI MR8904A981-04
+20
+3.3 Connecting the Unit to a PC
+
+
+
+
+                                  HIOKI MR8904A981-04
+                                                                                                  21
+                                                                             4.1 Operating Environment
+
+
+
+
+ Preparing the MR8904 CAN
+ Editor           Chapter 4
+ The latest version can be downloaded from our web site.
+
+
+4.1          Operating Environment
+ This application requires the following operating environment:
+
+                                Windows XP        : 32-bit
+ Supported operating systems
+                                Windows Vista/7/8 : 32-bit and 64-bit
+ Recommended screen
+                                1280 x 960
+ resolution
+ Interface                      USB
+
+
+
+4.2          Installing the MR8904 CAN Editor
+ Install the application using the following procedure. This explanation uses Windows XP as an example.
+ The CAN Editor can be downloaded from our website.
+ See:"Information on download site" (p.1)
+
+      1       Click the [MR8904 CAN Editor] icon to view MR8904 CAN Editor specifications
+              and revision history.
+
+
+      2       Click the [Install] icon at the top right of the page to open the [File Download]
+              dialog.
+
+
+      3       Click [Open] to display the confirmation dialog to proceed with installation.
+
+
+      4       Click [Next] to open the installation destination selection window.
+              Click the [Browse] button to change the installation folder.
+
+
+      5       Click [Next] to start installation.
+              The program is now installed.
+
+
+
+
+                                       HIOKI MR8904A981-04
+22
+4.3 Uninstalling the MR8904 CAN Editor
+
+
+
+ 4.3        Uninstalling the MR8904 CAN Editor
+   Uninstall the application using the following procedure.
+
+
+        1     Select [Start]-[Control Panel] on the Window Start Menu.
+
+
+        2     Click the [Add or Remove Programs] icon and open [Add or Remove Pro-
+              grams].
+
+
+        3     Select [HIOKI MR8904 CAN Editor] on the [Add or Remove Programs] list and
+              click the [Remove] button.
+
+              The above process will launch the uninstaller and delete the software safely. Settings and
+              other files will remain and should be deleted manually as necessary.
+
+
+
+
+                                              HIOKI MR8904A981-04
+                                                                                                              23
+                                                               5.1 Launching and Exiting the Software
+
+
+
+
+ Settings                                                         Chapter 5
+ Before launching the MR8904 CAN Editor, connect a PC to the Memory HiCorder containing the MR8904
+ with a USB cable.
+ See:"Chapter 3 Connections" (p.11)
+ Next, launch the MR8904 CAN Editor and configure settings.
+
+ The CAN definition data file and condition settings file will be created and sent to the Memory HiCorder
+ containing the CAN unit.
+
+             Although it is possible to create and edit CAN definition data files and condition setting files while
+             not connected to the Memory HiCorder, you will not be able to send or receive conditions.
+
+
+
+
+5.1      Launching and Exiting the Software
+                               Launching the MR8904 CAN Editor
+ Select [Start]-[All Programs]-[HIOKI]-[MR8904 CAN Editor] on the Windows Start Menu to display the
+ Launch window, shown below.
+
+
+                                               Menu bar
+
+                                                   Toolbar
+
+
+
+
+                                                   When using a USB hub or other means to con-
+                                                   nect multiple Memory HiCorders, you can select
+                                                   the target instrument from the list box on the right
+                                                   of the toolbar.
+
+
+
+
+                            Status bar
+
+
+             The message shown to the right will be displayed if you launch the
+             MR8904 CAN Editor while the PC is not connected to the Memory
+             HiCorder or if you execute the [Search MR8875] command.
+
+
+             If you click [OK] without connecting a Memory HiCorder, the
+             Launch window will be displayed, but the list box on the right of the toolbar will be blank.
+
+
+
+
+                                         HIOKI MR8904A981-04
+24
+5.1 Launching and Exiting the Software
+
+
+               To connect a Memory HiCorder after launching the MR8904 CAN Editor
+               Select [Comm]-[Search MR8875] on the menu bar to update information about connected
+               Memory HiCorders.
+
+
+
+                                   Exiting the MR8904 CAN Editor
+   Click [File]-[Exit] on the menu bar or click      on the top right of the displayed window.
+
+
+
+
+                                                  HIOKI MR8904A981-04
+                                                                                                              25
+                                                                                            5.2 Screen Types
+
+
+
+5.2       Screen Types
+ Broadly speaking, the application consists of a total of three windows: the Launch window, the CAN Defi-
+ nition Data File Settings window, and the Condition Settings window.
+
+
+                                            Launch window
+
+
+
+
+    Create new CAN definition data file           Create new condition settings file
+    (Opens the CAN Definition Data File           (Opens the Condition Settings window.)
+    Settings window.)
+
+
+
+
+                       CAN Definition Data File Settings window
+Creates and edits the CAN definition data files used on the Condition Settings window.
+
+
+
+
+                                  Condition Settings window
+Configures the MR8904 channel settings based on a previously created CAN definition data file by allocating
+MR8904 channels and sending configuration data to the Memory HiCorder.
+
+
+
+
+                                          HIOKI MR8904A981-04
+26
+5.3 Creating a CAN Definition Data File
+
+
+
+ 5.3          Creating a CAN Definition Data File
+   This section describes how to create a CAN definition data file for configuring the MR8904’s channel settings.
+
+
+
+     1 Click             on the Launch window.
+
+
+
+
+        A blank CAN Definition File Settings window will be
+        displayed.
+
+
+     2 Click         .
+
+
+
+
+        The [CAN Define Data] dialog box will be dis-
+        played.
+
+
+     3 Enter the necessary fields for the CAN
+        data being registered and click [OK].
+
+
+
+
+        Setting Contents (∗Default setting)
+                                         Sets the message ID for the message containing the data you wish to assign to
+         ID                              the channel. Enter a hexadecimal* value. Both 11-bit base IDs and 29-bit
+                                         extended IDs are supported. (Valid setting range: 0 to 1FFFFFFF)
+                                         Sets the data start position in the message frame. Specify the LSB (Least
+                                         Significant Bit) for the signal being captured. (Initial value: 0; valid setting
+         StartBit
+                                         range: 0 to 63)
+                                         See: "Calculating the start bit (data start position)" (p.28)
+        * A system of numerical notation based on the number 16. The 10 digits represent the numbers 0
+          through 9, while the letters A, B, C, D, E, and F are used for the decimal numbers 10, 11, 12, 14,
+          14, and 15.
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                                        27
+                                                         5.3 Creating a CAN Definition Data File
+
+
+
+
+Setting Contents (∗Default setting)
+                              Enter the size of the data you wish to capture in bits.
+Length[bit]                   Definitions from 17 to 32 bits require that 2 analog channels be allocated.
+                              (Initial value: 1; valid setting range: 1 to 32)
+                              Sets the data byte order. Select whether the corresponding data is in Motoro-
+                              la or Intel format.
+                              U/L (Motorola): Motorola format; upper bytes are sent first.
+ByteOrder                     L/U (Motorola): Data is extracted in Motorola format and then the upper and
+                                                 lower byte order is reversed.
+                              L/U (Intel)*    : Intel format; lower bytes are sent first.
+                              See: "Byte order" (p.29)
+                              Selects the sign type to use for the corresponding data.
+                              Unsigned* : Unsigned
+                              1-signed : 1’s complement; when converting the data to express a negative
+                                          value, the bits of the original positive value are reversed.
+                                          Example: For an 8-bit signal, -10 would be expressed by revers-
+Value Type[Sign]                                     ing 00001010 (10), yielding 11110101.
+                              2-signed : 2’s complement; when converting the data to express a negative
+                                          value, the bits of the original positive value are reversed, and 1
+                                          is added.
+                                          Example: For an 8-bit signal, -10 would be expressed by revers-
+                                                     ing 00001010 (10) and adding 1, yielding 11110110.
+                              Enter the signal name for the corresponding data. Up to 40 characters can
+Signal Name                   be entered. Spaces, commas, single quotation marks, and double quotation
+                              marks cannot be entered.
+                              Enter a label by which the Memory HiCorder can identify the corresponding
+Label                         data. Up to 16 characters can be entered. Spaces, commas, single quota-
+                              tion marks, and double quotation marks cannot be entered.
+                              Enter the unit used to express physical quantities in the corresponding data.
+Unit                          Up to 7 characters can be entered. Spaces, commas, single quotation
+                              marks, and double quotation marks cannot be entered.
+                              Sets the scale used to convert physical quantities in the corresponding data.
+                              BitRate/Offset*      : Enter the conversion scale and offset value.
+                                                     (Initial values: bit rate of 1.0 and offset of 0.0)
+                              Minimum/Maximum : Enter the minimum and maximum values.
+BitRate/Offset
+                                                     (Initial values: [Minimum] of 0.0000E+000 and [Max-
+Minimum/Maximum
+                                                     imum] of 1.0000E+000; valid setting range: [BitRate]
+                                                     of -9.9999E+9 to 9.9999E+9 [however, values in the
+                                                     range of -9.9999E-10 to 9.9999E-10 cannot be set]
+                                                     and [Offset] of -9.9999E+9 to 9.9999E+9)
+
+
+
+
+                               HIOKI MR8904A981-04
+28
+5.3 Creating a CAN Definition Data File
+
+
+
+        The entered information will be registered on the
+        window list.
+
+
+     4 Click       to specify a filename and
+        save the information displayed on the
+        window.
+               To change the filename and save the
+               information displayed on the window to
+               a new file, click        on the toolbar and
+               follow the instructions to select a new
+               filename. (Files have the extension
+               .CDF.)
+
+
+               How to count the bit position
+
+               1. The least significant bit (LSB) in the first byte of data in the data frame is assigned the
+                  number 0, and the number is increased 1 for each bit toward the most significant bit
+                  (MSB).
+               2. Once processing reaches the MSB position, it will attempt to move to the next byte of
+                  data and continue counting up from the LSB toward the MSB.
+               3. Since the maximum data frame size is 8 bytes (64 bits), the last MSB position for the 8th
+                  byte of data from the start will be 63, yielding bit position values of 0 to 63 as shown
+                  below:
+                                             MSB                                                       LSB
+                                             7 bit    6 bit   5 it   4 bit   3 bit   2 bit    1 bit   0 bit
+                            Start byte 0       7        6       5      4       3       2        1       0
+                                   byte 1     15       14       13    12      11      10        9       8
+                                   byte 2     23       22       21    20      19      18       17      16
+                                   byte 3     31       30       29    28      27      26       25      24
+                                   byte 4     39       38       37    36      35      34       33      32
+                                   byte 5     47       46       45    44      43      42       41      40
+                                   byte 6     55       54       53    52      51      50       49      48
+                             End byte 7       63       62       61    60      59      58       57      56
+
+
+
+
+               Calculating the start bit (data start position)
+
+               For example, if you wish to capture 8 bits of data for the 2nd byte from the start, the LSB
+               value would be 8 (see below).
+
+                  : Length of data you wish to capture (in bits)
+
+                                             (This position is the LSB. The value is 8 according to the table above.)
+
+                      Start of data frame                                                             End of data frame
+                        7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 …
+                               byte 0                       byte 1                   byte 2                   byte 3
+                              1st byte                   2nd byte
+
+
+
+                                                     HIOKI MR8904A981-04
+                                                                                                             29
+                                                                5.3 Creating a CAN Definition Data File
+
+
+Byte order
+
+Even if the data start position (start bit) and data length are the same, the byte order
+(extraction method) will vary depending on whether Motorola or Intel byte order is used. The
+following table provides an example for a bit length of 10 and a data start position (LSB posi-
+tion) of bit 16:
+Motorola format
+            7 bit    6 bit   5 it     4 bit   3 bit   2 bit   1 bit   0 bit
+ byte 0       7        6       5        4       3       2       1       0
+ byte 1       15      14       13      12      11      10       9       8
+ byte 2       23      22       21      20      19      18      17      16
+ byte 3       31      30       29      28      27      26      25      24     *The MSB is 9.
+
+Intel format
+            7 bit    6 bit   5 it     4 bit   3 bit   2 bit   1 bit   0 bit
+ byte 0       7        6       5        4       3       2       1       0
+ byte 1       15      14       13      12      11      10       9       8
+ byte 2       23      22       21      20      19      18      17      16
+ byte 3       31      30       29      28      27      26      25      24     *The MSB is 25.
+
+For example, if the value of byte 0 is FF and the value of byte 1 is 00 in 16 bits of data, as
+shown below,
+U/L (Motorola) value : FF00
+L/U (Motorola) value : 00FF
+L/U (Intel) value              : 00FF
+(In Motorola format, the data start position is 8, while in Intel format, the data start position is
+0.)
+
+          Start of data frame                                                            End of data frame
+          7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 …
+                    byte 0                          byte 1                     byte 2           byte 3
+                    1st byte                     2nd byte
+
+
+
+To read a saved CAN definition data file
+
+Click         on the Launch window and follow the instructions to open the desired file. You can
+add a memo to saved CAN definition files, for example to describe the application for which
+the file is to be used. You can enter up to 50 characters in the “Memo” field above the list.
+
+
+
+
+                                    HIOKI MR8904A981-04
+30
+5.3 Creating a CAN Definition Data File
+
+
+
+
+             To load an existing CANdb file
+
+             You can convert an existing CANdb file (.DBC) into a CAN definition data file (.CDF) by
+             selecting [File]-[CAN Define Data File]-[Convert DBC File and Open] on the window. You
+             can edit and save an opened file as a CAN definition data file.
+
+
+             To set a password when opening a saved CAN definition data file
+
+             You can set a password with [Edit]-[Modify Password] on the CAN Definition Data File Set-
+             ting window. Passwords can be up to 20 alphanumeric characters in length.
+
+
+             To delete, edit, or duplicate registered CAN definition data
+
+             You can delete, edit, and duplicate the data items shown in the list on the CAN Definition
+             Data File Settings window.
+             See: "Deleting CAN definitions" (p.31), "Editing CAN Definitions" (p.32),
+                   "Duplicating CAN definitions" (p.33)
+
+
+
+
+                                            HIOKI MR8904A981-04
+                                                                                             31
+                                                           5.3 Creating a CAN Definition Data File
+
+
+
+                                     Deleting CAN definitions
+
+
+
+1 Click the line of the item you wish to
+   delete.
+
+   To select multiple items, use any of the follow-
+   ing methods:
+   • Click the first line in the target range and
+     drag the mouse to the last line.
+   • Click the first and then the last line in the
+     target range while pressing the Shift key on
+     the keyboard.
+   • Click the target lines while pressing the Ctrl
+     key on the keyboard.
+
+
+2 Click        .
+
+
+
+
+   A dialog box will be displayed.
+
+
+3 Click [Yes].
+
+   The selected items will be deleted and removed
+   from the list.
+
+
+
+
+4 Click            on the toolbar to save the
+   file by overwriting the existing file, or
+
+         to save the changed display con-
+   tents to a new file.
+
+
+
+
+                                     HIOKI MR8904A981-04
+32
+5.3 Creating a CAN Definition Data File
+
+
+
+                                           Editing CAN Definitions
+
+
+
+     1 Click the line of the item you wish to
+        edit.
+
+
+
+     2 Click           or double-click the item’s
+        line.
+
+
+
+
+        The [CAN Define Data] dialog box for the current
+        definition content will be displayed.
+
+
+     3 Edit the settings as necessary and
+        click [OK].
+
+
+
+
+        The list display will be updated with the edited con-
+        tent.
+
+
+     4 Click           on the toolbar to save the
+        file by overwriting the existing file, or
+
+                to save the changed display con-
+        tents to a new file.
+
+
+
+
+                                                  HIOKI MR8904A981-04
+                                                                                                33
+                                                              5.3 Creating a CAN Definition Data File
+
+
+
+                                     Duplicating CAN definitions
+
+
+
+1 Click the line of the item you wish to
+   duplicate.
+
+   To select multiple items, use any of the follow-
+   ing methods:
+   • Click the first line in the target range and
+     drag the mouse to the last line.
+   • Click the first and then the last line in the
+     target range while pressing the Shift key on
+     the keyboard.
+   • Click the target lines while pressing the Ctrl
+     key on the keyboard.
+
+
+2 Click         .
+
+
+
+
+   A dialog box will be displayed.
+
+
+3 Click [Yes].
+
+   The selected items will be duplicated and added at
+   the bottom of the list. The labels of the duplicate
+   definitions will be set by adding “-c” to the labels of
+   the original definitions.
+
+
+
+4 Click             on the toolbar to save the
+   file by overwriting the existing file, or
+
+         to save the changed display con-
+   tents to a new file.
+
+
+
+
+                                        HIOKI MR8904A981-04
+34
+5.4 Creating Condition Settings Files
+
+
+
+ 5.4        Creating Condition Settings Files
+   The following procedure is used to create condition settings files:
+
+
+
+       1      "Loading a CAN definition data file" (p.34)
+
+
+       2      "Registering CAN definitions (creating an MR8904 register list)" (p.36)
+
+
+       3      "Setting CAN communications conditions" (p.38)
+
+
+       4      "Allocating channels (Creating MR8904 analog/logic assign lists)" (p.40)
+
+
+       5      "Configuring transmission (creating an MR8904 Send list)" (p.42)
+
+
+       6      "Saving a list (saving a condition settings file)" (p.44)
+
+
+
+ Loading a CAN definition data file
+   First, load a CAN definition data file.
+
+
+
+     1 Click    on the Launch window or the
+        CAN Definition Data File Settings win-
+        dow.
+
+
+
+
+        A blank Condition Settings window will be dis-
+                                                                                         1.
+        played.
+
+
+     2 Load the CAN definition data file from
+        the [CAN Definition Data List] using
+        the following procedure:
+        1. Click    .
+           (The Open File dialog box will be dis-
+           played.)
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                                      35
+                                                               5.4 Creating Condition Settings Files
+
+
+
+   2. Open the CAN definition data file (.CDF) or
+      the CANdb file (.DBC).
+   3. (The contents of the opened file will be dis-
+      played under [CAN Definition Data List].)
+
+      Selecting the [Detail] checkbox displays
+      more detailed information in the list.
+
+   See: "To edit the [CAN Definition Data List]" (p.35)
+
+
+
+3 Create the [MR8904 Register List] from
+   the contents shown under [CAN Defini-
+   tion Data List].
+   See: "Registering CAN definitions (creating
+          an MR8904 register list)" (p.36)
+
+
+          To edit the [CAN Definition Data List]
+
+          If a password has been assigned to the CAN definition data, a password entry dialog box will
+          be displayed. Enter the set password to begin editing the data.
+          Selecting [Edit] activates the [New] and [Add] buttons, allowing the content shown in the list
+          to be edited.
+          [New]     : Initializes the current display by setting all fields to blank space.
+          [Add]     : Displays the [CAN Define Data] dialog box, allowing data to be added.
+
+
+
+
+          Double-clicking an item in the list allows you to edit the content of the definition. Clicking an
+          item in the list activates the [Del] and [Dup] buttons.
+
+
+
+
+                                                                                  (Continues on next page.)
+
+
+
+
+                                     HIOKI MR8904A981-04
+36
+5.4 Creating Condition Settings Files
+
+
+               [Del], [Dup]:
+               Deletes or duplicates the selected item.
+               To delete or duplicate multiple items, click the appropriate button after selecting the target
+               items using any of the following methods:
+               • Click the first line in the target range and drag the mouse to the last line.
+               • Click the first and then the last line in the target range while pressing the Shift key on the
+                  keyboard.
+               • Click the target lines while pressing the Ctrl key on the keyboard.
+               Clicking [Edit] again saves the edited definition list. When the confirmation dialog box is dis-
+               played, click [OK] to save the data and provide a filename.
+
+
+
+               CANdb files (.DBC) can be read but not edited.
+
+
+
+
+ Registering CAN definitions (creating an MR8904 register list)
+   Next, create an MR8904 register list (to register the CAN definitions).
+
+        Drag and drop the [CAN Definition Data List] data items you wish to allocate to the
+        MR8904’s channels to [MR8904 Register List].
+
+
+
+
+                                                      Drag & drop
+
+
+
+
+                 • You can select which of the target MR8904’s two CAN ports to use to receive the data
+                   items being registered under [MR8904 Register List] by selecting the [CAN Port1]
+                   or [CAN Port2] radio button.
+                 • You can also use the [Add] button at the bottom of the list to register data to the
+                   [MR8904 Register List] (see next page).
+
+
+
+
+                                              HIOKI MR8904A981-04
+                                                                                                37
+                                                     5.4 Creating Condition Settings Files
+
+
+To edit the [MR8904 Register List]
+[New]    : Initializes the settings by setting the current register list as well as any analog or
+          logic signals that have been assigned from the register list to blank space.
+[Add]    : Clicking on a row under [CAN Definition Data List] and then clicking this button
+          causes the item to be added to the [MR8904 Register List].
+[Del]    : Click the row of the item you wish to delete and then click this button. To delete
+          multiple items, click the button after selecting the target items using any of the fol-
+          lowing methods:
+          • Click the first line in the target range and drag the mouse to the last line.
+          • Click the first and then the last line in the target range while pressing the Shift key on
+            the keyboard.
+          • Click the target lines while pressing the Ctrl key on the keyboard.
+
+
+
+
+Double-clicking an item in the register list displays a dialog box:
+
+
+
+
+This dialog box allows you to set the channel port to which the definition is to be allocated as
+well as upper and lower limits for the waveform display on the Memory HiCorder.
+
+
+
+                         HIOKI MR8904A981-04
+38
+5.4 Creating Condition Settings Files
+
+
+
+ Setting CAN communications conditions
+   Next, set the CAN communications conditions. Read the following precautions carefully before setting the
+   conditions:
+
+
+                 When ACK response is enabled, the unit may affect the operation of the CAN bus as
+                 well as systems connected to the CAN bus. Improper settings may cause CAN com-
+                 munications to become corrupted, and proper operation may also affect system
+                 operation, causing bodily injury or property damage. Use only after carefully consid-
+                 ering these effects.
+
+
+
+                 • If the interface does not match the interface of the CAN bus being measured, the instru-
+                  ment will be unable to make measurements, and if ACK is turned on, CAN communica-
+                  tions may become corrupted. Use only after verifying that settings match the CAN bus to
+                  which the unit is connected.
+                 • The use of too few or too many terminating resistors on the CAN bus may prevent data
+                  from being sent and received properly not only by the unit, but by other nodes as well.
+                  Verify carefully and set so that there are two 120 Ω resistors for the entire CAN bus.
+                 • If the baud rate differs from the baud rate of the CAN network to which the unit is con-
+                  nected, the instrument will be unable to make measurements, and if ACK is turned on,
+                  CAN communications may become corrupted. Use only after verifying that the baud rate
+                  matches the network’s baud rate.
+
+
+
+                 • The terminator setting is valid only when the interface is set to high-speed. Separate ter-
+                  minator resistors are necessary when using low-speed or single-wire settings.
+                 • If the ACK response setting is disabled, no message will be sent, even if the transmit ID
+                  frame has been set. To send messages, enable ACK response.
+                 • Baud rate automatic detection is enabled only when ACK is off. When ACK is on, select
+                  the appropriate baud rate for the network.
+                 • A number of messages must be received before the baud rate can be automatically
+                  detected. Messages cannot be properly received until the detection process completes.
+                  Have the unit receive several messages before starting measurement and verify that they
+                  are being properly received, for example by observing the LEDs.
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                                              39
+                                                                  5.4 Creating Condition Settings Files
+
+
+
+
+1 Click the [Unit1] to [Unit4] tabs above                                            1
+   the [MR8904 Analog Assign List] and
+   select the position of the unit for which
+   the condition settings file is being cre-
+   ated.
+                                                                                                             2
+   (An asterisk after the unit number indicates a posi-
+   tion at which no unit is installed.)
+                                                             Example screen
+                                                              Device
+
+2 Set the CAN communications condi-
+                                                                                 Unit 1
+                                                              insertion position
+
+   tions for each port.                                                         •   High speed
+                                                                                •   Terminator on
+   (Selecting the checkbox for a setting turns it on or       CAN port 1
+   enables it.)                                                                 •   ACK response enabled
+                                                                                •   Baud rate: 500 kbps
+                                                                                •   Low speed
+                                                                                •   Terminator off
+                                                              CAN port 2
+                                                                                •   ACK response disabled
+                                                                                •   Baud rate automatic detection
+
+
+
+   Setting Contents (∗Default setting)
+                        Selects the type of the CAN bus to which the unit will be connected. The following CAN
+                        bus standards are supported:
+    Interface           High Speed* : ISO 11898-2
+                        Low Speed : ISO 11898-3
+                        Single-wire : SAE J2411
+                        When using the high-speed interface, the unit’s internal 120 Ω termination resistor can be
+                        connected to the bus as necessary.
+    Terminator
+                        On : Connects the 120 Ω resistor between CAN-H and CAN-L.
+                        OFF*: Does not connect the termination resistor.
+                        Sets whether to enable sending ACK bits, error frames, and messages from the unit.
+    ACK                 Enable : Enables sending of ACK bits, error frames, and messages.
+                        Disable*: Disables sending of ACK bits, error frames, and messages.
+                        Sets the CAN communications baud rate.
+                        AUTO (automatic detection)*: Detects the baud rate automatically based on messages
+                                                     being sent on the CAN bus. This setting can be used only
+    Baud
+                                                     when ACK is disabled.
+                        Manual setting : Select a baud rate from 10k, 20k, 33.3k, 50k, 62.5k, 83.3k, 100k, 125k,
+                                                     250k, 500k, 800k, and 1 Mbps.
+
+
+
+
+                                      HIOKI MR8904A981-04
+40
+5.4 Creating Condition Settings Files
+
+
+
+ Allocating channels (Creating MR8904 analog/logic assign lists)
+   Next, allocate channels by creating an MR8904 analog assign list and MR8904 logic assign list from the
+   MR8904 register list.
+
+
+        Drag and drop items displayed in the [MR8904 Register List] to the [MR8904 Analog
+        Assign List] and [MR8904 Logic Assign List].
+
+        <<[MR8904 Analog Assign List]>>
+
+
+
+
+                Example:
+                Allocate [Temp] data to channel 7
+                (drag and drop).
+
+
+                 • A total of 15 data items corresponding to channels 1 to 15 can be allocated in the
+                   [MR8904 Analog Assign List]. You can drag and drop each item to the desired
+                   channel number (1 to 15) shown in the [Ch] column.
+                 • Definitions of 17 to 32 bits use two analog channels.
+
+        <<[MR8904 Logic Assign List]>>
+
+
+
+
+                                             When you drag and drop data items, a dialog box will be
+                                             displayed asking whether you wish to register the item
+                                             normally (definition allocation) or as an ID trigger (ID trig-
+                                             ger allocation). Select [Assign Definition].
+
+
+
+          Example:
+          [Logic]
+          Allocate 9 bits of definition
+          data starting at bit 5 (drag and
+          drop). (The 9 bits from bit 5 to
+          bit 13 will be automatically al-
+          located with the bit at which
+          the data was dropped as the
+          LSB*.)
+          *: See "How to count the bit po-
+             sition" (p.28).
+
+
+
+
+                                                  HIOKI MR8904A981-04
+                                                                                                41
+                                                     5.4 Creating Condition Settings Files
+
+
+
+  The [MR8904 Logic Assign List] allows data items from the [MR8904 Register List]
+  to be allocated to each bit of a 16-bit signal. If the data item consists of 8 bits, 8 bits will
+  be automatically allocated with the bit position at which the item was dropped (1 to 16)
+  as the LSB.
+
+
+
+What is an ID trigger?
+
+You can register an ID trigger by selecting [Assign ID] when you drag and drop the data
+item. This function outputs a high pulse to the registered logic channel when a CAN mes-
+sage with the registered definition’s ID is received. When an ID trigger is registered, a red
+mark will be shown for the logic channel.
+
+
+
+
+Deleting data from an assign list
+
+Right-click on the item you wish to delete to display the following message. (You can also
+select multiple items and delete them at once.)
+
+
+
+
+Click [Yes] to delete the item(s).
+
+
+Up to 200 μs of dead time occurs between the time the CAN message with the registered
+definition’s ID is received and the time that the data is transferred to the Memory HiCorder.
+If multiple CAN messages are received during the dead time, the received CAN message
+may not be applied to the data.
+
+
+
+
+                          HIOKI MR8904A981-04
+42
+5.4 Creating Condition Settings Files
+
+
+
+ Configuring transmission (creating an MR8904 Send list)
+   Finally, create an MR8904 send list (which will serve as the transmission condition settings). To do so,
+   register frames to be sent to the CAN bus to which the unit is connected along with the timing with which
+   they are to be sent to the [MR8904 Send List].
+
+
+
+     1 Click the [Add] button at the bottom of
+        the [MR8904 Send List].
+                Clicking an item registered in the list
+                will cause the [Insert], [Edit], [Del],
+                and [Dup] buttons to activate.
+
+
+
+
+               To edit the [MR8904 Send List]
+               [Insert] : Inserts a transmission setting into the selected item.
+               [Edit]    : Edits the settings for the selected item.
+               [Del], [Dup]:
+               Deletes or duplicates the selected item.
+               To delete or duplicate multiple items, click the button after selecting the target items using
+               any of the following methods:
+               • Click the first line in the target range and drag the mouse to the last line.
+               • Click the first and then the last line in the target range while pressing the Shift key on the
+                 keyboard.
+               • Click the target lines while pressing the Ctrl key on the keyboard.
+
+
+
+        The [Send ID Setting] dialog box will be displayed.
+
+
+     2 Configure the settings.
+
+
+
+
+                               (Continues on next page.)
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                                              43
+                                                               5.4 Creating Condition Settings Files
+
+
+
+
+   Setting Contents (∗Default setting)
+                                  One Shot         : Sends one message only.
+                                  Response         : Sends responses to the ID set with [RespID]. Re-
+                                                     sponses are sent as soon as the set ID is received, and
+                                                     no delay time before frame transmission can be set.
+                                  Interval*        : Sends messages regularly at the interval set with [In-
+                                                     terval].
+                                  One Shot Program : Sends messages tagged for [One Shot Program] one
+    ActMode                                          at a time, starting with the lowest number and proceed-
+                                                     ing in order until each has been sent once. The interval
+                                                     between the transmission of one program and the next
+                                                     is set with [Interval].
+                                  Repeat Program : Repeatedly sends messages tagged for [Repeat Pro-
+                                                     gram] in order, starting with the lowest number. The in-
+                                                     terval between the transmission of one program and
+                                                     the next is set with [Interval].
+    Port1 / Port2                 Selects the CAN port with which to send the frame.
+                                  Data frame* : Sends a data frame.
+    FrmType
+                                  Remote frame: Sends a remote frame.
+                                  Sets the frame ID to use to send the set content as a hexadecimal value.
+    SendID
+                                  (Valid setting range: 1 to 1FFFFFFF)
+    Len                           Enter the byte length of the frame to send. (Valid setting range: 0 to 8)
+                                  Enter the text to send with the [SendID] frame as a hexadecimal value.
+                                  Input boxes for the length specified with [Len] will be displayed, and one
+    SendText
+                                  byte of data should be entered into each.
+                                  (For example, if [Len] is 4, 01 45 AB EF.)
+                                  The set frame will be sent when a port with the message ID (hexadecimal*)
+                                  set here is received.
+    RespID
+                                  This setting is valid when [ActMode] is set to [Response].
+                                  (Valid setting range: 1 to 1FFFFFFF)
+                                  Sets the interval at which to send the frame ID set here as a multiple of 10
+                                  ms. This setting is valid only when [ActMode] is [Interval], [One Shot Pro-
+    Interval
+                                  gram], or [Repeat Program].
+                                  (Valid setting range: 1 to 9,999 [X 10 ms])
+
+   * A system of numerical notation based on the number 16. The 10 digits represent the numbers 0
+     through 9, while the letters A, B, C, D, E, and F are used for the decimal numbers 10, 11, 12, 13,
+     14, and 15.
+
+
+3 Click [OK] to accept the settings.
+   The dialog box will close.
+
+   (You can click [Cancel] to close the dialog box without adding the definition.)
+
+
+           Since it is not possible to send and receive data simultaneously, when allocating a definition
+           with the same ID as the transmit frame to be received by the same port as used for trans-
+           mission, the set transmit frame will not affect measured values.
+
+
+
+
+                                   HIOKI MR8904A981-04
+44
+5.4 Creating Condition Settings Files
+
+
+
+ Saving a list (saving a condition settings file)
+   Click      on the toolbar to assign a name and save the communications condition settings, MR8904 reg-
+   ister list, MR8904 analog assign list, MR8904 logic assign list, and MR8904 send list as a condition set-
+   tings file (.CES).
+
+
+   To re-save content under a new filename, click        on the toolbar and follow the instructions.
+
+                To load a previously saved condition settings file
+
+                Click      on the toolbar on the Condition Settings window. Following the instructions to
+                open the file will cause the display to be updated.
+
+
+                You can save communications condition settings, MR8904 register lists, MR8904 analog
+                assign lists, MR8904 logic assign lists, and MR8094 send lists as a condition settings file
+                (.CES) and send it to the Memory HiCorder. You can also load information sent to the Mem-
+                ory HiCorder into each of these lists.
+                See: "5.6 Sending and Receiving Condition Settings" (p.46)
+
+
+
+
+                                               HIOKI MR8904A981-04
+                                                                                                     45
+                                                              5.5 Printing a Condition Settings File
+
+
+
+5.5      Printing a Condition Settings File
+ You can print the currently displayed communications condition settings, [MR8904 Register List],
+ [MR8904 Analog Assign List], [MR8904 Logic Assign List], and [MR8904 Send List] by clicking
+ on the toolbar of the Condition Settings window.
+
+
+ You can preview the information that will be printed by selecting [File]-[Print Preview] on the menu bar.
+
+
+
+
+                                     HIOKI MR8904A981-04
+46
+5.6 Sending and Receiving Condition Settings
+
+
+
+ 5.6       Sending and Receiving Condition Settings
+   This section describes how to send settings to the Memory HiCorder after saving a condition settings file.
+
+
+ Sending condition settings
+
+
+     1 Click [Send].
+
+
+
+
+        The dialog box shown to the right will be displayed
+        when the transmission starts properly.
+
+
+
+
+        When the transmission completes, the dialog box to
+        the right will be displayed.
+
+
+     2 Click [OK].
+
+        If the unit is unable to send the data for some rea-
+        son, the message to the right will be displayed. This
+        message indicates that the unit was unable to con-
+        nect to the port attempting to send or receive the
+        settings.
+        See: An error is displayed.: "8.1 Troubleshooting"
+              (p.63)
+
+        If no response is received from the Memory HiCord-
+        er for some reason, the message to the right will be
+        displayed. Resend the settings. If the error persists,
+        restart the Memory HiCorder and then resend the
+        settings.
+
+
+        If the message shown to the right is displayed, there
+        may be an illegal value in a definition registered in
+        the register list. Refer to p.26 and p.27 and remove
+        the illegal definition.
+
+
+
+
+                                                   HIOKI MR8904A981-04
+                                                                                                       47
+                                                            5.6 Sending and Receiving Condition Settings
+
+
+
+      The message to the right will be displayed when the
+      Memory HiCorder is in the process of performing
+      measurement or calculations.
+
+      Resend the settings once the measurement, calcu-
+      lations, or other process completes.
+
+
+
+
+Receiving condition settings
+ The MR8904 can also receive condition settings from the Memory HiCorder.
+
+
+
+ 1 Click [Receive].
+
+
+
+
+      The MR8904 settings information with which the
+      Memory HiCorder is currently configured will begin
+      to load.
+
+      The dialog box to the right will be displayed while
+      the data is loading.
+
+
+
+
+      Once data has been loaded into the window, the
+      Condition Settings window display will be updated.
+
+
+
+              When receiving conditions, the upper and lower limit values on the display will be set to ini-
+              tial values calculated from the bit length, bit rate, and offset.
+
+
+
+
+                                         HIOKI MR8904A981-04
+48
+5.7 Window Menu Commands
+
+
+
+ 5.7        Window Menu Commands
+   This section describes the commands and functions available on the menus on each window as well as
+   the toolbar icon layout and functions.
+
+
+ Launch window
+
+   Menu bar
+                  Menu                                                    Explanation
+
+               Open                    Displays a new Condition Settings window.
+
+                                       Loads data from a previously created condition settings file (.CES file) and
+               Open
+                                       displays it in a Condition Settings window.
+
+                                       New : Displays a new CAN Definition Data File Settings window.
+                                       Open : Loads data from a previously created CAN definition data file (.CDF
+                                               file) and displays it in a CAN Definition Data File Settings window.
+   File        CAN Define Data File
+                                       Convert DBC File and Open:
+                                                  Converts an existing CANdb file (.DBC file) into a CAN definition data
+                                                  file and displays it in a CAN Definition Data File Settings window.
+
+                                       Configures the printer used to print the Condition Settings window’s register
+               Print Setup
+                                       list, communications condition settings, channel assign list, and send list.
+
+               Exit                    Exits the MR8904 CAN Editor.
+
+   Comm        Search MR8875           Searches for connected Memory HiCorders.
+
+               Toolbar                 Toggles the toolbar display on and off.
+   View
+               Status Bar              Toggles the status bar display on and off.
+
+               About MR8904 CAN
+   Help                                Displays version information for the MR8904 CAN Editor.
+               Editor
+
+
+
+
+   Toolbar
+   In this window, there are four active icons.
+
+                                                                                    Select the connected device.
+
+                                          Open a setting conditions file.
+          Open a CAN definition
+          data file.                  Create a new setting conditions file.
+      Create a new CAN definition data file.
+
+
+
+
+                                                  HIOKI MR8904A981-04
+                                                                                                            49
+                                                                              5.7 Window Menu Commands
+
+
+
+CAN Definition Data File Settings window
+ Menu bar
+               Menu                                                  Explanation
+
+            New                     Displays a new CAN Definition Data File Settings window.
+
+                                    Loads data from a previously created CAN definition data file (.CDF file) and
+            Open
+                                    displays it in a CAN Definition Data File Settings window.
+
+            Convert DBC File and Converts an existing CANdb file (.DBC file) into a CAN definition data file and
+            Open                 displays it in a CAN Definition Data File Settings window.
+
+            Close                   Closes the currently displayed CAN Definition Data File Settings window.
+
+                                    Saves the contents of the currently displayed CAN Definition Data File Set-
+            Save
+ File                               tings window to the corresponding file.
+
+                                    Saves the contents of the currently displayed CAN Definition Data File Set-
+            Save As
+                                    tings window to a new file.
+
+            Print                   No function
+
+            Print Preview           No function
+
+                                    Configures the printer used to print the Condition Settings window’s register
+            Print Setup
+                                    list, communications condition settings, channel assign list, and send list.
+
+            Exit                    Exits the MR8904 CAN Editor.
+
+ Edit       Modify Password         Sets the password required when opening the CAN definition data file.
+
+            Toolbar                 Toggles the toolbar display on and off.
+ View
+            Status Bar              Toggles the status bar display on and off.
+
+                                    When the CAN Definition Data File Settings window and Condition Settings
+            Cascade
+                                    window are open at the same time, displays them in a cascading manner.
+ Window
+                                    When the CAN Definition Data File Settings window and Condition Settings
+            Tile
+                                    window are open at the same time, arranges them side by side.
+
+            About MR8904 CAN
+ Help                               Displays version information for the MR8904 CAN Editor.
+            Editor
+
+
+
+
+ Toolbar
+             From the left, CAN definition data field manipulation:
+             ADD : Add
+             EDIT : Edit
+             DEL : Delete                 Save the displayed content.
+             DUP : Duplicate                  Save the displayed content to a new file.
+
+
+                                                                                 Select the connected device.
+
+                                      Open a setting conditions file.
+        Open a CAN definition
+        data file.               Create a new setting conditions file.
+   Create a new CAN definition data file.
+
+
+
+
+                                      HIOKI MR8904A981-04
+50
+5.7 Window Menu Commands
+
+
+
+ Condition Settings window
+   Menu bar
+                Menu                                                       Explanation
+              New                    Displays a new Condition Settings window.
+                                     Loads data from a previously created condition settings file (.CES file) and
+              Open
+                                     displays it in a Condition Settings window.
+              Close                  Closes the currently displayed Condition Settings window.
+                                     Saves the contents of the currently displayed Condition Settings window to
+              Save
+                                     the corresponding file.
+                                     Saves the contents of the currently displayed Condition Settings window to a
+              Save As
+                                     new file.
+                                     New : Displays a new CAN Definition Data File Settings window.
+                                     Open : Loads data from a previously created CAN definition data file (.CDF
+                                                file) and displays it in a CAN Definition Data File Settings window.
+              CAN Define Data File
+   File                              Convert DBC File and Open:
+                                                Converts an existing CANdb file (.DBC file) into a CAN definition data
+                                                file and displays it in a CAN Definition Data File Settings window.
+                                     Prints print the Condition Settings window’s register list, communications con-
+              Print
+                                     dition settings, channel assign list, and send list.
+                                     Generates a print preview for the Condition Settings window’s register list,
+              Print Preview          communications condition settings, channel assign list, and communications
+                                     list.
+                                     Configures the printer used to print the Condition Settings window’s register
+              Print Setup            list, communications condition settings, channel assign list, and communica-
+                                     tions list.
+              Exit                   Exits the MR8904 CAN Editor.
+                                     Valid only when editing a definition file. Sets the password required when
+   Edit       Modify Password
+                                     opening the CAN definition data file.
+   Comm       Search MR8875          Searches for connected Memory HiCorders.
+              Toolbar                Toggles the toolbar display on and off.
+   View
+              Status Bar             Toggles the status bar display on and off.
+                                     When the CAN Definition Data File Settings window and Condition Settings
+              Cascade
+                                     window are open at the same time, displays them in a cascading manner.
+   Window
+                                     When the CAN Definition Data File Settings window and Condition Settings
+              Tile
+                                     window are open at the same time, arranges them side by side.
+              About MR8904 CAN
+   Help                              Displays version information for the MR8904 CAN Editor.
+              Editor
+
+   Toolbar
+                                            Save the displayed content.
+                                                Save the displayed content to a new file.
+
+
+                                                                                Select the connected device.
+
+
+        Open a CAN definition       Open a setting conditions file.              Print the Condition Settings win-
+        data file.               Create a new setting conditions file.           dow’s register list, communica-
+     Create a new CAN definition data file.                                      tions condition settings, channel
+                                                                                 assign list, and send list.
+
+
+
+
+                                              HIOKI MR8904A981-04
+                                                                                                 51
+                                                              6.1 Checking and Editing Settings
+
+
+
+
+ Configuring Settings with the
+ Memory HiCorder Chapter 6
+ This chapter describes how to use a Memory HiCorder to check settings sent from the MR8904 CAN Edi-
+ tor and how to configure frame transmission timing.
+
+
+ The MR8875 Memory HiCorder is used as an example.
+
+
+6.1      Checking and Editing Settings
+ On the MR8875, display [Setting Display]  [System]  [Initialize]  [CAN Unit Setting List].
+
+
+ You can check and edit settings configured with the MR8904 CAN Editor.
+
+
+
+
+                                     Create an MR8904 send list (which will serve as the transmission
+                                     condition settings).
+                                     See: "Configuring transmission (creating an MR8904 Send list)"
+                                            (p.42)
+             Allocate channels by creating an MR8904 analog assign list and MR8904 logic assign list
+             from the MR8904 register list.
+             See: "Allocating channels (Creating MR8904 analog/logic assign lists)" (p.40)
+  Set the CAN communications conditions.
+  See: "Setting CAN communications conditions" (p.38)
+
+
+                                    HIOKI MR8904A981-04
+52
+6.2 Checking Analog Channel Allocation
+
+
+
+ 6.2        Checking Analog Channel Allocation
+   You can check analog channel allocation as configured with the MR8904 CAN Editor.
+
+
+        1    Display [Setting Display]  [Channel]  [Analog] on the MR8875.
+
+        2    Select the analog channel to which CAN definitions were allocated.
+
+
+                1
+                                                                                  2
+
+
+
+                                           3
+
+
+
+
+              Port                           Number of the port with which data will be received
+
+              ID                             Message ID to receive
+
+              Signal                         Name associated with received messages
+
+
+
+        3    Select [Detail].
+             The following information will be displayed:
+              Label                          Identifying label associated with received messages
+
+              Bit Length                     Bit length of received messages
+
+              Units                          Unit for received messages
+                                             Selects the timing at which to send messages.
+              Start Send Frame
+                                             See: "6.4 Setting the Transmission Timing" (p.56)
+
+
+
+
+                                                HIOKI MR8904A981-04
+                                                                                                      53
+                                                         6.2 Checking Analog Channel Allocation
+
+
+Display settings and scaling are automatically set based on the bit rate and offset values set with the
+MR8904 CAN Editor. For more information about settings, see the MR8875 instruction manual.
+
+           Display Settings screen
+
+
+
+
+           Scaling screen
+
+
+
+
+            • The display upper limit, display lower limit, scaling conversion ratio, offset, and unit dis-
+              play settings default to the values set with the MR8904 CAN Editor. They can also be
+              changed on the Memory HiCorder.
+            • The display range can only be set with the display upper limit and display lower limit.
+              Scale factor, zero position, waveform mirroring, and Vernier settings cannot be used.
+
+
+
+
+                                    HIOKI MR8904A981-04
+54
+6.3 Checking Logic Channel Allocation
+
+
+
+ 6.3        Checking Logic Channel Allocation
+   You can check logic channel allocation as configured with the MR8904 CAN Editor.
+
+
+        1     Display [Setting Display]  [Channel]  [Logic] on the MR8875.
+
+        2     Select the channel to which CAN definitions were allocated.
+
+
+
+                    1
+                                                                                    2
+
+
+
+
+              The following information will be displayed:
+               Port                           Number of the port with which data will be received
+
+               ID                             Message ID to receive
+
+               Signal                         Name associated with received messages
+
+               Label                          Identifying label associated with received messages
+                                              Indicates how many bits from the LSB* of the received message to
+               Bit Assign                     measure. When an ID trigger has been allocated, displays “ID trigger.”
+                                              *: See "How to count the bit position" (p.28).
+                                              Selects the timing at which to send messages.
+               Start Send Frame
+                                              See: "6.4 Setting the Transmission Timing" (p.56)
+
+
+               The display position can be selected as follows:
+               • When the logic recording width is [Normal], Pos1 / Pos2.
+               • When the logic recording width is [Wide], Pos1.
+
+
+
+
+                                                 HIOKI MR8904A981-04
+                                                                                                      55
+                                                               6.4 Setting the Transmission Timing
+
+
+
+6.4       Setting the Transmission Timing
+ This section describes how to set when to start transmission as configured with the MR8904 CAN Editor.
+
+
+      1     Display [Setting Display]  [Channel]  [Analog]  [Detail] on the MR8875. If
+            using a logic channel, display [Setting Display]  [Channel]  [Logic].
+
+      2     Select the channel to which CAN definitions were allocated.
+
+      3     Select the transmission timing with the [Start Send Frame] setting.
+            Setting Contents (∗: Default setting)
+                                         Frame transmission starts when measurement starts and stops when
+             Auto*
+                                         measurement stops.
+                                         Transmission starts and stops when a button on the Waveform screen
+             Manual                      is touched during measurement. Frames cannot be sent when mea-
+                                         surement is not in progress, manually or otherwise.
+
+
+               1
+                                                                            2
+
+
+
+                                        1
+
+
+
+
+                                                                      3
+
+                                                                                 (Continues on next page.)
+
+
+
+
+                                     HIOKI MR8904A981-04
+56
+6.4 Setting the Transmission Timing
+
+
+   (When set to [Manual])
+
+       4     Press the [Waveform Display]  [CAN Send] button.
+             A dialog box will be displayed.
+
+
+
+
+                                                                                               4
+
+
+
+
+                             5
+
+
+
+       5     Enable or disable the unit.
+             Setting Contents (∗: Default setting)
+
+              On                               Enable starting.
+
+
+              Off*                             Enable stopping.
+
+             The transmission enable setting is only valid while measurement is in progress.
+
+
+
+
+                                                  HIOKI MR8904A981-04
+                                                                                                                57
+                                                                       7.1 Model MR8904 Specifications
+
+
+
+
+ Specifications                                                  Chapter 7
+7.1       Model MR8904 Specifications
+                             ISO 11898 CAN 2.0b
+                             ISO 11898-1 CAN protocol
+ Compliant CAN standards     ISO 11898-2 High-speed physical layer for CAN
+                             ISO 11898-3 Low-speed fault-tolerant physical layer for CAN
+                             SAE J2411 Single wire physical layer for CAN
+ No. of CAN ports            2 (Port 1, Port 2)
+ Input CAN connectors        Two D-sub 9-pin male connectors
+                             User-selectable high-speed CAN, low-speed CAN, or single-wire CAN for each port
+ CAN interfaces
+                             (built-in compatible transceiver) from the MR8904 CAN Editor
+                             ACK transmission can be turned on and off for CAN signal reception with MR8904
+ ACK On/Off
+                             CAN Editor.
+ Terminators                 Built-in 120 ±10 Ω terminator; on/off setting with commands
+                             High-speed CAN : 1M, 800k, 500k, 250k, 125k, 100k, 83.3k, 62.5k, 50 kbps
+                             Low-speed CAN : 125k, 100k, 83.3k, 62.5k, 50k, 33.3k, 20k, 10kbps
+ Communications speeds       Single-wire CAN : 83.3k, 62.5k, 50k, 33.3k, 20k, 10kbps
+                             Baud rate settings can be made either with the MR8904 CAN Editor or using auto-
+                             matic detection.
+ Signal resolution output    15 channels equivalent to 16-bit analog signal
+ channels                    16 1-bit channels equivalent to logic signal
+                             1-bit signals         : Use 1 logic channel or 1 analog channel.
+                             1- to 16-bit signals : Use 1 analog channel.
+ Target signal format
+                             17- to 32-bit signals : Use 2 analog channels.
+                             Signals over 32 bits : Not supported.
+                             When the set ID is received, a high-level pulse is output to the specified logic chan-
+ ID trigger                  nel. The pulse width is 50 μs if the time axis is within 5 ms/div or 1 sample if the time
+                             axis is more than 10 ms/div.
+ Response time               Within 200 μs of CAN message reception completion
+                             The set CAN message is transmitted to the bus for each port.
+                             One Shot : Transmission once only
+ CAN message transmission    Interval : Transmission at the set interval (10 ms to 99.99 s)
+                             Response : Transmission when the set ID is received
+                             Program : Transmission in the set order at the set interval (10 ms to 99.99 s)
+                             Transmission timing depends on the start time and message transmission key.
+                             Separate for ports 1 and 2
+ Status indicator LEDs       Turn green when a CAN signal with the set ID is received.
+                             Turn red when an error occurs.
+ Operating temperature and
+                             As per the Memory HiCorder into which the MR8904 has been installed
+ humidity
+ Operating environment       As per the Memory HiCorder into which the MR8904 has been installed
+                             Temperature : -20 to 60°C (-4 to 140°F)
+ Storage temperature and     Humidity    : -20°C to 40°C (-4 to 104°F) 80% RH or less (no condensation)
+ humidity                                  40°C to 45°C (104 to 113°F) 60% RH or less (no condensation)
+                                           45°C to 60°C (113 to 140°F) 50% RH or less (no condensation)
+ Dimensions                  Approx. 119.5W×18.8H×151.5D mm (4.70”W x 0.74”H x 5.96”D)
+
+
+
+                                     HIOKI MR8904A981-04
+58
+7.2 Model 9713-01 CAN Cable Specifications (Terminates in Bare Wires on One End)
+
+
+   Product warranty period             3 years
+   Mass                                Approx. 185 g (6.5 oz.)
+                                       EMC    EN 61326 Class A
+   Applicable Standards
+                                       Safety EN 61010
+   Options                             See: "Options" (p.1)
+
+
+
+
+ 7.2         Model 9713-01 CAN Cable Specifications
+             (Terminates in Bare Wires on One End)
+
+
+
+   Basic Specifications
+   Operating temperature and           Temperature: -10°C to +55°C (14 to 131°F), Humidity: 80% RH or less (no conden-
+   humidity                            sation)
+
+   Storage temperature and             Temperature: -20°C to 70°C (-4 to 158°F), Humidity: 90% RH or less (no condensa-
+   humidity                            tion)
+   Rated voltage                       60 VDC
+   Rated current                       2A
+   Dimensions                          Approx. 2000 mm (78.74”)
+   Mass                                Approx. 110 g (3.9 oz.)
+
+
+     Connector: D-Sub 17LE23090-27
+     (Manufactured by DDK Ltd.)
+       Wire color            Pin no.          Receive signal name
+             -                  1                      NC                       5       4       3       2       1
+          Green                2                     CAN_L                          9       8       7       6
+          Black                3                   CAN_GND
+             -                 4                       NC
+             -                 5                       NC
+             -                 6                       NC
+          Red                  7                     CAN_H                                              Male (9-pin)
+             -                 8                       NC
+          White                9                    CAN_V+
+             -               Shield                   GND
+
+
+
+
+                                                     HIOKI MR8904A981-04
+                                                                                                        59
+            7.3 Model 9713-02 CAN Cable Specifications (for Onboard Vehicle Connectors)
+
+
+
+7.3      Model 9713-02 CAN Cable Specifications
+         (for Onboard Vehicle Connectors)
+ Made to order; check specifications and delivery time.
+
+
+
+
+ Basic Specifications
+ Operating temperature and    Temperature: -5°C to 60°C (23 to 140°F), Humidity: 90%RH or less (no condensa-
+ humidity                     tion)
+
+ Storage temperature and      Temperature: -20°C to 80°C (-4 to 176°F), Humidity: 90%RH or less (no condensa-
+ humidity                     tion)
+ Rated voltage                60 VDC
+ Rated current                2A
+ Dimensions                   Approx. 2000 mm (78.74”)
+ Mass                         Approx. 150 g (5.3 oz.)
+
+
+
+
+                                     HIOKI MR8904A981-04
+60
+7.4 MR8904 CAN Editor General Specifications
+
+
+
+ 7.4           MR8904 CAN Editor General Specifications
+                                 Windows XP 32-bit
+   Supported operating systems
+                                 Windows Vista/7/8 32-bit and 64-bit
+   Recommended display
+                                 1280 x 960
+   resolution
+   Interface                     USB
+   Supported measuring
+                                 Hioki MR8875 Memory HiCorder
+   instrument
+                                 1. Item number: Starting at 1
+                                 2. CAN message ID: 0 to 1FFFFFFF H
+                                 3. Start position: 0 to 63
+                                 4. Data length: 1 to 32
+                                 5. Data order: U/L (Motorola), L/U (Motorola), L/U (Intel)
+   CAN definition settings
+                                 6. Sign: Unsigned, 1-signed, 2-signed
+                                 7. Signal name: Up to 40 characters
+                                 8. Label name: Up to 16 characters
+                                 9. Scaling unit: Up to 7 characters
+                                 10. Scaling value: Bit rate/offset value or maximum value/minimum value
+   Definition file memo          Memos consisting of up to 50 characters can be stored in the CAN definition file.
+   Password                      A password of up to 20 characters can required in order to edit CAN definitions.
+                                 1. Supported: Loading, conversion to CAN definition data file format (.CDF), regis-
+                                    tration to register list
+                                 2. Not supported: Editing
+                                 3. Data of 33 bits and more is not supported.
+   CANdb file                    4. Data order: Conversion from Motorola (CANdb file) to U/L (Motorola)
+                                 5. Conversion from signed (CANdb file) to 2-signed; IEEE float and double
+                                    (CANdb file) are not supported.
+                                 6. Conversion from signal name (CANdb file) to label
+                                 7. Conversion from comment (CANdb file) to signal name
+                                 1. CAN input port setting: Select port 1 or port 2.
+   Register list settings        2. Item number: 1 to 200
+                                 3. Display upper and lower limit value settings on Memory HiCorder
+   Set unit position             Unit 1 to Unit 4
+                               1.   Set (2) to (5) for each port.
+                               2.   Interface: High-speed, low-speed, or single-wire
+                               3.   Terminator: On/off (on is valid with high-speed interfaces only)
+                               4.   ACK: On/off
+   CAN communications settings
+                               5.   Baud rate: Auto (valid during ACK off only)
+                                    High-speed CAN: 1M, 800k, 500k, 250k, 125k, 100k, 83.3k, 62.5k, 50 kbps
+                                    Low-speed CAN: 125k, 100k, 83.3k, 62.5k, 50k, 33.3k, 20k, 10kbps
+                                    Single-wire CAN: 83.3k, 62.5k, 50k, 33.3k, 20k, 10kbps
+                                 1. Number of channels: 15
+   Analog channel settings       2. Definitions on register list within 16 bits are allocated to 1 channel.
+                                 3. Definitions on register list from 17 to 32 bits are allocated to 2 channels.
+                                 1. Number of channels: 16
+   Logic channel settings        2. Definitions on register list within 16 bits and their bit position are allocated.
+                                 3. Definitions on register list are allocated as ID triggers.
+
+
+
+
+                                                HIOKI MR8904A981-04
+                                                                                                              61
+                                                    7.4 MR8904 CAN Editor General Specifications
+
+
+                              1. Transmission number: 1 to 16
+                              2. Operating mode: Interval, Response, One Shot, One Shot Program, Repeat
+                                 Program
+                              3. CAN output port settings: Port 1, port 2
+                              4. Frame types: Data frame, remote frame
+                              5. Transmission ID: 1 to 1FFFFFFF H
+Transmission settings
+                              6. Transmission byte length: 0 to 8
+                              7. Transmit data: (Transmit byte length) bytes of data are set using hexadecimal
+                                 notation.
+                              8. Response ID: 1 to 1FFFFFFF H (response transmission only)
+                              9. Transmission interval: 1 to 9,999 (× 10 ms) (Interval, One Shot Program, and
+                                 Repeat Program only)
+                           1. Search for USB-connected Memory HiCorder; when multiple instruments are
+                              connected, select one.
+                           2. Send register list, CAN communications settings, analog channel settings, logic
+Communications with Memory    channel settings, transmission settings, and display upper and lower limit values
+HiCorder                      to the Memory HiCorder.
+                           3. Receive register list, CAN communications settings, analog channel settings,
+                              logic channel settings, transmission settings, and display upper and lower limit
+                              values from the Memory HiCorder.
+                              1. CAN definition data list display: Displays all CAN definition data settings.
+                              2. Register list display: Displays the item number, input port number, signal name,
+                                 label, unit, data length, and display upper and lower limit values.
+                              3. Unit position: Displays an asterisk (*) at positions in the connected device where
+                                 no MR8904 is present.
+                              4. CAN communications settings display: Displays all CAN communications set-
+Display functions
+                                 tings.
+                              5. Analog assign list display: Displays the channel, input port number, signal
+                                 name, label, unit, and display upper and lower limit values.
+                              6. Logic assign list display: Displays the channel, input port number, signal name,
+                                 label, and bit position.
+                              7. Send list display: Displays all transmission settings.
+                              1. Print register list: Prints the item number, input port number, signal name, label,
+                                 unit, and data length.
+                              2. Print CAN communications settings: Prints all CAN communications settings.
+                              3. Print analog assign list: Prints the channel, input port number, signal name,
+Print functions
+                                 label, and unit.
+                              4. Print logic assign list: Prints the channel, input port number, signal name, label,
+                                 and bit position.
+                              5. Print send list: Prints all transmission settings.
+                              1. CAN definition data: Binary format (extension of .CDF, compatible with the soft-
+                                 ware for Model 8910)
+Save functions
+                              2. Settings data: Binary format (extension of .CES, all settings except CAN defini-
+                                 tion data)
+
+
+
+
+                                      HIOKI MR8904A981-04
+62
+7.4 MR8904 CAN Editor General Specifications
+
+
+
+
+                                     HIOKI MR8904A981-04
+                                                                                                             63
+                                                                                      8.1 Troubleshooting
+
+
+
+
+ Maintenance and
+ Service         Chapter 8
+ • If damage is suspected, check the "Troubleshooting" section before contacting your dealer or Hioki rep-
+  resentative.
+ • Pack the MR8904 so that it will not sustain damage during shipping, and include a description of exist-
+  ing damage. We do not take any responsibility for damage incurred during shipping.
+ • The circuit on which power is supplied form the CAN bus incorporates a built-in fuse. If you are unable
+  to send or receive data using low-speed or single-wire CAN, the fuse may be broken. The fuse cannot
+  be replaced or repaired by the customer, so please contact your Hioki distributor.
+
+
+8.1      Troubleshooting
+        Symptom                            Check Item                          Remedy and Reference
+
+                           Is the USB cable properly connected?      Connect the USB cable properly.
+                                                                     See: "3.3 Connecting the Unit to a PC"
+                                                                             (p.14)
+ • You cannot communi-
+   cate with the PC.     Has the USB driver been properly installed? Install the USB driver properly.
+ • You cannot send con-                                              See: "Installing the USB driver" (p.14)
+   dition settings data.
+   (An error is dis-     Is the Memory HiCorder turned on?           Turn on the Memory HiCorder.
+   played.)
+                         Has the connected device been properly set? Search for the device using [Comm]-
+                                                                     [Search MR8875] on the menu bar and set
+                                                                     the connected device.
+
+                           Is the CAN cable properly connected?      Connect the CAN cable properly.
+                                                                     See: "3.2 Connecting the Unit to the Mea-
+                                                                           surement Target" (p.12)
+
+                           Has the data been properly configured?    Check the data settings.
+                                                                     See: "5.3 Creating a CAN Definition Data
+                                                                           File" (p.26)
+                                                                           "5.4 Creating Condition Settings
+                                                                           Files" (p.34)
+
+ You cannot capture signals Have the signals been allocated to the   Check the unit position to which the signals
+ from the CAN bus.          proper unit position?                    have been allocated. There is no unit
+                                                                     installed at locations where an asterisk (*)
+                                                                     is shown on the tab.
+                                                                     See: "Setting CAN communications condi-
+                                                                           tions" (p.38)
+
+                           Has data been allocated to the output     Check the data settings.
+                           channel?                                  See: "Allocating channels (Creating
+                                                                           MR8904 analog/logic assign lists)"
+                                                                           (p.40)
+
+
+
+
+                                        HIOKI MR8904A981-04
+64
+8.2 Cleaning
+
+
+            Symptom                          Check Item                              Remedy and Reference
+
+                             Is the CAN cable properly connected?          Connect the CAN cable properly.
+                                                                           See: "3.2 Connecting the Unit to the Mea-
+                                                                                 surement Target" (p.12)
+
+                             Has the interface been properly configured?   Configure the interface so that it matches the
+                                                                           interface of the CAN bus being measured.
+     The device encounters                                                 See: "Interface" (p.39)
+     an error (the red LED
+     lights up).             Has the baud rate been properly set?          Set the baud rate so that it matches the
+                                                                           baud rate of the CAN bus being measured.
+                                                                           See: "Baud" (p.39)
+
+                             Have the terminators been configured          Configure the terminators so that there are
+                             properly?                                     two for the entire CAN bus.
+                                                                           See: "Terminator" (p.39)
+
+   If the cause of the error remains unknown, perform a system reset with the Memory HiCorder. This will
+   reset all settings to their values when the unit was shipped from the factory.
+
+
+   After performing the system reset, send the settings data from the PC again.
+   See:"5.6 Sending and Receiving Condition Settings" (p.46)
+
+
+
+
+ 8.2         Cleaning
+   To clean the MR8904, wipe it gently with a soft cloth moistened with water or mild detergent.
+
+
+
+     IMPORTANT
+     Never use solvents such as benzene, alcohol, acetone, ether, ketones, thinners or gasoline, as they
+     can deform and discolor the case.
+
+
+
+
+                                                 HIOKI MR8904A981-04
+HIOKI MR8904A981-04
+HIOKI MR8904A981-04
+www.hioki.com/
+
+
+
+
+                                 hioki@hioki.eu
+
+
+
+
+           HIOKI MR8904A981-04
+

@@ -1,0 +1,413 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+</head>
+
+<body bgcolor="#E4E7FC">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#441CDB">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="color:white">MEMory Commands (Read instrument memory)</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:42pt">
+			<td class = "g_p0001">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Command</span>
+				</p>
+			</td>
+			<td class = "g_p0002">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Data<br>(for a query, response data)</span>
+				</p>
+			</td>
+			<td class = "g_p0008">
+				<p class="g_p0010" align="center">
+					<span style="color:white">Explanation</span>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:ADATA?" target="_self">
+						<b>:ADATa? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;X1,X2,X3,...<br>
+					A = 1 to 2000<br>
+					Xi&lt;NR1&gt; = &lt;storage data&gt; <b>(32bit)</b><br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Read ASCII data in memory
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:BDATA?" target="_self">
+						<b>:BDATa? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;(binary integer data)<br>
+					A = 1 to 8000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Read stored data as binary code
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTDATA?" target="_self">
+						<b>:FFTData?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+					A:x-axis data, B:y-axis data<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query FFT data<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTFRAME?" target="_self">
+						<b>:FFTFRame?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;A&lt;NR1&gt;<br>
+					A = 0 to 200<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query number of the FFT frame data<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTMAXPOINT?" target="_self">
+						<b>:FFTMaxpoint? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] A&lt;NR1&gt;,B&lt;NR1&gt;<br>
+					A = 1 to 4<br>
+					B = 0 to 10000<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query FFT data quantity<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTOVER?" target="_self">
+						<b>:FFTOver? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+					A = 1 to 4<br>
+					B = (Overall value)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query overall FFT value<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTPEAK?" target="_self">
+						<b>:FFTPEak? A,B,C</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] &nbsp;A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;,D&lt;NR3&gt;,E&lt;NR3&gt;<br>
+					A = 1 to 4 (Calculation No.)<br>
+					B = 1 to 10 (Peak value No.)<br>
+					C = 1 to 200 (Frame value No.)<br>
+					D = x-axis data, NONE (if no peak value has been acquired)<br>
+					E = y-axis data, NONE (if no peak value has been acquired)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query FFT peak value data<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTPOINT" target="_self">
+						<b>:FFTPOint A,B(,C)</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A = 1 to 4 (Calculation No.)<br>
+					B = 0 to 4000 (Data No.)<br>
+					C = 1 to 200 (Frame value No.)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set FFT data output points<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTPOINT?" target="_self">
+						<b>:FFTPOint? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;,B&lt;NR1&gt;,C&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query FFT data output points<br>
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:FFTTHD?" target="_self">
+						<b>:FFTTHd? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response] A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+					A = 1 to 4<br>
+					B = (THD value)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query THD value<br>
+				</p>
+			</td>
+		</tr>
+
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:GETREAL" target="_self">
+						<b>:GETReal</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					-
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Capture real-time data
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:MAXPOINT?" target="_self">
+						<b>:MAXPoint?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					A&lt;NR1&gt;: 0 (not data stored) to the number of stored data<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the amount of data stored
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:POINT" target="_self">
+						<b>:POINt CH$,A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, W1_1 to W4_2, Z1 to Z8, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = 0 to (number of stored data - 1)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Set the memory read/write pointer
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:POINT?" target="_self">
+						<b>:POINt?</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					CH$,A&lt;NR1&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the memory read/write pointer
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:RATIO?" target="_self">
+						<b>:RATIo? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;CH$,A&lt;NR3&gt;,B&lt;NR3&gt;<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, W1_1 to W4_2, LAT, LON, ALT, DIR, SPD, DST<br>
+					A = ratio<br>
+					B = offset<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Query the ratio and offset coefficients for converting stored data into physical values
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:REAL?" target="_self">
+						<b>:REAL? CH$</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;CH$,&nbsp;A&lt;NR3&gt;<br>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA to LB, L1 to L4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A&lt;NR3&gt;: (measured value)<br>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					Read real-time data (measured values)
+				</p>
+			</td>
+		</tr>
+
+		<tr style="height:30pt">
+			<td class = "g_p0006">
+				<p class="g_p0011">
+					<a href="../03/Right11.htm#:VDATA?" target="_self">
+						<b>:VDATa? A</b>
+					</a>
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					[response]&nbsp;X1,X2,X3,...<br>
+					A = 1 to 2000<br>
+					Xi&lt;NR3&gt; = &lt;storage data&gt;
+				</p>
+			</td>
+			<td class = "g_p0007">
+				<p class="g_p0011">
+					storage data (voltage value)
+				</p>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

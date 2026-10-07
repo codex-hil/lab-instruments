@@ -1,0 +1,52 @@
+                                                                                  このたびは、HIOKI MR8875 メモリハイコーダ用入力ユニットを
+                                                                                  ご選定いただき、誠にありがとうございます。
+                                                                                  使用上の注意や取り付け方法、仕様など詳細については、MR8875
+  MR8901                     アナログユニット                                             メモリハイコーダに付属の取扱説明書をご覧ください。
+
+                             ANALOG UNIT                                          Thank you for choosing an input unit for use with HIOKI's MR8875
+                                                                                  Memory HiCorder. For more detailed information about operating
+  MR8902                     電圧･温度ユニット                                            precautions, unit installation, and specifications, please see the
+                                                                                  instruction manual that came with the MR8875 Memory HiCorder.
+                             VOLTAGE/TEMP UNIT                                     入力ユニットの取り付け方
+  MR8903                     ストレインユニット                                             Installing an Input Module
+                             STRAIN UNIT
+  MR8904                     CAN ユニット                                                                                  ブランクパネル
+                             CAN UNIT                                                                                  Blank Panel
+
+
+  MR8905                     アナログユニット
+                             ANALOG UNIT
+                           * MR8875 Ver.2.13 以降対応                                                             例 : MR8901 アナログユニット
+                             Applicable for Ver. 2.13 or later of MR8875
+                             Applicable for Ver. 3.13 or later of MR8875-30                                   Example: Model MR8901 Analog Unit
+
+
+       取扱説明書 / Instruction Manual
+                                                                        JA/EN
+    Oct. 2018 Revised edition 3
+    Printed in Japan                                                                                                2 つの固定ネジをプラスドラ
+    MR8901A980-03 18-10H                                                                                            イバでしっかりと締め付けて
+                                                                                                                    ください。
+                                                                                                                    Using the Phillips screwdriver,
+                                                                                                                    tighten the two mounting
+                                                                                                                    screws.
+
+
+
+
+ www.hioki.com/
+
+
+
+
+                                                       hioki@hioki.eu
+
+
+
+Warranty
+Warranty malfunctions occurring under conditions of normal use in confor-
+mity with the Instruction Manual and Product Precautionary Markings will be
+repaired free of charge. This warranty is valid for a period of three (3) years
+from the date of purchase. Please contact the distributor from which you
+purchased the product for further information on warranty provisions.
+

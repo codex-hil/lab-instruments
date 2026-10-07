@@ -1,0 +1,1410 @@
+                                                                            MEMORY HiCORDER MR8875
+
+
+
+
+                                                                         1000 V Direct Input
+                                                                        Multi-channel Logger
+
+
+
+
+As a Multi-channel Logger
+The MR8875 delivers multi-channel measurement capability in a compact, A4-size footprint that
+ensures portability. Depending on which input modules are installed, measurement capabilities
+range from 16 analog channels to 60 thermocouple temperature measurement channels.
+
+As a Super-High-Speed Logger
+The MR8875 can simultaneously sample all channels in as little as 2 μsec.
+Sample up to 2 channels every 2 μsec or up to 60 channels every 50 μsec while writing data
+continuously to an SD memory card in real time. * Operation is guaranteed only with a genuine Hioki SD memory cards.
+
+As a Long-Term Continuous Recording Logger
+Real-time saving to SD card
+At an interval of 100 msec, the MR8875 can record 8 channels of data for 155 days or 60 chan-
+nels of data for 20 days. * Operation is guaranteed only with a genuine Hioki SD memory cards.
+
+New 1000 V RMS Measurement Module
+Select and install four input modules from a large selection. The MR8875 lets you mix and match
+modules to measure voltage, temperature, strain, and CAN signals or measure sensor output
+signals at a high, 16-bit resolution.
+2
+
+
+
+
+    User-selectable Input Modules for More Applications!
+     Compact Solution for Multi-channel Measurement
+
+
+
+
+                     Industrial Robots                                           The plug-in module-based architecture
+     Voltage       Temperature        Control Signals           Strain
+                                                                                 means you can mix and record a variety of
+                                                                                 signals across multiple channels - ideal for
+                                                                                 verifying the operation of multi-axis robots.
+                                                        Temperature variations
+        Sensor outputs                                  on movable parts
+
+
+
+
+          Strain
+                              Motor current
+
+                              Control signal
+                                                                                    Example of module combinations
+                               (logic probe)
+                                                                                   Analog Unit MR8901       ×2
+                                                                                   Voltage/Temp Unit MR8902 × 1
+                                                                                   Strain Unit MR8903       ×1
+
+
+
+               R&D or Science Experiments                                        With its multi-channel, long-term recording
+                                                                                 capabilities, the MR8875 is ideally suited
+                    Voltage              Temperature                             for use in development applications such
+                                                                                 as performance and durability testing.
+                                                                                 - Record sensor output.
+                                                                                 - Evaluate sensors and other devices.
+                                                                                 - Use as an X-Y recorder (flatbed).
+
+                                                                                     Example of module combinations
+                                                                                  Analog Unit MR8901       ×2
+                                                                                  Voltage/Temp Unit MR8902 × 2
+
+
+        Development of Construction Machinery,                                   Enhanced environmental temperature and
+        Agricultural Machinery, and Automobiles                                  vibration resistance enable the MR8875 to
+        Voltage          Temperature           Strain        CAN                 withstand harsh measurement environments.
+
+                                                                                   Example of module combinations
+                                      ECU                                         Analog Unit MR8901		 × 1
+                                      ECU                                         Voltage/Temp Unit MR8902		 × 1
+                                                                                  Strain Unit MR8903		 × 1
+                                                                                  CAN Unit MR8904		 × 1
+                                      CAN
+                                                                                  NON-CONTACT CAN SENSOR SP7001-95* × 1
+                                                                                 *CAN FD is not supported when using with the MR8875
+                                                                                 and MR8904.
+                                                                                                                                                  3
+
+
+                                                                                                         Applications
+
+                                          High-Speed Data Recorder
+                                                                                                         MR8875
+
+  Inverter and Motor Testing                       Primary- and secondary-side measurement of UPS power
+                                                   supply and commercial power supply transformers
+      High-voltage input (MR8905)                  Record inverter primary- and secondary-side waveforms
+                                                                      Clamp-On Sensor                      Torque      Encoder
+                                                                                                           sensor
+
+
+
+
+                                                                                           Motor                                   Load
+                                        Battery            Inverter
+                                                                                   Sensor Unit
+
+  Example of module combinations
+                                                                                                          Torque meter
+Analog Unit MR8905 × 2                                                                                     •Torque
+                                                                                                           •Rotation
+  (up to 4 high-voltage channels)
+Analog Unit MR8901 × 2                                                                    Pulse input
+  (up to 4 low-voltage channels and 4 current sensor
+  output channels)
+
+
+
+
+     Testing of EV batteries                      Measure ECU and EV inverter
+                                                  output waveforms
+           1000 V DC (CAT II)
+
+
+With the MR8905 Analog Unit, the MR8875 can                                 BA
+                                                                              TT
+measure the voltage of individual battery cells—                                   ER
+a process that requires high precision and high                                      Y
+resolution—at 16-bit resolution (1/1250 of the
+range). The instrument can measure signals of                                                           • Battery evaluation
+up to 1000 V DC directly.                                                                                 Example of control signals and
+                                                                                                          charge/discharge time measurement
+
+
+
+
+ Testing of Power Equipment Characteristics testing of power
+                                                  equipment
+             600 V AC (CAT III)                   (load rejection and circuit breaker testing)
+
+
+
+
+                                                                                                        • Load rejection testing
+                                                                                                         Analyze the correlations among factors
+                                                                                                         such as the generator voltage before
+                                                                                                         and af ter circuit-breaker operation,
+                                                                                                         degree of variability in RPM, governor
+                                                                                                         servo operating status, and pressure
+                                                                                                         regulator operation timing.
+4
+
+
+
+        1             Real-Time Saving
+                                               to an SD Card in High Resolution
+
+       Collect physical signals at a 500 kS/s sampling                                                              Input                        A/D conversion
+
+
+       rate with a high resolution of 25,000 points f.s.                                                                                                                           Isolation
+
+
+
+
+                                                                                                                       25,000 points
+    The same working principle as that of a digital oscilloscope
+    is used to record data to the large-capacity internal memory
+    at high speed. The sampling rate is 500 kS/s (2 μs period)                                                                 Sampling period as short as 2 μsec
+                                                                                                                               (sampling speed of 500 kS/s)
+    on all channels simultaneously. Sensor signal waveforms are                                                                                                                                  Write to internal memory
+    recorded and represented faithfully. Furthermore, a 16-bit A/                                          n Maximum time to record to the internal storage memory (non-exhaustive)
+                                                                                                           * Since memory is stored in each module, this chart is a comparison of storing on one unit.
+    D resolution ensures thas even subtle changes                                                          * Built-in logic, and pulses P1 and P2 input each use the storage capacity equivalent to one analog channel.
+
+    in the sensor signals are not missed.
+                                                                                                            No. of channels to be used                            1 ch                    3 ch to 4 ch           9 ch to 16 ch
+
+                                                                                                             Time axis                         Period
+                                                                                                           (non-exhaustive)                                   80,000 div                  20,000 div               5,000 div
+
+       Ultra-high-speed SD data recording is a vast                                                          200 μs/div                           2 μs                      16 s                         4s                      1s
+
+                                                                                                                     1 ms/div                    10 μs              1 min 20 s                         20 s                      5s
+       improvement over legacy products                                                                         10 ms/div                       100 μs             13 min 20 s                  3 min 20 s                     50 s
+
+    The MR8875 takes advantage of revolutionary SD card technolo-                                           100 ms/div                            1 ms        2 h 13 min 20 s                  33 min 20 s             8 min 20 s
+                                                                                                                             1 s/div             10 ms       22 h 13 min 20 s             5 h 33 min 20 s        1 h 23 min 20 s
+    gies to offer faster real-time saving to a memory card from as
+                                                                                                                        10 s/div               100 ms 9 d 06 h 13 min 20 s            2 d 07 h 33 min 20 s        13 h 53 min 20 s
+    fast as 2 μs intervals (operation is guaranteed only with a genuine Hioki SD
+                                                                                                                   100 s/div                      1.0 s 92 d 14 h 13 min 20 s         23 d 03 h 33 min 20 s    5 d 18 h 53 min 20 s
+    memory card) .   When the recording period (sampling rate) is 50 μs
+                                                                                                                5 min/div                         3.0 s    277 d 18 h 40 min            69 d 10 h 40 min        17 d 08 h 40 min
+    or less, data for all 60 channels can be recorded
+                                                                                                           Input                              A/D conversion
+    continuously over a long period.
+                                                                                                                                                                             Isolation
+                                                                                                            25,000 points
+
+
+
+
+    n Maximum recordable time to a 2 GB SD memory card
+    * Since the header information is included, actually recordable measurement data is
+      approximately 90% of the time shown in the table below. The upper limit is 1,000 days
+      but operation is guaranteed for 1 year.
+    * The recording interval is limited depending on the number of measuring channels.
+    * Built-in logic, pulses P1 and P2 input each use the storage capacity equivalent to one                        Sampling period as short as 2 μsec                                           Write to SD memory card
+      analog channel.                                                                                               (sampling rate of 500 kS/sec)                                                             in real-time
+
+     Time axis Recording
+                intervals             1 ch                     2 ch                     4 ch                                           8 ch                     16 ch                       30 ch                    60 ch
+
+       200 μs/div       2 μs           35 min 47 s              17 min 53 s                        N/A                                          N/A                        N/A                         N/A                      N/A
+       500 μs/div       5 μs        1 h 29 min 28 s             44 min 44 s              22 min 22 s                                    11 min 11 s                        N/A                         N/A                      N/A
+         1 ms/div     10 μs         2 h 58 min 57 s           1 h 29 min 28 s            44 min 44 s                                   22 min 22 s                11 min 11 s                          N/A                      N/A
+         2 ms/div     20 μs         5 h 57 min 54 s           2 h 58 min 57 s          1 h 29 min 28 s                                 44 min 44 s               22 min 22 s                   11 min 55 s                      N/A
+         5 ms/div     50 μs        14 h 54 min 47 s           7 h 27 min 23 s          3 h 43 min 41 s                             1 h 51 min 50 s               55 min 55 s                   29 min 49 s            14 min 54 s
+        10 ms/div    100 μs       1 d 05 h 49 min 34 s      14 h 54 min 47 s           7 h 27 min 23 s                             3 h 43 min 41 s             1 h 51 min 50 s                 59 min 39 s            29 min 49 s
+        20 ms/div    200 μs       2 d 11 h 39 min 08 s     1 d 05 h 49 min 34 s      14 h 54 min 47 s                              7 h 27 min 23 s             3 h 43 min 41 s             1 h 59 min 18 s            59 min 39 s
+        50 ms/div    500 μs       6 d 05 h 07 min 50 s     3 d 02 h 33 min 55 s     1 d 13 h 16 min 57 s                       18 h 38 min 28 s                9 h 19 min 14 s             4 h 58 min 15 s          2 h 29 min 07 s
+       100 ms/div      1 ms     12 d 10 h 15 min 41 s      6 d 05 h 07 min 50 s     3 d 02 h 33 min 55 s                    1 d 13 h 16 min 57 s             18 h 38 min 28 s              9 h 56 min 31 s          4 h 58 min 15 s
+       200 ms/div      2 ms     24 d 20 h 31 min 23 s     12 d 10 h 15 min 41 s     6 d 05 h 07 min 50 s                    3 d 02 h 33 min 55 s            1 d 13 h 16 min 57 s           19 h 53 min 2 s          9 h 56 min 31 s
+       500 ms/div      5 ms     62 d 03 h 18 min 29 s     31 d 01 h 39 min 14 s    15 d 12 h 39 min 14 s                    7 d 18 h 24 min 48 s            3 d 21 h 12 min 24 s        2 d 01 h 42 min 36 s     1 d 00 h 51 min 18 s
+          1 s/div     10 ms    124 d 06 h 36 min 58 s     62 d 03 h 18 min 29 s    31 d 01 h 39 min 14 s              15 d 12 h 49 min 37 s                 7 d 18 h 24 min 48 s        4 d 03 h 25 min 13 s     2 d 01 h 42 min 36 s
+          2 s/div     20 ms    248 d 13 h 13 min 56 s    124 d 06 h 36 min 58 s    62 d 03 h 18 min 29 s              31 d 01 h 39 min 14 s                15 d 12 h 49 min 37 s        8 d 06 h 50 min 27 s     4 d 03 h 42 min 36 s
+          5 s/div     50 ms    621 d 09 h 04 min 51 s    310 d 16 h 32 min 25 s   155 d 08 h 16 min 12 s              77 d 16 h 08 min 06 s                38 d 20 h 04 min 03 s       20 d 17 h 06 min 09 s    10 d 08 h 33 min 04 s
+         10 s/div    100 ms     Upper limit 1000 days    621 d 09 h 04 min 51 s   310 d 16 h 32 min 25 s          155 d 08 h 16 min 12 s                   77 d 16 h 08 min 06 s       41 d 10 h 12 min 19 s    20 d 17 h 06 min 09 s
+         30 s/div    300 ms     Upper limit 1000 days    Upper limit 1000 days    932 d 01 h 37 min 16 s          466 d 00 h 48 min 38 s                  233 d 00 h 24 min 19 s      124 d 06 h 36 min 58 s    62 d 03 h 18 min 29 s
+         50 s/div    500 ms     Upper limit 1000 days    Upper limit 1000 days    Upper limit 1000 days           776 d 17 h 21 min 04 s                  388 d 08 h 40 min 32 s      207 d 03 h 01 min 37 s   103 d 13 h 30 min 48 s
+         60 s/div    600 ms     Upper limit 1000 days    Upper limit 1000 days    Upper limit 1000 days           932 d 01 h 37 min 17 s                  466 d 00 h 48 min 38 s      248 d 13 h 13 min 56 s   124 d 06 h 36 min 48 s
+        100 s/div      1.0 s    Upper limit 1000 days    Upper limit 1000 days    Upper limit 1000 days            Upper limit 1000 days                  776 d 17 h 21 min 04 s      414 d 06 h 03 min 14 s   207 d 03 h 01 min 37 s
+        2 min/div      1.2 s    Upper limit 1000 days    Upper limit 1000 days    Upper limit 1000 days            Upper limit 1000 days                  932 d 01 h 07 min 17 s      497 d 02 h 27 min 53 s   248 d 13 h 13 min 56 s
+        5 min/div      3.0 s    Upper limit 1000 days    Upper limit 1000 days    Upper limit 1000 days            Upper limit 1000 days                  Upper limit 1000 days       Upper limit 1000 days    621 d 09 h 04 min 51 s
+                                                                                                                                                                                                                        5
+
+
+
+      2                Multi-channel
+                                          Mixed Measurement of Various Signals
+
+    Install input modules according
+    to your specific needs
+                                                                                                                                                            MR8905
+● The MR8875 uses a plugin unit-type input amp setup that allows                                                                                       The Analog Unit MR8905 does not include input cables.
+    users to select the input unit that’s appropriate for their mea-                                                                                   Separate purchase of the optional Connection Cable Set
+                                                                                                                                                       L4940 (× 2) and Alligator Clip Set L4935 (× 2), which consists
+    surement objective. In addition, it’s easy to change input units                                                                                   of clips that fit onto the ends of the cables, is required.
+
+    after purchase.
+● The Analog Unit MR8905, which can accommodate high volt-
+    ages and allows direct input of up to 1,000 V (CAT II) or 600
+    V (CAT III), is available for high-voltage applications. In addi-
+    tion to instantaneous waveforms, measurement of RMS level
+    waveforms is also supported.
+                                                                                                                                              MR8901
+● Even the standard input unit supports 1,000 V (CAT III)
+                                                                                                                                                                                               P9000-01 or P9000-02
+    measurement if used with the newly developed Differential
+    Probe P9000 series of small probes.                                                                                                                The Differential Probe P9000 can be used with the standard
+                                                                                                                                                       Analog Unit MR8901 to enable high-voltage, 1,000 V (CAT
+● For high-sensitivity measurement, use the Strain Unit MR8903,                                                                                        III) measurement. The P9000-02 further enables RMS level
+                                                                                                                                                       measurement of AC power lines.
+    which features 1 mV f.s. operation (for a maximum resolution of
+    0.04 μV). Measurement of minuscule sensor output is also sup-
+    ported.
+
+
+
+
+   Accepts direct pulse input and
+   standard logic probe terminals
+                                                                                                                          • Example of recording the instantaneous waveform and RMS level waveform
+                                                                                                                            during a momentary outage of an AC power supply (using the MR8905)
+The MR8875 offers two standard equipped pulse input channels that
+
+allow for inputting no-voltage a- and b-contacts, open collectors,
+
+or voltage. Signals transmitted as pulses, such as those of rotation
+
+speed and flow rate, can be measured (counted). Use a logic probe
+
+for the on/off (logic) signal waveforms such as relay and PLC wave-
+
+forms. Two types of logic probes are available depending on the
+
+signal types (see p. 15).
+
+                                                                                                                          • Multi-channel timing measurement using logic waveform measurement
+
+
+n Support for a wide variety of measurement items                                                                         n Pulse input terminal
+  (Model MR8875 standard equipped with pulse input capability. Logic input requires an optional logic probe.)
+                                                                                                                          Take advantage of the frequency dividing function, settable from 1
+ Measurement          Input unit             Measurement range                   Resolution Sampling      Frequency
+    target                                                                                              characteristics
+                                                                                                                          to 50,000 counts, to take direct readings from an encoder that out-
+  Rotation        Standard equipped                                                         10 msec
+   speed
+                                                   5000 (r/s) f.s.                1 (r/s)                    N/A
+                    with pulse input                                                        (100 S/s)
+                                                                                                                          puts multi-point pulses according to the rotation speed.
+    Pulse         Standard equipped         65,535 to 3,276,750,000
+ totalization
+                                                                                 1 count      N/A            N/A
+                    with pulse input               counts f.s.
+                                          Depends on logic probe in use
+Relay contacts,                                                                               2 μsec     500 nsec or
+                   Logic Probe 9320-01     Max. input 50 V                         N/A
+ voltage on/off                            Threshold +1.4 V, +2.5 V, +4.0 V,                (500 kS/s) lower response
+                                           or non-voltage contact (short/open)                                                  Two line pulse inputs
+                                                                                                                                (common GND)
+AC/DC voltage                             Depends on logic probe in use                       2 μsec     3 msec or
+                  Logic Probe MR9321-01    detects presence of AC/DC               N/A
+    on/off                                                                                  (500 kS/s) lower response
+                                           voltages of up to 250 V.
+
+Note: power line frequency, duty ratio and pulse width measurements are not supported.
+6
+
+
+
+        3          Touch Screen
+                                        for Intuitive Operation
+
+
+      Touch screen interface improves operating
+      efficiency
+    Buttons on the MR8875 are kept to a minimum by utilizing touch
+    screen technology. The high-definition 8.4-inch high-brightness TFT
+    color LCD is the interface of choice for improving productivity by
+    offering a more intuitive experience than traditional input methods.
+
+
+
+
+      Touch to scroll back or scale the waveform
+    Display earlier waveforms during recording without stopping mea-
+    surement by simply touching the scroll icons on the screen. You can
+    also scale the waveform amplitude by just swiping through the wave-
+    form up (to zoom in) or down (to zoom out).
+
+
+
+
+      Advanced cursor read function for
+      multichannel analysis
+    Six cursors A, B, C, D, E, and F are available, compared with the
+    conventional A- and B-cursors. Use the cursors to measure and
+    display the following:
+    • A, B, C, and D: Electric potential and time from the trigger
+    • E and F: Electric potential
+    • A-B and C-D cursors: Time difference and potential difference
+    • E-F cursors: Electric potential
+
+
+
+
+      Split screen, sheet display, event mark input, and
+      jump functions-indispensable for efficient analysis
+    Split screen and sheet display functions are provided to support
+    multiple channels. Individual display formats can be selected
+    and an application can be assigned to each sheet for analysis,
+    increasing productivity.
+    H For long-term recordings, tag important points with event
+    markers. Up to 1000 markers can be placed so that you can
+    quickly jump to them later for detailed analysis.
+                                                                                                                                                   7
+
+
+
+   4           Computer Analysis
+                          via LAN, SD, and USB memory interfaces
+
+
+  LAN-compatible Web/FTP server function and
+  waveform/CSV conversion using the software
+  “Wv”
+Take advantage of the built-in 100BASE-TX LAN interface to net-
+work with a PC:
+Web server: use the Web Server function to view waveforms and
+remotely control the MR8875 with your PC’s web browser
+
+
+FTP server: use the FTP server function to copy the data
+stored in memory (SD card, USB memory, or internal storage memory)
+to the PC. You can then view binary waveform data acquired
+with the MR8875 on a PC, or convert data to CSV using the
+free WaveViewer (Wv) application for further analysis in Excel.
+Download the latest version of WaveViewer from the Hioki web-
+site at www.hioki.com.
+                                                                               Wv screen example
+
+                                                                                                           Excel spreadsheet example
+
+
+  n Remotely control the MR8875 using the Web                                          n Download data using FTP
+    server function                                                                    Measurement data in files on recording media and
+  Use a typical web browser to see the screen of the MR8875 on                         in the internal memory can be acquired from a PC.
+  your PC with no other special                                                                      Note: waveform data cannot be acquired from
+                                                                                                     the internal memory during measurement.
+  software required. Make set-
+  tings, acquire data, and moni-
+  tor the screen with ease.
+
+  Note: waveform data cannot be
+  acquired from the internal memory during measurement.
+
+
+
+  n Transfer data using FTP                                                              n Attach data to E-mail
+  After measurement is finished, data is transferred                                     After measurement is finished, you can automatical-
+
+  automatically to the FTP server that is running on                                     ly send the captured data as an e-mail attachment.
+
+  the PC. Data can also be transferred at you desired timing.                            Data can also be transferred at you desired timing.
+
+
+
+
+  Save data to the USB memory or SD card
+Convenient USB memory*1 or SD memory cards*1 can be used to
+copy data stored in the internal storage memory to the PC. Data
+stored in the MR8875’s SD card can also be downloaded to the PC
+using a USB cable.*2
+* 1 Use only Hioki SD memory cards and USB memory stick, which are manu-
+ factured to strict industrial standards, for long-term storage of important
+ data. Data cannot be saved in real-time to a USB memory.
+* 2 Only data stored onto the Hioki SD memory card can be downloaded onto a
+ PC via a USB cable.
+8
+
+
+    5 Powerful Data Analysis Capabilities
+                  FFT Analysis Function
+
+    Simultaneously measure four phenomena
+    The MR8875's FFT analysis function can simultaneously ana-
+    lyze four phenomena with a single measurement.
+    By performing FFT analysis of different signal inputs from
+    channels 1 through 4, it is possible to analyze the frequency
+    components of each channel occurring at the same time.
+    For example, you can simultaneously view the linear spec-
+    trum, RMS spectrum, power spectrum, and phase spectrum
+    for a signal input to channel 1.
+
+
+    Analysis functionality for a variety of
+    measurement scenarios
+    The MR8875 features calculation functions that are often used
+    during field measurements. The linear spectrum is used in
+    analysis that focuses on waveform amplitude values, while the
+    power spectrum is used in analysis that focuses on energy, for
+    example noise and vibration measurement. You can select the
+    calculation function that best suits your application—for ex-
+    ample, use a transfer function for measurement that identifies
+    internal systems based on I/O characteristics.
+
+
+    Peak value display function (marker display)
+    The peak value display function can be used to search for
+    maximum and local maximum values and then display them.
+    Characteristic values can be easily displayed even without us-
+    ing a cursor. Since the MR8875 stores up to 200 frames (200
+    calculation results) of data, it will automatically search for the
+    peak value again if a different frame is selected.
+
+
+    Running the spectrum display function
+    The MR8875's running spectrum display function can be used
+    to continuously display spectra that change over time. Up to 200
+    frames* of the most recent calculation results can be stored. Addi-
+    tionally, if the selected frame is changed, the cursor value can also
+    be loaded.
+    * Frame data is stored in the instrument's internal memory, regard-
+      less of whether the running spectrum display is used.
+
+
+    The MR8875 can also freeze the spectrum display on its screen
+    during measurement. This function allows data to be observed
+    without the inclusion of unneeded information on the screen or in
+    the data. All calculation results can be output as CSV data, which
+    can be loaded into a spreadsheet application such as Microsoft
+    Excel and used to create a three-dimensional graph.
+
+                                                                            Example of data displayed with Microsoft Excel
+                                                                                                                                                                             9
+
+ Extensive window functions
+ The MR8875 provides a total of seven window functions, including rectangular and Hanning variants. The rectangular function is used
+ for analysis that focuses on spectrum amplitude values, while the Hanning function is used for analysis that focuses on the degree of
+ spectral separation of frequency components. Additionally, by using an exponential window in impact measurement utilizing an im-
+ pulse hammer, the instrument enables more precise analysis by limiting unneeded noise components on the time axis.
+
+
+  Continuous calculation function
+  When analyzing a signal that changes over time, the number of FFT calculation points becomes a limitation, preventing the waveform
+  from being analyzed in all time domains. Furthermore, using too many FFT points prevents the desired results from being obtained
+  because the spectrum is averaged. The MR8875 resolves                                              Number of skips
+  these problems with its continuous calculation function.
+  For data covering extended periods of time, calculation
+                                                                         Time waveform
+  points can be shifted by a number of skip points* at a uni-
+  form interval. Moreover, calculations for up to 200 frames
+  can be accomplished with a single operation. Calcula-
+                                                                         FFT calculation
+  tion results for different time periods can be reviewed by                                                         Frame 2                                 Frame 200
+                                                                             results
+  changing the calculation frame, regardless of whether                                      Frame 1
+  you're using the running spectrum display or a single-                                               Illustration of continuous calculation
+  screen display.
+  * The number of skip points can be set from 100 to 10,000.
+
+
+
+  Overlay display function
+  The MR8875's overlay display function can be used to ob-
+  serve variations in waveforms captured using continuous
+  measurement over time. Although previous Hioki models
+  have not been able to overlay FFT calculations, the MR8875
+  offers this capability, improving the visibility of analysis.
+
+
+
+  Visually appealing screen displays
+                                                                                           Single-screen display
+  The MR8875's display can be switched according to the ap-
+  plication at hand. For example, its single-screen display can
+  be used when focusing on the correlation between channels,                                                                 Simultaneous display of a time-axis
+                                                                                                                             waveform and FFT calculation results
+  while its four-screen display can be used to isolate complex
+  spectra for viewing. Additionally, time and spectrum wave-
+  forms can be displayed above and below one another when
+  focusing on correlation with a captured time waveform.
+
+
+
+Principle FFT calculation functions
+                     1,000                                                                             Frequency (simple)
+Calculation          2,000                                                     Averaging               Frequency (exponential)
+points               5,000                                                                             Frequency (peak-hold)
+                     10,000                                                                            Linear spectrum
+                     Rectangular window                                                                RMS spectrum
+                     Hanning                                                                           Power spectrum
+                                                                               Analysis
+                     Hamming                                                                           Transfer function
+                                                                               functions
+                                                                                                       Cross power spectrum
+Window functions Blackman
+                                                                                                       Coherence function
+                     Blackman-Harris
+                                                                                                       Phase spectrum
+                     Flat top
+                     Exponential                                                                       Frequency range: 1.33 mHz to 400 kHz
+                                                                                                       Max. number of simultaneous functions: 4
+                     Amplitude
+                                                                                                       Total harmonic distortion (THD) analysis
+                     Real part                                                                         Overall value
+                     Imaginary part                                            Other
+Display                                                                                                Window function energy correction
+                     Peak value display: local maximum, maximum                                        dB scaling
+                     Running spectrum (spectrogram): 200 lines                                         Continuous calculation
+                     Screen segmenting: 1-/2-/4-screen, Waveform + FFT                                 Calculation precision: 32-bit floating point, IEEE single-precision
+10
+
+
+      Waveform Calculation Function
+     Real-time inter-channel calculation
+                                                                                                          CH 1 waveform
+     The MR8875 features a new real-time inter-channel calculation* func-
+     tion that allows you to observe and record results for up to two cal-
+     culations on the same input module while measurement continues.
+                                                                                                          CH 2 waveform
+      * Between channels on the same input module only (supported input modules:
+        MR8901/8902/8903)
+      * Calculations between different user-set phenomena on the MR8902/8903
+        (voltage and temperature, etc.) are not supported.                                                Real-time wave-
+                                                                                                          form calculation
+                                                                                                          result
+
+
+     Waveform-dimension calculations
+     The previous MR8875 firmware version only supported calcula-
+     tions that generated values such as averages and RMS values,                                         Results of measuring a distorted wave-
+                                                                                                          form containing noise
+     but the new version can process for up to eight calculations
+     simultaneously, including arithmetic operations as well as differ-
+     ential-integral and other waveform-dimension calculations.                                           Results of a calculation-based simula-
+                                                                                                          tion of a waveform from which high-
+                                                                                                          frequency distortion has been rejected
+                                                                                                          by passing it through a low-pass filter.
+     Digital filter calculations
+     The MR8875 offers new digital filter calculations* as part of its                                                       LPF waveform
+     selection of waveform processing calculations, allowing the                                                                                           LPF spectrum
+     necessary bandwidth portion of a waveform containing noise
+     to be calculated and the resulting waveform displayed.                                                HPF waveform
+                                                                                                                                                                     HPF spectrum
+     * Finite impulse response (FIR) and infinite impulse response (IIR) digital filters are offered.
+        Both of the digital filters can be configured with an LPF (passing only the low-frequency                             BPF waveform
+                                                                                                                                                       BPF spectrum
+        component), HPF (passing only the high-frequency component), BPF (passing only a
+        frequency bandwidth of a certain width), or BEF (rejecting only a frequency bandwidth
+        of a certain width).
+     * Although FIR calculation processing is time-consuming, it can yield waveforms with no
+        phase distortion. By contrast, IIR calculation yields results at a relatively faster calculation speed but is prone to phase distortion. Each filter’s cutoff frequency is user-specified.
+
+
+
+
+     6             CAN Signal Input for Vehicle Testing
+     Synchronized mixed recording of CAN data
+     and real data such as voltage, temperature,
+     or distortion signals
+                                                                          ECU
+                                                                                                               Acquire information such as engine RPM and vehicle speed
+                                                                                                                                         CAN input
+                                                                                                               Measure temperature and vibration in the vehicle
+                                                ECU                                                                                    Analog input
+                                                                                            You can acquire CAN data and analog data in a
+                                                                                            non-contact method by pairing the SP7001-95
+                                                                                            with the MR8875 and MR8904*.
+                                                                                             *CAN FD not supported
+
+
+     n Graph CAN signal information and analog data simultaneously
+
+                        Captured CAN data                                                      Display of
+                                                                                             waveforms on
+                      Measured analog data                                                   same time axis
+
+              The MR8875 displays an analog waveform that is converted from a CAN
+              transmission in real time. On the waveform, analog data such as voltage,
+              temperature, strain, and information collected from the CAN bus such as
+              vehicle speed and RPM can be shown simultaneously.
+                                                                                                                              11
+
+  Vector’s CAN database can be loaded using
+  supplied software
+Industry standard CANdb® database files can be
+loaded onto the supplied setting software to identify the
+CAN channel signals. CAN messages can be viewed
+using the customer-specified message and signal
+names, as well as scaled engineering units. Since
+parameters such as signal data type, start bit, length,
+and byte sequence are all pre-defined in CANdb files,
+users can concentrate on their measurement tasks
+without needing to define signals.
+                                                                                          CAN editor (free software)
+
+
+
+
+n Basic configuration of Non-Contact CAN Sensor
+This system requires three components: the signal probe, sensor, and CAN interface.
+You can either order the set models or order the system components individually.
+
+  *CAN FD is not supported when using with the MR8875 and MR8904.
+               Signal probe                                  Sensor                                 CAN Interface
+
+
+
+
+                                                                                       CAN INTERFACE SP7150
+                                                                                       Power supply: USB bus power or Z1013
+     SIGNAL PROBE SP9250
+
+
+                                              NON-CONTACT CAN SENSOR
+                                                            SP7001
+                                                                                       CAN INTERFACE SP7100
+     SIGNAL PROBE SP9200                                                               Power supply: 10 to 30 V DC or Z1008
+
+
+
+  Set model
+     NON-CONTACT CAN                                   NON-CONTACT CAN
+     SENSOR                                            SENSOR
+     SP7001-95                                         SP7001-90
+      set content                                       set content
+     SIGNAL PROBE SP9250                               SIGNAL PROBE SP9200
+     NON-CONTACT CAN SENSOR SP7001                     NON-CONTACT CAN SENSOR SP7001
+     CAN INTERFACE SP7150                              CAN INTERFACE SP7100
+     (Includes L9510, GND cable)                       (Includes L9500, GND cable)
+
+
+
+
+  Withstand extreme environmental temperatures, vibrations,
+  and data loss threats due to power outages
+In road tests, extreme environmental conditions associated with
+temperature and vibration are traditionally hard on measuring
+instruments. The MR8875 has the wide operating temperature
+range of -10˚C to 50˚C (14˚F to 122˚F) and is compliant with the
+stringent Japanese standard for vibration resistance performance
+used in automotive testing (JIS DI1601). It is designed to withstand
+the harsh conditions of in-vehicle measurement.
+In the event of a power outage while data is being recorded, the
+power supply is maintained using a built-in large-capacity capaci-
+tor until data is completely written to the SD or USB memory. Risk
+of data loss or damage to the file system is minimized, and after
+power is restored, measurement can be restarted automatically.
+12
+  Basic specifications (Accuracy guaranteed for 1 year)                                                           Measurement function (High-speed recording)
+ Measurement function High-speed recording                                                                                              200 μs/div, 500 μs/div, 1 ms/div to 500 ms/div, 1 s/div to 5 min/div
+                          Up to 4 slots, user installable in any combination by plugging into                                           21 ranges, external sampling (max. 200 kS/s)
+                           the main unit                                                                         Time axis              Recording intervals with real-time save on: 2 μs/S (up to 2 channels),
+                     [MR8901 × 4]: 16 analog channels + standard 8 logic and 2 pulse channels                                            5 μs/S (up to 8 channels), 10 μs/S (up to 16 channels), 20 μs/S (up to 30
+                     [MR8905 × 4]: 8 analog channels + standard 8 logic and 2 pulse channels                                             channels), 50 μs/S (up to 64 channels), 100 μs/S (no limit on number of
+ Number of input     [MR8902 × 4]: 60 analog channels + standard 8 logic and 2 pulse channels                                            channels in use)
+ modules that can be [MR8903 × 4]: 16 analog channels + standard 8 logic and 2 pulse channels                    Accuracy of time axis ±0.0005%
+ installed           [MR8904 × 4]: 8 CAN ports (analyzed 60 analog + analyzed 64 logic ch) +                     Time axis resolution 100 points/div
+                      standard 8 logic and 2 pulse channels
+                          * For analog units, channels are isolated from each other and from the MR8875’s        Recording length       25 to 20,000 div *1 *2, 50,000 div *3, or user-configurable from 5
+                           GND. For CAN unit ports or standard logic terminals or standard pulse termi-          (with MR8901 × 4, logic to 80,000 div *3 in 1 div increments
+                           nals, all channels have common GND.                                                   and pulse inputs off)  *1 4 ch/module, *2 2 ch/module, *3 1 ch/module
+                          MR8901/MR8905: 500 kS/s (2 μs period, all channels simultaneous)
+                          MR8902: 10 msec (channel scanning)                                                     Waveform               Time axis: × 10 to × 2 or × 1, × 1/2 to × 1/50,000
+ Max. sampling rate                                                                                              expansion/             Voltage axis: × 100 to × 2 or × 1, × 1/2 to × 1/10
+                          MR8903: 200 kS/s (5 μs period, all channels simultaneous)
+                          External sampling: 200 kS/s (5 μs period)                                              compression            Upper and lower limit settings, or position setting
+                          Total 32 Mega-words (memory expansion: none, 8 Mega-words/module)                                             Trigger timing at start: pre-trigger data can be recorded for an interval
+                                                                                                                 Pre-trigger
+ Storage memory           * 1 word = 2 bytes, therefore 32 Mega-words = 64 Mega-bytes.                                                  set in steps ranging from 0% to 100% of the recording length
+ capacity                 * Memory can be allocated depending on the number of channels used on each                                    Trigger timing at stop: post-trigger data can be recorded for an interval
+                           input module                                                                          Post-trigger
+                                                                                                                                         set in steps ranging from 0% to 40% of the recording length
+ External storage         SD card slot × 1, USB memory stick (USB 2.0 standard)
+                          * FAT-16 or FAT-32 format on SD or USB                                                                        On/off is selectable (exclusive real-time save or automatic save)
+ Backup functions         Clock and parameter setting backup: at least 10 years                                                         Function: waveforms are saved as binary data to the SD memory
+ (at 23°C/73°F)           Waveform backup function: none                                                                                 card at each interval. (Note: it cannot save in real-time to a USB memory.
+                                                                                                                                         Use only SD memory cards sold by Hioki.)
+                          LAN × 1: 100BASE-TX (DHCP, DNS supported, FTP server/client,                           Real-time data save    Endless loop saving: a new file overwrites the oldest file when the
+                           web server, send E-mail, command control)                                                                     SD memory card capacity runs short. (Note: delete files only in saved
+ Interfaces               USB series mini-B receptacle × 1 (setting and measurement by                                                   repeat trigger mode.)
+                           communications commands, transfer data from SD card to a PC)                                                 Normal saving: saving stops when the SD memory card capacity
+                          USB series mini-A receptacle × 2 (USB memory stick, USB mouse,                                                 is full
+                           USB keyboard)
+ External control         External trigger input, trigger output, external sampling input,                                              Select from “off”, waveform data (binary or CSV), numerical calcula-
+ connectors                pulse input × 2, external input × 3, external output × 2                                                      tion results, and image data (compressed BMP or PNG)
+                                                                                                                                        Function: data are saved to either an SD memory card or USB memory
+ External power           Three lines, +5 V, 2 A total output, Common GND with the body GND                                              stick at once after the specified recording length is acquired.
+ supply                   * Differential probe 9322 can not be used                                              Auto data save
+                                                                                                                                        Endless loop saving: a new file overwrites the oldest file when the SD
+                          Temperature: -10°C to 40°C (14°F to 104°F), 80% rh or less                                                     memory card or USB memory capacity runs short
+                          		            40°C to 45°C (104°F to 113°F), 60% rh or less                                                   Normal saving: saving stops when the SD memory card or USB
+                          		            45°C to 50°C (113°F to 122°F), 50% rh or less                                                    memory capacity is full
+ Operating
+                          When powered by the battery pack: 0°C to 40°C (32°F to 104°F), 80% rh or less
+ temperature and                                                                                                                        In the event of a power outage during saving to storage media, the
+                          When charging the battery pack: 10°C to 40°C (50°F to 104°F), 80% rh or less
+ humidity                                                                                                        Data protection         file is closed and then the power is shut down.
+                          Storage:      -20°C to 40°C (-4°F to 104°F), 80% rh or less
+ (no condensation)                                                                                                                      (Note: this function is enabled 15 minutes after the power is turned on.)
+                          		            40°C to 45°C (104°F to 113°F), 60% rh or less
+                          		            45°C to 50°C (113°F to 122°F), 50% rh or less                                                • Binary data stored in the SD memory card or the USB memory
+                          Battery pack storage: -20°C to 40°C (-4°F to 104°F), 80% rh or less                                          stick can be recalled by the MR8875 internal storage memory
+                                                                                                                 Loading data from
+                          Safety: EN61010-1,                                                                                         • Waveform data saved in real time to the SD memory card can be
+ Applicable standards                                                                                            media
+                          EMC: EN61326, EN61000-3-2, EN61000-3-3                                                                       loaded starting at a specified position up to the maximum storage
+                                                                                                                                       memory capacity.
+                          Anti-vibration: JIS D1601: 1995 5.3 (1) (corresponds to Class 1:
+ Compliat standards                                                                                              Memory segmentation N/A
+                           passenger car, condition: class A)
+                          AC adapter Z1002: 100 to 240 V AC (50/60 Hz)
+                          Battery Pack Z1003: 7.2 V DC                                                            Trigger functions
+ Power supply             Continuous operation time: one hour with back light on (AC adapter                     Mode                   Single, repeat
+                           has priority when used in combination with battery pack)
+                          DC power supply: 10 to 28 V DC (please contact your Hioki distributor for              Timing                 Start, stop, and start & stop (separate trigger conditions can be set to start
+                            connection cord)                                                                                             and stop)
+
+ Charging function        Recharging time: approx. 3 hours (using the AC adapter and main unit                                          • Trigger source selectable for each channel. (Free-running when all
+ (at 23°C/73°F)             to recharge the Battery Pack Z1003)                                                                          trigger sources are off)
+                                                                                                                                        • Analog input: select up to 4 channels for each module
+                          When using the AC adapter Z1002, or external DC power supply: 56 VA
+ Power consumption                                                                                                                      • Inter-channel calculation results: W1-1 to W4-2
+                          When using the battery pack: 36 VA                                                                            • Logic input: LA1 to LA4, LB1 to LB2 (4 channels x 2 probes),
+                          Approx. 298W × 224H × 84D mm (11.73W × 8.82H × 3.31D in.), 2.4 kg                                               CAN L1 to 16 (for each MR8904 CAN Unit). Pattern triggers can be
+ Dimensions and             (84.7 oz.), (excluding input modules and battery pack)                               Trigger sources          configured for each of the above trigger sources.
+ weight                   Example configurations: 2.75 kg (97.0 oz., excluding input modules and                                        • Pulse input: P1, P2 (2 channels)
+                           including battery pack), 3.47 kg (122.4 oz., including MR8901 × 4 and battery pack)                          • External input: input signal to external trigger terminal
+                                                                                                                                        • Logic AND/OR of all sources
+ Supplied                 Instruction Manual × 1, Measurement Guide × 1, AC Adapter                                                     • Forced trigger execution: priority over any other trigger source
+ accessories               Z1002 × 1, Protection Sheet × 1, USB Cable × 1, Shoulder Strap × 1                                           • Interval trigger: trigger is activated at recording start, and again at
+                                                                                                                                          each set interval
+  Display                                                                                                        Trigger types          • Level: a trigger is applied when the set voltage rises or falls.
+                                                                                                                 (analog, pulse)        • Window: sets the upper and lower limits of trigger level
+ Display type             8.4 inch SVGA-TFT color LCD (800 × 600 dots, touch screen), (time axis 25
+                            div × voltage axis 20 div, X-Y waveform 20 div × 20 div)                                                    • Logic pattern: settable to 1, 0, or × for each logic probes
+                                                                                                                 Trigger types          • The trigger condition (AND/OR) can be set between logic input
+                          Waveform split screen (1, 2, or 4), X-Y 1 & X-Y 2 screens, time                        (logic)
+ Screen settings
+                                                                                                                                          channels in each probe.
+                          axis + X-Y waveform screen, sheet display (sheet “ALL”, sheet 1 to 4
+                            selectable)                                                                                                 • Rise or fall is selectable (max. allowable input voltage 10 V DC)
+                                                                                                                                          Rising: a trigger is applied when rising from “Low” (0 to 0.8 V) to
+                         • Waveform display                                                                                               “High” (2.5 to 10 V)
+                         • Simultaneous waveform and gauge display                                                                        Falling: a trigger is applied when falling from “High” (2.5 to 10 V)
+                         • Simultaneous waveform, gauge, and settings display
+ Screen display types                                                                                            Trigger types            to “Low” (0 to 0.8 V) or to a terminal short.
+                         • Simultaneous waveform and numerical calculation results display                       (external input)       • External trigger filter and response pulse width:
+                         • Waveform and A/B, C/D, E/F cursor values displayed at the same time                                            When external filter is off: high period is 1 ms or greater, and low
+                         • Simultaneous waveform and instantaneous value display                                                          period 2 μs or less
+ Waveform monitor        See waveform without recording (setting screen, waiting for trigger screen)                                      When the external filter is on: high period is 2.5 ms or greater,
+                                                                                                                                          and low period is 2.5 ms or less
+ Real-time value monitor Values for all channels can be monitored during measurement
+                            (instantaneous value, average value, P-P value, max. value, min. value)
+                                                                                                                                        • Analog: 0.1% f.s. (f.s. = 20 div) (Note: with the CAN Unit MR8904,
+                          • Waveform scroll (scroll backwards through the display trend graph to                 Trigger level           resolution fluctuates according to the bit length defined by the CAN.)
+                            view past waveforms even while recording)                                            resolution             • Pulse integration: 0.002% f.s.,
+                          • Event marker input and jump functions (up to 1000 markers)                                                  • Pulse rotation count: 0.02% f.s. (f.s. = 20 div)
+                          • Waveform inversion (positive/negative)
+                          • Cursor readout (use A/B/C/D/E/F/cursors)                                             Trigger filter         Set by number of samples (10 to 1000 points, or off)
+ Display functions        • Vernier display (fine amplitude adjustment)                                                                 • Open drain output (with 5 voltage output, active low)
+                          • Waveform zoom (splits the screen vertically; supports waveform                                              • Output voltage: 4.0 to 5.0 V (high level), 0 to 0.5 V (low level)
+                            magnification and overall display)                                                                          • Output pulse width: selectable level or pulse
+                          • Waveform overlay (select from off, overlay for each measurement, and                 Trigger output
+                                                                                                                                          Level: sampling period × (number of data after the trigger minus one) or
+                           overlay at user-selected timing)                                                                               longer (2 μs or longer)
+                          • Waveform history (up to 16 past data sets can be selected and displayed.)                                     Pulse: 2 ms ±10%
+                                                                                                                                                                                                                                 13
+
+ Calculation functions                                                                                               Other functions
+                             • Up to 2 calculations per module can be performed simultane-                                                       Maximum input: up to 10 V DC
+                              ously.                                                                                                             Maximum input frequency: 200 kHz
+                                                                                                                    External sampling
+                             • Calculation possible modules: Analog Unit MR8901, Voltage/                                                        Input signal condition: high level 2.5 to 10 V, Low level 0 to 0.8 V,
+                              Temp Unit MR8902, Strain Unit MR8903                                                                                Pulse width high or low 2.5 μs or longer
+Real-time inter-     * Inter-channel calculations are limited to a single module.
+                     * Scaling and probe settings will be disabled if their channel has a calcula-                                               • Scaling, comment entry, select from time, date, and number of
+channel calculations tion set to it.                                                                                                               data for the horizontal axis display, key lock
+                             * Calculation results can be scaled.                                                                                • Beep sound on/off
+                             * Calculations between different user-set phenomena on the MR8902 and                                               • Auto range setting (automatically sets the best suitable sampling rate and
+                              MR8903 are not supported.                                                                                           amplitude range)
+                             • Calculations: addition, subtraction, multiplication                                  Other                        • Hold start condition (when the power is interrupted during recording,
+                                                                                                                                                  measurement automatically resumes after power is restored)
+                             • Up to 8 calculations can be performed simultaneously                                                              • Auto set up (automatically loads setting files stored in internal memory or
+                             • Calculation memory location: internal memory                                                                       the SD card)
+                             • Calculations: average, effective (rms), peak to peak, maximum                                                     • Save the setting condition in internal memory (up to 6 conditions)
+                               value, time to maximum value, minimum value, time to mini-                                                        • Manual data save
+                               mum value, period, frequency, rise time, fall time, area value,
+                               X-Y area value, standard deviation, specified level time, specified
+Numerical                      time level, pulse width, duty ratio, pulse count, time difference,                    Pulse input section
+calculation                    phase difference, high-level, low-level, arithmetic calculations.                                                 2 channels, push-button type terminal, not isolated (common GND
+                               Calculation results can be saved to an SD memory card or USB                         No. of channels               with main unit)
+                               memory stick.
+                             • Calculation range: select from all measurement data or between                       Mode                         Rotation, integration
+                               A/B or C/D cursors                                                                                                • Divided rotation: 1 to 50,000 count (rotation number: number of pulses
+                             • Automatic storing of calculation results in CSV format to the SD                                                   per rotation; integration: number of pulses per count)
+                               card or the USB memory stick                                                                                     • Timing: select from “starting the count at the trigger” or “at the
+                                                                                                                    Measurement                   start of measurement”.
+                             • Up to 8 calculations can be performed simultaneously.                                functions                   • Integration mode: select from “integration from the start of mea-
+                             • Calculation memory location: internal memory                                                                       surement” or “instantaneous value at each sampling period”
+                             • Calculations: basic arithmetic, absolute values, exponents, com-                                                 • Processing of integration overflows: select either “value returns
+                              mon logarithms, square roots, differentials (1st and 2nd order),                                                    to 0 and counting continues” or “the overflow state persists”
+                              integrals (1st and 2nd order), moving averages, time-axis moving
+Waveform                                                                                                                                        • No-voltage ‘a’ contact (normally open contact), no-voltage ‘b’ con-
+                              averages, trigonometric operations (SIN, COS, TAN), inverse                           Input form
+calculations                                                                                                                                      tact (normally short contact), open collector or voltage input
+                              trigonometric operations (ASIN, ACOS, ATAN), FIR filter oper-                                                     • Input resistance: 1.1 MΩ
+                              ations, IIR filter operations, average values, maximum values,
+                              minimum values, level at time                                                         Max. allowable input 0 V to 50 V DC (max. voltage between input terminals that does not cause damage)
+                             • Calculation range: all measurement data; areas between the A/B                       Max. rated voltage
+                                                                                                                                                Not isolated (common GND with main unit)
+                              and C/D cursors can be selected.                                                      between channels
+                                                                                                                    Max. rated voltage to earth Not isolated (common GND with main unit)
+                             • Up to 4 calculations can be performed simultaneously.
+                             • Calculation memory location: internal memory                                                                     4 V: (high: over 4.0 V, low: 0 to 1.5 V)
+                                                                                                                    Detection level
+                             • Calculation modes: single, repeat                                                                                1 V: (high: over 1.0 V, low: 0 to 0.5 V)
+                             • Number of points: 1,000 to 10,000                                                                                With filter off: 200 μs or more (both high and low periods must be at least 100 μs)
+                             • Number of skips: automatic, 100 to 10,000                                            Pulse input period
+                                                                                                                                                With filter on: 100 ms or more (both high and low periods must be at least 50 ms)
+                             * It can be set only when the calculation mode is “Repeat”.
+                                                                                                                    Slope                       Count at rising edge, or count at falling edge
+                             • Window functions: rectangular window, Hanning, Hamming,
+FFT calculations              Blackman, Blackman-Harris, flat top, exponential                                      Filter                      Chatter prevention filter (on/off switchable)
+                             • Averaging: off, simple average, indexed average, peak hold                               Setting range             Resolution                        Measurement range
+                             • Compensation: none, power, average
+                             • Peak value display: off, local maximum value, maximum value                                      2,500 c/div             1 c/LSB                          0 to 65,535 c
+                             • Analysis mode: off, linear spectrum, RMS spectrum, power                                           25 kc/div            10 c/LSB                         0 to 655,350 c
+                              spectrum, transmission function, cross-power spectrum, coher-                                      250 kc/div          100 c/LSB                         0 to 6,553,500 c
+                              ence function, phase spectrum
+                                                                                                                                  5 Mc/div            2 kc/LSB                        0 to 131,070,000 c
+                             • Display scale: linear scale, log scale
+                                                                                                                               125 Mc/div            50 kc/LSB                       0 to 3,276,750,000 c
+Evaluation                   Calculation result evaluation output: GO/STOP (with open-drain 5 V output)              Rotation: 250 [r/s]/div         1 [r/s]/LSB                        0 to 5,000 [r/s]
+
+
+
+
+n Maximum time to record to the internal storage memory                                                                              n External appearance and dimensions
+* The MR8875 is able to save up to 16 channels of data per module. The graph below shows 16 channels because                                                                                            Input module slots
+  it is looking at storage per unit. However all units in use will follow the same maximum recording time.                                                                                              (for up to 4 input modules)
+* Built-in logic, and pulses P1 and P2 each use the capacity equivalent to one analog channel.
+                                                                                                                                                        84 mm
+
+
+
+
+Number of channels
+   to be used           9 ch to 16 ch         5 ch to 8 ch         3ch to 4 ch                2 ch                  1 ch
+
+
+Time axis Sampling
+                                                                                                                                     External power supply
+           period          5,000 div           10,000 div            20,000 div            40,000 div           80,000 div                                                                  Logic probe terminals
+                                                                                                                                     (3 lines, +5 V output, common GND
+                                                                                                                                                                                            (4 ch × 2 probes)
+ 200 μs/div      2 μs                  1s                    2s                    4s                    8s                  16 s    with the body GND)                                                         LAN and USB
+ 500 μs/div      5 μs                 2.5 s                  5s                  10 s                  20 s                  40 s
+  1 ms/div     10 μs                    5s                  10 s                 20 s                  40 s           1 min 20 s
+  2 ms/div     20 μs                   10 s                 20 s                 40 s           1 min 20 s            2 min 40 s
+  5 ms/div     50 μs                   25 s                 50 s           1 min 40 s           3 min 20 s            6 min 40 s
+                                                                                                                                                        224 mm
+
+
+
+
+ 10 ms/div    100 μs                   50 s          1 min 40 s            3 min 20 s           6 min 40 s           13 min 20 s
+ 20 ms/div    200 μs           1 min 40 s            3 min 20 s            6 min 40 s          13 min 20 s           26 min 40 s
+ 50 ms/div    500 μs           4 min 10 s            8 min 20 s          16 min 40 s           33 min 20 s        1 h 06 min 40 s
+100 ms/div      1 ms           8 min 20 s          16 min 40 s           33 min 20 s         1 h 06 min 40 s      2 h 13 min 20 s
+200 ms/div      2 ms          16 min 40 s          33 min 20 s         1 h 06 min 40 s       2 h 13 min 20 s      4 h 26 min 40 s
+500 ms/div      5 ms          41 min 40 s        1 h 23 min 20 s       2 h 46 min 40 s       5 h 33 min 20 s     11 h 06 min 40 s                                                 298 mm
+                                                                                                                                                                                                                  External control
+    1 s/div    10 ms        1 h 23 min 20 s      2 h 46 min 40 s       5 h 33 min 20 s     11 h 06 min 40 s      22 h 13 min 20 s       For the AC adapter Z1002 power, or                                        terminal
+    2 s/div    20 ms        2 h 46 min 40 s      5 h 33 min 20 s      11 h 06 min 40 s     22 h 13 min 20 s 1 d 20 h 26 min 40 s        DC power (10 V to 28 V)                                       SD card slot
+    5 s/div    50 ms        6 h 56 min 40 s     13 h 53 min 20 s 1 d 03 h 46 min 40 s 2 d 07 h 33 min 20 s 4 d 15 h 06 min 40 s
+   10 s/div   100 ms      13 h 53 min 20 s 1 d 03 h 46 min 40 s 2 d 07 h 33 min 20 s 4 d 15 h 06 min 40 s 9 d 06 h 13 min 20 s
+   30 s/div   300 ms       1 d 17 h 40 min       3 d 11 h 20 min       6 d 22 h 40 min     13 d 21 h 20 min      27 d 18 h 40 min
+   50 s/div   500 ms 2 d 21 h 26 min 40 s 5 d 18 h 53 min 20 s 11 d 13 h 46 min 40 s 23 d 03 h 33 min 20 s 46 d 07 h 06 min 40 s
+   60 s/div   600 ms        3 d 11 h 20 min      6 d 22 h 40 min     13 d 21 h 20 min      27 d 18 h 40 min      55 d 13 h 20 min
+  100 s/div     1.0 s 5 d 18 h 53 min 20 s 11 d 13 h 46 min 40 s 23 d 03 h 33 min 20 s 46 d 07 h 06 min 40 s 92 d 14 h 13 min 20 s
+  2 min/div     1.2 s      6 d 22 h 40 min      13 d 21 h 20 min     27 d 18 h 40 min      55 d 13 h 20 min     111 d 02 h 40 min
+  5 min/div     3.0 s     17 d 08 h 40 min      34 d 17 h 20 min     69 d 10 h 40 min     138 d 21 h 20 min     277 d 18 h 40 min
+14
+
+ ■ Options specifications (sold separately)                                                                                 ■ MR8902 specifications
+                                                                                                                                               Setting ranges
+                                                      Plug-in slot for the input modules                                     Thermocouples    (full scale = 20 div)
+                                                                                                                                                                        Resolution                 Measurement ranges                            Accuracy
+                                                                                                                                                                                                  -100˚C to less than 0˚C                          ±0.8˚C
+                                                                                                                                                  10 ˚C/div              0.01˚C
+                                                                                                                                                                                                        0˚C to 200˚C                               ±0.6˚C
+                                                                                                                                                                                                -200˚C to less than -100˚C                         ±1.5˚C
+                                                                                                                                   K                 50˚C                0.05˚C
+                                                                                                                                                                                                     -100˚C to 1000˚C                              ±0.8˚C
+                                                                                                                                                                                                -200˚C to less than -100˚C                         ±1.5˚C
+                                                                                                                                                    100˚C                 0.1˚C
+                                                                                                                                                                                                     -100˚C to 1350˚C                              ±0.8˚C
+                                                                                                                                                                                                  -100˚C to less than 0˚C                          ±0.8˚C
+  Measurement target              Input module                          Measurement range                     Resolution                          10 ˚C/div              0.01˚C
+                                                                                                                                                                                                        0˚C to 200˚C                               ±0.6˚C
+                          Analog Unit MR8901                  100 mV f.s. to 200 V f.s.                          4 µV                                                                           -200˚C to less than -100˚C                         ±1.0˚C
+                                                                                                                                   J                 50˚C                0.05˚C
+                          Analog Unit MR8905                  10 V f.s. to 1000 V f.s.                         400 µV                                                                                -100˚C to 1000˚C                              ±0.8˚C
+         Voltage
+                          Voltage/Temp Unit MR8902            10 mV f.s. to 100 V f.s.                          0.5 µV                              100˚C                 0.1˚C
+                                                                                                                                                                                                -200˚C to less than -100˚C                         ±1.5°C
+                          Strain Unit MR8903                  1 mV f.s. to 20 mV f.s.                          0.04 µV                                                                               -100˚C to 1200˚C                              ±0.8°C
+                                                              Depends on current sensor(s) in use                                                                                                 -100˚C to less than 0˚C                          ±0.8˚C
+         Current
+                          Analog Unit MR8901 +                                                                1/1250 div
+                                                                                                                                                  10 ˚C/div              0.01˚C
+                          additional current sensor           * Certain current sensors require a separate                                                                                              0˚C to 200˚C                               ±0.6˚C
+                                                               power supply
+                                                                                                                                                                                                -200˚C to less than -100˚C                         ±1.5°C
+                          Analog Unit MR8905                  10 V rms f.s. to 700 V rms f.s.                   400 µV                               50˚C                0.05˚C                   -100˚C to less than 0˚C                          ±0.8°C
+     RMS AC voltage Analog Unit MR8901 + additional                                                                                E
+                                                              100 V rms to 1 kV rms                           1/1250 div                                                                               0˚C to 1000˚C                               ±0.6°C
+                          Differential Probe 9322
+                                                                                                                                                                                                -200˚C to less than -100˚C                         ±1.5°C
+       Temperature                                 200°C f.s. to 2000°C f.s.
+       (thermocouple)
+                          Voltage/Temp Unit MR8902 * Upper and lower limit values depend on the                 0.01˚C                              100˚C                 0.1˚C                   -100˚C to less than 0˚C                          ±0.8°C
+                                                                thermocouple in use                                                                                                                    0˚C to 1000˚C                               ±0.6°C
+  Distortion, stress Strain Unit MR8903                       400 µε to 20,000 µε f.s.                         0.016 µε                                                                           -100˚C to less than 0˚C                          ±0.8˚C
+                                                                                                                                                  10 ˚C/div              0.01˚C
+                                                                                                                                                                                                        0˚C to 200˚C                               ±0.6˚C
+                                                              2 ports/unit                                                                                                                      -200˚C to less than -100˚C                         ±1.5°C
+  Analyze CAN signals                                         *Up to 15 analog channels, each equivalent
+                          CAN Unit MR8904                      to a 16-bit analog signal                         N/A                                 50˚C                0.05˚C                   -100˚C to less than 0˚C                          ±0.8°C
+  *CAN FD not supported
+                                                              *Up to 16 logic channels, each equivalent to                         T
+                                                                                                                                                                                                        0˚C to 400˚C                               ±0.6°C
+                                                               a 1-bit logic signal
+                                                                                                                                                                                                -200˚C to less than -100˚C                         ±1.5°C
+ Relay contacts, voltage                                      Depends on logic probes in use
+         on/off
+                         Logic Probe 9320-01                  * Max. input 50 V, threshold +1.4/+2.5/+4.0 V      N/A                               100 ˚C                 0.1˚C                   -100˚C to less than 0˚C                          ±0.8°C
+                                                              * Contact short/open, non-voltage                                                                                                        0˚C to 400˚C                                ±0.6°C
+
+     AC/DC voltage on/off Logic Probe MR9321-01               Depends on logic probes in use                     N/A        Note: the thermocouple accuracy is obtained by adding a reference junction compensation accuracy of ±0.5˚C
+                                                              * Up to 250 V AC/DC, detects live or not live
+
+
+
+ Dimensions, weight: approx. 119.5W × 18.8H × 151.5D mm (4.70W × 0.74H ×                                                    Dimensions, weight: approx. 119.5W × 18.8H × 151.5D mm (4.70W × 0.74H × 5.96D in.),
+  5.96D in.), approx. 180 g (6.3 oz.) accessories: None                                                                      approx. 173 g (6.1 oz.) accessories: conversion cable × 2 (Connectable connector: TAJIMI PRC03-12A10-7M10.5)
+
+  Analog Unit MR8901 (accuracy at 23 ±5°C [73 ±9 °F], 20 to 80% rh after 30 min. of warm-up time and zero adjust-
+                       ment; accuracy guaranteed for 1 year)                                                                 Strain Unit MR8903                       (accuracy at 23 ±5°C [73 ±9°F], 20 to 80% rh after 30 minutes of warm-up time and auto-
+                                                                                                                                                                        balancing; accuracy guaranteed for 1 year)
+ Functions                      No. of channels: 4, for voltage measurement                                                                              No. of channels: 4, for voltage/strain measurements (selectable for each
+                                Isolated BNC connector (input resistance 1 MΩ, input capacitance 10 pF)                     Functions                      channel, electronic auto-balancing, balance adjustment range within ±10,000
+                                                                                                                                                           μV, ±10,000 με)
+ Input connectors               Max. rated voltage to earth: 100 V AC rms or 100 V DC (input is isolated
+                                 from the main unit, the max. voltage that can be applied between input chan-                                            Unit side: “HDR-EC14LFDTG2-SLE+” made by Honda Tsushin Kogyo
+                                 nels and chassis, and between input channels without damage)                                                              Co., Ltd. Japan
+                                                                                                                                                         Via conversion cable, “PRC03-12A10-7M10.5” made by Tajimi Electronics
+                                5 mV to 10 V/div, 11 ranges, full scale: 20 div                                             Input connectors               Co., Ltd. Japan
+ Measurement range * AC voltage can be measured/displayed: up to 140 V rms at × 1/2 amplitude                                                            Max. rated voltage to earth: 33 V AC rms or 70 V DC (input is isolated
+                                 compression, but limited to 100 V rms is the max. rated voltage to earth                                                  from the main unit, the max. voltage that can be applied between input
+ Low-pass filter           Low-pass filter: 5 Hz, 50 Hz, 500 Hz, 5 kHz, off                                                                                channel and chassis, and between input channels without damage)
+
+ Resolution                1/1250 of measurement range (using 16-bit A/D converter)                                                                      Strain gauge converter, bridge resistance: 120 Ω to 1 kΩ, bridge
+                                                                                                                            Suitable transducer
+                                                                                                                                                          voltage: 2 V ±0.05 V, Gauge rate: 2.0
+ Highest sampling rate 500 kS/s (simultaneous sampling across 4 channels)
+                                                                                                                            Input resistance             More than 1 MΩ
+ Accuracy                  ±0.5% of full scale (with filter 5 Hz, zero position accuracy included)
+                                                                                                                                                         50 μV/div to 1,000 μV/div, 5 ranges, full scale: 20 div
+ Frequency characteristics DC to 100 kHz, -3 dB                                                                             Voltage
+                                                                                                                                                         Accuracy: ±0.5% f.s. + 4 μV (at 50 μV/div only), other ranges ±0.5% f.s.
+                                                                                                                            measurement ranges (after auto-balance, with filter 5 Hz, zero position accuracy included)
+ Input coupling            DC/GND
+ Max. allowable input 150 V DC (the max. voltage that can be applied across input pins without damage)                                         20 με/div to 1,000 με/div, 6 ranges, full scale: 20 div
+                                                                                                                            Strain measurement
+                                                                                                                                               Accuracy: ±0.5% f.s. + 4 με (at 20, 50 με/div), other ranges ±0.5% f.s.
+                                                                                                                            ranges              (after auto-balance, with filter 5 Hz, zero position accuracy included)
+  Dimensions, weight: approx. 119.5W × 18.8H × 184.8D mm (4.70W × 0.74H                                                     Low-pass filter           Low-pass filter: 5 Hz, 10 Hz, 100 Hz, 1 kHz, off
+   × 7.28D in.), approx. 190 g (6.7 oz.) accessories: ferrite clamp × 2                                                     Resolution                1/1250 of measurement range (using 16-bit A/D converter)
+                                                                                                                            Highest sampling rate 200 kS/s (simultaneous sampling across 4 channels)
+  Voltage/Temp Unit MR8902 (accuracy at 23 ±5°C [73 ±9°F], 20 to 80% rh after 30 minutes of warm-up time and zero adjust-
+                             ment; accuracy guaranteed for 1 year)                                                          Frequency characteristics DC to 20 kHz, +1/-3 dB
+ Functions
+                                No. of channels: 15, for voltage/temperature measurement (selectable for                    Max. allowable input 10 V DC (the max. voltage that can be applied across input pins without damage)
+                                 each channel)
+                                Voltage/thermocouple input: push-button terminal                                                   Dimensions, weight: approx. 119.5W × 18.8H × 151.5D mm (4.70W ×
+                                Recommended wire diameter: single-wire φ 0.32 mm to φ 0.65 mm,                                      0.74H × 5.96D in.), approx. 185 g (6.5 oz.), accessories: none
+                                 stranded wire 0.08 to 0.32 mm 2 (conductor wire diameter min. φ 0.12
+ Input connectors                mm), AWG 28 to 22                                                                           CAN Unit MR8904*                          *CAN FD not supported
+                                Input resistance: 1 MΩ
+                                Max. rated voltage to earth: 100 V AC rms or 100 V DC (input is                             Input CAN port               Number of ports: 2, connector: D-sub male 9 pin × 2
+                                 isolated from the main unit, the max. voltage that can be applied between                                               ISO 11898 CAN 2.0b, ISO 11898-1, ISO 11898-2, ISO 11898-3, SAE
+                                 input channels and chassis, and between input channels without damage)                     Standards
+                                                                                                                                                          J2411
+                                500 μV/div to 5 V/div, 9 ranges, full scale: 20 div * The AC instantaneous                                               Selectable: high-speed CAN, low-speed CAN, or single-wire CAN by
+ Voltage             voltage waveform cannot be measured due to the slow sampling speed.                                    Interface
+                                                                                                                                                          port (with built-in corresponding transceiver)
+ measurement ranges Resolution: 1/1000 of measurement range (using 16-bit A/D converter)                                                                 On/off for transmitting an ACK for receiving CAN signal with the
+                    Accuracy: ±0.1% f.s. (with digital filter on, zero position accuracy)                                   ACK transmission
+                                                                                                                                                          MR8904
+                    Reference junction compensation: internal/external (selectable)                                         Terminator                   On/off via commands, 120 Ω ±10 Ω built-in resistance
+ Temperature        Thermocouple broken-wire detection: on/off (selection applies to entire unit)
+                                                                                                                                                         50 kbps to 1 Mbps at “High-speed”, 10 kbps to 125 kbps at “Low-
+ measurement range              Thermocouple type: K, J, E, T, N, R, S, B, WRe5-26                                          Baud rate
+                                * For thermocouple measurement ranges, resolution, and accuracy, refer to the                                             speed”, 10 kbps to 83.3 kbps at “Single-wire”
+                                 specifications table below                                                                 Analyzed signal              Up to 15 analog channels each equivalent to a 16-bit analog signal
+ Digital filter       50 Hz, 60 Hz, or off                                                                                  output channel               Up to 16 logic channels each equivalent to a 1-bit logic signal
+                      10 ms (with filter off, burn-out detection off)                                                                                    1-bit signal: 1 channel of logic, or 1 channel of analog
+                      20 ms (with filter off, burn-out detection on)                                                        Signal form                  1-bit to 16-bit signal: 1 channel of analog
+ Data refresh rate    500 ms (with filter on, data refresh rate: fast)                                                                                   17-bit to 32-bit signal: 2 channels of analog
+                      2 s (with filter on, data refresh rate: normal)                                                                                      * Cannot handle signals over 32-bit
+ Max. allowable input 100 V DC (the max. voltage that can be applied across input pins without damage)                                                   Output “H” level pulse to designated logic channel when receiving set
+                      100 V DC (the max. voltage that can be applied across input channels                                  ID trigger                    ID signal
+                       without damage.)                                                                                                                  * Output pulse width: 50 μs below 5 ms/div time axis, 1 sampling time at more
+                                                                                                                                                          than 10 ms/div time axis
+ Max. allowable input The channels are insulated by semiconductor relays. If a voltage
+ across input channels exceeding the product specifications is applied between input                                        Response time                Within 200 μs after completely receiving CAN message
+                       channels, such as a lightning surge, it may cause a short circuit failure                            Transmit CAN
+                                                                                                                                                         Can transmit a set CAN message to the CAN bus per port
+                       of the semiconductor relay. Please make such a voltage is not applied.                               message
+                                                                                                                                                                                                                           15
+
+■ Options specifications (sold separately)
+                                                                                                                Cable length and weight: main unit cable 1.5 m (4.92 ft.), input section cable 30 cm
+                                                                                                                 (0.98 ft.), approx. 150 g (5.3 oz.)
+                                                                                                                Note: the unit-side plug of the 9320-01 is different from the 9320.
+
+■ CAN Editor specifications (software for the MR8904)                                (The following values          LOGIC PROBE 9320-01
+    *CAN FD not supported                                                             are for one MR8904)       Function                Detection of voltage signal or relay contact signal for high/low state recording
+                                                                                                                                        4 channels (common ground between unit and channels), digital/contact input,
+Operating environment Windows 11 (64-bit), Windows 10 (32-bit/64-bit)                                                                    switchable (contact input can detect open-collector signals)
+                             CAN message ID, Start position, data length                                        Input                   Input resistance: 1 MΩ (with digital input, 0 to +5 V)
+CAN definition                                                                                                                                            500 kΩ or more (with digital input, +5 V to +50 V)
+                             Data order: U/L (Motorola), L/U (Motorola), L/U (Intel)
+settings                                                                                                                                Pull-up resistance: 2 kΩ (contact input: internally pulled up to +5 V)
+                             Code: unsigned, 1-signed, 2-signed
+                             • Load CAN db file                                                                 Digital input threshold 1.4 V, 2.5 V, 4.0 V
+                             • Convert to “.cdf” file                                                                                   1.4 V: 1.5 kΩ or higher (open) and 500 Ω or lower (short)
+                                                                                                                Contact input
+                             • Register to list (editing not available), 33-bit data and above not supported                            2.5 V: 3.5 kΩ or higher (open) and 1.5 kΩ or lower (short)
+                                                                                                                detection resistance
+                             • Convert data order: Motorola (CANdb file) to U/L (Motorola)                                              4.0 V: 25 kΩ or higher (open) and 8 kΩ or lower (short)
+CAN db file
+                             • Convert coded file (CANdb file) to 2-signed, IEEE float or double                Detectable pulse width 500 ns or longer
+                               (CANdb file) not supported
+                             • Convert signal name (CANdb file) to the label                                    Max. allowable input 0 to +50 V DC (the maximum voltage that can be applied across input pins without
+                                                                                                                                               damage)
+                             • Convert comment (CANdb file) to the signal name
+Registration list            CAN input port setting: port 1, port 2, item number: 1 to 200                      Cable length and weight: 70 cm (2.30 ft.), output side: 1.5 m (4.92 ft.), 170 g (6.0 oz.)
+settings                     Setting upper/lower limit display on the MR8875 screen
+                  • Interface: high-speed, low-speed, single-wire                                                   DIFFERENTIAL PROBE P9000                      (accuracy guaranteed for 1 year)
+                  • Terminator: on/off (on is enabled at “High-speed” only)                                                               P9000-01: for waveform monitoring output, frequency properties: DC to 100
+CAN communication • ACK: on/off                                                                                                            kHz, -3 dB
+settings          • Baud rate: AUTO (enabled at ACK off only)                                                                             P9000-02: switches between waveform monitor output and AC effective value
+                    50 kbps to 1 Mbps at “High-speed”, 10 kbps to 125 kbps at “Low-                             Measurement modes
+                                                                                                                                           output
+                    speed”, 10 kbps to 83.3 kbps at “single-wire”                                                                          Wave mode frequency properties: DC to 100 kHz, -3 dB, RMS mode frequency
+                             Number of channels: 15                                                                                        properties: 30 Hz to 10 kHz, response time: rise 300 ms, fall 600 ms
+Analog channel               • Assign the definition on the registration list under 16-bit to 1 channel         Division ratio            Switches between 1000:1 and 100:1
+settings                     • Assign the definition on the registration list for 17-bit to 32-bit to 2         DC output accuracy ±0.5% f.s. (f.s. = 1.0 V, division ratio 1000:1), (f.s. = 3.5 V, division ratio 100:1)
+                               channels
+                                                                                                                Effective value mea- ±1% f.s. (30 Hz to less than 1 kHz, sine wave), ±3% f.s. (1 kHz to 10 kHz, sine
+                             Number of channels: 16                                                             surement accuracy
+Logic channel                                                                                                                              wave)
+                             • Assign the definition on the registration list under 16-bit, with bit position
+settings                                                                                                        Input resistance/capacity H-L: 10.5 MΩ, 5 pF or less (at 100 kHz)
+                             • Assign the definition on the registration list to the ID trigger
+                                                                                                                Maximum input voltage 1000 V AC, DC
+                             Transmission number, mode, CAN output port, frame type, transmis-
+Transmission                                                                                                    Maximum rated volt-
+                              sion ID, transmission byte length, transmission data, answer ID,                                            1000 V AC, DC (CAT III)
+settings                                                                                                        age to ground
+                              transmission period
+                             Search MR8875 via USB, registration list, CAN communication set-                   Operating
+Communication with                                                                                                                        -40°C to 80°C (-40°F to 176°F)
+                              ting, analog channels settings, logic channel settings, transmission              temperature range
+the MR8875
+                              setting information, etc.                                                                                   (1) AC adapter Z1008 (100 to 240 V AC, 50/60 Hz), 6 VA (including AC
+                             Registration list, all items of CAN communication settings, assigned                                          adapter), 0.9 VA (main unit only)
+Printing functions                                                                                              Power supply
+                              analog list, assigned logic list, all items of transmission settings                                        (2) USB bus power (5 V DC, USB-microB terminal), 0.8 VA
+                                                                                                                                          (3) External power source 2.7 V to 15 V DC, 1 VA
+                             CAN definition data: binary form, “.cdf” extension, convertible to
+                              software for Hioki Model 8910                                                     Accessories               Instruction manual × 1, alligator clip × 2, carrying case × 1
+Save functions
+                             Setting date (all contents without CAN definition data): binary form, “.ces”
+                              extension
+                                                                                                                    NON-CONTACT CAN SENSOR SP7001
+                                                                                                                                        Capacitive-coupled signal detection
+                                                                                                                Detection method
+                                                                                                                                        No bare-wire connections
+ Dimensions, weight: approx. 119.5W × 18.8H × 151.5D mm (4.70W × 0.74H ×
+ 5.96D in.), approx. 185 g (6.5 oz.), accessories: none                                                                                 AVS/AVSS-compliant cables, External diameter: 1.2 mm (0.05 in.) to
+                                                                                                                Detectable cables
+                                                                                                                                         2.0 mm (0.08 in.)
+ Analog Unit MR8905 (accuracy  at 23 ±5°C [73 ±9°F], 20 to 80% rh after 30 min. of warm-up time and
+                      zero adjustment; accuracy guaranteed for 1 year)                                          Number of channels 1 CH (SP7150), 2 CH (SP7100)
+Functions                    No. of channels: 2, switchable between instantaneous values and AC RMS values      Compatible commu-
+                                                                                                                                        CAN, CAN FD 125 kbit/s to 3 Mbit/s
+                             Banana connector (input impedance 4 MΩ, input capacitance less than 1 pF)          nications speeds
+                             Max. rated voltage to earth: CAT II 1000 V AC & DC, CAT III 600 V                  Total delay time        130 ns (typical)
+Input connectors              AC & DC (since input is isolated from the main unit, the max. voltage that        CAN terminal resistance 60 Ω (typical), built-in
+                              can be applied between input channel and chassis, and between input chan-
+                                                                                                                Signal output connector D-sub 9-pin female
+                              nels without damage)
+                                                                                                                                        Quick Start Manual ×1, Operating Precautions ×1, Spiral tube (for fixing
+                  500 mV/div to 50 V/div, 7 ranges, full scale: 20 div                                          Included accessories
+                                                                                                                                         power cable) ×1, USB Cable L9510 ×1, Ground connection cable ×1,
+Measurement range *The maximum displayable AC voltage is 700 Vrms when using 1/2 compres-                       (SP7150)
+                              sion of the vertical axis.                                                                                 Alligator clip ×1
+Low-pass filter              5 Hz, 50 Hz, 500 Hz, 5 kHz, off                                                    *CAN FD is not supported when using with the MR8875 and MR8904.
+Resolution                   1/1250 of measurement range (using 16-bit A/D converter)
+                                                                                                                Analyzing data on a computer
+Highest sampling rate 500 kS/s (simultaneous sampling across 2 channels)
+Accuracy                     ±0.5% f.s. (with 5 Hz filter on)                                                   l WAVE PROCESSOR 9335 (option)
+                             RMS accuracy: ±1.5% f.s. (from 30 Hz up to but not including 1 kHz, sine           • Waveform display and calculation
+                              wave input) or ±3% f.s. (1 kHz to 10 kHz, sine wave input)                        • Print function
+RMS measurement              Response time: 300 ms (filter off, rising from 0% to 90% f.s.) or 600 ms
+                              (filter off, falling from 100% to 10% f.s.)
+                             Crest factor 2                                                                     l Wave Viewer (Wv) Software (dedicated software)
+                                                                                                                •    Confirmation of binary data waveforms on a computer
+Frequency characteristics DC to 100 kHz, -3 dB                                                                  •    Saving data in the CSV format for transfer to spreadsheet
+Input coupling               DC/AC-RMS/GND                                                                           software
+                             1000 V DC, 700 V AC (the max. voltage that can be applied across input             ■ 9335 outline specifications (option)
+Max. allowable input          pins without damage)
+                                                                                                                Operating environment Windows 11, 10(32/64-bit)
+Cable length and weight: main unit cable 1.5 m (4.92 ft.), input section cable 1 m                                                    • Display: waveform display, X-Y display, cursor function, etc.
+ (3.28 ft.), approx. 320 g (11.3 oz.)                                                                                                 • File loading: readable data formats (.MEM, .REC, .RMS, .POW)
+Note: the unit-side plug of the MR9321-01 is different from the MR9321.                                                                Largest readable file: largest file that can be saved by supported
+ LOGIC PROBE MR9321-01                                                                                          Functions              instruments (supported file size may be limited due to the computer’s
+                                                                                                                                       operating environment.)
+                             Detection of AC or DC relay drive signal for high/low state recording
+Function                                                                                                                              • Data conversion: conversion to CSV format, batch conversion of mul-
+                             Can also be used for power line interruption detection                                                    tiple files
+                     4 channels (isolated between unit and channels), hight/low range switching
+Input                                                                                                                                 • Print function: saving of print image files (with support for enhanced
+                     Input resistance: 100 kΩ or higher (high range), 30 kΩ or higher (low range)                                      metafile [EMF] format)
+                     170 to 250 V AC, ±DC 70 to 250 V (high range)                                              Print
+                                                                                                                                      • Print format: select from no tiling, 2 to 16 tiles, 2 to 16 rows, X/Y 1 to
+Output (H) detection
+                     60 to 150 V AC, ±DC 20 to 150 V (low range)                                                                       4 tiles, preview & hard copy
+                     0 to 30 V AC, ±DC 0 to 43 V (high range)
+Output (L) detection                                                                                            ■ Wave Viewer (Wv) outline specifications (free download software)
+                     0 to 10 V AC, ±DC 0 to 15 V (low range)
+                             Rising edge 1 ms max., falling edge 3 ms max. (with high range at 200 V            Operating environment Windows 11, 10/8/7 (32/64-bit)
+Response time
+                              DC, low range at 100 V DC)                                                                                      • Simple display of waveform file
+                             250 Vrms (high range), 150 Vrms (low range) (the maximum voltage that can be       Functions                     • Convert binary data file to text format, CSV
+Max. allowable input                                                                                                                          • Scroll display, enlarge/reduce, jump to cursor/trigger position, etc.
+                              applied across input pins without damage)
+              MR8875 Options in Detail
+                     *Install by inserting into the main unit. Can be replaced by user.                                                                                                                                                 *A separate power supply (CT9555) is required in order to use a high-precision current sensor.
+                     Input cables are not supplied.                                                                                                                                                                                     *Only sensors with ME15W (12-pin) terminals can be connected to the CT9555.
+                                                ANALOG UNIT MR8901                                                                                                                                                                      *The separately available Conversion Cable CT9900 is required in order to use a sensor with
+                                                  4ch, voltage measurement, DC to 100 kHz bandwidth                                                                                                                                      PL23 (10-pin) terminal.
+                                                VOLTAGE/TEMP UNIT MR8902                                                                                                                                                                                   POWER SUPPLY for Current Sensors
+                                                  15ch, voltage measurement, thermocouple measurement
+Input modules
+
+
+
+
+                                                                                                                                                                                                                                                           SENSOR UNIT CT9555 1ch, with waveform output
+                                                STRAIN UNIT MR8903
+                                                  4ch, voltage measurement, strain gauge converter                                                                                                                                                         CONNECTION CORD L9217
+                                                  input, conversion cable included                                                                                                                                                                           Cord has insulated BNC connectors at both ends, 1.6 m (5.25 ft.) length
+                                                CAN UNIT MR8904                                                                                                                                                                                   PL23 (10-pin) to ME15W (12-pin) conversion
+                                                 Up to 15 analog channels each equivalent to a 16-bit
+                                                 analog signal, and up to 16 logic channels each                                                                                                                                                           CONVERSION CABLE CT9900
+                                                 equivalent to a 1-bit logic signal                                                                                                                                                                          Converts PL23 (10-pin) terminal to ME15W (12-pin) terminal
+                                                *CAN FD not supported
+                                                ANALOG UNIT MR8905                                                                    Model: MEMORY HiCORDER MR8875                                                                        Up to 1000 A (high precision) *ME15W (12-pin) terminal type
+                                                  2 channels, high-voltage DC/RMS input, DC to 100 kHz band                                                                                                                                                 High-precision pull-through current sensors, observe waveforms
+                                                                                                                            Model No. (order code)                                                                                                           from DC to distorted AC
+                     *Voltage is limited to the specifications of the input modules in use                                  MR8875            (Max. 16 to 60ch, 32 MWord memory, main unit only)                                                            AC/DC CURRENT SENSOR CT6862-05, 1 MHz, 50 A
+                                                                               ALLIGATOR CLIP L9790-01                      *Cannot operate alone, you must install other options                                                                           AC/DC CURRENT SENSOR CT6863-05, 500 kHz, 200 A
+                                                                                 Red/black set attaches to the                                                                                                                                              High-precision pull-through current sensors, observe waveforms
+                                                                                 ends of the cables L9790                                                                                                                                                    from DC to distorted AC
+                                                                               CONTACT PIN 9790-03                                                                                                                                                          AC/DC CURRENT SENSOR CT6872, 10 MHz, 50 A
+                                                                                                                                                    * Only the small terminal types can be used.                                                            AC/DC CURRENT SENSOR CT6873, 10 MHz, 200 A
+
+                                                                                                                         Logic signal measurement
+                                                                                 Red/black set attaches to the
+Input cable (A)
+
+
+
+
+                                                                                 ends of the cables L9790                                                                                                                                                   High-precision pull-through current sensors, observe waveforms
+                                                                                                                                                                                                                                                             from DC to distorted AC
+                      CONNECTION CORD L9790                                    GRABBER CLIP 9790-02
+                                                                                 Red/black set attaches to the                                                                                                                                              AC/DC CURRENT SENSOR CT6904A, 4 MHz, 500 A
+                        Flexible φ 4.1 mm (0.16 in.) thin
+                                                                                 ends of the cables L9790                                                                                                                                                   High-precision pull-through current sensors, observe waveforms
+                        dia., cable allowing for up to 600                                                                                                                                                                                                   from DC to distorted AC
+                                                                               * When this clip is attached to the
+                        V input. 1.8 m (5.91 ft.) length                         end of the L9790, input is limited to                              LOGIC PROBE 9320-01                      LOGIC PROBE MR9321-01                                          AC/DC CURRENT SENSOR CT6875A, 2 MHz, 500 A
+                      * The end clip is sold separately.                         CAT II 300 V. Red/black set
+                                                                                                                                                     4-channel type, for voltage/contact       4 isolated channels, on/off detection                        AC/DC CURRENT SENSOR CT6876A, 1.5 MHz, 1000 A
+                                                                                                                                                     signal on/off detection (response         of AC/DC voltage (miniature                                  Observe waveforms from DC to distorted AC
+                                                                                                                                                     pulse width 500 ns or more, minia-        terminal type)                                               AC/DC CURRENT PROBE CT6841A, 2 MHz, 20 A
+                                                                                                                                                     ture terminal type)                                                                                    AC/DC CURRENT PROBE CT6843A, 700 kHz, 200 A
+                                      L9790                L9790-01              9790-03                9790-02                                                                                                                                             Observe AC waveforms (cannot observe DC)
+                                                                                                                                                                                                                                                            CLAMP ON SENSOR 9272-05, 100 kHz, 200 A
+                     *Voltage is limited to the specifications of the input modules in use                                                                         SD MEMORY CARD 2GB                  Use only CF Cards or
+                                                                                                                                                                                                       USB drives sold by Hioki.
+                                                                                                                                                                    Z4001                              Compat ibilit y and per for-
+                                                                                                                                                                                                                                                            Observe waveforms from DC to distorted AC
+                                                                                                                                                                                                                                                            AC/DC CURRENT PROBE CT6844A, 500 kHz, 500 A
+                                                                                                                         Storage media
+
+
+
+
+                                                                                                                                                                                                       mance are not guaranteed for
+                                                                                                                                                                    2 GB capacity
+                                                                                                                                                                                                                                                            AC/DC CURRENT PROBE CT6845A, 200 kHz, 500 A
+Input cable (B)
+
+
+
+
+                                                                                                                                                                                                       CF ca rd s or USB memor y
+                                                                                                                                                                   SD MEMORY CARD                      sticks made by other manufac-
+                                                                                                                                                                                                       turers. You may be unable to                         AC/DC CURRENT PROBE CT6846A, 100 kHz, 1000 A
+                                                                                                                                                                    Z4003                              read from or save data to such
+                                                                                                                                                                                                       cards.
+                          CONNECTION CORD L9198                        CONNECTION CORD L9197                                                                        8 GB capacity
+                                                                                                                                                                                                                                        Precautions when connecting a high-precision current sensor to a Memory HiCorder
+                           φ 5.0 mm (0.20 in.) dia., cable allowing     φ 5.0 mm (0.20 in.) dia., cable allowing for                                               USB DRIVE Z4006                                                      Connecting to the MR8875
+                           for up to 300 V input. 1.7 m (5.58 ft.)      up to 600 V input, 1.8 m (5.91 ft.) length,                                                 16 GB, long-life, high-reliability SLC flash memory                 • High-precision current sensor (ME15W) + CT9555 + BNC cable → MR8875
+                           length, small alligator clip                 detachable large alligator clips are bundled                                                                                                                    • High-precision current sensor (PL23) + CT9900 + CT9555 + BNC cable → MR8875
+
+                     * Voltage input via banana terminals limited by the voltage                                                                                       WAVE PROCESSOR 9335 (CD version),                                Other current sensor types
+                     specifications of the respective input unit.                                                                                                       9335-01(downloadavle version, license card)                     The MR8875 can be used with various types of current sensors and
+                                                                                                                                                                       Convert data, print and display waveforms                        probes. For details, see product information on Hioki’s website.
+
+                                                                                                                                                                       LAN CABLE 9642
+                                                                                                                         PC software
+
+
+
+
+                                                                                                                                                                                                                                         The CM7290 (available separately) is required in order to use these current sensors.
+                                                                                                                                                                       Straight Ethernet cable, supplied with straight to cross
+                          CONNECTION      EXTENSION                                  ALLIGATOR CLIP                                                                    conversion cable, 5 m (16.41 ft.) length                           100 A to 2000 A (medium speed)
+                          CABLE SET L4940 CABLE L4931                                L4935                                                                                                                                                         AC/DC CURRENT SENSOR CT7631
+Input cable (C)
+
+
+
+
+                           Banana plug, 1.5 m (4.92      Extends the length of the   Attaches to the tip of the                                                        FlexPro (third party software)                                                       DC, 1 Hz to 10 kHz, 100 A
+                           ft.) length, red/black, 1     cable with banana plug,     banana plug cable, CAT IV                                                         Advanced software for analysis and presentation of
+                           each                          1.5 m (4.92 ft.) length     600 V, CAT III 1000 V                                                             Memory HiCorder data                                                                AC/DC AUTO ZERO CURRENT SENSOR CT7731
+                                                                                                                                                                       More information: Weisang GmbH (Germany)                                             DC, 1 Hz to 5 kHz, 100 A
+                                                                                                                                                                       http://www.weisang.com/
+                                                                                                                                                                                                                                                           AC/DC CURRENT SENSOR CT7636
+                                                                                                                                                                                                                                                            DC, 1 Hz to 10 kHz, 600 A
+                                                                                                                                              *Voltage to ground is within this product's specifications.                                                  AC/DC AUTO ZERO CURRENT SENSOR CT7736
+                                                                                                                                              Separate power source is also required.                                                                       DC, 1 Hz to 5 kHz, 600 A
+                          BUS BAR CLIP                  MAGNETIC      GRABBER CLIP L9243
+                                                                                                                         Input cable (E)
+
+
+
+
+                          L4936                         ADAPTER L4937 Attaches to the tip of the                                                                                       DIFFERENTIAL PROBE 9322                                            AC/DC CURRENT SENSOR CT7642
+                           Attaches to the tip of the   Attaches to the tip of       connection cable, 185 mm                                                                                                                                               DC, 1 Hz to 10 kHz, 2,000 A
+                                                                                                                                                                                           For up to 1 kV AC or 2 kV DC, frequency
+                           banana plug cable, CAT       the banana plug cable,       (7.28 in.) length, CAT II                                                                             band width up to 10 MHz                                         AC/DC AUTO ZERO CURRENT SENSOR CT7742
+                           III 600 V                    CAT III 1000 V               1000 V                                                                                                                                                                 DC, 1 Hz to 5 kHz, 2,000 A
+                                                                                                                                                                                       AC ADAPTER 9418-15
+                     *Voltage to ground is within this product's specifications.                                                                                                                                                                           DISPLAY UNIT CM7290
+                     Separate power source is also required.                                                                                                                               100 V AC to 240 V AC.                                            Provides measurement, display, and output functionality
+                                                                                                                                                                                                                                                            when used with the CT7000s.
+Input cable (D)
+
+
+
+
+                                                                                                                                                    *Z1002 is a bundled accessory                                                                          OUTPUT CORD L9095
+                                                                                                                                                                                                                                                            Connect to BNC terminal, 1.5 m (4.92 ft.) length
+
+                          DIFFERENTIAL PROBE                 DIFFERENTIAL PROBE AC ADAPTER
+                                                                                                                         Power supply
+
+
+
+
+                           P9000-01                           P9000-02           Z1008
+                          Waveform only, up to 1 kV AC/ Waveform/RMS value switch- 100 V AC to 240 V
+                                                                                                                                                                                                                                        500 A to 5000 A *For commercial power lines, 50/60 Hz
+                          DC, band width up to 100 kHz able, up to 1 kV AC/DC, band AC
+                                                                                                                                                    AC ADAPTER              POWER CABLE L1012 BATTERY PACK                                           CLAMP ON PROBE 9018-50
+                                                        width up to 100 kHz                                                                                                                                                                                      Good phase characteristics, frequency characteristics: 40
+                                                                                                                                                     Z1002                  With one end terminating in bare Z1003                                               Hz to 3 kHz, 10 to 500 A AC range, output 0.2 V AC f.s.
+                                                                                                                                                                           wires, approx. 2 m (6.6 ft.)
+                                                                                                                                                     For main unit,                                           NiMH, charges
+                                               NON-CONTACT CAN SENSOR SP7001-95                                                                                           Powers the logger using an external while installed in
+                                                                                                                                                     100 V AC to 240 V AC power supply (DC power)                                                               CLAMP ON PROBE 9132-50
+                                                Sensor that can monitor CAN over cable                                                                                                                        the main unit                                      Frequency characteristics: 40 Hz to 1 kHz, 20 to 1000 A
+                                                                                                                                                                                                                                                                 AC range, output 0.2 V AC f.s.
+Other options for Input
+
+
+
+
+                                                *CAN FD is not supported when using with the
+                                                MR8875 and MR8904.
+                                                                                                                                                                         CARRYING CASE C1004                                                                    AC FLEXIBLE CURRENT SENSOR CT9667-01/-02/-03
+                                               CAN CABLE 9713-01                                                                                                                                                                                                 10 Hz to 20 kHz, 5000/500 A AC, 500 mV/f.s. output, φ
+                                                                                                                         Case
+
+
+
+
+                                                                                                                                                                          Includes compartment for options, hard
+                                                For the MR8904 (MR8875), 8910, unprocessed on one end,                                                                    trunk type, also suitable for transporting the                                         100 to 254 mm (3.94 to 10.00 in.), 3 loop diameters
+                                                1.8 m (5.91 ft.) length                                                                                                   MR8875
+                                               CONNECTION CORD L9217                                                                                                                                                                    Leak Current *For commercial power lines, 50/60 Hz
+                                                Cord has insulated BNC connectors at both ends, 1.6 m                                                                          *For reference only. Please purchase locally.                                 AC LEAKAGE CLAMP METER CM4003
+                                                                                                                          Temperature sensor
+
+
+
+
+                                                (5.25 ft.) length                                                                                                                                                                                              6 mA range (1 μA resolution) to 200 A range, with WAVE/
+                                                                                                                                                                                                                                                               RMS output, Connection Cable L9097 included
+                                               CONVERSION ADAPTER 9199                                                                                                   Thermocouple
+                                                Receiving side banana, output BNC terminal                                                                                                                                                                   AC ADAPTER Z1013
+                                                                                                                                                                                                                                                               100 V AC to 240 V AC
+
+
+
+                                                                                                                   DISTRIBUTED BY
+
+
+
+HEADQUARTERS
+81 Koizumi,
+Ueda, Nagano 386-1192 Japan
+https://www.hioki.com/
+
+
+
+
+All information correct as of June 24, 2026. Contents are subject to change without notice.                                                                                                                                                                                               © HIOKI E.E. CORPORATION
+Unauthorized reproduction or duplication of this publication, in whole or in part, is strictly prohibited without prior written permission from Hioki.
+Company names and product names appearing in this document are trademarks or registered trademarks of various companies.                                                                                                                                                                                      MR8875E22-66E
+

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<style>
+		<!--
+			p.MsoNormal, li.MsoNormal, div.MsoNormal{
+				margin:0mm;
+				font-size:11.0pt;
+				font-family:"Verdana";
+			}
+		-->
+	</style>
+	<title></title>
+</head>
+
+<body bgcolor="#FFE2E2">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#A35B92">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="font-size:14pt;color:white">The input buffer and the output queue</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><b>Input buffer</b></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		The instrument has a 4096-byte input buffer.<br>
+		Received messages are put into this buffer and executed in order.<br>
+		However, <b>&quot;ABORT&quot;</b> commands are executed immediately when received.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><b>Output queue</b></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		The instrument has a 65536-byte output queue.
+		Response messages accumulate in this queue until read out by the controller (PC).
+		A query error occurs if the length of a response message exceeds 65536 bytes.<br>
+		<br>
+		The following events clear the output queue:<br>
+		<br>
+		&nbsp;&nbsp;1. When the controller has read out the entire contents.<br>
+		&nbsp;&nbsp;2. When power is turned off and on again.<br>
+		&nbsp;&nbsp;3. Upon receipt of the next message.<br>
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
+ 64-bit locale=C.UTF-8 Threads:6 OPEN_MAX:1024
+
+Scanning the drive for archives:
+1 file, 286588928 bytes (274 MiB)
+
+Extracting archive: /srv/codex-hil-data/hioki-mr8875/HIOKI-application-cd.udf
+--
+Path = /srv/codex-hil-data/hioki-mr8875/HIOKI-application-cd.udf
+Type = Udf
+Physical Size = 286588928
+Version = 1.02
+Cluster Size = 2048
+Sector Size = 2048
+Created = 2022-04-15 06:25:20.000000
+Modified = 2022-04-15 06:25:20.000000
+Comment = 
+{
+Primary Volumes:
+  PrimaryVolumeDescriptorNumber: 0
+  VolumeSequenceNumber: 1
+  VolumeId: HIOKI
+  VolumeSetId: 0519141FHIOKI
+  ApplicationId: 
+  ImplementationId: Microsoft IMAPI2 1.0::Windows NT
+Partitions:
+  PartitionIndex: 0
+  PartitionNumber: 0
+  ContentsId: +NSR02
+  ImplementationId: Microsoft IMAPI2 1.0::Windows NT
+  AccessType: Read-Only
+  Size: 285431808
+  Pos: 589824
+Logical Volumes:
+  Id: HIOKI
+  BlockSize: 2048
+  DomainId: *OSTA UDF Compliant::1.02
+  ImplementationId: Microsoft IMAPI2 1.0::Windows NT
+  Partition Maps:
+    PartitionMap: 0
+    Type: 1
+    VolumeSequenceNumber: 1
+    PartitionNumber: 0
+  File Sets:
+    FileSetNumber: 0
+    FileSetDescNumber: 0
+    LogicalVolumeId: HIOKI
+    Id: HIOKI
+    CopyrightId: 
+    AbstractId: 
+    DomainId: *OSTA UDF Compliant::1.02
+
+}
+
+Everything is Ok
+
+Folders: 614
+Files: 3227
+Size:       272875376
+Compressed: 286588928

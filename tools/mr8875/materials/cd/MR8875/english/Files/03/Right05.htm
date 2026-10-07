@@ -1,0 +1,475 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title></title>
+
+	<style>
+		<!--
+			.m_td_com01{
+				border:solid windowtext .5pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com02{
+				border:solid windowtext .5pt;
+				border-left:none;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com03{
+				border:solid windowtext .5pt;
+				border-top:none;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_com04{
+				border-top:none;
+				border-left:none;
+				border-bottom:solid windowtext .5pt;
+				border-right:solid windowtext .5pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_p_com01{
+				margin:0mm;
+				font-size:11.0pt;
+				font-family:"Verdana";
+				text-align:center;
+			}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#EDFFE5">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0001">
+				<p class = "g_p_0001">
+					COMMent Commands (Assign and query comments)
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":CH">
+						<span class = "g_HeadTitle">
+							<b>Assign or query the comment for a particular channel</b>
+						</span>
+					</a><a name=":CH?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:COMMent:CH CH$,&quot;A$&quot;<br>
+							:COMMent:CH? CH$<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>
+							CH$,&quot;A$&quot;<br>
+						</b>
+					</font>
+					CH$ = CH1_1 to CH4_15, P1 to P2, LA1 to LB4, <!--L1_1 to L4_16, -->W1_1 to W4_2, Z1 to Z8, F1 to F4, LAT, LON, ALT, DIR, SPD, DST<br>
+					A$ = comment text (up to 40 characters)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Specifies a text string as a comment for channel CH$.<br>
+					Returns the comment for channel CH$ as a text string.<br>
+					<br>
+					Special characters can be entered as follows:<br>
+					(Special characters other than the following are replaced by spaces.)<br>
+					<br>
+				</p>
+
+				<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+					<tr style="height:18.0pt">
+						<td class="m_td_com01">
+							<p class="m_p_com01" align="center"><b>PC</b></p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;2</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;3</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;u</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;o</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;e</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;c</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;+</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;,</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;&circ;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;&tilde;</p>
+						</td>
+					</tr>
+					<tr style="height:18.0pt">
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center"><b>MR8875</b></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>2</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>3</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&mu;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&Omega;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&epsilon;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&deg;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&plusmn;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">'</p>
+						</td>
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center">&quot;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&circ;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&tilde;</p>
+						</td>
+					</tr>
+				</table>
+
+				<p class="MsoNormal">
+					<br>
+					Either single (') or double quotation marks (&quot;) can be used in the command argument.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					<span style="color:#008040">
+						<b>:COMMent:CH CH1_1,&quotABCDEFG&quot</b><br>
+						(Sets the comment of analog channel CH1-1 to &quot;ABCDEFG&quot;)<br>
+						<br>
+						<b>:COMMent:CH? CH1_1</b><br>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:COMMENT:CH CH1_1,"ABCDEFG"</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					F1 to F4, W1_1 to W4_2 or Z1 to Z8 is available in V2.00 or later.<br>
+					LAT, LON, ALT, DIR, SPD or DST are available in V2.10 or later.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td class = "g_td_0002" colspan = "4">
+				<p class="g_p_0002">
+					<a name=":TITLE">
+						<span class = "g_HeadTitle">
+							<b>Assign or query a title comment</b>
+						</span>
+					</a><a name=":TITLE?"></a>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:9pt">
+			<td class = "g_td_0004" rowspan = "2" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Syntax
+				</p>
+			</td>
+			<td class = "g_td_0005" valign = "top">
+				<p class="MsoNormal">
+					<br>(Command)
+					<br>(Query)
+				</p>
+			</td>
+			<td class = "g_td_0006" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:red">
+						<b>
+							<br>
+							:COMMent:TITLe &quot;A$&quot;<br>
+							:COMMent:TITLe?<br>
+						</b>
+					</span>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0007" valign = "top">
+				<p class="MsoNormal">(Response)</p>
+			</td>
+			<td class = "g_td_0008" colspan = "2" valign = "top">
+				<p class="MsoNormal">
+					<font color="#0000cc">
+						<b>&quot;A$&quot;</b><br>
+					</font>
+					A$ = comment text (up to 40 characters)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Details
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<br>
+					Sets the title comment.<br>
+					Returns the title comment as a text string.<br>
+					<br>
+					Special characters can be entered as follows:<br>
+					(Special characters other than the following are replaced by spaces.)<br>
+					<br>
+				</p>
+
+				<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+					<tr style="height:18.0pt">
+						<td class="m_td_com01">
+							<p class="m_p_com01" align="center"><b>PC</b></p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;2</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;3</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;u</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;o</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;e</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;c</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;+</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;,</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&circ;&circ;</p>
+						</td>
+						<td class="m_td_com02">
+							<p class="m_p_com01" align="center">&tilde;&tilde;</p>
+						</td>
+					</tr>
+					<tr style="height:18.0pt">
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center"><b>MR8875</b></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>2</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center"><sup>3</sup></p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&mu;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&Omega;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&epsilon;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&deg;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&plusmn;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">'</p>
+						</td>
+						<td class="m_td_com03">
+							<p class="m_p_com01" align="center">&quot;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&circ;</p>
+						</td>
+						<td class="m_td_com04">
+							<p class="m_p_com01" align="center">&tilde;</p>
+						</td>
+					</tr>
+				</table>
+
+				<p class="MsoNormal">
+					<br>
+					Either single (') or double quotation marks (&quot;) can be used in the command argument.<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Example
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal">
+					<span style="color:#008040">
+						<b>
+							<br>
+							:COMMent:TITLe &quot;HIOKI&quot;<br>
+							:COMMent:TITLe?<br>
+						</b>
+					</span>
+					(Response)&nbsp;&nbsp;<b>:COMMENT:TITLE &quot;HIOKI&quot;</b>&nbsp;&nbsp;(when headers are enabled)<br>
+					<br>
+				</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0009" valign = "top">
+				<p class = "g_p_0003" align = "center">
+					<br>Note
+				</p>
+			</td>
+			<td class = "g_td_0010" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td class = "g_td_0011" valign = "top">
+				<p class = "g_p_0004" align = "center">
+					<br>Usage<br>Conditions<br><br>
+				</p>
+			</td>
+			<td class = "g_td_0012" colspan = "3" valign = "top">
+				<p class="MsoNormal"><br>-</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal"><br><br><br></p>
+
+
+
+
+
+
+
+</body>
+
+</html>

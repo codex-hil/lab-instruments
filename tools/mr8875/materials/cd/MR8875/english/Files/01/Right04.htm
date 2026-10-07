@@ -1,0 +1,541 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<style>
+		<!--
+			 p.MsoNormal, li.MsoNormal, div.MsoNormal{
+			 	margin:0mm;
+			 	font-size:11.0pt;
+			 	font-family:"Verdana";
+			 }
+
+			 .m_pNormal{
+			 	margin:0mm;
+			 	font-size:10pt;
+			 	font-family:"Verdana";
+			 }
+
+			 .m_td_01{
+			 	width:180;
+				border:solid windowtext 1.0pt;
+				border-right:solid white 1.0pt;
+				background:black;
+			 }
+
+			 .m_td_02{
+			 	width:450;
+				border:solid windowtext 1.0pt;
+				border-left:none;
+				background:black;
+			 }
+
+			 .m_td_03{
+			 	width:180;
+				border-top:none;
+				border-left:solid windowtext 1.0pt;
+				border-bottom:solid #999999 1.0pt;
+				border-right:solid windowtext 1.0pt;
+			 }
+
+			 .m_td_04{
+			 	width:450;
+				border-top:none;
+				border-left:none;
+				border-bottom:solid #999999 1.0pt;
+				border-right:solid windowtext 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			 }
+
+			 .m_td_05{
+			 	width:600;
+				border:solid windowtext 1.0pt;
+				border-left:none;
+				background:black;
+			 }
+
+			 .m_td_06{
+			 	width:180;
+				border:solid windowtext 1.0pt;
+				border-top:none;
+				height:45.0pt;
+			 }
+
+			 .m_td_07{
+			 	width:600;
+				border-top:none;
+				border-left:none;
+				border-bottom:solid windowtext 1.0pt;
+				border-right:solid windowtext 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			 }
+
+			 .m_td_08{
+			 	width:180;
+				border:solid windowtext 1.0pt;
+				border-right:solid white 1.0pt;
+				background:black;
+			 }
+
+			 .m_td_09{
+			 	width:600;
+				border:solid windowtext 1.0pt;
+				border-left:none;
+				background:black;
+			 }
+
+			 .m_td_10{
+			 	width:180;
+				border:solid windowtext 1.0pt;
+				border-top:none;
+			 }
+
+			 .m_td_11{
+			 	width:600;
+				border-top:none;
+				border-left:none;
+				border-bottom:solid windowtext 1.0pt;
+				border-right:solid windowtext 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			 }
+		-->
+		</style>
+	<title></title>
+</head>
+
+<body bgcolor="#FFE2E2">
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#A35B92">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="font-size:14pt;color:white">Status Byte and Event Registers</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		The instrument includes a number of standard registers:
+		the <a href="#__SESR__">&quot;Standard Event Status Register&quot;, &quot;Standard Event Status Enable Register&quot;</a>,
+		<a href="#__STB__">&quot;Status Byte Register&quot;, &quot;Service Request Enable Register&quot;</a>,
+		<a href="#__ESR0__">&quot;Event Status Register 0&quot;, and &quot;Event Status Enable Register 0&quot;</a>.<br>
+		<br>
+		<img src="Right04/Fig01.png" width="50%" height="50%"><br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="	height:4.0pt">
+			<td width="100%" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt"><span style="color:white"><a name=__STB__></a><b>The status byte</b></span></p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">
+		<br>
+		Each bit of the status byte is a summary (logical OR) of the event register corresponding to that bit.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+		<tr>
+			<td class="m_td_01">
+				<p class="m_pNormal" align="center"><span style="color:white">Status byte</span></p>
+			</td>
+			<td class="m_td_02">
+				<p class="m_pNormal" align="center"><span style="color:white">Contents</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 7</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Unused: 0</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 6<br>(RQS, MSS)</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Reserved</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 5<br>(ESB)</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">
+					Event summary bit.<br>Shows a summary of the Standard Event Status Register.
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 4<br>(MAV)</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">
+					Message available<br>
+					Shows that a message is present in the output queue.
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 3</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Unused: 0</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 2</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Unused: 0</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_03">
+				<p class="m_pNormal" align="center">bit 1</p>
+			</td>
+			<td class="m_td_04">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Unused: 0</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 0<br>(ESB0)</p>
+			</td>
+			<td width="450" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="m_pNormal" style="text-align:justify;text-justify:inter-ideograph">
+					Event summary bit 0<br>Shows a summary of Event Status Register 0.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class = "MsoNormal">
+		<br>
+		The following command read the status byte.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+		<tr>
+			<td width="450" style="border:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Read the status byte</p>
+			</td>
+			<td width="60" style="border:solid windowtext 1.0pt;border-left:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">*STB?</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class = "MsoNormal"><br><br></p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+		<tr style="	height:4.0pt">
+			<td width="100%" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><a name=__SESR__><b>Standard Event Status Register (SESR)</b></a></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class = "MsoNormal">
+		<br>
+		Bit 5 of the status byte indicates the summary of this register.<br>
+		The following events clear the contents of the Standard Event Status Register:<br>
+	</p>
+	<ol>
+		<li><p class = "MsoNormal">When the *CLS command is received.</p>
+		<li><p class = "MsoNormal">When the contents have been read by an *ESR? query.</p>
+		<li><p class = "MsoNormal">When power is turned off and on again.</p>
+	</ol>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="m_td_01">
+				<p class="m_pNormal" align="center">
+					<span style="color:white">Standard Event<br>Status Register<br>(SESR)</span>
+				</p>
+			</td>
+			<td class="m_td_05">
+				<p class="m_pNormal" align="center"><span style="color:white">Contents</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 7<br>(PON)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Power has been turned on again.<br>
+					Since this register was last read, the instrument has been powered off and on. Initialized to one at power on.<br>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 6<br>(URQ)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">User request: not used.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 5<br>(CME)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Command error.<br>
+					There is an error in a command that has been received:<br>
+					either an error in syntax, or an error in meaning.<br>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 4<br>(EXE)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Execution error.<br>
+					An error has occurred while executing a command.<br>
+					Range or Mode error.<br>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 3<br>(DDE)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Device-dependent error.<br>
+					A command could not be executed due to an error other than a command error,
+					query error or an execution error.<br>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 2<br>(QYE)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Query error.<br>
+					The queue is empty, or data loss has occurred (queue overflow).<br>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 1<br>(RQC)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Request for controller rights (not used) Unused: 0<br>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_06">
+				<p class="m_pNormal" align="center">bit 0<br>(OPC)</p>
+			</td>
+			<td class="m_td_07">
+				<p class="m_pNormal">
+					Operation finished.<br>
+					Only set for the *OPC command.<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class = "MsoNormal">
+		<br>
+		Each event is masked by writing the Standard Event Status Enable Register (initialized to zero at power on).<br>
+		The following commands are used to read the Standard Event Status Register, and to write and read the Standard Event Status Enable Register.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+		<tr>
+			<td width="438" style="border:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Read the Standard Event Status Register</p>
+			</td>
+			<td width="59" style="border:solid windowtext 1.0pt;border-left:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">*ESR?</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="438" style="border:solid windowtext 1.0pt;border-top:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Write the Standard Event Status Enable Register</p>
+			</td>
+			<td width="59" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">*ESE</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="438" style="border:solid windowtext 1.0pt;border-top:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Read the Standard Event Status Enable Register</p>
+			</td>
+			<td width="59" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">*ESE?</p>
+			</td>
+		</tr>
+	</table>
+
+
+	<p class = "MsoNormal"><br><br></p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+		<tr style="height:4pt">
+			<td width="100%" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><a name=__ESR0__><b>Event Status Register 0 (ESR0)</b></a></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class = "MsoNormal">
+		<br>
+		The summary of this register is set in bit 0 of the status byte.<br>
+		For GP-IB, each bit is masked when the Event Status Enable Register 0 (which starts off at zero when the power is turned on) is set.<br>
+		The following events clear the contents of Event Status Register 0:<br>
+	</p>
+	<ol>
+		<li><p class = "MsoNormal">When the *CLS command is received.</p>
+		<li><p class = "MsoNormal">When the contents have been read by an :ESR0? query.</p>
+		<li><p class = "MsoNormal">When power is turned off and on again.</p>
+	</ol>
+
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="m_td_08">
+				<p class="m_pNormal" align="center">
+					<span style="color:white">Event Status Register 0<br>(SESR0)</span>
+				</p>
+			</td>
+			<td class="m_td_09">
+				<p class="m_pNormal" align="center"><span style="color:white">Contents</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 7</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">FAIL (NG) waveform decision occurred.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 6</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">FAIL (NG) parameter decision occurred.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 5</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">Parameter calculation finished.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 4</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">Waveform processing calculation finished.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 3</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">Reserved.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 2</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">Trigger wait finished (set when a trigger event occurs).</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 1</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">Measurement operation concluded (set by STOP).</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_10">
+				<p class="m_pNormal" align="center">bit 0</p>
+			</td>
+			<td class="m_td_11">
+				<p class="m_pNormal">Error not related to interface.</p>
+			</td>
+		</tr>
+	</table>
+
+
+	<p class = "MsoNormal">
+		<br>
+		The following commands read the Event Status Register 0,
+		and write and read the Event Status Enable Register 0.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+		<tr style="height:4pt">
+			<td width="438" style="border:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Read Event Status Register 0</p>
+			</td>
+			<td width="59" style="width:44.2pt;border:solid windowtext 1.0pt;border-left:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">:ESR0?</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td width="438" style="border:solid windowtext 1.0pt;border-top:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Write Event Status Enable Register 0</p>
+			</td>
+			<td width="59" style="width:44.2pt;border:solid windowtext 1.0pt;border-left:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">:ESE0</p>
+			</td>
+		</tr>
+		<tr style="height:4pt">
+			<td width="438" style="border:solid windowtext 1.0pt;border-top:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">Read Event Status Enable Register 0</p>
+			</td>
+			<td width="59" style="width:44.2pt;border:solid windowtext 1.0pt;border-left:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class = "m_pNormal" style="text-align:justify;text-justify:inter-ideograph">:ESE0?</p>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+﻿p.MsoNormal, li.MsoNormal, div.MsoNormal{
+	margin:0mm;
+	font-size:14.0pt;
+	font-family:"Verdana";
+}
+
+a:hover{
+	background-color:#FFFF00;
+}
+
+.g_p0001{
+	border:solid windowtext 1.0pt;
+	border-right:solid white 1.0pt;
+	background:#333399;
+	padding:.75pt .75pt 0mm .75pt;
+}
+
+.g_p0002{
+	border-top:solid windowtext 1.0pt;
+	border-left:none;
+	border-bottom:solid windowtext 1.0pt;
+	border-right:solid white 1.0pt;
+	background:#333399;
+	padding:.75pt .75pt 0mm .75pt;
+}
+
+.g_p0006{
+	border:solid windowtext 1.0pt;
+	border-top:none;
+	padding:.75pt .75pt 0mm .75pt;
+}
+
+.g_p0007{
+	width:35%;
+	border-top:none;
+	border-left:none;
+	border-bottom:solid windowtext 1.0pt;
+	border-right:solid windowtext 1.0pt;
+	padding:.75pt .75pt 0mm .75pt;
+}
+
+.g_p0008{
+	border-top:solid windowtext 1.0pt;
+	border-left:none;
+	border-bottom:solid windowtext 1.0pt;
+	border-right:solid windowtext 1.0pt;
+	background:#333399;
+	padding:.75pt .75pt 0mm .75pt;
+}
+
+.g_p0010{
+	margin:0mm;
+	font-size:10.0pt;
+	font-family:"Verdana";
+	text-align:center;
+}
+
+.g_p0011{
+	font-size:10.0pt;
+	font-family:"Verdana";
+	text-align:justify;
+	text-justify:inter-ideograph;
+	padding: 5pt
+}

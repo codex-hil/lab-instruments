@@ -1,0 +1,14 @@
+[Unit]
+Description=Hioki MR8875 laboratory panel
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/codex-hil/hioki-mr8875
+ExecStart=/usr/bin/python3 -m hioki_lab.server --bind 0.0.0.0
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

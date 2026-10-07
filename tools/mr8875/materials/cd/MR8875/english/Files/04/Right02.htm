@@ -1,0 +1,200 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+	<HEAD>
+		<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+		<style>
+			<!--
+				p.MsoNormal, li.MsoNormal, div.MsoNormal{
+					margin:0mm;
+					font-size:11.0pt;
+					font-family:"Verdana";
+				}
+			-->
+		</style>
+		<title></title>
+	</HEAD>
+
+	<BODY bgcolor="#FFF7C9">
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+			<tr style="height:25pt">
+				<td width="100%" style="background:#AD9E00">
+					<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+						<span style="font-size:14pt;color:white">Microsoft Visual Basic 2010 Express Sample programs (USB)</span>
+					</p>
+				</td>
+			</tr>
+		</table>
+
+		<p class="MsoNormal">
+			<br>
+			<font color="#FF0000">
+				<b>
+					The following programs are provided without charge, for use entirely at your own risk.<br>
+					<u>HIOKI disclaims any and all responsibility for any consequences arising out of use of this software.</u><br>
+					<br>
+				</b>
+			</font>
+			<br>
+			Visual Basic and Visual Studio are registered trademarks or trademarks of Microsoft Corporation in the U.S.A. and other countries.<br>
+			Microsoft, Windows and MS-DOS are registered trademarks or trademarks of Microsoft Corporation in the U.S.A. and other countries.<br>
+			<br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt;">Setup Procedure</p>
+				</td>
+			</tr>
+		</table>
+		<p class="MsoNormal">
+			<br>
+			Connect the HiCORDER to the PC using the supplied USB cable.<br>
+			<br>Instrument Setting Example<br>
+			<br>
+			<img src="Right02/Fig01.PNG" width="400" height="300">
+			<br>
+			<br>
+			<br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt;">Install USB Driver</p>
+				</td>
+			</tr>
+		</table>
+		<p class="MsoNormal">
+			<br>
+    	    In order to use a USB connection, it may be necessary to install the USB driver.<br>
+        	If the USB driver has not been installed in the PC, a "Found New Hardware Wizard" dialog window will be displayed upon connecting the USB cable. Follow the directions and install the driver.<br>
+	        <br>
+	        <br>
+	        <br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt;">Confirming Connection</p>
+				</td>
+			</tr>
+		</table>
+		<p class="MsoNormal">
+			<br>
+			Display the System Properties by selecting [System] in the [Control Panel], under the [START] menu on the PC.<br>
+			Click the [Hardware] tab, open the [Device Manager], check that HIOKI USB Device is listed under [PORT (COM & LPT)].<br>
+			(If HIOKI USB Device is not listed, reinstall the USB driver.)<br>
+			<br>
+			<br>
+			<br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt;">Setup Procedure</p>
+				</td>
+			</tr>
+		</table>
+		<p class="MsoNormal">
+			<br>
+			Refer to [<a href="../01/Right02.htm#USB", target="_self">USB Settings</a>] for the USB communication properties.
+			<br>
+			<br>
+			<br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt"><a name="PGM01">Sample Program 1</a></p>
+				</td>
+			</tr>
+		</table>
+
+		<p class="MsoNormal">
+			<br>
+			Enter a command and press the Send button to send it to the instrument.<br>
+			Responses to queries are displayed in the text box.<br>
+			<br>
+			<img src="Right01/Usb01.png"><br>
+			<br>
+			<a href="VB_USB/Sample1" target="_blank">
+				<img src="Right01/FigFolder.gif" border="0">
+				<span style="font-size:16.0pt">Sample program 1</span>
+			</a>
+			<br><br><br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt"><a name="PGM02">Sample Program 2</a></p>
+				</td>
+			</tr>
+		</table>
+		<p class="MsoNormal">
+			<br>
+			This program causes the instrument to take 101 measurements on channel CH1-1, and reads the measured values.<br>
+			The number of data objects stored in instrument memory is first obtained by the &quot;MEMORY:MAXPOINT?&quot; query.<br>
+			When this query returns 0, the program is ready to receive measurement data.<br>
+			Pressing the Execute button then causes the instrument to start measuring and sending the measured values.<br>
+			<br>
+			<img src="Right01/Usb02.png"><br>
+			<br>
+			<a href="VB_USB/Sample2" target="_blank">
+				<img src="Right01/FigFolder.gif" border="0">
+				<span style="font-size:16.0pt">Sample program 2</span>
+			</a>
+			<br><br><br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt"><a name="PGM03">Sample Program 3</a></p>
+				</td>
+			</tr>
+		</table>
+
+		<p class="MsoNormal">
+			<br>
+			This program displays current measurement data in a text box.<br>
+			Pressing the Execute button displays the data once per second.<br>
+			Pressing the Stop button stops measurement.<br>
+			<br>
+			<img src="Right01/Usb03.png"><br>
+			<br>
+			<a href="VB_USB/Sample3/", target="_blank">
+				<img src="Right01/FigFolder.gif" border="0">
+				<span style="font-size:16.0pt">Sample program 3</span>
+			</a>
+			<br><br><br>
+		</p>
+
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse;">
+			<tr style="height:4pt">
+				<td width="100%" style="background:#FFEB00">
+					<p class="MsoNormal" style="margin-left:9pt"><a name="PGM04">Sample Program 4</a></p>
+				</td>
+			</tr>
+		</table>
+		<p class="MsoNormal">
+			<br>
+			This program employs the &quot;:STATUS&quot; command to check instrument status.<br>
+			Pressing the Execute button starts instrument status checking.<br>
+			Pressing the Stop button stops status checking.<br>
+			<br>
+			<img src="Right01/Usb04.png" border="0"><br>
+			<br>
+			<a href="VB_USB/Sample4/", target="_blank">
+				<img src="Right01/FigFolder.gif" border="0">
+				<span style="font-size:16.0pt">Sample program 4</span>
+			</a>
+			<br><br><br>
+		</p>
+
+	</BODY>
+</HTML>

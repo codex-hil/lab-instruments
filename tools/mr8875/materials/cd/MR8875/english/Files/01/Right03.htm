@@ -1,0 +1,761 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8">
+	<style>
+		<!--
+			p.MsoNormal, li.MsoNormal, div.MsoNormal{
+				margin:0mm;
+				font-size:11.0pt;
+				font-family:"Verdana";
+			}
+
+			.m_td_01{
+				width:248;
+				border:solid windowtext 1.0pt;
+				border-bottom:solid black 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_02{
+				width:437;
+				border-top:solid windowtext 1.0pt;
+				border-left:none;
+				border-bottom:solid black 1.0pt;
+				border-right:solid windowtext 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_03{
+				width:248;
+				border-top:none;
+				border-left:solid windowtext 1.0pt;
+				border-bottom:solid black 1.0pt;
+				border-right:solid windowtext 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+			}
+
+			.m_td_04{
+				width:437;
+				border-top:none;
+				border-left:none;
+				border-bottom:solid black 1.0pt;
+				border-right:solid windowtext 1.0pt;
+				padding:0mm 4.95pt 0mm 4.95pt;
+				height:3.85pt;
+			}
+
+			.m_td_05{
+				width:250;
+				border:solid black 1.0pt;
+				border-right:solid white 1.0pt;
+				background:black;
+			}
+
+			.m_td_06{
+				width:500;
+				border:solid black 1.0pt;
+				border-left:none;
+				background:black;
+			}
+
+			.m_td_07{
+				width:250;
+				border:solid black 1.0pt;
+				border-top:none;
+			}
+
+			.m_td_08{
+				width:500;
+				border-top:none;
+				border-left:none;
+				border-bottom:solid black 1.0pt;
+				border-right:solid black 1.0pt;
+			}
+		-->
+	</style>
+	<title></title>
+</head>
+
+<body bgcolor="#FFE2E2">
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:25pt">
+			<td width="100%" style="background:#A35B92">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph">
+					<span style="font-size:14pt;color:white">What is a Command?</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><b>Command Messages</b></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		Commands, queries and responses sent and received through the interface are called messages.<br>
+		Message types are as follows:<br>
+		<br>
+		<div align="center"><img src="Right03/fig001.gif"></div><br>
+		<br>
+	</p>
+
+	<div align="center">
+		<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="m_td_01" valign="top">
+					<p class="MsoNormal">
+						<br>
+						Program messages<br>
+						<br>
+					</p>
+				</td>
+				<td class="m_td_02" valign="top">
+					<p class="MsoNormal">
+						<br>
+						This term refers to both command messages and query messages.<br>
+						<br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="m_td_03" valign="top">
+					<p class="MsoNormal">
+						<br>
+						Response messages<br>
+						<br>
+					</p>
+				</td>
+				<td class="m_td_04" valign="top">
+					<p class="MsoNormal">
+						<br>
+						These are returned from the instrument to the PC in response to query messages.<br>
+						The instrument produces a response message as soon as it receives a query message and checks its syntax.<br>
+						<br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="m_td_03" valign="top">
+					<p class="MsoNormal">
+						<br>
+						Command program messages<br>
+						<br>
+					</p>
+				</td>
+				<td class="m_td_04" valign="top">
+					<p class="MsoNormal">
+						<br>
+						These are instrument control instructions sent from the PC, such as to make or reset settings.<br>
+						<br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="m_td_03" valign="top">
+					<p class="MsoNormal">
+						<br>
+						Query program messages<br>
+						<br>
+					</p>
+				</td>
+				<td class="m_td_04" valign="top">
+					<p class="MsoNormal">
+						<br>
+						These are sent from the PC to the instrument to interrogate the state of a particular setting or the result of an operation.<br>
+						The instrument produces a response message as soon as it receives a query message and checks its syntax.<br>
+						<br>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<p class="MsoNormal">
+		<br>
+		In the following descriptions the word &quot;command&quot; refers to both command and query program messages, except where an ambiguity may result. (Control commands : HIOKI unique SCPI)<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><b>Command Syntax</b></span>
+				</p>
+			</td>
+		</tr>
+
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		Commands sent to the instrument are not case sensitive.
+		Command names are intended to be mnemonic, and all have <b><span style="color:red">a long form</span></b>
+		and <b><span style="color:red">an abbreviated short form</span></b>.
+		In the command descriptions in this manual, the short form appears in upper-case letters,
+		and is continued in lower-case letters to show the long form as well.
+		While either form is valid during operation, intermediate forms are invalid.
+		Both lower- and upper-case letters are accepted without distinction during operation.
+		<u>The instrument generates response messages in the long form (when headers are enabled), in all upper-case letters.</u><br>
+		<br>
+
+		(Example)<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="230" style="border:solid windowtext 1.0pt;border-right:solid white 1.0pt;background:black">
+				<p class="MsoNormal" align="center">
+					<span style="color:white">Command descriptions<br>in this manual</span>
+				</p>
+			</td>
+			<td width="230" style="border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid white 1.0pt;background:black">
+				<p class="MsoNormal" align="center">
+					<span style="color:white">Short form</span>
+				</p>
+			</td>
+			<td width="230" style="border:solid windowtext 1.0pt;border-left:none;background:black">
+				<p class="MsoNormal" align="center">
+					<span style="color:white">Long form</span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="230" style="border:solid windowtext 1.0pt;border-top:none">
+				<p class="MsoNormal" align="center">DISPlay</p>
+			</td>
+			<td width="230" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt">
+				<p class="MsoNormal" align="center">DISP</p>
+			</td>
+			<td width="230" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt">
+				<p class="MsoNormal" align="center">DISPLAY</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		For &quot;DISPlay&quot; commands, either &quot;DISPLAY&quot; (the long form) or &quot;DISP&quot; (the short form) is accepted.
+		However, all of &quot;DISPLA&quot;, &quot;DISPL&quot; and &quot;DIS&quot; are invalid and will generate an error.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<span style="color:white"><b>Command headers</b></span>
+				</p>
+			</td>
+	    </tr>
+
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		All commands must include a header for identification.<br>
+		There are three kinds of headers (command types):
+		<b><span style="color:red">simple</span></b>,
+		<b><span style="color:red">compound</span></b>,
+		and
+		<b><span style="color:red">standard</span></b>.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="m_td_05">
+				<p class="MsoNormal" align="center"><span style="color:white">Command Type (Header)</span></p>
+			</td>
+			<td class="m_td_06">
+				<p class="MsoNormal" align="center"><span style="color:white">Description</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_07">
+				<p class="MsoNormal" align="center">Simple</p>
+			</td>
+			<td class="m_td_08" valign="top">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<br>
+					The first word constitutes the header.<br>
+					<br>
+					(Example)<br>
+					<br>
+				</p>
+				<div align="center"><img src="Right03/fig002.gif"></div><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_07">
+				<p class="MsoNormal" align="center">Compound</p>
+			</td>
+			<td class="m_td_08" valign="top">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<br>
+					A header composed of multiple simple command type headers separated by colons.<br>
+					<br>
+					(Example)<br>
+					<br>
+				</p>
+				<div align="center"><img src="Right03/fig003.gif"></div><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_07">
+				<p class="MsoNormal" align="center">Standard</p>
+			</td>
+			<td class="m_td_08" valign="top">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<br>
+					A command beginning with an asterisk and stipulated by IEEE 488.2.<br>
+					<br>
+					(Example)<br>
+					<br>
+				</p>
+				<p class="MsoNormal" align="center">
+					<b>*RST</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+
+	<p class="MsoNormal" style="margin-bottom:12pt;text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt"><span style="color:white"><b>Quey headers</b></span></p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">
+		<br>
+		Queries interrogate the instrument regarding a setting state or the result of an operation.<br>
+		Query headers are distinguished by a question mark at the end of the header.<br>
+		The structure of a query header is identical to that of its corresponding command header,
+		with &quot;?&quot; always appended as the last character.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="m_td_05">
+				<p class="MsoNormal" align="center"><span style="color:white">Command Type (Header)</span></p>
+			</td>
+			<td class="m_td_06">
+				<p class="MsoNormal" align="center"><span style="color:white">Description</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_07">
+				<p class="MsoNormal" align="center">Simple</p>
+			</td>
+			<td class="m_td_08" valign="top">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<br>
+					The first word constitutes the header.<br>
+					<br>
+					(Example)<br>
+					<br>
+				</p>
+				<div align="center"><img src="Right03/fig004.gif"></div><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_07">
+				<p class="MsoNormal" align="center">Compound</p>
+			</td>
+			<td class="m_td_08" valign="top">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<br>
+					A header composed of multiple simple command type headers separated by colons.<br>
+					<br>
+					(Example)<br>
+					<br>
+				</p>
+				<div align="center"><img src="Right03/fig005.gif"></div><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="m_td_07">
+				<p class="MsoNormal" align="center">Standard</p>
+			</td>
+			<td class="m_td_08" valign="top">
+				<p class="MsoNormal" style="margin-left:9pt">
+					<br>
+					A command beginning with an asterisk and stipulated by IEEE 488.2.<br>
+					<br>
+					(Example)<br>
+					<br>
+				</p>
+				<p class="MsoNormal" align="center">
+					<b>*IDN?</b><br>
+					<br>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+
+	<p class="MsoNormal" style="margin-bottom:12pt;text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr style="height:4pt">
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt"><span style="color:white"><b>Response Messages</b></span></p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		Response messages returned by the instrument to the PC in response to received queries are composed of a header portion
+		(omitted when headers are disabled) and a data portion identical to the data portion defined for the command message
+		that corresponds to the received query. As a general rule, the format of returned data is the same as that of the command message.<br>
+		<br>
+		(Example)<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="200" valign="top" style="border:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal"><br>Query<br><br></p>
+			</td>
+			<td width="250" valign="top" style="border-top:solid black 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal"><br>:CONFIGURE:TDIV?<br><br></p>
+			</td>
+			<td width="230" valign="top" style="border:solid black 1.0pt;border-left:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal"><br></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="200" valign="top" style="border:solid black 1.0pt;border-top:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" style="margin-bottom:12pt"><br>Response</p>
+			</td>
+			<td width="250" valign="top" style="border:none;border-bottom:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" style="margin-bottom:12pt"><br>:CONFIGURE:TDIV 1.0E-03<br>1.0E-03</p>
+			</td>
+			<td width="230" valign="top" style="border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" style="margin-bottom:12pt"><br>(when headers are enabled)<br>(when headers are disabled)</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal" style="margin-bottom:12pt;text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr>
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph;">
+					<a name="TERMINATOR">
+						<span style="color:white"><b>Terminators and Separators</b></span>
+					</a>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		<b>(1) Message terminators</b><br>
+		<br>
+		The terminator character signifies the end of a message
+		(including compound messages to be sent as one line),
+		and is not considered part of the message itself.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="154" style="border-top:windowtext;border-left:windowtext;border-bottom:silver;border-right:white;border-style:solid;border-width:1.0pt;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">Setting on the instrument and PC</span></p>
+			</td>
+			<td width="132" style="border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid white 1.0pt;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">ANSI code<br>(hexadecimal)</span></p>
+			</td>
+			<td width="119" style="border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid white 1.0pt;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">Meaning</span></p>
+			</td>
+			<td width="227" style="border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">Description</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="154" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid silver 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">LF</p>
+			</td>
+			<td width="132" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">0Ah</p>
+			</td>
+			<td width="119" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">Line feed</p>
+			</td>
+			<td width="227" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">LF is the message delimiter</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="154" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">CR+LF</p>
+			</td>
+			<td width="132" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">0Dh 0Ah</p>
+			</td>
+			<td width="119" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">&nbsp;</p>
+			</td>
+			<td width="227" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">CR+LF is the message delimiter</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+
+	<div style="border:none;border-bottom:solid black 1.0pt">
+		<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+	</div>
+
+	<p class="MsoNormal">
+		<br>
+		<b>(2) Message separator</b><br>
+		<br>
+		When a compound message is to be sent to the instrument as one line, a semicolon &quot;;&quot; serves as the separator for individual messages.<br>
+		<br>
+	</p>
+	<div align="center"><img src="Right03/fig006.gif"></div><br>
+	<br>
+
+
+	<div style="border:none;border-bottom:solid black 1.0pt;padding:0mm 0mm 1.0pt 0mm">
+		<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+	</div>
+
+
+	<p class="MsoNormal">
+		<br>
+		<b>(3) Header separator</b><br>
+		<br>
+		Messages having both a header and data include a space character (&quot; &quot;) to separate the header from the data.<br>
+		The space is not part of the actual command.<br>
+		<br>
+	</p>
+
+	<div style="border:none;border-bottom:solid black 1.0pt;padding:0mm 0mm 1.0pt 0mm">
+		<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+	</div>
+
+	<p class="MsoNormal">
+		<br>
+		<b>(4) Data separator</b><br>
+		<br>
+		Messages containing multiple data items include commas to separate the data items from one another.<br>
+		<br>
+	</p>
+	<div align="center"><img src="Right03/fig008.gif"></div><br>
+	<br>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr>
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph;">
+					<span style="color:white"><b>The Command Tree</b></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		When writing multiple messages in compound command form on the same line, as a rule,
+		the header from one message is considered to carry forward to immediately following messages
+		that do not begin with a colon (following the semicolon message separator).
+		This construction corresponds to the general concept of the current directory
+		in the directory structure of UNIX or MS-DOS,
+		and the header that is carried forward is called the <b><span style="color:red">&quot;current path&quot;</span></b>.<br>
+
+		<br>
+		(Example 1)<br>
+		<br>
+		<b>:CONF:TDIV 1.0E-3;:CONF:SHOT 15</b><br>
+		<br>
+		<br>
+
+		(Example 2)<br>
+		<br>
+		<b>:CONF:TDIV 1.0E-3;SHOT 15</b><br>
+		<br>
+		<br>
+
+		(Example 3)<br>
+		<br>
+		<b>:CONF:TDIV 1.0E-3 </b><br>
+		<b>SHOT 15</b><br>
+		<br>
+		<br>
+
+		Examples 1, 2 and 3 are commands to set time/division to 1 ms and recording length to 15 divisions.<br>
+		In Example 1, because there is a colon directly after the semicolon, the current position is the <u>&quot;root&quot;</u>.
+		The subsequent command is therefore referenced relative to the root.
+		On the other hand, Examples 2 and 3 take advantage of the fact that the first command (&quot;:CONF:TDIV 1.0E-3;&quot;) sets the current path to &quot;:CONF&quot;,
+		so that the &quot;:CONF:&quot; before &quot;SHOT&quot; in the second command is omitted.<br>
+		To reiterate, the colon at the beginning of a command forces command parsing to begin from the root.<br>
+		<br>
+	</p>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+		<tr>
+			<td width="100%" valign="top" style="background:#810043">
+				<p class="MsoNormal" style="margin-left:9pt;text-align:justify;text-justify:inter-ideograph;">
+					<span style="color:white">Data formats</span>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<p class="MsoNormal">
+		<br>
+		The instrument recognizes the following data formats:<br>
+		<b><span style="color:red">character data</span></b>,
+		<b><span style="color:red">decimal numeric data</span></b>
+		and
+		<b><span style="color:red">character string data</span></b>.
+		<br>
+	</p>
+
+	<div style="border:none;border-bottom:solid black 1.0pt"><br></div>
+
+	<p class="MsoNormal">
+		<br>
+		<b>[Character data]</b>
+	</p>
+
+	<ol>
+		<li><p class="MsoNormal">The first character must be alphabetic.</p>
+		<li><p class="MsoNormal">Subsequent characters may only be alphabetic characters, numerals or underline characters (_).</p>
+		<li><p class="MsoNormal">The instrument accepts both upper- and lower-case character data, but returns only upper-case characters.</p>
+	</ol>
+
+	<p class="MsoNormal">(Example)<br></p>
+	<p class="MsoNormal" align="center"><b>:HEADER <span style="color:red">ON</span></b></p>
+
+	<div style="border:none;border-bottom:solid black 1.0pt"><br></div>
+
+	<p class="MsoNormal">
+		<br>
+		<b>[Decimal data]</b>
+	</p>
+
+	<ol>
+		<li><p class="MsoNormal">Decimal data values are represented in what is termed NR formats.</p>
+		<li><p class="MsoNormal">The three types of <b><span style="color:red">NRf</span></b> formats are called
+								 <b><span style="color:red">NR1, NR2</span></b> and <b><span style="color:red">NR3</span></b>,
+								 each of which may be signed or unsigned numbers.</p>
+		<li><p class="MsoNormal">Unsigned numbers are considered positive.</p>
+		<li><p class="MsoNormal">Numerical values with accuracy exceeding the range with which the instrument can deal are rounded
+								 (digits 5 and above are rounded up, and 4 and below are rounded down).</p>
+		<li><p class="MsoNormal">The term &quot;NRf format&quot; includes all three formats.
+								 Though the instrument can accept any NRf format,
+								 it only returns data in the format (NR1 to NR3) defined for the corresponding command.</p>
+	</ol>
+
+	<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="108" style="border:solid windowtext 1.0pt;border-right:solid white 1.0pt;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">NRf format</span></p>
+			</td>
+			<td width="185" style="border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid white 1.0pt;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">Data Type</span></p>
+			</td>
+			<td width="228" style="border:solid windowtext 1.0pt;border-left:none;background:black;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center"><span style="color:white">Example</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="108" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">NR1</p>
+			</td>
+			<td width="185" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">Integer data</p>
+			</td>
+			<td width="228" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">+15,-20, 25</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="108" style="border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">NR2</p>
+			</td>
+			<td width="185" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">Fixed-point numbers</p>
+			</td>
+			<td width="228" style="border-top:none;border-left:none;border-bottom:solid silver 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">+1.23,-4.57, 7.89</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="108" style="border:solid windowtext 1.0pt;border-top:none;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal" align="center">NR3</p>
+			</td>
+			<td width="185" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">Floating-point numbers</p>
+			</td>
+			<td width="228" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 4.95pt 0mm 4.95pt">
+				<p class="MsoNormal">+10.0E-3,-2.3E+3, 5E3</p>
+			</td>
+		</tr>
+	</table>
+
+
+	<p class="MsoNormal"><br>(Example 1)&nbsp;&nbsp;NR1 format<br></p>
+	<p class="MsoNormal" align="center"><b>:TRIGger:PRETrig <span style="color:red">10</span></b></p>
+
+	<p class="MsoNormal"><br>(Example 2)&nbsp;&nbsp;NR2 format</p>
+	<p class="MsoNormal" align="center"><b>:TRIGger:FILTer CH1_1,<span style="color:red">0.1</span></b></p>
+
+	<p class="MsoNormal"><br>(Example 3)&nbsp;&nbsp;NR3 format</p>
+	<p class="MsoNormal" align="center"><b>:TRIGger:UPPEr CH1_1,<span style="color:red">+1.0E-3</span></b></p>
+	<p class="MsoNormal"><br></p>
+
+	<div style="border:none;border-bottom:solid black 1.0pt"><br></div>
+
+	<p class="MsoNormal">
+		<br>
+		<b>[Character string data]</b><br>
+	</p>
+
+	<ol>
+		<li><p class="MsoNormal">Character string data is enclosed within quotation marks.</p>
+		<li><p class="MsoNormal">The data consists of 8-bit ASCII characters.</p>
+		<li><p class="MsoNormal">Characters which cannot be handled by the instrument are replaced by spaces.</p>
+		<li><p class="MsoNormal">Although the instrument sends only double quotation marks (&quot;) to the PC,
+								 it accepts both double and single quotation marks (').</p>
+	</ol>
+
+	<p class="MsoNormal"><br>(Example)<br></p>
+
+	<p class="MsoNormal" align="center">
+		<b>
+			:COMMent:TITLe:COMMent,<span style="color:red">'HIOKI'</span><br>
+			:COMMent:TITLe:COMMent,<span style="color:red">&quot;HIOKI&quot;</span>
+		</b>
+	</p>
+
+</body>
+</html>
