@@ -14,6 +14,7 @@ PROFILES = {
  'dmm7510': ('MODEL DMM7510', 'meter', 1, 5025),
  '6487': ('MODEL 6487', 'picoammeter', 1, 4001),
  '8550': ('8550', 'load', 1, 4001),
+ 'fca3003': ('FCA3003', 'counter', 3, None),
  'n9918b': ('N9918B', 'analyzer', 1, 5025),
 }
 ACTIVE = {'supply', 'smu', 'rf', 'awg', 'load'}
@@ -203,6 +204,9 @@ class Driver:
     def read(self, operation, channel=1):
         if type(channel) is not int or not 1 <= channel <= PROFILES[self.model][2]:
             raise ValueError('invalid channel')
+        if self.model == 'fca3003' and operation != 'identity':
+            from .fca3003 import FCA3003
+            return FCA3003(self.io, self.serial).measure_raw(operation, channel)
         self.identify()
         if operation == 'identity': return self.io.query('*IDN?')
         if self.category in {'supply','smu','load'} and operation in {'voltage','current'}:

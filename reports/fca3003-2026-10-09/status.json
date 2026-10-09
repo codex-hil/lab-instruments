@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09",
+  "model": "FCA3003",
+  "software_validation": {
+    "main_suite_passed": 41,
+    "mr8875_suite_passed": 5,
+    "zipapp_build": "PASS",
+    "new_counter_test_methods": 10
+  },
+  "hardware_validation": {
+    "status": "NOT_RUN",
+    "reason": "RPi found via mDNS, but SSH account/access and TMDSusb protocol not supplied. No instrument commands sent.",
+    "measurements": []
+  },
+  "network_observation": {
+    "host": "192.168.2.36",
+    "mdns_hostname": "RPI-USBTMC.local",
+    "ssh_port": 22,
+    "portmapper_port": 111,
+    "portmapper_instrument_service_registered": false
+  },
+  "reproducer": "python3 scripts/hil-fca3003.py --usb-serial USB_SERIAL --serial SCPI_SERIAL --output /tmp/fca3003-hil.json",
+  "limitations": [
+    "No physical A/B/C inputs validated.",
+    "No real missing-signal timeout validated.",
+    "Internal-reference smoke alone would not establish frequency accuracy.",
+    "Existing TMDSusb gateway compatibility not confirmed."
+  ]
+}

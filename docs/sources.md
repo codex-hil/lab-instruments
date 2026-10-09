@@ -14,3 +14,7 @@ Odpowiedzi HIL i instrukcje producentów; instrukcje nie są kopiowane do repozy
 
 Pozostałe podstawowe komendy wynikają ze wcześniejszych testów stanowiska. Samo poprawne
 ID nie weryfikuje aktywnych funkcji danego sterownika; patrz commissioning i macierz modeli.
+
+## Tektronix FCA3003
+
+[Programmer Manual 077049400, Rev A](https://download.tek.com/manual/077049400webRevA_0.pdf): CONFigure (2-48–49), ACQuisition:APERture (2-29), FORMat (2-54–56), READ? (2-96), STATus:QUEStionable? (2-105), SYSTem:ERRor?/LANGuage (2-109), SYSTem:TOUT (2-111–112). Instrukcja opisuje tryb NATive; driver odrzuca COMPatible.

@@ -13,6 +13,7 @@
 | dmm7510 | TCP 5025 | ID, READ? w zastanej funkcji pomiarowej |
 | 6487 | TCP 4001 przez RS232 9600 8N1 | ID, READ?, wyłączenie źródła; bez zdalnego włączania źródła |
 | 8550 | TCP 4001 przez RS232 9600 8N1 | ID, pomiar V/I, CC w zakresie 3 A, input OFF |
+| fca3003 | USBTMC / bramka RPi | ID, scalar frequency/period/time/duty/Vpp, timeout/status/error; [szczegóły](fca3003.md) |
 | n9918b | TCP 5025 | ID, odczyt istniejącego markera 1, bez zmiany trybu |
 
 Nazwy pełnych modeli są weryfikowane z odpowiedzi `*IDN?`, nie z etykiety portu.

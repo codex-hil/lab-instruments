@@ -18,6 +18,7 @@ nie wymaga uruchamiania serwera sterowania. [Budowanie](../README.md#nowa-maszyn
 | `dmm7510` | Keithley DMM7510 | SCPI / TCP 5025 | READ? w aktualnie ustawionej funkcji |
 | `6487` | Keithley 6487 | SCPI / RS-232 przez TCP 4001 | READ?, wyłączenie źródła napięcia |
 | `8550` | B&K Precision 8550 | SCPI / RS-232 przez TCP 4001 | CC w zakresie 3 A, pomiar V/I, input ON/OFF |
+| `fca3003` | Tektronix FCA3003 | SCPI / USBTMC, bramka RPi | częstotliwość A/B/C, okres, czas, duty, Vpp; [API i HIL](../docs/fca3003.md) |
 | `n9918b` | Keysight FieldFox N9918B | SCPI / TCP 5025 | odczyt istniejącego markera 1 |
 
 Porty TCP to ustawienia profili/stanowiska, można je zmienić. Samo istnienie profilu
