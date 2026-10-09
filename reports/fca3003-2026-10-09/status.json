@@ -24,7 +24,9 @@
     ],
     "internal_reference_frequency": "TIMEOUT",
     "measurement_accuracy": "NOT_VALIDATED",
-    "reason": "FCA3003 returned empty READ response, questionable timeout bit 1024 and SCPI -230; screenshot showed No trig or Tout. Actual cause of absent trigger not established."
+    "reason": "FCA3003 returned empty READ response, questionable timeout bit 1024 and SCPI -230; screenshot showed No trig or Tout. Actual cause of absent trigger not established.",
+    "forced_internal_reference": "CONF:FREQ (@6); ROSC:SOUR INT; READ? timed out after 5 s; readback INT confirmed. Input A also timed out with INT.",
+    "selftest_all": "*TST? = 0; TEST:SEL remained ALL. LOG/LOGIC selection rejected with -224."
   },
   "deployment": {
     "host": "192.168.2.36",

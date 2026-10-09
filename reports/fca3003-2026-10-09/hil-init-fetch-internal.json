@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-10-09T13:27:10.495656+00:00",
+  "simulated": false,
+  "samples": [
+    {
+      "channel": 6,
+      "reference_source": "INT",
+      "opc": "1",
+      "fetch": "",
+      "status": "1024",
+      "error": "-213,\"Init ignored\""
+    },
+    {
+      "channel": 1,
+      "reference_source": "INT",
+      "opc": "1",
+      "fetch": "",
+      "status": "1024",
+      "error": "-230,\"Data corrupt or stale\""
+    }
+  ]
+}

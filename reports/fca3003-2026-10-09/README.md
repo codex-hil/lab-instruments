@@ -54,3 +54,23 @@ sudo python3 scripts/hil-fca3003.py --usb-serial 442678 --serial 442678 \
 
 Nadal wymagane: poprawny pomiar sygnału, następnie testy pozostałych wejść,
 funkcji czasowych, duty cycle, napięcia i par kanałów. Nie wykonano kalibracji.
+
+## Dodatkowa diagnostyka referencji
+
+Po `*RST` i `CONF:FREQ (@6)` kanał wewnętrzny ponownie zakończył się timeoutem.
+Wymuszono następnie **`ROSC:SOUR INT` po `CONF`**, ponieważ konfiguracja
+przywraca referencję do AUTO. Odczyt potwierdził INT zarówno dla kanału 6,
+jak i wejścia A; oba pomiary zakończyły się timeoutem po około 5.05 s.
+[Dowód wymuszenia INT](hil-forced-internal-reference.json). Przywrócono AUTO.
+
+`TEST:SEL LOG` i `TEST:SEL LOGIC` zostały odrzucone przez firmware V1.31
+z kodem -224; wybór pozostał ALL. `*TST?` w tym rzeczywistym trybie ALL
+zwrócił **0** w około 2.5 s. To pozytywny autotest, ale nie potwierdza
+poprawnego toru pomiarowego ani dokładności.
+[Autotest](hil-logic-selftest.json).
+
+Oddzielna próba `INIT; *OPC?; FETC?` także nie dała liczby:
+[odpowiedzi](hil-init-fetch-internal.json). Próba ta nie izolowała ciągłej
+akwizycji po autoteście; kod -213 (Init ignored) oznacza, że nie należy
+traktować jej jako dowodu usterki sprzętowej. Nie ustalono przyczyny
+braku wyzwalania. Sam wymuszony wybór wewnętrznej referencji nie usunął problemu.

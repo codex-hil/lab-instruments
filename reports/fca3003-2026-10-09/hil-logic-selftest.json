@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-10-09T13:26:29.132162+00:00",
+  "simulated": false,
+  "test": "LOGIC",
+  "prior_error": "0,\"No error\"",
+  "selected": "ALL",
+  "selection_error": "-224,\"Illegal parameter value\"",
+  "result": "0",
+  "elapsed_s": 2.5005884060001335,
+  "error": "0,\"No error\""
+}

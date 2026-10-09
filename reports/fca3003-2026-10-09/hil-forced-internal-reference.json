@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-10-09T13:25:25.739126+00:00",
+  "simulated": false,
+  "samples": [
+    {
+      "channel": 6,
+      "reference_source": "INT",
+      "function": "\"FREQ 6\"",
+      "pre_error": "0,\"No error\"",
+      "reply": "",
+      "elapsed_s": 5.054461075999825,
+      "status": "1024",
+      "error": "-230,\"Data corrupt or stale\""
+    },
+    {
+      "channel": 1,
+      "reference_source": "INT",
+      "function": "\"FREQ 1\"",
+      "pre_error": "0,\"No error\"",
+      "reply": "",
+      "elapsed_s": 5.054458784999952,
+      "status": "1024",
+      "error": "-230,\"Data corrupt or stale\""
+    }
+  ],
+  "original_reference_source": "AUTO",
+  "restored_reference_source": "AUTO"
+}
