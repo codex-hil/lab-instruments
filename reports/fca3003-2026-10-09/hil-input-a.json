@@ -1,0 +1,35 @@
+{
+  "timestamp_utc": "2026-10-09T13:10:41.724372+00:00",
+  "simulated": false,
+  "platform": "Linux-6.18.50+rpt-rpi-v8-aarch64-with-glibc2.41",
+  "python": "3.13.5",
+  "transport_kind": "usb",
+  "channel": 1,
+  "expected_hz": 1000000.0,
+  "relative_tolerance": 0.0001,
+  "passed": false,
+  "scope": "Scalar frequency smoke; not calibration or full input validation.",
+  "usb_inventory": [
+    {
+      "path": "/dev/usbtmc0",
+      "topology": "1-1.1.3",
+      "serial": "1544477",
+      "vendor": "0699",
+      "product_id": "0353",
+      "model": "AFG1062"
+    },
+    {
+      "path": "/dev/usbtmc1",
+      "topology": "1-1.1.2",
+      "serial": "442678",
+      "vendor": "0699",
+      "product_id": "3003",
+      "model": "FCA3003"
+    }
+  ],
+  "identity": "TEKTRONIX, FCA3003, 442678, V1.31 06 Mar 2015 12:55",
+  "error": {
+    "type": "TimeoutError",
+    "message": "FCA3003 measurement timed out (missing input signal); SCPI -230: Data corrupt or stale"
+  }
+}

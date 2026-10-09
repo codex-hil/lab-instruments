@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-10-09T13:15:27.848513+00:00",
+  "simulated": false,
+  "wiring": "AFG1062 CH2/B -> FCA3003 A",
+  "samples": [
+    {
+      "source_hz": 1000.0,
+      "error": {
+        "type": "TimeoutError",
+        "message": "FCA3003 measurement timed out (missing input signal); SCPI -230: Data corrupt or stale"
+      },
+      "passed": false
+    },
+    {
+      "source_hz": 100000.0,
+      "error": {
+        "type": "TimeoutError",
+        "message": "FCA3003 measurement timed out (missing input signal); SCPI -230: Data corrupt or stale"
+      },
+      "passed": false
+    },
+    {
+      "source_hz": 1000000.0,
+      "error": {
+        "type": "TimeoutError",
+        "message": "FCA3003 measurement timed out (missing input signal); SCPI -230: Data corrupt or stale"
+      },
+      "passed": false
+    }
+  ],
+  "source_identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+  "counter_identity": "TEKTRONIX, FCA3003, 442678, V1.31 06 Mar 2015 12:55",
+  "source_original_frequency_hz": 1000000.0,
+  "source_output": "1",
+  "source_function": "SIN",
+  "source_amplitude": "1.000000e+00",
+  "source_offset": "0.000000e+00",
+  "restored_frequency_hz": 1000000.0,
+  "restored": true
+}

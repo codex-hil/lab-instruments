@@ -86,6 +86,12 @@ class CounterTests(unittest.TestCase):
         with self.assertRaises(TimeoutError): FCA3003(io).measure()
         self.assertEqual(io.commands.count('READ?'), 1)
 
+    def test_real_firmware_timeout_with_empty_reply_and_stale_data_error(self):
+        io = CounterFake('', status=1024)
+        io.errors = iter(('0,"No error"', '0,"No error"', '-230,"Data corrupt or stale"'))
+        with self.assertRaisesRegex(TimeoutError, 'SCPI -230'):
+            FCA3003(io).measure()
+
     def test_invalid_scalars_and_questionable_status(self):
         for reply in ('NaN', 'Inf', '-Inf', '9.9e37', 'garbage', '1,2', ''):
             with self.subTest(reply=reply), self.assertRaises(InstrumentError):

@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-10-09T13:14:20.213538+00:00",
+  "simulated": false,
+  "transport_kind": "gateway",
+  "slot": "fca3003",
+  "identity": "TEKTRONIX, FCA3003, 442678, V1.31 06 Mar 2015 12:55",
+  "measurement_error": {
+    "type": "TimeoutError",
+    "message": "FCA3003 measurement timed out (missing input signal); SCPI -230: Data corrupt or stale"
+  }
+}

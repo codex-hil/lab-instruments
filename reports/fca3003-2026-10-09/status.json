@@ -1,29 +1,58 @@
 {
   "date": "2026-10-09",
   "model": "FCA3003",
+  "serial": "442678",
+  "firmware": "V1.31 06 Mar 2015 12:55",
   "software_validation": {
-    "main_suite_passed": 41,
+    "main_suite_passed": 42,
     "mr8875_suite_passed": 5,
+    "rpi_main_suite_passed": 42,
+    "rpi_python": "3.13.5",
     "zipapp_build": "PASS",
-    "new_counter_test_methods": 10
+    "new_counter_test_methods": 11
   },
   "hardware_validation": {
-    "status": "NOT_RUN",
-    "reason": "RPi found via mDNS, but SSH account/access and TMDSusb protocol not supplied. No instrument commands sent.",
-    "measurements": []
+    "status": "PARTIAL",
+    "usb_identity": "PASS",
+    "https_gateway_identity": "PASS",
+    "timeout_classification": "PASS",
+    "input_a_frequency_sweep": "NO_TRIGGER",
+    "input_a_test_frequencies_hz": [
+      1000,
+      100000,
+      1000000
+    ],
+    "internal_reference_frequency": "TIMEOUT",
+    "measurement_accuracy": "NOT_VALIDATED",
+    "reason": "FCA3003 returned empty READ response, questionable timeout bit 1024 and SCPI -230; screenshot showed No trig or Tout. Actual cause of absent trigger not established."
   },
-  "network_observation": {
+  "deployment": {
     "host": "192.168.2.36",
-    "mdns_hostname": "RPI-USBTMC.local",
-    "ssh_port": 22,
-    "portmapper_port": 111,
-    "portmapper_instrument_service_registered": false
+    "gateway_url": "https://192.168.2.36:8840",
+    "slot": "fca3003",
+    "usb_vendor": "0699",
+    "usb_product_id": "3003",
+    "usb_serial": "442678",
+    "driver_checkout": "/home/usbtmc/fca3003-driver",
+    "gateway_slot_added": true,
+    "udev_rule_added": true,
+    "existing_gateway_service_restarted": true,
+    "gateway_code_replaced": false,
+    "credentials_committed": false
   },
-  "reproducer": "python3 scripts/hil-fca3003.py --usb-serial USB_SERIAL --serial SCPI_SERIAL --output /tmp/fca3003-hil.json",
+  "source": {
+    "model": "AFG1062",
+    "serial": "1544477",
+    "channel": 2,
+    "user_confirmed_wiring": "AFG1062 B -> FCA3003 A",
+    "frequency_restored_hz": 1000000,
+    "original_output_state_preserved": true
+  },
   "limitations": [
-    "No physical A/B/C inputs validated.",
-    "No real missing-signal timeout validated.",
-    "Internal-reference smoke alone would not establish frequency accuracy.",
-    "Existing TMDSusb gateway compatibility not confirmed."
-  ]
+    "Successful finite physical measurement remains unverified.",
+    "Input B/C measurements and pair/voltage/duty functions remain unverified.",
+    "Internal reference channel 6 timed out on this instrument; do not treat it as a validated default test.",
+    "No calibration or absolute frequency accuracy established."
+  ],
+  "reproducer": "sudo python3 scripts/hil-fca3003.py --usb-serial 442678 --serial 442678 --channel 1 --expected-hz 1000000 --output /tmp/fca3003-hil.json"
 }

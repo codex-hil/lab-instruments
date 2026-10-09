@@ -109,9 +109,12 @@ class FCA3003(Driver):
         self.io.query('STAT:QUES?')  # Clear stale event bits before the new acquisition.
         reply = self.io.query('READ?')
         status = int(self.io.query('STAT:QUES?'))
-        self.check_error()
+        code, message = self.error()
         if status & 1024:
-            raise TimeoutError('FCA3003 measurement timed out (missing input signal)')
+            raise TimeoutError('FCA3003 measurement timed out (missing input signal); '
+                               f'SCPI {code}: {message}')
+        if code:
+            raise InstrumentError(f'FCA3003 SCPI error {code}: {message}')
         if status & (16384 | 2048 | 512 | 256):
             raise InstrumentError(f'FCA3003 questionable measurement status: {status}')
         try:
