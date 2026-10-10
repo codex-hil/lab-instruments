@@ -74,3 +74,14 @@ Oddzielna próba `INIT; *OPC?; FETC?` także nie dała liczby:
 akwizycji po autoteście; kod -213 (Init ignored) oznacza, że nie należy
 traktować jej jako dowodu usterki sprzętowej. Nie ustalono przyczyny
 braku wyzwalania. Sam wymuszony wybór wewnętrznej referencji nie usunął problemu.
+
+## Reset ustawień 2026-10-10
+
+Wykonano `SYST:PRES`, odpowiednik Recall Setup → Default. Odczyt potwierdził
+FREQ 1, ROSC AUTO, INIT:CONT ON i aperture 200 ms, bez błędu SCPI.
+Po resecie ponowiono pomiar A oraz wewnętrznej referencji 6, z jawnym INT
+ustawionym po CONF i wyłączoną akwizycją ciągłą. Oba pomiary zgłosiły
+timeout po około 3.05 s, bit 1024 i SCPI -230. Reset nie usunął problemu.
+Na końcu ponownie ustawiono domyślne nastawy przez SYST:PRES; nie zmieniano
+kalibracji, pamięci zapisanych konfiguracji ani generatora.
+[Odczyty i wyniki](hil-settings-reset-20261010.json).
