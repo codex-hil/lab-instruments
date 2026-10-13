@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-13T11:33:23.978312+00:00",
+  "simulated": false,
+  "channel": 2,
+  "method": "continuous INIT:CONT ON / FETC",
+  "state": {
+    "FUNC?": "\"FREQ 2\"",
+    "ROSC:SOUR?": "INT",
+    "INIT:CONT?": "1",
+    "ARM:STAR:SOUR?": "IMM",
+    "ARM:STOP:SOUR?": "IMM",
+    "TRIG:SOUR?": "IMM",
+    "SYST:ERR?": "0,\"No error\""
+  },
+  "reply": "",
+  "status": "1024",
+  "error": "-230,\"Data corrupt or stale\"",
+  "final_function": "\"FREQ 2\""
+}

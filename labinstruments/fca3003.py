@@ -111,7 +111,7 @@ class FCA3003(Driver):
         status = int(self.io.query('STAT:QUES?'))
         code, message = self.error()
         if status & 1024:
-            raise TimeoutError('FCA3003 measurement timed out (missing input signal); '
+            raise TimeoutError('FCA3003 measurement timed out; '
                                f'SCPI {code}: {message}')
         if code:
             raise InstrumentError(f'FCA3003 SCPI error {code}: {message}')

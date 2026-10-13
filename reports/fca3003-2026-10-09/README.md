@@ -85,3 +85,6 @@ timeout po około 3.05 s, bit 1024 i SCPI -230. Reset nie usunął problemu.
 Na końcu ponownie ustawiono domyślne nastawy przez SYST:PRES; nie zmieniano
 kalibracji, pamięci zapisanych konfiguracji ani generatora.
 [Odczyty i wyniki](hil-settings-reset-20261010.json).
+
+Kolejne próby wejścia B z sygnałem 6 Vpp potwierdzonym przez użytkownika
+oscyloskopem: [raport 2026-10-13](../fca3003-2026-10-13/README.md).

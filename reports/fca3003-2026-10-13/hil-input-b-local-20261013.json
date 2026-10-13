@@ -1,0 +1,5 @@
+{
+  "method": "USB488 GOTO_LOCAL after continuous frequency B setup",
+  "goto_local": "success",
+  "screen_block_bytes": 3949
+}

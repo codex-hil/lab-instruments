@@ -56,5 +56,6 @@
     "Internal reference channel 6 timed out on this instrument; do not treat it as a validated default test.",
     "No calibration or absolute frequency accuracy established."
   ],
-  "reproducer": "sudo python3 scripts/hil-fca3003.py --usb-serial 442678 --serial 442678 --channel 1 --expected-hz 1000000 --output /tmp/fca3003-hil.json"
+  "reproducer": "sudo python3 scripts/hil-fca3003.py --usb-serial 442678 --serial 442678 --channel 1 --expected-hz 1000000 --output /tmp/fca3003-hil.json",
+  "latest_hardware_report": "../fca3003-2026-10-13/README.md"
 }

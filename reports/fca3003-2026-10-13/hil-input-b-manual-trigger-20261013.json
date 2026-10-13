@@ -1,0 +1,38 @@
+{
+  "timestamp_utc": "2026-10-13T11:32:11.126534+00:00",
+  "simulated": false,
+  "channel": 2,
+  "attempts": [
+    {
+      "coupling": "AC",
+      "attenuation": "+1.0000000000000E+00",
+      "auto_level": "0",
+      "level": "+0.0000000000000E+00",
+      "configuration_error": "0,\"No error\"",
+      "reply": "",
+      "status": "1024",
+      "error": "-230,\"Data corrupt or stale\""
+    },
+    {
+      "coupling": "DC",
+      "attenuation": "+1.0000000000000E+00",
+      "auto_level": "0",
+      "level": "+0.0000000000000E+00",
+      "configuration_error": "0,\"No error\"",
+      "reply": "",
+      "status": "1024",
+      "error": "-230,\"Data corrupt or stale\""
+    },
+    {
+      "coupling": "AC",
+      "attenuation": "+1.0000000000000E+01",
+      "auto_level": "0",
+      "level": "+0.0000000000000E+00",
+      "configuration_error": "0,\"No error\"",
+      "reply": "",
+      "status": "1024",
+      "error": "-230,\"Data corrupt or stale\""
+    }
+  ],
+  "options": "HS, 0, 0"
+}

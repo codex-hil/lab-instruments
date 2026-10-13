@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-10-13T11:31:13.195553+00:00",
+  "simulated": false,
+  "scope": {
+    "1": {
+      "frequency": "27.7778E+6",
+      "vpp": "80.0000E-3"
+    },
+    "2": {
+      "frequency": "4.5455E+6",
+      "vpp": "8.0000E-3"
+    }
+  },
+  "scope_identity": "TEKTRONIX,MSO2002B,C010257,CF:91.1CT FV:v1.52",
+  "awg_identity": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+  "awg": {
+    "OUTP1?": "1",
+    "OUTP2?": "1",
+    "SOUR1:FREQ?": "1.000000e+06",
+    "SOUR2:FREQ?": "1.000000e+06",
+    "SOUR1:VOLT?": "1.001000e+00",
+    "SOUR2:VOLT?": "1.000000e+00",
+    "SOUR2:FUNC?": "SIN",
+    "SOUR2:VOLT:OFFS?": "0.000000e+00"
+  }
+}
