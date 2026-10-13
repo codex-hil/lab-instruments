@@ -1,0 +1,10 @@
+{
+  "dut": {
+    "name": "zynq-test",
+    "storage": {"backend": "sdwire", "serial": "REPLACE_FROM_DISCOVER", "vid": "04e8", "pid": "6001",
+      "reader": {"vid": "REPLACE", "pid": "REPLACE", "serial": "REPLACE",
+        "usb_path": "REPLACE", "by_id": "REPLACE", "min_capacity": 1000000000, "max_capacity": 128000000000}},
+    "console": {"backend": "ftdi", "serial": "REPLACE", "channel": "A", "baudrate": 115200},
+    "power": {"backend": "REQUIRES_COMMISSIONING"}
+  }
+}

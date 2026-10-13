@@ -1,0 +1,19 @@
+{
+  "storage": {
+    "sdwire-01": {
+      "backend": "sdwire",
+      "serial": "DP04I355",
+      "vid": "0403",
+      "pid": "6015",
+      "reader": {
+        "vid": "0424",
+        "pid": "4050",
+        "serial": "000000264001",
+        "usb_path": "1-1.1.1.1",
+        "by_id": "usb-Generic_Ultra_HS-SD_MMC_000000264001-0:0",
+        "min_capacity": 15716057088,
+        "max_capacity": 15716057088
+      }
+    }
+  }
+}

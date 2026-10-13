@@ -1,0 +1,129 @@
+test_controller_requires_identity_and_commissioning (test_6487.PicoTests.test_controller_requires_identity_and_commissioning) ... ok
+test_interlock_failure_prevents_enable (test_6487.PicoTests.test_interlock_failure_prevents_enable) ... ok
+test_invalid_requests_do_not_touch_instrument (test_6487.PicoTests.test_invalid_requests_do_not_touch_instrument) ... ok
+test_policy_blocks_enable_voltage_and_power (test_6487.PicoTests.test_policy_blocks_enable_voltage_and_power) ... ok
+test_range_selection_and_off_by_request (test_6487.PicoTests.test_range_selection_and_off_by_request) ... ok
+test_readback_mismatch_and_timeout_prevent_enable (test_6487.PicoTests.test_readback_mismatch_and_timeout_prevent_enable) ... ok
+test_state_read_is_non_mutating (test_6487.PicoTests.test_state_read_is_non_mutating) ... ok
+test_supported_limits_and_enable (test_6487.PicoTests.test_supported_limits_and_enable) ... ok
+test_cr_keithley (test_core.FramingTests.test_cr_keithley) ... ok
+test_fragmented_binary_embedded_newline (test_core.FramingTests.test_fragmented_binary_embedded_newline) ... ok
+test_indefinite_rejected (test_core.FramingTests.test_indefinite_rejected) ... ok
+test_limit (test_core.FramingTests.test_limit) ... ok
+test_tektronix_lf_cr_between_messages (test_core.FramingTests.test_tektronix_lf_cr_between_messages) ... ok
+test_truncated_block (test_core.FramingTests.test_truncated_block) ... ok
+test_usb_eom_not_short_read (test_core.FramingTests.test_usb_eom_not_short_read) ... ok
+test_auth_required (test_core.HTTPTests.test_auth_required) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 401: 'Unauthorized'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_limit_via_http (test_core.HTTPTests.test_limit_via_http) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 400: 'Bad Request'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_no_raw_gateway_route_in_control_mode (test_core.HTTPTests.test_no_raw_gateway_route_in_control_mode) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not Found'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_tls_required_remote (test_core.HTTPTests.test_tls_required_remote) ... ok
+test_awg_offset_and_50ohm_envelope (test_core.PolicyTests.test_awg_offset_and_50ohm_envelope) ... ok
+test_bad_readback_stays_off (test_core.PolicyTests.test_bad_readback_stays_off) ... ok
+test_complete_state_and_power (test_core.PolicyTests.test_complete_state_and_power) ... ok
+test_disabled_enable (test_core.PolicyTests.test_disabled_enable) ... ok
+test_expired_renewal_rejected (test_core.PolicyTests.test_expired_renewal_rejected) ... ok
+test_fault_latched (test_core.PolicyTests.test_fault_latched) ... ERROR:root:{"device": "supply", "action": "apply", "ok": false, "error": "setpoint readback mismatch: SOUR:VOLT?"}
+ok
+test_identity_mismatch_no_writes (test_core.PolicyTests.test_identity_mismatch_no_writes) ... ok
+test_invalid_request_no_writes (test_core.PolicyTests.test_invalid_request_no_writes) ... ok
+test_off_before_change_on_after_readback (test_core.PolicyTests.test_off_before_change_on_after_readback) ... ok
+test_raw_and_unknown_operations_blocked (test_core.PolicyTests.test_raw_and_unknown_operations_blocked) ... ERROR:root:{"device": "supply", "action": "read", "ok": false, "error": "unsupported operation; no raw SCPI in protected API"}
+ok
+test_rf_power (test_core.PolicyTests.test_rf_power) ... ok
+test_uncommissioned_and_gateway_blocked (test_core.PolicyTests.test_uncommissioned_and_gateway_blocked) ... ok
+test_watchdog (test_core.PolicyTests.test_watchdog) ... ok
+test_bad_settings_no_session (test_fra_engine.EngineTests.test_bad_settings_no_session) ... ok
+test_cleanup_failure_is_explicit (test_fra_engine.EngineTests.test_cleanup_failure_is_explicit) ... ok
+test_clipped_invalid_point (test_fra_engine.EngineTests.test_clipped_invalid_point) ... ok
+test_existing_inventory_gate (test_fra_engine.EngineTests.test_existing_inventory_gate) ... ok
+test_exports (test_fra_engine.EngineTests.test_exports) ... ok
+test_fra_contains_no_command_io (test_fra_engine.EngineTests.test_fra_contains_no_command_io) ... ok
+test_invalid_acquisition (test_fra_engine.EngineTests.test_invalid_acquisition) ... ok
+test_low_input (test_fra_engine.EngineTests.test_low_input) ... ok
+test_manual_rate_uses_actual_timing (test_fra_engine.EngineTests.test_manual_rate_uses_actual_timing) ... ok
+test_quantized_timing_rc (test_fra_engine.EngineTests.test_quantized_timing_rc) ... ok
+test_small_signal_amplitude_and_gain_invariance (test_fra_engine.EngineTests.test_small_signal_amplitude_and_gain_invariance) ... ok
+test_small_signal_cli_units_and_preset (test_fra_engine.EngineTests.test_small_signal_cli_units_and_preset) ... ok
+test_stop_after_point (test_fra_engine.EngineTests.test_stop_after_point) ... ok
+test_stop_during_wait (test_fra_engine.EngineTests.test_stop_during_wait) ... ok
+test_timeout_stops_sweep_and_cleans (test_fra_engine.EngineTests.test_timeout_stops_sweep_and_cleans) ... ok
+test_rc_and_loopback_errors (test_fra_math.ComparisonTests.test_rc_and_loopback_errors) ... ok
+test_complex_averages_wrap (test_fra_math.MathTests.test_complex_averages_wrap) ... ok
+test_different_time_origins (test_fra_math.MathTests.test_different_time_origins) ... ok
+test_noise (test_fra_math.MathTests.test_noise) ... ok
+test_non_bin_amplitudes_and_phases (test_fra_math.MathTests.test_non_bin_amplitudes_and_phases) ... ok
+test_planning (test_fra_math.MathTests.test_planning) ... ok
+test_quality (test_fra_math.MathTests.test_quality) ... ok
+test_wrapping (test_fra_math.MathTests.test_wrapping) ... ok
+test_gui_assets_and_csrf (test_fra_web.WebTests.test_gui_assets_and_csrf) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 403: 'Forbidden'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_job_progress_export_stop (test_fra_web.WebTests.test_job_progress_export_stop) ... ok
+test_persistence (test_fra_web.WebTests.test_persistence) ... ok
+test_validate_invalid_and_single (test_fra_web.WebTests.test_validate_invalid_and_single) ... ok
+test_status_auth_and_transaction (test_gateway.GatewayHTTPTests.test_status_auth_and_transaction) ... ok
+test_udev_topology_rule_and_invalid_selector (test_gateway.GatewayHTTPTests.test_udev_topology_rule_and_invalid_selector) ... ok
+test_busy_gateway_status_remains_responsive (test_gateway.GatewayTests.test_busy_gateway_status_remains_responsive) ... ok
+test_four_slots_and_ambiguous_status (test_gateway.GatewayTests.test_four_slots_and_ambiguous_status) ... ok
+test_hotplug_renumbering_and_no_retry (test_gateway.GatewayTests.test_hotplug_renumbering_and_no_retry) ... ok
+test_identify_metrics_and_bounded_history (test_gateway.GatewayTests.test_identify_metrics_and_bounded_history) ... ok
+test_invalid_payload_never_opens_usb (test_gateway.GatewayTests.test_invalid_payload_never_opens_usb) ... ok
+test_invalid_selectors_rejected_at_startup (test_gateway.GatewayTests.test_invalid_selectors_rejected_at_startup) ... ok
+test_active_profiles_complete_apply (test_profiles.ProfileTests.test_active_profiles_complete_apply) ... ok
+test_gateway_binary_and_explicit_reply (test_profiles.ProfileTests.test_gateway_binary_and_explicit_reply) ... ok
+test_missing_and_duplicate_usb_fail_closed (test_profiles.ProfileTests.test_missing_and_duplicate_usb_fail_closed) ... ok
+test_multicomp_textual_modulation_state (test_profiles.ProfileTests.test_multicomp_textual_modulation_state) ... ok
+test_reconnect_resolves_new_node (test_profiles.ProfileTests.test_reconnect_resolves_new_node) ... ok
+test_smu_fetch_no_trigger (test_profiles.ProfileTests.test_smu_fetch_no_trigger) ... ok
+test_tbs1022_uses_shared_scope_measurements (test_profiles.ProfileTests.test_tbs1022_uses_shared_scope_measurements) ... ok
+test_unstable_usb_path_not_supported (test_profiles.ProfileTests.test_unstable_usb_path_not_supported) ... ok
+test_clipping (test_scope_acquisition.ScopeTests.test_clipping) ... ok
+test_missing_samples_rejected (test_scope_acquisition.ScopeTests.test_missing_samples_rejected) ... ok
+test_other_scope_not_silently_supported (test_scope_acquisition.ScopeTests.test_other_scope_not_silently_supported) ... ok
+test_scaling_and_same_stopped_record (test_scope_acquisition.ScopeTests.test_scaling_and_same_stopped_record) ... ok
+test_timeout_and_cancel_stop (test_scope_acquisition.ScopeTests.test_timeout_and_cancel_stop) ... ok
+test_bmap_outside_capacity_rejected (test_storage.BmapTests.test_bmap_outside_capacity_rejected) ... ok
+test_real_bmaptool_on_private_mock_file (test_storage.BmapTests.test_real_bmaptool_on_private_mock_file) ... ok
+test_by_id_points_to_other_disk (test_storage.IdentityTests.test_by_id_points_to_other_disk) ... ok
+test_capacity_outside_limits (test_storage.IdentityTests.test_capacity_outside_limits) ... ok
+test_full_stable_identity (test_storage.IdentityTests.test_full_stable_identity) ... ok
+test_generic_ftdi_rejected (test_storage.IdentityTests.test_generic_ftdi_rejected) ... ok
+test_generic_upstream_hub_rejected (test_storage.IdentityTests.test_generic_upstream_hub_rejected) ... ok
+test_multiple_controller_serials (test_storage.IdentityTests.test_multiple_controller_serials) ... ok
+test_multiple_disks (test_storage.IdentityTests.test_multiple_disks) ... ok
+test_nonremovable_disk (test_storage.IdentityTests.test_nonremovable_disk) ... ok
+test_reader_outside_sdwire_hub (test_storage.IdentityTests.test_reader_outside_sdwire_hub) ... ok
+test_sdwire_status_protocol (test_storage.IdentityTests.test_sdwire_status_protocol) ... ok
+test_wrong_major_minor (test_storage.IdentityTests.test_wrong_major_minor) ... ok
+test_wrong_reader_serial (test_storage.IdentityTests.test_wrong_reader_serial) ... ok
+test_cross_process_lock (test_storage.ProcessTests.test_cross_process_lock) ... ok
+test_real_sigint_recovery (test_storage.ProcessTests.test_real_sigint_recovery) ... ok
+test_real_sigkill_requires_next_owner_recovery (test_storage.ProcessTests.test_real_sigkill_requires_next_owner_recovery) ... ok
+test_backend_rejects_wrong_reader (test_storage.StorageTests.test_backend_rejects_wrong_reader) ... ok
+test_capacity_rejected_before_open (test_storage.StorageTests.test_capacity_rejected_before_open) ... ok
+test_cli_definition_of_done (test_storage.StorageTests.test_cli_definition_of_done) ... ok
+test_copy_success_and_path_escape (test_storage.StorageTests.test_copy_success_and_path_escape) ... ok
+test_dry_run_never_opens_writer (test_storage.StorageTests.test_dry_run_never_opens_writer) ... ok
+test_flash_failure_and_interrupt_leave_off (test_storage.StorageTests.test_flash_failure_and_interrupt_leave_off) ... ok
+test_killed_transaction_is_not_sent_to_target (test_storage.StorageTests.test_killed_transaction_is_not_sent_to_target) ... ok
+test_lock_collision (test_storage.StorageTests.test_lock_collision) ... ok
+test_log_has_required_fields (test_storage.StorageTests.test_log_has_required_fields) ... ok
+test_mock_symlink_cannot_write_host_disk (test_storage.StorageTests.test_mock_symlink_cannot_write_host_disk) ... ok
+test_mount_copy_unmount_failure (test_storage.StorageTests.test_mount_copy_unmount_failure) ... ok
+test_sdwire_without_off_never_calls_usb_or_writer (test_storage.StorageTests.test_sdwire_without_off_never_calls_usb_or_writer) ... ok
+test_success_all_image_formats_and_readback (test_storage.StorageTests.test_success_all_image_formats_and_readback) ... ok
+test_transitions_break_before_make (test_storage.StorageTests.test_transitions_break_before_make) ... ok
+test_wrong_disk_never_opened (test_storage.StorageTests.test_wrong_disk_never_opened) ... ok
+test_boot_failure_keeps_uart_and_off (test_storage.WorkflowTests.test_boot_failure_keeps_uart_and_off) ... ok
+test_boot_workflow_artifacts (test_storage.WorkflowTests.test_boot_workflow_artifacts) ... ok
+
+----------------------------------------------------------------------
+Ran 114 tests in 10.896s
+
+OK

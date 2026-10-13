@@ -1,0 +1,270 @@
+{
+  "timestamp": "2026-10-09T11:31:43.347743+00:00",
+  "validation": "TESTED / SIMULATED",
+  "hardware_validation": "REQUIRES HARDWARE",
+  "tests_exit": 0,
+  "cli": [
+    {
+      "argv": [
+        "list"
+      ],
+      "exit": 0,
+      "stdout": {
+        "devices": [
+          {
+            "backend": "mock",
+            "card_present": null,
+            "device": null,
+            "locked": true,
+            "serial": "SIMULATED-02",
+            "simulated": true,
+            "state": "off",
+            "storage": "spare",
+            "supports_off": true
+          },
+          {
+            "backend": "mock",
+            "card_present": null,
+            "device": null,
+            "locked": true,
+            "serial": "SIMULATED-01",
+            "simulated": true,
+            "state": "off",
+            "storage": "zynq_dev",
+            "supports_off": true
+          }
+        ],
+        "ok": true
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "status"
+      ],
+      "exit": 0,
+      "stdout": {
+        "backend": "mock",
+        "card_present": null,
+        "device": null,
+        "locked": true,
+        "ok": true,
+        "serial": "SIMULATED-01",
+        "simulated": true,
+        "state": "off",
+        "storage": "zynq_dev",
+        "supports_off": true
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "host"
+      ],
+      "exit": 0,
+      "stdout": {
+        "backend": "mock",
+        "capacity": 67108864,
+        "card_present": true,
+        "device": "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/runtime/mock/SIMULATED-01/card.bin",
+        "locked": true,
+        "ok": true,
+        "pid": "SIMULATED",
+        "removable": true,
+        "serial": "SIMULATED-01",
+        "simulated": true,
+        "state": "host",
+        "storage": "zynq_dev",
+        "supports_off": true,
+        "usb_path": "SIMULATED/SIMULATED-01",
+        "vid": "SIMULATED"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "device"
+      ],
+      "exit": 0,
+      "stdout": {
+        "capacity": 67108864,
+        "card_present": true,
+        "device": "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/runtime/mock/SIMULATED-01/card.bin",
+        "ok": true,
+        "pid": "SIMULATED",
+        "removable": true,
+        "serial": "SIMULATED-01",
+        "simulated": true,
+        "usb_path": "SIMULATED/SIMULATED-01",
+        "vid": "SIMULATED"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "partitions"
+      ],
+      "exit": 0,
+      "stdout": {
+        "ok": true,
+        "partitions": [
+          {
+            "label": "BOOT",
+            "name": "boot",
+            "simulated": true
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "target"
+      ],
+      "exit": 0,
+      "stdout": {
+        "backend": "mock",
+        "card_present": null,
+        "device": null,
+        "locked": true,
+        "ok": true,
+        "serial": "SIMULATED-01",
+        "simulated": true,
+        "state": "target",
+        "storage": "zynq_dev",
+        "supports_off": true
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "off"
+      ],
+      "exit": 0,
+      "stdout": {
+        "backend": "mock",
+        "card_present": null,
+        "device": null,
+        "locked": true,
+        "ok": true,
+        "serial": "SIMULATED-01",
+        "simulated": true,
+        "state": "off",
+        "storage": "zynq_dev",
+        "supports_off": true
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "flash",
+        "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/test.img",
+        "--dry-run"
+      ],
+      "exit": 0,
+      "stdout": {
+        "block_device": "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/runtime/mock/SIMULATED-01/card.bin",
+        "card_capacity": 67108864,
+        "dry_run": true,
+        "image": "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/test.img",
+        "image_hash": "409533c086bdca1b18ac5e31eb774df70b9a88e9f3399d389419c19b5afbb726",
+        "image_size": 69632,
+        "ok": true,
+        "planned_operation": [
+          "stop DUT",
+          "OFF",
+          "HOST",
+          "verify identity",
+          "unmount",
+          "stream write",
+          "flush",
+          "no readback",
+          "OFF",
+          "TARGET"
+        ],
+        "sdwire_serial": "SIMULATED-01",
+        "simulated": true,
+        "storage": "zynq_dev",
+        "usb_path": "SIMULATED/SIMULATED-01",
+        "writer": "stream"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "zynq_dev",
+        "flash",
+        "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/test.img",
+        "--verify"
+      ],
+      "exit": 0,
+      "stdout": {
+        "block_device": "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/runtime/mock/SIMULATED-01/card.bin",
+        "card_capacity": 67108864,
+        "dry_run": false,
+        "image": "/tmp/nix-shell.EgBaP1/hil-storage-validation-c2n7fv9h/test.img",
+        "image_hash": "409533c086bdca1b18ac5e31eb774df70b9a88e9f3399d389419c19b5afbb726",
+        "image_size": 69632,
+        "ok": true,
+        "planned_operation": [
+          "stop DUT",
+          "OFF",
+          "HOST",
+          "verify identity",
+          "unmount",
+          "stream write",
+          "flush",
+          "verify",
+          "OFF",
+          "TARGET"
+        ],
+        "sdwire_serial": "SIMULATED-01",
+        "simulated": true,
+        "state": "target",
+        "storage": "zynq_dev",
+        "usb_path": "SIMULATED/SIMULATED-01",
+        "verified": true,
+        "writer": "stream",
+        "written": 69632
+      },
+      "stderr": ""
+    }
+  ],
+  "boot": {
+    "storage": "zynq-test",
+    "simulated": true,
+    "validation": "SIMULATED",
+    "uart_log": "/srv/codex-hil-data/home-projects/workspaces/lab-instruments/reports/storage/software-2026-10-09/zynq-simulated/uart.bin",
+    "markers": [
+      "U-Boot",
+      "Linux version",
+      "login:"
+    ],
+    "result": "PASS",
+    "duration": 0.3426304509998772
+  },
+  "usb_discovery": {
+    "devices": [],
+    "ok": true,
+    "validation": "REQUIRES HARDWARE"
+  },
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [GCC 15.3.0]",
+  "source_sha256": {
+    "labinstruments/storage.py": "af16d1976c1ed5fd39fd349bc67dd6246f649922452d279325355f5ad70e2c01",
+    "labinstruments/storage_cli.py": "519189494ab3beafac86ea2c62c32749c3756c95e1d23fef654ddb7f897fbbbd",
+    "labinstruments/storage_workflow.py": "fe5c35bc556e5fd5967eaec73849306bff79de1e84687c56480b82c641857c1a",
+    "tests/test_storage.py": "f872fa12f4e02c5884c4b7c13abfe769a67e89ded93b5000312c65a2ead41728",
+    "flake.nix": "1cb9107d2be1a01c9fc03372fef245a504b4c08d84ecef392b031e5d42c5414f",
+    "flake.lock": "14b54956c8377ec3561cf2784aa9a88218368d146f7e5df3927b8546d791e8b6",
+    "scripts/validate-storage.py": "e42e7148d8370944d99c38d4b0cd1063f0592fa8c2983418d9d0d4afba0d391e"
+  },
+  "sd_mux_revision": "9dd189d973da64e033a0c5c2adb3d94b23153d94",
+  "result": "PASS"
+}

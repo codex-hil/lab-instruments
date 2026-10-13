@@ -1,0 +1,6 @@
+{
+  "storage": {
+    "zynq_dev": {"backend": "mock", "serial": "SIMULATED-01", "capacity": 67108864},
+    "spare": {"backend": "mock", "serial": "SIMULATED-02", "capacity": 67108864}
+  }
+}

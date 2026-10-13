@@ -1,0 +1,13 @@
+{
+  "storage": "zynq-test",
+  "simulated": true,
+  "validation": "SIMULATED",
+  "uart_log": "/srv/codex-hil-data/home-projects/workspaces/lab-instruments/reports/storage/software-2026-10-09-final/zynq-simulated/uart.bin",
+  "markers": [
+    "U-Boot",
+    "Linux version",
+    "login:"
+  ],
+  "result": "PASS",
+  "duration": 0.2828508369998417
+}

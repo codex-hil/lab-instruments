@@ -142,3 +142,40 @@ Bibliotekę można importować również bez instalacji pakietu, prosto z artefa
 ```sh
 PYTHONPATH=dist/labinst.pyz python3 examples/power_test.py --help
 ```
+
+## Removable Storage HIL
+
+SDWire ma umożliwiać agentowi aktualizowanie SD/microSD bez wyjmowania karty z DUT:
+build → HOST → podmiana BOOT.BIN/image.ub → sync/unmount → OFF → TARGET → reset →
+UART/boot/health → PASS/FAIL. To kolejny zasób `labinstruments`, z ogólnym API
+`RemovableStorage`, backendami i lockingiem całej transakcji; workflow nie zależy
+od SDWire ani konkretnej platformy Zynq/RPi/FPGA.
+
+**TESTED / SIMULATED:** mock, CLI, streaming .img/.gz/.xz, identity checks,
+recovery, locking i boot workflow z pełnym UART artifact. **REQUIRES HARDWARE:**
+dwa zakupione SDWire i realny Zynq. Legacy SDWire nie udostępnia trwałego OFF:
+backend realny wykrywa skonfigurowane i fabryczne urządzenia (FT200X),
+czyta metadane/status, ale blokuje przełączanie/zapis
+z `OFF_UNSUPPORTED`. Wymagany dodatkowy, kwalifikowany mechanizm izolacji.
+
+```sh
+./scripts/bootstrap-storage.sh
+export HIL_STORAGE_CONFIG="$PWD/examples/storage/mock.json"
+local/storage-tools/bin/hil-storage --json list
+local/storage-tools/bin/hil-storage zynq_dev status --json
+local/storage-tools/bin/hil-storage zynq_dev host --json
+local/storage-tools/bin/hil-storage zynq_dev flash image.img.xz --dry-run --json
+local/storage-tools/bin/hil-storage zynq_dev off --json
+```
+
+Aliasy/USB seriale: [mock config](examples/storage/mock.json),
+[DUT config](examples/storage/zynq.json). Szczegóły API, CLI, Nix, fail-closed,
+klasyfikacji błędów i ograniczeń: [docs/sdwire.md](docs/sdwire.md).
+Pierwsze podłączenie i automatyczny raport:
+[docs/sdwire-bringup.md](docs/sdwire-bringup.md).
+
+Pierwszy fizyczny egzemplarz: **DP04I355**, factory `0403:6015`, czytnik USB2640
+`0424:4050`, karta 15716057088 bajtów. Topology identity PASS; ownership pozostaje
+unknown, bez automatycznego programowania EEPROM-u. Szczegóły wykonanych prób i
+ograniczeń: [hardware-2026-10-13](reports/storage/hardware-2026-10-13/README.md).
+Aktualne testy software: [121 PASS](reports/storage/software-2026-10-13/README.md).
