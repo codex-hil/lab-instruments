@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-13T11:18:28.530970+00:00",
+  "validation": "HARDWARE_READ_ONLY",
+  "serial": "DP04I355",
+  "write_test": "NOT_RUN",
+  "switch_test": "BLOCKED_OFF_UNSUPPORTED",
+  "eeprom_write": "NOT_RUN",
+  "tests": {
+    "topology_identity": "PASS",
+    "usb_read_pins": {
+      "result": "PASS",
+      "raw": 254,
+      "ownership": "unknown: factory CBUS configuration not qualified"
+    },
+    "card_read_repeat": {
+      "result": "PASS",
+      "bytes": 1048576,
+      "sha256": "9b490e44b1f31849e460ab108f802d2f2192aae856df58ed40bf66758612fcc1"
+    }
+  },
+  "board_actions": "NONE",
+  "controller": {
+    "serial": "DP04I355",
+    "usb_path": "1-1.1.1.2",
+    "vid": "0403",
+    "pid": "6015",
+    "backend": "sdwire",
+    "product": "FT200X USB I2C",
+    "factory_identity": true,
+    "state": "unknown",
+    "supports_off": false
+  },
+  "identity": {
+    "device": "/dev/sdb",
+    "by_id": "/dev/disk/by-id/usb-Generic_Ultra_HS-SD_MMC_000000264001-0:0",
+    "serial": "DP04I355",
+    "reader_serial": "000000264001",
+    "usb_path": "1-1.1.1.1",
+    "vid": "0424",
+    "pid": "4050",
+    "capacity": 15716057088,
+    "removable": true,
+    "card_present": true,
+    "simulated": false
+  },
+  "partitions": [
+    {
+      "device": "/dev/sdb1",
+      "partition": "1"
+    },
+    {
+      "device": "/dev/sdb2",
+      "partition": "2"
+    },
+    {
+      "device": "/dev/sdb5",
+      "partition": "5"
+    }
+  ],
+  "status": {
+    "storage": "sdwire-01",
+    "backend": "sdwire",
+    "serial": "DP04I355",
+    "state": "unknown",
+    "locked": true,
+    "simulated": false,
+    "supports_off": false,
+    "device": "/dev/sdb",
+    "card_present": true,
+    "state_error": {
+      "code": "UNCOMMISSIONED_FACTORY",
+      "message": "Factory EEPROM/CBUS role not qualified; ownership unknown. No EEPROM writes performed."
+    },
+    "by_id": "/dev/disk/by-id/usb-Generic_Ultra_HS-SD_MMC_000000264001-0:0",
+    "reader_serial": "000000264001",
+    "usb_path": "1-1.1.1.1",
+    "vid": "0424",
+    "pid": "4050",
+    "capacity": 15716057088,
+    "removable": true
+  },
+  "result": "PASS_READ_ONLY"
+}

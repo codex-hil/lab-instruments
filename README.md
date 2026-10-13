@@ -179,3 +179,8 @@ Pierwszy fizyczny egzemplarz: **DP04I355**, factory `0403:6015`, czytnik USB2640
 unknown, bez automatycznego programowania EEPROM-u. Szczegóły wykonanych prób i
 ograniczeń: [hardware-2026-10-13](reports/storage/hardware-2026-10-13/README.md).
 Aktualne testy software: [121 PASS](reports/storage/software-2026-10-13/README.md).
+
+Po nadaniu tymczasowych ACL: [realny SDWire PASS_READ_ONLY](reports/storage/hardware-2026-10-13-read-pass/README.md)
+— odczyt rejestru USB i dwa zgodne odczyty 1MiB karty. Bez zapisów/przełączeń.
+Na aktualnej bazie main: [83 testy PASS](reports/storage/software-2026-10-13-main/README.md),
+w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.

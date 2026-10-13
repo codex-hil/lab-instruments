@@ -1,0 +1,96 @@
+test_cr_keithley (test_core.FramingTests.test_cr_keithley) ... ok
+test_fragmented_binary_embedded_newline (test_core.FramingTests.test_fragmented_binary_embedded_newline) ... ok
+test_indefinite_rejected (test_core.FramingTests.test_indefinite_rejected) ... ok
+test_limit (test_core.FramingTests.test_limit) ... ok
+test_tektronix_lf_cr_between_messages (test_core.FramingTests.test_tektronix_lf_cr_between_messages) ... ok
+test_truncated_block (test_core.FramingTests.test_truncated_block) ... ok
+test_usb_eom_not_short_read (test_core.FramingTests.test_usb_eom_not_short_read) ... ok
+test_auth_required (test_core.HTTPTests.test_auth_required) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 401: 'Unauthorized'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_limit_via_http (test_core.HTTPTests.test_limit_via_http) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 400: 'Bad Request'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_no_raw_gateway_route_in_control_mode (test_core.HTTPTests.test_no_raw_gateway_route_in_control_mode) ... /nix/store/d64q19q1xjdwfhqx6czvrjgrhq0n3lcc-python3-3.14.7/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not Found'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_tls_required_remote (test_core.HTTPTests.test_tls_required_remote) ... ok
+test_awg_offset_and_50ohm_envelope (test_core.PolicyTests.test_awg_offset_and_50ohm_envelope) ... ok
+test_bad_readback_stays_off (test_core.PolicyTests.test_bad_readback_stays_off) ... ok
+test_complete_state_and_power (test_core.PolicyTests.test_complete_state_and_power) ... ok
+test_disabled_enable (test_core.PolicyTests.test_disabled_enable) ... ok
+test_expired_renewal_rejected (test_core.PolicyTests.test_expired_renewal_rejected) ... ok
+test_fault_latched (test_core.PolicyTests.test_fault_latched) ... ERROR:root:{"device": "supply", "action": "apply", "ok": false, "error": "setpoint readback mismatch: SOUR:VOLT?"}
+ok
+test_identity_mismatch_no_writes (test_core.PolicyTests.test_identity_mismatch_no_writes) ... ok
+test_invalid_request_no_writes (test_core.PolicyTests.test_invalid_request_no_writes) ... ok
+test_off_before_change_on_after_readback (test_core.PolicyTests.test_off_before_change_on_after_readback) ... ok
+test_raw_and_unknown_operations_blocked (test_core.PolicyTests.test_raw_and_unknown_operations_blocked) ... ERROR:root:{"device": "supply", "action": "read", "ok": false, "error": "unsupported operation; no raw SCPI in protected API"}
+ok
+test_rf_power (test_core.PolicyTests.test_rf_power) ... ok
+test_uncommissioned_and_gateway_blocked (test_core.PolicyTests.test_uncommissioned_and_gateway_blocked) ... ok
+test_watchdog (test_core.PolicyTests.test_watchdog) ... ok
+test_all_operations_and_units (test_fca3003.CounterTests.test_all_operations_and_units) ... ok
+test_configuration_error_prevents_acquisition (test_fca3003.CounterTests.test_configuration_error_prevents_acquisition) ... ok
+test_existing_error_is_reported_without_clearing_queue (test_fca3003.CounterTests.test_existing_error_is_reported_without_clearing_queue) ... ok
+test_explicit_pair (test_fca3003.CounterTests.test_explicit_pair) ... ok
+test_generic_driver_and_input_c (test_fca3003.CounterTests.test_generic_driver_and_input_c) ... ok
+test_identity_and_language_fail_before_configuration (test_fca3003.CounterTests.test_identity_and_language_fail_before_configuration) ... ok
+test_invalid_scalars_and_questionable_status (test_fca3003.CounterTests.test_invalid_scalars_and_questionable_status) ... ok
+test_missing_signal_is_timeout_even_with_finite_reply (test_fca3003.CounterTests.test_missing_signal_is_timeout_even_with_finite_reply) ... ok
+test_real_firmware_timeout_with_empty_reply_and_stale_data_error (test_fca3003.CounterTests.test_real_firmware_timeout_with_empty_reply_and_stale_data_error) ... ok
+test_reject_invalid_arguments_before_io (test_fca3003.CounterTests.test_reject_invalid_arguments_before_io) ... ok
+test_transport_failure_is_not_retried (test_fca3003.CounterTests.test_transport_failure_is_not_retried) ... ok
+test_active_profiles_complete_apply (test_profiles.ProfileTests.test_active_profiles_complete_apply) ... ok
+test_gateway_binary_and_explicit_reply (test_profiles.ProfileTests.test_gateway_binary_and_explicit_reply) ... ok
+test_missing_and_duplicate_usb_fail_closed (test_profiles.ProfileTests.test_missing_and_duplicate_usb_fail_closed) ... ok
+test_multicomp_textual_modulation_state (test_profiles.ProfileTests.test_multicomp_textual_modulation_state) ... ok
+test_reconnect_resolves_new_node (test_profiles.ProfileTests.test_reconnect_resolves_new_node) ... ok
+test_smu_fetch_no_trigger (test_profiles.ProfileTests.test_smu_fetch_no_trigger) ... ok
+test_unstable_usb_path_not_supported (test_profiles.ProfileTests.test_unstable_usb_path_not_supported) ... ok
+test_bmap_outside_capacity_rejected (test_storage.BmapTests.test_bmap_outside_capacity_rejected) ... ok
+test_real_bmaptool_on_private_mock_file (test_storage.BmapTests.test_real_bmaptool_on_private_mock_file) ... ok
+test_factory_discovery_requires_paired_reader (test_storage.FactorySDWireTests.test_factory_discovery_requires_paired_reader) ... ok
+test_factory_generic_hub_is_rejected (test_storage.FactorySDWireTests.test_factory_generic_hub_is_rejected) ... ok
+test_factory_identity_and_unknown_state (test_storage.FactorySDWireTests.test_factory_identity_and_unknown_state) ... ok
+test_factory_reader_config_proposal (test_storage.FactorySDWireTests.test_factory_reader_config_proposal) ... ok
+test_by_id_points_to_other_disk (test_storage.IdentityTests.test_by_id_points_to_other_disk) ... ok
+test_capacity_outside_limits (test_storage.IdentityTests.test_capacity_outside_limits) ... ok
+test_full_stable_identity (test_storage.IdentityTests.test_full_stable_identity) ... ok
+test_generic_ftdi_rejected (test_storage.IdentityTests.test_generic_ftdi_rejected) ... ok
+test_generic_upstream_hub_rejected (test_storage.IdentityTests.test_generic_upstream_hub_rejected) ... ok
+test_multiple_controller_serials (test_storage.IdentityTests.test_multiple_controller_serials) ... ok
+test_multiple_disks (test_storage.IdentityTests.test_multiple_disks) ... ok
+test_nonremovable_disk (test_storage.IdentityTests.test_nonremovable_disk) ... ok
+test_reader_outside_sdwire_hub (test_storage.IdentityTests.test_reader_outside_sdwire_hub) ... ok
+test_sdwire_status_protocol (test_storage.IdentityTests.test_sdwire_status_protocol) ... ok
+test_wrong_major_minor (test_storage.IdentityTests.test_wrong_major_minor) ... ok
+test_wrong_reader_serial (test_storage.IdentityTests.test_wrong_reader_serial) ... ok
+test_cross_process_lock (test_storage.ProcessTests.test_cross_process_lock) ... ok
+test_real_sigint_recovery (test_storage.ProcessTests.test_real_sigint_recovery) ... ok
+test_real_sigkill_requires_next_owner_recovery (test_storage.ProcessTests.test_real_sigkill_requires_next_owner_recovery) ... ok
+test_backend_rejects_wrong_reader (test_storage.StorageTests.test_backend_rejects_wrong_reader) ... ok
+test_capacity_rejected_before_open (test_storage.StorageTests.test_capacity_rejected_before_open) ... ok
+test_cli_definition_of_done (test_storage.StorageTests.test_cli_definition_of_done) ... ok
+test_copy_success_and_path_escape (test_storage.StorageTests.test_copy_success_and_path_escape) ... ok
+test_dry_run_never_opens_writer (test_storage.StorageTests.test_dry_run_never_opens_writer) ... ok
+test_flash_failure_and_interrupt_leave_off (test_storage.StorageTests.test_flash_failure_and_interrupt_leave_off) ... ok
+test_killed_transaction_is_not_sent_to_target (test_storage.StorageTests.test_killed_transaction_is_not_sent_to_target) ... ok
+test_lock_collision (test_storage.StorageTests.test_lock_collision) ... ok
+test_log_has_required_fields (test_storage.StorageTests.test_log_has_required_fields) ... ok
+test_mock_symlink_cannot_write_host_disk (test_storage.StorageTests.test_mock_symlink_cannot_write_host_disk) ... ok
+test_mount_copy_unmount_failure (test_storage.StorageTests.test_mount_copy_unmount_failure) ... ok
+test_sdwire_without_off_never_calls_usb_or_writer (test_storage.StorageTests.test_sdwire_without_off_never_calls_usb_or_writer) ... ok
+test_success_all_image_formats_and_readback (test_storage.StorageTests.test_success_all_image_formats_and_readback) ... ok
+test_transitions_break_before_make (test_storage.StorageTests.test_transitions_break_before_make) ... ok
+test_wrong_disk_never_opened (test_storage.StorageTests.test_wrong_disk_never_opened) ... ok
+test_stale_file_transaction_cannot_be_reused (test_storage.TransactionSafetyTests.test_stale_file_transaction_cannot_be_reused) ... ok
+test_sync_failure_keeps_off_and_blocks_target (test_storage.TransactionSafetyTests.test_sync_failure_keeps_off_and_blocks_target) ... ok
+test_unconfirmed_off_never_opens_writer_or_makes_target (test_storage.TransactionSafetyTests.test_unconfirmed_off_never_opens_writer_or_makes_target) ... ok
+test_boot_failure_keeps_uart_and_off (test_storage.WorkflowTests.test_boot_failure_keeps_uart_and_off) ... ok
+test_boot_workflow_artifacts (test_storage.WorkflowTests.test_boot_workflow_artifacts) ... ok
+
+----------------------------------------------------------------------
+Ran 83 tests in 7.970s
+
+OK

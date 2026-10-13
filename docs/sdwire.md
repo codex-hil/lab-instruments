@@ -262,3 +262,11 @@ odczyty metadanych, a wszystkie przełączenia nadal blokuje OFF_UNSUPPORTED.
 [Raport hardware](../reports/storage/hardware-2026-10-13/README.md): topology identity
 PASS; czytnik i karta 15716057088 bajtów zidentyfikowane. Szczegółowe próby odczytu
 nie są utożsamiane ze sprawdzeniem elektrycznego OFF ani testem zapisu.
+
+Po nadaniu tymczasowych ACL wykonano [PASS_READ_ONLY](../reports/storage/hardware-2026-10-13-read-pass/README.md):
+rzeczywisty USB read-pins (raw 254) i dwa zgodne odczyty 1MiB zweryfikowanej karty.
+Nie interpretujemy factory raw CBUS jako potwierdzonej własności. OFF, zapis i boot
+pozostają nieprzetestowane/zablokowane. Publikowany kod na aktualnej bazie main
+przeszedł [83 testy](../reports/storage/software-2026-10-13-main/README.md), w tym
+41 testów storage. Wcześniejsze 121 PASS odnosi się do bazy feature z dodatkowymi
+testami przyrządów, nie do zmniejszenia zakresu testów storage.
