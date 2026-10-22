@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-22T09:55:55.961533+00:00",
+  "simulated": false,
+  "channel": "B",
+  "source_settings_changed": false,
+  "identity": "TEKTRONIX, FCA3003, 442678, V1.31 06 Mar 2015 12:55",
+  "frequency_hz": [
+    1000000.1609,
+    1000000.1623,
+    1000000.1618
+  ],
+  "error_queue": [
+    0,
+    "No error"
+  ]
+}

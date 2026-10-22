@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-22T09:55:00.807319+00:00",
+  "simulated": false,
+  "measurements": {
+    "1": {
+      "frequency_hz": [
+        1000000.1554,
+        1000000.1609,
+        1000000.1617
+      ]
+    },
+    "2": {
+      "error": "FCA3003 measurement timed out; SCPI -230: Data corrupt or stale"
+    }
+  },
+  "source": "AFG1062 1544477, both outputs enabled at 1 MHz; source settings unchanged",
+  "repair": "User reports FPGA reflow restored 10 MHz output and A/B measurements",
+  "identity": "TEKTRONIX, FCA3003, 442678, V1.31 06 Mar 2015 12:55"
+}
