@@ -1,0 +1,5 @@
+{
+  "scope": "EEPROM read/backup only; no writes or selection changes",
+  "result": "BLOCKED",
+  "error": "/lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_ABI_DT_X86_64_PLT' not found (required by /nix/store/znb3q6g1ik34454j3vcjx824h1871asg-glibc-2.42-84/lib/libpthread.so.0)"
+}

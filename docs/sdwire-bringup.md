@@ -1,3 +1,8 @@
+> Update 2026-10-27: a separate [guarded HOST/DUT API](sdwire-guarded.md)
+> supports the actual v1 topology without requiring OFF. It requires verified,
+> continuously held DUT stop and mandatory readback. The historical isolated
+> API below remains read-only; new physical commissioning is pending USB access.
+
 # SDWire bring-up — bez deklaracji testu fizycznego
 
 **REQUIRES HARDWARE.** Dwie sztuki kupione, seriale nieznane. Research wskazuje

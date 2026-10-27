@@ -1,0 +1,6 @@
+{
+  "scope": "EEPROM read and private backup only; no writes or selection changes",
+  "runtime": "Nix Python 3.14.7 + pinned libftdi 1.5",
+  "result": "BLOCKED",
+  "error": "usb_open() failed"
+}
