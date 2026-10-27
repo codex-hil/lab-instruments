@@ -1,3 +1,8 @@
+> SD Wire update 2026-10-27: factory FT200X CBUS0 corrected with backup/readback;
+> guarded HOST/DUT/HOST and full image write/readback physically PASS on ZC706.
+> SPL/U-Boot/Linux, automatic DDR/dual PLL startup, SSH and external SFP PASS.
+> [Workflow, limits and evidence](docs/sdwire-guarded.md). Cold power-cycle NOT_RUN.
+
 # Lab instruments
 
 Sterowniki Python, klient CLI, serwer sterowania z limitami administratora oraz bramka

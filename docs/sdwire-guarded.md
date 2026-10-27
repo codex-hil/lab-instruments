@@ -90,3 +90,81 @@ No EEPROM backup/read completed, no EEPROM or SD content was written, and
 no mux selection changed. Evidence: `reports/storage/controller-DP04I33Y-20261027`.
 Next: administrator grants access to these exact two devices, read/backup MTP,
 verify DUT stop path, then commission only if necessary and qualify switching.
+
+## Physical commissioning and first SD boot (2026-10-27)
+
+The access issue was resolved by an administrator granting ACLs only to the
+identified control USB device and card. Original MTP read/backup PASS:
+CBUS0 was AWAKE21, not GPIO. Private backup:
+`~/.local/share/sdwire-backups/DP04I33Y/original-20261027.bin`, SHA256
+`5923d46ed4cc7d8315f21789c67ace26385dcd2784ec57dfb33dd4c172172dca`.
+Commissioning changed only byte0x1a and0xfe/0xff; full MTP readback PASS,
+CBUS0=8, VID0403/PID6015 and serial DP04I33Y retained. One USB reset of the
+exact controller activated the new function; no identity-default rewrite.
+
+The old running ZC706 rootfs was already in ext4 `shutdown` and external
+commands returned EIO. Its kernel lacks SysRq; attempted init halt was not
+confirmed. These failures are retained. Recovery verified SDIO idle and SD
+clock stopped, halted both A9s and held SDIO0 reference/CPU resets, with live
+readback before the MTP change. This was not a clean filesystem shutdown.
+Later, the freshly booted system completed a normal BusyBox-init halt,
+rootfs read-only remount and kernel `System halted` before the next update.
+
+HOST/DUT/HOST physically passed: card capacity becomes0 on HOST while DUT
+owns it, then returns to31,914,983,424 bytes. The first test exposed a transient
+zero-capacity enumeration bug; missing/zero-capacity media now returns
+NO_CARD so the existing bounded wait retries, while wrong nonzero capacity
+remains an identity error. Two regression tests were added. Full suite:
+94 tests run,93 passed, one existing optional skip.
+
+First image:335,544,832 bytes written and fully read back with matching SHA256
+`921d516751de261b32bdc9d68513b7a96f1260a1b4d67c7a5f2c2cafad3dba1a`.
+Before writing, all original partition extents and the entire overwritten
+range were backed up and read a second time; untouched card tail was not
+copied or overwritten. Backup on NVMe:
+`/srv/codex-hil-nvme/sdwire-backups/DP04I33Y/pre-integrated-20261027.img`,
+335,544,832 bytes, SHA256
+`25dfb1311fbc924c558fc22c762b3e1072db10fb0a8b7260c9ecaca8198f028a`.
+SPL/U-Boot/Linux/login/DHCP then passed from SD, with PL loaded by U-Boot,
+no JTAG PL programming. Image packaging had omitted executable permissions
+on the DDR tool; that service-start failure is retained, and the ZC706 project
+is correcting and retesting the image. Do not equate the first boot PASS with
+automatic PLL startup PASS. Manual permission correction did start both PLLs.
+
+Scripts `commission-sdwire-zc706.py` and `flash-sdwire-zc706.py` are bounded
+board-specific owners, not generic reset tools. They use the actual shared
+board/storage leases, fixed verified JTAG identity, UART identity checks,
+backup/readback and a hardware stop guard. They never write QSPI or persistent
+U-Boot environment. After successful SD boot, the board is intentionally left
+running the new image with SD Wire on DUT. This supersedes golden restoration
+for this explicitly authorized standalone SD installation.
+
+## Corrected image: automatic runtime PASS
+
+The replacement image (expanded SHA256
+`effe3ec9a450952cb57d917b790245bdf81025b7440ad823d9df951aae5305b8`)
+was separately written and fully read back, then booted through SPL/U-Boot/
+Linux with no JTAG PL load. No manual chmod or service-start command was used
+on this boot. Automatic DDR initialization and three whole-1-GiB BIST passes,
+both ADC receiver initializations/calibrations, SSH/DHCP and both PLLs PASS.
+Both PLL `locked` statuses remained true over42.19 seconds of sampled status
+observation; the 4,096-record bound was retained. SFP switch test:20/20 ICMP,
+350/350 exact UDP, CRC/preamble/clock deltas all0; both PLLs remained locked.
+This is finite startup/status qualification, not long-duration timing/jitter
+or continuous ADC streaming qualification. Cold power removal was NOT_RUN;
+SD BootROM startup was triggered by PS system reset through JTAG.
+
+The board intentionally retains this corrected image and continuous PLL
+service, management IP192.168.2.21, PL IP192.168.2.206, SD Wire on DUT.
+Stop the service and perform orderly shutdown/verified hardware stop before
+any further HOST selection. Current UART CP2103 USB1-1.3 was positively verified
+as ZC706 by hostname and correlated boot, resolving the older PM12 assignment
+for this current cabling. The obsolete Spartan CP2103 lock did not indicate
+an open UART (its holder was an unrelated network viewer); no owner was stopped
+or preempted. Actual ZC706/PM12 leases and tty-open checks covered UART access.
+
+Evidence: `reports/storage/zc706-sdwire-boot-mode-fix-20261027` and
+`reports/storage/zc706-sdwire-autostart-20261027`. Raw per-block JTAG evidence
+archives and hashes are recorded there; private SD/MTP backups stay outside
+Git. `qualify-zc706-sd-service.py` provides the bounded leased status/network
+qualification using the existing ZC706 network probe.

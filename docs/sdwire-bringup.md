@@ -1,7 +1,8 @@
 > Update 2026-10-27: a separate [guarded HOST/DUT API](sdwire-guarded.md)
 > supports the actual v1 topology without requiring OFF. It requires verified,
 > continuously held DUT stop and mandatory readback. The historical isolated
-> API below remains read-only; new physical commissioning is pending USB access.
+> API below remains read-only; physical commissioning, guarded SD write/readback and ZC706 SD boot now PASS.
+> See the linked guide for evidence and current retained runtime.
 
 # SDWire bring-up — bez deklaracji testu fizycznego
 

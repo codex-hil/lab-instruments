@@ -1,6 +1,7 @@
 """Transport-independent removable storage transactions. Linux, Python >=3.11.
 
-SDWire v1 has no OFF: its production backend intentionally refuses mutations.
+SDWire v1 has no OFF: the isolated backend intentionally refuses mutations.
+The separately guarded HOST/DUT workflow is in storage_sdwire.
 Mock resources never open block devices and are visibly SIMULATED.
 """
 from __future__ import annotations
