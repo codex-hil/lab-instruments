@@ -1,0 +1,8 @@
+^C
+
+# 
+# IFS= read -r h < /proc/sys/kernel/hostname; echo HIL_HOST="$h"
+HIL_HOST=zc706-linux
+# IFS= read -r p < /proc/1/comm; echo HIL_INIT="$p"
+HIL_INIT=init
+# kill -USR1 1

@@ -1,0 +1,6 @@
+{
+  "sd_written": false,
+  "eeprom_written": false,
+  "result": "FAIL",
+  "error": "Root filesystem read-only remount not confirmed"
+}

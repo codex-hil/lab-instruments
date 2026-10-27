@@ -1,0 +1,50 @@
+{
+  "result": "PASS_SD_BOOT",
+  "sd_written": true,
+  "dut_booted": true,
+  "switch_test": "PASS",
+  "backup": {
+    "path": "/srv/codex-hil-nvme/sdwire-backups/DP04I33Y/pre-integrated-20261027.img",
+    "bytes": 335544832,
+    "sha256": "25dfb1311fbc924c558fc22c762b3e1072db10fb0a8b7260c9ecaca8198f028a",
+    "scope": "All original MBR partition extents and the complete overwritten image range; remaining card tail is not written",
+    "repeat_read": "PASS",
+    "filesystem_consistency": "NOT_ASSERTED"
+  },
+  "flash": {
+    "storage": "zc706-sdwire",
+    "sdwire_serial": "DP04I33Y",
+    "usb_path": "1-6.3.1",
+    "block_device": "/dev/sdb",
+    "card_capacity": 31914983424,
+    "image": "/home/codex-hil/artifacts/zc706-integrated-standalone-sd-20261023/sdcard.img.gz",
+    "image_size": 335544832,
+    "image_hash": "921d516751de261b32bdc9d68513b7a96f1260a1b4d67c7a5f2c2cafad3dba1a",
+    "dry_run": false,
+    "writer": "stream",
+    "simulated": false,
+    "planned_operation": [
+      "stop and verify DUT",
+      "HOST",
+      "verify identity",
+      "reject mounted card",
+      "stream write",
+      "fsync",
+      "full readback",
+      "DUT while stopped"
+    ],
+    "written": 335544832,
+    "verified": true,
+    "state": "target",
+    "isolation": "none"
+  },
+  "boot": {
+    "host": "192.168.2.21",
+    "uart_login": true,
+    "spl_seen": true,
+    "uboot_seen": true,
+    "kernel_seen": true,
+    "pl_loaded_by": "U-Boot SD boot script",
+    "jtag_pl_loaded": false
+  }
+}

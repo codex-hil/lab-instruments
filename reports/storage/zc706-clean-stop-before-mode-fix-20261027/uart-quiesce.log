@@ -1,0 +1,26 @@
+^C
+
+# 
+# IFS= read -r h < /proc/sys/kernel/hostname; echo HIL_HOST="$h"
+HIL_HOST=zc706-linux
+# IFS= read -r p < /proc/1/comm; echo HIL_INIT="$p"
+HIL_INIT=init
+# kill -USR1 1
+# Stopping dropbear sshd: OK
+Stopping crond: stopped /usr/sbin/crond (pid 111)
+OK
+Stopping network: [  314.312538] macb e000b000.ethernet eth0: Link is Down
+OK
+Stopping klogd: stopped /sbin/klogd (pid 69)
+OK
+Stopping syslogd: stopped /sbin/syslogd (pid 65)
+OK
+Seeding 256 bits without crediting
+Saving 256 bits of creditable seed for next boot
+umount: devtmpfs busy - remounted read-only
+[  314.500488] EXT4-fs (mmcblk0p2): re-mounted abeac0d1-e6ef-44b3-bdd0-5982077298a6 ro.
+The system is going down NOW!
+Sent SIGTERM to all processes
+Sent SIGKILL to all processes
+Requesting system halt
+[  316.517402] reboot: System halted

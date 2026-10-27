@@ -1,0 +1,4 @@
+# ip -4 addr show eth0; uptime[J[26D -4 addr show eth0; uptime
+-sh: ip: Input/output error
+-sh: uptime: Input/output error
+# 

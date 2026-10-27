@@ -1,0 +1,6 @@
+{
+  "owner_pid": 3109640,
+  "owner_script": "flash-sdwire-zc706.py",
+  "scope": "Write-only diagnostic query while same thread owner holds DUT, UART-board and SDWire leases",
+  "command": "cat /run/zc706-integrated/service.log; ip -4 addr show eth0"
+}

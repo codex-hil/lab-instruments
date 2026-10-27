@@ -1,0 +1,30 @@
+{
+  "scope": "Read and backup original EEPROM; no writes or selection changes",
+  "reader": {
+    "device": "/dev/sdb",
+    "by_id": "/dev/disk/by-id/usb-Generic_Ultra_HS-SD_MMC_000000264001-0:0",
+    "serial": "DP04I33Y",
+    "reader_serial": "000000264001",
+    "usb_path": "1-6.3.1",
+    "vid": "0424",
+    "pid": "4050",
+    "capacity": 31914983424,
+    "removable": true,
+    "card_present": true,
+    "simulated": false
+  },
+  "result": "PASS_READ_ONLY",
+  "config": {
+    "cbus0": 21,
+    "vid": 1027,
+    "pid": 24597,
+    "size": 256
+  },
+  "backup": "/home/codex-hil/.local/share/sdwire-backups/DP04I33Y/original-20261027.bin",
+  "sha256": "5923d46ed4cc7d8315f21789c67ace26385dcd2784ec57dfb33dd4c172172dca",
+  "planned_changed_offsets": [
+    26,
+    254,
+    255
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "result": "USB_RESET_COMPLETED",
+  "scope": "One USB bus reset of exact controller to activate commissioned MTP; DUT remains JTAG-stopped",
+  "sd_written": false,
+  "node": "/dev/bus/usb/001/084",
+  "dut_stop_after": true
+}

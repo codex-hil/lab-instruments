@@ -251,6 +251,8 @@ class SDWireStorage:
             resolved = (p / 'device').resolve()
             if reader in resolved.parents:
                 matches.append(p)
+        if not matches:
+            fail('NO_CARD', 'Reader has not enumerated a card yet')
         if len(matches) != 1:
             fail('IDENTITY', f'Expected one whole disk below reader, found {len(matches)}')
         p = matches[0]
@@ -261,6 +263,8 @@ class SDWireStorage:
         if self.read(p / 'removable') != '1':
             fail('IDENTITY', 'Disk is not removable')
         capacity = int(self.read(p / 'size') or 0) * 512
+        if capacity == 0:
+            fail('NO_CARD', 'Reader has not reported card capacity yet')
         if not int(r['min_capacity']) <= capacity <= int(r['max_capacity']):
             fail('IDENTITY', 'Card capacity outside configured limits')
         ds = dev.stat()

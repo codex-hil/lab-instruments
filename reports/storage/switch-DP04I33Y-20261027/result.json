@@ -1,0 +1,20 @@
+{
+  "result": "FAIL",
+  "sd_written": false,
+  "dut_resumed": false,
+  "initial_state": "target",
+  "host_identity": {
+    "device": "/dev/sdb",
+    "by_id": "/dev/disk/by-id/usb-Generic_Ultra_HS-SD_MMC_000000264001-0:0",
+    "serial": "DP04I33Y",
+    "reader_serial": "000000264001",
+    "usb_path": "1-6.3.1",
+    "vid": "0424",
+    "pid": "4050",
+    "capacity": 31914983424,
+    "removable": true,
+    "card_present": true,
+    "simulated": false
+  },
+  "error": "SDWire CBUS readback mismatch"
+}

@@ -1,0 +1,9 @@
+  },
+  "clock_rates_hz": {
+    "sfp_status_si_ref_count": 0.0,
+    "sfp_status_gt_ref_count": 0.0,
+    "sfp_status_rx_count": 125044209.83928409,
+    "sfp_status_tx_count": 125002459.08263771
+  }
+}
+cat: can't open '/run/zc706-integrated/pll.status.json': No such file or directory

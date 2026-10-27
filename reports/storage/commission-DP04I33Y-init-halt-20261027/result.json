@@ -1,0 +1,6 @@
+{
+  "sd_written": false,
+  "eeprom_written": false,
+  "result": "FAIL",
+  "error": "Kernel halt not confirmed; no controller write"
+}

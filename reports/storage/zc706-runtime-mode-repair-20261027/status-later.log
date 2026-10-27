@@ -1,0 +1,57 @@
+{
+  "state": "running",
+  "pid": 149,
+  "elapsed_seconds": 15.915662390000023,
+  "cards": {
+    "1": {
+      "last": {
+        "elapsed_seconds": 15.910604084,
+        "dt": 0.005458187999977326,
+        "phase": {
+          "status": 3,
+          "phase": -9,
+          "raw_phase": -9,
+          "events": 24940597,
+          "rejected": 1,
+          "ref_age": 17,
+          "adc_age": 24,
+          "phase_ns": -1.4285714285714286
+        },
+        "tune_ppm": -14.620087779526614,
+        "locked": true
+      },
+      "retained_records": 2900
+    },
+    "2": {
+      "last": {
+        "elapsed_seconds": 15.911027450000006,
+        "dt": 0.005499569999983578,
+        "phase": {
+          "status": 3,
+          "phase": -9,
+          "raw_phase": -9,
+          "events": 24941160,
+          "rejected": 1,
+          "ref_age": 22,
+          "adc_age": 30,
+          "phase_ns": -1.4285714285714286
+        },
+        "tune_ppm": -16.280236730392694,
+        "locked": true
+      },
+      "retained_records": 2900
+    }
+  }
+}
+    "packet_test_busy": 0,
+    "packet_test_tx_frames": 0,
+    "packet_test_rx_frames": 0,
+    "packet_test_errors": 0
+  },
+  "clock_rates_hz": {
+    "sfp_status_si_ref_count": 0.0,
+    "sfp_status_gt_ref_count": 0.0,
+    "sfp_status_rx_count": 125044209.83928409,
+    "sfp_status_tx_count": 125002459.08263771
+  }
+}

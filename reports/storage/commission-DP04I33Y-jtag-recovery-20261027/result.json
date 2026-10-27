@@ -1,0 +1,26 @@
+{
+  "result": "PASS_MTP_READBACK",
+  "sd_written": false,
+  "eeprom_written": true,
+  "rootfs_clean_shutdown": false,
+  "rootfs_prior_state": "ext4 shutdown; normal halt not confirmed",
+  "dut_guard": "both CPUs halted and SDIO0 reference/CPU clocks held in reset",
+  "dut_stop_verified": true,
+  "commission": {
+    "written": true,
+    "cbus0": 8,
+    "changed_offsets": [
+      26,
+      254,
+      255
+    ]
+  },
+  "config_after": {
+    "cbus0": 8,
+    "vid": 1027,
+    "pid": 24597,
+    "size": 256
+  },
+  "dut_stop_after": true,
+  "selection_test": "NOT_RUN"
+}

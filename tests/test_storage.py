@@ -395,6 +395,18 @@ class IdentityTests(unittest.TestCase):
         with self.assertRaises(StorageError):
             self.backend.device()
 
+    def test_zero_capacity_is_transient_no_card(self):
+        (self.disk / 'size').write_text('0')
+        with self.assertRaises(StorageError) as error:
+            self.backend.device()
+        self.assertEqual(error.exception.code, 'NO_CARD')
+
+    def test_missing_disk_is_transient_no_card(self):
+        (self.sysfs / 'class/block/sdz').unlink()
+        with self.assertRaises(StorageError) as error:
+            self.backend.device()
+        self.assertEqual(error.exception.code, 'NO_CARD')
+
     def test_multiple_controller_serials(self):
         extra = self.control.parent / '1-4.3'
         extra.mkdir()

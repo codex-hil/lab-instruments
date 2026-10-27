@@ -1,0 +1,15 @@
+^C
+
+# 
+# IFS= read -r h < /proc/sys/kernel/hostname; echo HIL_HOST="$h"; while IFS= rea
+d -r row; do echo "MOUNT=$row"; done < /proc/mounts
+HIL_HOST=zc706-linux
+MOUNT=/dev/root / ext4 rw,relatime,shutdown 0 0
+MOUNT=devtmpfs /dev devtmpfs rw,relatime,size=514476k,nr_inodes=128619,mode=755 0 0
+MOUNT=proc /proc proc rw,relatime 0 0
+MOUNT=devpts /dev/pts devpts rw,relatime,gid=5,mode=620,ptmxmode=666 0 0
+MOUNT=tmpfs /dev/shm tmpfs rw,relatime 0 0
+MOUNT=tmpfs /tmp tmpfs rw,relatime 0 0
+MOUNT=tmpfs /run tmpfs rw,nosuid,nodev,relatime,mode=755 0 0
+MOUNT=sysfs /sys sysfs rw,relatime 0 0
+# 
