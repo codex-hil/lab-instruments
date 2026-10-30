@@ -9,7 +9,13 @@
         "host": "192.168.2.10",
         "port": 4000,
         "timeout": 5,
-        "read_padding": "\r"
+        "read_padding": "\r",
+        "discover": {
+          "model": "DPO4104",
+          "serial": "C022184",
+          "subnet": "192.168.2.0/24",
+          "probe_timeout": 1
+        }
       },
       "commissioned": false
     }

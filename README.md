@@ -202,3 +202,7 @@ w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.
 DPO4104 C022184: profil `dpo4104`, LAN `192.168.2.10:4000`, identyfikacja i
 odczyty frequency/Vpp CH1–4. [Instrukcja dla kolejnych wątków, blokada dostępu,
 konfiguracja i zakres walidacji](docs/dpo4104.md).
+
+Konfiguracja DPO4104 obsługuje DHCP: weryfikuje wskazówkę IP i w razie potrzeby
+wyszukuje model/serial C022184 w `192.168.2.0/24`. Użyj `examples/dpo4104.json`;
+nie trzeba ręcznie aktualizować adresu po zmianie dzierżawy.

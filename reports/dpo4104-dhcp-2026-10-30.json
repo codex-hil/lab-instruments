@@ -1,0 +1,7 @@
+{
+  "mode": "full subnet discovery without IP hint",
+  "host": "192.168.2.10",
+  "identity": "TEKTRONIX,DPO4104,C022184,CF:91.1CT FV:v2.48",
+  "writes": "*IDN? only",
+  "date": "2026-10-30"
+}
