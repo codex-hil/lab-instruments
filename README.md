@@ -43,6 +43,12 @@ HIL są wersjonowane. Lokalne jednorazowe skrypty eksperymentów i kopie panelu 
 nie są częścią repo; nie ma jeszcze uniwersalnego skryptu automatycznej konfiguracji
 Waveshare. Konfiguracja konkretnej bramki jest opisana w README wdrożenia.
 
+## Kamery laboratoryjne LABCAM
+
+[Wspólny punkt wejścia dla agentów: kamery, CLI i API](tools/labcam/README.md).
+Sterownik i aktualny registry są utrzymywane w osobnym repozytorium
+[labcam](https://github.com/codex-hil/labcam); nie kopiujemy drivera ani haseł.
+
 ## Nowa maszyna — budowanie offline
 
 Na Debianie / Raspberry Pi OS Bookworm lub nowszym administrator instaluje raz:

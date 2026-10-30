@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-10-30",
+  "source_of_truth": "/home/codex-hil/labcam/registry.json",
+  "repository": "https://github.com/codex-hil/labcam",
+  "owning_host": "greg-OptiPlex-3070",
+  "cameras": [
+    {
+      "id": "CAM01",
+      "alias": "printer-3d",
+      "mac": "02:14:ee:60:5e:60",
+      "last_observed_ip": "192.168.2.8",
+      "hostname": "ing-wyze-cam2-5e60"
+    },
+    {
+      "id": "CAM02",
+      "alias": "Labcam2",
+      "mac": "02:20:f7:c0:fa:fc",
+      "last_observed_ip": "192.168.2.23",
+      "hostname": "ing-wyze-cam2-fafc"
+    }
+  ]
+}
