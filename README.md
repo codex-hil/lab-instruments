@@ -196,3 +196,9 @@ Po nadaniu tymczasowych ACL: [realny SDWire PASS_READ_ONLY](reports/storage/hard
 — odczyt rejestru USB i dwa zgodne odczyty 1MiB karty. Bez zapisów/przełączeń.
 Na aktualnej bazie main: [83 testy PASS](reports/storage/software-2026-10-13-main/README.md),
 w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.
+
+### Tektronix DPO4104
+
+DPO4104 C022184: profil `dpo4104`, LAN `192.168.2.10:4000`, identyfikacja i
+odczyty frequency/Vpp CH1–4. [Instrukcja dla kolejnych wątków, blokada dostępu,
+konfiguracja i zakres walidacji](docs/dpo4104.md).

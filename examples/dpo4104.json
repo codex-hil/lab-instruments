@@ -1,0 +1,17 @@
+{
+  "mode": "control",
+  "devices": {
+    "dpo4104": {
+      "model": "dpo4104",
+      "serial": "C022184",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.10",
+        "port": 4000,
+        "timeout": 5,
+        "read_padding": "\r"
+      },
+      "commissioned": false
+    }
+  }
+}
