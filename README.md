@@ -28,6 +28,7 @@ Wszystkie poniższe komponenty są w **tym jednym repozytorium**, nie w osobnych
 
 | Komponent | README / dokumentacja | Zawartość |
 |---|---|---|
+| Zigbee HIL plug | [CLI i rezerwacje](tools/zigbee-plug/README.md) | SLZB-06p7U + TS011F przez Zigbee2MQTT; ON/OFF, pomiary, rezerwacje wątków |
 | MR8875 | [panel i driver](tools/mr8875/README.md) | MR8902 + MR8904, panel WWW, sesje CSV, dokumentacja komend i próby bez sygnałów |
 | FCA3003 | [driver licznika Tektronix](docs/fca3003.md) | pomiary SCPI, kanały A/B/C; [pomiar 1 MHz na A/B PASS](reports/fca3003-2026-10-22/README.md) |
 | Drivery Python | [README driverów](labinstruments/README.md) | modele, metody, jednostki, przykład bez serwera |

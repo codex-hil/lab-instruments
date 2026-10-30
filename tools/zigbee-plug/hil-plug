@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import os
+from pathlib import Path
+import shlex
+import subprocess
+import sys
+args = sys.argv[1:]
+if os.environ.get('HIL_PLUG_TOKEN') and '--token' not in args:
+    args += ['--token', os.environ['HIL_PLUG_TOKEN']]
+cmd = ['python3', '/home/codex-hil/zigbee-lan-investigation/scripts/plugctl.py'] + args
+sys.exit(subprocess.call(['ssh', '-i', str(Path.home()/'.ssh/debug_station2'), '-o', 'IdentitiesOnly=yes', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=10', 'codex-hil@codex-hil-debug-station2.local', shlex.join(cmd)]))
