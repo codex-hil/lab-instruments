@@ -55,8 +55,12 @@ class Transport:
     def __enter__(self):
         kind = self.config['kind']
         if kind == 'tcp':
-            self.handle = socket.create_connection((self.config['host'], int(self.config['port'])), self.timeout,
-                                                   source_address=(self.config['source_ip'], 0) if self.config.get('source_ip') else None)
+            if 'discover' in self.config:
+                from .lan_discovery import connect
+                self.config['host'], self.handle = connect(self.config)
+            else:
+                self.handle = socket.create_connection((self.config['host'], int(self.config['port'])), self.timeout,
+                                                       source_address=(self.config['source_ip'], 0) if self.config.get('source_ip') else None)
             self.handle.settimeout(self.timeout)
         elif kind == 'usb':
             self.handle = os.open(select_usb(self.config), os.O_RDWR)

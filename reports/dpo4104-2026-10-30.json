@@ -1,0 +1,28 @@
+{
+  "identity": "TEKTRONIX,DPO4104,C022184,CF:91.1CT FV:v2.48",
+  "timestamp": "2026-10-30",
+  "host": "192.168.2.10",
+  "port": 4000,
+  "channels": {
+    "1": "1",
+    "2": "0",
+    "3": "0",
+    "4": "0"
+  },
+  "measurements": {
+    "1": {
+      "frequency": "285.7143E+6",
+      "vpp": "40.0000E-3"
+    }
+  },
+  "restored": {
+    "HEADER": "0",
+    "MEASU:IMMED:SOURCE1": "CH1",
+    "MEASU:IMMED:TYPE": "PERIOD"
+  },
+  "original": {
+    "HEADER": "0",
+    "MEASU:IMMED:SOURCE1": "CH1",
+    "MEASU:IMMED:TYPE": "PERIOD"
+  }
+}
