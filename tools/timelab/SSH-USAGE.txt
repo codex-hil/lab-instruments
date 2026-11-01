@@ -1,0 +1,80 @@
+TimeLab na Dell — obsługa przez SSH (2026-10-31)
+
+Środowisko na Dell:
+  konto timelab, bez sudo; /home/timelab/wr-timing
+  WINEPREFIX=/home/timelab/.wine-timelab
+  launcher /home/timelab/wr-timing/scripts/timelab-run
+  TimeLab 1.79A x64, Wine 10.0, Xvfb, natywny GDI+ z KB3065979 i Arial.
+  Prywatny klucz pozostaje na Optiplex; na Dell dodano tylko istniejący klucz publiczny.
+
+Z Optiplex uruchom eksport (bez pulpitu):
+  ssh -i ~/.ssh/dell_build -o IdentitiesOnly=yes timelab@192.168.2.7 '/home/timelab/wr-timing/scripts/timelab-run export /home/timelab/wr-timing/evidence/imported-pps.tim /home/timelab/wr-timing/results/my-run'
+
+Odbierz wyniki:
+  scp -i ~/.ssh/dell_build -r timelab@192.168.2.7:/home/timelab/wr-timing/results/my-run ./
+
+Wyniki: adev.csv, tdev.csv, adev.png, tdev.png, roundtrip.tim, timelab.log.
+Skrypt zapisuje obraz w kolejnym zdarzeniu timera po zmianie widoku, aby
+umożliwić pełne dorysowanie podpisów przez GUI.
+Nie uznawaj samego kodu 0 za walidację danych ani poprawności wykresu.
+Launcher sprawdza obecność CSV; porównanie naukowe wykonuje compare.py.
+Każdy eksport używa tymczasowego, uwierzytelnionego Xvfb z wyłączonym TCP.
+Blokada .run.lock uniemożliwia jednoczesne zarządzane uruchomienia.
+
+Własny plik fazy (jedna liczba w sekundach na wiersz, próbkowanie 1 Hz):
+  scp -i ~/.ssh/dell_build phase-seconds.txt timelab@192.168.2.7:/home/timelab/wr-timing/evidence/
+  ssh -i ~/.ssh/dell_build timelab@192.168.2.7 'python3 /home/timelab/wr-timing/scripts/phase-to-tim.py /home/timelab/wr-timing/evidence/phase-seconds.txt /home/timelab/wr-timing/evidence/input.tim'
+Następnie wywołaj launcher export dla input.tim i nowego katalogu wynikowego.
+Konwerter używa kompletnego nagłówka przykładu TimeLab. Pole instrumentu pochodzi
+z szablonu HP 5370A/B; nie oznacza pomiaru z tego przyrządu. NOT informuje o imporcie.
+Nie podawaj częstotliwości ani nanosekund zamiast fazy w sekundach. Inne tempo
+próbkowania wymaga dopasowania konwertera i rate w compare.py.
+
+Weryfikacja AllanTools (na Dell, jako timelab):
+  /home/timelab/wr-timing/venv/bin/python /home/timelab/wr-timing/scripts/compare.py /home/timelab/wr-timing/evidence/phase-seconds.txt /home/timelab/wr-timing/results/my-run
+Porównywany ADEV to overlapping ADEV, a TDEV to tau*MDEV/sqrt(3), dane fazowe.
+Domyślny próg porównania wynosi 1e-5 względnie. Zachowuj pliki źródłowe.
+
+GUI przez SSH (terminal użytkownika mającego dostęp do lokalnego serwera X):
+  ssh -X -i ~/.ssh/dell_build -o IdentitiesOnly=yes timelab@192.168.2.7
+  /home/timelab/wr-timing/scripts/timelab-run gui /home/timelab/wr-timing/evidence/imported-pps.tim
+Nie uruchamiaj Wine przez sudo/root. Nie zmieniaj xhost na dostęp publiczny.
+Jeżeli SSH -X jest zbyt restrykcyjne dla tej aplikacji, SSH -Y nadaje aplikacji
+pełne zaufanie do lokalnego X; stosuj tylko w zaufanej sesji.
+Serwer utworzył tunel X11 podczas testu. Interaktywne GUI przez lokalny :0 na
+Optiplex nie zostało zweryfikowane: sesja narzędziowa nie miała lokalnego xauth.
+GUI i wykresy zostały przetestowane na Xvfb na Dell. Nie uruchomiono VNC ani
+nowych usług sieciowych. Dostęp SSH po LAN; ZeroTier nie był konfigurowany.
+
+Odtwarzanie danych testowych:
+  python3 /home/timelab/wr-timing/scripts/generate-pps.py
+  python3 /home/timelab/wr-timing/scripts/phase-to-tim.py /home/timelab/wr-timing/evidence/synthetic-pps-seconds.txt /home/timelab/wr-timing/evidence/imported-pps.tim
+Dane są wyłącznie syntetyczne: 32768 próbek, 1 Hz, seed 20261031, szum fazy,
+mały random walk oraz sinusoidalny błąd fazy o okresie 1000 sekund.
+
+Automatyzacja potwierdzona eksperymentalnie:
+  timelab64.exe SCRIPT.js PARAMETRY...
+  EventRunScript, EventTimer, TimeSetTimer, ScriptParamCount/ScriptStrParam,
+  FileLoad, MeasurementSelectView, DisplayRefresh, FileExportASCIIData,
+  FileSave (PNG oraz TIM), FileSaveText, FileExitApplication, ScriptEnd.
+Nie skonfigurowano TSERVE ani interfejsu przyrządowego. Nie zakładamy zdalnego API.
+Zadania automatyczne wywołują bezpośrednio launcher przez SSH.
+
+Pliki instalacji i logi:
+  /home/timelab/wr-timing/downloads, logs, evidence, results
+  /var/log/timelab-setup (pakiety systemowe)
+  /home/timelab/wr-timing/evidence/final-sha256.txt
+Wine built-in GDI+ dawał białe obrazy; natywny Windows 10 rysował bez tekstu.
+Sprawdzony gdiplus.dll to x64 GDI+ 1.1 z KB3065979, SHA256:
+  222095f88914695b96330e4f5f9ff7a55d670b1117ae378b636ac0daea638ccd
+Dodano DLL tylko do katalogu TimeLab, override tylko w launcherze.
+Arial pochodzi z pakietu corefonts wskazanego przez Winetricks, wyłącznie prefix.
+Pakiet KB wypakowano i zdekodowano PA30; nie uruchamiano instalatora Windows
+Update ani .NET. Przenośny Python Windows służył wyłącznie do dekodowania DLL.
+
+Źródła:
+  https://www.miles.io/timelab/beta.htm
+  https://www.miles.io/PhaseStation_53100A_user_manual.pdf
+  https://www.microsoft.com/en-us/download/details.aspx?id=47320
+  https://download.microsoft.com/download/F/B/A/FBA5A235-B3A1-475C-AD9A-F01A4BF5397C/Windows6.1-KB3065979-x64.msu
+  https://github.com/Winetricks/winetricks

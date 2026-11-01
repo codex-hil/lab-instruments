@@ -1,0 +1,2 @@
+# Preserve historical evidence bytes, including CRLF and whitespace, for SHA256 replay.
+evidence/** -text -whitespace

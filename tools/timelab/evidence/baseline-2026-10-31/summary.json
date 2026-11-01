@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "fixtures": 17,
+  "comparisons": 2290,
+  "failed_points": 0,
+  "execution_errors": [],
+  "analytic_controls_pass": true,
+  "max_absolute_error": 1.600164135096207e-21,
+  "max_relative_error_with_atol_floor": 0.1600164135096207,
+  "max_relative_error_where_relative_term_dominates": 1.3234889800847448e-13,
+  "rtol": 5e-08,
+  "atol": 1e-20,
+  "unavailable": [
+    "TimeLab non-overlapping ADEV",
+    "TimeLab non-overlapping HDEV"
+  ],
+  "scope": "offline finite regularly sampled input; no apparatus/driver validation",
+  "gap_input_policy": "raw NaN/nonuniform input rejected; explicit segments/interpolation tested; native raw-NaN probe is characterization only"
+}

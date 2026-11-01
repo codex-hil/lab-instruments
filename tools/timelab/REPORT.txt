@@ -1,0 +1,56 @@
+WR Timing Lab — raport 2026-10-31
+WYNIK: PASS dla analizy offline, z ograniczeniami podanymi poniżej.
+
+Dell: Ubuntu 26.04.1 LTS, x86_64, 61 GiB RAM (ok. 64 GB).
+Ubuntu/Wayland i GDM są zainstalowane. Testy wykonano na Xvfb.
+TimeLab Johna Milesa 1.79A Beta x64, oficjalny beta.exe.
+Konto timelab (UID 1001), bez grup administracyjnych, bez uprawnień sudo.
+WINEPREFIX /home/timelab/.wine-timelab; Wine 10.0.
+Katalog roboczy /home/timelab/wr-timing na Dell.
+
+PASS  GUI: widoczne krzywe, tytuły, osie i tabela ADEV/TDEV na Xvfb;
+      PNG sprawdzono wizualnie. Wymagany natywny GDI+ 1.1 z KB3065979 i Arial.
+PASS  Dane: 32768 syntetycznych próbek fazy PPS, sekundy, okres 1 s;
+      import ASCII przez przygotowany konwerter do kompletnego formatu TIM.
+PASS  ADEV vs AllanTools oadev: 95 punktów tau, max błąd względny 7.50e-15.
+PASS  TDEV vs AllanTools tdev: 93 punkty tau, max 8.18e-15 po zapisie/odczycie.
+PASS  JavaScript z linii poleceń: parametry, zdarzenia/timer, otwieranie pliku,
+      wybór widoku, eksport danych, zapis PNG/TIM i zakończenie aplikacji.
+PASS  Eksport CSV i wykresów PNG bez interakcji (z opóźnieniem timera na render); ponowne otwarcie zapisanego TIM.
+PASS  Powtarzalność: 10/10 uruchomień, wszystkie porównania z AllanTools PASS,
+      identyczne SHA256 ADEV/TDEV CSV między uruchomieniami.
+PASS  Ciągła praca GUI: 120 callbacków co 1 s, naprzemienne ADEV/TDEV;
+      zrzuty przy callbackach 1, 60, 120; zakończenie z kodem 0.
+PASS  SSH batch oraz odbiór plików. Brak nowych usług TCP TimeLab/VNC.
+
+Ograniczenia i nieudane warianty:
+- To krótka walidacja funkcjonalna, nie wielogodzinny test stabilności.
+- Wine built-in GDI+ dawał białe PNG; natywny GDI+ Windows 10 rysował bez tekstu.
+  Sprawdzona konfiguracja używa gdiplus.dll x64 1.1.7601.18852 z oficjalnego
+  pakietu KB3065979. SHA256 DLL zapisano w evidence/final-sha256.txt.
+- Minimalny ręcznie utworzony TIM powodował awarię. Konwerter używa pełnego
+  nagłówka przykładu producenta. Pole instrumentu HP 5370A/B pochodzi z szablonu;
+  nie oznacza przyrządu ani fizycznego pomiaru. Dane są syntetyczne.
+- Natywnego dialogu importu ASCII nie testowano; testowano konwerter 1 Hz -> TIM.
+- Tunel X11 przez SSH został ustanowiony, ale lokalne :0 na Optiplex odrzuciło
+  połączenie sesji narzędziowej z powodu xauth. Interaktywne GUI przez SSH
+  wymaga terminala z dostępem do lokalnego serwera X i pozostaje NOT_VERIFIED
+  end-to-end. GUI na Xvfb na Dell jest PASS.
+- Nie konfigurowano ZeroTier, TSERVE, aparatury ani sterowników przyrządowych.
+- Nie wykonywano instalacji pełnego Windows ani .NET. Pakiety Microsoftu
+  wypakowano tylko do wydzielenia GDI+. Python Windows był narzędziem dekodowania.
+
+Zachowano instalator, sumy kontrolne, logi udanych i nieudanych prób, porównania
+AllanTools, źródłowe dane syntetyczne, skrypty i wykresy. Python naukowy jest
+w osobnym venv. Nie zmieniano konfiguracji Vivado/Quartus/Docker/HIL, VPN ani
+przekierowań licencyjnych. Nie dodano usług sieciowych. Wine nie działał jako root.
+
+Obsługa: SSH-USAGE.txt. Status maszynowy: evidence/status.json.
+Wyniki końcowe: results/settled/{adev,tdev}.{csv,png}, comparison.json.
+Powtarzalność: results/stability.json; logi: logs/stability.log i logs/soak.log.
+Logi pakietów: logs/system-install oraz /var/log/timelab-setup na Dell.
+
+Źródła:
+https://www.miles.io/timelab/beta.htm
+https://www.miles.io/PhaseStation_53100A_user_manual.pdf
+https://www.microsoft.com/en-us/download/details.aspx?id=47320

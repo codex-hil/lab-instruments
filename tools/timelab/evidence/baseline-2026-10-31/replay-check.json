@@ -1,0 +1,7 @@
+{
+  "input_manifest_identical": true,
+  "all_fixture_hashes_identical": true,
+  "results_csv_byte_identical": true,
+  "baseline": "/home/timelab/wr-timing/regression/runs/20261031T190603Z-3551092",
+  "replay": "/home/timelab/wr-timing/regression/runs/20261031T190930Z-3554062"
+}

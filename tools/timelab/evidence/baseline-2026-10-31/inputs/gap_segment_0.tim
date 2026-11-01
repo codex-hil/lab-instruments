@@ -1,0 +1,236 @@
+;
+;Measurement log file c:\ke5fx\ti\HP_5370B_floor.tim
+;Written by TimeLab 0.902 of Oct 29 2010 by John Miles, KE5FX (jmiles@pop.net)
+;
+;Field definitions:
+;
+;  CAP: Caption text
+;  NOT: Additional notes
+;  TIM: Time/date of creation
+;  IMO: Instrument model
+;  IRV: Instrument revision
+;  IAD: Instrument address
+;  ISU: Instrument setup notes
+;  IFN: Filename from which data was imported, if any
+;  AOP: Original acquisition option
+;
+;Data descriptor tags
+;
+;  PER: Sampling period in seconds, which also defines the left end of the tau axis
+;  NOM: Nominal frequency (needed for phase unwrapping)
+;  DAQ: Data acquisition rate in samples/second
+;  DEN: # of output bins per tau decade
+;  MIN: Min # of points required to consider bin's data valid
+;  HIS: # of bin arrays (0=continuous, 1=one-shot, 2...N=N historical data sets)
+;  WIN: Bin window size (initially TIC/HIS, but retains its size if acquisition truncated)
+;  MJD: Modified Julian Date at beginning of run
+;  DTP: DURATION_TYPE originally specified by user
+;  DUR: Duration value of type DTP originally specified by user
+;  STP: STOP_CONDITION originally specified by user
+;  UAS: Acquisition server option
+;  USP: Acquisition server port
+;  UNF: Acquisition numeric field #
+;  UEC: Acquisition EOS character
+;  URE: Acquisition file content option
+;  UAT: Acquisition auto-interval option
+;  UHP: Acquisition data format option
+;  UDT: Acquisition data type option
+;  USC: Acquisition scale factor
+;  UNW: 0=TIC data needs to be phase-unwrapped; 1=data is already unwrapped
+;
+;  FMD: FFT scale max dBm
+;  FND: FFT scale min dBm
+;  FMO: FFT scale max offset Hz
+;  FNO: FFT scale min offset Hz
+;  PMD: PN scale max dBc/Hz
+;  PND: PN scale min dBc/Hz 
+;  PMO: PN scale max offset Hz
+;  PNO: PN scale min offset Hz 
+;  PNB: Indirect PN calibration beatnote dBm
+;  PNL: Indirect PN LNA gain dB
+;  PNT: Indirect PN phase-detector gain dB
+;  PNH: PN additional system gain dB
+;
+;  FCS nch nst: FFT channel count (0-FFT_MAX_CHANS), stored negative if real-only, 
+;               followed by FFT stage count (0-FFT_MAX_STAGES)                     
+;
+;  FFT n_points p0 p1 XPN_n:
+;               For each point:
+;                 offset_Hz XPN_I XPN_Q, one line per point
+;                 dBm dBc/Hz, one line per channel
+;
+;Data block header tags (must appear after fields above)
+;
+;  TIC: # of time-interval data points that follow (which determines tau range as well)
+;
+;Optional cached calculations (must appear after fields above): # of entries in each
+;block must conform to DEN and data block size; # of instances of each block must
+;be data block size / HIS
+;
+;  OAD: Overlapped ADEV cache entries follow
+;  OHD: Overlapped HDEV cache entries follow
+;  OMD: Overlapped MDEV cache entries follow
+;  OTD: Overlapped TDEV cache entries follow
+;
+
+CAP SYNTHETIC regression gap_segment_0
+NOT Offline synthetic fixture; instrument field is template metadata only
+TIM 12/18/2009 12:29:05 AM
+IMO HP 5370A/B
+IRV N/A
+IAD 3
+ISU 
+IFN gap_segment_0.csv
+AOP 
+
+PER 1
+NOM 1
+DAQ 0
+DEN 29
+MIN 4
+HIS 1
+WIN 128
+MJD 55500.02800583333000000000
+DTP 0
+DUR 3.000000E+004
+STP 0
+USP 0
+UNF 1
+UEC 10
+UAS 0
+URE 1
+UAT 0
+UHP 0
+UDT 0
+USC 1.0
+UNW 1
+
+TIC 128
+-4.25378058912264968e-12
+-4.94251825454214813e-11
+-1.21248184637487580e-10
+9.51740007792978942e-11
+6.68426211151435214e-11
+2.19163529182722275e-11
+-2.64711619219901268e-11
+4.86200556823072068e-11
+1.84429455606319982e-10
+-4.19153046012731662e-11
+2.27730031138123824e-11
+-3.72704660043080876e-11
+4.38202857566938384e-12
+-2.79039193966146908e-12
+9.77396150644370796e-11
+1.63383817986340452e-11
+-2.28545416681027562e-10
+5.78103707189451932e-12
+-8.26839439759990260e-11
+-1.87559381350650283e-10
+6.93459812951695900e-11
+5.65763915610628229e-11
+3.95747298161721327e-11
+-4.97658530836982349e-11
+-1.11200035023887763e-11
+2.16454465276092750e-11
+9.35289709223576996e-12
+-1.02763483816125954e-10
+-5.99618528691117179e-11
+9.32879203811950795e-11
+7.97142861576350542e-11
+-9.02575904411686744e-11
+-8.76536237607800136e-11
+-6.45604358938353629e-11
+7.78059291991139504e-11
+1.22226174348312963e-10
+3.56367302212853398e-11
+-1.11660014985671818e-10
+-9.37180641203970503e-11
+2.56805963133086516e-11
+7.92418324565350165e-11
+9.91137008667274044e-11
+3.10553810863204876e-11
+-1.12156906293359153e-10
+-1.35887445494424412e-10
+-1.57287276786772954e-10
+-2.24520066485028159e-12
+-8.73816829806168918e-12
+4.28043512588001158e-11
+3.74882699568170112e-11
+1.09846122037142631e-12
+-5.68203143605645629e-11
+1.08351864407702353e-10
+-3.10831323342860996e-11
+-6.23240822001240209e-11
+6.40672960738419718e-12
+2.66894538853218531e-11
+1.19326555699359932e-10
+1.01526177539784574e-10
+1.76035970302087194e-10
+-9.57764546785380395e-11
+7.55686731287803959e-11
+-1.50614605627273315e-10
+8.53532048364868041e-11
+-2.73766354288485569e-11
+4.31418685083551464e-11
+-3.19732981698475635e-12
+2.10080908633434822e-10
+-5.74519587923982740e-11
+1.15362649470835793e-10
+-5.14201305242364723e-11
+7.64145309807432314e-11
+9.62599143774427213e-11
+-4.58721564070692243e-11
+6.07629737255381800e-11
+-7.76769387435890874e-11
+-1.06079503903913946e-10
+1.30756919571239255e-10
+-1.02587413347081797e-10
+-3.07791347370968765e-11
+-1.35654682442083957e-10
+5.09648225719946658e-11
+-1.91587949899259224e-10
+-7.15167281951578565e-12
+-1.20777315143099199e-10
+-7.40122324426251381e-12
+1.01655408375151688e-10
+1.52860066248546373e-10
+-6.50073223613025352e-11
+-1.25284777331061841e-10
+1.31002783221239353e-10
+-8.26877541161327685e-11
+1.89940565449459664e-11
+3.26296375295358882e-11
+-1.76406472701145345e-10
+-1.46832967285502718e-10
+-5.84559802114350324e-11
+9.65401334274671943e-11
+-5.75016736083764172e-11
+-2.62691790027743747e-11
+1.10773316905977680e-10
+2.51042765845413799e-10
+9.14478456059243728e-11
+-4.28531927877040384e-11
+6.74356858143678423e-11
+1.14222654786524079e-10
+1.50772985040148165e-10
+-5.17999258673549139e-11
+2.60994983610547318e-10
+-5.48503703054298531e-11
+-1.22065343246502490e-10
+-9.52189328689715728e-11
+-9.95651985385073148e-11
+5.19188996705898274e-11
+1.13260635533646179e-10
+-4.06168618664322407e-11
+9.03397207033405094e-11
+1.12549433173335417e-10
+9.58907466178631228e-11
+1.78091228784411905e-11
+8.76594990838899428e-11
+-4.75641662687102127e-11
+1.52871805735970650e-10
+4.92511952660126864e-12
+-1.93454225830257098e-12
+-3.90212192124987612e-11
+-6.68199078579224436e-11
+-9.20536265455726929e-11

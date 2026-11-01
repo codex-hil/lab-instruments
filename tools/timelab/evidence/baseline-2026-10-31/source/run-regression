@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+[ "$(id -un)" = timelab ] || { echo 'Run as timelab'; exit 2; }
+base=/home/timelab/wr-timing
+exec 9>"$base/.run.lock"
+flock -n 9 || { echo 'TimeLab lease busy'; exit 2; }
+export WINEPREFIX="$base/.wine-timelab" WINEDEBUG=-all WINEDLLOVERRIDES=gdiplus=n,b MPLBACKEND=Agg
+exec "$base/venv/bin/python" "$base/regression/regression.py" "$@"

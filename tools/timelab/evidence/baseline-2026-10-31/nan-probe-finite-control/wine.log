@@ -1,0 +1,316 @@
+   
+   Hardware information:
+     Processor architecture: 9
+     Number of processors: 16
+     Page size: 4096
+     Processor type: 8664
+     Minimum application address: 0000000000010000
+     Maximum application address: 00007FFFFFFEFFFF
+     Active processor mask: FFFF
+   
+   Desktop:  C:\users\timelab\Desktop\
+   VLDATA:   C:\users\timelab\AppData\Local\Miles Design\
+   VCDATA:   C:\ProgramData\Miles Design\
+   VCDOCS:   C:\users\Public\Documents\Miles Design\
+   LOCDATA:  C:\users\timelab\AppData\Local\Miles Design\TimeLab\
+   COMDATA:  C:\ProgramData\Miles Design\TimeLab\
+   COMDOCS:  C:\users\Public\Documents\TimeLab\
+   AppExe:   Z:\home\timelab\wr-timing\app\app\
+   InitCWD:  Z:\home\timelab\wr-timing\app\app\
+   Docs/CWD: Z:\home\timelab\wr-timing\app\app\
+[01m[33m
+[01m[0m   V8 version: 3.15.10.1
+   C:\users\Public\Documents\TimeLab\Masks\masks.txt not found, copying from C:\users\Public\Documents\TimeLab\Masks\default_masks.txt
+   Reading C:\users\Public\Documents\TimeLab\Masks\standard_masks.txt
+   Reading C:\users\Public\Documents\TimeLab\Masks\masks.txt
+Executing Z:\home\timelab\wr-timing\regression\export_all.js
+   Script does not have setup handler
+   Parameter 0: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\inputs]
+   Parameter 1: [white_phase.tim]
+      FileLoad [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\inputs\white_phase.tim]
+Loading Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\inputs\white_phase.tim . . .
+      TL: PHASE_RECORD::set_freq(10000000.000000, 10000000.000000)
+          PHASE_RECORD constructed: t0=1.0000s, 1024 points
+      TL: PHASE_RECORD::set_freq(1.000000, 1.000000)
+Loaded Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\inputs\white_phase.tim
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileExportASCIIData [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\phase.csv]
+Exporting 1024 phase points, please wait . . .
+Exported phase-difference data to Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\phase.csv, points 0 - 1023
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileExportASCIIData [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\oadev.csv]
+   1 tau (1.000s): 1022 points, sigma = 1.68891E-10
+   2 tau (2.000s): 1020 points, sigma = 8.5369E-11
+   3 tau (3.000s): 1018 points, sigma = 5.8726E-11
+   4 tau (4.000s): 1016 points, sigma = 4.29386E-11
+   5 tau (5.000s): 1014 points, sigma = 3.53227E-11
+   6 tau (6.000s): 1012 points, sigma = 2.94487E-11
+   7 tau (7.000s): 1010 points, sigma = 2.55936E-11
+   8 tau (8.000s): 1008 points, sigma = 2.17767E-11
+   9 tau (9.000s): 1006 points, sigma = 1.94808E-11
+   10 tau (10.000s): 1004 points, sigma = 1.72762E-11
+   11 tau (11.000s): 1002 points, sigma = 1.56559E-11
+   12 tau (12.000s): 1000 points, sigma = 1.50848E-11
+   13 tau (13.000s): 998 points, sigma = 1.35071E-11
+   14 tau (14.000s): 996 points, sigma = 1.1981E-11
+   15 tau (15.000s): 994 points, sigma = 1.15535E-11
+   16 tau (16.000s): 992 points, sigma = 1.10838E-11
+   17 tau (17.000s): 990 points, sigma = 1.01742E-11
+   18 tau (18.000s): 988 points, sigma = 9.95091E-12
+   19 tau (19.000s): 986 points, sigma = 9.50054E-12
+   20 tau (20.000s): 984 points, sigma = 8.96961E-12
+   21 tau (21.000s): 982 points, sigma = 8.27427E-12
+   22 tau (22.000s): 980 points, sigma = 8.1681E-12
+   24 tau (24.000s): 976 points, sigma = 7.67451E-12
+   26 tau (26.000s): 972 points, sigma = 6.91516E-12
+   28 tau (28.000s): 968 points, sigma = 6.36454E-12
+   30 tau (30.000s): 964 points, sigma = 5.92273E-12
+   32 tau (32.000s): 960 points, sigma = 5.58701E-12
+   34 tau (34.000s): 956 points, sigma = 5.09425E-12
+   36 tau (36.000s): 952 points, sigma = 4.90121E-12
+   38 tau (38.000s): 948 points, sigma = 4.53348E-12
+   40 tau (40.000s): 944 points, sigma = 4.38215E-12
+   45 tau (45.000s): 934 points, sigma = 3.8559E-12
+   50 tau (50.000s): 924 points, sigma = 3.36441E-12
+   55 tau (55.000s): 914 points, sigma = 3.29814E-12
+   60 tau (60.000s): 904 points, sigma = 2.89604E-12
+   70 tau (70.000s): 884 points, sigma = 2.59728E-12
+   80 tau (80.000s): 864 points, sigma = 2.21566E-12
+   90 tau (90.000s): 844 points, sigma = 2.02526E-12
+   100 tau (100.000s): 824 points, sigma = 1.85261E-12
+   110 tau (110.000s): 804 points, sigma = 1.61314E-12
+   120 tau (120.000s): 784 points, sigma = 1.50164E-12
+   130 tau (130.000s): 764 points, sigma = 1.37753E-12
+   140 tau (140.000s): 744 points, sigma = 1.26124E-12
+   150 tau (150.000s): 724 points, sigma = 1.16492E-12
+   160 tau (160.000s): 704 points, sigma = 1.12506E-12
+   170 tau (170.000s): 684 points, sigma = 1.04827E-12
+   180 tau (180.000s): 664 points, sigma = 1.00152E-12
+   190 tau (190.000s): 644 points, sigma = 9.15346E-13
+   200 tau (200.000s): 624 points, sigma = 8.65399E-13
+   210 tau (210.000s): 604 points, sigma = 8.53201E-13
+   220 tau (220.000s): 584 points, sigma = 8.08779E-13
+   240 tau (240.000s): 544 points, sigma = 7.64586E-13
+   260 tau (260.000s): 504 points, sigma = 7.24704E-13
+   280 tau (280.000s): 464 points, sigma = 6.22127E-13
+   300 tau (300.000s): 424 points, sigma = 5.83266E-13
+   320 tau (320.000s): 384 points, sigma = 5.3667E-13
+   340 tau (340.000s): 344 points, sigma = 5.21156E-13
+   360 tau (360.000s): 304 points, sigma = 4.73244E-13
+   380 tau (380.000s): 264 points, sigma = 4.44913E-13
+   400 tau (400.000s): 224 points, sigma = 4.57202E-13
+   450 tau (450.000s): 124 points, sigma = 4.27015E-13
+   500 tau (500.000s): 24 points, sigma = 4.19991E-13
+Exported 62 ADEV bin(s) to Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\oadev.csv
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileExportASCIIData [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\mdev.csv]
+   1 tau (1.000s): 1022 points, sigma = 1.68891E-10
+   2 tau (2.000s): 1019 points, sigma = 6.1243E-11
+   3 tau (3.000s): 1016 points, sigma = 3.42893E-11
+   4 tau (4.000s): 1013 points, sigma = 2.28274E-11
+   5 tau (5.000s): 1010 points, sigma = 1.6799E-11
+   6 tau (6.000s): 1007 points, sigma = 1.29577E-11
+   7 tau (7.000s): 1004 points, sigma = 1.0412E-11
+   8 tau (8.000s): 1001 points, sigma = 8.42195E-12
+   9 tau (9.000s): 998 points, sigma = 6.95315E-12
+   10 tau (10.000s): 995 points, sigma = 5.87905E-12
+   11 tau (11.000s): 992 points, sigma = 5.09272E-12
+   12 tau (12.000s): 989 points, sigma = 4.51711E-12
+   13 tau (13.000s): 986 points, sigma = 4.05342E-12
+   14 tau (14.000s): 983 points, sigma = 3.68221E-12
+   15 tau (15.000s): 980 points, sigma = 3.38686E-12
+   16 tau (16.000s): 977 points, sigma = 3.12449E-12
+   17 tau (17.000s): 974 points, sigma = 2.88917E-12
+   18 tau (18.000s): 971 points, sigma = 2.69585E-12
+   19 tau (19.000s): 968 points, sigma = 2.51607E-12
+   20 tau (20.000s): 965 points, sigma = 2.33764E-12
+   21 tau (21.000s): 962 points, sigma = 2.17512E-12
+   22 tau (22.000s): 959 points, sigma = 2.03762E-12
+   24 tau (24.000s): 953 points, sigma = 1.79504E-12
+   26 tau (26.000s): 947 points, sigma = 1.56283E-12
+   28 tau (28.000s): 941 points, sigma = 1.36211E-12
+   30 tau (30.000s): 935 points, sigma = 1.21E-12
+   32 tau (32.000s): 929 points, sigma = 1.0816E-12
+   34 tau (34.000s): 923 points, sigma = 9.7062E-13
+   36 tau (36.000s): 917 points, sigma = 8.77755E-13
+   38 tau (38.000s): 911 points, sigma = 7.99047E-13
+   40 tau (40.000s): 905 points, sigma = 7.32526E-13
+   45 tau (45.000s): 890 points, sigma = 5.9933E-13
+   50 tau (50.000s): 875 points, sigma = 5.14837E-13
+   55 tau (55.000s): 860 points, sigma = 4.77275E-13
+   60 tau (60.000s): 845 points, sigma = 4.37855E-13
+   70 tau (70.000s): 815 points, sigma = 3.88987E-13
+   80 tau (80.000s): 785 points, sigma = 3.36954E-13
+   90 tau (90.000s): 755 points, sigma = 2.94238E-13
+   100 tau (100.000s): 725 points, sigma = 2.46826E-13
+   110 tau (110.000s): 695 points, sigma = 2.0408E-13
+   120 tau (120.000s): 665 points, sigma = 1.65699E-13
+   130 tau (130.000s): 635 points, sigma = 1.34769E-13
+   140 tau (140.000s): 605 points, sigma = 1.13429E-13
+   150 tau (150.000s): 575 points, sigma = 1.02285E-13
+   160 tau (160.000s): 545 points, sigma = 9.9043E-14
+   170 tau (170.000s): 515 points, sigma = 9.67209E-14
+   180 tau (180.000s): 485 points, sigma = 8.99941E-14
+   190 tau (190.000s): 455 points, sigma = 8.25702E-14
+   200 tau (200.000s): 425 points, sigma = 7.65996E-14
+   210 tau (210.000s): 395 points, sigma = 6.86812E-14
+   220 tau (220.000s): 365 points, sigma = 6.14415E-14
+   240 tau (240.000s): 305 points, sigma = 5.33747E-14
+   260 tau (260.000s): 245 points, sigma = 4.94994E-14
+   280 tau (280.000s): 185 points, sigma = 4.04236E-14
+   300 tau (300.000s): 125 points, sigma = 2.34488E-14
+   320 tau (320.000s): 65 points, sigma = 8.90479E-15
+   340 tau (340.000s): 5 points, sigma = 3.09907E-15
+Exported 57 MDEV bin(s) to Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\mdev.csv
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileExportASCIIData [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\ohdev.csv]
+   1 tau (1.000s): 1021 points, sigma = 1.7842E-10
+   2 tau (2.000s): 1018 points, sigma = 9.0188E-11
+   3 tau (3.000s): 1015 points, sigma = 6.17948E-11
+   4 tau (4.000s): 1012 points, sigma = 4.53642E-11
+   5 tau (5.000s): 1009 points, sigma = 3.73371E-11
+   6 tau (6.000s): 1006 points, sigma = 3.0875E-11
+   7 tau (7.000s): 1003 points, sigma = 2.72277E-11
+   8 tau (8.000s): 1000 points, sigma = 2.29847E-11
+   9 tau (9.000s): 997 points, sigma = 2.04544E-11
+   10 tau (10.000s): 994 points, sigma = 1.81414E-11
+   11 tau (11.000s): 991 points, sigma = 1.64017E-11
+   12 tau (12.000s): 988 points, sigma = 1.58942E-11
+   13 tau (13.000s): 985 points, sigma = 1.41912E-11
+   14 tau (14.000s): 982 points, sigma = 1.25142E-11
+   15 tau (15.000s): 979 points, sigma = 1.21384E-11
+   16 tau (16.000s): 976 points, sigma = 1.16552E-11
+   17 tau (17.000s): 973 points, sigma = 1.07161E-11
+   18 tau (18.000s): 970 points, sigma = 1.0566E-11
+   19 tau (19.000s): 967 points, sigma = 1.01013E-11
+   20 tau (20.000s): 964 points, sigma = 9.51864E-12
+   21 tau (21.000s): 961 points, sigma = 8.72999E-12
+   22 tau (22.000s): 958 points, sigma = 8.68025E-12
+   24 tau (24.000s): 952 points, sigma = 8.18506E-12
+   26 tau (26.000s): 946 points, sigma = 7.32769E-12
+   28 tau (28.000s): 940 points, sigma = 6.70011E-12
+   30 tau (30.000s): 934 points, sigma = 6.2869E-12
+   32 tau (32.000s): 928 points, sigma = 5.9349E-12
+   34 tau (34.000s): 922 points, sigma = 5.372E-12
+   36 tau (36.000s): 916 points, sigma = 5.16401E-12
+   38 tau (38.000s): 910 points, sigma = 4.81854E-12
+   40 tau (40.000s): 904 points, sigma = 4.62067E-12
+   45 tau (45.000s): 889 points, sigma = 4.04742E-12
+   50 tau (50.000s): 874 points, sigma = 3.49508E-12
+   55 tau (55.000s): 859 points, sigma = 3.48839E-12
+   60 tau (60.000s): 844 points, sigma = 3.04162E-12
+   70 tau (70.000s): 814 points, sigma = 2.74162E-12
+   80 tau (80.000s): 784 points, sigma = 2.35989E-12
+   90 tau (90.000s): 754 points, sigma = 2.14266E-12
+   100 tau (100.000s): 724 points, sigma = 1.96103E-12
+   110 tau (110.000s): 694 points, sigma = 1.70528E-12
+   120 tau (120.000s): 664 points, sigma = 1.58367E-12
+   130 tau (130.000s): 634 points, sigma = 1.45602E-12
+   140 tau (140.000s): 604 points, sigma = 1.33568E-12
+   150 tau (150.000s): 574 points, sigma = 1.21067E-12
+   160 tau (160.000s): 544 points, sigma = 1.18345E-12
+   170 tau (170.000s): 514 points, sigma = 1.09001E-12
+   180 tau (180.000s): 484 points, sigma = 1.06379E-12
+   190 tau (190.000s): 454 points, sigma = 9.72787E-13
+   200 tau (200.000s): 424 points, sigma = 9.06039E-13
+   210 tau (210.000s): 394 points, sigma = 9.11534E-13
+   220 tau (220.000s): 364 points, sigma = 8.69135E-13
+   240 tau (240.000s): 304 points, sigma = 8.17683E-13
+   260 tau (260.000s): 244 points, sigma = 7.70891E-13
+   280 tau (280.000s): 184 points, sigma = 6.2898E-13
+   300 tau (300.000s): 124 points, sigma = 6.13279E-13
+   320 tau (320.000s): 64 points, sigma = 5.56936E-13
+   340 tau (340.000s): 4 points, sigma = 6.97779E-13
+Exported 57 HDEV bin(s) to Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\ohdev.csv
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileExportASCIIData [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\tdev.csv]
+   1 tau (1.000s): 1022 points, sigma = 9.75093E-11
+   2 tau (2.000s): 1019 points, sigma = 7.07173E-11
+   3 tau (3.000s): 1016 points, sigma = 5.93909E-11
+   4 tau (4.000s): 1013 points, sigma = 5.27177E-11
+   5 tau (5.000s): 1010 points, sigma = 4.84944E-11
+   6 tau (6.000s): 1007 points, sigma = 4.4887E-11
+   7 tau (7.000s): 1004 points, sigma = 4.20796E-11
+   8 tau (8.000s): 1001 points, sigma = 3.88993E-11
+   9 tau (9.000s): 998 points, sigma = 3.61296E-11
+   10 tau (10.000s): 995 points, sigma = 3.39427E-11
+   11 tau (11.000s): 992 points, sigma = 3.23431E-11
+   12 tau (12.000s): 989 points, sigma = 3.12955E-11
+   13 tau (13.000s): 986 points, sigma = 3.04232E-11
+   14 tau (14.000s): 983 points, sigma = 2.9763E-11
+   15 tau (15.000s): 980 points, sigma = 2.93311E-11
+   16 tau (16.000s): 977 points, sigma = 2.88628E-11
+   17 tau (17.000s): 974 points, sigma = 2.8357E-11
+   18 tau (18.000s): 971 points, sigma = 2.80161E-11
+   19 tau (19.000s): 968 points, sigma = 2.76004E-11
+   20 tau (20.000s): 965 points, sigma = 2.69927E-11
+   21 tau (21.000s): 962 points, sigma = 2.63719E-11
+   22 tau (22.000s): 959 points, sigma = 2.58813E-11
+   24 tau (24.000s): 953 points, sigma = 2.48728E-11
+   26 tau (26.000s): 947 points, sigma = 2.34598E-11
+   28 tau (28.000s): 941 points, sigma = 2.20196E-11
+   30 tau (30.000s): 935 points, sigma = 2.09578E-11
+   32 tau (32.000s): 929 points, sigma = 1.99828E-11
+   34 tau (34.000s): 923 points, sigma = 1.90532E-11
+   36 tau (36.000s): 917 points, sigma = 1.82438E-11
+   38 tau (38.000s): 911 points, sigma = 1.75305E-11
+   40 tau (40.000s): 905 points, sigma = 1.6917E-11
+   45 tau (45.000s): 890 points, sigma = 1.55711E-11
+   50 tau (50.000s): 875 points, sigma = 1.48621E-11
+   55 tau (55.000s): 860 points, sigma = 1.51555E-11
+   60 tau (60.000s): 845 points, sigma = 1.51677E-11
+   70 tau (70.000s): 815 points, sigma = 1.57207E-11
+   80 tau (80.000s): 785 points, sigma = 1.55632E-11
+   90 tau (90.000s): 755 points, sigma = 1.52891E-11
+   100 tau (100.000s): 725 points, sigma = 1.42505E-11
+   110 tau (110.000s): 695 points, sigma = 1.29609E-11
+   120 tau (120.000s): 665 points, sigma = 1.148E-11
+   130 tau (130.000s): 635 points, sigma = 1.01152E-11
+   140 tau (140.000s): 605 points, sigma = 9.16832E-12
+   150 tau (150.000s): 575 points, sigma = 8.85816E-12
+   160 tau (160.000s): 545 points, sigma = 9.1492E-12
+   170 tau (170.000s): 515 points, sigma = 9.49311E-12
+   180 tau (180.000s): 485 points, sigma = 9.35246E-12
+   190 tau (190.000s): 455 points, sigma = 9.05766E-12
+   200 tau (200.000s): 425 points, sigma = 8.84496E-12
+   210 tau (210.000s): 395 points, sigma = 8.32715E-12
+   220 tau (220.000s): 365 points, sigma = 7.80412E-12
+   240 tau (240.000s): 305 points, sigma = 7.39582E-12
+   260 tau (260.000s): 245 points, sigma = 7.4304E-12
+   280 tau (280.000s): 185 points, sigma = 6.5348E-12
+   300 tau (300.000s): 125 points, sigma = 4.06146E-12
+   320 tau (320.000s): 65 points, sigma = 1.64518E-12
+   340 tau (340.000s): 5 points, sigma = 6.08345E-13
+Exported 57 TDEV bin(s) to Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\tdev.csv
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileExportASCIIData [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\mtie.csv]
+   1 tau (1.000s): 1024 points, sigma = 4.08703E-10
+   2 tau (2.000s): 1024 points, sigma = 4.38606E-10
+   4 tau (4.000s): 1024 points, sigma = 4.51614E-10
+   10 tau (10.000s): 1024 points, sigma = 4.5428E-10
+   20 tau (20.000s): 1024 points, sigma = 5.31081E-10
+   40 tau (40.000s): 1024 points, sigma = 6.15925E-10
+   100 tau (100.000s): 1024 points, sigma = 6.15925E-10
+   200 tau (200.000s): 1024 points, sigma = 6.15925E-10
+   400 tau (400.000s): 1024 points, sigma = 6.15925E-10
+   1000 tau (1000.000s): 1024 points, sigma = 6.15925E-10
+Exported 10 MTIE bin(s) to Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\mtie.csv
+   Parameter 3: [no-png]
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileSave [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\roundtrip.tim]
+Saving 1024-point time record, please wait . . .
+Saved Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\roundtrip.tim
+   Parameter 2: [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control]
+      FileSaveText name = [Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\completed.json]
+Saved Z:\home\timelab\wr-timing\regression\runs\20261031T190930Z-3554062\nan-probe-finite-control\completed.json
+export_all.js finished
+   Releasing script instance 0 (0x0000000140622A80) (0 left)
+   Freeing phase record
+X connection to :99 broken (explicit kill or server shutdown).
+X connection to :99 broken (explicit kill or server shutdown).

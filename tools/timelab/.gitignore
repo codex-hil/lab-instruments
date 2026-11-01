@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+regression/runs/
+regression/latest

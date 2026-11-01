@@ -1,0 +1,50 @@
+{
+  "linear": {
+    "pass": true,
+    "values": {
+      "adev": 0.0,
+      "oadev": 0.0,
+      "hdev": 0.0,
+      "ohdev": 0.0,
+      "mdev": 0.0,
+      "tdev": 0.0,
+      "mtie": 4.0
+    }
+  },
+  "quadratic": {
+    "pass": true,
+    "values": {
+      "adev": 5.656854249492381,
+      "oadev": 5.656854249492381,
+      "hdev": 0.0,
+      "ohdev": 0.0,
+      "mdev": 5.656854249492381,
+      "tdev": 13.063945294843617,
+      "mtie": 488.0
+    }
+  },
+  "handworked_periodic_vector": {
+    "pass": true,
+    "values": {
+      "adev": 0.0,
+      "oadev": 1.0,
+      "hdev": 0.0,
+      "ohdev": 1.1547005383792515,
+      "mdev": 0.7071067811865476,
+      "tdev": 0.816496580927726,
+      "mtie": 2.0
+    },
+    "analytic_expected": {
+      "adev": 0.0,
+      "oadev": 1.0,
+      "hdev": 0.0,
+      "ohdev": 1.1547005383792515,
+      "mdev": 0.7071067811865476,
+      "tdev": 0.816496580927726,
+      "mtie": 2.0
+    }
+  },
+  "tolerance_detects_injected_error": {
+    "pass": true
+  }
+}

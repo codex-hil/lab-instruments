@@ -1,0 +1,321 @@
+{
+  "generator": "CPython random.Random.gauss + NumPy deterministic arithmetic; exact CSV retained",
+  "fixtures": [
+    {
+      "name": "zero",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "constant",
+        "offset_s": 0
+      },
+      "csv_sha256": "f157801421793e00748578efdde66abeaf74a6d45eb75cac12cde2b4d28d06f0",
+      "tim_sha256": "fd7f296392fb16e1ae5ce6a26e22f0d444ab9a4a54615ebb132cfd61c08bb895"
+    },
+    {
+      "name": "linear_phase",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "linear phase",
+        "offset_s": 2e-09,
+        "fractional_frequency": 4e-10
+      },
+      "csv_sha256": "5cf69e849f8a74b26406394ae4cd3f421f4b69d107eb52c4f7e42eb11206165a",
+      "tim_sha256": "ced8ea11ce12c8d16e597be48e21c0889934eb329139dc001d7b6995cf66d9b2"
+    },
+    {
+      "name": "quadratic_drift",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "quadratic phase",
+        "frequency_drift_per_s": 4e-15
+      },
+      "csv_sha256": "04097a4b3a6d67b9c2bb46341292dedc582131876302884debef256a70901906",
+      "tim_sha256": "8a6065b52b00d78c2db7babf0fdf43e83c334625a2f51ac8de06f8d32811092a"
+    },
+    {
+      "name": "white_phase",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "Gaussian phase",
+        "seed": 20261101,
+        "sigma_s": 1e-10
+      },
+      "csv_sha256": "0f5b6a898fdcfe5604d00e40be75ef6242369fca69db0cdb653e430ead2c3924",
+      "tim_sha256": "218f5f5eacd367bd1661ce37b1d3d91f3768795c15c4fd81b864523320392515"
+    },
+    {
+      "name": "white_frequency",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "cumulative Gaussian phase increments",
+        "seed": 20261102,
+        "increment_sigma_s": 2e-11
+      },
+      "csv_sha256": "ee14d2f8065edd20894a5f381b7c69d616373dade3fda1c74dd1a16584a8a001",
+      "tim_sha256": "2a7f7480a8acb720f4bef367d9a0a5aeed015ad832ce6d784181e4ef396de7ff"
+    },
+    {
+      "name": "sinusoid_noise",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "sinusoid+Gaussian phase",
+        "period_s": 127,
+        "amplitude_s": 2e-09,
+        "seed": 20261101,
+        "noise_sigma_s": 2e-11
+      },
+      "csv_sha256": "2013cfacfaed9f1b882c83a824d314a0c6e1392fab494ac5cc9c506166cb81e7",
+      "tim_sha256": "aeb42fdf410d1f4f0d974b5f59812dce11f7d4dbe3bc6a689f83e9134cb2ba0a"
+    },
+    {
+      "name": "step",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "phase step",
+        "index": 512,
+        "height_s": 3e-09
+      },
+      "csv_sha256": "4074fa0de0d243b44b6ad02d6ac7fc2963adb0e192302d4ccf44e99444038ce1",
+      "tim_sha256": "477e0bad3270cebe4c85593cc67769ba51e4ac78299ae61f60c93ce8451fa0d1"
+    },
+    {
+      "name": "alternating",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "alternating phase",
+        "amplitude_s": 1e-09
+      },
+      "csv_sha256": "c826bdb1de0ab71629eeb5293ab2c36da14a9f9ebe72999aaa779ce5246c9edd",
+      "tim_sha256": "2f3d4c4e733c03897700ba5248db4cc70d976d5589e865b650199985693a49a2"
+    },
+    {
+      "name": "quarter_second",
+      "n": 1024,
+      "dt_s": 0.25,
+      "rate_hz": 4.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "same binary phase values as white_phase",
+        "sample_period_s": 0.25
+      },
+      "csv_sha256": "0f5b6a898fdcfe5604d00e40be75ef6242369fca69db0cdb653e430ead2c3924",
+      "tim_sha256": "591973b37ef4badf8fe96a472b7a44f57753a0cd83159dfa2273dd353a565b52"
+    },
+    {
+      "name": "two_seconds",
+      "n": 1024,
+      "dt_s": 2.0,
+      "rate_hz": 0.5,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "same binary phase values as white_phase",
+        "sample_period_s": 2.0
+      },
+      "csv_sha256": "0f5b6a898fdcfe5604d00e40be75ef6242369fca69db0cdb653e430ead2c3924",
+      "tim_sha256": "056d452bc92d300e1a10aa007f98407d911dced2fb16433b140c1dacf669f7fc"
+    },
+    {
+      "name": "drift_plus_noise",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "white_phase + 2e-15*t^2 + 3e-10*t",
+        "seed": 20261101
+      },
+      "csv_sha256": "de5538913b4b175c75ae046cfb59f8b330e212f1eb4ad09c2ae867bd4bb1c277",
+      "tim_sha256": "c4e3edf544049124ba4d5e47978d46cbfcebdecf26afac1dacb50e22efd92fb5"
+    },
+    {
+      "name": "explicit_detrend",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "explicit polynomial removal before BOTH applications",
+        "parent": "drift_plus_noise",
+        "degree": 2,
+        "coefficients_ascending": [
+          -2.563956193398378e-12,
+          2.999773592389684e-10,
+          2.029605195672146e-15
+        ],
+        "fit": "numpy.polynomial.polynomial.polyfit, unweighted; t in seconds"
+      },
+      "csv_sha256": "32a73cf72f09ffe4b7d0504bc7fc979293f8d044f0d18110e27a62d800439b78",
+      "tim_sha256": "d5115b815885b6165d8c162b026fb899c037fc991ec362f2dc848517bfef650c"
+    },
+    {
+      "name": "short_record",
+      "n": 64,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "white_phase prefix",
+        "seed": 20261101,
+        "length": 64
+      },
+      "csv_sha256": "7f929436d089c7607512b213ac2c952619321e99116915ce80a1114be2db2062",
+      "tim_sha256": "519702f739c253f0369a8ecdd20ca7dda7d2ed31c8f44b1823f2ebb8e8ed3ecb"
+    },
+    {
+      "name": "gap_segment_0",
+      "n": 128,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "contiguous finite segment",
+        "source_start_index": 0,
+        "source_stop_exclusive": 128,
+        "policy": "no window crosses a gap"
+      },
+      "csv_sha256": "41c75ef0af71c6f4b9daaf4536ff2bc7572ae7586752eceb203abc5a53bce545",
+      "tim_sha256": "4a1e3f301aedd44ebccb30a617fe1723757d77b60f429cc6cbb44ee98638e4b2"
+    },
+    {
+      "name": "gap_segment_1",
+      "n": 464,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "contiguous finite segment",
+        "source_start_index": 136,
+        "source_stop_exclusive": 600,
+        "policy": "no window crosses a gap"
+      },
+      "csv_sha256": "5c0abda044622f5724ef8684f37f460f0f535cb35fe37d77daca47bcab2412bb",
+      "tim_sha256": "c820f0d0036d3b50371e2a64f6def8511fddd13007c20e89f63d28fcc8bdc248"
+    },
+    {
+      "name": "gap_segment_2",
+      "n": 423,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "contiguous finite segment",
+        "source_start_index": 601,
+        "source_stop_exclusive": 1024,
+        "policy": "no window crosses a gap"
+      },
+      "csv_sha256": "dd72968bdc6b34eaa0bd908c62e0735cd73561a018ab50b3e808d4eea7fe22f0",
+      "tim_sha256": "b1c8f588322cf82d13f90bc41335f262e7d8ee4ab834240fc07d2c69d7c97198"
+    },
+    {
+      "name": "explicit_gap_interpolation",
+      "n": 1024,
+      "dt_s": 1.0,
+      "rate_hz": 1.0,
+      "phase_unit": "seconds",
+      "data_type": "phase",
+      "detrending": "none except explicit_detrend fixture",
+      "generator": {
+        "type": "explicit linear interpolation",
+        "policy": "OPTIONAL imputation, not equivalent to original measurement",
+        "missing_indices": [
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          600
+        ]
+      },
+      "csv_sha256": "167600351caf021d16902d1d2645e0e497cab67e9b8f6adedf893de2aca63840",
+      "tim_sha256": "7358b708df434a0ff9ebc9b7bbd75c1fbd6066061920f0027625e49dee6d2e12"
+    }
+  ],
+  "missing_samples": {
+    "missing_indices": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      600
+    ],
+    "segments": [
+      [
+        0,
+        128
+      ],
+      [
+        136,
+        600
+      ],
+      [
+        601,
+        1024
+      ]
+    ],
+    "default_policy": "reject nonfinite or nonuniform samples before either tool",
+    "raw_sha256": "f108393b09ebf4b44b6ae0d0c918f34155527aa78b67156a6abe4920312520cd"
+  }
+}

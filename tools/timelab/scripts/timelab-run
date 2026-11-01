@@ -1,0 +1,27 @@
+#!/bin/bash
+set -euo pipefail
+[ "$(id -un)" = timelab ] || { echo 'Run as timelab over SSH'; exit 1; }
+base=/home/timelab/wr-timing
+export WINEPREFIX=/home/timelab/.wine-timelab WINEDEBUG=${WINEDEBUG:--all}
+export WINEDLLOVERRIDES=gdiplus=n,b
+exec 9>"$base/.run.lock"
+flock -n 9 || { echo 'Another managed TimeLab run is active'; exit 1; }
+winpath() { printf 'Z:%s' "${1//\//\\}"; }
+mode=${1:-help}; shift || true
+cd "$base/app/app"
+case "$mode" in
+ export)
+  input=$(realpath -e "${1:?Input .tim required}")
+  output=$(realpath -m "${2:?Output directory required}")
+  mkdir -p "$output"
+  args=("$(winpath "$base/scripts/export.js")" "$(winpath "$(dirname "$input")")" "$(basename "$input")" "$(winpath "$output")")
+  xvfb-run -a -s '-screen 0 1440x1000x24 -nolisten tcp' timeout 90 wine timelab64.exe "${args[@]}" >"$output/timelab.log" 2>&1
+  test -s "$output/adev.csv"; test -s "$output/tdev.csv"
+  ;;
+ gui)
+  : "${DISPLAY:?Use SSH -X or SSH -Y with a local X server}"
+  args=(); if [ "$#" -gt 0 ]; then args+=("$(winpath "$(realpath -e "$1")")"); fi
+  wine timelab64.exe "${args[@]}"
+  ;;
+ *) echo 'Usage: timelab-run export INPUT.tim OUTPUT_DIR | gui [INPUT.tim]'; exit 2;;
+esac

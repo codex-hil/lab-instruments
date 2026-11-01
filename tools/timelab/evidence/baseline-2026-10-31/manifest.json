@@ -1,0 +1,60 @@
+{
+  "versions": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "allantools": "2024.06",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "wine": "wine-10.0 (Ubuntu 10.0~repack-12ubuntu1)",
+    "timelab": "TimeLab 1.79A (Beta) of Oct 15 2026 by John Miles, KE5FX (john@miles.io)"
+  },
+  "label": "final replay, archived identical fixtures; driver acquisition excluded",
+  "replayed_inputs_from": "/home/timelab/wr-timing/regression/runs/20261031T190603Z-3551092/inputs",
+  "input_manifest_sha256": "c8841ccf7755e0a9ec8646bbb367e573e9137c8a0611a8ed9f0615e9d46bff31",
+  "created_utc": "2026-10-31T19:09:30.801494+00:00",
+  "config": {
+    "rtol": 5e-08,
+    "atol": 1e-20,
+    "m_grid": [
+      1,
+      2,
+      4,
+      8,
+      10,
+      20,
+      40,
+      80,
+      100
+    ],
+    "mtie_m_grid": [
+      1,
+      2,
+      4,
+      10,
+      20,
+      40,
+      100
+    ],
+    "tau_unit": "seconds",
+    "phase_unit": "seconds",
+    "native_detrend": false,
+    "native_visual_residual": false,
+    "clip_bw": false,
+    "clip_confidence": false,
+    "error_bars": false,
+    "spline": false,
+    "nominal_frequency_hz": 1,
+    "data_type": "phase",
+    "NOM_is_not_a_phase_scale": true
+  },
+  "sha256": {
+    "/home/timelab/wr-timing/app/app/timelab64.exe": "5b3a77e85db3df7acf79b5c4157621444184dac9e5ef5e5a408f4684935ee21e",
+    "/home/timelab/wr-timing/app/app/gdiplus.dll": "222095f88914695b96330e4f5f9ff7a55d670b1117ae378b636ac0daea638ccd",
+    "/home/timelab/wr-timing/regression/regression.py": "898a63d3fcac107392efa5def25ead816df4f77cd56864f5af2129010732b840",
+    "/home/timelab/wr-timing/regression/reference.py": "fb1f2fd9be23fcfc2fc7fb5db74b67d28def63ed5c04e836d8cfce0e658d4ce9",
+    "/home/timelab/wr-timing/regression/export_all.js": "dc9f57447a4f7d25bf170d35e1c734e4368e68e31f10d631158ced4c3e693884",
+    "/home/timelab/wr-timing/regression/run-regression": "13772234adc4037643758c461a6fe2c0980ad8227dd57055b4f05d7f6f92b949",
+    "/home/timelab/wr-timing/venv/lib/python3.14/site-packages/allantools/allantools.py": "0e3d23096890f0dffc29ee0ffbe037e4b76b957aae34c4043b43cc5cddf0aa68"
+  },
+  "requirements": "alabaster==1.0.0\nAllanTools==2024.6\nbabel==2.18.0\ncertifi==2026.10.23\ncharset-normalizer==3.5.2\ncontourpy==1.4.0\ncycler==0.12.1\ndocutils==0.23\nfonttools==4.68.0\nidna==3.20\nimagesize==2.0.1\niniconfig==2.3.1\nJinja2==3.1.6\nkiwisolver==1.5.1\nMarkupSafe==3.0.4\nmatplotlib==3.11.2\nnumpy==2.5.4\nnumpydoc==1.11.0\npackaging==26.3\npillow==13.0.0\npluggy==1.7.0\nPygments==2.21.0\npyparsing==3.3.3\npytest==9.2.0\npython-dateutil==3.0.0\nrequests==2.34.2\nroman-numerals==4.1.0\nscipy==1.18.1\nsix==1.17.0\nsnowballstemmer==3.1.1\nSphinx==9.2.0\nsphinxcontrib-applehelp==2.0.0\nsphinxcontrib-devhelp==2.0.0\nsphinxcontrib-htmlhelp==2.1.0\nsphinxcontrib-jsmath==2.0.0\nsphinxcontrib-qthelp==2.0.0\nsphinxcontrib-serializinghtml==2.0.0\ntzdata==2026.6\nurllib3==2.8.0\n"
+}
