@@ -1,0 +1,62 @@
+{
+  "1": {
+    "device": "0xa4c1386c56ee225b",
+    "received_at": 1793705994.291714,
+    "state": "ON",
+    "measurements": {
+      "power": 9,
+      "current": 0.09,
+      "voltage": 234,
+      "energy": 1.51
+    },
+    "units": {
+      "power": "W",
+      "current": "A",
+      "voltage": "V",
+      "energy": "kWh"
+    },
+    "field_sample_age": "UNKNOWN (Z2M may merge cached fields)",
+    "physical_state_confirmed": false,
+    "linkquality": 127
+  },
+  "2": {
+    "device": "0xa4c13842b71b5267",
+    "received_at": 1793705996.84295,
+    "state": "ON",
+    "measurements": {
+      "power": 0,
+      "current": 0,
+      "voltage": 230.2,
+      "energy": 0
+    },
+    "units": {
+      "power": "W",
+      "current": "A",
+      "voltage": "V",
+      "energy": "kWh"
+    },
+    "field_sample_age": "UNKNOWN (Z2M may merge cached fields)",
+    "physical_state_confirmed": false,
+    "linkquality": 138
+  },
+  "3": {
+    "device": "0xa4c13833ca1c3e80",
+    "received_at": 1793705999.4063234,
+    "state": "ON",
+    "measurements": {
+      "power": null,
+      "current": null,
+      "voltage": 231,
+      "energy": 0
+    },
+    "units": {
+      "power": "W",
+      "current": "A",
+      "voltage": "V",
+      "energy": "kWh"
+    },
+    "field_sample_age": "UNKNOWN (Z2M may merge cached fields)",
+    "physical_state_confirmed": false,
+    "linkquality": 145
+  }
+}

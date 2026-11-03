@@ -1,3 +1,28 @@
+# Trzy wtyczki Zigbee HIL
+
+Aktualizacja 2026-11-03: CLI obsługuje `--plug 1`, `--plug 2`, `--plug 3`.
+Brak opcji oznacza pierwszą wtyczkę (zgodność dotychczasowych poleceń).
+Każda ma osobny token i rezerwację; token jednej nie uprawnia do innej.
+[Inwentarz, adresy i zakres potwierdzenia](INVENTORY.md).
+
+```bash
+hil-plug --plug 2 reservation
+hil-plug --plug 2 reserve --owner 'ID-watku: cel testu'
+export HIL_PLUG_TOKEN='token-z-odpowiedzi'
+hil-plug --plug 2 status
+hil-plug --plug 2 power
+# Po identyfikacji obciążenia i autoryzacji przełączenia:
+hil-plug --plug 2 on
+hil-plug --plug 2 off
+hil-plug --plug 2 release
+unset HIL_PLUG_TOKEN
+```
+
+Dla trzeciej użyj `--plug 3`. W każdej komendzie podawaj ten sam numer.
+Pierwsza zachowuje dotychczasowe pliki lease i blokady; druga/trzecia używają
+podkatalogów `plug2` i `plug3` w `~/.local/share/hil-plug` na station2.
+Poniższy opis domyślnego użycia pierwszej wtyczki nadal obowiązuje.
+
 # Wspólna wtyczka HIL
 
 Dostęp na Optiplexie: `~/.local/bin/hil-plug`. Backend na debug station 2:

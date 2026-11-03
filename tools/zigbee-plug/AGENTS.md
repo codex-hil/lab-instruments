@@ -17,3 +17,9 @@ not physical confirmation. Measurement field freshness remains unknown.
 Run python3 -m unittest discover -s tools/zigbee-plug/tests from repo root.
 Routine code tests must not switch real power. Physical OFF was user-confirmed
 by audible click on 2026-10-30; OFF-to-ON and load operation remain unverified.
+
+2026-11-03: three plugs; see INVENTORY.md. Select --plug 1|2|3 on every command.
+Default remains plug1. Existing first-plug lease directory is unchanged; plug2
+and plug3 have independent subdirectories and tokens. Never reuse a token across
+plugs or omit --plug when controlling plug2/3. Both new plugs have only pairing
+and read validation; do not infer physical switching or load identity.
