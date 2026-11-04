@@ -1,0 +1,12 @@
+{
+  "revision": "77900bbc90ae2c38f2818de79a3fbf4644523175",
+  "method": "git archive HEAD into a new temporary directory; offline scripts/build.py and all unittest tests",
+  "python": "3.12.3",
+  "tests": 61,
+  "test_status": "PASS",
+  "original_zipapp_sha256": "780c8ee7cb3e12aad3b7c047a873408228b5c919e0c4bc16a06389c3f3f17404",
+  "replayed_zipapp_sha256": "780c8ee7cb3e12aad3b7c047a873408228b5c919e0c4bc16a06389c3f3f17404",
+  "byte_identical": true,
+  "fresh_os": false,
+  "hardware_access": false
+}

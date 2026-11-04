@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-26",
+  "queries": "identity only; no source output enabled",
+  "scope": "TEKTRONIX,MSO4104,C020817,CF:91.1CT FV:v2.68 DPO4AUTO:V1.00 DPO4COMP:V1.00 DPO4USB:V1.00",
+  "awg": "TEKTRONIX,AFG1062,1544477,SCPI:99.0 FV:V1.0.1",
+  "loopback": "OPEN ITEM: splitter and channel topology unconfirmed",
+  "rc": "OPEN ITEM: physical R/C values and connections unconfirmed"
+}

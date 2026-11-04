@@ -1,0 +1,24 @@
+{
+  "change": "Manual small-signal amplitude UI; shared preset/API remains SI volts peak-to-peak",
+  "tests": 63,
+  "test_status": "PASS",
+  "browser": {
+    "browser_smoke": "PASS",
+    "controls": 18,
+    "amplitude_mV_conversion_and_lock": "PASS",
+    "sweep": "PASS",
+    "single": "PASS",
+    "stop": "PASS",
+    "plot": "PASS",
+    "screenshot": "local/fra-amplitude-gui.png"
+  },
+  "zipapp_sha256": "e189bc9ebcdf9c58759d03d9913004ce80396f34d4ab741fffb158feec00c7e4",
+  "synthetic_amplitudes_vpp": [
+    0.1,
+    0.01,
+    0.001
+  ],
+  "hardware_tests": "NOT RUN; no changes to hardware or inventory limits",
+  "automatic_input_leveling": "OPEN ITEM, not implemented",
+  "trust_state": "UNTRUSTED"
+}
