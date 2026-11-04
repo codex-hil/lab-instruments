@@ -39,3 +39,6 @@ przed testem rzeczywistego urządzenia. Nie zakładamy, że rebrand ma identyczn
 Aktualny status prób sprzętowych: [macierz HIL](../reports/hil-2026-09-25/README.md).
 Profil MSO4104 automatycznie uwzględnia padding CR pomiędzy odpowiedziami TCP portu 4000;
 przy użyciu samego Transport bez Driver ustaw `read_padding: "\r"`.
+
+DPO4104: profil `dpo4104`, TCP 4000, ID i immediate frequency/Vpp CH1–4.
+[Tożsamość egzemplarza i handoff](dpo4104.md).

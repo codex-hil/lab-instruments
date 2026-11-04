@@ -9,6 +9,7 @@ PROFILES = {
  'smb100a': ('SMB100A', 'rf', 1, 5025),
  'afg1062': ('AFG1062', 'awg', 2, None),
  'mp750288': ('MP750288', 'awg', 2, 3000),
+ 'dpo4104': ('DPO4104', 'scope', 4, 4000),
  'mso4104': ('MSO4104', 'scope', 4, 4000),
  'mso2002b': ('MSO2002B', 'scope', 2, None),
  'dmm7510': ('MODEL DMM7510', 'meter', 1, 5025),
@@ -89,7 +90,7 @@ class Driver:
             raise ValueError('unknown model')
         self.io, self.model, self.serial = transport, model, serial
         self.category = PROFILES[model][1]
-        if model == 'mso4104' and getattr(transport, 'config', {}).get('kind') == 'tcp':
+        if model in {'mso4104', 'dpo4104'} and getattr(transport, 'config', {}).get('kind') == 'tcp':
             transport.config.setdefault('read_padding', '\r')
 
     def identify(self):
