@@ -1,0 +1,4 @@
+# Replace @GROUP@ with the group of the user running sigrok / EEPROM reader.
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="04b4", ATTR{idProduct}=="8613", GROUP="@GROUP@", MODE="0660"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="1d50", ATTR{idProduct}=="608c", GROUP="@GROUP@", MODE="0660"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="1d50", ATTR{idProduct}=="608d", GROUP="@GROUP@", MODE="0660"
