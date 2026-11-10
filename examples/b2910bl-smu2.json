@@ -1,0 +1,26 @@
+{
+  "mode": "control",
+  "devices": {
+    "smu2": {
+      "model": "b2910bl",
+      "serial": "MY63320299",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.19",
+        "port": 5025,
+        "timeout": 4,
+        "delay": 0.1
+      },
+      "commissioned": false,
+      "limits": {
+        "allow_output": false,
+        "voltage_min": 0,
+        "voltage_max": 10,
+        "current_min": 0.001,
+        "current_max": 0.5,
+        "power_max": 5
+      },
+      "lease_seconds": 10
+    }
+  }
+}

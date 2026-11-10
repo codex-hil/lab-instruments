@@ -197,3 +197,9 @@ Po nadaniu tymczasowych ACL: [realny SDWire PASS_READ_ONLY](reports/storage/hard
 — odczyt rejestru USB i dwa zgodne odczyty 1MiB karty. Bez zapisów/przełączeń.
 Na aktualnej bazie main: [83 testy PASS](reports/storage/software-2026-10-13-main/README.md),
 w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.
+
+### Drugi Keysight B2910BL — smu2
+
+Egzemplarz MY63320299 dodany do puli, ostatnio `192.168.2.19:5025` (DHCP).
+[Tożsamość, konfiguracja, lock i przekazanie do pracy jako woltomierz](docs/b2910bl-smu2.md).
+Tryb woltomierza wymaga przygotowania; istniejący odczyt FETCh to ostatnia próbka.

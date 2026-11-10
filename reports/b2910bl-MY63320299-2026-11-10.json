@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-11-10T13:49:34.873850+00:00",
+  "identity": "Keysight Technologies,B2910BL,MY63320299,5.0.2429.8966",
+  "ip": "192.168.2.19",
+  "queries": {
+    "OUTP?": "0",
+    "OUTP:OFF:MODE?": "NORM",
+    "OUTP:ON:AUTO?": "1",
+    "SOUR:FUNC:MODE?": "VOLT",
+    "SENS:REM?": "0"
+  }
+}
