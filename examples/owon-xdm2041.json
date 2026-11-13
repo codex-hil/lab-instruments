@@ -1,0 +1,17 @@
+{
+  "mode": "control",
+  "devices": {
+    "owon_dmm": {
+      "model": "xdm2041",
+      "serial": "25510487",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.27",
+        "port": 5001,
+        "timeout": 4,
+        "delay": 0.1
+      },
+      "commissioned": false
+    }
+  }
+}

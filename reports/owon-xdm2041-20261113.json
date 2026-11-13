@@ -1,0 +1,10 @@
+{
+  "identity": "OWON,XDM2041,25510487,V3.3.0,3",
+  "function_before": "\"VOLT\"",
+  "readings": [
+    "-9.062278E-05",
+    "-6.919599E-05",
+    "-6.919599E-05"
+  ],
+  "function_after": "\"VOLT\""
+}
