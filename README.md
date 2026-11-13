@@ -200,5 +200,5 @@ w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.
 
 ### OWON XDM2041 przez WIZnet
 
-Profil `xdm2041`, alias `owon_dmm`, serial 25510487: identyfikacja, odczyt funkcji
+Profil `xdm2041`, alias `owon_dmm1`, serial 25510487: identyfikacja, odczyt funkcji
 i głównego wyświetlacza. [Uruchomienie, DHCP, lock i instrukcja](docs/owon-xdm2041.md).

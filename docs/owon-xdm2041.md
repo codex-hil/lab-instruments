@@ -14,15 +14,15 @@ rozbita na kilka pakietów TCP — używać Transport, nie pojedynczego recv().
 ## CLI i API
 
 Kod: gałąź `feature/owon-xdm2041` publicznego repo lab-instruments.
-Konfiguracja: `examples/owon-xdm2041.json`, alias `owon_dmm`; dodany też do examples/lab.json.
+Konfiguracja: `examples/owon-xdm2041.json`, alias `owon_dmm1`; dodany też do examples/lab.json.
 
 ```sh
 flock -n /home/codex-hil/.cache/wiznet-0008dc8361ed.lock \
- python3 -m labinstruments identify --config examples/owon-xdm2041.json --device owon_dmm
+ python3 -m labinstruments identify --config examples/owon-xdm2041.json --device owon_dmm1
 flock -n /home/codex-hil/.cache/wiznet-0008dc8361ed.lock \
- python3 -m labinstruments read --config examples/owon-xdm2041.json --device owon_dmm --operation function
+ python3 -m labinstruments read --config examples/owon-xdm2041.json --device owon_dmm1 --operation function
 flock -n /home/codex-hil/.cache/wiznet-0008dc8361ed.lock \
- python3 -m labinstruments read --config examples/owon-xdm2041.json --device owon_dmm --operation reading
+ python3 -m labinstruments read --config examples/owon-xdm2041.json --device owon_dmm1 --operation reading
 ```
 
 Python: `Driver(io, 'xdm2041', '25510487')` na istniejącym `Transport`.
@@ -62,3 +62,15 @@ porównanie ze wzorcem i pełna walidacja metrologiczna NOT_RUN.
 - [Instrukcja programowania OWON](https://www.owon.co.jp/download/01a0bfb3-ea45-7e96-9701-3b58f51ed344/)
 - [Instrukcja użytkownika, RS232](https://files.owon.com.cn/probook/XDM2041_USER_MANUAL.pdf)
 - [Protokół konfiguracji WIZnet](https://docs.wiznet.io/Product/Modules/Serial-to-Ethernet-Module/WIZ752SR-125/command-manual-EN)
+
+## Nazwy egzemplarzy
+
+- **OWON DMM1**, alias `owon_dmm1`: serial **25510487**, obecnie TCP **5001**.
+- **OWON DMM2**, planowany alias `owon_dmm2`: numer seryjny jeszcze nieznany,
+  przeznaczony do wolnego portu TCP **5000** tej samej bramki.
+
+DMM2 nie ma jeszcze aktywnego wpisu konfiguracji. Po podłączeniu odczytać *IDN?
+i przypisać faktyczny numer seryjny; nie kopiować serialu DMM1. Nazwy podążają
+za egzemplarzami, nie portami. Zamiana kabli wymaga aktualizacji portów, a kontrola
+serialu chroni przed użyciem innego miernika. Dawny alias `owon_dmm` zastąpiono
+`owon_dmm1` — zaktualizować wcześniejsze skrypty.
