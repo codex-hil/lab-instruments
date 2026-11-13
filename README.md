@@ -197,3 +197,10 @@ Po nadaniu tymczasowych ACL: [realny SDWire PASS_READ_ONLY](reports/storage/hard
 — odczyt rejestru USB i dwa zgodne odczyty 1MiB karty. Bez zapisów/przełączeń.
 Na aktualnej bazie main: [83 testy PASS](reports/storage/software-2026-10-13-main/README.md),
 w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.
+
+### OWON XDM2041 przez WIZnet
+
+Profil `xdm2041`, alias `owon_dmm1`, serial 25510487: identyfikacja, odczyt funkcji
+i głównego wyświetlacza. [Uruchomienie, DHCP, lock i instrukcja](docs/owon-xdm2041.md).
+
+Drugi egzemplarz OWON: `owon_dmm2`, serial 25510466, ta sama bramka TCP 5000.

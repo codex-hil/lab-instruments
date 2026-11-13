@@ -39,3 +39,6 @@ przed testem rzeczywistego urządzenia. Nie zakładamy, że rebrand ma identyczn
 Aktualny status prób sprzętowych: [macierz HIL](../reports/hil-2026-09-25/README.md).
 Profil MSO4104 automatycznie uwzględnia padding CR pomiędzy odpowiedziami TCP portu 4000;
 przy użyciu samego Transport bez Driver ustaw `read_padding: "\r"`.
+
+XDM2041: TCP przez WIZnet RS232 115200 8N1, `identity`, `function` (FUNC1?)
+i `reading` (MEAS1?). [Handoff](owon-xdm2041.md).

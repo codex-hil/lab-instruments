@@ -11,6 +11,7 @@ PROFILES = {
  'mp750288': ('MP750288', 'awg', 2, 3000),
  'mso4104': ('MSO4104', 'scope', 4, 4000),
  'mso2002b': ('MSO2002B', 'scope', 2, None),
+ 'xdm2041': ('XDM2041', 'meter', 1, 5001),
  'dmm7510': ('MODEL DMM7510', 'meter', 1, 5025),
  '6487': ('MODEL 6487', 'picoammeter', 1, 4001),
  '8550': ('8550', 'load', 1, 4001),
@@ -213,6 +214,10 @@ class Driver:
             if self.model=='ngp814': self.io.write(f'INST OUT{channel}')
             prefix = 'FETC' if self.category=='smu' else 'MEAS'
             return self.io.query(prefix + (':VOLT?' if operation=='voltage' else ':CURR?'))
+        if self.model == 'xdm2041':
+            commands = {'reading':'MEAS1?', 'function':'FUNC1?'}
+            if operation not in commands: raise ValueError('unsupported XDM2041 operation')
+            return self.io.query(commands[operation])
         if self.category == 'meter' and operation == 'reading': return self.io.query('READ?')
         if self.category == 'picoammeter' and operation == 'reading': return self.io.query('READ?')
         if self.category == 'scope' and operation in {'frequency','vpp'}:

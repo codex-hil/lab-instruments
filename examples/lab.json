@@ -204,6 +204,30 @@
         "vendor": "0699",
         "product_id": "0353"
       }
+    },
+    "owon_dmm1": {
+      "model": "xdm2041",
+      "serial": "25510487",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.27",
+        "port": 5001,
+        "timeout": 4,
+        "delay": 0.1
+      },
+      "commissioned": false
+    },
+    "owon_dmm2": {
+      "model": "xdm2041",
+      "serial": "25510466",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.27",
+        "port": 5000,
+        "timeout": 4,
+        "delay": 0.1
+      },
+      "commissioned": false
     }
   }
 }

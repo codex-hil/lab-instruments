@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-13T14:55:07.966874+00:00",
+  "device": "owon_dmm2",
+  "host": "192.168.2.27",
+  "port": 5000,
+  "identity": "OWON,XDM2041,25510466,V3.3.0,3",
+  "function_before": "\"VOLT\"",
+  "readings": [
+    "-1.119816E-04",
+    "-1.119816E-04",
+    "-1.119816E-04"
+  ],
+  "function_after": "\"VOLT\""
+}
