@@ -216,6 +216,18 @@
         "delay": 0.1
       },
       "commissioned": false
+    },
+    "owon_dmm2": {
+      "model": "xdm2041",
+      "serial": "25510466",
+      "transport": {
+        "kind": "tcp",
+        "host": "192.168.2.27",
+        "port": 5000,
+        "timeout": 4,
+        "delay": 0.1
+      },
+      "commissioned": false
     }
   }
 }

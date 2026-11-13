@@ -66,11 +66,12 @@ porównanie ze wzorcem i pełna walidacja metrologiczna NOT_RUN.
 ## Nazwy egzemplarzy
 
 - **OWON DMM1**, alias `owon_dmm1`: serial **25510487**, obecnie TCP **5001**.
-- **OWON DMM2**, planowany alias `owon_dmm2`: numer seryjny jeszcze nieznany,
-  przeznaczony do wolnego portu TCP **5000** tej samej bramki.
+- **OWON DMM2**, alias `owon_dmm2`: serial **25510466**, TCP **5000**.
 
-DMM2 nie ma jeszcze aktywnego wpisu konfiguracji. Po podłączeniu odczytać *IDN?
-i przypisać faktyczny numer seryjny; nie kopiować serialu DMM1. Nazwy podążają
-za egzemplarzami, nie portami. Zamiana kabli wymaga aktualizacji portów, a kontrola
-serialu chroni przed użyciem innego miernika. Dawny alias `owon_dmm` zastąpiono
-`owon_dmm1` — zaktualizować wcześniejsze skrypty.
+Oba egzemplarze zidentyfikowano jednocześnie 2026-11-13; oba firmware V3.3.0,3.
+DMM2 dodano do obu konfiguracji. Te same komendy powyżej działają z
+`--device owon_dmm2`. Utrzymać wspólny lock całej bramki.
+[Raport identyfikacji i odczytów DMM2](../reports/owon-dmm2-20261113.json).
+Nazwy podążają za egzemplarzami, nie portami. Zamiana kabli wymaga aktualizacji
+portów, a kontrola serialu chroni przed użyciem innego miernika. Dawny alias
+`owon_dmm` zastąpiono `owon_dmm1` — zaktualizować wcześniejsze skrypty.

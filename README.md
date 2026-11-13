@@ -202,3 +202,5 @@ w tym 41 storage; wcześniejsze raporty dotyczą wcześniejszej bazy feature.
 
 Profil `xdm2041`, alias `owon_dmm1`, serial 25510487: identyfikacja, odczyt funkcji
 i głównego wyświetlacza. [Uruchomienie, DHCP, lock i instrukcja](docs/owon-xdm2041.md).
+
+Drugi egzemplarz OWON: `owon_dmm2`, serial 25510466, ta sama bramka TCP 5000.
