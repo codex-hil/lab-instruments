@@ -1,0 +1,22 @@
+{
+  "mode": "usb-gateway",
+  "listen": [
+    "0.0.0.0",
+    8840
+  ],
+  "token_file": "/etc/labinst/access.token",
+  "tls": {
+    "cert": "/etc/labinst/server.crt",
+    "key": "/etc/labinst/server.key"
+  },
+  "slots": {
+    "mp750288": {
+      "label": "MP750288",
+      "serial": "1944201",
+      "vendor": "5345",
+      "product_id": "1235",
+      "timeout": 4,
+      "delay": 0.05
+    }
+  }
+}

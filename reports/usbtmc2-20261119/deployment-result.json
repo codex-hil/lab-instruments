@@ -1,0 +1,86 @@
+{
+  "host": "USB-TSMC2",
+  "ip": "192.168.2.10",
+  "serial": "7379fa4619d5d5f0",
+  "source_commit": "e098080",
+  "sha256": "d325dd9488a3eccb8ffac9ddf4c78971977206c76cd51b6afe193802a15d524a",
+  "https_ip_and_mdns": "PASS",
+  "unauthorized_status": 401,
+  "identify": {
+    "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1"
+  },
+  "raw_gateway_idn": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1",
+  "status": {
+    "usb": [
+      {
+        "path": "/dev/usbtmc0",
+        "topology": "3-2",
+        "serial": "1944201",
+        "vendor": "5345",
+        "product_id": "1235",
+        "model": "MP750288"
+      }
+    ],
+    "slots": {
+      "mp750288": {
+        "label": "MP750288",
+        "connected": true,
+        "state": "connected",
+        "accessible": true,
+        "selectors": {
+          "serial": "1944201",
+          "vendor": "5345",
+          "product_id": "1235"
+        },
+        "matches": [
+          {
+            "path": "/dev/usbtmc0",
+            "topology": "3-2",
+            "serial": "1944201",
+            "vendor": "5345",
+            "product_id": "1235",
+            "model": "MP750288"
+          }
+        ],
+        "status": {
+          "duration_ms": 75.5,
+          "error": null,
+          "transactions": 2,
+          "failures": 0,
+          "last_ok": 1795083461.9382324,
+          "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1",
+          "identified_at": 1795083461.8414903
+        }
+      }
+    },
+    "events": [
+      {
+        "time": 1795083461.9382324,
+        "slot": "mp750288",
+        "operation": "transaction",
+        "ok": true,
+        "duration_ms": 75.5,
+        "tx_bytes": 6,
+        "rx_bytes": 45,
+        "error": null
+      },
+      {
+        "time": 1795083461.8414903,
+        "slot": "mp750288",
+        "operation": "identify",
+        "ok": true,
+        "duration_ms": 57.0,
+        "tx_bytes": 6,
+        "rx_bytes": 45,
+        "error": null
+      }
+    ],
+    "gateway": {
+      "hostname": "USB-TSMC2",
+      "uptime_seconds": 22,
+      "active_slot": null,
+      "serialization": "global",
+      "mode": "usb-gateway"
+    }
+  }
+}

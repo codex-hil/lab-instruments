@@ -14,7 +14,8 @@ USB wymaga linuksowego sterownika `usbtmc`. Windows nie jest obecnie wspierany.
 Identyfikacja i małosygnałowe próby aktywnych profili zostały sprawdzone na stanowisku;
 [raport HIL](reports/hil-2026-09-25/README.md) rozróżnia PASS, próby częściowe i braki.
 Pełny commissioning pod obciążeniem pozostaje wymagany. Przykłady blokują włączanie wyjść.
-Nie wdrożono tych usług na bieżącym stanowisku ani nie zmieniono jego sieci.
+Bramka USB-TSMC2 działa na Raspberry Pi 5; [przekazanie dostępu do AWG](tools/usbtmc2/README.md).
+Tryb chronionego sterowania `control` jest odrębnym wariantem.
 
 ## Zakres repozytorium i obecny sposób pracy
 
@@ -32,6 +33,7 @@ Wszystkie poniższe komponenty są w **tym jednym repozytorium**, nie w osobnych
 | Zigbee HIL plug | [CLI i rezerwacje](tools/zigbee-plug/README.md) | SLZB-06p7U + TS011F przez Zigbee2MQTT; ON/OFF, pomiary, rezerwacje wątków |
 | MR8875 | [panel i driver](tools/mr8875/README.md) | MR8902 + MR8904, panel WWW, sesje CSV, dokumentacja komend i próby bez sygnałów |
 | FCA3003 | [driver licznika Tektronix](docs/fca3003.md) | pomiary SCPI, kanały A/B/C; [pomiar 1 MHz na A/B PASS](reports/fca3003-2026-10-22/README.md) |
+| USB-TSMC2 / AWG MP750288 | [Dostęp dla kolejnych wątków](tools/usbtmc2/README.md) | Pi5, HTTPS, konfiguracja klienta, wspólne blokady, raport odbioru |
 | Drivery Python | [README driverów](labinstruments/README.md) | modele, metody, jednostki, przykład bez serwera |
 | Raspberry Pi i Waveshare | [README wdrożenia](deploy/README.md) | USBTMC, hotplug, TCP–RS-232, konfiguracja i ograniczenia |
 | Profile urządzeń | [modele](docs/models.md) | zakres każdego drivera i protokoły przyrządów |

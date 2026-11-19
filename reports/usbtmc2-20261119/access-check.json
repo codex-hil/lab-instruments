@@ -1,0 +1,15 @@
+{
+  "identity": "FARNELL,MP750288,1944201,SCPI:99.0 FV:V2.6.1",
+  "outputs": {
+    "ch1": "0",
+    "ch2": "0"
+  },
+  "url": "https://USB-TSMC2.local:8840",
+  "slot": "mp750288",
+  "commands": [
+    "*IDN?",
+    "OUTP1?",
+    "OUTP2?"
+  ],
+  "settings_changed": false
+}

@@ -1,0 +1,18 @@
+{
+  "mode": "control",
+  "devices": {
+    "awg_usbtsmc2": {
+      "model": "mp750288",
+      "serial": "1944201",
+      "commissioned": false,
+      "transport": {
+        "kind": "gateway",
+        "url": "https://USB-TSMC2.local:8840",
+        "slot": "mp750288",
+        "token_file": "/home/codex-hil/.config/labinst/usb-tsmc2/access.token",
+        "ca_file": "/home/codex-hil/.config/labinst/usb-tsmc2/server.crt",
+        "timeout": 4
+      }
+    }
+  }
+}
